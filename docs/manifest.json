@@ -199,7 +199,7 @@
     },
     {
       "id": "guides-uk-gov",
-      "name": "UK Government Guides",
+      "name": "Government Digital & AI Guides",
       "documents": [
         {
           "path": "docs/guides/uk-government/technology-code-of-practice.md",
@@ -213,23 +213,23 @@
         },
         {
           "path": "docs/guides/uk-government/ai-playbook.md",
-          "title": "AI Playbook",
-          "category": "AI Governance"
+          "title": "Legacy UK AI Playbook (Deprecated)",
+          "category": "Legacy UK"
         },
         {
           "path": "docs/guides/ai-playbook.md",
-          "title": "AI Playbook Command",
-          "category": "AI Governance"
+          "title": "AU AI Governance Assessment Command",
+          "category": "Australian Government AI"
         },
         {
           "path": "docs/guides/uk-government/algorithmic-transparency.md",
-          "title": "Algorithmic Transparency (ATRS)",
-          "category": "AI Governance"
+          "title": "Legacy UK Algorithmic Transparency (Deprecated)",
+          "category": "Legacy UK"
         },
         {
           "path": "docs/guides/atrs.md",
-          "title": "ATRS Command",
-          "category": "AI Governance"
+          "title": "AU AI Transparency Statement Command",
+          "category": "Australian Government AI"
         },
         {
           "path": "docs/guides/uk-government/secure-by-design.md",
@@ -270,7 +270,7 @@
     },
     {
       "id": "guides-uk-mod",
-      "name": "UK MOD Guides",
+      "name": "Defence & Security Guides",
       "documents": [
         {
           "path": "docs/guides/uk-mod/secure-by-design.md",
@@ -284,8 +284,8 @@
         },
         {
           "path": "docs/guides/jsp-936.md",
-          "title": "JSP 936 AI Assurance",
-          "category": "AI Governance"
+          "title": "AU Defence AI Assurance Pathway",
+          "category": "Australian Government AI"
         }
       ]
     },
@@ -483,13 +483,13 @@
         },
         {
           "path": ".arckit/templates/uk-gov-ai-playbook-template.md",
-          "title": "AI Playbook Template",
-          "category": "UK Government"
+          "title": "Deprecated AI Playbook Compatibility Stub",
+          "category": "Legacy UK"
         },
         {
           "path": ".arckit/templates/uk-gov-atrs-template.md",
-          "title": "ATRS Template",
-          "category": "UK Government"
+          "title": "Deprecated ATRS Compatibility Stub",
+          "category": "Legacy UK"
         },
         {
           "path": ".arckit/templates/ukgov-secure-by-design-template.md",
@@ -503,8 +503,33 @@
         },
         {
           "path": ".arckit/templates/jsp-936-template.md",
-          "title": "JSP 936 Template",
-          "category": "UK MOD"
+          "title": "AU Defence AI Assurance Pathway Template",
+          "category": "Australian Government AI"
+        },
+        {
+          "path": ".arckit/templates/au-ai-governance-assessment-template.md",
+          "title": "AU AI Governance Assessment Template",
+          "category": "Australian Government AI"
+        },
+        {
+          "path": ".arckit/templates/au-ai-use-case-register-template.md",
+          "title": "AU AI Use Case Register Template",
+          "category": "Australian Government AI"
+        },
+        {
+          "path": ".arckit/templates/au-ai-transparency-statement-template.md",
+          "title": "AU AI Transparency Statement Template",
+          "category": "Australian Government AI"
+        },
+        {
+          "path": ".arckit/templates/au-ai-impact-assessment-template.md",
+          "title": "AU AI Impact Assessment Template",
+          "category": "Australian Government AI"
+        },
+        {
+          "path": ".arckit/templates/au-ai-governance-checklist-template.md",
+          "title": "AU AI Governance Checklist Template",
+          "category": "Australian Government AI"
         },
         {
           "path": ".arckit/templates/devops-template.md",
@@ -513,7 +538,7 @@
         },
         {
           "path": ".arckit/templates/mlops-template.md",
-          "title": "MLOps Strategy Template",
+          "title": "MLOps Strategy Template (AU AI Integrated)",
           "category": "Operations"
         },
         {

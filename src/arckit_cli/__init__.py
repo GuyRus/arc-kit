@@ -255,7 +255,7 @@ Use the `/arckit.customize` command to copy templates for editing:
 - Add organization-specific document control fields
 - Include mandatory compliance sections (ISO 27001, PCI-DSS)
 - Add department-specific approval workflows
-- Customize UK Government classification banners
+- Customize organisation-specific classification banners
 """, encoding='utf-8')
 
     console.print("[green]✓[/green] Project structure created")
@@ -483,7 +483,7 @@ Once you start your AI assistant, you'll have access to these commands:
 - `/arckit.risk` - Create comprehensive risk register (Orange Book)
 - `/arckit.sobc` - Create Strategic Outline Business Case (Green Book 5-case)
 - `/arckit.requirements` - Define comprehensive requirements
-- `/arckit.data-model` - Create data model with ERD, GDPR compliance, data governance
+- `/arckit.data-model` - Create data model with ERD, privacy compliance, data governance
 - `/arckit.research` - Research technology, services, and products with build vs buy analysis
 - `/arckit.wardley` - Create strategic Wardley Maps for build vs buy and procurement strategy
 
@@ -514,16 +514,16 @@ Once you start your AI assistant, you'll have access to these commands:
 #### Template Customization
 - `/arckit.customize` - Copy templates for customization (preserves across updates)
 
-#### UK Government Compliance
-- `/arckit.service-assessment` - GDS Service Standard assessment preparation
+#### Government AI & Compliance
+- `/arckit.service-assessment` - Service standard assessment preparation
 - `/arckit.tcop` - Technology Code of Practice assessment (all 13 points)
-- `/arckit.ai-playbook` - AI Playbook compliance for responsible AI
-- `/arckit.atrs` - Algorithmic Transparency Recording Standard (ATRS) record
+- `/arckit.ai-playbook` - AU AI governance assessment pack
+- `/arckit.atrs` - AU AI transparency statement
 
 #### Security Assessment
-- `/arckit.secure` - UK Government Secure by Design (NCSC CAF, Cyber Essentials, UK GDPR)
-- `/arckit.mod-secure` - MOD Secure by Design (JSP 440, IAMM, security clearances)
-- `/arckit.jsp-936` - MOD JSP 936 AI assurance documentation
+- `/arckit.secure` - Secure by Design assessment
+- `/arckit.mod-secure` - Defence secure-by-design assessment
+- `/arckit.jsp-936` - AU defence AI assurance pathway (public-source baseline)
 
 ## Project Structure
 

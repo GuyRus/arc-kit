@@ -11,9 +11,19 @@
 # Examples:
 #   ./generate-document-id.sh 001 REQ          → ARC-001-REQ-v1.0
 #   ./generate-document-id.sh 042 HLD 2.1      → ARC-042-HLD-v2.1
-#   ./generate-document-id.sh 003 ATRS         → ARC-003-ATRS-v1.0
+#   ./generate-document-id.sh 003 AIGA         → ARC-003-AIGA-v1.0
+#   ./generate-document-id.sh 003 AITS         → ARC-003-AITS-v1.0
+#   ./generate-document-id.sh 003 AIIA         → ARC-003-AIIA-v1.0
 #   ./generate-document-id.sh 001 REQ 1.0 --filename → ARC-001-REQ-v1.0.md
 #   ./generate-document-id.sh 001 ADR 1.0 --filename --next-num ./decisions → ARC-001-ADR-001-v1.0.md
+#
+# Common AU AI type codes:
+#   AIGA (AI governance assessment)
+#   AIUR (AI use case register)
+#   AITS (AI transparency statement)
+#   AIIA (AI impact assessment)
+#   AIGC (AI governance checklist)
+#   ADEF (Defence AI assurance pathway)
 #
 # Multi-instance types (require --next-num for sequence numbering):
 #   ADR, DIAG, WARD, DMC
