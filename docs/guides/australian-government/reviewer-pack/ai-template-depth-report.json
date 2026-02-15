@@ -1,0 +1,112 @@
+{
+  "check": "AI template depth and requirement coverage",
+  "templates": [
+    {
+      "template": ".arckit/templates/au-ai-governance-assessment-template.md",
+      "lineCount": 150,
+      "headingCount": 16,
+      "mappedRequirementCount": 15,
+      "mappedRequirements": [
+        "AU-AI-REQ-001",
+        "AU-AI-REQ-002",
+        "AU-AI-REQ-003",
+        "AU-AI-REQ-004",
+        "AU-AI-REQ-005",
+        "AU-AI-REQ-008",
+        "AU-AI-REQ-009",
+        "AU-AI-REQ-010",
+        "AU-AI-REQ-011",
+        "AU-AI-REQ-013",
+        "AU-AI-REQ-014",
+        "AU-AI-REQ-018",
+        "AU-AI-REQ-019",
+        "AU-AI-REQ-020",
+        "AU-AI-REQ-021"
+      ]
+    },
+    {
+      "template": ".arckit/templates/au-ai-use-case-register-template.md",
+      "lineCount": 47,
+      "headingCount": 7,
+      "mappedRequirementCount": 4,
+      "mappedRequirements": [
+        "AU-AI-REQ-005",
+        "AU-AI-REQ-006",
+        "AU-AI-REQ-007",
+        "AU-AI-REQ-013"
+      ]
+    },
+    {
+      "template": ".arckit/templates/au-ai-transparency-statement-template.md",
+      "lineCount": 95,
+      "headingCount": 13,
+      "mappedRequirementCount": 3,
+      "mappedRequirements": [
+        "AU-AI-REQ-001",
+        "AU-AI-REQ-015",
+        "AU-AI-REQ-016"
+      ]
+    },
+    {
+      "template": ".arckit/templates/au-ai-impact-assessment-template.md",
+      "lineCount": 204,
+      "headingCount": 35,
+      "mappedRequirementCount": 8,
+      "mappedRequirements": [
+        "AU-AI-REQ-010",
+        "AU-AI-REQ-011",
+        "AU-AI-REQ-012",
+        "AU-AI-REQ-013",
+        "AU-AI-REQ-014",
+        "AU-AI-REQ-017",
+        "AU-AI-REQ-020",
+        "AU-AI-REQ-021"
+      ]
+    },
+    {
+      "template": ".arckit/templates/au-ai-governance-checklist-template.md",
+      "lineCount": 64,
+      "headingCount": 8,
+      "mappedRequirementCount": 12,
+      "mappedRequirements": [
+        "AU-AI-REQ-001",
+        "AU-AI-REQ-003",
+        "AU-AI-REQ-004",
+        "AU-AI-REQ-005",
+        "AU-AI-REQ-008",
+        "AU-AI-REQ-010",
+        "AU-AI-REQ-011",
+        "AU-AI-REQ-013",
+        "AU-AI-REQ-014",
+        "AU-AI-REQ-019",
+        "AU-AI-REQ-020",
+        "AU-AI-REQ-021"
+      ]
+    },
+    {
+      "template": ".arckit/templates/jsp-936-template.md",
+      "lineCount": 60,
+      "headingCount": 8,
+      "mappedRequirementCount": 2,
+      "mappedRequirements": [
+        "AU-AI-REQ-021",
+        "AU-AI-REQ-022"
+      ]
+    },
+    {
+      "template": ".arckit/templates/mlops-template.md",
+      "lineCount": 76,
+      "headingCount": 11,
+      "mappedRequirementCount": 3,
+      "mappedRequirements": [
+        "AU-AI-REQ-013",
+        "AU-AI-REQ-019",
+        "AU-AI-REQ-020"
+      ]
+    }
+  ],
+  "requirementsTotal": 22,
+  "requirementsCovered": 22,
+  "requirementsMissing": [],
+  "result": "PASS"
+}

@@ -1,0 +1,94 @@
+{
+  "scan": "AI-scope residual UK AI-term scan (default + AI-linked paths)",
+  "result": "PASS",
+  "scopeCount": 76,
+  "allowedExceptionCount": 14,
+  "disallowedCount": 0,
+  "allowedExceptions": [
+    {
+      "path": ".arckit/templates/jsp-936-template.md",
+      "line": 7,
+      "text": "No current publicly discoverable Australian Defence-wide equivalent to UK MOD JSP 936 was identified in the AU policy corpus used for this rewrite.",
+      "reason": "required defence source-gap declaration"
+    },
+    {
+      "path": ".arckit/templates/jsp-936-template.md",
+      "line": 56,
+      "text": "If a project explicitly requires historical UK JSP 936 structure for comparison/migration, use:",
+      "reason": "required defence source-gap declaration"
+    },
+    {
+      "path": "arckit-plugin/templates/jsp-936-template.md",
+      "line": 7,
+      "text": "No current publicly discoverable Australian Defence-wide equivalent to UK MOD JSP 936 was identified in the AU policy corpus used for this rewrite.",
+      "reason": "required defence source-gap declaration"
+    },
+    {
+      "path": "arckit-plugin/templates/jsp-936-template.md",
+      "line": 56,
+      "text": "If a project explicitly requires historical UK JSP 936 structure for comparison/migration, use:",
+      "reason": "required defence source-gap declaration"
+    },
+    {
+      "path": ".codex/prompts/arckit.jsp-936.md",
+      "line": 10,
+      "text": "No public Australian Defence-wide equivalent to UK JSP 936 was identified in the AU policy corpus. Default output must therefore be AU-public-source based and include explicit source gaps.",
+      "reason": "required defence source-gap declaration"
+    },
+    {
+      "path": "arckit-plugin/commands/jsp-936.md",
+      "line": 10,
+      "text": "No public Australian Defence-wide equivalent to UK JSP 936 was identified in the AU policy corpus. Default output must therefore be AU-public-source based and include explicit source gaps.",
+      "reason": "required defence source-gap declaration"
+    },
+    {
+      "path": "docs/guides/jsp-936.md",
+      "line": 7,
+      "text": "No public Australian Defence-wide equivalent to UK MOD JSP 936 was identified in the corpus used for this rewrite.",
+      "reason": "required defence source-gap declaration"
+    },
+    {
+      "path": "docs/guides/uk-government/ai-playbook.md",
+      "line": 1,
+      "text": "# Legacy UK AI Playbook Guide (Deprecated)",
+      "reason": "legacy/deprecation marker"
+    },
+    {
+      "path": "arckit-plugin/docs/guides/jsp-936.md",
+      "line": 7,
+      "text": "No public Australian Defence-wide equivalent to UK MOD JSP 936 was identified in the corpus used for this rewrite.",
+      "reason": "required defence source-gap declaration"
+    },
+    {
+      "path": "arckit-plugin/docs/guides/uk-government/ai-playbook.md",
+      "line": 1,
+      "text": "# Legacy UK AI Playbook Guide (Deprecated)",
+      "reason": "legacy/deprecation marker"
+    },
+    {
+      "path": "scripts/bash/migrate-filenames.sh",
+      "line": 72,
+      "text": "[\"jsp936.md\"]=\"ADEF\"  # Alternative name",
+      "reason": "legacy filename migration alias"
+    },
+    {
+      "path": "arckit-plugin/scripts/bash/migrate-filenames.sh",
+      "line": 72,
+      "text": "[\"jsp936.md\"]=\"ADEF\"  # Alternative name",
+      "reason": "legacy filename migration alias"
+    },
+    {
+      "path": "docs/manifest.json",
+      "line": 216,
+      "text": "\"title\": \"Legacy UK AI Playbook (Deprecated)\",",
+      "reason": "legacy/deprecation marker"
+    },
+    {
+      "path": "docs/manifest.json",
+      "line": 486,
+      "text": "\"title\": \"Deprecated AI Playbook Compatibility Stub\",",
+      "reason": "legacy/deprecation marker"
+    }
+  ],
+  "disallowed": []
+}
