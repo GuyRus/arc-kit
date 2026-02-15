@@ -7,6 +7,12 @@ This matrix links each AU AI template section to source evidence.
 - **R** = recommended/strongly recommended
 - **SG** = source-gap/TODO required
 
+## Canonical AI policy anchors used in this matrix
+
+- **Policy for the responsible use of AI in government 2.0** (`docs/policy-sources/au/ai/converted/dta-policy-responsible-ai-gov-v2.txt`)
+- **Guidance for the AI impact assessment tool (PDF-derived text)** (`docs/policy-sources/au/ai/converted/dta-guidance-ai-impact-assessment-tool.txt`)
+- **Australian Government AI technical standard** (`docs/policy-sources/au/ai/converted/dta-australian-government-ai-technical-standard.txt`)
+
 | Template | Section | Requirement IDs | Source anchors |
 |---|---|---|---|
 | au-ai-governance-assessment | In-scope determination | AU-AI-REQ-010, 011 | AI policy lines 537-547; AIA guidance lines 249-280 |

@@ -1,0 +1,40 @@
+ALLOWED	legacy/deprecation marker	.arckit/templates/uk-gov-ai-playbook-template.md:11	Legacy UK content is archived at:
+ALLOWED	legacy/deprecation marker	.arckit/templates/uk-gov-atrs-template.md:9	Legacy UK content is archived at:
+ALLOWED	required defence source-gap declaration	.arckit/templates/jsp-936-template.md:7	No current publicly discoverable Australian Defence-wide equivalent to UK MOD JSP 936 was identified in the AU policy corpus used for this rewrite.
+ALLOWED	legacy/deprecation marker	.arckit/templates/jsp-936-template.md:54	## 6. Legacy UK reference (read-only)
+ALLOWED	required defence source-gap declaration	.arckit/templates/jsp-936-template.md:56	If a project explicitly requires historical UK JSP 936 structure for comparison/migration, use:
+ALLOWED	legacy/deprecation marker	arckit-plugin/templates/uk-gov-ai-playbook-template.md:11	Legacy UK content is archived at:
+ALLOWED	legacy/deprecation marker	arckit-plugin/templates/uk-gov-atrs-template.md:9	Legacy UK content is archived at:
+ALLOWED	required defence source-gap declaration	arckit-plugin/templates/jsp-936-template.md:7	No current publicly discoverable Australian Defence-wide equivalent to UK MOD JSP 936 was identified in the AU policy corpus used for this rewrite.
+ALLOWED	legacy/deprecation marker	arckit-plugin/templates/jsp-936-template.md:54	## 6. Legacy UK reference (read-only)
+ALLOWED	required defence source-gap declaration	arckit-plugin/templates/jsp-936-template.md:56	If a project explicitly requires historical UK JSP 936 structure for comparison/migration, use:
+ALLOWED	required anti-regression control wording	.codex/prompts/arckit.ai-playbook.md:45	6. Do not use UK AI policy constructs in default outputs.
+ALLOWED	required defence source-gap declaration	.codex/prompts/arckit.jsp-936.md:10	No public Australian Defence-wide equivalent to UK JSP 936 was identified in the AU policy corpus. Default output must therefore be AU-public-source based and include explicit source gaps.
+ALLOWED	required anti-regression control wording	.codex/prompts/arckit.jsp-936.md:32	4. Do not produce UK-modeled approval structures in the default output.
+ALLOWED	required defence source-gap declaration	.codex/prompts/arckit.jsp-936.md:33	5. If a user explicitly requests UK historical comparison, point to:
+ALLOWED	required anti-regression control wording	arckit-plugin/commands/ai-playbook.md:45	6. Do not use UK AI policy constructs in default outputs.
+ALLOWED	required defence source-gap declaration	arckit-plugin/commands/jsp-936.md:10	No public Australian Defence-wide equivalent to UK JSP 936 was identified in the AU policy corpus. Default output must therefore be AU-public-source based and include explicit source gaps.
+ALLOWED	required anti-regression control wording	arckit-plugin/commands/jsp-936.md:32	4. Do not produce UK-modeled approval structures in the default output.
+ALLOWED	required defence source-gap declaration	arckit-plugin/commands/jsp-936.md:33	5. If a user explicitly requests UK historical comparison, point to:
+ALLOWED	required defence source-gap declaration	docs/guides/jsp-936.md:7	No public Australian Defence-wide equivalent to UK MOD JSP 936 was identified in the corpus used for this rewrite.
+ALLOWED	legacy/deprecation marker	docs/guides/jsp-936.md:24	## Legacy UK comparison
+ALLOWED	legacy/deprecation marker	docs/guides/uk-government/ai-playbook.md:1	# Legacy UK AI Playbook Guide (Deprecated)
+ALLOWED	legacy/deprecation marker	docs/guides/uk-government/ai-playbook.md:3	This guide is retained for legacy UK reference only.
+ALLOWED	legacy/deprecation marker	docs/guides/uk-government/ai-playbook.md:8	Legacy UK materials should not be used as AU policy defaults.
+ALLOWED	legacy/deprecation marker	docs/guides/uk-government/algorithmic-transparency.md:1	# Legacy UK Algorithmic Transparency Guide (Deprecated)
+ALLOWED	legacy/deprecation marker	docs/guides/uk-government/algorithmic-transparency.md:3	This guide is retained for legacy UK reference only.
+ALLOWED	legacy/deprecation marker	docs/guides/uk-government/algorithmic-transparency.md:8	Legacy UK materials should not be used as AU policy defaults.
+ALLOWED	required defence source-gap declaration	arckit-plugin/docs/guides/jsp-936.md:7	No public Australian Defence-wide equivalent to UK MOD JSP 936 was identified in the corpus used for this rewrite.
+ALLOWED	legacy/deprecation marker	arckit-plugin/docs/guides/jsp-936.md:24	## Legacy UK comparison
+ALLOWED	legacy/deprecation marker	arckit-plugin/docs/guides/uk-government/ai-playbook.md:1	# Legacy UK AI Playbook Guide (Deprecated)
+ALLOWED	legacy/deprecation marker	arckit-plugin/docs/guides/uk-government/ai-playbook.md:3	This guide is retained for legacy UK reference only.
+ALLOWED	legacy/deprecation marker	arckit-plugin/docs/guides/uk-government/ai-playbook.md:8	Legacy UK materials should not be used as AU policy defaults.
+ALLOWED	legacy/deprecation marker	arckit-plugin/docs/guides/uk-government/algorithmic-transparency.md:1	# Legacy UK Algorithmic Transparency Guide (Deprecated)
+ALLOWED	legacy/deprecation marker	arckit-plugin/docs/guides/uk-government/algorithmic-transparency.md:3	This guide is retained for legacy UK reference only.
+ALLOWED	legacy/deprecation marker	arckit-plugin/docs/guides/uk-government/algorithmic-transparency.md:8	Legacy UK materials should not be used as AU policy defaults.
+ALLOWED	legacy/deprecation marker	docs/manifest.json:216	"title": "Legacy UK AI Playbook (Deprecated)",
+ALLOWED	legacy/deprecation marker	docs/manifest.json:217	"category": "Legacy UK"
+ALLOWED	legacy/deprecation marker	docs/manifest.json:226	"title": "Legacy UK Algorithmic Transparency (Deprecated)",
+ALLOWED	legacy/deprecation marker	docs/manifest.json:227	"category": "Legacy UK"
+ALLOWED	legacy/deprecation marker	docs/manifest.json:487	"category": "Legacy UK"
+ALLOWED	legacy/deprecation marker	docs/manifest.json:492	"category": "Legacy UK"

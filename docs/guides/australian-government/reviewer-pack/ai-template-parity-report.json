@@ -1,289 +1,442 @@
 {
-  "check": "AI mirror parity",
-  "pairCount": 40,
+  "check": "Template parity: .arckit/templates vs arckit-plugin/templates",
+  "timestamp": "2026-02-15T22:54:08.919540+11:00",
+  "pairCount": 54,
   "mismatchCount": 0,
+  "result": "PASS",
   "mismatches": [],
   "pairs": [
     {
-      "left": ".arckit/templates/au-ai-governance-assessment-template.md",
-      "right": "arckit-plugin/templates/au-ai-governance-assessment-template.md",
+      "relativePath": "adr-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "2e734109cda923083fd3929247232c1c3f1935c6942861503f97ac663331c5ba",
+      "rightSha256": "2e734109cda923083fd3929247232c1c3f1935c6942861503f97ac663331c5ba",
+      "match": true
+    },
+    {
+      "relativePath": "analysis-report-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "2c6e794c717d7519b33e15c928cf3324a8eaf3bac010dbbffa18ab6672bc126d",
+      "rightSha256": "2c6e794c717d7519b33e15c928cf3324a8eaf3bac010dbbffa18ab6672bc126d",
+      "match": true
+    },
+    {
+      "relativePath": "architecture-diagram-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "2f6180896ad7198767b211b0d1dd4ec157ca51cf2ae990ede8a155c8e9cf6550",
+      "rightSha256": "2f6180896ad7198767b211b0d1dd4ec157ca51cf2ae990ede8a155c8e9cf6550",
+      "match": true
+    },
+    {
+      "relativePath": "architecture-principles-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "429cea7a013d841a4ba119b13346e105b265ab37204106605773c1d1d7c7cf85",
+      "rightSha256": "429cea7a013d841a4ba119b13346e105b265ab37204106605773c1d1d7c7cf85",
+      "match": true
+    },
+    {
+      "relativePath": "architecture-strategy-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "a39a5e8c85a034573e9ca6c06fd139369b85a4555ead1de5913a5b5c4bae3d26",
+      "rightSha256": "a39a5e8c85a034573e9ca6c06fd139369b85a4555ead1de5913a5b5c4bae3d26",
+      "match": true
+    },
+    {
+      "relativePath": "au-ai-governance-assessment-template.md",
+      "leftExists": true,
+      "rightExists": true,
       "leftSha256": "6f1decc27e0cf39735de81376e157e7c09bc7c34c83fbeaebdb570d3a5c44e3f",
       "rightSha256": "6f1decc27e0cf39735de81376e157e7c09bc7c34c83fbeaebdb570d3a5c44e3f",
       "match": true
     },
     {
-      "left": ".arckit/templates/au-ai-use-case-register-template.md",
-      "right": "arckit-plugin/templates/au-ai-use-case-register-template.md",
-      "leftSha256": "90a5dabffc3ede414b992af6b4f57679500c70ca18d6448517367e3c95eec97f",
-      "rightSha256": "90a5dabffc3ede414b992af6b4f57679500c70ca18d6448517367e3c95eec97f",
-      "match": true
-    },
-    {
-      "left": ".arckit/templates/au-ai-transparency-statement-template.md",
-      "right": "arckit-plugin/templates/au-ai-transparency-statement-template.md",
-      "leftSha256": "db5630c2f121b00d5ba79376544930f1d877fcc5e574fe14d158815a63bca0fe",
-      "rightSha256": "db5630c2f121b00d5ba79376544930f1d877fcc5e574fe14d158815a63bca0fe",
-      "match": true
-    },
-    {
-      "left": ".arckit/templates/au-ai-impact-assessment-template.md",
-      "right": "arckit-plugin/templates/au-ai-impact-assessment-template.md",
-      "leftSha256": "0566610781dd1f2f6d499caf27ddbf64160b98231c84faa0c771c9d78f1efb2c",
-      "rightSha256": "0566610781dd1f2f6d499caf27ddbf64160b98231c84faa0c771c9d78f1efb2c",
-      "match": true
-    },
-    {
-      "left": ".arckit/templates/au-ai-governance-checklist-template.md",
-      "right": "arckit-plugin/templates/au-ai-governance-checklist-template.md",
+      "relativePath": "au-ai-governance-checklist-template.md",
+      "leftExists": true,
+      "rightExists": true,
       "leftSha256": "25a03700674ddca4ae5f238344e964db29ab003090345d8fd1318570ce7d808b",
       "rightSha256": "25a03700674ddca4ae5f238344e964db29ab003090345d8fd1318570ce7d808b",
       "match": true
     },
     {
-      "left": ".arckit/templates/uk-gov-ai-playbook-template.md",
-      "right": "arckit-plugin/templates/uk-gov-ai-playbook-template.md",
-      "leftSha256": "0441f91858f3f22af20aeda7aaa11292dc3d97be2bb5f60606e8b7543922fb50",
-      "rightSha256": "0441f91858f3f22af20aeda7aaa11292dc3d97be2bb5f60606e8b7543922fb50",
+      "relativePath": "au-ai-impact-assessment-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "360f3d67452d17d6b244f79185326418654dbcf9a52746e1c36b163be1e95156",
+      "rightSha256": "360f3d67452d17d6b244f79185326418654dbcf9a52746e1c36b163be1e95156",
       "match": true
     },
     {
-      "left": ".arckit/templates/uk-gov-atrs-template.md",
-      "right": "arckit-plugin/templates/uk-gov-atrs-template.md",
-      "leftSha256": "d84d5889650485a1d1eab82e8924ea0f8c3e2c61b606e56116c5bc86a36f0e5e",
-      "rightSha256": "d84d5889650485a1d1eab82e8924ea0f8c3e2c61b606e56116c5bc86a36f0e5e",
+      "relativePath": "au-ai-transparency-statement-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "db5630c2f121b00d5ba79376544930f1d877fcc5e574fe14d158815a63bca0fe",
+      "rightSha256": "db5630c2f121b00d5ba79376544930f1d877fcc5e574fe14d158815a63bca0fe",
       "match": true
     },
     {
-      "left": ".arckit/templates/jsp-936-template.md",
-      "right": "arckit-plugin/templates/jsp-936-template.md",
+      "relativePath": "au-ai-use-case-register-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "90a5dabffc3ede414b992af6b4f57679500c70ca18d6448517367e3c95eec97f",
+      "rightSha256": "90a5dabffc3ede414b992af6b4f57679500c70ca18d6448517367e3c95eec97f",
+      "match": true
+    },
+    {
+      "relativePath": "aws-research-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "b03f3ab2c3eb71aaaa3f7887d3108b4dee8b857f51170fc9c9a60003dc25d01b",
+      "rightSha256": "b03f3ab2c3eb71aaaa3f7887d3108b4dee8b857f51170fc9c9a60003dc25d01b",
+      "match": true
+    },
+    {
+      "relativePath": "azure-research-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "5177d475ca8adbe6d686822be5a16f586c3d7caf52ce1cf0754a4b71b6bcc44e",
+      "rightSha256": "5177d475ca8adbe6d686822be5a16f586c3d7caf52ce1cf0754a4b71b6bcc44e",
+      "match": true
+    },
+    {
+      "relativePath": "backlog-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "1ebb6832b3017a4b54f6f6d2161bbfe419b7b72196b70dc6c812503f6dacfaaf",
+      "rightSha256": "1ebb6832b3017a4b54f6f6d2161bbfe419b7b72196b70dc6c812503f6dacfaaf",
+      "match": true
+    },
+    {
+      "relativePath": "data-mesh-contract-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "88d1d087087c49a0593c4639ec58399c1264fec8093486b71a59375b81a4aad6",
+      "rightSha256": "88d1d087087c49a0593c4639ec58399c1264fec8093486b71a59375b81a4aad6",
+      "match": true
+    },
+    {
+      "relativePath": "data-model-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "f2f9b17394305e4536ded993283f90f0de8151b900b778bff62cf2e228acd52c",
+      "rightSha256": "f2f9b17394305e4536ded993283f90f0de8151b900b778bff62cf2e228acd52c",
+      "match": true
+    },
+    {
+      "relativePath": "datascout-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "2a56bcf6ed2cc19110d95d68073a040aa54346e77d455470d3135dcbc97dae64",
+      "rightSha256": "2a56bcf6ed2cc19110d95d68073a040aa54346e77d455470d3135dcbc97dae64",
+      "match": true
+    },
+    {
+      "relativePath": "devops-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "9ad8780647d6f133bf32dd95cda7e83d64c1dde9b953f14018c48b15bd46e380",
+      "rightSha256": "9ad8780647d6f133bf32dd95cda7e83d64c1dde9b953f14018c48b15bd46e380",
+      "match": true
+    },
+    {
+      "relativePath": "dld-review-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "e681d7902e2a8faa2c778152a7578766fc7c54f801bb45d66ccee36fe1cbf133",
+      "rightSha256": "e681d7902e2a8faa2c778152a7578766fc7c54f801bb45d66ccee36fe1cbf133",
+      "match": true
+    },
+    {
+      "relativePath": "dos-requirements-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "465c44bd05d801e7418abdb2fe69e9f98542c8b85bf1cad8b9728cc1639b3531",
+      "rightSha256": "465c44bd05d801e7418abdb2fe69e9f98542c8b85bf1cad8b9728cc1639b3531",
+      "match": true
+    },
+    {
+      "relativePath": "dpia-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "bfa4054621438ea54d842384a72ed8b1eac1897f638316917c47438303d6d0fb",
+      "rightSha256": "bfa4054621438ea54d842384a72ed8b1eac1897f638316917c47438303d6d0fb",
+      "match": true
+    },
+    {
+      "relativePath": "evaluation-criteria-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "07557956ae8a9e953ace671c807d4d1cbe2cf9136199640538c850955a7d2dd3",
+      "rightSha256": "07557956ae8a9e953ace671c807d4d1cbe2cf9136199640538c850955a7d2dd3",
+      "match": true
+    },
+    {
+      "relativePath": "finops-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "c6e84e0f6ee95b083490fd83f5a619886323a0f9a8efca7dc3ba52fa74f24773",
+      "rightSha256": "c6e84e0f6ee95b083490fd83f5a619886323a0f9a8efca7dc3ba52fa74f24773",
+      "match": true
+    },
+    {
+      "relativePath": "gcloud-clarify-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "52f9562042fb6cdc556db39ca8bd316e5c687716c1f16ea570cdbc6e1ac2e6e8",
+      "rightSha256": "52f9562042fb6cdc556db39ca8bd316e5c687716c1f16ea570cdbc6e1ac2e6e8",
+      "match": true
+    },
+    {
+      "relativePath": "gcloud-requirements-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "aa4f4dfc586d627806183ea12e716be340bf89d364abc4eabffa82498176a602",
+      "rightSha256": "aa4f4dfc586d627806183ea12e716be340bf89d364abc4eabffa82498176a602",
+      "match": true
+    },
+    {
+      "relativePath": "gcp-research-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "4a09dbfb4a4aa819be15df36ace36d515b0d8451a256a797ddb6465a000e0a08",
+      "rightSha256": "4a09dbfb4a4aa819be15df36ace36d515b0d8451a256a797ddb6465a000e0a08",
+      "match": true
+    },
+    {
+      "relativePath": "hld-review-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "35cf05d58825c369b4a7d3b4e601620c587c1955b308f5dde12928ba27fcea4b",
+      "rightSha256": "35cf05d58825c369b4a7d3b4e601620c587c1955b308f5dde12928ba27fcea4b",
+      "match": true
+    },
+    {
+      "relativePath": "jsp-936-template.md",
+      "leftExists": true,
+      "rightExists": true,
       "leftSha256": "d1f59764375529f7197dad1d77992251272137675c6f4726b1cb3dfdd610c44c",
       "rightSha256": "d1f59764375529f7197dad1d77992251272137675c6f4726b1cb3dfdd610c44c",
       "match": true
     },
     {
-      "left": ".arckit/templates/mlops-template.md",
-      "right": "arckit-plugin/templates/mlops-template.md",
-      "leftSha256": "710dcc5e8d69d012dd02cadc9b17a2f9e5eac401f035748955f7c53a0a64f3e4",
-      "rightSha256": "710dcc5e8d69d012dd02cadc9b17a2f9e5eac401f035748955f7c53a0a64f3e4",
-      "match": true
-    },
-    {
-      "left": ".arckit/templates/legacy-uk/uk-gov-ai-playbook-template.md",
-      "right": "arckit-plugin/templates/legacy-uk/uk-gov-ai-playbook-template.md",
-      "leftSha256": "c7c729ee3395e68c31c5776ff9280826e654d4c80aa65531da3b3cc8c7420191",
-      "rightSha256": "c7c729ee3395e68c31c5776ff9280826e654d4c80aa65531da3b3cc8c7420191",
-      "match": true
-    },
-    {
-      "left": ".arckit/templates/legacy-uk/uk-gov-atrs-template.md",
-      "right": "arckit-plugin/templates/legacy-uk/uk-gov-atrs-template.md",
-      "leftSha256": "015b336ba23c6e4bc1937a4e5cb919c2f0e0048358956d0a62041d9d033db567",
-      "rightSha256": "015b336ba23c6e4bc1937a4e5cb919c2f0e0048358956d0a62041d9d033db567",
-      "match": true
-    },
-    {
-      "left": ".arckit/templates/legacy-uk/jsp-936-template.md",
-      "right": "arckit-plugin/templates/legacy-uk/jsp-936-template.md",
+      "relativePath": "legacy-uk/jsp-936-template.md",
+      "leftExists": true,
+      "rightExists": true,
       "leftSha256": "56d0beb91f036aefc33e9a16d84ee2341c591d1f04cc842521f635a645f05412",
       "rightSha256": "56d0beb91f036aefc33e9a16d84ee2341c591d1f04cc842521f635a645f05412",
       "match": true
     },
     {
-      "left": "docs/guides/ai-playbook.md",
-      "right": "arckit-plugin/docs/guides/ai-playbook.md",
-      "leftSha256": "023fd389bac86dbe6b8394453b6476ab7de3290126d4921c2f9cd30911bc7fac",
-      "rightSha256": "023fd389bac86dbe6b8394453b6476ab7de3290126d4921c2f9cd30911bc7fac",
+      "relativePath": "legacy-uk/uk-gov-ai-playbook-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "c7c729ee3395e68c31c5776ff9280826e654d4c80aa65531da3b3cc8c7420191",
+      "rightSha256": "c7c729ee3395e68c31c5776ff9280826e654d4c80aa65531da3b3cc8c7420191",
       "match": true
     },
     {
-      "left": "docs/guides/atrs.md",
-      "right": "arckit-plugin/docs/guides/atrs.md",
-      "leftSha256": "b60271bd57ac17ee8ef6520af910944f5f598ba6eabb66d444fe5d579a36ba07",
-      "rightSha256": "b60271bd57ac17ee8ef6520af910944f5f598ba6eabb66d444fe5d579a36ba07",
+      "relativePath": "legacy-uk/uk-gov-atrs-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "015b336ba23c6e4bc1937a4e5cb919c2f0e0048358956d0a62041d9d033db567",
+      "rightSha256": "015b336ba23c6e4bc1937a4e5cb919c2f0e0048358956d0a62041d9d033db567",
       "match": true
     },
     {
-      "left": "docs/guides/jsp-936.md",
-      "right": "arckit-plugin/docs/guides/jsp-936.md",
-      "leftSha256": "257fcc2acf21157e553a2e2ddcd25cf5cc57e8edb0118f78954fa1aebfde4e94",
-      "rightSha256": "257fcc2acf21157e553a2e2ddcd25cf5cc57e8edb0118f78954fa1aebfde4e94",
+      "relativePath": "mlops-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "710dcc5e8d69d012dd02cadc9b17a2f9e5eac401f035748955f7c53a0a64f3e4",
+      "rightSha256": "710dcc5e8d69d012dd02cadc9b17a2f9e5eac401f035748955f7c53a0a64f3e4",
       "match": true
     },
     {
-      "left": "docs/guides/mlops.md",
-      "right": "arckit-plugin/docs/guides/mlops.md",
-      "leftSha256": "23eb55fe26046ee4d5bc12ff036640fae790d1fff937e7e2bdf9b05d813531f8",
-      "rightSha256": "23eb55fe26046ee4d5bc12ff036640fae790d1fff937e7e2bdf9b05d813531f8",
+      "relativePath": "mod-secure-by-design-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "6044de06f9f1e8a82fa18334e7c13331af3918bd18eb251557df0ab2826162b1",
+      "rightSha256": "6044de06f9f1e8a82fa18334e7c13331af3918bd18eb251557df0ab2826162b1",
       "match": true
     },
     {
-      "left": "docs/guides/uk-government/ai-playbook.md",
-      "right": "arckit-plugin/docs/guides/uk-government/ai-playbook.md",
-      "leftSha256": "55ede4a4ba2e433ce092d59476398e8280b34c22ccf5b77866e01540fd620966",
-      "rightSha256": "55ede4a4ba2e433ce092d59476398e8280b34c22ccf5b77866e01540fd620966",
+      "relativePath": "operationalize-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "6d6cf497e312300ea8ec194fac80401a2866c30233743533334b9db2e379a007",
+      "rightSha256": "6d6cf497e312300ea8ec194fac80401a2866c30233743533334b9db2e379a007",
       "match": true
     },
     {
-      "left": "docs/guides/uk-government/algorithmic-transparency.md",
-      "right": "arckit-plugin/docs/guides/uk-government/algorithmic-transparency.md",
-      "leftSha256": "a8a3239539661c905dc93c0644f1a06be5f575a8b9953c326ed37da998c07911",
-      "rightSha256": "a8a3239539661c905dc93c0644f1a06be5f575a8b9953c326ed37da998c07911",
+      "relativePath": "pages-template.html",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "4ead4752cf5d3f3b6f220cbcf603c0cc9b864b03ba36146e960de745fe63fd48",
+      "rightSha256": "4ead4752cf5d3f3b6f220cbcf603c0cc9b864b03ba36146e960de745fe63fd48",
       "match": true
     },
     {
-      "left": "scripts/bash/generate-document-id.sh",
-      "right": "arckit-plugin/scripts/bash/generate-document-id.sh",
-      "leftSha256": "f1966d3bb250f47540fb4779e10d9823a155047362b0b04f0be2ab6e317e0db2",
-      "rightSha256": "f1966d3bb250f47540fb4779e10d9823a155047362b0b04f0be2ab6e317e0db2",
+      "relativePath": "platform-design-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "483d11e9394cb749b8771ba0fdc415419d4fe83cf244a5504708a8fc2862b80b",
+      "rightSha256": "483d11e9394cb749b8771ba0fdc415419d4fe83cf244a5504708a8fc2862b80b",
       "match": true
     },
     {
-      "left": "scripts/bash/migrate-filenames.sh",
-      "right": "arckit-plugin/scripts/bash/migrate-filenames.sh",
-      "leftSha256": "6588a5a28ed0b682430261211dbeb32a13343f6d625278cc34acb6e5944261a8",
-      "rightSha256": "6588a5a28ed0b682430261211dbeb32a13343f6d625278cc34acb6e5944261a8",
+      "relativePath": "principles-compliance-assessment-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "a13fa5374986c6ecd3499934ce3aa7052d5d509c483765b90b07477fabc6e6a1",
+      "rightSha256": "a13fa5374986c6ecd3499934ce3aa7052d5d509c483765b90b07477fabc6e6a1",
       "match": true
     },
     {
-      "left": "scripts/bash/create-project.sh",
-      "right": "arckit-plugin/scripts/bash/create-project.sh",
-      "leftSha256": "77a097e15c75ba353f1d1b6df48b8ceee15798036363ebf6a2ad441dd502e430",
-      "rightSha256": "77a097e15c75ba353f1d1b6df48b8ceee15798036363ebf6a2ad441dd502e430",
+      "relativePath": "project-plan-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "25b8dfffee394f8910d881da16fd25e4bc6290eccd1c000e54afcb9d851a564c",
+      "rightSha256": "25b8dfffee394f8910d881da16fd25e4bc6290eccd1c000e54afcb9d851a564c",
       "match": true
     },
     {
-      "left": ".codex/prompts/arckit.ai-playbook.md",
-      "right": "arckit-plugin/commands/ai-playbook.md",
-      "leftSha256": "4c9059185d252be0d06a306bff3dcb3e8eced3ee7c4938c27d720fa60521ac02",
-      "rightSha256": "4c9059185d252be0d06a306bff3dcb3e8eced3ee7c4938c27d720fa60521ac02",
+      "relativePath": "requirements-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "f86dbbb5a97d1108cd2f751939832ad1e362f3476ddb1e3efbc23c40b433585a",
+      "rightSha256": "f86dbbb5a97d1108cd2f751939832ad1e362f3476ddb1e3efbc23c40b433585a",
       "match": true
     },
     {
-      "left": ".codex/prompts/arckit.atrs.md",
-      "right": "arckit-plugin/commands/atrs.md",
-      "leftSha256": "ecc6cdb6d1f3988914e5de10bd4ec15863cfd6550d31b1771572311b7d47891b",
-      "rightSha256": "ecc6cdb6d1f3988914e5de10bd4ec15863cfd6550d31b1771572311b7d47891b",
+      "relativePath": "research-findings-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "d22395805158bba64ca2b476062ca2d2cefd76632f26180cdaeb384138e8fb01",
+      "rightSha256": "d22395805158bba64ca2b476062ca2d2cefd76632f26180cdaeb384138e8fb01",
       "match": true
     },
     {
-      "left": ".codex/prompts/arckit.jsp-936.md",
-      "right": "arckit-plugin/commands/jsp-936.md",
-      "leftSha256": "2672070d8e9b66ffbb91e1175558e35db07ff7d76550b9c17d68b13d485360f2",
-      "rightSha256": "2672070d8e9b66ffbb91e1175558e35db07ff7d76550b9c17d68b13d485360f2",
+      "relativePath": "risk-register-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "5ccf3b246b7ac217214cc2be407f39b374d056e28d789fe40e4984f1b41cb1d3",
+      "rightSha256": "5ccf3b246b7ac217214cc2be407f39b374d056e28d789fe40e4984f1b41cb1d3",
       "match": true
     },
     {
-      "left": ".codex/prompts/arckit.mlops.md",
-      "right": "arckit-plugin/commands/mlops.md",
-      "leftSha256": "7788bc493f0f9e4eb409f402e0d79bd22556603deae71222c21da8eaf533f0b7",
-      "rightSha256": "7788bc493f0f9e4eb409f402e0d79bd22556603deae71222c21da8eaf533f0b7",
+      "relativePath": "roadmap-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "f9ce3bc43aaa0dfb3c5375101be10b1802d42a188a97c32112b8e0f553bef5a5",
+      "rightSha256": "f9ce3bc43aaa0dfb3c5375101be10b1802d42a188a97c32112b8e0f553bef5a5",
       "match": true
     },
     {
-      "left": ".codex/prompts/arckit.customize.md",
-      "right": "arckit-plugin/commands/customize.md",
-      "leftSha256": "ec3be84dacc1626642776c572305f7d7e6cd5cf3c02624ad6840d457825c394d",
-      "rightSha256": "ec3be84dacc1626642776c572305f7d7e6cd5cf3c02624ad6840d457825c394d",
+      "relativePath": "service-assessment-prep-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "c359485cfad1256808d84719ff7b3cb11142d1de76955c162b402bbd21d80c82",
+      "rightSha256": "c359485cfad1256808d84719ff7b3cb11142d1de76955c162b402bbd21d80c82",
       "match": true
     },
     {
-      "left": ".codex/prompts/arckit.pages.md",
-      "right": "arckit-plugin/commands/pages.md",
-      "leftSha256": "40d6f62a2d3c3d695d7401b9fe443d682d6b9a498a3bf5c24c142f402267d4d7",
-      "rightSha256": "40d6f62a2d3c3d695d7401b9fe443d682d6b9a498a3bf5c24c142f402267d4d7",
+      "relativePath": "servicenow-design-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "99ee01fb1a327f908dea9daa141614acecce0ec30a5eab7e76d7ca76f75ae225",
+      "rightSha256": "99ee01fb1a327f908dea9daa141614acecce0ec30a5eab7e76d7ca76f75ae225",
       "match": true
     },
     {
-      "left": ".codex/prompts/arckit.story.md",
-      "right": "arckit-plugin/commands/story.md",
-      "leftSha256": "0ad253d9df96937b131e434869a70f03c46c51908c8bef851833c94ae5980c29",
-      "rightSha256": "0ad253d9df96937b131e434869a70f03c46c51908c8bef851833c94ae5980c29",
+      "relativePath": "sobc-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "cde098e906cfc1f5e0d5c8e3d4af5760192c6f0b25830ba6825a393e77b4dfc8",
+      "rightSha256": "cde098e906cfc1f5e0d5c8e3d4af5760192c6f0b25830ba6825a393e77b4dfc8",
       "match": true
     },
     {
-      "left": ".codex/prompts/arckit.strategy.md",
-      "right": "arckit-plugin/commands/strategy.md",
-      "leftSha256": "bab82b4b84fc7c93397d2f448de6f88741a39b3c6999bc0d968f2a1f8555aa30",
-      "rightSha256": "bab82b4b84fc7c93397d2f448de6f88741a39b3c6999bc0d968f2a1f8555aa30",
+      "relativePath": "sow-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "c7074e8d4297712469f5ae00ab4ba4a4bcee6387266f8eb4ab2217db86bb5d4b",
+      "rightSha256": "c7074e8d4297712469f5ae00ab4ba4a4bcee6387266f8eb4ab2217db86bb5d4b",
       "match": true
     },
     {
-      "left": ".codex/prompts/arckit.plan.md",
-      "right": "arckit-plugin/commands/plan.md",
-      "leftSha256": "ab978888319e146da0ca61ea322aa1501d69c0e72222eef0e3d4128c3f40039d",
-      "rightSha256": "ab978888319e146da0ca61ea322aa1501d69c0e72222eef0e3d4128c3f40039d",
+      "relativePath": "stakeholder-drivers-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "bd42621e4971f2abb5d2aa34a6d06957324e80bbf362b9b37020267276dd761f",
+      "rightSha256": "bd42621e4971f2abb5d2aa34a6d06957324e80bbf362b9b37020267276dd761f",
       "match": true
     },
     {
-      "left": ".codex/prompts/arckit.wardley.md",
-      "right": "arckit-plugin/commands/wardley.md",
-      "leftSha256": "221f2e39331001954df95b0ac38a3f0653c7022bb5c9197d656b3eeaa4607af5",
-      "rightSha256": "221f2e39331001954df95b0ac38a3f0653c7022bb5c9197d656b3eeaa4607af5",
+      "relativePath": "story-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "8ffd554cbc72d2f51f36a964f9bce065444b7fecf150f0b5731e62409b0ca1a9",
+      "rightSha256": "8ffd554cbc72d2f51f36a964f9bce065444b7fecf150f0b5731e62409b0ca1a9",
       "match": true
     },
     {
-      "left": ".codex/prompts/arckit.analyze.md",
-      "right": "arckit-plugin/commands/analyze.md",
-      "leftSha256": "3aabcfa2f7cf29c23b8cf8931b5d758e1c7a432f7f5ec0dc2b1edef1e14e8568",
-      "rightSha256": "3aabcfa2f7cf29c23b8cf8931b5d758e1c7a432f7f5ec0dc2b1edef1e14e8568",
+      "relativePath": "tcop-review-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "76de4dc061ccdc2e944f8a1d42bd147b8a779525721cbbc982e31e7a5bbd30e1",
+      "rightSha256": "76de4dc061ccdc2e944f8a1d42bd147b8a779525721cbbc982e31e7a5bbd30e1",
       "match": true
     },
     {
-      "left": ".codex/prompts/arckit.diagram.md",
-      "right": "arckit-plugin/commands/diagram.md",
-      "leftSha256": "3cd9e552a4d69ba71bb553195ff9f96cda2f6967881407c0d32b71c5f63a1ff7",
-      "rightSha256": "3cd9e552a4d69ba71bb553195ff9f96cda2f6967881407c0d32b71c5f63a1ff7",
+      "relativePath": "traceability-matrix-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "0d4c8e680d78208e39646f2f1100eb79b015f411260ef6153fc0f556271a19cc",
+      "rightSha256": "0d4c8e680d78208e39646f2f1100eb79b015f411260ef6153fc0f556271a19cc",
       "match": true
     },
     {
-      "left": ".codex/prompts/arckit.servicenow.md",
-      "right": "arckit-plugin/commands/servicenow.md",
-      "leftSha256": "deb70765395aa5734910840c29ed524af303e742b02d543e16a63d6f44824b14",
-      "rightSha256": "deb70765395aa5734910840c29ed524af303e742b02d543e16a63d6f44824b14",
+      "relativePath": "uk-gov-ai-playbook-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "0441f91858f3f22af20aeda7aaa11292dc3d97be2bb5f60606e8b7543922fb50",
+      "rightSha256": "0441f91858f3f22af20aeda7aaa11292dc3d97be2bb5f60606e8b7543922fb50",
       "match": true
     },
     {
-      "left": ".codex/prompts/arckit.tcop.md",
-      "right": "arckit-plugin/commands/tcop.md",
-      "leftSha256": "610e4eb8a58694e53b093d64ea07733fa86a07ad7af60827ef0993cdc93b1b41",
-      "rightSha256": "610e4eb8a58694e53b093d64ea07733fa86a07ad7af60827ef0993cdc93b1b41",
+      "relativePath": "uk-gov-atrs-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "d84d5889650485a1d1eab82e8924ea0f8c3e2c61b606e56116c5bc86a36f0e5e",
+      "rightSha256": "d84d5889650485a1d1eab82e8924ea0f8c3e2c61b606e56116c5bc86a36f0e5e",
       "match": true
     },
     {
-      "left": ".codex/prompts/arckit.principles-compliance.md",
-      "right": "arckit-plugin/commands/principles-compliance.md",
-      "leftSha256": "6fbc9638f9a454bb944d81645a122c359982964301670b644808fdc88f57121c",
-      "rightSha256": "6fbc9638f9a454bb944d81645a122c359982964301670b644808fdc88f57121c",
+      "relativePath": "ukgov-secure-by-design-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "88d196f8f50f94e57bbd5bd90132571c05fd30a92aceaf6dc008ebc3d1173566",
+      "rightSha256": "88d196f8f50f94e57bbd5bd90132571c05fd30a92aceaf6dc008ebc3d1173566",
       "match": true
     },
     {
-      "left": ".codex/prompts/arckit.roadmap.md",
-      "right": "arckit-plugin/commands/roadmap.md",
-      "leftSha256": "9f7737fb8886b2a152a255696d3b2007b86026a16842746ea91d68477959ea98",
-      "rightSha256": "9f7737fb8886b2a152a255696d3b2007b86026a16842746ea91d68477959ea98",
+      "relativePath": "vendor-scoring-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "e123311d8133c9175e4dc8dceb989f08f3391ea0a68f11a4baddab96a665a0d2",
+      "rightSha256": "e123311d8133c9175e4dc8dceb989f08f3391ea0a68f11a4baddab96a665a0d2",
       "match": true
     },
     {
-      "left": ".codex/prompts/arckit.service-assessment.md",
-      "right": "arckit-plugin/commands/service-assessment.md",
-      "leftSha256": "05c1035a9dbbaa0e86cb0e3a2ebcd9cb7e95abbecbf441ee077d50192bc63abf",
-      "rightSha256": "05c1035a9dbbaa0e86cb0e3a2ebcd9cb7e95abbecbf441ee077d50192bc63abf",
-      "match": true
-    },
-    {
-      "left": ".codex/prompts/arckit.secure.md",
-      "right": "arckit-plugin/commands/secure.md",
-      "leftSha256": "7cb33590614093965911e1cf481de3e11f17c5336b208399817532ea6b2e2908",
-      "rightSha256": "7cb33590614093965911e1cf481de3e11f17c5336b208399817532ea6b2e2908",
-      "match": true
-    },
-    {
-      "left": ".codex/prompts/arckit.dpia.md",
-      "right": "arckit-plugin/commands/dpia.md",
-      "leftSha256": "b400f2eab184bee8cba15b90bc06025a7fbf4cd08040ebad39282e99fffbe21a",
-      "rightSha256": "b400f2eab184bee8cba15b90bc06025a7fbf4cd08040ebad39282e99fffbe21a",
+      "relativePath": "wardley-map-template.md",
+      "leftExists": true,
+      "rightExists": true,
+      "leftSha256": "93be41ff23db0fd8893a0365af236bd455b6efecbaade8a469181325d2e45485",
+      "rightSha256": "93be41ff23db0fd8893a0365af236bd455b6efecbaade8a469181325d2e45485",
       "match": true
     }
-  ],
-  "result": "PASS"
+  ]
 }

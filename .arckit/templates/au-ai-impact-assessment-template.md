@@ -15,6 +15,14 @@
 | Assessment status | [Draft / Approved / Re-validation in progress] |
 | Last updated | [YYYY-MM-DD] |
 
+## Policy baseline references
+
+| Source | Purpose |
+|---|---|
+| Policy for the responsible use of AI in government 2.0 | Defines mandatory governance obligations for in-scope Australian Government AI use cases. |
+| Guidance for the AI impact assessment tool (PDF) | Provides the canonical 12-section assessment method and risk workflow used by this template. |
+| Australian Government AI technical standard | Provides lifecycle technical controls used to design treatments and monitoring actions. |
+
 ---
 
 ## Section 1 — Basic information

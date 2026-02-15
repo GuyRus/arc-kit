@@ -1,0 +1,2 @@
+OK docs/manifest.json parsed
+Top-level keys: ['generated', 'global', 'projects', 'repository']

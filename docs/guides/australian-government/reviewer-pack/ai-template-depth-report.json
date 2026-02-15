@@ -1,112 +1,218 @@
 {
-  "check": "AI template depth and requirement coverage",
+  "check": "AI template depth: section/word coverage vs AI-009 rules",
+  "timestamp": "2026-02-15T22:54:08.923124+11:00",
+  "requirementsTotal": 22,
+  "requirementsCoveredViaTraceability": 22,
+  "requirementsMissingViaTraceability": [],
   "templates": [
     {
       "template": ".arckit/templates/au-ai-governance-assessment-template.md",
-      "lineCount": 150,
+      "totalWordCount": 886,
       "headingCount": 16,
-      "mappedRequirementCount": 15,
-      "mappedRequirements": [
-        "AU-AI-REQ-001",
-        "AU-AI-REQ-002",
-        "AU-AI-REQ-003",
-        "AU-AI-REQ-004",
-        "AU-AI-REQ-005",
-        "AU-AI-REQ-008",
-        "AU-AI-REQ-009",
-        "AU-AI-REQ-010",
-        "AU-AI-REQ-011",
-        "AU-AI-REQ-013",
-        "AU-AI-REQ-014",
-        "AU-AI-REQ-018",
-        "AU-AI-REQ-019",
-        "AU-AI-REQ-020",
-        "AU-AI-REQ-021"
+      "mandatoryRuleCount": 6,
+      "mandatoryRulePresentCount": 6,
+      "mandatoryRuleCoveragePct": 100.0,
+      "rules": [
+        {
+          "rule": "In-scope determination",
+          "present": true,
+          "sectionWordCount": 79,
+          "headingPattern": "^##\\s+2\\.\\s+In-Scope Determination"
+        },
+        {
+          "rule": "Governance accountability",
+          "present": true,
+          "sectionWordCount": 61,
+          "headingPattern": "^##\\s+3\\.\\s+Governance Accountability Structure"
+        },
+        {
+          "rule": "Mandatory conformance matrix",
+          "present": true,
+          "sectionWordCount": 149,
+          "headingPattern": "^##\\s+4\\.\\s+Mandatory Policy Requirement Conformance"
+        },
+        {
+          "rule": "Technical standard adoption plan",
+          "present": true,
+          "sectionWordCount": 99,
+          "headingPattern": "^##\\s+6\\.\\s+Technical Standard Adoption Plan"
+        },
+        {
+          "rule": "Legal/regulatory interface",
+          "present": true,
+          "sectionWordCount": 51,
+          "headingPattern": "^##\\s+7\\.\\s+Legal and Regulatory Interface"
+        },
+        {
+          "rule": "Action plan",
+          "present": true,
+          "sectionWordCount": 24,
+          "headingPattern": "^##\\s+9\\.\\s+Action Plan"
+        }
       ]
     },
     {
       "template": ".arckit/templates/au-ai-use-case-register-template.md",
-      "lineCount": 47,
+      "totalWordCount": 262,
       "headingCount": 7,
-      "mappedRequirementCount": 4,
-      "mappedRequirements": [
-        "AU-AI-REQ-005",
-        "AU-AI-REQ-006",
-        "AU-AI-REQ-007",
-        "AU-AI-REQ-013"
+      "mandatoryRuleCount": 3,
+      "mandatoryRulePresentCount": 3,
+      "mandatoryRuleCoveragePct": 100.0,
+      "rules": [
+        {
+          "rule": "Minimum fields row set",
+          "present": true,
+          "sectionWordCount": 70,
+          "headingPattern": "^##\\s+Minimum Fields"
+        },
+        {
+          "rule": "High-risk addendum fields",
+          "present": true,
+          "sectionWordCount": 37,
+          "headingPattern": "^##\\s+Additional Mandatory Fields for High-Risk Use Cases"
+        },
+        {
+          "rule": "Submission checklist",
+          "present": true,
+          "sectionWordCount": 33,
+          "headingPattern": "^##\\s+Submission Checklist"
+        }
       ]
     },
     {
       "template": ".arckit/templates/au-ai-transparency-statement-template.md",
-      "lineCount": 95,
+      "totalWordCount": 351,
       "headingCount": 13,
-      "mappedRequirementCount": 3,
-      "mappedRequirements": [
-        "AU-AI-REQ-001",
-        "AU-AI-REQ-015",
-        "AU-AI-REQ-016"
+      "mandatoryRuleCount": 3,
+      "mandatoryRulePresentCount": 3,
+      "mandatoryRuleCoveragePct": 100.0,
+      "rules": [
+        {
+          "rule": "Mandatory content set",
+          "present": true,
+          "sectionWordCount": 22,
+          "headingPattern": "^##\\s+1\\)\\s+Why this agency uses AI"
+        },
+        {
+          "rule": "Plain-language quality",
+          "present": true,
+          "sectionWordCount": 41,
+          "headingPattern": "^##\\s+8\\)\\s+Publication and review controls"
+        },
+        {
+          "rule": "Publication/review controls",
+          "present": true,
+          "sectionWordCount": 41,
+          "headingPattern": "^##\\s+8\\)\\s+Publication and review controls"
+        }
       ]
     },
     {
       "template": ".arckit/templates/au-ai-impact-assessment-template.md",
-      "lineCount": 204,
-      "headingCount": 35,
-      "mappedRequirementCount": 8,
-      "mappedRequirements": [
-        "AU-AI-REQ-010",
-        "AU-AI-REQ-011",
-        "AU-AI-REQ-012",
-        "AU-AI-REQ-013",
-        "AU-AI-REQ-014",
-        "AU-AI-REQ-017",
-        "AU-AI-REQ-020",
-        "AU-AI-REQ-021"
+      "totalWordCount": 711,
+      "headingCount": 36,
+      "mandatoryRuleCount": 5,
+      "mandatoryRulePresentCount": 5,
+      "mandatoryRuleCoveragePct": 100.0,
+      "rules": [
+        {
+          "rule": "Sections 1-12",
+          "present": true,
+          "sectionWordCount": 161,
+          "headingPattern": "^##\\s+Section 1"
+        },
+        {
+          "rule": "Risk rating tables",
+          "present": true,
+          "sectionWordCount": 60,
+          "headingPattern": "^##\\s+Section 3"
+        },
+        {
+          "rule": "Residual risk and treatments",
+          "present": true,
+          "sectionWordCount": 97,
+          "headingPattern": "^##\\s+Section 12"
+        },
+        {
+          "rule": "Governance review block",
+          "present": true,
+          "sectionWordCount": 46,
+          "headingPattern": "^###\\s+12\\.5\\s+Governance body review"
+        },
+        {
+          "rule": "Re-validation triggers",
+          "present": true,
+          "sectionWordCount": 23,
+          "headingPattern": "^###\\s+12\\.6\\s+Re-validation triggers"
+        }
       ]
     },
     {
       "template": ".arckit/templates/au-ai-governance-checklist-template.md",
-      "lineCount": 64,
+      "totalWordCount": 379,
       "headingCount": 8,
-      "mappedRequirementCount": 12,
-      "mappedRequirements": [
-        "AU-AI-REQ-001",
-        "AU-AI-REQ-003",
-        "AU-AI-REQ-004",
-        "AU-AI-REQ-005",
-        "AU-AI-REQ-008",
-        "AU-AI-REQ-010",
-        "AU-AI-REQ-011",
-        "AU-AI-REQ-013",
-        "AU-AI-REQ-014",
-        "AU-AI-REQ-019",
-        "AU-AI-REQ-020",
-        "AU-AI-REQ-021"
+      "mandatoryRuleCount": 2,
+      "mandatoryRulePresentCount": 2,
+      "mandatoryRuleCoveragePct": 100.0,
+      "rules": [
+        {
+          "rule": "Gate A\u2013E",
+          "present": true,
+          "sectionWordCount": 81,
+          "headingPattern": "^##\\s+A\\.\\s+Pre-design gate"
+        },
+        {
+          "rule": "Exceptions/source gaps",
+          "present": true,
+          "sectionWordCount": 20,
+          "headingPattern": "^##\\s+F\\.\\s+Exceptions and source gaps"
+        }
       ]
     },
     {
       "template": ".arckit/templates/jsp-936-template.md",
-      "lineCount": 60,
+      "totalWordCount": 396,
       "headingCount": 8,
-      "mappedRequirementCount": 2,
-      "mappedRequirements": [
-        "AU-AI-REQ-021",
-        "AU-AI-REQ-022"
+      "mandatoryRuleCount": 3,
+      "mandatoryRulePresentCount": 3,
+      "mandatoryRuleCoveragePct": 100.0,
+      "rules": [
+        {
+          "rule": "Public-source context",
+          "present": true,
+          "sectionWordCount": 103,
+          "headingPattern": "^##\\s+1\\.\\s+Policy context"
+        },
+        {
+          "rule": "Internal-policy gaps",
+          "present": true,
+          "sectionWordCount": 85,
+          "headingPattern": "^##\\s+2\\.\\s+Defence-specific assurance tailoring"
+        },
+        {
+          "rule": "UK legacy handling",
+          "present": true,
+          "sectionWordCount": 39,
+          "headingPattern": "^##\\s+6\\.\\s+Legacy UK reference"
+        }
       ]
     },
     {
       "template": ".arckit/templates/mlops-template.md",
-      "lineCount": 76,
+      "totalWordCount": 283,
       "headingCount": 11,
-      "mappedRequirementCount": 3,
-      "mappedRequirements": [
-        "AU-AI-REQ-013",
-        "AU-AI-REQ-019",
-        "AU-AI-REQ-020"
+      "mandatoryRuleCount": 1,
+      "mandatoryRulePresentCount": 1,
+      "mandatoryRuleCoveragePct": 100.0,
+      "rules": [
+        {
+          "rule": "AU governance integration section",
+          "present": true,
+          "sectionWordCount": 60,
+          "headingPattern": "^##\\s+6\\.\\s+Responsible AI and AU Compliance Integration"
+        }
       ]
     }
   ],
-  "requirementsTotal": 22,
-  "requirementsCovered": 22,
-  "requirementsMissing": [],
   "result": "PASS"
 }
