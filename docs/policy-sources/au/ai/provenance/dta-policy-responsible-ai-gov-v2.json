@@ -1,0 +1,14 @@
+{
+  "id": "dta-policy-responsible-ai-gov-v2",
+  "title": "Policy for the responsible use of AI in Government 2.0",
+  "owner": "Digital Transformation Agency",
+  "canonicalUrl": "https://www.digital.gov.au/ai/ai-in-government-policy",
+  "sourceUrl": "https://www.digital.gov.au/sites/default/files/documents/2025-12/Policy%20for%20the%20responsible%20use%20of%20AI%20in%20Government%202.0_0.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:23.291605+11:00",
+  "checksumSha256": "94beda4e6e9f61e0dd5d5f17b45b18cf6015b20fd9aabe41d20318f725273c11",
+  "format": "pdf",
+  "originalPath": "originals/dta-policy-responsible-ai-gov-v2.pdf",
+  "convertedPath": "converted/dta-policy-responsible-ai-gov-v2.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "Core whole-of-government AI policy."
+}

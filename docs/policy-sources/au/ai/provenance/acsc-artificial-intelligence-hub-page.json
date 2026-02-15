@@ -1,0 +1,14 @@
+{
+  "id": "acsc-artificial-intelligence-hub-page",
+  "title": "Artificial intelligence (ACSC secure design hub page)",
+  "owner": "Australian Signals Directorate / Australian Cyber Security Centre",
+  "canonicalUrl": "https://www.cyber.gov.au/business-government/secure-design/artificial-intelligence",
+  "sourceUrl": "https://www.cyber.gov.au/business-government/secure-design/artificial-intelligence",
+  "accessedAtAEDT": "2026-02-15T20:07:41.869845+11:00",
+  "checksumSha256": "d9ec566736064995dceb5cf82888eb766251dcf52f6d9c1aa72c78df29cffd94",
+  "format": "html",
+  "originalPath": "originals/acsc-artificial-intelligence-hub-page.html",
+  "convertedPath": "converted/acsc-artificial-intelligence-hub-page.txt",
+  "conversionMethod": "Custom HTMLParser text extraction",
+  "notes": "Top-level ACSC AI guidance hub page."
+}

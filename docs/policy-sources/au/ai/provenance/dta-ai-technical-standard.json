@@ -1,0 +1,14 @@
+{
+  "id": "dta-ai-technical-standard",
+  "title": "Australian Government AI technical standard",
+  "owner": "Digital Transformation Agency",
+  "canonicalUrl": "https://www.digital.gov.au/policy/ai/AI-technical-standard",
+  "sourceUrl": "https://www.digital.gov.au/sites/default/files/documents/2025-08/Australian%20Government%20AI%20technical%20standard.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:23.690185+11:00",
+  "checksumSha256": "fe44df0eb40e1d438125f5f46293fb2bd01a84abdec2fdaadf066abc0fcd2c24",
+  "format": "pdf",
+  "originalPath": "originals/dta-ai-technical-standard.pdf",
+  "convertedPath": "converted/dta-ai-technical-standard.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "Mandatory technical requirements aligned to AI policy."
+}

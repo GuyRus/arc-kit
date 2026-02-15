@@ -1,0 +1,14 @@
+{
+  "id": "acsc-information-security-manual-dec-2025",
+  "title": "Information security manual (December 2025)",
+  "owner": "Australian Signals Directorate / Australian Cyber Security Centre",
+  "canonicalUrl": "https://www.cyber.gov.au/business-government/asds-cyber-security-frameworks/ism",
+  "sourceUrl": "https://www.cyber.gov.au/sites/default/files/2025-12/Information%20security%20manual%20%28December%202025%29.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:40.843251+11:00",
+  "checksumSha256": "d0652dd0565e0f101ce84428b310fa12b2c24430fc654cafc2f83aa6a8798802",
+  "format": "pdf",
+  "originalPath": "originals/acsc-information-security-manual-dec-2025.pdf",
+  "convertedPath": "converted/acsc-information-security-manual-dec-2025.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "Baseline whole-of-government information security control framework."
+}

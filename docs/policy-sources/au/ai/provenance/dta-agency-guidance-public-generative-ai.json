@@ -1,0 +1,14 @@
+{
+  "id": "dta-agency-guidance-public-generative-ai",
+  "title": "Agency guidance on public generative AI",
+  "owner": "Digital Transformation Agency",
+  "canonicalUrl": "https://www.digital.gov.au/policy/ai/agency-guidance-public-generative-ai",
+  "sourceUrl": "https://www.digital.gov.au/policy/ai/agency-guidance-public-generative-ai",
+  "accessedAtAEDT": "2026-02-15T20:07:25.595522+11:00",
+  "checksumSha256": "fb2809b4cda1c568e8bcbe26cb9a663e751de4ba6cb56d9cd3f13b3cebe64aa0",
+  "format": "html",
+  "originalPath": "originals/dta-agency-guidance-public-generative-ai.html",
+  "convertedPath": "converted/dta-agency-guidance-public-generative-ai.txt",
+  "conversionMethod": "Custom HTMLParser text extraction",
+  "notes": "Agency operating guidance for public GenAI tools."
+}

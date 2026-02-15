@@ -1,0 +1,14 @@
+{
+  "id": "dta-standard-accountability",
+  "title": "Standard for accountability 2.0",
+  "owner": "Digital Transformation Agency",
+  "canonicalUrl": "https://www.digital.gov.au/ai/ai-in-government-policy/accountability",
+  "sourceUrl": "https://www.digital.gov.au/sites/default/files/documents/2025-12/Standard%20for%20accountability%202.0.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:24.716284+11:00",
+  "checksumSha256": "7012f097344bbb45f6502748698321a47addb33ec3087bcf891b58d9ec014986",
+  "format": "pdf",
+  "originalPath": "originals/dta-standard-accountability.pdf",
+  "convertedPath": "converted/dta-standard-accountability.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "Minimum accountability requirements under AI policy."
+}

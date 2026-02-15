@@ -1,0 +1,14 @@
+{
+  "id": "oaic-top5-training-ai-model",
+  "title": "Top 5 takeaways – privacy considerations for training AI models",
+  "owner": "Office of the Australian Information Commissioner",
+  "canonicalUrl": "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-developing-and-training-generative-ai-models",
+  "sourceUrl": "https://www.oaic.gov.au/__data/assets/pdf_file/0020/243065/Top5-takeaways-privacy-consideration-training-AI-model-029596.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:32.958126+11:00",
+  "checksumSha256": "c7bb709668da93a5d95ae10752adc2f4b4498bd27b53f60992c5d0a45a0019c1",
+  "format": "pdf",
+  "originalPath": "originals/oaic-top5-training-ai-model.pdf",
+  "convertedPath": "converted/oaic-top5-training-ai-model.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "Companion quick guide for AI model training privacy controls."
+}

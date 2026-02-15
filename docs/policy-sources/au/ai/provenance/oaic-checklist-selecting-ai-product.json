@@ -1,0 +1,14 @@
+{
+  "id": "oaic-checklist-selecting-ai-product",
+  "title": "Checklist – privacy considerations when selecting an AI product",
+  "owner": "Office of the Australian Information Commissioner",
+  "canonicalUrl": "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-the-use-of-commercially-available-ai-products",
+  "sourceUrl": "https://www.oaic.gov.au/__data/assets/pdf_file/0023/243077/Checklist-privacy-considerations-when-selecting-an-AI-product.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:34.863135+11:00",
+  "checksumSha256": "ae71958fb63f289c6a9a64a2597e5daf50349e0eca0707f9dfec382595a6417d",
+  "format": "pdf",
+  "originalPath": "originals/oaic-checklist-selecting-ai-product.pdf",
+  "convertedPath": "converted/oaic-checklist-selecting-ai-product.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "Procurement-oriented AI privacy checklist."
+}

@@ -1,0 +1,14 @@
+{
+  "id": "oaic-guidance-generative-ai-models",
+  "title": "Guidance on privacy and developing and training generative AI models",
+  "owner": "Office of the Australian Information Commissioner",
+  "canonicalUrl": "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-developing-and-training-generative-ai-models",
+  "sourceUrl": "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-developing-and-training-generative-ai-models",
+  "accessedAtAEDT": "2026-02-15T20:07:31.805059+11:00",
+  "checksumSha256": "7eab88a17351c71600782467192d5ae33cc97047c7f9879080c2a6a05ece203b",
+  "format": "html",
+  "originalPath": "originals/oaic-guidance-generative-ai-models.html",
+  "convertedPath": "converted/oaic-guidance-generative-ai-models.txt",
+  "conversionMethod": "Custom HTMLParser text extraction",
+  "notes": "Primary OAIC AI/privacy guidance for model development and training."
+}

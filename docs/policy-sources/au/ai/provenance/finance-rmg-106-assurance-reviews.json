@@ -1,0 +1,14 @@
+{
+  "id": "finance-rmg-106-assurance-reviews",
+  "title": "RMG 106: Guidance on the assurance reviews process",
+  "owner": "Department of Finance",
+  "canonicalUrl": "https://www.finance.gov.au/publications/resource-management-guides/guidance-assurance-reviews-process-rmg-106",
+  "sourceUrl": "https://www.finance.gov.au/sites/default/files/2019-10/RMG-106R.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:31.082908+11:00",
+  "checksumSha256": "38e11bee1c2e7812e2de6f02d21cece93e8d7fdda8f6ded49598c7304a89463c",
+  "format": "pdf",
+  "originalPath": "originals/finance-rmg-106-assurance-reviews.pdf",
+  "convertedPath": "converted/finance-rmg-106-assurance-reviews.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "Formal resource management guide for assurance reviews."
+}

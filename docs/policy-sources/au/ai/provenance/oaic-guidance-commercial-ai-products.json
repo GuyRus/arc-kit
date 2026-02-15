@@ -1,0 +1,14 @@
+{
+  "id": "oaic-guidance-commercial-ai-products",
+  "title": "Guidance on privacy and the use of commercially available AI products",
+  "owner": "Office of the Australian Information Commissioner",
+  "canonicalUrl": "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-the-use-of-commercially-available-ai-products",
+  "sourceUrl": "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-the-use-of-commercially-available-ai-products",
+  "accessedAtAEDT": "2026-02-15T20:07:32.269411+11:00",
+  "checksumSha256": "c50a2386ea29cd30e7b413fa7d971f7ff0bbb2eea0a07a72ab30859459cc98e6",
+  "format": "html",
+  "originalPath": "originals/oaic-guidance-commercial-ai-products.html",
+  "convertedPath": "converted/oaic-guidance-commercial-ai-products.txt",
+  "conversionMethod": "Custom HTMLParser text extraction",
+  "notes": "Primary OAIC AI/privacy guidance for procuring and using third-party AI services."
+}

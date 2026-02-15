@@ -1,0 +1,14 @@
+{
+  "id": "acsc-engaging-with-ai",
+  "title": "Engaging with artificial intelligence (January 2024)",
+  "owner": "Australian Signals Directorate / Australian Cyber Security Centre",
+  "canonicalUrl": "https://www.cyber.gov.au/business-government/secure-design/artificial-intelligence/engaging-with-artificial-intelligence",
+  "sourceUrl": "https://www.cyber.gov.au/sites/default/files/2025-03/Engaging%20with%20artificial%20intelligence%20%28January%202024%29.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:40.390763+11:00",
+  "checksumSha256": "d6170674e764bff5f04cb4497404ce9a2a8cd5aeeb6c627c17dcad7b01dd769c",
+  "format": "pdf",
+  "originalPath": "originals/acsc-engaging-with-ai.pdf",
+  "convertedPath": "converted/acsc-engaging-with-ai.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "Guidance for organisational engagement with AI systems."
+}

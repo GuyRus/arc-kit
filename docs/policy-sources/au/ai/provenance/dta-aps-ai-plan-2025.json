@@ -1,0 +1,14 @@
+{
+  "id": "dta-aps-ai-plan-2025",
+  "title": "AI Plan for the Australian Public Service 2025",
+  "owner": "Digital Transformation Agency",
+  "canonicalUrl": "https://www.digital.gov.au/policy/ai/australian-public-service-ai-plan-2025",
+  "sourceUrl": "https://www.digital.gov.au/sites/default/files/documents/2025-11/APS%20AI%20Plan%202025.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:25.035783+11:00",
+  "checksumSha256": "fe8b00ad8ec48d9e48a1f4a258579ce8a7e0ae3a5ce689376adb0bc18bbb657d",
+  "format": "pdf",
+  "originalPath": "originals/dta-aps-ai-plan-2025.pdf",
+  "convertedPath": "converted/dta-aps-ai-plan-2025.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "APS strategic AI direction document."
+}

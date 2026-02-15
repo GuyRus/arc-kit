@@ -1,0 +1,773 @@
+Staff guidance on public generative AI | digital.gov.au 
+Skip to main content 
+
+Menu 
+
+Close 
+
+Explore 
+
+Close 
+
+Explore 
+
+Investment Oversight Framework (IOF) 
+
+Close 
+
+Investment Oversight Framework (IOF) 
+
+State 1: Strategic Planning 
+
+State 2: Prioritisation 
+
+State 3: Contestability 
+
+State 4: Assurance 
+
+State 5: Sourcing 
+
+State 6: Operations 
+
+Digital Capability Assessment Process (DCAP) 
+
+ICT Investment Approval Process 
+
+Policy 
+
+Close 
+
+Policy 
+
+Artificial intelligence 
+
+- APS AI plan 2025 
+
+- AI technical standard 
+
+Cloud Policy 
+
+Benefits Management Policy 
+
+Digital Experience Policy 
+
+- Digital Experience Toolkit 
+
+Enabling government 
+
+Close 
+
+Enabling government 
+
+Major Digital Projects Report 2026 
+
+Buying and selling 
+
+Digital architecture 
+
+Policy toolkit: alpha 
+
+Secretaries Digital and Data Committee 
+
+SSA Review 
+
+Featured initiatives 
+
+Close 
+
+Featured initiatives 
+
+Data and Digital Government Strategy 
+
+Trial of Microsoft 365 Copilot 
+
+Get involved 
+
+Observatory 
+
+Enterprise Resource Planning (ERP) 
+
+Digital project research series 
+
+About 
+
+Contact 
+
+Search 
+
+Explore 
+
+Investment Oversight Framework (IOF) 
+
+State 1: Strategic Planning 
+
+State 2: Prioritisation 
+
+State 3: Contestability 
+
+State 4: Assurance 
+
+State 5: Sourcing 
+
+State 6: Operations 
+
+Digital Capability Assessment Process (DCAP) 
+
+ICT Investment Approval Process 
+
+Policy 
+
+Artificial intelligence 
+
+- APS AI plan 2025 
+
+- AI technical standard 
+
+Cloud Policy 
+
+Benefits Management Policy 
+
+Digital Experience Policy 
+
+- Digital Experience Toolkit 
+
+Enabling government 
+
+Major Digital Projects Report 2026 
+
+Buying and selling 
+
+Digital architecture 
+
+Policy toolkit: alpha 
+
+Secretaries Digital and Data Committee 
+
+SSA Review 
+
+Featured initiatives 
+
+Data and Digital Government Strategy 
+
+Trial of Microsoft 365 Copilot 
+
+Get involved 
+
+Observatory 
+
+Enterprise Resource Planning (ERP) 
+
+Digital project research series 
+
+About 
+
+Contact 
+
+Search 
+
+Artificial intelligence (AI) 
+
+Home 
+
+Policy 
+
+Artificial intelligence (AI) 
+
+Staff guidance on public generative AI 
+
+Staff guidance on public generative AI 
+
+Using public generative AI tools safely and responsibly 
+
+Use this guidance to understand how to safely and responsibly engage with public generative artificial intelligence (AI) tools 
+
+This guidance is intended for all Australian Government personnel working with government information – including employees, contractors and consultants. 
+
+Your agency may have enterprise generative AI tools that are not public and may offer enhanced security, privacy, or tailored functionality. You should refer to your agency’s guidance on how to use these tools. 
+
+What generative AI is 
+
+Generative AI refers to AI tools that generate content – such as text, images, software code, audio or video – based on patterns learned from large volumes of data. 
+
+ChatGPT, Gemini and Claude are some of the well-known public generative AI tools you can access using a browser or app. These tools allow you to enter a question or instruction and get AI-generated answers. Your input is called a prompt, and the AI’s reply is the output. 
+
+Increasingly, generative AI is being built into everyday services or software. It now appears across commonly used digital tools, including search engines, communication platforms, and productivity applications. 
+
+Because it’s often embedded in tools you already use, it’s not always obvious when generative AI is active. If a tool helps you write, summarise, design, or generate ideas based on your input, it’s likely using AI. 
+
+Differentiating public generative AI from enterprise tools 
+
+Public generative AI tools are different from non-public or enterprise tools that have been configured to meet agency data control and information security requirements. When you use public tools, your inputs and outputs may be shared with the tool provider. 
+
+Make sure you know whether you are using a public or non-public generative AI tool as they may have a similar look and feel. For example, Microsoft 365 Copilot is an enterprise AI solution used by some agencies while Microsoft Copilot is a web-based public tool aimed at individual users. 
+
+If you’re not sure, refer to your agency’s policies or ICT support for advice. 
+
+How generative AI can help you at work 
+
+Generative AI tools can help you work more efficiently and explore new ideas. They’re useful for checking your thinking, making content easier to understand, and supporting everyday tasks. 
+
+The Australian Government is focused on unlocking the benefits of AI to improve how we work and help deliver better services. Allowing staff to use public generative AI tools for OFFICIAL level government information is a practical step towards this goal. 
+
+Using OFFICIAL level information in public generative AI 
+
+You should follow your agency’s policies and guidance on using public generative AI tools in the first instance. 
+
+Subject to your agency’s policies, you can use these tools with OFFICIAL level government information (see Protective Security Policy Framework (PSPF) Policy Advisory 001-2025 ). 
+
+You must not put information that is security classified OFFICIAL: Sensitive or above into public generative AI tools. Information security classifications are defined in the PSPF. 
+
+Principles for using public generative AI tools responsibly 
+
+It’s up to all of us to use generative AI safely, ethically and responsibly. That means understanding its benefits and limitations and applying good judgement. 
+
+Apply the 3 principles and practices below to responsibly use public generative AI in your work. 
+
+Protect privacy and safeguard government information 
+
+Don’t put security classified (OFFICIAL: Sensitive or above) or personal information into public generative AI tools. 
+
+Assume anything you enter into a public generative AI tool could be made public. 
+
+Don’t put third-party copyright-protected information into public generative AI tools. 
+
+Use judgement and critically assess generative AI outputs 
+
+Check for fairness, accuracy and bias in generative AI outputs. Generative AI tools may reflect bias that can lead to unfair or misleading outputs. 
+
+Be aware that generative AI can produce convincing but inaccurate content. 
+
+Undertake training to understand generative AI and how to critically assess its outputs. 
+
+Be able to explain, justify and take ownership of your advice and decisions 
+
+Remain responsible and accountable for content you create, share or use. 
+
+Generative AI must not make final decisions on government advice, services or outputs. 
+
+Ensure your use of generative AI supports public trust and upholds the standards and frameworks expected of government employees. 
+
+Appropriate public generative AI use examples 
+
+Research and information gathering 
+
+Jordan, a policy analyst in an Australian Government department, needs to produce a comparative analysis of international approaches to a policy issue for a briefing. Jordan is considering using public generative AI tools to brainstorm, accelerate the research process and create first pass content that can be refined further. 
+
+What should Jordan do? 
+
+Jordan uses a public generative AI tool to help identify publicly available research papers, reports, and case studies related to the policy issue without including any security classified information. 
+
+Jordan can prompt the AI tool to generate targeted questions on international approaches, highlight key differences and create draft content for further development. 
+
+Jordan carefully reviews the AI-generated content, cross-referencing it with authoritative sources to ensure it’s accurate and reliable. If the AI tool can cite its sources, Jordan can independently verify these to confirm or correct the information. 
+
+If Jordan identifies incorrect, misleading or questionable information, they can clarify or reframe the prompt, compare outputs from different prompts or tools, verify claims against trusted sources and discard any unsupported or unverifiable claims. 
+
+Before using any insights in briefings, Jordan consults with subject matter experts or experienced colleagues to validate complex or ambiguous content and check for accuracy and completeness. 
+
+Tailored public communication materials 
+
+Sofia is developing educational materials for diverse public audiences for a government program. She needs to develop a communications plan, web content and fact sheets tailored for communities across Australia, incorporating relevant local context. Sofia is considering using public generative AI tools to help develop initial drafts, research and organise local community information and improve readability for diverse audiences. 
+
+What should Sofia do? 
+
+Sofia can ask public generative AI tools to suggest ways to present program information and tailor messaging for different community needs – without sharing personal information or information that’s security classified as OFFICIAL: Sensitive or above. 
+
+Sofia employs the AI tool to help research local community information, rephrase bureaucratic terminology into plain language and organise content into clear, accessible formats. 
+
+Sofia cross-checks AI-generated content against original sources, asks colleagues to fact-check drafts and contacts any external parties before including their information in public material. 
+
+Sofia remains responsible for the final content, ensuring it accurately conveys current program guidelines and aligns with departmental requirements. Sofia uses public generative AI tools to suggest different ways to structure program information for broad community understanding and help rephrase complex program terminology into plain English. 
+
+Document analysis and interpretation 
+
+Alex is reviewing a complex technical report to summarise its content and highlight strategic implications for the agency. Alex is considering using public generative AI platforms to assist with understanding and summarising the content. 
+
+What should Alex do? 
+
+Alex can upload the report to a public generative AI tool to help break down complex concepts, explain unfamiliar terms and find further information on related topics. 
+
+Alex asks the generative AI tool to help structure summaries and identify key themes while ensuring only OFFICIAL level government information is shared with the external platform. 
+
+Alex validates AI-generated content by consulting subject matter experts to ensure technical accuracy and appropriate interpretation. 
+
+Depending on team or agency expectations regarding disclosure of AI-influenced content, Alex may choose to include a statement advising readers how AI was used to develop the summary. 
+
+Community engagement planning 
+
+Chris is planning consultation activities for a community program. They need to develop engagement strategies and materials that will effectively reach diverse community groups and gather meaningful feedback, and project manage the consultation process to ensure it meets key timelines. Chris considers using public generative AI tools to brainstorm consultation approaches. 
+
+What should Chris do? 
+
+Chris uses public generative AI tools to generate ideas for community engagement methods and consultation formats, taking care to only share OFFICIAL level information on the program and consultation objectives. Chris does not share any personal information about individuals connected to the consultations or the program itself with the AI platform. 
+
+Chris asks the public AI tool to suggest project management strategies and draft project planning materials. For example, the tool can draft a consultation schedule, progress report templates and content and consultation session logistics checklists. 
+
+Chris can also seek advice on developing survey questions and interview and focus group prompts and ways to track engagement and evaluate consultation outcomes, without entering any security classified or personal data. 
+
+Chris asks the AI tool to suggest approaches for making consultations accessible to people with different language backgrounds and accessibility needs. Chris notes that public generative AI tools may not produce accurate translations from English into other languages. If translation is needed, Chris should follow agency guidelines for accessing professional translation services. 
+
+Chris thoroughly checks and edits the AI-generated content and validates engagement strategies with colleagues, ensuring they align with government consultation standards and inclusive engagement principles. 
+
+Chris reviews all draft consultation materials to ensure they meet plain language requirements and government communication guidelines. 
+
+Data analysis support 
+
+Dinesh is conducting analysis on a dataset for a research project. The dataset contains OFFICIAL information and does not contain any personal or security classified information. Dinesh is wondering whether public generative AI tools can help identify patterns and generate insights from the data. 
+
+What should Dinesh do? 
+
+Given the dataset contains only OFFICIAL information, with no personal or security classified information, Dinesh can use public generative AI tools to assist with data analysis and pattern identification. 
+
+Dinesh provides only the necessary data elements to the public AI tool, avoiding any information security classified OFFICIAL: Sensitive or above. 
+
+Noting that generative AI tools can produce biased or inaccurate outputs, Dinesh thoroughly validates all insights and analysis before using them in any official capacity. 
+
+Before sharing findings more broadly, Dinesh asks a colleague to review the analysis to confirm it accurately reflects the data and meets government analytical standards. 
+
+Inappropriate public generative AI use examples 
+
+Personal information in correspondence 
+
+Hannah needs to write a response letter to a member of the public regarding a sensitive case. The response will draw on complex case file notes which contain personal details including the client’s name, date of birth, client reference number, address, financial information and sensitive case history such as interactions with the justice system. Hannah considers using public generative AI platforms to help draft a professional and empathetic response based on the case information. 
+
+What should Hannah do? 
+
+Hannah should not use public generative AI for this task. Inputting personal information into public AI tools would breach privacy obligations and government information handling rules. 
+
+Hannah understands that personal information including names, dates of birth, reference numbers, financial details, and case-specific information must never be shared with public AI platforms. 
+
+Hannah acknowledges that using such sensitive information in public AI tools could result in data breaches, identity theft risks, and serious privacy violations. 
+
+Instead, Hannah uses approved government systems and templates to draft the response, consulting with team members and agency experts as needed for complex cases. 
+
+Hannah ensures all personal information remains secure and is handled in accordance with government privacy and information security policies. 
+
+Security classified government information 
+
+Wei is preparing a Cabinet submission on proposed legislative changes. The task involves security classified information, inter-agency consultation feedback, and sensitive policy recommendations. Facing a tight deadline, Wei is considering using public generative AI platforms to help structure and refine the submission. 
+
+What should Wei do? 
+
+Wei should not use public generative AI platforms for this task. Instead, Wei should rely on established internal processes, consulting with colleagues and using approved government systems. 
+
+If Wei has access to an enterprise generative AI tool, cleared by the agency to process security classified information, they could consider using this. If Wei is unsure which generative AI tool can handle security classified information, they should consult relevant internal guidance and the IT security team if needed. 
+
+Wei recognises that security classified information must never be entered into public AI tools. This includes information classified OFFICIAL: Sensitive or above, including PROTECTED: CABINET information. 
+
+Wei understands that using public generative AI platforms for this task could compromise security and breach the Protective Security Policy Framework (PSPF). 
+
+Wei ensures the appropriate security classification markings are applied to all documents and follows proper information handling protocols. 
+
+Cultural sensitivity and intellectual property 
+
+River is organising activities for an important First Nations cultural awareness week and wants to include visual elements in internal campaign materials that reflect Indigenous culture. River has access to artwork commissioned by their agency from Indigenous artists for similar purposes in the past. River considers uploading these images – along with other images of Indigenous art found online – to a public generative AI platform to produce new visual content. 
+
+What should River do? 
+
+River should not use generative AI tools for this purpose. 
+
+River recognises that generating AI images based on First Nations artwork would be culturally inappropriate. River realises that authentic cultural representation requires genuine engagement with First Nations communities and cannot be replicated through public AI tools. 
+
+River notes that public generative AI platforms may retain uploaded content, which could result in the artwork being reused or incorporated into AI training datasets without the artists’ consent – breaching intellectual property rights, Indigenous data sovereignty and cultural protocols. 
+
+River acknowledges that using AI-generated cultural content could cause harm to First Nations communities by perpetuating stereotypes, misrepresenting sacred or sensitive cultural elements, and contributing to cultural appropriation. 
+
+Instead of using generative AI, River explores commissioning new artwork from First Nations artists or using existing approved materials developed in consultation with community representatives. 
+
+River ensures any cultural materials are developed through proper consultation with First Nations artists, cultural advisors and community representatives, and that intellectual property rights are respected and appropriately acknowledged. 
+
+Assessing applications 
+
+Jamie is reviewing applications for a government grant program. With multiple complex applications to assess against program criteria, Jamie considers inputting application details into a public generative AI tool to help assess which applications meet the funding requirements to recommend for approval. 
+
+What should Jamie do? 
+
+Jamie should not use public generative AI tools for this purpose. 
+
+Jamie recognises that grant applications can contain personal details and confidential business information that must not be shared with public AI platforms. 
+
+Jamie acknowledges that government decision-making requires human judgement, accountability, and transparency that cannot be delegated to public AI tools. 
+
+Jamie understands that using public AI tools to make funding decisions could introduce bias, produce inaccurate results, compromise the integrity of the assessment process, and breach privacy obligations. 
+
+Instead, Jamie uses established assessment frameworks and internal IT systems, asks colleagues for peer review, and ensures all decisions are properly documented. 
+
+Jamie maintains the confidentiality of all application information and ensures fair and consistent assessment processes are followed. 
+
+Procurement processes 
+
+Omar is developing technical specifications for a major tender. To ensure the specifications are comprehensive, Omar wants to input the detailed requirements into a public generative AI tool to help identify potential gaps and improve the technical language. 
+
+What should Omar do? 
+
+Omar should not use public generative AI tools for this task. 
+
+Omar recognises that tender specifications may contain commercially sensitive information that could provide unfair market advantage if disclosed prematurely through public AI platforms. 
+
+Omar understands that inputting procurement details into public AI platforms could breach the Commonwealth Procurement Rules and compromise the integrity of the tender process. 
+
+Omar avoids using any public AI tools that could inadvertently signal government intentions to potential suppliers or create conflicts of interest. 
+
+Instead, Omar consults internal technical experts and relevant industry standards, and uses approved government procurement resources to develop specifications. 
+
+Omar ensures all procurement activities maintain appropriate confidentiality. 
+
+Additional resources 
+
+AI in government 
+Read government policies and initiatives on the safe, responsible use of AI in the APS. 
+
+Australia's AI Ethics Principles 
+Understand the ethical principles guiding responsible AI development and use in Australia. 
+
+GovAI 
+Access learning resources and tools for AI testing and exploration. 
+
+AI in Government Fundamentals course 
+Build foundational knowledge of AI in government through this self-paced online course offered by the APS Academy. 
+
+AI and Machine Learning Community of Practice 
+Online community for government personnel interested in AI, machine learning, deep learning and neural networks. Anyone with a gov.au email address can register for an APS Professions platform account. 
+
+Information Management for Records Created Using AI Technologies 
+National Archives of Australia guidance on identifying and managing Commonwealth records created by or relating to AI. 
+
+Engaging with AI 
+Cyber.gov.au advice for secure AI system development and deployment. 
+
+Privacy Guidance for AI Products 
+Learn how to manage privacy risks when using commercially available AI tools with the resource from the Office of the Australian Information Commissioner. 
+
+Protective Security Policy Framework 
+Access government guidance on safeguarding people, information and assets, including considerations for AI systems under the PSPF. 
+
+Next steps 
+
+Read the Policy for the responsible use of AI in government . 
+
+Understand Australia’s AI ethical principles and how to apply them. 
+
+Complete the AI in Government Fundamentals course. 
+
+Build your AI knowledge and capability. 
+
+Agency guidance on public generative AI 
+
+Guidance for Australian Government agencies on managing access to public generative AI tools for personnel working with government information – including employees, contractors and consultants. 
+
+Artificial intelligence 
+
+Australian public service AI plan 2025 
+
+Foreword 
+
+Introduction 
+
+What we plan to achieve 
+
+Trust: Transparency, ethics and governance 
+
+People: Capability building and engagement 
+
+Tools: Access, infrastructure and support 
+
+Appendix A: Plan deliverables 
+
+Statement of Intent on AI in the Australian Public Service 
+
+AI Plan for the Australian Public Service 2025: At a glance 
+
+Technical standard for government’s use of artificial intelligence 
+
+Introduction, scope and audience 
+
+AI system lifecycle 
+
+Summary of requirements in the standard 
+
+Interactive table of statements 
+
+Whole of AI lifecycle statements 
+
+Statement 1: Define an operational model 
+
+Statement 2: Define the reference architecture 
+
+Statement 3: Identify and build people capabilities 
+
+Statement 4: Enable AI auditing 
+
+Statement 5: Provide explainability based on the use case 
+
+Statement 6: Manage system bias 
+
+Statement 7: Apply version control practices 
+
+Statement 8: Apply watermarking techniques 
+
+Design statements 
+
+Statement 9: Conduct pre-work 
+
+Statement 10: Adopt a human-centred approach 
+
+Statement 11: Design safety systemically 
+
+Statement 12: Define success criteria 
+
+Data statements 
+
+Statement 13: Establish data supply chain management processes 
+
+Statement 14: Implement data orchestration processes 
+
+Statement 15: Implement data transformation and feature engineering practices 
+
+Statement 16: Ensure data quality is acceptable 
+
+Statement 17: Validate and select data Agencies must 
+
+Statement 18: Enable data fusion, integration and sharing 
+
+Statement 19: Establish the model and context dataset 
+
+Train statements 
+
+Statement 20: Plan the model architecture 
+
+Statement 21: Establish training environment 
+
+Statement 22: Implement model creation, tuning, and grounding 
+
+Statement 23: Validate, assess, and update model 
+
+Statement 24: Select trained models 
+
+Statement 25: Implement continuous improvement frameworks 
+
+Evaluate statements 
+
+Statement 26: Adapt test strategies and practices for AI systems 
+
+Statement 27: Test for specified behaviour 
+
+Statement 28: Test for safety, robustness, and reliability 
+
+Statement 29: Test for conformance and compliance 
+
+Statement 30: Test for intended and unintended consequences 
+
+Integrate statements 
+
+Statement 31: Undertake integration planning 
+
+Statement 32: Manage integration as a continuous practice 
+
+Deploy statements 
+
+Statement 33: Create business continuity plans 
+
+Statement 34: Configure a staging environment 
+
+Statement 35: Deploy to a production environment 
+
+Statement 36: Implement rollout and safe rollback mechanisms 
+
+Monitor statements 
+
+Statement 37: Establish monitoring framework 
+
+Statement 38: Undertake ongoing testing and monitoring 
+
+Statement 39: Establish incident resolution processes 
+
+Decommission statements 
+
+Statement 40: Create a decommissioning plan 
+
+Statement 41: Shut down the AI system 
+
+Statement 42: Finalise documentation and reporting 
+
+Use Case Assessment 
+
+Key terms 
+
+Trial of Microsoft 365 Copilot 
+
+Summary report 
+
+Executive summary 
+
+Evaluation findings, methodology and approach 
+
+Appendix 
+
+Full report 
+
+Executive summary and glossary 
+
+Employee-related outcomes 
+
+Productivity 
+
+Whole-of-government adoption of generative AI 
+
+Unintended outcomes 
+
+Appendix A 
+
+Appendix B 
+
+Appendix C 
+
+Appendix D 
+
+Appendix E 
+
+Survey questions 
+
+Evaluation briefing 
+
+AI in government policy 
+
+Policy aim 
+
+Implementation 
+
+Strategy and oversight 
+
+Preparedness and operations 
+
+AI use case impact assessment 
+
+Appendices 
+
+Accountability 
+
+Transparency statements 
+
+Staff training 
+
+Agency guidance on public generative AI 
+
+Staff guidance on public generative AI 
+
+Resources 
+
+AI impact assessment tool 
+
+Introduction 
+
+Guidance for the tool 
+
+1. Basic information 
+
+2. Purpose and expected benefits 
+
+3. Inherent risk assessment 
+
+4. Threshold assessment outcome 
+
+5. Fairness 
+
+6. Reliability and safety 
+
+7. Privacy protection and security 
+
+8. Transparency and explainability 
+
+9. Contestability 
+
+10. Human-centred values 
+
+11. Accountability 
+
+12. Use case review and next steps 
+
+Appendix - Risk rating guidance 
+
+Pilot AI assurance framework 
+
+Introduction 
+
+1. Basic information 
+
+2. Purpose and expected benefits 
+
+3. Threshold assessment 
+
+4. Fairness 
+
+5. Reliability and safety 
+
+6. Privacy protection and security 
+
+7. Transparency and explainability 
+
+8. Contestability 
+
+9. Accountability 
+
+10. Human-centred values 
+
+11. Internal review and next steps 
+
+Pilot AI assurance framework guidance 
+
+Guidance 1. Basic information 
+
+Guidance 2. Purpose and expected benefits 
+
+Guidance 3. Threshold assessment 
+
+Guidance 4. Fairness 
+
+Guidance 5. Reliability and safety 
+
+Guidance 6. Privacy protection and security 
+
+Guidance 7. Transparency and explainability 
+
+Guidance 8. Contestability 
+
+Guidance 9. Accountability 
+
+Guidance 10. Human-centred values 
+
+Guidance 11. Internal review and next steps 
+
+Attachment 
+
+Pilot implementation report: Australian Government artificial intelligence (AI) assurance framework 
+
+Findings and recommendations 
+
+Recommendations 
+
+Context, data and rationale 
+
+Appendix A: Pilot agencies 
+
+Appendix B: Post-assessment survey questions 
+
+Related frameworks 
+
+Use classification 
+
+Insights 
+
+Connect with the digital community 
+
+Share, build or learn digital experience and skills with training and events, and collaborate with peers across government. 
+
+Join the Digital Profession 
+
+An initiative of the Digital Transformation Agency 
+
+© Commonwealth of Australia. With the exception of the Commonwealth Coat of Arms and where otherwise noted, this work is licensed under the CC BY 4.0 license. 
+
+Privacy l Disclaimer and copyright l Accessibility 
+
+Return focus to the top of the page

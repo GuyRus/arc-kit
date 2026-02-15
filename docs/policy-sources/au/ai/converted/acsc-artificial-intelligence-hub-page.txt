@@ -1,0 +1,466 @@
+Artificial intelligence | Cyber.gov.au Skip to main content 
+
+Report a cybercrime, cyber security incident or vulnerability. 
+
+Report 
+
+Show 
+
+Search 
+
+What are you looking for? 
+
+You can search for keywords to find pages that can help you e.g. scam 
+
+Smart Search 
+
+Report 
+
+Contact us 
+
+Portal login 
+
+Menu 
+
+Mega menu 
+
+About us Expand About us sub menu 
+
+back to main menu 
+
+About us 
+
+Learn about who we are and what we do. 
+
+About us 
+
+About ASD's ACSC 
+
+Who we are 
+
+Alerts and advisories 
+
+News 
+
+Reports and statistics 
+
+Contact us 
+
+Learn the basics Expand Learn the basics sub menu 
+
+back to main menu 
+
+Learn the basics 
+
+Interactive tools and advice to boost your online safety. 
+
+Learn cyber security Sign up for alerts 
+
+Explore the basics 
+
+Recognise and report scams 
+
+Set secure passphrases 
+
+Set up and perform regular backups 
+
+Turn on multi-factor authentication 
+
+Update your devices 
+
+Watch out for threats 
+
+Small business 
+
+Seniors 
+
+View resources 
+
+Glossary 
+
+Quiz library 
+
+Resources library 
+
+Translated Information 
+
+Protect yourself Expand Protect yourself sub menu 
+
+back to main menu 
+
+Protect yourself 
+
+Advice and information about how to protect yourself online. 
+
+Protect yourself Easy steps to secure yourself online Cyber health check tool Sign up for alerts 
+
+Securing your accounts 
+
+Multi-factor authentication 
+
+Passphrases 
+
+Passkeys 
+
+Securing your devices 
+
+How to secure your devices 
+
+How to back up your files and devices 
+
+How to update your device and software 
+
+Securing your email 
+
+Email security 
+
+Staying secure online 
+
+Connecting with others online 
+
+Protect yourself from scams 
+
+Online shopping 
+
+Connecting to public Wi-Fi and hotspots 
+
+Secure your Wi-Fi and router 
+
+Cloud shared responsibility model: Guidance for individuals and small and medium businesses 
+
+Cyber security for charities and not-for-profits 
+
+Resources to protect yourself 
+
+Protecting your family 
+
+Personal cyber security guides 
+
+Threats Expand Threats sub menu 
+
+back to main menu 
+
+Threats 
+
+Common online security risks and advice on what you can do to protect yourself. 
+
+Threats Report a cybercrime Sign up for alerts 
+
+Types of threats 
+
+Account compromise 
+
+Business email compromise 
+
+Cryptomining 
+
+Data breaches 
+
+Hacking 
+
+Identity theft 
+
+Information stealer 
+
+<notitle> 
+
+Malicious insiders 
+
+Malware 
+
+Phishing 
+
+Quishing 
+
+Ransomware 
+
+Scams 
+
+Social engineering 
+
+Report and recover Expand Report and recover sub menu 
+
+back to main menu 
+
+Report and recover 
+
+Respond to cyber threats and take steps to protect yourself from further harm. 
+
+Report and recover Make a report Sign up for alerts 
+
+Report 
+
+Report a cybercrime, incident or vulnerability 
+
+Cybercrime - getting help 
+
+Single Reporting Portal 
+
+How we help during a cyber security incident 
+
+ASD’s role in cyber security: For legal practitioners 
+
+Supporting Australian organisations through a cyber security incident 
+
+Limited Use 
+
+Recover from 
+
+Account compromise 
+
+Business email compromise 
+
+Data breaches 
+
+Hacking 
+
+Identity theft 
+
+Malware 
+
+Ransomware 
+
+Scams 
+
+For business and government Expand For business and government sub menu 
+
+back to main menu 
+
+For business and government 
+
+Resources for business and government agencies on cyber security. 
+
+For business and government Become an ASD partner Critical infrastructure All publications Alerts and advisories Exercise in a Box 
+
+ASD's cyber security frameworks 
+
+Information security manual 
+
+Blueprint for Secure Cloud 
+
+Essential Eight 
+
+Gateway security guidance package 
+
+Mitigating cyber security incidents 
+
+Modern defensible architecture 
+
+Principles of operational technology cyber security 
+
+Secure design 
+
+Artificial intelligence 
+
+Operational technology environments 
+
+Quantum 
+
+Secure by Design 
+
+Protecting devices and systems 
+
+Assessment and evaluation programs 
+
+Cloud computing 
+
+Hardening systems and applications 
+
+Legacy IT management 
+
+Remote working and secure mobility 
+
+Securing edge devices 
+
+System administration 
+
+Detecting and responding to threats 
+
+Cyber security incident response 
+
+Detecting and mitigating Active Directory compromises 
+
+Event logging 
+
+Vulnerability planning 
+
+Small business cyber security 
+
+Small business hub 
+
+Protecting your staff 
+
+Securing customer personal data 
+
+Supplier cyber risk management 
+
+Managed service providers 
+
+Managing cyber supply chains 
+
+Protecting business leaders 
+
+Cyber security for business leaders 
+
+Security tips for social media and messaging apps 
+
+Contact us 
+
+Report a cybercrime or cyber security incident 
+
+Portal login 
+
+Australian Cyber 
+
+Security Hotline 1300 CYBER1 (1300 292 371) 
+
+Breadcrumb 
+
+Home 
+
+For business and government 
+
+Artificial intelligence 
+
+Artificial intelligence 
+
+Content written for 
+
+Small & medium business 
+
+Large organisations & infrastructure 
+
+Government 
+
+Share on 
+
+This page lists publications on the governance and use of artificial intelligence. 
+
+An introduction to artificial intelligence 
+
+Artificial intelligence (AI) is an emerging technology that will play an increasingly influential role in the everyday life of Australians. 
+
+AI data security 
+
+This publication provides essential data security guidance for organisations that develop and/or use AI systems, including businesses, government and critical infrastructure. It highlights the importance of data security in ensuring the accuracy and integrity of AI outcomes, and presents an in-depth examination of 3 areas of data security risks in AI systems: data supply chain, maliciously modified (poisoned) data, and data drift. 
+
+Artificial intelligence and machine learning: Supply chain risks and mitigations 
+
+This guidance is intended for organisations and staff that deploy or develop AI or ML systems and components. 
+
+Content credentials: Strengthening multimedia integrity in the generative AI era 
+
+This cybersecurity information sheet discusses how Content Credentials (especially Durable ones) can be valuable to protect the provenance of media, raises awareness of the state of this solution, provides recommended practices to ensure the preservation of provenance, and discusses the importance of widespread adoption across the information ecosystem. 
+
+Convoluted layers: An artificial intelligence primer 
+
+Rapid advances in artificial intelligence (AI), along with public releases of AI products, have prompted governments, businesses and criminals to accelerate efforts to incorporate this new technology into their operations. This advice provides definitions for some of the most commonly encountered AI terms in cybersecurity and a brief typology of cyber threats that will arise from AI. 
+
+Deploying AI systems securely 
+
+AI security is a rapidly evolving area of research. As agencies, industry, and academia discover potential weaknesses in AI technology and techniques to exploit them, organizations will need to update their AI systems to address the changing risks, in addition to applying traditional IT best practices to AI systems. 
+
+Engaging with artificial intelligence 
+
+The purpose of this paper is to provide organisations with guidance on how to use artificial intelligence (AI) systems securely. The paper summarises some important threats related to AI systems and includes cybersecurity mitigation strategies to aid organisations in engaging with AI while managing risk. It provides mitigations to assist both organisations that maintain their own AI systems and organisations that use third-party AI systems. 
+
+Guidelines for secure AI system development 
+
+This document recommends guidelines for providers of any systems that use artificial intelligence (AI), whether those systems have been created from scratch or built on top of tools and services provided by others. This document is aimed primarily at providers of AI systems who are using models hosted by an organisation, or are using external application programming interfaces (APIs). 
+
+Was this helpful? 
+
+Yes 
+
+Yes this was helpful 
+
+No 
+
+No this was not helpful 
+
+Feedback 
+
+Thanks for your feedback! 
+
+We welcome additional feedback below. 
+
+Was this information easy to understand? 
+
+Clear and well-written 
+
+Unclear or confusing 
+
+Missing important information 
+
+Contained errors 
+
+Will you take action after reading this? 
+
+Yes 
+
+No 
+
+Did you find the information you were looking for? 
+
+Navigation was clear and intuitive 
+
+It was difficult to find 
+
+Unable to find it 
+
+Did the design and layout of this page meet your expectations? 
+
+Yes 
+
+No 
+
+Any recommended improvements or other comments? 
+
+Leave this field blank 
+
+Report a cyber security incident for critical infrastructure 
+
+Get alerts on new threats Alert Service 
+
+Become an ASD Partner 
+
+Report a cybercrime or cyber security incident 
+
+Acknowledgement of Country 
+
+We acknowledge the Traditional Owners and Custodians of Country throughout Australia and their continuing connections to land, sea and communities. 
+
+We pay our respects to them, their cultures and their Elders; past, present and emerging. We also recognise Australia's First Peoples' enduring contribution to Australia's national security. 
+
+Australian Cyber Security Hotline 1300 CYBER1 (1300 292 371) 
+
+Site links 
+Contact us 
+
+Glossary 
+
+View all content 
+
+Copyright 
+
+Privacy 
+
+Accessibility 
+
+Disclaimer 
+
+Careers 
+
+Social media terms of use 
+
+Popular pages 
+
+Essential Eight 
+
+Alerts and advisories 
+
+Information Security Manual 
+
+Authorised by the Australian Government, Canberra 
+
+Back to top

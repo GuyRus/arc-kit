@@ -1,0 +1,14 @@
+{
+  "id": "oaic-app-guidelines-compilation",
+  "title": "APP Guidelines – Compilation (October 2025)",
+  "owner": "Office of the Australian Information Commissioner",
+  "canonicalUrl": "https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines",
+  "sourceUrl": "https://www.oaic.gov.au/__data/assets/pdf_file/0019/258121/Consolidated-APP-guidelines.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:35.284130+11:00",
+  "checksumSha256": "f9ea5fb6d86aeb752fb26cd3c98df636398ce9e6750c1ae10dee5269b4fa6f5e",
+  "format": "pdf",
+  "originalPath": "originals/oaic-app-guidelines-compilation.pdf",
+  "convertedPath": "converted/oaic-app-guidelines-compilation.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "Authoritative APP obligations relevant to AI systems handling personal information."
+}

@@ -1,0 +1,14 @@
+{
+  "id": "dta-ai-in-government-policy-page",
+  "title": "AI in government policy (web page)",
+  "owner": "Digital Transformation Agency",
+  "canonicalUrl": "https://www.digital.gov.au/ai/ai-in-government-policy",
+  "sourceUrl": "https://www.digital.gov.au/ai/ai-in-government-policy",
+  "accessedAtAEDT": "2026-02-15T20:07:25.369177+11:00",
+  "checksumSha256": "d4a1e4773aac07ecadc3eb5f127aa4eb0a5969a6deea8e716c39097eb189ac2b",
+  "format": "html",
+  "originalPath": "originals/dta-ai-in-government-policy-page.html",
+  "convertedPath": "converted/dta-ai-in-government-policy-page.txt",
+  "conversionMethod": "Custom HTMLParser text extraction",
+  "notes": "Canonical policy landing page."
+}

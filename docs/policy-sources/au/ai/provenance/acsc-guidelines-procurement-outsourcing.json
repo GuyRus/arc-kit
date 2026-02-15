@@ -1,0 +1,14 @@
+{
+  "id": "acsc-guidelines-procurement-outsourcing",
+  "title": "ISM Guidelines for procurement and outsourcing (December 2025)",
+  "owner": "Australian Signals Directorate / Australian Cyber Security Centre",
+  "canonicalUrl": "https://www.cyber.gov.au/business-government/asds-cyber-security-frameworks/ism/cyber-security-guidelines/guidelines-for-procurement-and-outsourcing",
+  "sourceUrl": "https://www.cyber.gov.au/sites/default/files/2025-12/05.%20ISM%20-%20Guidelines%20for%20procurement%20and%20outsourcing%20%28December%202025%29.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:41.671138+11:00",
+  "checksumSha256": "ea9c8fb4dcce053a6573e67119717e0a0e31372fd2e8112a03fa87f52691cee4",
+  "format": "pdf",
+  "originalPath": "originals/acsc-guidelines-procurement-outsourcing.pdf",
+  "convertedPath": "converted/acsc-guidelines-procurement-outsourcing.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "Procurement and outsourcing cybersecurity controls intersecting AI sourcing."
+}

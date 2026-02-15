@@ -1,0 +1,257 @@
+Standard for AI
+transparency
+statements
+Supporting the policy for the responsible use of AI in
+government 2.0
+Version 2.0
+Standard for AI transparency statements
+
+
+
+
+Digital Transformation Agency
+
+
+
+
+© Commonwealth of Australia (Digital Transformation Agency) 2025 | Version 1801
+
+With the exception of the Commonwealth Coat of Arms and where otherwise noted, this
+product is provided under a Creative Commons Attribution 4.0 International Licence.
+(http://creativecommons.org/licenses/by/4.0/legalcode)
+
+The Digital Transformation Agency has tried to make the information in this product
+as accurate as possible. However, it does not guarantee that the information is totally
+accurate or complete. Therefore, you should not solely rely on this information when
+making a commercial decision.
+
+Digital Transformation Agency is committed to providing web accessible content
+wherever possible.
+
+If you are having difficulties with accessing this document, please email: ai@dta.gov.au.
+
+Version: 2.0
+
+
+
+
+Page ii
+Standard for AI transparency statements
+
+
+
+
+Contents
+Your responsibilities........................................................................................................................ 4
+
+How to apply....................................................................................................................................... 5
+
+       Implementing the AI transparency statements............................................................................. 5
+       Questions about implementation.......................................................................................................... 6
+
+Attachment A – Classification system for AI use.................................................................... 7
+
+
+
+
+Page iii
+Standard for AI transparency statements
+
+
+
+
+Your responsibilities
+Under the policy, agencies must make a publicly available statement that outlines their
+approach to AI adoption, as directed by the Digital Transformation Agency (DTA).
+
+Agencies must follow this standard, which sets the direction for AI transparency
+statements including expectations and formatting. It establishes a consistent format and
+expectation for AI transparency statements in the Australian Government. Clear and
+consistent transparency statements build public trust and make it easier to understand and
+compare how government agencies adopt AI.
+
+At a minimum, agencies must provide the following information regarding their use of AI in
+their transparency statement:
+
+•   the intentions behind why the agency uses AI or is considering its adoption
+•   classification of AI use according to usage patterns and domains, as listed at
+    Attachment A
+•   classification of use where the public may directly interact with, or be significantly
+    impacted by, AI or its outputs without human review
+•   measures to monitor the effectiveness of deployed AI systems and protect the public
+    against negative impacts
+•   overview of compliance with the requirements under the Policy for responsible use of
+    AI in government
+•   compliance with applicable legislation and regulation
+•   when the statement was most recently updated.
+
+Statements must use clear, plain language1 that avoids technical jargon and is consistent
+with the Australian Government Style Manual. They must also provide or direct to a
+contact email for further public enquiries.
+
+Agencies must publish transparency statements on their public facing website. It’s
+recommended that a link to the statement is placed in a global menu, aligned to the
+approach often taken for privacy policies.
+
+Transparency statements must be reviewed and updated at these junctures:
+
+•   at least once a year
+•   when making a significant change to the agency’s approach to AI
+•   when any new factor materially impacts the existing statement’s accuracy.
+
+
+
+
+1   Australian Government Style Manual, Plain language and word choice
+
+
+
+Page 4
+Standard for AI transparency statements
+
+
+
+
+How to apply
+Implementing the AI transparency
+statements
+The policy provides a coordinated approach for the use of AI across the Australian
+Government. It builds public trust by supporting the Australian Public Service (APS) to
+engage with AI in a responsible way.
+
+Transparency is critical to public trust and is an important aim of the policy and broader
+APS Reform agenda2. The public should have confidence that agencies monitor the
+effectiveness of deployed AI systems and have measures to protect against negative
+impacts.
+
+AI transparency statements help agencies meet these aims by providing a foundational
+level of transparency on their use of AI. They publicly disclose:
+
+•   how AI is used and managed by the agency
+•   a commitment to safe and responsible use
+•   compliance with the policy.
+
+Agency transparency statements are intended to provide a high-level overview of agency
+AI use and management in line with the policy intent.
+
+Agencies are not required to list individual use cases or provide use case level detail.
+However, agencies may choose to provide detail beyond the requirements to publicly
+explain their approach to AI.
+
+Agencies must send the DTA a link to the statement when it is published or updated by
+emailing ai@dta.gov.au.
+
+
+
+
+2   APS Reform, Priority one: An APS that embodies integrity in everything it does. “The APS acts with integrity
+and fairness and is accountable and transparent in everything it does. This will build public trust and strengthen
+standards of integrity in our federal government.” https://www.apsreform.gov.au/about-aps-reform/our-focus-
+areas
+
+
+
+Page 5
+Standard for AI transparency statements
+
+
+
+
+Questions about implementation
+Accountable officials can contact the DTA with questions about implementing the
+transparency statements by emailing ai@dta.gov.au.
+
+
+
+
+Page 6
+Standard for AI transparency statements
+
+
+
+
+Attachment A – Classification
+system for AI use
+The following classification system represents how AI is commonly used in government and the domains
+where they are applied. Agencies must list both the usage patterns and domains which apply to their use
+of AI in their transparency statements.
+
+Agencies should link to digital.gov.au/ai/resources/use-classification when listing their usage patterns and
+domains and may expand on their use of AI to provide more details to the public.
+
+
+
+Usage patterns
+ Usage pattern         Description                                                 Examples
+
+ Decision              Used to either:                                             Eligibility decision
+ making and                                                                        systems for government
+                       support decision making or the taking of
+ administrative                                                                    services or making
+                       administrative action by guiding, assessing, or making
+ action                                                                            recommendations
+                       a recommendation to a human decision maker
+                                                                                   based on submitted
+                       make decisions or take administrative action without        applications.
+                       human intervention.
+
+                       Note: not all automated decision making may be
+                       considered AI (noting the definition under the policy).
+
+ Analytics for         Identifies, produces or understands insights                Risk detection systems
+ insights              within structured or unstructured materials via             and forecast modelling.
+                       comprehensive data analysis, predictive modelling
+                       and/or reporting tools
+
+ Workplace             Automates routine tasks, manage workflows, and              Virtual assistants,
+ productivity          facilitate communication.                                   automated scheduling,
+                                                                                   document summary,
+                                                                                   content creation and
+                                                                                   basic secretariat
+                                                                                   support.
+
+ Image                 Processes images to automatically identify patterns         Facial recognition for
+ processing            and objects, such as faces, for official purposes.          border control and
+                                                                                   identifying pests in
+                                                                                   cargo to aid biosecurity.
+
+
+
+Page 7
+Standard for AI transparency statements
+
+
+
+
+Domains
+ Domain               Description
+
+ Service delivery     Enhances efficiency or accuracy of government services, including payment
+                      services, by providing tailored and responsive services to the public.
+
+                      This may include in direct interaction with the public, such as chat-bots,
+                      enhanced customer self-service and multilingual capabilities, or support staff or
+                      systems which deliver services.
+
+ Compliance and       Identifies patterns or anomalies in data to detect fraudulent activities and ensure
+ fraud detection      compliance with laws and regulations.
+
+ Law enforcement,     Supports law enforcement and intelligence agencies by analysing data from
+ intelligence and     various sources to predict and prevent crimes, and by aiding in intelligence
+ security             gathering.
+
+ Policy and legal     Analyses policies and legal documents to provide advice and assurance on their
+                      impact and supports policy development that is consistent with existing laws.
+
+ Scientific           Leveraged in scientific endeavours to process complex datasets, simulate
+                      experiments, predict outcomes and enhance monitoring functions.
+
+ Corporate and        Supports corporate functions, including HR, finance, media and communications,
+ enabling             and IT, by automating processes, optimising resource allocation and improving
+                      operational efficiency.
+
+
+
+
+Page 8
+

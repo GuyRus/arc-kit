@@ -1,0 +1,571 @@
+Standard for AI transparency statements | digital.gov.au 
+Skip to main content 
+
+Menu 
+
+Close 
+
+Explore 
+
+Close 
+
+Explore 
+
+Investment Oversight Framework (IOF) 
+
+Close 
+
+Investment Oversight Framework (IOF) 
+
+State 1: Strategic Planning 
+
+State 2: Prioritisation 
+
+State 3: Contestability 
+
+State 4: Assurance 
+
+State 5: Sourcing 
+
+State 6: Operations 
+
+Digital Capability Assessment Process (DCAP) 
+
+ICT Investment Approval Process 
+
+Policy 
+
+Close 
+
+Policy 
+
+Artificial intelligence 
+
+- APS AI plan 2025 
+
+- AI technical standard 
+
+Cloud Policy 
+
+Benefits Management Policy 
+
+Digital Experience Policy 
+
+- Digital Experience Toolkit 
+
+Enabling government 
+
+Close 
+
+Enabling government 
+
+Major Digital Projects Report 2026 
+
+Buying and selling 
+
+Digital architecture 
+
+Policy toolkit: alpha 
+
+Secretaries Digital and Data Committee 
+
+SSA Review 
+
+Featured initiatives 
+
+Close 
+
+Featured initiatives 
+
+Data and Digital Government Strategy 
+
+Trial of Microsoft 365 Copilot 
+
+Get involved 
+
+Observatory 
+
+Enterprise Resource Planning (ERP) 
+
+Digital project research series 
+
+About 
+
+Contact 
+
+Search 
+
+Explore 
+
+Investment Oversight Framework (IOF) 
+
+State 1: Strategic Planning 
+
+State 2: Prioritisation 
+
+State 3: Contestability 
+
+State 4: Assurance 
+
+State 5: Sourcing 
+
+State 6: Operations 
+
+Digital Capability Assessment Process (DCAP) 
+
+ICT Investment Approval Process 
+
+Policy 
+
+Artificial intelligence 
+
+- APS AI plan 2025 
+
+- AI technical standard 
+
+Cloud Policy 
+
+Benefits Management Policy 
+
+Digital Experience Policy 
+
+- Digital Experience Toolkit 
+
+Enabling government 
+
+Major Digital Projects Report 2026 
+
+Buying and selling 
+
+Digital architecture 
+
+Policy toolkit: alpha 
+
+Secretaries Digital and Data Committee 
+
+SSA Review 
+
+Featured initiatives 
+
+Data and Digital Government Strategy 
+
+Trial of Microsoft 365 Copilot 
+
+Get involved 
+
+Observatory 
+
+Enterprise Resource Planning (ERP) 
+
+Digital project research series 
+
+About 
+
+Contact 
+
+Search 
+
+Policy for the responsible use of AI in government - Version 2.0 
+
+Home 
+
+Policy for the responsible use of AI in government - Version 2.0 
+
+Standard for AI transparency statements 
+
+Standard for AI transparency statements 
+
+Standard for AI transparency statements 
+
+Supporting the policy for responsible use of AI in government 
+
+Use the following information to support your agency's implementation of the policy for responsible use of AI in government. 
+
+Your responsibilities 
+
+Under the policy, agencies must make a publicly available statement that outlines their approach to AI adoption, as directed by the Digital Transformation Agency (DTA). 
+
+Agencies must follow this standard, which sets the direction for AI transparency statements including expectations and formatting. It establishes a consistent format and expectation for AI transparency statements in the Australian Government. Clear and consistent transparency statements build public trust and make it easier to understand and compare how government agencies adopt AI. 
+
+At a minimum, agencies must provide the following information regarding their use of AI in their transparency statement: 
+
+the intentions behind why the agency uses AI or is considering its adoption 
+
+classification of AI use according to usage patterns and domains, as listed at Attachment A 
+
+classification of use where the public may directly interact with, or be significantly impacted by, AI or its outputs without human review 
+
+measures to monitor the effectiveness of deployed AI systems and protect the public against negative impacts 
+
+overview of compliance with the requirements under the Policy for responsible use of AI in government 
+
+compliance with applicable legislation and regulation 
+
+when the statement was most recently updated. 
+
+Statements must use clear, plain language 1 that avoids technical jargon and is consistent with the Australian Government Style Manual. They must also provide or direct to a contact email for further public enquiries. 
+
+Agencies must publish transparency statements on their public facing website. It's recommended that a link to the statement is placed in a global menu, aligned to the approach often taken for privacy policies. 
+
+Transparency statements must be reviewed and updated at these junctures: 
+
+at least once a year 
+
+when making a significant change to the agency's approach to AI 
+
+when any new factor materially impacts the existing statement's accuracy. 
+
+How to apply 
+
+Implementing the AI transparency statements 
+
+The policy provides a coordinated approach for the use of AI across the Australian Government. It builds public trust by supporting the Australian Public Service (APS) to engage with AI in a responsible way. 
+
+Transparency is critical to public trust and is an important aim of the policy and broader APS Reform agenda 2 . The public should have confidence that agencies monitor the effectiveness of deployed AI systems and have measures to protect against negative impacts. 
+
+AI transparency statements help agencies meet these aims by providing a foundational level of transparency on their use of AI. They publicly disclose: 
+
+how AI is used and managed by the agency 
+
+a commitment to safe and responsible use 
+
+compliance with the policy. 
+
+Agency transparency statements are intended to provide a high-level overview of agency AI use and management in line with the policy intent. 
+
+Agencies are not required to list individual use cases or provide use case level detail. However, agencies may choose to provide detail beyond the requirements to publicly explain their approach to AI. 
+
+Agencies must send the DTA a link to the statement when it is published or updated by emailing ai@dta.gov.au . 
+
+Questions about implementation 
+
+Accountable officials can contact the DTA with questions about implementing the transparency statements by emailing ai@dta.gov.au . 
+
+Footnotes 
+
+Australian Government Style Manual, Plain language and word choice ↩ 
+
+APS Reform, Priority one: An APS that embodies integrity in everything it does. "The APS acts with integrity and fairness and is accountable and transparent in everything it does. This will build public trust and strengthen standards of integrity in our federal government." https://www.apsreform.gov.au/about-aps-reform/our-focus-areas ↩ 
+
+Downloadable resource 
+
+Download the Standard for AI transparency statements 
+
+Standard for AI transparency statements 2.0.pdf (pdf, 245.03 KB) 
+LAST UPDATED: 1 Dec 2025 
+
+Artificial intelligence 
+
+Australian public service AI plan 2025 
+
+Foreword 
+
+Introduction 
+
+What we plan to achieve 
+
+Trust: Transparency, ethics and governance 
+
+People: Capability building and engagement 
+
+Tools: Access, infrastructure and support 
+
+Appendix A: Plan deliverables 
+
+Statement of Intent on AI in the Australian Public Service 
+
+AI Plan for the Australian Public Service 2025: At a glance 
+
+Technical standard for government’s use of artificial intelligence 
+
+Introduction, scope and audience 
+
+AI system lifecycle 
+
+Summary of requirements in the standard 
+
+Interactive table of statements 
+
+Whole of AI lifecycle statements 
+
+Statement 1: Define an operational model 
+
+Statement 2: Define the reference architecture 
+
+Statement 3: Identify and build people capabilities 
+
+Statement 4: Enable AI auditing 
+
+Statement 5: Provide explainability based on the use case 
+
+Statement 6: Manage system bias 
+
+Statement 7: Apply version control practices 
+
+Statement 8: Apply watermarking techniques 
+
+Design statements 
+
+Statement 9: Conduct pre-work 
+
+Statement 10: Adopt a human-centred approach 
+
+Statement 11: Design safety systemically 
+
+Statement 12: Define success criteria 
+
+Data statements 
+
+Statement 13: Establish data supply chain management processes 
+
+Statement 14: Implement data orchestration processes 
+
+Statement 15: Implement data transformation and feature engineering practices 
+
+Statement 16: Ensure data quality is acceptable 
+
+Statement 17: Validate and select data Agencies must 
+
+Statement 18: Enable data fusion, integration and sharing 
+
+Statement 19: Establish the model and context dataset 
+
+Train statements 
+
+Statement 20: Plan the model architecture 
+
+Statement 21: Establish training environment 
+
+Statement 22: Implement model creation, tuning, and grounding 
+
+Statement 23: Validate, assess, and update model 
+
+Statement 24: Select trained models 
+
+Statement 25: Implement continuous improvement frameworks 
+
+Evaluate statements 
+
+Statement 26: Adapt test strategies and practices for AI systems 
+
+Statement 27: Test for specified behaviour 
+
+Statement 28: Test for safety, robustness, and reliability 
+
+Statement 29: Test for conformance and compliance 
+
+Statement 30: Test for intended and unintended consequences 
+
+Integrate statements 
+
+Statement 31: Undertake integration planning 
+
+Statement 32: Manage integration as a continuous practice 
+
+Deploy statements 
+
+Statement 33: Create business continuity plans 
+
+Statement 34: Configure a staging environment 
+
+Statement 35: Deploy to a production environment 
+
+Statement 36: Implement rollout and safe rollback mechanisms 
+
+Monitor statements 
+
+Statement 37: Establish monitoring framework 
+
+Statement 38: Undertake ongoing testing and monitoring 
+
+Statement 39: Establish incident resolution processes 
+
+Decommission statements 
+
+Statement 40: Create a decommissioning plan 
+
+Statement 41: Shut down the AI system 
+
+Statement 42: Finalise documentation and reporting 
+
+Use Case Assessment 
+
+Key terms 
+
+Trial of Microsoft 365 Copilot 
+
+Summary report 
+
+Executive summary 
+
+Evaluation findings, methodology and approach 
+
+Appendix 
+
+Full report 
+
+Executive summary and glossary 
+
+Employee-related outcomes 
+
+Productivity 
+
+Whole-of-government adoption of generative AI 
+
+Unintended outcomes 
+
+Appendix A 
+
+Appendix B 
+
+Appendix C 
+
+Appendix D 
+
+Appendix E 
+
+Survey questions 
+
+Evaluation briefing 
+
+AI in government policy 
+
+Policy aim 
+
+Implementation 
+
+Strategy and oversight 
+
+Preparedness and operations 
+
+AI use case impact assessment 
+
+Appendices 
+
+Accountability 
+
+Transparency statements 
+
+Staff training 
+
+Agency guidance on public generative AI 
+
+Staff guidance on public generative AI 
+
+Resources 
+
+AI impact assessment tool 
+
+Introduction 
+
+Guidance for the tool 
+
+1. Basic information 
+
+2. Purpose and expected benefits 
+
+3. Inherent risk assessment 
+
+4. Threshold assessment outcome 
+
+5. Fairness 
+
+6. Reliability and safety 
+
+7. Privacy protection and security 
+
+8. Transparency and explainability 
+
+9. Contestability 
+
+10. Human-centred values 
+
+11. Accountability 
+
+12. Use case review and next steps 
+
+Appendix - Risk rating guidance 
+
+Pilot AI assurance framework 
+
+Introduction 
+
+1. Basic information 
+
+2. Purpose and expected benefits 
+
+3. Threshold assessment 
+
+4. Fairness 
+
+5. Reliability and safety 
+
+6. Privacy protection and security 
+
+7. Transparency and explainability 
+
+8. Contestability 
+
+9. Accountability 
+
+10. Human-centred values 
+
+11. Internal review and next steps 
+
+Pilot AI assurance framework guidance 
+
+Guidance 1. Basic information 
+
+Guidance 2. Purpose and expected benefits 
+
+Guidance 3. Threshold assessment 
+
+Guidance 4. Fairness 
+
+Guidance 5. Reliability and safety 
+
+Guidance 6. Privacy protection and security 
+
+Guidance 7. Transparency and explainability 
+
+Guidance 8. Contestability 
+
+Guidance 9. Accountability 
+
+Guidance 10. Human-centred values 
+
+Guidance 11. Internal review and next steps 
+
+Attachment 
+
+Pilot implementation report: Australian Government artificial intelligence (AI) assurance framework 
+
+Findings and recommendations 
+
+Recommendations 
+
+Context, data and rationale 
+
+Appendix A: Pilot agencies 
+
+Appendix B: Post-assessment survey questions 
+
+Related frameworks 
+
+Use classification 
+
+Insights 
+
+Connect with the digital community 
+
+Share, build or learn digital experience and skills with training and events, and collaborate with peers across government. 
+
+Join the Digital Profession 
+
+An initiative of the Digital Transformation Agency 
+
+© Commonwealth of Australia. With the exception of the Commonwealth Coat of Arms and where otherwise noted, this work is licensed under the CC BY 4.0 license. 
+
+Privacy l Disclaimer and copyright l Accessibility 
+
+Return focus to the top of the page

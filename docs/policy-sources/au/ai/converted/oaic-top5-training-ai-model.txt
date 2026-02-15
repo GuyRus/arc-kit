@@ -1,0 +1,42 @@
+                Top five takeaways
+                Privacy considerations when developing
+                or training generative AI models
+
+    Developers must take reasonable steps to                    Developers must take particular care with
+1   ensure accuracy in generative AI models,              3     sensitive information, which generally
+    commensurate with the likely increased level of             requires consent to be collected. Many
+    risk in an AI context, including through using high         photographs or recordings of individuals
+    quality datasets and undertaking appropriate                (including artificially generated ones) contain
+    testing. The use of disclaimers to signal where AI          sensitive information and therefore may not be
+    models may require careful consideration and                able to be scraped from the web or collected from
+    additional safeguards for certain high privacy risk         a third party dataset without establishing consent.
+    uses may be appropriate.
+                                                                Where developers are seeking to use personal
+    Just because data is publicly available               4     information that they already hold for the
+2   or otherwise accessible does not mean it                    purpose of training an AI model, and this
+    can legally be used to train or fine-tune                   was not a primary purpose of collection,
+    generative AI models or systems. Developers                 they need to carefully consider their privacy
+    must consider whether data they intend to use               obligations. If they do not have consent for a
+    or collect (including publicly available data)              secondary, AI-related purpose, they must be
+    contains personal information, and comply                   able to establish that this secondary use would
+    with their privacy obligations. Developers may              be reasonably expected by the individual,
+    need to take additional steps (e.g. deleting                taking particular account of their expectations
+    information) to ensure they are complying with              at the time of collection, and that it is related
+    their privacy obligations.                                  (or directly related, for sensitive information) to
+                                                                the primary purpose or purposes (or another
+                                                                exception applies).
+
+
+                                                                Where a developer cannot clearly establish
+                                                          5     that a secondary use for an AI-related
+                                                                purpose was within reasonable expectations
+                                                                and related to a primary purpose, to avoid
+                                                                regulatory risk they should seek consent for
+                                                                that use and/or offer individuals a meaningful
+                                                                and informed ability to opt-out of such a use.
+
+
+                                                          This document is a summary only and should be considered
+                                                          together with the OAIC’s Guidance on privacy and developing
+                                                          and training generative AI models
+

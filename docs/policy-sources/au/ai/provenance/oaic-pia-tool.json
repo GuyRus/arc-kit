@@ -1,0 +1,14 @@
+{
+  "id": "oaic-pia-tool",
+  "title": "Privacy impact assessment tool",
+  "owner": "Office of the Australian Information Commissioner",
+  "canonicalUrl": "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/privacy-impact-assessments/privacy-impact-assessment-tool",
+  "sourceUrl": "https://www.oaic.gov.au/__data/assets/word_doc/0010/10171/pia-tool.docx",
+  "accessedAtAEDT": "2026-02-15T20:07:36.474184+11:00",
+  "checksumSha256": "40e9ef79949cf513150efc4ee7dc3bf1e923028608d606227f7eae6610a38739",
+  "format": "docx",
+  "originalPath": "originals/oaic-pia-tool.docx",
+  "convertedPath": "converted/oaic-pia-tool.txt",
+  "conversionMethod": "OOXML extraction from word/document.xml",
+  "notes": "Template tool for conducting PIAs, applicable to AI projects."
+}

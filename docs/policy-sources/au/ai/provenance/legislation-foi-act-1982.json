@@ -1,0 +1,14 @@
+{
+  "id": "legislation-foi-act-1982",
+  "title": "Freedom of Information Act 1982 (latest compilation PDF)",
+  "owner": "Federal Register of Legislation",
+  "canonicalUrl": "https://www.legislation.gov.au/C2004A02562/latest/downloads",
+  "sourceUrl": "https://www.legislation.gov.au/C2004A02562/2026-01-01/2026-01-01/text/original/pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:39.192854+11:00",
+  "checksumSha256": "327322f49825cffddceffa2630d596972db871e567f273904cb7889a4c4f25dd",
+  "format": "pdf",
+  "originalPath": "originals/legislation-foi-act-1982.pdf",
+  "convertedPath": "converted/legislation-foi-act-1982.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "Transparency and access rights relevant for AI-enabled government decisions and records."
+}
