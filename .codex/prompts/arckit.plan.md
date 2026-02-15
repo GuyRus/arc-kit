@@ -522,7 +522,7 @@ After writing the plan, provide a summary:
 - **Vendor Procurement**: Alpha increases by 6-8 weeks (SOW + evaluation + selection)
 - **Security Heavy**: Beta increases by 4-8 weeks (STRIDE, pen testing, SAST/DAST)
 - **Data Migration**: Beta increases by 4-12 weeks (migration strategy, testing, rollback)
-- **AI Systems**: Alpha/Beta increase by 2-4 weeks (AI Playbook, ATRS, fairness testing)
+- **AI Systems**: Alpha/Beta increase by 2-4 weeks (AU AI governance assessment, AITS, fairness testing)
 - **Multiple Integrations**: Alpha increases by 1-2 weeks per complex integration
 
 ## Quality Checks

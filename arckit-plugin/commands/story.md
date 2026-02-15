@@ -1,5 +1,5 @@
 ---
-description: Generate comprehensive project story with timeline analysis, traceability, and governance achievements (project)
+description: "Generate comprehensive project story with timeline analysis, traceability, and governance achievements (project)"
 ---
 
 You are helping an enterprise architect **generate a comprehensive project story** that documents the journey of an ArcKit-managed project from inception to completion, with heavy emphasis on timeline analysis and governance achievements.
@@ -42,8 +42,8 @@ Scan the project directory for existing artifacts and read them to inform the pr
 - `ARC-*-TCOP-*.md` — TCoP review
 - `ARC-*-SECD-*.md` or `ARC-*-MSBD-*.md` — Security assessments
 - `ARC-*-DPIA-*.md` — DPIA
-- `ARC-*-AIPB-*.md` — AI Playbook assessment
-- `ARC-*-ATRS-*.md` — ATRS record
+- `ARC-*-AIGA-*.md` — AU AI governance assessment
+- `ARC-*-AITS-*.md` — AI transparency statement
 - `ARC-*-BKLG-*.md` — Backlog
 - `ARC-*-DVOP-*.md` — DevOps strategy
 - `ARC-*-TRAC-*.md` — Traceability matrix
@@ -109,7 +109,7 @@ fi
 **Option B: User Wants to Select from List**
 If the user didn't specify a project or said "list" or "choose":
 ```bash
-bash ${CLAUDE_PLUGIN_ROOT}/scripts/bash/list-projects.sh
+bash .arckit/scripts/bash/list-projects.sh
 ```
 Then ask the user which project number they want to generate a story for.
 
@@ -167,9 +167,9 @@ find "$PROJECT_DIR" -type f -name "*.md" | sort
 - `ARC-*-SVCASS-*.md` - GDS Service Assessment
 - `ARC-*-SECD-*.md` - Security assessment
 - `ARC-*-SECD-MOD-*.md` - MOD security (if defence)
-- `ARC-*-AIPB-*.md` - AI Playbook (if AI system)
-- `ARC-*-ATRS-*.md` - ATRS (if algorithmic)
-- `ARC-*-JSP936-*.md` - MOD AI assurance (if MOD AI)
+- `ARC-*-AIGA-*.md` - AU AI governance assessment (if AI system)
+- `ARC-*-AITS-*.md` - AITS (if algorithmic)
+- `ARC-*-ADEF-*.md` - MOD AI assurance (if MOD AI)
 
 **Governance Artifacts**:
 - `ARC-*-TRAC-*.md` - End-to-end traceability
@@ -648,7 +648,7 @@ Generate document control fields:
 
 ```bash
 # Generate document ID
-DOCUMENT_ID=$(./${CLAUDE_PLUGIN_ROOT}/scripts/bash/generate-document-id.sh "$PROJECT_ID" "STORY" "${VERSION}")
+DOCUMENT_ID=$(./.arckit/scripts/bash/generate-document-id.sh "$PROJECT_ID" "STORY" "${VERSION}")
 
 # Get dates
 DATE_CREATED=$(date +%Y-%m-%d)
@@ -669,9 +669,9 @@ Read the story template:
 **Read the template** (with user override support):
 - **First**, check if `.arckit/templates/story-template.md` exists in the project root
 - **If found**: Read the user's customized template (user override takes precedence)
-- **If not found**: Read `${CLAUDE_PLUGIN_ROOT}/templates/story-template.md` (default)
+- **If not found**: Read `.arckit/templates/story-template.md` (default)
 
-> **Note**: Read the `${CLAUDE_PLUGIN_ROOT}/VERSION` file and update the version in the template metadata line when generating.
+> **Note**: Read the `.arckit/VERSION` file and update the version in the template metadata line when generating.
 > **Tip**: Users can customize templates with `/arckit:customize story`
 
 **Populate ALL placeholders** in the template with real data:

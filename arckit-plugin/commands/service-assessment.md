@@ -1,6 +1,5 @@
 ---
-description: Prepare for GDS Service Standard assessment - analyze evidence against 14 points, identify gaps, generate readiness report
-alwaysShow: true
+description: "Prepare for GDS Service Standard assessment - analyze evidence against 14 points, identify gaps, generate readiness report"
 ---
 
 # GDS Service Assessment Preparation
@@ -53,13 +52,13 @@ Generate a comprehensive GDS Service Standard assessment preparation report that
 
 ### Step 0: Capture ArcKit Version
 
-- Read the `${CLAUDE_PLUGIN_ROOT}/VERSION` file and store the value as `ARC_VERSION`.
+- Read the `.arckit/VERSION` file and store the value as `ARC_VERSION`.
 - Use this exact value (no hardcoded fallback) anywhere you reference the ArcKit version in the report metadata.
 
 **Read the template** (with user override support):
 - **First**, check if `.arckit/templates/service-assessment-prep-template.md` exists in the project root
 - **If found**: Read the user's customized template (user override takes precedence)
-- **If not found**: Read `${CLAUDE_PLUGIN_ROOT}/templates/service-assessment-prep-template.md` (default)
+- **If not found**: Read `.arckit/templates/service-assessment-prep-template.md` (default)
 
 > **Tip**: Users can customize templates with `/arckit:customize service-assessment`
 
@@ -97,8 +96,8 @@ Scan the project directory for existing artifacts and read them to inform this a
 
 **OPTIONAL** (read if available, skip silently if missing):
 - `ARC-*-TCOP-*.md` — TCoP review (technology compliance)
-- `ARC-*-AIPB-*.md` — AI Playbook assessment (if AI components)
-- `ARC-*-ATRS-*.md` — ATRS record (if algorithmic tools)
+- `ARC-*-AIGA-*.md` — AU AI governance assessment (if AI components)
+- `ARC-*-AITS-*.md` — AI transparency statement (if algorithmic tools)
 - `ARC-*-SOW-*.md` — Statement of work
 - `ARC-*-EVAL-*.md` — Vendor evaluation
 - `ARC-*-ANLZ-*.md` — Governance analysis
@@ -375,7 +374,7 @@ For each of the 14 Service Standard points, map evidence from ArcKit artifacts:
 **Evidence Sources**:
 - `ARC-*-SECD-*.md` - NCSC security principles, threat model
 - `ARC-*-DATA-*.md` - GDPR compliance, data protection, PII handling
-- `ARC-*-ATRS-*.md` - AI transparency and risk (if AI service)
+- `ARC-*-AITS-*.md` - AI transparency and risk (if AI service)
 - `ARC-*-RISK-*.md` - Security risks and mitigations
 - `ARC-*-REQ-*.md` - Security and privacy NFRs
 - `ARC-*-TCOP-*.md` - TCoP security points
@@ -674,7 +673,7 @@ Example: `projects/001-nhs-appointment/ARC-001-SASS-v1.0.md`
 **Assessment Phase**: [Alpha/Beta/Live]
 **Assessment Date**: [If provided, else "Not yet scheduled"]
 **Report Generated**: [Current date]
-**ArcKit Version**: [Read from ${CLAUDE_PLUGIN_ROOT}/VERSION]
+**ArcKit Version**: [Read from .arckit/VERSION]
 
 ---
 

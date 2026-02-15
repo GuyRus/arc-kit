@@ -53,7 +53,7 @@ Scan the project directory for existing artifacts and read them to inform this m
   - Extract: Data components, storage technology, data flow patterns
 - `ARC-*-TCOP-*.md` in `projects/{current_project}/` — TCoP review
   - Extract: UK Government compliance requirements, reuse opportunities
-- `ARC-*-AIPB-*.md` in `projects/{current_project}/` — AI Playbook assessment
+- `ARC-*-AIGA-*.md` in `projects/{current_project}/` — AU AI governance assessment
   - Extract: AI component risk levels, human oversight requirements
 - Existing maps in `projects/{current_project}/wardley-maps/`
   - Extract: Previous strategic analysis, evolution predictions
@@ -290,7 +290,7 @@ Map components to TCoP points:
 - **Point 8 (Share/Reuse)**: Identify GOV.UK services and cross-government reuse
 - **Point 11 (Purchasing)**: Link to Digital Marketplace procurement strategy
 
-### AI Playbook Compliance (for AI systems)
+### AU AI governance assessment Compliance (for AI systems)
 
 If project includes AI components:
 
@@ -298,7 +298,7 @@ If project includes AI components:
 - Flag HIGH-RISK AI requirements:
   - Human-in-the-loop (add as Custom component, 0.45 evolution)
   - Bias testing (add as Custom capability)
-  - ATRS publication requirement (add note)
+  - AI transparency publication requirement (add note)
   - DPIA/EqIA mandatory (add annotation)
 
 ## Step 5: Generate Output
@@ -428,7 +428,7 @@ The Wardley Map document must include:
 12. **Traceability**:
     - Link to requirements (BR-001, FR-001, etc.)
     - Link to architecture principles
-    - Link to UK Government assessments (TCoP, AI Playbook, ATRS)
+    - Link to UK Government assessments (TCoP, AU AI governance assessment, AITS)
 
 ## Step 6: Integration with ArcKit Workflow
 
@@ -489,7 +489,7 @@ The `/arckit:analyze` command should include Wardley Map validation:
 
 **Context**:
 - HIGH-RISK AI system (affects access to benefits)
-- Must comply with TCoP, AI Playbook, ATRS
+- Must comply with TCoP, AU AI governance assessment, AITS
 - Procurement via G-Cloud Digital Marketplace
 - Uses GPT-4 (commercial LLM product)
 - Needs human-in-the-loop review
@@ -570,13 +570,13 @@ style wardley
 **HIGH-RISK AI Requirements**:
 - Human Review Queue (Custom, 0.45): Mandatory human-in-the-loop
 - Bias Testing Framework (Custom, 0.35): Fairness testing for protected characteristics
-- ATRS publication: Required before Live phase
+- AI transparency publication: Required before Live phase
 - DPIA + EqIA: Mandatory for HIGH-RISK AI
 
 **Next Steps**:
 1. Run `/arckit:sow` to create RFP for G-Cloud procurement (AWS, GPT-4, Auth0)
-2. Run `/arckit:ai-playbook` to complete AI Playbook assessment
-3. Run `/arckit:atrs` to generate ATRS record
+2. Run `/arckit:ai-playbook` to complete AU AI governance assessment
+3. Run `/arckit:atrs` to generate AI transparency statement
 4. Run `/arckit:tcop` to validate TCoP compliance (Cloud First, Open Standards, Reuse)
 
 ## Important Notes
@@ -623,7 +623,7 @@ style wardley
 6. **AI Project Mistakes**:
    - ❌ Not mapping human-in-the-loop as mandatory component
    - ❌ Missing bias testing for HIGH-RISK AI
-   - ❌ Not flagging ATRS publication requirement
+   - ❌ Not flagging AI transparency publication requirement
 
 ### Map Versioning
 
@@ -657,7 +657,7 @@ The document must be:
 - ✅ Actionable (clear build/buy/rent decisions)
 - ✅ Traceable (linked to requirements and principles)
 - ✅ Strategic (evolution predictions and gameplay)
-- ✅ Compliant (UK Government TCoP, AI Playbook if applicable)
+- ✅ Compliant (UK Government TCoP, AU AI governance assessment if applicable)
 
 After creating the map, provide a summary to the user:
 
@@ -692,7 +692,7 @@ After creating the map, provide a summary to the user:
 🔗 Recommended Commands:
 - /arckit:sow - Generate RFP for vendor procurement
 - /arckit:tcop - Assess Technology Code of Practice compliance
-- /arckit:ai-playbook - Assess AI Playbook compliance (if AI components)
+- /arckit:ai-playbook - Assess AU AI governance compliance (if AI components)
 ```
 
 ---

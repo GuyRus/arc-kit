@@ -512,7 +512,7 @@ Before presenting the ServiceNow design to the user, verify:
 - [ ] ITIL v4 practices correctly implemented
 - [ ] UK GDPR compliance mentioned (if PII processing)
 - [ ] WCAG 2.2 AA monitoring mentioned (if public-facing)
-- [ ] ATRS transparency mentioned (if algorithmic decision-making)
+- [ ] AITS transparency mentioned (if algorithmic decision-making)
 
 ## Error Handling
 

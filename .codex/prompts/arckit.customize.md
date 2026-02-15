@@ -49,7 +49,7 @@ Display as a table:
 | `azure-research` | `/arckit:azure-research` | Azure service research findings |
 | `backlog` | `/arckit:backlog` | Product backlog with user stories |
 | `data-mesh-contract` | `/arckit:data-mesh-contract` | Data product contracts |
-| `data-model` | `/arckit:data-model` | Data model with GDPR compliance |
+| `data-model` | `/arckit:data-model` | Data model with privacy compliance |
 | `datascout` | `/arckit:datascout` | External data source discovery |
 | `devops` | `/arckit:devops` | DevOps strategy and CI/CD |
 | `dld-review` | `/arckit:dld-review` | Detailed design review |
@@ -60,9 +60,9 @@ Display as a table:
 | `gcloud-clarify` | `/arckit:gcloud-clarify` | G-Cloud clarification questions |
 | `gcloud-requirements` | `/arckit:gcloud-search` | G-Cloud service requirements |
 | `hld-review` | `/arckit:hld-review` | High-level design review |
-| `jsp-936` | `/arckit:jsp-936` | MOD AI assurance (JSP 936) |
+| `jsp-936` | `/arckit:jsp-936` | AU defence AI assurance pathway |
 | `mlops` | `/arckit:mlops` | MLOps strategy |
-| `mod-secure-by-design` | `/arckit:mod-secure` | MOD Secure by Design |
+| `mod-secure-by-design` | `/arckit:mod-secure` | Defence Secure by Design |
 | `operationalize` | `/arckit:operationalize` | Operational readiness pack |
 | `platform-design` | `/arckit:platform-design` | Platform Design Toolkit |
 | `principles-compliance-assessment` | `/arckit:principles-compliance` | Principles compliance scorecard |
@@ -79,10 +79,13 @@ Display as a table:
 | `story` | `/arckit:story` | Project story with timeline |
 | `tcop-review` | `/arckit:tcop` | Technology Code of Practice |
 | `traceability-matrix` | `/arckit:traceability` | Requirements traceability |
-| `uk-gov-ai-playbook` | `/arckit:ai-playbook` | AI Playbook compliance |
-| `uk-gov-atrs` | `/arckit:atrs` | Algorithmic Transparency Record |
-| `uk-gov-tcop` | `/arckit:tcop` | TCoP review template |
-| `ukgov-secure-by-design` | `/arckit:secure` | UK Gov Secure by Design |
+| `au-ai-governance-assessment` | `/arckit:ai-playbook` | AU AI governance assessment |
+| `au-ai-use-case-register` | `/arckit:ai-playbook` | AU AI use case register |
+| `au-ai-governance-checklist` | `/arckit:ai-playbook` | AU AI governance checklist |
+| `au-ai-transparency-statement` | `/arckit:atrs` | AU AI transparency statement |
+| `au-ai-impact-assessment` | `/arckit:ai-playbook` | AU AI impact assessment |
+| `tcop-review` | `/arckit:tcop` | TCoP review template |
+| `secure-by-design` | `/arckit:secure` | Secure by Design template |
 | `vendor-scoring` | `/arckit:evaluate` | Vendor scoring matrix |
 | `wardley-map` | `/arckit:wardley` | Wardley Map documentation |
 
@@ -122,7 +125,7 @@ echo "✅ Copied all templates to .arckit/templates/"
 If user asks about a specific template (e.g., "info requirements"), read and summarize:
 - What document it generates
 - Key sections included
-- UK Government frameworks referenced
+- Policy frameworks referenced
 - Common customization points
 
 ### 5. **Provide Customization Guidance**
@@ -144,10 +147,10 @@ When you run an ArcKit command (e.g., `/arckit:requirements`):
 
 ### Common Customizations
 
-**Remove UK Government sections** (for non-UK Gov projects):
-- Delete "UK Government Alignment" sections
-- Remove TCoP, GDS Service Standard references
-- Change classification from "OFFICIAL-SENSITIVE" to your scheme
+**Adapt jurisdiction-specific sections**:
+- Remove policy-framework sections not relevant to your context
+- Update mandatory control references to your applicable standards
+- Change classification defaults to your organisation scheme
 
 **Change Document Control fields**:
 - Add organization-specific fields (Cost Centre, Programme, etc.)

@@ -42,8 +42,8 @@ Scan the project directory for existing artifacts and read them to inform the pr
 - `ARC-*-TCOP-*.md` — TCoP review
 - `ARC-*-SECD-*.md` or `ARC-*-MSBD-*.md` — Security assessments
 - `ARC-*-DPIA-*.md` — DPIA
-- `ARC-*-AIPB-*.md` — AI Playbook assessment
-- `ARC-*-ATRS-*.md` — ATRS record
+- `ARC-*-AIGA-*.md` — AU AI governance assessment
+- `ARC-*-AITS-*.md` — AI transparency statement
 - `ARC-*-BKLG-*.md` — Backlog
 - `ARC-*-DVOP-*.md` — DevOps strategy
 - `ARC-*-TRAC-*.md` — Traceability matrix
@@ -167,9 +167,9 @@ find "$PROJECT_DIR" -type f -name "*.md" | sort
 - `ARC-*-SVCASS-*.md` - GDS Service Assessment
 - `ARC-*-SECD-*.md` - Security assessment
 - `ARC-*-SECD-MOD-*.md` - MOD security (if defence)
-- `ARC-*-AIPB-*.md` - AI Playbook (if AI system)
-- `ARC-*-ATRS-*.md` - ATRS (if algorithmic)
-- `ARC-*-JSP936-*.md` - MOD AI assurance (if MOD AI)
+- `ARC-*-AIGA-*.md` - AU AI governance assessment (if AI system)
+- `ARC-*-AITS-*.md` - AITS (if algorithmic)
+- `ARC-*-ADEF-*.md` - MOD AI assurance (if MOD AI)
 
 **Governance Artifacts**:
 - `ARC-*-TRAC-*.md` - End-to-end traceability

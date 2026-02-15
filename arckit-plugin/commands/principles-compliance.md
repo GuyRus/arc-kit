@@ -1,5 +1,5 @@
 ---
-description: Assess compliance with architecture principles and generate scorecard with evidence, gaps, and recommendations
+description: "Assess compliance with architecture principles and generate scorecard with evidence, gaps, and recommendations"
 ---
 
 ## User Input
@@ -53,9 +53,9 @@ More artifacts = better evidence = more accurate assessment:
 **Read the template** (with user override support):
 - **First**, check if `.arckit/templates/principles-compliance-assessment-template.md` exists in the project root
 - **If found**: Read the user's customized template (user override takes precedence)
-- **If not found**: Read `${CLAUDE_PLUGIN_ROOT}/templates/principles-compliance-assessment-template.md` (default)
+- **If not found**: Read `.arckit/templates/principles-compliance-assessment-template.md` (default)
 
-> **Note**: Read the `${CLAUDE_PLUGIN_ROOT}/VERSION` file and update the version in the template metadata line when generating.
+> **Note**: Read the `.arckit/VERSION` file and update the version in the template metadata line when generating.
 > **Tip**: Users can customize templates with `/arckit:customize principles-compliance`
 
 ### 1. Validate Prerequisites
@@ -191,8 +191,8 @@ Load only the information needed for assessment. Do NOT read entire files - extr
 - `ARC-*-TCOP-*.md` - TCoP point scores
 - `ARC-*-SECD-*.md` - NCSC CAF assessment results
 - `ARC-*-SECD-MOD-*.md` - MOD CAAT assessment
-- `ARC-*-AIPB-*.md` - AI principles scores
-- `ARC-*-ATRS-*.md` - Algorithmic transparency
+- `ARC-*-AIGA-*.md` - AI principles scores
+- `ARC-*-AITS-*.md` - Algorithmic transparency
 
 **From other artifacts**:
 - Any `ARC-*-DATA-*.md` file - Entity-relationship diagram, GDPR compliance
@@ -502,7 +502,7 @@ Display concise summary (NOT full document):
 [IF compliance docs exist:]
 - ✅ **TCoP Point {N}**: {Assessment result}
 - ✅ **Secure by Design - {Control}**: {Assessment result}
-- ✅ **AI Playbook Principle {N}**: {Assessment result}
+- ✅ **AU AI governance assessment Principle {N}**: {Assessment result}
 - [OR]
 - ⚪ Compliance assessments not yet performed
 
@@ -806,7 +806,7 @@ This assessment was based on the following artifacts:
 - Operational metrics (monitoring dashboards, SLA reports)
 
 **Secondary Evidence** (supporting):
-- Compliance assessments (TCoP, Secure by Design, AI Playbook)
+- Compliance assessments (TCoP, Secure by Design, AU AI governance assessment)
 - Architecture diagrams showing principle implementation
 - Traceability matrices linking requirements to design
 - Stakeholder requirements driving principle adherence

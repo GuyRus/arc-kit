@@ -279,7 +279,7 @@ Generate the DPIA by:
       - Algorithmic bias risks
       - Explainability/transparency
       - Human oversight
-      - Link to ATRS record if it exists
+      - Link to AI transparency statement if it exists
 
 17. **Section 15: Summary and Action Plan**:
     - Summary table: Total risks, high/medium/low breakdown, key mitigations, ICO consultation needed?
@@ -380,8 +380,8 @@ If YES:
 **Related Artifacts**:
 - Risk Register: projects/{project_id}/ARC-*-RISK-*.md ({added/updated})
 - Secure by Design: projects/{project_id}/ARC-*-SECD-*.md
-- {If AI: AI Playbook: projects/{project_id}/ARC-*-AIPB-*.md}
-- {If AI: ATRS: projects/{project_id}/ARC-*-ATRS-*.md}
+- {If AI: AU AI governance assessment: projects/{project_id}/ARC-*-AIGA-*.md}
+- {If AI: AITS: projects/{project_id}/ARC-*-AITS-*.md}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📚 References
@@ -414,7 +414,7 @@ If YES:
 
 10. **Children's Data**: If processing children's data, the DPIA must include additional assessment of age verification, parental consent, best interests, and child-friendly privacy notices.
 
-11. **AI/ML Systems**: If the system uses AI/ML for profiling, automated decision-making, or algorithmic processing, integrate with `/arckit:ai-playbook` assessment and link to ATRS record.
+11. **AI/ML Systems**: If the system uses AI/ML for profiling, automated decision-making, or algorithmic processing, integrate with `/arckit:ai-playbook` assessment and link to AI transparency statement.
 
 12. **Classification**: DPIAs contain sensitive information about data protection risks and vulnerabilities. Always classify as **OFFICIAL-SENSITIVE** at minimum.
 

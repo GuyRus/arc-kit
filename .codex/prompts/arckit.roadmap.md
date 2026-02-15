@@ -278,7 +278,7 @@ If this is a Ministry of Defence project, include:
 - **JSP 440**: Defence project management framework alignment
 - **Security Clearances**: BPSS, SC, DV requirements and timeline
 - **IAMM (Information Assurance Maturity Model)**: Security maturity progression
-- **JSP 936**: If AI/ML involved, reference AI assurance timeline
+- **AU defence AI assurance pathway**: If AI/ML involved, reference AI assurance timeline
 
 ### 7. Mermaid Diagram Syntax - CRITICAL RULES
 

@@ -96,8 +96,8 @@ Scan the project directory for existing artifacts and read them to inform this a
 
 **OPTIONAL** (read if available, skip silently if missing):
 - `ARC-*-TCOP-*.md` — TCoP review (technology compliance)
-- `ARC-*-AIPB-*.md` — AI Playbook assessment (if AI components)
-- `ARC-*-ATRS-*.md` — ATRS record (if algorithmic tools)
+- `ARC-*-AIGA-*.md` — AU AI governance assessment (if AI components)
+- `ARC-*-AITS-*.md` — AI transparency statement (if algorithmic tools)
 - `ARC-*-SOW-*.md` — Statement of work
 - `ARC-*-EVAL-*.md` — Vendor evaluation
 - `ARC-*-ANLZ-*.md` — Governance analysis
@@ -374,7 +374,7 @@ For each of the 14 Service Standard points, map evidence from ArcKit artifacts:
 **Evidence Sources**:
 - `ARC-*-SECD-*.md` - NCSC security principles, threat model
 - `ARC-*-DATA-*.md` - GDPR compliance, data protection, PII handling
-- `ARC-*-ATRS-*.md` - AI transparency and risk (if AI service)
+- `ARC-*-AITS-*.md` - AI transparency and risk (if AI service)
 - `ARC-*-RISK-*.md` - Security risks and mitigations
 - `ARC-*-REQ-*.md` - Security and privacy NFRs
 - `ARC-*-TCOP-*.md` - TCoP security points

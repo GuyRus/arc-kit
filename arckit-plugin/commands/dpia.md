@@ -1,5 +1,5 @@
 ---
-description: Generate Data Protection Impact Assessment (DPIA) for UK GDPR Article 35 compliance
+description: "Generate Data Protection Impact Assessment (DPIA) for UK GDPR Article 35 compliance"
 ---
 
 You are helping an enterprise architect generate a **Data Protection Impact Assessment (DPIA)** following UK GDPR Article 35 requirements and ICO guidance.
@@ -93,13 +93,13 @@ Apply the user's selections: the scope determines which data model entities and 
 First, check for existing projects:
 
 ```bash
-bash ${CLAUDE_PLUGIN_ROOT}/scripts/bash/list-projects.sh --json
+bash .arckit/scripts/bash/list-projects.sh --json
 ```
 
 If the user specifies an existing project or the name matches, use that directory. Otherwise, create a new project:
 
 ```bash
-bash ${CLAUDE_PLUGIN_ROOT}/scripts/bash/create-project.sh --name "$PROJECT_NAME" --json
+bash .arckit/scripts/bash/create-project.sh --name "$PROJECT_NAME" --json
 ```
 
 Parse the JSON output to get `project_id` and `project_path`.
@@ -115,9 +115,9 @@ Read the DPIA template:
 **Read the template** (with user override support):
 - **First**, check if `.arckit/templates/dpia-template.md` exists in the project root
 - **If found**: Read the user's customized template (user override takes precedence)
-- **If not found**: Read `${CLAUDE_PLUGIN_ROOT}/templates/dpia-template.md` (default)
+- **If not found**: Read `.arckit/templates/dpia-template.md` (default)
 
-> **Note**: Read the `${CLAUDE_PLUGIN_ROOT}/VERSION` file and update the version in the template metadata line when generating.
+> **Note**: Read the `.arckit/VERSION` file and update the version in the template metadata line when generating.
 > **Tip**: Users can customize templates with `/arckit:customize dpia`
 
 This template has 16 major sections and uses the ICO's 9-criteria screening checklist.
@@ -183,7 +183,7 @@ Generate the DPIA by:
 2. **Auto-populate Document Control**:
    ```bash
    # Generate document ID
-   DOC_ID=$(bash ${CLAUDE_PLUGIN_ROOT}/scripts/bash/generate-document-id.sh {project_id} DPIA v${VERSION})
+   DOC_ID=$(bash .arckit/scripts/bash/generate-document-id.sh {project_id} DPIA v${VERSION})
    ```
    - Document ID: `{DOC_ID}` (e.g., ARC-001-DPIA-v1.0)
    - Version: ${VERSION}
@@ -279,7 +279,7 @@ Generate the DPIA by:
       - Algorithmic bias risks
       - Explainability/transparency
       - Human oversight
-      - Link to ATRS record if it exists
+      - Link to AI transparency statement if it exists
 
 17. **Section 15: Summary and Action Plan**:
     - Summary table: Total risks, high/medium/low breakdown, key mitigations, ICO consultation needed?
@@ -380,8 +380,8 @@ If YES:
 **Related Artifacts**:
 - Risk Register: projects/{project_id}/ARC-*-RISK-*.md ({added/updated})
 - Secure by Design: projects/{project_id}/ARC-*-SECD-*.md
-- {If AI: AI Playbook: projects/{project_id}/ARC-*-AIPB-*.md}
-- {If AI: ATRS: projects/{project_id}/ARC-*-ATRS-*.md}
+- {If AI: AU AI governance assessment: projects/{project_id}/ARC-*-AIGA-*.md}
+- {If AI: AITS: projects/{project_id}/ARC-*-AITS-*.md}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📚 References
@@ -414,7 +414,7 @@ If YES:
 
 10. **Children's Data**: If processing children's data, the DPIA must include additional assessment of age verification, parental consent, best interests, and child-friendly privacy notices.
 
-11. **AI/ML Systems**: If the system uses AI/ML for profiling, automated decision-making, or algorithmic processing, integrate with `/arckit:ai-playbook` assessment and link to ATRS record.
+11. **AI/ML Systems**: If the system uses AI/ML for profiling, automated decision-making, or algorithmic processing, integrate with `/arckit:ai-playbook` assessment and link to AI transparency statement.
 
 12. **Classification**: DPIAs contain sensitive information about data protection risks and vulnerabilities. Always classify as **OFFICIAL-SENSITIVE** at minimum.
 

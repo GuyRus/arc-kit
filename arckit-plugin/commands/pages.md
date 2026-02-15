@@ -1,5 +1,5 @@
 ---
-description: Generate GitHub Pages site with governance dashboard, document viewer, and Mermaid diagram support
+description: "Generate GitHub Pages site with governance dashboard, document viewer, and Mermaid diagram support"
 ---
 
 # ArcKit: GitHub Pages Generator
@@ -99,14 +99,18 @@ projects/
 │   ├── ARC-001-DPIA-v1.0.md     # DPIA
 │   ├── ARC-001-SNOW-v1.0.md     # ServiceNow Design
 │   ├── ARC-001-DEVOPS-v1.0.md   # DevOps Strategy
-│   ├── ARC-001-MLOPS-v1.0.md    # MLOps Strategy
+│   ├── ARC-001-MLOP-v1.0.md     # MLOps Strategy
 │   ├── ARC-001-FINOPS-v1.0.md   # FinOps Strategy
 │   ├── ARC-001-OPS-v1.0.md      # Operational Readiness
 │   ├── ARC-001-TCOP-v1.0.md     # TCoP Review
 │   ├── ARC-001-SECD-v1.0.md     # Secure by Design
 │   ├── ARC-001-SECD-MOD-v1.0.md # MOD Secure by Design
-│   ├── ARC-001-AIPB-v1.0.md     # AI Playbook Assessment
-│   ├── ARC-001-ATRS-v1.0.md     # ATRS Record
+│   ├── ARC-001-AIGA-v1.0.md     # AU AI Governance Assessment
+│   ├── ARC-001-AIUR-v1.0.md     # AU AI Use Case Register
+│   ├── ARC-001-AITS-v1.0.md     # AU AI Transparency Statement
+│   ├── ARC-001-AIIA-v1.0.md     # AU AI Impact Assessment
+│   ├── ARC-001-AIGC-v1.0.md     # AU AI Governance Checklist
+│   ├── ARC-001-ADEF-v1.0.md     # AU Defence AI Assurance Pathway
 │   ├── ARC-001-PRIN-COMP-v1.0.md # Principles Compliance
 │   │
 │   ├── # Multi-instance Documents (subdirectories)
@@ -167,15 +171,19 @@ Only include these known artifact types. Match by type code pattern `ARC-{PID}-{
 | | TCOP | `ARC-*-TCOP-*.md` | TCoP Assessment |
 | | SECD | `ARC-*-SECD-*.md` | Secure by Design |
 | | SECD-MOD | `ARC-*-SECD-MOD-*.md` | MOD Secure by Design |
-| | AIPB | `ARC-*-AIPB-*.md` | AI Playbook Assessment |
-| | ATRS | `ARC-*-ATRS-*.md` | ATRS Record |
+| | AIGA | `ARC-*-AIGA-*.md` | AU AI Governance Assessment |
+| | AIUR | `ARC-*-AIUR-*.md` | AU AI Use Case Register |
+| | AITS | `ARC-*-AITS-*.md` | AU AI Transparency Statement |
+| | AIIA | `ARC-*-AIIA-*.md` | AU AI Impact Assessment |
+| | AIGC | `ARC-*-AIGC-*.md` | AU AI Governance Checklist |
 | | DPIA | `ARC-*-DPIA-*.md` | Data Protection Impact Assessment |
-| | JSP936 | `ARC-*-JSP936-*.md` | JSP 936 Assessment |
+| | ADEF | `ARC-*-ADEF-*.md` | AU Defence AI Assurance Pathway |
 | | SVCASS | `ARC-*-SVCASS-*.md` | Service Assessment |
 | **Operations** | | | |
 | | SNOW | `ARC-*-SNOW-*.md` | ServiceNow Design |
 | | DEVOPS | `ARC-*-DEVOPS-*.md` | DevOps Strategy |
-| | MLOPS | `ARC-*-MLOPS-*.md` | MLOps Strategy |
+| | MLOP | `ARC-*-MLOP-*.md` | MLOps Strategy |
+| | MLOPS | `ARC-*-MLOPS-*.md` | MLOps Strategy (legacy code) |
 | | FINOPS | `ARC-*-FINOPS-*.md` | FinOps Strategy |
 | | OPS | `ARC-*-OPS-*.md` | Operational Readiness |
 | | PLAT | `ARC-*-PLAT-*.md` | Platform Design |
@@ -341,9 +349,9 @@ Create `docs/manifest.json` with the discovered structure:
 **Read the template** (with user override support):
 - **First**, check if `.arckit/templates/pages-template.html` exists in the project root
 - **If found**: Read the user's customized template (user override takes precedence)
-- **If not found**: Read `${CLAUDE_PLUGIN_ROOT}/templates/pages-template.html` (default)
+- **If not found**: Read `.arckit/templates/pages-template.html` (default)
 
-> **Note**: Read the `${CLAUDE_PLUGIN_ROOT}/VERSION` file and update the version in the template metadata line when generating.
+> **Note**: Read the `.arckit/VERSION` file and update the version in the template metadata line when generating.
 > **Tip**: Users can customize templates with `/arckit:customize pages`
 
 This template is the single source of truth for the pages site — it contains all HTML structure, CSS styling, and JavaScript functionality.
@@ -467,4 +475,4 @@ The generated HTML should handle:
 
 ---
 
-**Remember**: You MUST read and use `${CLAUDE_PLUGIN_ROOT}/templates/pages-template.html` as the base for `docs/index.html`. The template is the source of truth for all HTML, CSS, and JavaScript. Only replace the `{{...}}` config placeholders with actual values.
+**Remember**: You MUST read and use `.arckit/templates/pages-template.html` as the base for `docs/index.html`. The template is the source of truth for all HTML, CSS, and JavaScript. Only replace the `{{...}}` config placeholders with actual values.

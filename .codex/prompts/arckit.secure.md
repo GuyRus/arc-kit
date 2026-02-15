@@ -65,9 +65,9 @@ Generate a comprehensive Secure by Design assessment document by:
    **OPTIONAL** (read if available, skip silently if missing):
    - `ARC-*-TCOP-*.md` in `projects/{project-name}/` — TCoP review
      - Extract: Technology governance compliance, Point 6 (Secure) findings
-   - `ARC-*-AIPB-*.md` in `projects/{project-name}/` — AI Playbook assessment
+   - `ARC-*-AIGA-*.md` in `projects/{project-name}/` — AU AI governance assessment
      - Extract: AI-specific security requirements (prompt injection, data poisoning)
-   - `ARC-*-ATRS-*.md` in `projects/{project-name}/` — ATRS record
+   - `ARC-*-AITS-*.md` in `projects/{project-name}/` — AI transparency statement
      - Extract: Algorithmic transparency security requirements
 
    **What to extract from each document**:
