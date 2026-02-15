@@ -1,101 +1,34 @@
-# AI Playbook Assessment Playbook
+# AU AI Governance Assessment Guide
 
-`/arckit.ai-playbook` assesses UK Government AI Playbook compliance for responsible AI deployment in public sector projects.
+`/arckit.ai-playbook` now generates an AU-first governance artifact set grounded in Australian Government policy.
 
----
+## Outputs
 
-## Inputs
+- `ARC-<id>-AIGA-v1.0.md` — AU AI governance assessment
+- `ARC-<id>-AIUR-v1.0.md` — AU AI use case register
+- `ARC-<id>-AIGC-v1.0.md` — AU AI governance checklist
+- `ARC-<id>-AIIA-v1.0.md` — AU AI impact assessment (for in-scope use cases)
 
-| Artefact | Purpose |
-|----------|---------|
-| Requirements (`ARC-<id>-REQ-v1.0.md`) | AI-related functional and non-functional requirements |
-| Architecture diagrams | AI system components and data flows |
-| Data model | Training data sources, personal data processing |
-| Stakeholder drivers | Business context and user impact |
+## Policy anchors (official)
 
----
+- DTA Policy for the responsible use of AI in government 2.0 (accessed 2026-02-15 AEDT)
+- DTA Standard for accountability 2.0 (accessed 2026-02-15 AEDT)
+- DTA Standard for AI transparency statements 2.0 (accessed 2026-02-15 AEDT)
+- DTA Guidance for the AI impact assessment tool PDF (accessed 2026-02-15 AEDT)
+- DTA Australian Government AI technical standard (accessed 2026-02-15 AEDT)
 
-## Command
+## One-page workflow
 
-```bash
-/arckit.ai-playbook Assess AI Playbook compliance for <project>
-```
+1. Determine in-scope status using Appendix C criteria.
+2. Complete impact/risk analysis and identify high-risk pathways.
+3. Populate governance assessment with evidence for each mandatory requirement.
+4. Register use case details with required minimum fields.
+5. Finalise governance checklist with owners/dates for gaps.
 
-Output: `projects/<id>/ARC-<id>-AIPB-v1.0.md`
+## High-risk use case rule
 
----
-
-## Assessment Structure
-
-| Section | Contents |
-|---------|----------|
-| Executive Summary | Overall compliance status and key findings |
-| AI System Overview | System description, use cases, decision types |
-| 10 Principles Assessment | Compliance against each AI Playbook principle |
-| Risk Assessment | AI-specific risks (bias, transparency, accountability) |
-| Data Governance | Training data quality, bias mitigation, personal data |
-| Human Oversight | Human-in-the-loop requirements, escalation paths |
-| Explainability | How decisions can be explained to users |
-| Monitoring & Evaluation | Ongoing performance and fairness monitoring |
-| Compliance Roadmap | Actions needed for full compliance |
-
----
-
-## 10 AI Playbook Principles
-
-| # | Principle | Focus Area |
-|---|-----------|------------|
-| 1 | Use AI to support public sector tasks | Legitimate public benefit |
-| 2 | Have clear goals and robust evaluation | Measurable outcomes |
-| 3 | Be fair, accountable and transparent | Bias mitigation, explainability |
-| 4 | Consider the full lifecycle | Development through retirement |
-| 5 | Use quality data responsibly | Data governance and ethics |
-| 6 | Ensure adequate human oversight | Human-in-the-loop controls |
-| 7 | Keep data secure and manage risks | Security and risk management |
-| 8 | Use existing tools where appropriate | Avoid reinvention |
-| 9 | Build internal capability | Skills and knowledge transfer |
-| 10 | Work in the open | Transparency and collaboration |
-
----
-
-## One-Page Workflow
-
-| Phase | Key Activities | ArcKit Commands |
-|-------|----------------|-----------------|
-| Discovery | Define AI use cases and requirements | `/arckit.requirements`, `/arckit.stakeholders` |
-| Data | Design data model and assess data quality | `/arckit.data-model`, `/arckit.dpia` |
-| Governance | Assess AI Playbook compliance | `/arckit.ai-playbook` |
-| Transparency | Create algorithmic transparency record | `/arckit.atrs` |
-| Operations | Plan ongoing monitoring and governance | `/arckit.mlops`, `/arckit.operationalize` |
-
----
-
-## Review Checklist
-
-- All 10 AI Playbook principles assessed with evidence.
-- Bias risks identified with mitigation measures.
-- Human oversight requirements clearly defined.
-- Explainability approach documented for affected users.
-- Training data quality and governance addressed.
-- Ongoing monitoring plan for fairness and performance.
-- Compliance roadmap with owners and timelines.
-
----
-
-## Related UK Government Requirements
-
-| Requirement | Document | When Needed |
-|-------------|----------|-------------|
-| Algorithmic Transparency | `ARC-<id>-ATRS-v1.0.md` | Public-facing algorithmic decisions |
-| Data Protection Impact | `ARC-<id>-DPIA-v1.0.md` | AI processing personal data |
-| MOD AI Assurance | `ARC-<id>-JSP936-v1.0.md` | Defence AI systems |
-
----
-
-## Key Principles
-
-1. **Public Benefit First**: AI must serve legitimate public sector goals.
-2. **Fairness by Design**: Bias detection and mitigation from the start.
-3. **Transparency**: Users should understand how AI affects them.
-4. **Human Oversight**: Appropriate human control based on risk level.
-5. **Continuous Evaluation**: Ongoing monitoring, not just initial assessment.
+For inherent high-risk in-scope use cases, include:
+- accountable official escalation
+- designated board/senior executive governance pathway
+- DTA reporting pathway
+- minimum 12-month review cycle
