@@ -84,7 +84,7 @@ Output: `projects/<id>/ARC-<id>-SOW-v1.0.md`
 |-------|----------------|-----------------|
 | Discovery | Define requirements | `/arckit.requirements`, `/arckit.stakeholders` |
 | Preparation | Create SOW/RFP | `/arckit.sow` |
-| Procurement | Issue to market | Via G-Cloud, DOS, or direct |
+| Procurement | Issue to market | Via BuyICT, panel sourcing, or approved direct process |
 | Evaluation | Score proposals | `/arckit.evaluate` |
 | Award | Negotiate and contract | Manual |
 

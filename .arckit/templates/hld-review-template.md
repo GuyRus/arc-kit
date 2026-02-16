@@ -230,7 +230,7 @@ Review how HLD addresses functional requirements from requirements document.
 
 | NFR ID | Requirement | HLD Approach | Assessment | Comments |
 |--------|-------------|--------------|------------|----------|
-| NFR-C-1 | GDPR compliance | [Data residency, deletion APIs, consent] | [✅ | ⚠️ | ❌] | |
+| NFR-C-1 | Privacy Act 1988 / APPs compliance | [Data residency, deletion APIs, consent] | [✅ | ⚠️ | ❌] | |
 | NFR-C-2 | Audit logging | [CloudWatch Logs, 7-year retention] | [✅ | ⚠️ | ❌] | |
 
 ---
@@ -332,7 +332,7 @@ Review how HLD addresses functional requirements from requirements document.
 | Aspect | Addressed | Assessment | Comments |
 |--------|-----------|------------|----------|
 | Data classification | [ ] Yes [ ] No | [✅ | ⚠️ | ❌] | |
-| Data residency (GDPR) | [ ] Yes [ ] No | [✅ | ⚠️ | ❌] | |
+| Data residency (Privacy Act 1988 / APPs) | [ ] Yes [ ] No | [✅ | ⚠️ | ❌] | |
 | Data retention policies | [ ] Yes [ ] No | [✅ | ⚠️ | ❌] | |
 | PII handling | [ ] Yes [ ] No | [✅ | ⚠️ | ❌] | |
 | Backup and recovery | [ ] Yes [ ] No | [✅ | ⚠️ | ❌] | |
@@ -429,8 +429,8 @@ Review how HLD addresses functional requirements from requirements document.
 
 | Compliance Requirement | Control | Assessment | Gap |
 |------------------------|---------|------------|-----|
-| GDPR Art. 32 (Security) | [Encryption, access controls] | [✅ | ⚠️ | ❌] | |
-| GDPR Art. 17 (Right to deletion) | [Deletion API, data lifecycle] | [✅ | ⚠️ | ❌] | |
+| Privacy Act 1988 / APPs Art. 32 (Security) | [Encryption, access controls] | [✅ | ⚠️ | ❌] | |
+| Privacy Act 1988 / APPs Art. 17 (Right to deletion) | [Deletion API, data lifecycle] | [✅ | ⚠️ | ❌] | |
 | HIPAA (if applicable) | [PHI encryption, BAA with AWS] | [✅ | ⚠️ | ❌] | |
 | PCI-DSS (if applicable) | [Payment data tokenization, no CHD storage] | [✅ | ⚠️ | ❌] | |
 | SOC 2 Type II | [Controls aligned with trust principles] | [✅ | ⚠️ | ❌] | |

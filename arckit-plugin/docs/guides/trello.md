@@ -50,7 +50,7 @@ Board: "{Project Name} - Sprint Backlog"
 | Field | Example |
 |-------|---------|
 | **Name** | `STORY-001: Create user account [8pts]` |
-| **Description** | GDS user story format + metadata |
+| **Description** | standard user story format + metadata |
 | **Labels** | `Must Have` (red) + `Story` (blue) |
 | **Checklist** | Acceptance criteria as check items |
 

@@ -232,7 +232,7 @@ DOC_ID=$(.arckit/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "DLDR" "${
 *User-provided fields* (extract from project metadata or user input):
 - `[PROJECT_NAME]` → Full project name from project metadata or user input
 - `[OWNER_NAME_AND_ROLE]` → Document owner (prompt user if not in metadata)
-- `[CLASSIFICATION]` → Default to "OFFICIAL" for UK Gov, "PUBLIC" otherwise (or prompt user)
+- `[CLASSIFICATION]` → Default to "OFFICIAL" for Australian Government, "PUBLIC" otherwise (or prompt user)
 
 *Calculated fields*:
 - `[YYYY-MM-DD]` for Review Date → Current date + 30 days

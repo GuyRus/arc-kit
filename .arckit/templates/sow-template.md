@@ -125,7 +125,7 @@ The following are explicitly NOT part of this engagement:
 - **Backup**: [Frequency, retention, geographic redundancy]
 
 #### 3.2.3 Security Requirements
-- **Compliance**: [GDPR, HIPAA, PCI-DSS, SOC 2, ISO 27001, etc.]
+- **Compliance**: [Privacy Act 1988 / APPs, HIPAA, PCI-DSS, SOC 2, ISO 27001, etc.]
 - **Authentication**: [SSO, MFA requirements]
 - **Encryption**: [TLS 1.3+, AES-256 at rest]
 - **Vulnerability Management**: [Scanning, penetration testing, remediation SLAs]
@@ -647,7 +647,7 @@ Both parties agree to maintain confidentiality of proprietary information disclo
 
 ### Appendix C: Security and Compliance Standards
 
-[List relevant standards: NIST, ISO 27001, GDPR, HIPAA, etc.]
+[List relevant standards: NIST, ISO 27001, Privacy Act 1988 / APPs, HIPAA, etc.]
 
 ### Appendix D: Reference Architecture Diagrams
 

@@ -119,7 +119,7 @@ flowchart LR
 - **BUILD**: Genesis/Custom components with competitive advantage
 - **BUY**: Product components with mature market
 - **USE**: Commodity cloud/utility services
-- **REUSE**: GOV.UK services (if UK Government project)
+- **REUSE**: existing government services (if available)
 
 ---
 
@@ -203,7 +203,7 @@ flowchart LR
 | {Sink 1} | {type} | {format} | {retention} | {backup} |
 | {Sink 2} | {type} | {format} | {retention} | {backup} |
 
-### PII Handling (UK GDPR / GDPR Compliance)
+### PII Handling (Privacy Act 1988 / APPs / Privacy Act 1988 / APPs Compliance)
 
 | Component | PII Type | Processing | Legal Basis | Retention | Deletion |
 |-----------|----------|------------|-------------|-----------|----------|
@@ -299,11 +299,11 @@ flowchart LR
 
 ---
 
-## UK Government Compliance (if applicable)
+## Australian Government Compliance (if applicable)
 
-### Technology Code of Practice
+### Digital Experience Policy / Digital Service Standard
 
-| TCoP Point | Compliance | Component(s) | Evidence |
+| Policy/Standard control | Compliance | Component(s) | Evidence |
 |------------|------------|--------------|----------|
 | 1. User Needs | ✅ / ⚠️ / ❌ | {components} | {evidence} |
 | 2. Accessibility | ✅ / ⚠️ / ❌ | {components} | {evidence} |
@@ -313,15 +313,15 @@ flowchart LR
 | 7. Privacy | ✅ / ⚠️ / ❌ | {components} | {evidence} |
 | 8. Share & Reuse | ✅ / ⚠️ / ❌ | {components} | {evidence} |
 
-### GOV.UK Services
+### Reusable Government Services
 
-| GOV.UK Service | Used | Component | Rationale |
+| Government Service | Used | Component | Rationale |
 |----------------|------|-----------|-----------|
-| GOV.UK Pay | {Yes/No} | {component} | {rationale} |
-| GOV.UK Notify | {Yes/No} | {component} | {rationale} |
-| GOV.UK Design System | {Yes/No} | {component} | {rationale} |
-| GOV.UK Verify | {Yes/No} | {component} | {rationale} |
-| GOV.UK PaaS | {Yes/No} | {component} | {rationale} |
+| [Service Name] | {Yes/No} | {component} | {rationale} |
+| government digital services Notify | {Yes/No} | {component} | {rationale} |
+| government digital services Design System | {Yes/No} | {component} | {rationale} |
+| government digital services Verify | {Yes/No} | {component} | {rationale} |
+| government digital services PaaS | {Yes/No} | {component} | {rationale} |
 
 ### AI Playbook Compliance (for AI systems)
 
@@ -363,7 +363,7 @@ If AI system:
 **Wardley Map**: `{path_to_wardley_map}`
 **HLD**: `{path_to_hld}`
 **DLD**: `{path_to_dld}`
-**TCoP Assessment**: `{path_to_tcop}`
+**DX Policy / Digital Service Standard Assessment**: `{path_to_tcop}`
 **AI Playbook Assessment**: `{path_to_ai_playbook}`
 **ATRS Record**: `{path_to_atrs}`
 

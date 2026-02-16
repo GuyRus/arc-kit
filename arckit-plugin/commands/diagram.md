@@ -49,11 +49,11 @@ First, analyze existing project artifacts to understand what to diagram:
    - Extract: Technology standards, patterns, constraints
    - Identify: Cloud provider, security framework, compliance requirements
 
-6. **Read UK Government Assessments** (if applicable):
-   - File: Any `ARC-*-TCOP-*.md` file in `projects/{current_project}/` (TCoP)
+6. **Read policy and assurance assessments** (if applicable):
+   - File: Any `ARC-*-TCOP-*.md` file in `projects/{current_project}/` (DX Policy / Digital Service Standard)
    - File: Any `ARC-*-AIGA-*.md` file in `projects/{current_project}/` (AU AI governance assessment)
    - File: Any `ARC-*-AITS-*.md` file in `projects/{current_project}/` (AITS)
-   - Identify: GOV.UK services, compliance requirements, HIGH-RISK AI components
+   - Identify: reusable government services, compliance requirements, and high-risk components
 
 ## Step 1b: Check for External Documents (optional)
 
@@ -227,12 +227,12 @@ C4Component
 **Purpose**: Show infrastructure topology and cloud resources
 
 **When to Use**:
-- Cloud-first compliance (TCoP Point 5)
+- Cloud and hosting compliance expectations
 - Infrastructure planning
 - Security zone design
 - DevOps / SRE discussions
 
-**Input**: HLD, NFR (performance, security), TCoP assessment
+**Input**: HLD, NFR (performance, security), DX Policy / Digital Service Standard assessment
 
 **Mermaid Syntax**: Use `flowchart` with subgraphs
 
@@ -360,11 +360,11 @@ sequenceDiagram
 
 **When to Use**:
 - Data requirements (DR)
-- GDPR / UK GDPR compliance
+- Privacy Act 1988 / APPs / Privacy Act 1988 / APPs compliance
 - PII handling and data residency
 - Data transformation pipelines
 
-**Input**: Requirements (DR), DLD (data models), TCoP/GDPR assessments
+**Input**: Requirements (DR), DLD (data models), DX Policy / Digital Service Standard/Privacy Act 1988 / APPs assessments
 
 **Mermaid Syntax**: Use `flowchart` with data emphasis
 
@@ -388,7 +388,7 @@ flowchart LR
     end
 
     subgraph External["External Systems"]
-        Stripe["Stripe<br/>PII: Tokenized card<br/>UK Residency: Yes"]
+        Stripe["Stripe<br/>PII: Tokenized card<br/>Australian Residency: Yes"]
         BI["Analytics/BI<br/>PII: Anonymized only"]
     end
 
@@ -456,11 +456,11 @@ For each component, annotate with:
 
 **From Requirements**:
 - NFR targets: "10K TPS", "99.99% availability", "Sub-200ms response"
-- Compliance: "PCI-DSS Level 1", "UK GDPR", "WCAG 2.2 AA"
+- Compliance: "PCI-DSS Level 1", "Privacy Act 1988 / APPs", "WCAG 2.2 AA"
 
-**From UK Government** (if applicable):
-- GOV.UK services: "GOV.UK Notify", "GOV.UK Pay", "GOV.UK Design System"
-- TCoP compliance: "Cloud First (AWS)", "Open Source (PostgreSQL)"
+**From Australian Government** (if applicable):
+- government digital services services: "government digital services Notify", "government digital services Pay", "government digital services Design System"
+- DX Policy / Digital Service Standard compliance: "Cloud First (AWS)", "Open Source (PostgreSQL)"
 - AU AI governance assessment: "HIGH-RISK AI - Human-in-the-loop", "Bias testing required"
 
 ### Mermaid Syntax Guidelines
@@ -547,7 +547,7 @@ DOC_ID=$(.arckit/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "DIAG" "${
 *User-provided fields* (extract from project metadata or user input):
 - `[PROJECT_NAME]` → Full project name from project metadata or user input
 - `[OWNER_NAME_AND_ROLE]` → Document owner (prompt user if not in metadata)
-- `[CLASSIFICATION]` → Default to "OFFICIAL" for UK Gov, "PUBLIC" otherwise (or prompt user)
+- `[CLASSIFICATION]` → Default to "OFFICIAL" for Australian Government, "PUBLIC" otherwise (or prompt user)
 
 *Calculated fields*:
 - `[YYYY-MM-DD]` for Review Date → Current date + 30 days
@@ -610,7 +610,7 @@ The diagram document must include:
 
 6. **Data Flow** (if relevant):
    - Data sources and sinks
-   - PII handling (UK GDPR compliance)
+   - PII handling (Privacy Act 1988 / APPs compliance)
    - Data retention and deletion policies
 
 7. **Security Architecture**:
@@ -628,9 +628,9 @@ The diagram document must include:
    - Scalability approach
    - Availability and resilience
 
-10. **UK Government Compliance** (if applicable):
-    - TCoP point compliance
-    - GOV.UK services used
+10. **Australian Government Compliance** (if applicable):
+    - DX Policy / Digital Service Standard point compliance
+    - government digital services services used
     - AU AI governance compliance (for AI systems)
 
 11. **Wardley Map Integration**:
@@ -642,7 +642,7 @@ The diagram document must include:
     - Requirements document
     - HLD/DLD
     - Wardley Map
-    - TCoP/AU AI governance assessments
+    - DX Policy / Digital Service Standard/AU AI governance assessments
 
 ## Step 5: Validation
 
@@ -668,11 +668,11 @@ Before finalizing, validate the diagram:
 - [ ] USE decisions align with Commodity stage
 - [ ] No building commodity components
 
-### UK Government Validation (if applicable)
-- [ ] GOV.UK services shown where used
-- [ ] Cloud First (TCoP Point 5) compliance visible
-- [ ] Open Source (TCoP Point 3) technologies noted
-- [ ] Share & Reuse (TCoP Point 8) demonstrated
+### Australian Government Validation (if applicable)
+- [ ] government digital services services shown where used
+- [ ] Cloud First (DX Policy / Digital Service Standard Point 5) compliance visible
+- [ ] Open Source (DX Policy / Digital Service Standard Point 3) technologies noted
+- [ ] Share & Reuse (DX Policy / Digital Service Standard Point 8) demonstrated
 - [ ] HIGH-RISK AI components include human oversight
 
 ### Quality Checks
@@ -787,17 +787,17 @@ The `/arckit:traceability` command should include diagram references:
 /arckit:dld-review Review detailed design with component and sequence diagrams
 ```
 
-### Workflow 4: UK Government Compliance (Deployment + Data Flow)
+### Workflow 4: Australian Government Compliance (Deployment + Data Flow)
 
 ```bash
 # 1. Create deployment diagram
 /arckit:diagram deployment Generate AWS deployment diagram showing Cloud First compliance
 
 # 2. Create data flow diagram
-/arckit:diagram dataflow Generate data flow diagram showing UK GDPR PII handling
+/arckit:diagram dataflow Generate data flow diagram showing Privacy Act 1988 / APPs PII handling
 
-# 3. Assess TCoP compliance
-/arckit:tcop Assess TCoP compliance with deployment and data flow diagrams
+# 3. Assess DX Policy / Digital Service Standard compliance
+/arckit:tcop Assess DX Policy / Digital Service Standard compliance with deployment and data flow diagrams
 ```
 
 ## Important Notes
@@ -837,10 +837,10 @@ The `/arckit:traceability` command should include diagram references:
    - ❌ Diagram components not linked to requirements
    - ✅ Explicit mapping in component inventory table
 
-4. **UK Government Specific Mistakes**:
-   - ❌ Not showing GOV.UK services when they should be used
+4. **Australian Government Specific Mistakes**:
+   - ❌ Not showing government digital services services when they should be used
    - ❌ Building custom solutions for commodity components
-   - ✅ Highlight GOV.UK Notify, Pay, Design System, Verify
+   - ✅ Highlight government digital services Notify, Pay, Design System, Verify
 
 5. **Invalid Mermaid Syntax**:
    - ❌ Not testing diagram at mermaid.live
@@ -881,7 +881,7 @@ The document must be:
 - ✅ Valid Mermaid syntax (tested at mermaid.live)
 - ✅ Traceable (linked to requirements and design documents)
 - ✅ Strategic (includes Wardley Map context)
-- ✅ Compliant (UK Government TCoP, AU AI governance assessment if applicable)
+- ✅ Compliant (Australian Government DX Policy / Digital Service Standard, AU AI governance assessment if applicable)
 
 After creating the diagram, provide a summary to the user:
 
@@ -913,10 +913,10 @@ After creating the diagram, provide a summary to the user:
 - BUY: {components} (Product with mature market)
 - USE: {components} (Commodity cloud/utility)
 
-⚠️ UK Government Compliance (if applicable):
-- GOV.UK Services: {services used}
-- TCoP Point 5 (Cloud First): {compliance status}
-- TCoP Point 8 (Share & Reuse): {compliance status}
+⚠️ Australian Government Compliance (if applicable):
+- government digital services Services: {services used}
+- DX Policy / Digital Service Standard Point 5 (Cloud First): {compliance status}
+- DX Policy / Digital Service Standard Point 8 (Share & Reuse): {compliance status}
 
 🎯 Next Steps:
 - {next_action_1}

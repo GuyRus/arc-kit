@@ -38,7 +38,7 @@ $ARGUMENTS
      - Extract: Component topology for cross-referencing with HLD
 
    **OPTIONAL** (read if available, skip silently if missing):
-   - `ARC-*-TCOP-*.md` in `projects/{project-dir}/` — TCoP review
+   - `ARC-*-TCOP-*.md` in `projects/{project-dir}/` — DX Policy / Digital Service Standard review
      - Extract: Technology governance findings relevant to design review
 
    **Read the template** (with user override support):
@@ -132,7 +132,7 @@ $ARGUMENTS
    - Data encryption (at rest, in transit)
    - Secrets management
    - API security (rate limiting, WAF)
-   - Compliance (PCI-DSS, HIPAA, GDPR, etc.)
+   - Compliance (PCI-DSS, HIPAA, Privacy Act 1988 / APPs, etc.)
 
    **Resilience**:
    - Fault tolerance (circuit breakers, retries)
@@ -221,7 +221,7 @@ DOC_ID=$(.arckit/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "HLDR" "${
 *User-provided fields* (extract from project metadata or user input):
 - `[PROJECT_NAME]` → Full project name from project metadata or user input
 - `[OWNER_NAME_AND_ROLE]` → Document owner (prompt user if not in metadata)
-- `[CLASSIFICATION]` → Default to "OFFICIAL" for UK Gov, "PUBLIC" otherwise (or prompt user)
+- `[CLASSIFICATION]` → Default to "OFFICIAL" for Australian Government, "PUBLIC" otherwise (or prompt user)
 
 *Calculated fields*:
 - `[YYYY-MM-DD]` for Review Date → Current date + 30 days

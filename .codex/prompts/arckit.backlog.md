@@ -41,12 +41,12 @@ Scans all ArcKit artifacts and automatically:
 
 1. **Converts requirements to user stories**
    - Business Requirements (BR-xxx) → Epics
-   - Functional Requirements (FR-xxx) → User Stories (GDS format)
+   - Functional Requirements (FR-xxx) → User Stories (standard INVEST-style user story format)
    - Non-Functional Requirements (NFR-xxx) → Technical Tasks
    - Integration Requirements (INT-xxx) → Integration Stories
    - Data Requirements (DR-xxx) → Data Tasks
 
-2. **Generates GDS-compliant user stories**
+2. **Generates well-structured user stories**
    ```
    As a [persona]
    I want [capability]
@@ -225,7 +225,7 @@ Requirement ID → Story Type → Priority → Dependencies
 
 ### Step 4: Generate User Stories from Functional Requirements
 
-For **each FR-xxx**, create a user story in GDS format:
+For **each FR-xxx**, create a user story in standard INVEST-style user story format:
 
 #### 4.1: Identify the Actor (User Persona)
 
@@ -283,15 +283,15 @@ Convert FR's acceptance criteria to "It's done when..." format:
 ```
 - Email verification required
 - Password must be 8+ characters
-- GDPR consent must be captured
+- Privacy Act 1988 / APPs consent must be captured
 ```
 
-**Convert to GDS format**:
+**Convert to standard INVEST-style user story format**:
 ```
 Acceptance Criteria:
 - It's done when email verification is sent within 1 minute
 - It's done when password meets security requirements (8+ chars, special char)
-- It's done when GDPR consent is captured and stored
+- It's done when Privacy Act 1988 / APPs consent is captured and stored
 - It's done when confirmation email is received
 ```
 
@@ -348,7 +348,7 @@ Use Fibonacci sequence: **1, 2, 3, 5, 8, 13**
 - Third-party integration (external APIs)
 - Data migration or transformation
 - Complex business logic
-- Regulatory compliance (GDPR, PCI-DSS)
+- Regulatory compliance (Privacy Act 1988 / APPs, PCI-DSS)
 - Performance optimisation needed
 
 **Estimation algorithm**:
@@ -362,7 +362,7 @@ If FR involves:
   + Data migration: +2
   + Complex validation: +1
   + Performance requirements: +2
-  + GDPR/compliance: +1
+  + Privacy Act 1988 / APPs/compliance: +1
 
 Total = Base + modifiers
 Round to nearest Fibonacci number
@@ -404,7 +404,7 @@ Story-001: Create user account (8 points)
 Tasks:
 - Task-001-A: Design user table schema (2 points)
   - PostgreSQL schema with email, password_hash, created_at
-  - Add GDPR consent fields
+  - Add Privacy Act 1988 / APPs consent fields
   - Create indexes on email
 
 - Task-001-B: Implement registration API endpoint (3 points)
@@ -468,16 +468,16 @@ Tasks:
 - It's done when I can enter email and password on registration form
 - It's done when email verification is sent within 1 minute
 - It's done when account is created after I verify my email
-- It's done when GDPR consent is captured and stored
+- It's done when Privacy Act 1988 / APPs consent is captured and stored
 - It's done when invalid email shows error message
 - It's done when weak password shows strength requirements
 
 **Technical Tasks**:
-- Task-001-A: Design user table schema with GDPR fields (2 points)
+- Task-001-A: Design user table schema with Privacy Act 1988 / APPs fields (2 points)
 - Task-001-B: Implement POST /api/users/register endpoint (3 points)
 - Task-001-C: Implement email verification service using SendGrid (3 points)
 
-**Requirements Traceability**: FR-001, NFR-008 (GDPR), NFR-012 (Email)
+**Requirements Traceability**: FR-001, NFR-008 (Privacy Act 1988 / APPs), NFR-012 (Email)
 **Component**: User Service (from HLD)
 **Story Points**: 8
 **Priority**: Must Have
@@ -538,7 +538,7 @@ Use this mapping logic:
 **Business Requirement**: BR-001
 **Priority**: Must Have
 **Business Value**: High - Foundation for all user-facing features
-**Risk**: Medium - GDPR compliance required
+**Risk**: Medium - Privacy Act 1988 / APPs compliance required
 **Dependencies**: None (foundation epic)
 **Total Story Points**: 34
 **Estimated Duration**: 2 sprints (at 20 points/sprint)
@@ -546,14 +546,14 @@ Use this mapping logic:
 **Description**:
 System must provide comprehensive user management including registration,
 authentication, profile management, and password reset. Must comply with
-UK GDPR and provide audit trail for all user data access.
+Privacy Act 1988 / APPs and provide audit trail for all user data access.
 
 **Success Criteria**:
 - Users can create accounts with email verification
 - Users can login and logout securely
 - User sessions expire after 30 minutes of inactivity
 - Password reset functionality available
-- GDPR consent captured and audit trail maintained
+- Privacy Act 1988 / APPs consent captured and audit trail maintained
 
 **Stories in this Epic**:
 1. Story-001: Create user account (8 points) - Sprint 1
@@ -563,7 +563,7 @@ UK GDPR and provide audit trail for all user data access.
 5. Story-005: Update user profile (3 points) - Sprint 2
 6. Story-006: Delete user account (5 points) - Sprint 2
 7. Story-007: View audit log (3 points) - Sprint 2
-8. Story-008: Export user data (GDPR) (3 points) - Sprint 2
+8. Story-008: Export user data (Privacy Act 1988 / APPs) (3 points) - Sprint 2
 
 **Total**: 34 story points across 8 stories
 
@@ -651,23 +651,23 @@ Limit: 100 requests per minute per IP, 1000 per hour.
 
 **Compliance NFR**:
 ```markdown
-### Task-NFR-008: Implement GDPR audit logging
+### Task-NFR-008: Implement Privacy Act 1988 / APPs audit logging
 
 **Type**: Technical Task (NFR)
-**Requirement**: NFR-008 (GDPR compliance)
+**Requirement**: NFR-008 (Privacy Act 1988 / APPs compliance)
 **Priority**: Must Have
 **Story Points**: 5
 **Sprint**: 2
 
 **Description**:
 Implement comprehensive audit logging for all user data access to comply
-with UK GDPR Article 30 (records of processing activities).
+with Privacy Act 1988 / APPs Article 30 (records of processing activities).
 
 **Acceptance Criteria**:
 - It's done when all user data access is logged (who, what, when, why)
 - It's done when logs stored immutably (append-only)
 - It's done when logs retained for 7 years
-- It's done when logs available for GDPR data subject access requests
+- It's done when logs available for Privacy Act 1988 / APPs data subject access requests
 - It's done when logs include IP address, user agent, action type
 
 **Dependencies**: Task-001-A (user table must exist), Story-001 (users must exist)
@@ -720,7 +720,7 @@ Priority Score = (
 ```
 Story-001: Create user account
   MoSCoW: Must Have = 4
-  Risk: Medium (GDPR) = 2
+  Risk: Medium (Privacy Act 1988 / APPs) = 2
   Value: High (foundation) = 4
   Dependency: Blocks many (all user features) = 4
 
@@ -882,7 +882,7 @@ Organise stories into sprints with capacity planning:
 → Testing (Task-TEST-001)
 
 ### Risks:
-⚠️ GDPR compliance review needed for Story-001
+⚠️ Privacy Act 1988 / APPs compliance review needed for Story-001
 ⚠️ Email service selection (SendGrid vs AWS SES) for Story-001
 ⚠️ Team may be unfamiliar with CI/CD tools
 
@@ -960,7 +960,7 @@ For each story in sprint:
 ### Technical Tasks (4 points):
 - Task-NFR-005: Implement Redis caching layer (3 points) [Epic: Performance]
   - Dependencies: ✅ Task-DB-001 (database must exist)
-- Task-NFR-008: GDPR audit logging (2 points) [Epic: Compliance]
+- Task-NFR-008: Privacy Act 1988 / APPs audit logging (2 points) [Epic: Compliance]
   - Dependencies: ✅ Story-001 (users must exist)
   → Only 5 points for technical (adjusted)
 
@@ -974,7 +974,7 @@ For each story in sprint:
 ✅ Stripe payment integration operational
 ✅ Password reset workflow complete
 ✅ Caching layer improves performance
-✅ GDPR audit trail in place
+✅ Privacy Act 1988 / APPs audit trail in place
 
 ### Dependencies Satisfied:
 ✅ Sprint 1: User authentication, database, CI/CD
@@ -990,7 +990,7 @@ For each story in sprint:
 
 ### Testing Focus:
 - Integration tests for Stripe API (webhooks, payments)
-- GDPR audit log verification
+- Privacy Act 1988 / APPs audit log verification
 - Cache invalidation testing
 ```
 
@@ -1044,7 +1044,7 @@ Create comprehensive traceability table:
 | FR-003 | Functional | Story-003 | 2 | Planned | Password reset |
 | FR-005 | Functional | Story-016 | 2 | Planned | Process payment |
 | NFR-005 | Non-Functional | Task-NFR-005 | 2 | Planned | Caching for performance |
-| NFR-008 | Non-Functional | Task-NFR-008 | 2 | Planned | GDPR audit logging |
+| NFR-008 | Non-Functional | Task-NFR-008 | 2 | Planned | Privacy Act 1988 / APPs audit logging |
 | NFR-012 | Non-Functional | Task-NFR-012 | 1 | Planned | Rate limiting |
 | INT-003 | Integration | Story-015 | 2 | Planned | Stripe integration |
 | DR-002 | Data | Task-DR-002 | 3 | Planned | Payment history schema |
@@ -1105,7 +1105,7 @@ flowchart TD
     subgraph S2[Sprint 2 - Core Features]
         S015[Story-015: Stripe Integration]
         NFR5[Task-NFR-005: Redis Caching]
-        NFR8[Task-NFR-008: GDPR Audit Log]
+        NFR8[Task-NFR-008: Privacy Act 1988 / APPs Audit Log]
     end
 
     subgraph S3[Sprint 3]
@@ -1114,7 +1114,7 @@ flowchart TD
 
     subgraph S4[Sprint 4]
         S025[Story-025: Payment history needs payments]
-        S030[Story-030: GDPR data export]
+        S030[Story-030: Privacy Act 1988 / APPs data export]
     end
 
     subgraph S3Plus[Sprint 3+]
@@ -1191,7 +1191,7 @@ Every story must meet these criteria before marking "Done":
 - [ ] Response times < 2 seconds (P95)
 
 ### Compliance
-- [ ] GDPR requirements met (if handling user data)
+- [ ] Privacy Act 1988 / APPs requirements met (if handling user data)
 - [ ] Accessibility tested (WCAG 2.1 AA)
 - [ ] Audit logging in place (if required)
 
@@ -1320,8 +1320,8 @@ Create `backlog.csv` for Jira/Azure DevOps import:
 ```csv
 Type,Key,Epic,Summary,Description,Acceptance Criteria,Priority,Story Points,Sprint,Status,Component,Requirements
 Epic,EPIC-001,,"User Management","Foundation epic for user management including registration, authentication, profile management",,Must Have,34,1-2,To Do,User Service,BR-001
-Story,STORY-001,EPIC-001,"Create user account","As a new user I want to create an account so that I can access the service","It's done when I can enter email and password; It's done when email verification is sent; It's done when account is created after verification; It's done when GDPR consent is recorded",Must Have,8,1,To Do,User Service,"FR-001, NFR-008, NFR-012"
-Task,TASK-001-A,STORY-001,"Design user table schema","PostgreSQL schema for users table with email, password_hash, GDPR consent fields",,Must Have,2,1,To Do,User Service,FR-001
+Story,STORY-001,EPIC-001,"Create user account","As a new user I want to create an account so that I can access the service","It's done when I can enter email and password; It's done when email verification is sent; It's done when account is created after verification; It's done when Privacy Act 1988 / APPs consent is recorded",Must Have,8,1,To Do,User Service,"FR-001, NFR-008, NFR-012"
+Task,TASK-001-A,STORY-001,"Design user table schema","PostgreSQL schema for users table with email, password_hash, Privacy Act 1988 / APPs consent fields",,Must Have,2,1,To Do,User Service,FR-001
 Task,TASK-001-B,STORY-001,"Implement registration API","POST /api/users/register endpoint with email validation and password hashing",,Must Have,3,1,To Do,User Service,FR-001
 [... all items ...]
 ```
@@ -1368,7 +1368,7 @@ Create `backlog.json` for programmatic access:
         "It's done when I can enter email and password",
         "It's done when email verification is sent",
         "It's done when account is created after verification",
-        "It's done when GDPR consent is recorded"
+        "It's done when Privacy Act 1988 / APPs consent is recorded"
       ],
       "priority": "Must Have",
       "story_points": 8,
@@ -1412,7 +1412,7 @@ Create `backlog.json` for programmatic access:
       ],
       "dependencies_satisfied": [],
       "dependencies_created": ["User auth", "Database", "CI/CD"],
-      "risks": ["GDPR compliance review needed", "Email service selection"]
+      "risks": ["Privacy Act 1988 / APPs compliance review needed", "Email service selection"]
     }
   ],
   "traceability": [
@@ -1454,7 +1454,7 @@ DOC_ID=$(.arckit/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "BKLG" "${
 *User-provided fields* (extract from project metadata or user input):
 - `[PROJECT_NAME]` → Full project name from project metadata or user input
 - `[OWNER_NAME_AND_ROLE]` → Document owner (prompt user if not in metadata)
-- `[CLASSIFICATION]` → Default to "OFFICIAL" for UK Gov, "PUBLIC" otherwise (or prompt user)
+- `[CLASSIFICATION]` → Default to "OFFICIAL" for Australian Government, "PUBLIC" otherwise (or prompt user)
 
 *Calculated fields*:
 - `[YYYY-MM-DD]` for Review Date → Current date + 30 days
@@ -1701,7 +1701,7 @@ Output:
 Backlog is complete when:
 
 ✅ Every requirement (FR/NFR/INT/DR) maps to ≥1 story/task
-✅ User stories follow GDS format
+✅ User stories follow standard INVEST-style user story format
 ✅ Acceptance criteria are measurable
 ✅ Story points are reasonable (1-13 range)
 ✅ Dependencies are identified and respected

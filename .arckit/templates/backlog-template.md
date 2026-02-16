@@ -317,7 +317,7 @@ Every story must meet these criteria before marking "Done":
 - [ ] Response times within acceptable limits
 
 #### Compliance
-- [ ] GDPR requirements met (if handling user data)
+- [ ] Privacy Act 1988 / APPs requirements met (if handling user data)
 - [ ] Accessibility tested (WCAG 2.1 AA)
 - [ ] Audit logging in place (if required)
 

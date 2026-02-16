@@ -31,11 +31,11 @@ $ARGUMENTS
    **RECOMMENDED** (read if available, note if missing):
    - `ARC-*-SOW-*.md` in `projects/{project-dir}/` — Statement of Work
      - Extract: Pre-defined evaluation criteria, scope, deliverables
-   - `ARC-*-DOS-*.md` in `projects/{project-dir}/` — DOS procurement documentation
+   - `ARC-*-panel sourcing-*.md` in `projects/{project-dir}/` — panel sourcing procurement documentation
      - Extract: Evaluation criteria, essential/desirable skills, assessment approach
    - `ARC-*-RSCH-*.md` or `ARC-*-AWSR-*.md` or `ARC-*-AZUR-*.md` in `projects/{project-dir}/` — Technology research
      - Extract: Market landscape, vendor options, technology recommendations
-   - `ARC-*-GCLD-*.md` in `projects/{project-dir}/procurement/` — G-Cloud search results
+   - `ARC-*-PROC-*.md` in `projects/{project-dir}/procurement/` — procurement search results
      - Extract: Shortlisted services, feature comparisons, compliance matches
 
    **OPTIONAL** (read if available, skip silently if missing):
@@ -47,7 +47,7 @@ $ARGUMENTS
    **What to extract from each document**:
    - **Principles**: Governance standards, technology constraints for evaluation alignment
    - **Requirements**: BR/FR/NFR/INT/DR IDs and priorities to score vendors against
-   - **SOW/DOS**: Pre-defined evaluation criteria, scope, deliverables
+   - **SOW/panel sourcing**: Pre-defined evaluation criteria, scope, deliverables
    - **Research**: Market context, vendor landscape, technology recommendations
 
 3. **Read the templates** (with user override support):
@@ -159,7 +159,7 @@ DOC_ID=$(.arckit/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "EVAL" "${
 *User-provided fields* (extract from project metadata or user input):
 - `[PROJECT_NAME]` → Full project name from project metadata or user input
 - `[OWNER_NAME_AND_ROLE]` → Document owner (prompt user if not in metadata)
-- `[CLASSIFICATION]` → Default to "OFFICIAL" for UK Gov, "PUBLIC" otherwise (or prompt user)
+- `[CLASSIFICATION]` → Default to "OFFICIAL" for Australian Government, "PUBLIC" otherwise (or prompt user)
 
 *Calculated fields*:
 - `[YYYY-MM-DD]` for Review Date → Current date + 30 days

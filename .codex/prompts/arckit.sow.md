@@ -221,7 +221,7 @@ DOC_ID=$(.arckit/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "SOW" "${V
 **User-provided fields** (extract from project metadata or user input):
 - `[PROJECT_NAME]` → Full project name from project metadata or user input
 - `[OWNER_NAME_AND_ROLE]` → Document owner (prompt user if not in metadata)
-- `[CLASSIFICATION]` → Default to "OFFICIAL" for UK Gov, "PUBLIC" otherwise (or prompt user)
+- `[CLASSIFICATION]` → Default to "OFFICIAL" for Australian Government, "PUBLIC" otherwise (or prompt user)
 
 **Calculated fields**:
 - `[YYYY-MM-DD]` for Review Date → Current date + 30 days (requirements, research, risks)
@@ -354,7 +354,7 @@ After writing the file, show ONLY a concise summary:
   - Non-Functional Requirements: [Number]
   - Data Requirements: [Number]
   - Integration Requirements: [Number]
-- Compliance: [List: PCI-DSS, GDPR, HIPAA, etc.]
+- Compliance: [List: PCI-DSS, Privacy Act 1988 / APPs, HIPAA, etc.]
 
 **Deliverables**:
 - Architecture: [e.g., HLD, DLD, ERD]
@@ -387,8 +387,8 @@ After writing the file, show ONLY a concise summary:
 - SLA Penalties: [Yes/No]
 - IP Ownership: [e.g., Client owns all IP]
 
-**UK Government Specific** (if applicable):
-- Procurement Route: [e.g., Digital Marketplace, G-Cloud 14]
+**Australian Government Specific procurement context** (if applicable):
+- Procurement Route: [e.g., BuyICT and CPR-compliant sourcing, BuyICT/panel route]
 - Social Value Weighting: [X]%
 - Security Clearance: [e.g., SC, DV required]
 - Open Source Policy: [Compliance noted]
@@ -413,7 +413,7 @@ After writing the file, show ONLY a concise summary:
 - Review `ARC-{PROJECT_ID}-SOW-v1.0.md` for full SOW document
 - Get legal review of contract terms
 - Get procurement/finance approval
-- Publish to Digital Marketplace (if UK Gov)
+- Use approved Australian Government procurement channel (if applicable)
 - Run `/arckit:evaluate` to create vendor evaluation framework
 ```
 
