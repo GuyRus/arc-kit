@@ -1,4 +1,4 @@
-# UK Government Secure by Design Assessment
+# Australian Government Secure by Design Assessment
 
 > **Template Status**: Beta | **Version**: [VERSION] | **Command**: `/arckit.secure`
 
@@ -37,20 +37,20 @@
 
 **Overall Security Posture**: [Strong / Adequate / Needs Improvement / Inadequate]
 
-**NCSC Cyber Assessment Framework (CAF) Score**: [X/14 objectives met]
+**ASD ACSC Cyber Assessment Framework (CAF) Score**: [X/14 objectives met]
 
 **Key Security Findings**:
 - [Summary of critical security gaps]
 - [Summary of security strengths]
 - [Blocking security issues for next phase]
 
-**Cyber Essentials Status**: [Not Started / In Progress / Basic / Plus]
+**Essential Eight Status**: [Not Started / In Progress / Basic / Plus]
 
 **Risk Summary**: [Overall security risk level: Low / Medium / High / Very High]
 
 ---
 
-## 1. NCSC Cyber Assessment Framework (CAF) Assessment
+## 1. ASD ACSC Cyber Assessment Framework (CAF) Assessment
 
 ### Objective A: Managing Security Risk
 
@@ -169,7 +169,7 @@
 - [ ] Account provisioning/deprovisioning process
 - [ ] Strong password policy (12+ characters)
 
-**Authentication Method**: [GOV.UK Verify / Azure AD / Other]
+**Authentication Method**: [Australia.gov.au Verify / Azure AD / Other]
 
 **Gaps/Actions**:
 - [Action 1]
@@ -188,7 +188,7 @@
 - [ ] Encryption in transit (TLS 1.3 minimum)
 - [ ] Data loss prevention (DLP) controls
 - [ ] Secure data destruction
-- [ ] UK GDPR compliance
+- [ ] Privacy Act 1988 (APPs) compliance
 - [ ] Data retention policy
 
 **Personal Data Processing**: [Yes / No]
@@ -255,7 +255,7 @@
 - [ ] Role-based security training
 - [ ] Annual security refresher
 - [ ] Security incident reporting awareness
-- [ ] Data protection training (UK GDPR)
+- [ ] Data protection training (Privacy Act 1988 (APPs))
 - [ ] Social engineering awareness
 
 **Training Completion Rate**: [X%]
@@ -329,7 +329,7 @@
 - [ ] Incident classification scheme
 - [ ] Escalation procedures defined
 - [ ] Communication plan for incidents
-- [ ] Regulatory reporting process (ICO)
+- [ ] Regulatory reporting process (OAIC)
 - [ ] Lessons learned process
 
 **IR Plan Last Tested**: [Date / Not Tested]
@@ -369,16 +369,16 @@
 
 ---
 
-## 2. Cyber Essentials / Cyber Essentials Plus
+## 2. Essential Eight / Essential Eight maturity uplift
 
-### Cyber Essentials Status
+### Essential Eight Status
 
 **Current Status**: [Not Started / In Progress / Certified Basic / Certified Plus]
 
 **Certification Date**: [Date / N/A]
 **Expiry Date**: [Date / N/A]
 
-**Cyber Essentials Requirements**:
+**Essential Eight Requirements**:
 
 | Control Area | Status | Evidence |
 |--------------|--------|----------|
@@ -388,7 +388,7 @@
 | **Malware Protection** | [✅/⚠️/❌] | [Description] |
 | **Patch Management** | [✅/⚠️/❌] | [Description] |
 
-**Cyber Essentials Plus Additional Requirements**:
+**Essential Eight maturity uplift Additional Requirements**:
 - [ ] External vulnerability scan passed
 - [ ] Internal vulnerability scan passed
 - [ ] System configuration review passed
@@ -401,15 +401,15 @@
 
 ---
 
-## 3. UK GDPR and Data Protection
+## 3. Privacy Act 1988 (APPs) and Data Protection
 
 ### 3.1 Data Protection Compliance
 
 **Data Protection Officer (DPO) Appointed**: [Yes / No / Not Required]
 
-**ICO Registration**: [Required / Not Required / Completed]
+**OAIC Registration**: [Required / Not Required / Completed]
 
-**UK GDPR Compliance**:
+**Privacy Act 1988 (APPs) Compliance**:
 - [ ] Lawful basis for processing identified
 - [ ] Privacy notice published
 - [ ] Data subject rights procedures
@@ -437,7 +437,7 @@
 - Mitigations implemented: [Number]
 - Residual risks accepted: [Yes/No by whom]
 
-**ICO Consultation Required**: [Yes / No]
+**OAIC Consultation Required**: [Yes / No]
 
 **Gaps/Actions**:
 - [Action 1]
@@ -497,11 +497,11 @@
 
 ### 5.1 Cloud Service Provider
 
-**Cloud Provider**: [AWS / Azure / GCP / GOV.UK PaaS / Other / N/A]
+**Cloud Provider**: [AWS / Azure / GCP / Australia.gov.au PaaS / Other / N/A]
 
 **Cloud Deployment Model**: [Public / Private / Hybrid / N/A]
 
-**Data Residency**: [UK / EU / Other]
+**Data Residency**: [Australia / approved jurisdictions / Other]
 
 **Cloud Security Controls**:
 - [ ] Cloud Security Posture Management (CSPM)
@@ -512,7 +512,7 @@
 - [ ] Cloud security monitoring
 - [ ] Multi-region redundancy
 
-**NCSC Cloud Security Principles**: [X/14 principles met]
+**ASD ACSC Cloud Security Principles**: [X/14 principles met]
 
 **Gaps/Actions**:
 - [Action 1]
@@ -654,7 +654,7 @@
 
 ## Overall Security Assessment Summary
 
-### NCSC CAF Scorecard
+### ASD ACSC CAF Scorecard
 
 | CAF Objective | Principles Achieved | Status |
 |---------------|---------------------|--------|

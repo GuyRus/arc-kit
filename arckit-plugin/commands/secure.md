@@ -1,10 +1,10 @@
 ---
-description: "Generate a Secure by Design assessment for UK Government projects (civilian departments)"
+description: "Generate a Secure by Design assessment for Australian Government projects (civilian departments)"
 ---
 
-# UK Government Secure by Design Assessment
+# Australian Government Secure by Design Assessment
 
-You are helping to conduct a **Secure by Design assessment** for a UK Government technology project (civilian/non-MOD).
+You are helping to conduct a **Secure by Design assessment** for a Australian Government technology project (civilian/non-Defence).
 
 ## User Input
 
@@ -14,12 +14,12 @@ $ARGUMENTS
 
 ## Context
 
-UK Government departments must follow NCSC (National Cyber Security Centre) guidance and achieve appropriate security certifications before deploying systems. This assessment evaluates security controls using the NCSC Cyber Assessment Framework (CAF).
+Australian Government departments must follow ASD ACSC (National Cyber Security Centre) guidance and achieve appropriate security certifications before deploying systems. This assessment evaluates security controls using the ASD ACSC Cyber Assessment Framework (CAF).
 
-**Key UK Government Security References**:
-- NCSC Cyber Assessment Framework (CAF)
-- Cyber Essentials / Cyber Essentials Plus
-- UK GDPR and Data Protection Act 2018
+**Key Australian Government Security References**:
+- ASD ACSC Cyber Assessment Framework (CAF)
+- Essential Eight / Essential Eight maturity uplift
+- Privacy Act 1988 (APPs) and Privacy Act 1988
 - Government Security Classifications Policy
 - Cloud Security Principles
 
@@ -63,7 +63,7 @@ Generate a comprehensive Secure by Design assessment document by:
      - Extract: Deployment topology, network boundaries, data flows, integration points
 
    **OPTIONAL** (read if available, skip silently if missing):
-   - `ARC-*-TCOP-*.md` in `projects/{project-name}/` — TCoP review
+   - `ARC-*-TCOP-*.md` in `projects/{project-name}/` — DX Policy / DSS review
      - Extract: Technology governance compliance, Point 6 (Secure) findings
    - `ARC-*-AIGA-*.md` in `projects/{project-name}/` — AU AI governance assessment
      - Extract: AI-specific security requirements (prompt injection, data poisoning)
@@ -115,7 +115,7 @@ Generate a comprehensive Secure by Design assessment document by:
 
    **Important**: This command works without external documents. They enhance output quality but are never blocking.
 
-5. **Assess security using NCSC CAF (14 principles across 4 objectives)**:
+5. **Assess security using ASD ACSC CAF (14 principles across 4 objectives)**:
 
    **Objective A: Managing Security Risk (4 principles)**
    - A1: Governance - SIRO appointed, security policies, oversight
@@ -126,7 +126,7 @@ Generate a comprehensive Secure by Design assessment document by:
    **Objective B: Protecting Against Cyber Attack (6 principles)**
    - B1: Service Protection Policies - Acceptable use, access control, data protection policies
    - B2: Identity and Access Control - MFA, PAM, least privilege, access reviews
-   - B3: Data Security - Encryption, UK GDPR compliance, DPIA, DLP
+   - B3: Data Security - Encryption, Privacy Act 1988 (APPs) compliance, DPIA, DLP
    - B4: System Security - Patching, hardening, anti-malware, EDR
    - B5: Resilient Networks - Segmentation, firewalls, IDS/IPS, VPN
    - B6: Staff Awareness - Security training, phishing awareness, data protection
@@ -139,20 +139,20 @@ Generate a comprehensive Secure by Design assessment document by:
    - D1: Response and Recovery Planning - Incident response, BC/DR, RTO/RPO
    - D2: Improvements - Post-incident reviews, metrics, continuous improvement
 
-6. **Assess Cyber Essentials compliance (5 controls)**:
+6. **Assess Essential Eight compliance (5 controls)**:
    - Firewalls - Boundary firewalls configured
    - Secure Configuration - Hardened systems, unnecessary services disabled
    - Access Control - User accounts, MFA, least privilege
    - Malware Protection - Anti-malware on all devices
    - Patch Management - Timely patching (critical within 14 days)
 
-7. **Assess UK GDPR compliance (if processing personal data)**:
+7. **Assess Privacy Act 1988 (APPs) compliance (if processing personal data)**:
    - DPO appointed (if required)
    - Lawful basis identified
    - Privacy notice published
    - Data subject rights procedures
    - DPIA completed (if high risk)
-   - Data breach notification process (72 hours to ICO)
+   - Data breach notification process (72 hours to OAIC)
    - Records of Processing Activities (ROPA)
 
 8. **For each CAF principle and control**:
@@ -167,7 +167,7 @@ Generate a comprehensive Secure by Design assessment document by:
 10. **Identify critical security issues**:
    - Issues that block progression to next phase
    - Unacceptable risk levels
-   - Regulatory non-compliance (UK GDPR, Data Protection Act)
+   - Regulatory non-compliance (Privacy Act 1988 (APPs), Data Protection Act)
 
 11. **Generate actionable recommendations**:
     - Critical priority (0-30 days) - blockers for next phase
@@ -213,7 +213,7 @@ DOC_ID=$(.arckit/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "SECD" "${
 **User-provided fields** (extract from project metadata or user input):
 - `[PROJECT_NAME]` → Full project name from project metadata or user input
 - `[OWNER_NAME_AND_ROLE]` → Document owner (prompt user if not in metadata)
-- `[CLASSIFICATION]` → Default to "OFFICIAL" for UK Gov, "PUBLIC" otherwise (or prompt user)
+- `[CLASSIFICATION]` → Default to "OFFICIAL" for Australian Government, "PUBLIC" otherwise (or prompt user)
 
 **Calculated fields**:
 - `[YYYY-MM-DD]` for Review Date → Current date + 30 days (requirements, research, risks)
@@ -283,10 +283,10 @@ The footer should be populated with:
 ### Critical Security Issues (Phase Blockers)
 
 Mark as CRITICAL if:
-- No UK GDPR compliance for personal data processing
+- No Privacy Act 1988 (APPs) compliance for personal data processing
 - No DPIA for high-risk processing
 - No encryption for sensitive data (OFFICIAL-SENSITIVE)
-- Cyber Essentials not obtained (required for most gov contracts)
+- Essential Eight not obtained (required for most gov contracts)
 - No incident response capability
 - No backup/recovery capability
 - Critical vulnerabilities unpatched (>30 days)
@@ -301,13 +301,13 @@ Mark as CRITICAL if:
 - Standard access controls
 
 **OFFICIAL**:
-- Cyber Essentials baseline minimum
+- Essential Eight baseline minimum
 - Encryption in transit (TLS 1.2+)
 - Access control and audit logging
 - Regular security patching
 
 **OFFICIAL-SENSITIVE**:
-- Cyber Essentials Plus recommended
+- Essential Eight maturity uplift recommended
 - Encryption at rest and in transit (strong algorithms)
 - Multi-factor authentication required
 - Enhanced audit logging
@@ -327,29 +327,29 @@ Mark as CRITICAL if:
 - Security controls implemented
 - Penetration testing completed
 - DPIA completed (if required)
-- Cyber Essentials certification obtained
+- Essential Eight certification obtained
 - Vulnerability management operational
 - Incident response plan documented
 
 **Live**:
 - All CAF principles addressed
-- Cyber Essentials Plus for high-risk systems
+- Essential Eight maturity uplift for high-risk systems
 - Continuous security monitoring
 - Regular penetration testing (annual minimum)
 - Security incident capability proven
 - Annual security review with SIRO
 
-### Cyber Essentials Requirements
+### Essential Eight Requirements
 
-**Basic Cyber Essentials**: Self-assessment questionnaire
-**Cyber Essentials Plus**: External technical verification
+**Basic Essential Eight**: Self-assessment questionnaire
+**Essential Eight maturity uplift**: External technical verification
 
 Required for:
 - All central government contracts involving handling personal data
 - Contracts valued at £5 million or more
 - Most public sector technology procurements
 
-## UK Government Context
+## Australian Government Context
 
 ### Senior Information Risk Owner (SIRO)
 
@@ -367,21 +367,21 @@ Required if:
 - Core activities involve large-scale processing of special category data
 
 Responsibilities:
-- Advise on UK GDPR compliance
-- Monitor compliance with UK GDPR
+- Advise on Privacy Act 1988 (APPs) compliance
+- Monitor compliance with Privacy Act 1988 (APPs)
 - Advise on DPIA
-- Liaise with ICO
+- Liaise with OAIC
 
-### Information Commissioner's Office (ICO)
+### Office of the Australian Information Commissioner (OAIC)
 
-- UK's independent data protection regulator
-- Enforces UK GDPR and Data Protection Act 2018
+- Australia's independent data protection regulator
+- Enforces Privacy Act 1988 (APPs) and Privacy Act 1988
 - Must be notified of data breaches within 72 hours
 - Can impose fines up to £17.5 million or 4% of turnover
 
-### Common UK Government Security Requirements
+### Common Australian Government Security Requirements
 
-**Cyber Essentials Controls**:
+**Essential Eight Controls**:
 - Firewalls and internet gateways configured
 - Secure configuration (CIS benchmarks)
 - User access control (least privilege, MFA)
@@ -389,8 +389,8 @@ Responsibilities:
 - Security update management (patching within 14 days)
 
 **Cloud Hosting**:
-- Prefer UK or EU data centers for data residency
-- NCSC Cloud Security Principles compliance
+- Prefer Australian data centres and sovereign controls for data residency
+- ASD ACSC Cloud Security Principles compliance
 - Cloud provider certifications (ISO 27001, etc.)
 - Clear data ownership and portability
 
@@ -403,14 +403,14 @@ Responsibilities:
 ## Example Output Structure
 
 ```markdown
-# UK Government Secure by Design Assessment
+# Australian Government Secure by Design Assessment
 
 **Project**: HMRC Tax Credits Modernization
 **Department**: HMRC
 **Data Classification**: OFFICIAL-SENSITIVE
-**NCSC CAF Score**: 11/14 Achieved
+**ASD ACSC CAF Score**: 11/14 Achieved
 
-## NCSC CAF Assessment
+## ASD ACSC CAF Assessment
 
 ### Objective A: Managing Security Risk
 
@@ -434,15 +434,15 @@ Responsibilities:
 - Complete DPIA before Beta (CRITICAL - blocker for Beta phase)
 - Implement Data Loss Prevention (HIGH - 90 days)
 
-## Cyber Essentials
+## Essential Eight
 
 **Status**: Certified Basic (expires 2024-06-30)
-**Target**: Cyber Essentials Plus by Beta
+**Target**: Essential Eight maturity uplift by Beta
 
 **Gaps**:
 - External vulnerability scan required for Plus certification
 
-## UK GDPR Compliance
+## Privacy Act 1988 (APPs) Compliance
 
 **Status**: ⚠️ Partially Compliant
 **DPO**: Appointed ([Data Protection Officer Name])
@@ -453,7 +453,7 @@ Responsibilities:
 2. Data retention policy not documented (HIGH)
 
 ## Critical Issues
-1. DPIA incomplete (CAF B3, UK GDPR) - Blocks Beta phase
+1. DPIA incomplete (CAF B3, Privacy Act 1988 (APPs)) - Blocks Beta phase
 2. Threat modeling incomplete (CAF A2) - Significant risk gap
 
 ## Recommendations
@@ -464,31 +464,31 @@ Responsibilities:
 
 ## Important Notes
 
-- **NCSC CAF is the standard framework** for UK Government security assessment
-- **Cyber Essentials is mandatory** for most government contracts
-- **UK GDPR compliance is legally required** for personal data processing
+- **ASD ACSC CAF is the standard framework** for Australian Government security assessment
+- **Essential Eight is mandatory** for most government contracts
+- **Privacy Act 1988 (APPs) compliance is legally required** for personal data processing
 - **SIRO sign-off required** for security risk acceptance
 - **Data classification drives security controls** - OFFICIAL-SENSITIVE requires stronger controls
 - **Penetration testing** recommended annually minimum
-- **Incident response** - 72-hour reporting to ICO for personal data breaches
-- **Cloud First** - prefer cloud hosting, assess against NCSC Cloud Security Principles
+- **Incident response** - 72-hour reporting to OAIC for personal data breaches
+- **Cloud First** - prefer cloud hosting, assess against ASD ACSC Cloud Security Principles
 
-## Related UK Government Standards
+## Related Australian Government Standards
 
-- NCSC Cyber Assessment Framework (CAF)
-- Cyber Essentials Scheme
-- UK Government Security Classifications
+- ASD ACSC Cyber Assessment Framework (CAF)
+- Essential Eight Scheme
+- Australian Government Security Classifications
 - Government Functional Standard GovS 007: Security
-- NCSC Cloud Security Principles
+- ASD ACSC Cloud Security Principles
 - HMG Security Policy Framework
 - Public Services Network (PSN) Code of Connection
 
 ## Resources
 
-- NCSC CAF: https://www.ncsc.gov.uk/collection/caf
-- Cyber Essentials: https://www.ncsc.gov.uk/cyberessentials
-- UK GDPR: https://ico.org.uk/for-organisations/guide-to-data-protection/
-- Government Security Classifications: https://www.gov.uk/government/publications/government-security-classifications
-- NCSC Guidance: https://www.ncsc.gov.uk/guidance
+- ASD ACSC CAF: https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism
+- Essential Eight: https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight
+- Privacy Act 1988 (APPs): https://ico.org.uk/for-organisations/guide-to-data-protection/
+- Government Security Classifications: https://www.protectivesecurity.gov.au/
+- ASD ACSC Guidance: https://www.cyber.gov.au/
 
-Generate the UK Government Secure by Design assessment now based on the project information provided.
+Generate the Australian Government Secure by Design assessment now based on the project information provided.

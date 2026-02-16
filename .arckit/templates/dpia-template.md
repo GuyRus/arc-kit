@@ -47,13 +47,13 @@
 
 **Recommendation**: [Proceed/Do not proceed/Proceed with conditions]
 
-**ICO Consultation Required**: [YES/NO]
+**OAIC Consultation Required**: [YES/NO]
 
 ---
 
 ## 1. DPIA Screening Assessment
 
-### 1.1 Screening Criteria (ICO's 9 Criteria)
+### 1.1 Screening Criteria (OAIC's 9 Criteria)
 
 | # | Criterion | YES/NO | Evidence |
 |---|-----------|--------|----------|
@@ -158,7 +158,7 @@
 - **Data subjects**: [N] individuals
 - **Storage size**: [N GB/TB]
 - **Transaction rate**: [N] per day/month
-- **Geographic scope**: [UK-wide / Regional / Local / International]
+- **Geographic scope**: [Australia-wide / Regional / Local / International]
 
 **Scale Classification**: [Small scale / Large scale]
 - Small scale: Fewer than 10,000 data subjects, limited geographic area, low volume
@@ -364,12 +364,12 @@ If YES, select condition(s):
 - [ ] **(d) Legitimate activities** of foundation/association/non-profit (with safeguards)
 - [ ] **(e) Data manifestly made public** by data subject
 - [ ] **(f) Legal claims** or judicial acts
-- [ ] **(g) Substantial public interest** (with UK law basis)
+- [ ] **(g) Substantial public interest** (with Australian law basis)
 - [ ] **(h) Health/social care** (with health professional or statutory obligation)
 - [ ] **(i) Public health**
 - [ ] **(j) Archiving/research/statistics** (with safeguards)
 
-**UK DPA 2018 Schedule 1 Condition**: [CITE specific condition if using (g)]
+**Australian Privacy Act legal basis**: [CITE specific condition if using (g)]
 
 **Justification**: [DETAILED EXPLANATION]
 
@@ -520,7 +520,7 @@ If YES, select condition(s):
 - [ ] **Privacy Policy** - Clear, accessible privacy notice for data subjects
 - [ ] **Data Protection Policy** - Internal policy for staff
 - [ ] **Retention and Disposal Policy** - Defined retention periods and deletion procedures
-- [ ] **Data Breach Response Plan** - 72-hour notification to ICO, data subject notification
+- [ ] **Data Breach Response Plan** - 72-hour notification to OAIC, data subject notification
 - [ ] **Data Subject Rights Procedures** - SAR, rectification, erasure, portability processes
 
 **Training and Awareness**:
@@ -579,7 +579,7 @@ If YES, select condition(s):
 **Acceptability Assessment**:
 - [ ] All residual risks are LOW or MEDIUM → ACCEPTABLE
 - [ ] Some residual risks are HIGH → ACCEPTABLE WITH CONDITIONS (describe conditions)
-- [ ] Any residual risks are VERY HIGH → NOT ACCEPTABLE (ICO consultation required)
+- [ ] Any residual risks are VERY HIGH → NOT ACCEPTABLE (OAIC consultation required)
 
 **Conditions for Acceptance** (if applicable):
 1. [Condition 1]
@@ -587,28 +587,28 @@ If YES, select condition(s):
 
 ---
 
-## 7. ICO Prior Consultation
+## 7. OAIC Prior Consultation
 
-**ICO Consultation Required**: [YES/NO]
+**OAIC Consultation Required**: [YES/NO]
 
-**Trigger**: ICO prior consultation is required if:
+**Trigger**: OAIC prior consultation is required if:
 - Residual risk remains **HIGH** or **VERY HIGH** after mitigation, AND
 - Processing will go ahead despite the high residual risk
 
-**ICO Consultation Details** (if required):
+**OAIC Consultation Details** (if required):
 
 | Field | Value |
 |-------|-------|
-| ICO Reference Number | [REF-NUMBER] |
+| OAIC Reference Number | [REF-NUMBER] |
 | Consultation Date | [DATE] |
-| ICO Case Officer | [NAME] |
-| ICO Advice Received | [DATE] |
-| ICO Recommendations | [SUMMARY] |
-| ICO Approval | [APPROVED/APPROVED WITH CONDITIONS/NOT APPROVED] |
+| OAIC Case Officer | [NAME] |
+| OAIC Advice Received | [DATE] |
+| OAIC Recommendations | [SUMMARY] |
+| OAIC Approval | [APPROVED/APPROVED WITH CONDITIONS/NOT APPROVED] |
 | Conditions | [LIST CONDITIONS] |
 | How Conditions Addressed | [SUMMARY] |
 
-**ICO Advice Summary**:
+**OAIC Advice Summary**:
 - [Advice point 1]
 - [Advice point 2]
 - [Advice point 3]
@@ -653,7 +653,7 @@ If YES, select condition(s):
 
 **DPIA Mitigations → Security Controls Mapping**:
 
-| DPIA Mitigation | Security Control | NCSC CAF Principle | Implementation Status |
+| DPIA Mitigation | Security Control | ASD ACSC CAF Principle | Implementation Status |
 |-----------------|------------------|--------------------|-----------------------|
 | Encryption at rest | Data security (encryption) | A.3 Asset Management | [Implemented/Planned] |
 | Access controls | Identity and access management | B.1 Identity and Access | [Implemented/Planned] |
@@ -685,7 +685,7 @@ If YES, select condition(s):
 - [ ] New technology introduced
 - [ ] New risks identified (e.g., new attack vectors, regulatory changes)
 - [ ] Data breach or security incident occurs
-- [ ] ICO guidance changes
+- [ ] OAIC guidance changes
 - [ ] Data subjects raise concerns
 - [ ] Periodic review date reached
 
@@ -774,7 +774,7 @@ If YES, select condition(s):
 | **Vendor HLD Review** | Vendor design must address DPIA risks and implement mitigations |
 | **Vendor DLD Review** | Detailed technical controls must match DPIA mitigation requirements |
 | **AI Playbook Assessment** | DPIA algorithmic bias findings inform AI ethics assessment |
-| **Service Assessment (GDS)** | DPIA demonstrates Point 5 (data and privacy) compliance |
+| **Service Assessment (DTA)** | DPIA demonstrates Point 5 (data and privacy) compliance |
 | **Procurement (SOW)** | DPIA requirements flow into vendor RFP requirements |
 
 ---
@@ -851,18 +851,18 @@ If YES:
 
 ### 13.2 Transfer Safeguards
 
-**For countries WITH UK adequacy decision**:
+**For countries with recognised adequacy mechanisms**:
 - [ ] No additional safeguards required beyond standard DPIA measures
 
 **For countries WITHOUT adequacy decision**:
-- [ ] **Standard Contractual Clauses (SCCs)** - UK ICO approved SCCs signed with recipient
+- [ ] **Standard Contractual Clauses (SCCs)** - OAIC-recognised contractual safeguards signed with recipient
   - SCC version: [International Data Transfer Agreement (IDTA) / Addendum to EU SCCs]
   - Date signed: [DATE]
   - Recipient guarantees: [Summary of guarantees]
 
 - [ ] **Binding Corporate Rules (BCRs)** - Approved BCRs in place
   - BCR approval date: [DATE]
-  - ICO reference: [REF]
+  - OAIC reference: [REF]
 
 - [ ] **Derogations** (only in exceptional circumstances)
   - Explicit consent obtained: [YES/NO]
@@ -1061,7 +1061,7 @@ If YES, also complete `/arckit.ai-playbook` and `/arckit.atrs` assessments.
 
 ---
 
-## Appendix A: ICO DPIA Screening Checklist
+## Appendix A: OAIC DPIA Screening Checklist
 
 Full screening questionnaire (9 criteria) with detailed YES/NO/N/A responses:
 
@@ -1122,9 +1122,9 @@ Full screening questionnaire (9 criteria) with detailed YES/NO/N/A responses:
 | **Anonymization** | Irreversibly removing identifying information so re-identification is not possible |
 | **Lawful Basis** | Legal ground for processing under GDPR Article 6 (consent, contract, legal obligation, etc.) |
 | **DPIA** | Data Protection Impact Assessment - required for high-risk processing |
-| **ICO** | Information Commissioner's Office - UK data protection supervisory authority |
-| **UK GDPR** | UK General Data Protection Regulation (retained EU GDPR post-Brexit) |
-| **DPA 2018** | Data Protection Act 2018 - UK law supplementing GDPR |
+| **OAIC** | Office of the Australian Information Commissioner - Australian privacy regulator |
+| **Privacy Act 1988 (APPs)** | Australian Privacy Act framework and Australian Privacy Principles |
+| **Australian privacy obligations** | Agency-specific privacy and records obligations under Commonwealth law |
 | **SCC** | Standard Contractual Clauses - mechanism for international data transfers |
 
 ---

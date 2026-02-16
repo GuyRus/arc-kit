@@ -1,11 +1,11 @@
 ---
-description: Generate a MOD Secure by Design assessment for UK Ministry of Defence projects using CAAT and continuous assurance
+description: Generate a Defence Secure by Design assessment for Australian Department of Defence projects using CAAT and continuous assurance
 tags: [security, mod, defence, jsp-440, jsp-453, secure-by-design, continuous-assurance, caat, continuous-risk-management, isn-2023-09, isn-2023-10]
 ---
 
-# MOD Secure by Design Assessment
+# Defence Secure by Design Assessment
 
-You are helping to conduct a **Secure by Design (SbD) assessment** for a UK Ministry of Defence (MOD) technology project, programme, or capability.
+You are helping to conduct a **Secure by Design (SbD) assessment** for a Australian Department of Defence technology project, programme, or capability.
 
 ## User Input
 
@@ -15,17 +15,17 @@ $ARGUMENTS
 
 ## Context
 
-Since August 2023, ALL Defence capabilities, technology infrastructure, and digital services **MUST** follow the Secure by Design (SbD) approach mandated in JSP 440 Leaflet 5C. This represents a fundamental shift from legacy RMADS (Risk Management and Accreditation Documentation Set) to **continuous risk management** throughout the capability lifecycle.
+Since August 2023, ALL Defence capabilities, technology infrastructure, and digital services **MUST** follow the Secure by Design (SbD) approach mandated in Defence security policy baseline (agency-specific) Leaflet 5C. This represents a fundamental shift from legacy RMADS (Risk Management and Accreditation Documentation Set) to **continuous risk management** throughout the capability lifecycle.
 
-**Key MOD Security References**:
-- **JSP 440**: Defence Manual of Security (primary security policy)
-- **JSP 440 Leaflet 5C**: Secure by Design mandate (August 2023)
+**Key Defence Security References**:
+- **Defence security policy baseline (agency-specific)**: Defence Manual of Security (primary security policy)
+- **Defence security policy baseline (agency-specific) Leaflet 5C**: Secure by Design mandate (August 2023)
 - **JSP 453**: Digital Policies and Standards for Defence
 - **ISN 2023/09**: Industry Security Notice - Secure by Design Requirements
 - **ISN 2023/10**: Industry Security Notice - Supplier attestation and legacy accreditation withdrawal
 - **NIST Cybersecurity Framework (CSF)**: Risk assessment and controls framework
-- **NCSC Secure Design Principles**: Technical security guidance
-- **Data Protection Act 2018 / UK GDPR**: Data privacy requirements
+- **ASD ACSC Secure Design Principles**: Technical security guidance
+- **Privacy Act 1988 / Privacy Act 1988 (APPs)**: Data privacy requirements
 
 ## Critical Changes (Post-August 2023)
 
@@ -33,7 +33,7 @@ Since August 2023, ALL Defence capabilities, technology infrastructure, and digi
 - Cyber security is a **licence to operate** - cannot be traded out
 - Applies to ALL new programmes and systems
 - Legacy systems transition when accreditation expires (by 31 March 2024 completed)
-- Supplier-owned continuous assurance (not MOD accreditation)
+- Supplier-owned continuous assurance (not Defence accreditation)
 - **Suppliers must attest** that systems are secure
 - Senior Responsible Owners (SROs), capability owners, and delivery teams are **accountable**
 
@@ -53,10 +53,10 @@ Generate a comprehensive Secure by Design assessment document using the **contin
 
 1. **Understanding the project context**:
    - Programme/project/capability name
-   - MOD organization (Army, Navy, RAF, Defence Digital, Strategic Command, etc.)
+   - Defence organization (Army, Navy, RAF, Defence Digital, Strategic Command, etc.)
    - Data classification level (OFFICIAL, OFFICIAL-SENSITIVE, SECRET, TOP SECRET)
    - Project phase (Discovery, Alpha, Beta, Live, Through-Life)
-   - Deployment environment (MOD network, cloud, operational theatre, coalition)
+   - Deployment environment (Defence network, cloud, operational theatre, coalition)
    - Delivery Team Security Lead appointed (Yes/No)
    - Project Security Officer (PSyO) appointed if SECRET+ (Yes/No)
    - Current SbD maturity level (self-assessment score)
@@ -70,14 +70,14 @@ Generate a comprehensive Secure by Design assessment document using the **contin
      - Extract: NFR-SEC (security), NFR-A (availability), INT (integration), DR (data) requirements, data classification
      - If missing: warn user to run `/arckit:requirements` first
    - `ARC-000-PRIN-*.md` in `projects/000-global/` — Architecture principles
-     - Extract: MOD security standards, approved platforms, classification handling, compliance requirements
+     - Extract: Defence security standards, approved platforms, classification handling, compliance requirements
      - If missing: warn user to run `/arckit:principles` first
 
    **RECOMMENDED** (read if available, note if missing):
    - `ARC-*-RISK-*.md` in `projects/{project-name}/` — Risk register
-     - Extract: Security risks, threat model, risk appetite, mitigations, MOD-specific threats
+     - Extract: Security risks, threat model, risk appetite, mitigations, Defence-specific threats
    - `ARC-*-SECD-*.md` in `projects/{project-name}/` — Civilian Secure by Design assessment
-     - Extract: NCSC CAF findings, Cyber Essentials status, existing security controls
+     - Extract: ASD ACSC CAF findings, Essential Eight status, existing security controls
 
    **OPTIONAL** (read if available, skip silently if missing):
    - `ARC-*-DIAG-*.md` in `projects/{project-name}/diagrams/` — Architecture diagrams
@@ -85,16 +85,16 @@ Generate a comprehensive Secure by Design assessment document using the **contin
    - Previous SbD self-assessments (if available in project directory)
 
    **What to extract from each document**:
-   - **Principles**: MOD security policies, JSP 440 requirements, classification standards
+   - **Principles**: Defence security policies, Defence security policy baseline (agency-specific) requirements, classification standards
    - **Requirements**: Security NFRs, data classification, availability targets, integration security
-   - **Risk**: Security threats, risk levels, MOD-specific threat vectors, supply chain risks
-   - **Secure**: Existing NCSC CAF findings to build upon for MOD assessment
+   - **Risk**: Security threats, risk levels, Defence-specific threat vectors, supply chain risks
+   - **Secure**: Existing ASD ACSC CAF findings to build upon for Defence assessment
 
-3. **Assess against the 7 MOD Secure by Design Principles** (ISN 2023/09):
+3. **Assess against the 7 Defence Secure by Design Principles** (ISN 2023/09):
 
    **Principle 1: Understand and Define Context**
    - Understand the capability's overall context
-   - How it will use and manage MOD data
+   - How it will use and manage Defence data
    - How it achieves its primary business/operational outcome
    - **Assessment**:
      - Context documented (mission, users, data flows)
@@ -124,10 +124,10 @@ Generate a comprehensive Secure by Design assessment document using the **contin
 
    **Principle 4: Follow Secure Design Patterns**
    - Use proven secure architectures
-   - Leverage NCSC/NIST guidance
+   - Leverage ASD ACSC/NIST guidance
    - Avoid known insecure patterns
    - **Assessment**:
-     - NCSC Secure Design Principles applied
+     - ASD ACSC Secure Design Principles applied
      - NIST CSF controls mapped
      - Common vulnerabilities (OWASP Top 10) mitigated
      - Secure coding standards followed
@@ -168,10 +168,10 @@ Generate a comprehensive Secure by Design assessment document using the **contin
 
    Scan for external (non-ArcKit) documents the user may have provided:
 
-   **JSP 440 Compliance Reports & CAAT Results**:
+   **Defence security policy baseline (agency-specific) Compliance Reports & CAAT Results**:
    - **Look in**: `projects/{project-dir}/external/`
    - **File types**: PDF (.pdf), Word (.docx), Markdown (.md)
-   - **What to extract**: CAAT assessment results, security clearance requirements, JSP 440 compliance status, IAMM maturity scores
+   - **What to extract**: CAAT assessment results, security clearance requirements, Defence security policy baseline (agency-specific) compliance status, IAMM maturity scores
    - **Examples**: `caat-assessment.pdf`, `jsp440-compliance.docx`, `iamm-report.pdf`
 
    **Supplier Security Attestations**:
@@ -180,19 +180,19 @@ Generate a comprehensive Secure by Design assessment document using the **contin
    - **What to extract**: Supplier security clearances, List X status, DEFCON compliance, SC/DV clearance evidence
    - **Examples**: `security-attestation.pdf`, `list-x-certificate.pdf`
 
-   **MOD Security Policies**:
+   **Defence Security Policies**:
    - **Look in**: `projects/000-global/policies/`
    - **File types**: PDF, Word, Markdown
-   - **What to extract**: MOD security standards, classification requirements, ITAR restrictions
+   - **What to extract**: Defence security standards, classification requirements, ITAR restrictions
    - **Examples**: `mod-security-policy.pdf`, `classification-guide.docx`
 
-   **Enterprise-Wide MOD Security Baselines**:
+   **Enterprise-Wide Defence Security Baselines**:
    - **Look in**: `projects/000-global/external/`
    - **File types**: PDF, Word, Markdown
-   - **What to extract**: Enterprise MOD security baselines, accreditation templates, cross-project security assurance evidence
+   - **What to extract**: Enterprise Defence security baselines, accreditation templates, cross-project security assurance evidence
 
-   **User prompt**: If no external MOD security docs found, ask:
-   "Do you have any JSP 440 compliance reports, CAAT assessment results, or supplier security attestations? I can read PDFs directly. Place them in `projects/{project-dir}/external/` and re-run, or skip."
+   **User prompt**: If no external Defence security docs found, ask:
+   "Do you have any Defence security policy baseline (agency-specific) compliance reports, CAAT assessment results, or supplier security attestations? I can read PDFs directly. Place them in `projects/{project-dir}/external/` and re-run, or skip."
 
    **Important**: This command works without external documents. They enhance output quality but are never blocking.
 
@@ -218,7 +218,7 @@ Generate a comprehensive Secure by Design assessment document using the **contin
 
    **Respond**:
    - Incident response plan
-   - Communications and reporting (to MOD CERT)
+   - Communications and reporting (to Defence cyber incident response authority)
    - Analysis and mitigation
    - Improvements from lessons learned
 
@@ -273,8 +273,8 @@ Before completing the document, populate ALL document control fields in the head
 **Generate Document ID**:
 ```bash
 # Use the ArcKit document ID generation script
-DOC_ID=$(${CLAUDE_PLUGIN_ROOT}/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "SECD-MOD" "${VERSION}")
-# Example output: ARC-001-SECD-MOD-v1.0
+DOC_ID=$(${CLAUDE_PLUGIN_ROOT}/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "SECD-DEF" "${VERSION}")
+# Example output: ARC-001-SECD-DEF-v1.0
 ```
 
 **Populate Required Fields**:
@@ -283,14 +283,14 @@ DOC_ID=$(${CLAUDE_PLUGIN_ROOT}/scripts/bash/generate-document-id.sh "${PROJECT_I
 - `[PROJECT_ID]` → Extract from project path (e.g., "001" from "projects/001-project-name")
 - `[VERSION]` → "1.0" (or increment if previous version exists)
 - `[DATE]` / `[YYYY-MM-DD]` → Current date in YYYY-MM-DD format
-- `[DOCUMENT_TYPE_NAME]` → "MOD Secure by Design Assessment"
-- `ARC-[PROJECT_ID]-SECD-MOD-v[VERSION]` → Use generated DOC_ID
+- `[DOCUMENT_TYPE_NAME]` → "Defence Secure by Design Assessment"
+- `ARC-[PROJECT_ID]-SECD-DEF-v[VERSION]` → Use generated DOC_ID
 - `[COMMAND]` → "arckit.mod-secure"
 
 *User-provided fields* (extract from project metadata or user input):
 - `[PROJECT_NAME]` → Full project name from project metadata or user input
 - `[OWNER_NAME_AND_ROLE]` → Document owner (prompt user if not in metadata)
-- `[CLASSIFICATION]` → Default to "OFFICIAL" for UK Gov, "PUBLIC" otherwise (or prompt user)
+- `[CLASSIFICATION]` → Default to "OFFICIAL" for Australian Government, "PUBLIC" otherwise (or prompt user)
 
 *Calculated fields*:
 - `[YYYY-MM-DD]` for Review Date → Current date + 30 days
@@ -320,7 +320,7 @@ The footer should be populated with:
 
 ---
 
-10. **Save the document**: Write to `projects/[project-folder]/ARC-{PROJECT_ID}-SECD-MOD-v1.0.md`
+10. **Save the document**: Write to `projects/[project-folder]/ARC-{PROJECT_ID}-SECD-DEF-v1.0.md`
 
 ## Assessment Guidelines
 
@@ -340,17 +340,17 @@ Mark as CRITICAL if:
 - Critical vulnerabilities unpatched
 - No incident response capability
 - No backup/recovery capability
-- Non-compliance with JSP 440 mandatory controls
+- Non-compliance with Defence security policy baseline (agency-specific) mandatory controls
 
 ### Classification-Specific Requirements
 
 **OFFICIAL**:
-- Cyber Essentials baseline
+- Essential Eight baseline
 - Basic access controls and encryption
-- Standard MOD security policies
+- Standard Defence security policies
 
 **OFFICIAL-SENSITIVE**:
-- Cyber Essentials Plus
+- Essential Eight maturity uplift
 - MFA required
 - Enhanced logging and monitoring
 - DPIA if processing personal data
@@ -393,9 +393,9 @@ Mark as CRITICAL if:
 - Regular security reviews
 - Incident response capability proven
 
-## MOD-Specific Context
+## Defence-Specific Context
 
-### JSP 440 Information Assurance Maturity Model (IAMM)
+### Defence security policy baseline (agency-specific) Information Assurance Maturity Model (IAMM)
 
 Assess maturity across 8 domains (0-5 scale):
 - Level 0: Non-existent
@@ -414,7 +414,7 @@ Target Level 3+ for operational systems.
 1. **Register on CAAT** (Cyber Activity and Assurance Tracker)
    - Every programme must register on CAAT in Discovery/Alpha
    - CAAT is the self-assessment tool for cyber security maturity
-   - Available through MOD Secure by Design portal (DefenceGateway account required)
+   - Available through Defence Secure by Design portal (DefenceGateway account required)
 
 2. **Appoint Delivery Team Security Lead (DTSL)**
    - DTSL owns security for the delivery team (First Line of Defence)
@@ -422,7 +422,7 @@ Target Level 3+ for operational systems.
    - Project Security Officer (PSyO) still required for SECRET+ systems
 
 3. **Complete CAAT self-assessment question sets**
-   - Based on the 7 MOD Secure by Design Principles
+   - Based on the 7 Defence Secure by Design Principles
    - Assess cyber security maturity throughout lifecycle
    - Regular updates required (not one-time submission)
 
@@ -431,7 +431,7 @@ Target Level 3+ for operational systems.
    - Informs risk assessment and security controls
 
 5. **Implement security controls**
-   - Based on NIST CSF, NCSC guidance, and JSP 440 requirements
+   - Based on NIST CSF, ASD ACSC guidance, and Defence security policy baseline (agency-specific) requirements
    - Defence in depth approach
    - Continuous improvement throughout lifecycle
 
@@ -447,7 +447,7 @@ Target Level 3+ for operational systems.
 
 8. **Supplier attestation** (for systems delivered by suppliers)
    - Suppliers must attest that systems are secure (ISN 2023/10)
-   - Supplier-owned continuous assurance (not MOD accreditation)
+   - Supplier-owned continuous assurance (not Defence accreditation)
    - Supplier security requirements in contracts
 
 9. **Security governance reviews**
@@ -455,7 +455,7 @@ Target Level 3+ for operational systems.
    - No single "accreditation approval" - ongoing assurance
    - SROs and capability owners accountable for security posture
 
-### Common MOD Security Requirements
+### Common Defence Security Requirements
 
 **Cryptography**:
 - CESG-approved algorithms (AES-256, SHA-256, RSA-2048+)
@@ -469,22 +469,22 @@ Target Level 3+ for operational systems.
 - Air-gap for SECRET and above (or assured connectivity)
 
 **Authentication**:
-- Smart card (CAC/MOD Form 90) for OFFICIAL-SENSITIVE and above
+- Smart card (Defence smart credential) for OFFICIAL-SENSITIVE and above
 - Multi-factor authentication (MFA) mandatory
 - Privileged Access Management (PAM) for admin access
 
 **Monitoring**:
-- Integration with MOD Cyber Defence Operations
+- Integration with Defence cyber defence operations
 - 24/7 security monitoring
 - SIEM with correlation rules
-- Incident escalation to MOD CERT
+- Incident escalation to Defence cyber incident response authority
 
 ## Example Output Structure
 
 ```markdown
-# MOD Secure by Design Assessment
+# Defence Secure by Design Assessment
 
-**Project**: MOD Personnel Management System
+**Project**: Defence Personnel Management System
 **Classification**: OFFICIAL-SENSITIVE
 **Overall Security Posture**: Adequate (with gaps to address)
 
@@ -520,7 +520,7 @@ Target Level 3+ for operational systems.
 
 ## Important Notes
 
-- **Continuous assurance is mandatory** for MOD systems throughout their lifecycle (replaced point-in-time accreditation August 2023)
+- **Continuous assurance is mandatory** for Defence systems throughout their lifecycle (replaced point-in-time accreditation August 2023)
 - **CAAT registration required** for all programmes from Discovery/Alpha phase
 - Non-compliance can block project progression, funding, and deployment
 - **Delivery Team Security Lead (DTSL)** engagement required from Discovery phase
@@ -528,31 +528,31 @@ Target Level 3+ for operational systems.
 - **SROs and capability owners are accountable** for security posture (not delegated to accreditation authority)
 - Classification determines security control requirements
 - **Supplier attestation required** for supplier-delivered systems (ISN 2023/10)
-- Insider threat is a primary concern for MOD - emphasize personnel security
+- Insider threat is a primary concern for Defence - emphasize personnel security
 - Supply chain security critical due to foreign adversary threats
 - Operational security (OPSEC) essential for operational systems
 - **Cyber security is a "licence to operate"** - cannot be traded out or descoped
 
-## Related MOD Standards
+## Related Defence Standards
 
-- JSP 440: Defence Information Assurance Policy
+- Defence security policy baseline (agency-specific): Defence Information Assurance Policy
 - JSP 441: Security Policy
 - Defence Digital Security Strategy
-- NCSC Cloud Security Principles
+- ASD ACSC Cloud Security Principles
 - HMG Security Policy Framework
 - CESG Cryptographic Mechanisms
 
 ## Resources
 
-- **MOD Secure by Design**: https://www.digital.mod.uk/policy-rules-standards-and-guidance/secure-by-design
-- **MOD Secure by Design Portal**: Requires DefenceGateway account for industry partners
+- **Defence Secure by Design**: https://www.digital.mod.uk/policy-rules-standards-and-guidance/secure-by-design
+- **Defence Secure by Design Portal**: Requires DefenceGateway account for industry partners
 - **CAAT** (Cyber Activity and Assurance Tracker): Self-assessment tool available through SbD portal
-- JSP 440: https://www.gov.uk/government/publications/jsp-440-defence-information-assurance
+- Defence security policy baseline (agency-specific): SOURCE_GAP: Agency-specific Defence security policy reference
 - JSP 453 (Digital Policies): https://www.digital.mod.uk/policy-rules-standards-and-guidance
 - ISN 2023/09: Industry Security Notice - Secure by Design Requirements
 - ISN 2023/10: Industry Security Notice - Supplier attestation
-- NCSC CAF: https://www.ncsc.gov.uk/collection/caf
-- NCSC Secure Design Principles: https://www.ncsc.gov.uk/collection/cyber-security-design-principles
-- Defence Digital: https://www.gov.uk/government/organisations/defence-digital
+- ASD ACSC CAF: https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism
+- ASD ACSC Secure Design Principles: https://www.cyber.gov.au/
+- Defence Digital: https://www.defence.gov.au/
 
-Generate the MOD Secure by Design assessment now based on the project information provided.
+Generate the Defence Secure by Design assessment now based on the project information provided.

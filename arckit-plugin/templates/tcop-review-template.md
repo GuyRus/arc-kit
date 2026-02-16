@@ -1,4 +1,4 @@
-# Technology Code of Practice (TCoP) Review
+# Digital Experience Policy and Digital Service Standard (DSS) Review
 
 > **Template Status**: Beta | **Version**: [VERSION] | **Command**: `/arckit.tcop`
 
@@ -35,7 +35,7 @@
 
 ## Executive Summary
 
-**Overall TCoP Compliance**: [Compliant / Partially Compliant / Non-Compliant]
+**Overall DX Policy / DSS Compliance**: [Compliant / Partially Compliant / Non-Compliant]
 
 **Key Findings**:
 - [Summary of major compliance gaps]
@@ -44,11 +44,11 @@
 
 ---
 
-## TCoP Point 1: Define User Needs
+## DX Policy / DSS Point 1: Define User Needs
 
 **Guidance**: Understand your users and their needs. Develop knowledge of your users and what that means for your technology project or programme.
 
-**Reference**: https://www.gov.uk/guidance/define-user-needs
+**Reference**: https://www.dta.gov.au/help-and-advice/digital-service-standard
 
 ### Assessment
 
@@ -70,11 +70,11 @@
 
 ---
 
-## TCoP Point 2: Make Things Accessible and Inclusive
+## DX Policy / DSS Point 2: Make Things Accessible and Inclusive
 
 **Guidance**: Make sure your technology, infrastructure and systems are accessible and inclusive for all users.
 
-**Reference**: https://www.gov.uk/guidance/make-things-accessible
+**Reference**: https://www.dta.gov.au/help-and-advice/digital-service-standard
 
 ### Assessment
 
@@ -96,11 +96,11 @@
 
 ---
 
-## TCoP Point 3: Be Open and Use Open Source
+## DX Policy / DSS Point 3: Be Open and Use Open Source
 
 **Guidance**: Publish your code and use open source software to improve transparency, flexibility and accountability.
 
-**Reference**: https://www.gov.uk/guidance/be-open-and-use-open-source
+**Reference**: https://www.dta.gov.au/help-and-advice/digital-service-standard
 
 ### Assessment
 
@@ -122,11 +122,11 @@
 
 ---
 
-## TCoP Point 4: Make Use of Open Standards
+## DX Policy / DSS Point 4: Make Use of Open Standards
 
 **Guidance**: Build technology that uses open standards to ensure your technology works and communicates with other technology, and can easily be upgraded and expanded.
 
-**Reference**: https://www.gov.uk/guidance/make-use-of-open-standards
+**Reference**: https://www.dta.gov.au/help-and-advice/digital-service-standard
 
 ### Assessment
 
@@ -148,11 +148,11 @@
 
 ---
 
-## TCoP Point 5: Use Cloud First
+## DX Policy / DSS Point 5: Use Cloud First
 
 **Guidance**: Consider using public cloud solutions first as stated in the Cloud First policy.
 
-**Reference**: https://www.gov.uk/guidance/use-cloud-first
+**Reference**: https://www.dta.gov.au/help-and-advice/digital-experience-policy
 
 ### Assessment
 
@@ -166,7 +166,7 @@
 - [ ] Cloud hosting decision documented
 - [ ] If not public cloud, justification documented
 - [ ] Cloud security controls implemented
-- [ ] Data residency requirements met (UK/EU)
+- [ ] Data residency requirements met (Australia/approved jurisdictions)
 
 **Cloud Provider**: [AWS / Azure / GCP / Private Cloud / On-Premise]
 
@@ -179,11 +179,11 @@
 
 ---
 
-## TCoP Point 6: Make Things Secure
+## DX Policy / DSS Point 6: Make Things Secure
 
 **Guidance**: Keep systems and data safe with the appropriate level of security.
 
-**Reference**: https://www.gov.uk/guidance/make-things-secure
+**Reference**: https://www.cyber.gov.au/
 
 ### Assessment
 
@@ -197,8 +197,8 @@
 - [ ] Security by design principles applied
 - [ ] Penetration testing planned/completed
 - [ ] Security risk register maintained
-- [ ] NCSC Cloud Security Principles assessed
-- [ ] Cyber Essentials / Cyber Essentials Plus certified
+- [ ] ASD ACSC Cloud Security Principles assessed
+- [ ] Essential Eight / Essential Eight maturity uplift certified
 - [ ] Data classification completed
 - [ ] Encryption at rest and in transit
 
@@ -210,11 +210,11 @@
 
 ---
 
-## TCoP Point 7: Make Privacy Integral
+## DX Policy / DSS Point 7: Make Privacy Integral
 
 **Guidance**: Make sure users' rights are protected by integrating privacy as an essential part of your system.
 
-**Reference**: https://www.gov.uk/guidance/make-privacy-integral
+**Reference**: https://www.oaic.gov.au/privacy/the-privacy-act
 
 ### Assessment
 
@@ -226,12 +226,12 @@
 **Privacy Controls**:
 - [ ] Data Protection Impact Assessment (DPIA) completed
 - [ ] Privacy by design principles applied
-- [ ] UK GDPR compliance assessed
+- [ ] Privacy Act 1988 (APPs) compliance assessed
 - [ ] Data retention policy defined
 - [ ] User consent mechanisms implemented
 - [ ] Data subject rights procedures documented
 - [ ] Privacy notice published
-- [ ] ICO registration completed (if required)
+- [ ] OAIC registration completed (if required)
 
 **Personal Data Processed**: [Yes / No]
 
@@ -241,11 +241,11 @@
 
 ---
 
-## TCoP Point 8: Share, Reuse and Collaborate
+## DX Policy / DSS Point 8: Share, Reuse and Collaborate
 
 **Guidance**: Avoid duplicating effort and unnecessary costs by collaborating across government and sharing and reusing technology, data, and services.
 
-**Reference**: https://www.gov.uk/guidance/share-and-reuse-technology
+**Reference**: https://www.dta.gov.au/help-and-advice/digital-experience-policy
 
 ### Assessment
 
@@ -255,17 +255,17 @@
 [Describe reuse and collaboration]
 
 **Reuse and Collaboration**:
-- [ ] Existing government services reviewed (GOV.UK, Notify, Pay, etc.)
+- [ ] Existing government services reviewed (Australia.gov.au, Notify, Pay, etc.)
 - [ ] Cross-government platforms used where appropriate
 - [ ] Technology components documented for reuse
 - [ ] APIs designed for reusability
 - [ ] Collaboration with other departments documented
 
 **Common Platforms Used**:
-- [ ] GOV.UK Notify
-- [ ] GOV.UK Pay
-- [ ] GOV.UK PaaS
-- [ ] Digital Marketplace
+- [ ] Australia.gov.au Notify
+- [ ] Australia.gov.au Pay
+- [ ] Australia.gov.au PaaS
+- [ ] BuyICT and AusTender channels
 - [ ] Other: [Specify]
 
 **Gaps/Actions Required**:
@@ -274,11 +274,11 @@
 
 ---
 
-## TCoP Point 9: Integrate and Adapt Technology
+## DX Policy / DSS Point 9: Integrate and Adapt Technology
 
 **Guidance**: Your technology should work with existing technologies, processes and infrastructure in your organisation, and adapt to future demands.
 
-**Reference**: https://www.gov.uk/guidance/integrate-and-adapt-technology
+**Reference**: https://www.dta.gov.au/help-and-advice/digital-experience-policy
 
 ### Assessment
 
@@ -305,11 +305,11 @@
 
 ---
 
-## TCoP Point 10: Make Better Use of Data
+## DX Policy / DSS Point 10: Make Better Use of Data
 
 **Guidance**: Use data more effectively by improving your technology, infrastructure and processes.
 
-**Reference**: https://www.gov.uk/guidance/make-better-use-of-data
+**Reference**: https://www.datacommissioner.gov.au/
 
 ### Assessment
 
@@ -333,11 +333,11 @@
 
 ---
 
-## TCoP Point 11: Define Your Purchasing Strategy
+## DX Policy / DSS Point 11: Define Your Purchasing Strategy
 
 **Guidance**: Your purchasing strategy must show you've considered commercial and technology aspects, and contractual limitations.
 
-**Reference**: https://www.gov.uk/guidance/define-your-purchasing-strategy
+**Reference**: https://www.finance.gov.au/government/procurement
 
 ### Assessment
 
@@ -349,14 +349,14 @@
 **Procurement Strategy**:
 - [ ] Market research conducted
 - [ ] Build vs buy decision documented
-- [ ] Digital Marketplace considered
+- [ ] BuyICT and AusTender channels considered
 - [ ] Crown Commercial Service frameworks reviewed
 - [ ] Vendor lock-in risks assessed
 - [ ] Exit strategy defined
 - [ ] Social value considerations included
 - [ ] SME access considerations
 
-**Procurement Route**: [G-Cloud / DOS / Crown Commercial Service / Open Tender / Other]
+**Procurement Route**: [BuyICT cloud panels / DOS / Crown Commercial Service / Open Tender / Other]
 
 **Gaps/Actions Required**:
 - [Action 1]
@@ -364,11 +364,11 @@
 
 ---
 
-## TCoP Point 12: Make Your Technology Sustainable
+## DX Policy / DSS Point 12: Make Your Technology Sustainable
 
 **Guidance**: Increase sustainability throughout the lifecycle of your technology.
 
-**Reference**: https://www.gov.uk/guidance/make-your-technology-sustainable
+**Reference**: https://www.finance.gov.au/government/procurement
 
 ### Assessment
 
@@ -397,11 +397,11 @@
 
 ---
 
-## TCoP Point 13: Meet the Service Standard
+## DX Policy / DSS Point 13: Meet the Service Standard
 
 **Guidance**: If you're building a service as part of your technology project or programme, you must meet the Service Standard.
 
-**Reference**: https://www.gov.uk/service-manual/service-standard
+**Reference**: https://www.dta.gov.au/help-and-advice/digital-service-standard
 
 ### Assessment
 
@@ -432,7 +432,7 @@
 
 ### Compliance Scorecard
 
-| TCoP Point | Status | Critical Issues |
+| DX Policy / DSS Point | Status | Critical Issues |
 |------------|--------|-----------------|
 | 1. Define user needs | [Status] | [Yes/No] |
 | 2. Make things accessible | [Status] | [Yes/No] |
@@ -452,8 +452,8 @@
 
 ### Critical Issues Requiring Immediate Action
 
-1. [Issue 1 with TCoP point reference]
-2. [Issue 2 with TCoP point reference]
+1. [Issue 1 with DX Policy / DSS point reference]
+2. [Issue 2 with DX Policy / DSS point reference]
 
 ### Recommendations
 

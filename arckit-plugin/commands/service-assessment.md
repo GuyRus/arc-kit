@@ -1,10 +1,10 @@
 ---
-description: "Prepare for GDS Service Standard assessment - analyze evidence against 14 points, identify gaps, generate readiness report"
+description: "Prepare for Digital Service Standard assessment - analyze evidence against 14 points, identify gaps, generate readiness report"
 ---
 
-# GDS Service Assessment Preparation
+# Digital Service Standard assurance review Preparation
 
-You are an expert UK Government service assessor helping teams prepare for GDS Service Standard assessments.
+You are an expert Australian Government service assessor helping teams prepare for Digital Service Standard assessments.
 
 ## User Input
 
@@ -14,7 +14,7 @@ $ARGUMENTS
 
 ## Command Purpose
 
-Generate a comprehensive GDS Service Standard assessment preparation report that:
+Generate a comprehensive Digital Service Standard assessment preparation report that:
 1. Analyzes existing ArcKit artifacts as evidence for the 14-point Service Standard
 2. Identifies evidence gaps for the specified assessment phase (alpha/beta/live)
 3. Provides RAG (Red/Amber/Green) ratings for each point and overall readiness
@@ -95,7 +95,7 @@ Scan the project directory for existing artifacts and read them to inform this a
 - `ARC-*-TRAC-*.md` — Traceability matrix
 
 **OPTIONAL** (read if available, skip silently if missing):
-- `ARC-*-TCOP-*.md` — TCoP review (technology compliance)
+- `ARC-*-TCOP-*.md` — DX Policy / DSS review (technology compliance)
 - `ARC-*-AIGA-*.md` — AU AI governance assessment (if AI components)
 - `ARC-*-AITS-*.md` — AI transparency statement (if algorithmic tools)
 - `ARC-*-SOW-*.md` — Statement of work
@@ -116,7 +116,7 @@ Scan the project directory for existing artifacts and read them to inform this a
 
 Scan for external (non-ArcKit) documents the user may have provided:
 
-**GDS Assessment Feedback & Previous Reports**:
+**DTA Assessment Feedback & Previous Reports**:
 - **Look in**: `projects/{project-dir}/external/`
 - **File types**: PDF (.pdf), Word (.docx), Markdown (.md)
 - **What to extract**: Previous assessment results, assessor feedback, action items, evidence gaps identified
@@ -125,10 +125,10 @@ Scan for external (non-ArcKit) documents the user may have provided:
 **Enterprise-Wide Service Standards**:
 - **Look in**: `projects/000-global/external/`
 - **File types**: PDF, Word, Markdown
-- **What to extract**: Enterprise service standards, previous GDS assessment reports, cross-project assessment benchmarks
+- **What to extract**: Enterprise service standards, previous DSS assurance review reports, cross-project assessment benchmarks
 
 **User prompt**: If no external assessment docs found but they would improve preparation, ask:
-"Do you have any previous GDS assessment reports or assessor feedback? I can read PDFs directly. Place them in `projects/{project-dir}/external/` and re-run, or skip."
+"Do you have any previous DSS assurance review reports or assessor feedback? I can read PDFs directly. Place them in `projects/{project-dir}/external/` and re-run, or skip."
 
 **Important**: This command works without external documents. They enhance output quality but are never blocking.
 
@@ -243,7 +243,7 @@ For each of the 14 Service Standard points, map evidence from ArcKit artifacts:
 **Beta**:
 - ✅ Usability testing with diverse users
 - ✅ Task completion >85% on first attempt
-- ✅ Content design reviewed by GDS content designers
+- ✅ Content design reviewed by DTA content designers
 - ✅ Plain language, no jargon
 - ✅ Forms and interactions simplified
 
@@ -315,7 +315,7 @@ For each of the 14 Service Standard points, map evidence from ArcKit artifacts:
 #### Point 7: Use Agile Ways of Working
 
 **Evidence Sources**:
-- `ARC-*-PLAN-*.md` - GDS phases, sprint structure, agile ceremonies
+- `ARC-*-PLAN-*.md` - DTA phases, sprint structure, agile ceremonies
 - `ARC-*-RISK-*.md` - Iterative risk management
 - `reviews/ARC-*-HLDR-*.md`, `reviews/ARC-*-DLDR-*.md` - Design iterations
 
@@ -372,12 +372,12 @@ For each of the 14 Service Standard points, map evidence from ArcKit artifacts:
 #### Point 9: Create a Secure Service Which Protects Users' Privacy
 
 **Evidence Sources**:
-- `ARC-*-SECD-*.md` - NCSC security principles, threat model
+- `ARC-*-SECD-*.md` - ASD ACSC security principles, threat model
 - `ARC-*-DATA-*.md` - GDPR compliance, data protection, PII handling
 - `ARC-*-AITS-*.md` - AI transparency and risk (if AI service)
 - `ARC-*-RISK-*.md` - Security risks and mitigations
 - `ARC-*-REQ-*.md` - Security and privacy NFRs
-- `ARC-*-TCOP-*.md` - TCoP security points
+- `ARC-*-TCOP-*.md` - DX Policy / DSS security points
 
 **Phase-Specific Evidence Requirements**:
 
@@ -401,7 +401,7 @@ For each of the 14 Service Standard points, map evidence from ArcKit artifacts:
 - ✅ Regular security testing and audits
 - ✅ Security monitoring and alerting
 - ✅ Privacy complaints = 0
-- ✅ Cyber Essentials Plus certification (or higher)
+- ✅ Essential Eight maturity uplift certification (or higher)
 
 #### Point 10: Define What Success Looks Like and Publish Performance Data
 
@@ -427,7 +427,7 @@ For each of the 14 Service Standard points, map evidence from ArcKit artifacts:
 - ✅ Targets set for live service
 
 **Live**:
-- ✅ Performance data published on GOV.UK (critical)
+- ✅ Performance data published on Australia.gov.au (critical)
 - ✅ 4 mandatory KPIs published: cost per transaction, user satisfaction, completion rate, digital take-up
 - ✅ Data updated regularly (at least quarterly)
 - ✅ Performance trends showing improvement
@@ -438,7 +438,7 @@ For each of the 14 Service Standard points, map evidence from ArcKit artifacts:
 **Evidence Sources**:
 - `research/` - Technology research, proof of concepts
 - `wardley-maps/` - Build vs buy analysis, technology evolution
-- `ARC-*-TCOP-*.md` - Technology choices justified (TCoP Point 11)
+- `ARC-*-TCOP-*.md` - Technology choices justified (DX Policy / DSS Point 11)
 - `reviews/ARC-*-HLDR-*.md` - Technology stack, architecture decisions
 - `ARC-*-SOW-*.md` - Vendor selection, procurement justification
 - `ARC-*-EVAL-*.md` - Technology/vendor scoring
@@ -470,7 +470,7 @@ For each of the 14 Service Standard points, map evidence from ArcKit artifacts:
 
 **Evidence Sources**:
 - `reviews/ARC-*-HLDR-*.md` - Open source approach, repository links
-- `ARC-*-TCOP-*.md` - TCoP Point 12 (Open source code)
+- `ARC-*-TCOP-*.md` - DX Policy / DSS Point 12 (Open source code)
 - `ARC-*-REQ-*.md` - Open source licensing requirements
 
 **Phase-Specific Evidence Requirements**:
@@ -498,28 +498,28 @@ For each of the 14 Service Standard points, map evidence from ArcKit artifacts:
 #### Point 13: Use and Contribute to Open Standards, Common Components and Patterns
 
 **Evidence Sources**:
-- `ARC-*-TCOP-*.md` - TCoP Point 13 (Open standards)
-- `reviews/ARC-*-HLDR-*.md` - GOV.UK Design System usage, API standards, common components
+- `ARC-*-TCOP-*.md` - DX Policy / DSS Point 13 (Open standards)
+- `reviews/ARC-*-HLDR-*.md` - Australia.gov.au Design System usage, API standards, common components
 - `ARC-*-REQ-*.md` - Standards compliance requirements
 - `ARC-*-DATA-*.md` - Data standards
 
 **Phase-Specific Evidence Requirements**:
 
 **Alpha**:
-- ✅ GOV.UK Design System usage planned
-- ✅ Common components identified (GOV.UK Notify, Pay, etc.)
+- ✅ Australia.gov.au Design System usage planned
+- ✅ Common components identified (Australia.gov.au Notify, Pay, etc.)
 - ✅ API standards considered (RESTful, OpenAPI)
 - ✅ Data standards identified (if applicable)
 
 **Beta**:
-- ✅ GOV.UK Design System implemented
+- ✅ Australia.gov.au Design System implemented
 - ✅ Common components integrated (Notify, Pay, Verify, etc.)
 - ✅ APIs follow government API standards
 - ✅ Open standards used for data formats
 - ✅ Contributing patterns back to community (if novel)
 
 **Live**:
-- ✅ Consistent use of GOV.UK patterns
+- ✅ Consistent use of Australia.gov.au patterns
 - ✅ Common components working in production
 - ✅ Contributing to open standards development
 - ✅ Sharing patterns with other teams
@@ -667,7 +667,7 @@ Example: `projects/001-nhs-appointment/ARC-001-SASS-v1.0.md`
 ## Report Structure
 
 ```markdown
-# GDS Service Assessment Preparation Report
+# Digital Service Standard assurance review Preparation Report
 
 **Project**: [Project Name from ArcKit artifacts]
 **Assessment Phase**: [Alpha/Beta/Live]
@@ -873,7 +873,7 @@ Priority: Strengthens overall case but not blocking
 - **Ready to book after**: [Date if assessment date provided]
 
 **How to Book**:
-1. Contact GDS Central Digital & Data Office assessment team
+1. Contact DTA Central Digital & Data Office assessment team
 2. Book 5 weeks in advance minimum
 3. Assessments typically on Tuesday, Wednesday, or Thursday
 4. Duration: 4 hours
@@ -1039,13 +1039,13 @@ Optional supplementary:
 - Service can proceed to next phase
 - Must fix amber issues within 3 months
 - Progress tracked in "tracking amber evidence" document
-- GDS assessment team will monitor progress
+- DSS assurance review team will monitor progress
 
 **Immediate Actions**:
 - [ ] Create "tracking amber evidence" document
 - [ ] Assign owners to each amber point
 - [ ] Set deadlines for addressing amber issues (within 3 months)
-- [ ] Schedule regular check-ins with GDS assessment team
+- [ ] Schedule regular check-ins with DSS assurance review team
 
 **Tracking Amber Evidence**:
 Create a public document (visible to assessment team) showing:
@@ -1123,21 +1123,21 @@ Create a public document (visible to assessment team) showing:
 
 ## Resources
 
-### GDS Service Standard Resources
+### Digital Service Standard Resources
 
 **Official Guidance**:
-- [Service Standard](https://www.gov.uk/service-manual/service-standard) - All 14 points explained
-- [What happens at a service assessment](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work) - Assessment process
-- [Book a service assessment](https://www.gov.uk/service-manual/service-assessments/book-a-service-assessment) - Booking information
-- [Service Standard Reports](https://www.gov.uk/service-standard-reports) - Browse 450+ published assessment reports
+- [Service Standard](https://www.dta.gov.au/help-and-advice/digital-service-standard) - All 14 points explained
+- [What happens at a service assessment](https://www.dta.gov.au/help-and-advice/digital-service-standard) - Assessment process
+- [Book a service assessment](https://www.dta.gov.au/help-and-advice/digital-service-standard) - Booking information
+- [Service Standard Reports](https://www.dta.gov.au/help-and-advice/digital-service-standard) - Browse 450+ published assessment reports
 
 **Phase-Specific Guidance**:
-- [Alpha phase](https://www.gov.uk/service-manual/agile-delivery/how-the-alpha-phase-works) - What to do in alpha
-- [Beta phase](https://www.gov.uk/service-manual/agile-delivery/how-the-beta-phase-works) - What to do in beta
-- [Live phase](https://www.gov.uk/service-manual/agile-delivery/how-the-live-phase-works) - What to do when live
+- [Alpha phase](https://www.dta.gov.au/help-and-advice/digital-service-standard) - What to do in alpha
+- [Beta phase](https://www.dta.gov.au/help-and-advice/digital-service-standard) - What to do in beta
+- [Live phase](https://www.dta.gov.au/help-and-advice/digital-service-standard) - What to do when live
 
 **Deep Dives by Service Standard Point**:
-[Links to all 14 individual point pages on GOV.UK]
+[Links to all 14 individual point pages on Australia.gov.au]
 
 ### Related ArcKit Commands
 
@@ -1145,8 +1145,8 @@ Create a public document (visible to assessment team) showing:
 - `/arckit:analyze` - Comprehensive governance quality analysis
 - `/arckit:traceability` - Requirements traceability matrix showing evidence chains
 
-**Overlap with TCoP**:
-- `/arckit:tcop` - Technology Code of Practice assessment (points 11, 13 overlap)
+**Overlap with DX Policy / DSS**:
+- `/arckit:tcop` - Digital Experience Policy assessment (points 11, 13 overlap)
 
 **Generate Missing Evidence**:
 - `/arckit:requirements` - If user stories or NFRs weak
@@ -1158,12 +1158,12 @@ Create a public document (visible to assessment team) showing:
 ### Community Resources
 
 **Blog Posts and Lessons Learned**:
-- [Preparing for a GDS assessment](https://www.iterate.org.uk/10-things-to-remember-when-preparing-for-a-service-standard-assessment/)
-- [What I learned as a user researcher](https://dwpdigital.blog.gov.uk/2020/08/17/what-ive-learned-about-gds-assessments-as-a-user-researcher/)
+- [Preparing for a DSS assurance review](https://www.iterate.org.uk/10-things-to-remember-when-preparing-for-a-service-standard-assessment/)
+- [What I learned as a user researcher](https://www.dta.gov.au/help-and-advice/digital-service-standard)
 - [Service assessments: not Dragon's Den](https://medium.com/deloitte-uk-design-blog/service-assessments-no-longer-dragons-den-909b56c43593)
 
-**Supplier Support** (G-Cloud):
-- Search Digital Marketplace for "GDS assessment preparation" support services
+**Supplier Support** (BuyICT cloud panels):
+- Search BuyICT and AusTender channels for "DSS assurance review preparation" support services
 - Many suppliers offer assessment prep workshops and mock assessments
 
 ---

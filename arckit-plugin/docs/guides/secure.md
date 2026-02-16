@@ -1,6 +1,6 @@
 # Secure by Design Playbook
 
-`/arckit.secure` generates a UK Government Secure by Design assessment for civilian department projects using NCSC CAF principles.
+`/arckit.secure` generates a Australian Government Secure by Design assessment for civilian department projects using ASD ACSC CAF principles.
 
 ---
 
@@ -33,10 +33,10 @@ Output: `projects/<id>/ARC-<id>-SECD-v1.0.md`
 |---------|----------|
 | Executive Summary | Overall security posture and key findings |
 | System Overview | Purpose, boundaries, data classification |
-| NCSC CAF Assessment | Compliance against 14 CAF principles |
+| ASD ACSC CAF Assessment | Compliance against 14 CAF principles |
 | Threat Assessment | Threat landscape and attack vectors |
 | Security Architecture | Controls, boundaries, defense in depth |
-| Cyber Essentials | Alignment with Cyber Essentials controls |
+| Essential Eight | Alignment with Essential Eight controls |
 | Supply Chain Security | Third-party and vendor security |
 | Data Protection | Personal data handling and GDPR |
 | Incident Response | Detection, response, and recovery |
@@ -44,7 +44,7 @@ Output: `projects/<id>/ARC-<id>-SECD-v1.0.md`
 
 ---
 
-## NCSC CAF 14 Principles
+## ASD ACSC CAF 14 Principles
 
 | Objective | # | Principle |
 |-----------|---|-----------|
@@ -65,7 +65,7 @@ Output: `projects/<id>/ARC-<id>-SECD-v1.0.md`
 
 ---
 
-## Cyber Essentials Controls
+## Essential Eight Controls
 
 | Control | Description |
 |---------|-------------|
@@ -91,8 +91,8 @@ Output: `projects/<id>/ARC-<id>-SECD-v1.0.md`
 
 ## Review Checklist
 
-- All 14 NCSC CAF principles assessed with evidence.
-- Cyber Essentials controls addressed.
+- All 14 ASD ACSC CAF principles assessed with evidence.
+- Essential Eight controls addressed.
 - Data classification and handling defined.
 - Supply chain risks identified and managed.
 - Security monitoring and detection in place.

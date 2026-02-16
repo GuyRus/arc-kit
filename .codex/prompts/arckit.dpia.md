@@ -1,10 +1,10 @@
 ---
-description: "Generate Data Protection Impact Assessment (DPIA) for UK GDPR Article 35 compliance"
+description: "Generate Data Protection Impact Assessment (DPIA) for Privacy Act 1988 (APPs) Article 35 compliance"
 ---
 
-You are helping an enterprise architect generate a **Data Protection Impact Assessment (DPIA)** following UK GDPR Article 35 requirements and ICO guidance.
+You are helping an enterprise architect generate a **Data Protection Impact Assessment (DPIA)** following Privacy Act 1988 (APPs) Article 35 requirements and OAIC guidance.
 
-A DPIA is a **legal requirement** under UK GDPR Article 35 for processing that is likely to result in a high risk to individuals' rights and freedoms. It systematically assesses privacy risks, evaluates necessity and proportionality, and identifies mitigations.
+A DPIA is a **legal requirement** under Privacy Act 1988 (APPs) Article 35 for processing that is likely to result in a high risk to individuals' rights and freedoms. It systematically assesses privacy risks, evaluates necessity and proportionality, and identifies mitigations.
 
 ## User Input
 ```text
@@ -120,11 +120,11 @@ Read the DPIA template:
 > **Note**: Read the `.arckit/VERSION` file and update the version in the template metadata line when generating.
 > **Tip**: Users can customize templates with `/arckit:customize dpia`
 
-This template has 16 major sections and uses the ICO's 9-criteria screening checklist.
+This template has 16 major sections and uses the OAIC's 9-criteria screening checklist.
 
-### Step 4: ICO 9-Criteria Screening (Automated)
+### Step 4: OAIC 9-Criteria Screening (Automated)
 
-Based on the data model analysis, automatically score the ICO 9 criteria:
+Based on the data model analysis, automatically score the OAIC 9 criteria:
 
 | # | Criterion | Scoring Logic |
 |---|-----------|---------------|
@@ -139,7 +139,7 @@ Based on the data model analysis, automatically score the ICO 9 criteria:
 | 9 | **Prevents rights exercise** | YES if: No mechanism for SAR/deletion/portability in data model |
 
 **DPIA Decision Rules**:
-- **2+ criteria met**: DPIA REQUIRED (UK GDPR Article 35)
+- **2+ criteria met**: DPIA REQUIRED (Privacy Act 1988 (APPs) Article 35)
 - **1 criterion met**: DPIA RECOMMENDED (good practice)
 - **0 criteria met**: DPIA NOT REQUIRED (but consider Data Privacy Notice)
 
@@ -147,7 +147,7 @@ Show the screening results to the user:
 
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📋 DPIA Screening Results (ICO 9 Criteria)
+📋 DPIA Screening Results (OAIC 9 Criteria)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 [X] Criterion 4: Sensitive data (Special category data found: Health, Ethnicity)
@@ -156,7 +156,7 @@ Show the screening results to the user:
 ... [continue for all 9 criteria]
 
 **Screening Score**: 2/9 criteria met
-**Decision**: ✅ DPIA REQUIRED under UK GDPR Article 35
+**Decision**: ✅ DPIA REQUIRED under Privacy Act 1988 (APPs) Article 35
 
 Proceeding to generate full DPIA...
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -238,19 +238,19 @@ Generate the DPIA by:
    - Show residual risk after mitigations
    - Extract existing security controls from ARC-*-SECD-*.md as mitigations
 
-9. **Section 7: ICO Consultation**:
-   - If any residual risks remain HIGH after mitigations, flag for ICO prior consultation:
+9. **Section 7: OAIC Consultation**:
+   - If any residual risks remain HIGH after mitigations, flag for OAIC prior consultation:
      ```
-     ⚠️  ICO Prior Consultation Required:
+     ⚠️  OAIC Prior Consultation Required:
      - Risk DPIA-003 (Unauthorized profiling of children) remains HIGH after mitigations
-     - Contact ICO before processing: https://ico.org.uk/make-a-complaint/your-personal-information-concerns/
+     - Contact OAIC before processing: https://ico.org.uk/make-a-complaint/your-personal-information-concerns/
      ```
 
 10. **Section 8: Sign-off and Approval**:
    - Leave signature fields blank (to be signed by Data Controller, DPO, Senior Responsible Owner)
 
 11. **Section 9: Review and Monitoring**:
-    - Set review triggers: 12 months, major system changes, data breaches, ICO guidance updates
+    - Set review triggers: 12 months, major system changes, data breaches, OAIC guidance updates
 
 12. **Section 10: Traceability**:
     - Link to all source artifacts (ARC-*-DATA-*.md, ARC-*-REQ-*.md, ARC-*-STKE-*.md, ARC-000-PRIN-*.md, ARC-*-RISK-*.md)
@@ -282,7 +282,7 @@ Generate the DPIA by:
       - Link to AI transparency statement if it exists
 
 17. **Section 15: Summary and Action Plan**:
-    - Summary table: Total risks, high/medium/low breakdown, key mitigations, ICO consultation needed?
+    - Summary table: Total risks, high/medium/low breakdown, key mitigations, OAIC consultation needed?
     - Action plan: List all recommendations with owners and deadlines
 
 Write the complete DPIA document to:
@@ -331,7 +331,7 @@ If YES:
 📊 Assessment Summary
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-**ICO Screening**: {N}/9 criteria met → DPIA REQUIRED
+**OAIC Screening**: {N}/9 criteria met → DPIA REQUIRED
 
 **Processing Overview**:
 - Data Subjects: {list data subject categories}
@@ -353,7 +353,7 @@ If YES:
 
 **Mitigations Proposed**: {N} technical, organizational, and procedural controls
 
-**ICO Prior Consultation**: {REQUIRED / NOT REQUIRED}
+**OAIC Prior Consultation**: {REQUIRED / NOT REQUIRED}
 {If required: List residual high risks that trigger consultation}
 
 **Data Subject Rights**:
@@ -362,7 +362,7 @@ If YES:
 
 **Next Steps**:
 1. Review and approve DPIA (Data Controller, DPO, SRO signatures)
-2. {If ICO consultation needed: Contact ICO before processing}
+2. {If OAIC consultation needed: Contact OAIC before processing}
 3. Implement recommended mitigations
 4. Establish 12-month review cycle
 5. {If children's data: Implement age verification and parental consent}
@@ -387,22 +387,22 @@ If YES:
 📚 References
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-- UK GDPR Article 35: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/data-protection-impact-assessments-dpias/
-- ICO DPIA Guidance: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/data-protection-impact-assessments-dpias/what-is-a-dpia/
-- ICO Prior Consultation: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/data-protection-impact-assessments-dpias/do-we-need-to-consult-the-ico/
+- Privacy Act 1988 (APPs) Article 35: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/data-protection-impact-assessments-dpias/
+- OAIC DPIA Guidance: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/data-protection-impact-assessments-dpias/what-is-a-dpia/
+- OAIC Prior Consultation: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/data-protection-impact-assessments-dpias/do-we-need-to-consult-the-ico/
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
 
 ## Important Notes
 
-2. **Legal Requirement**: A DPIA is **mandatory** under UK GDPR Article 35 when processing is likely to result in high risk to individuals. Failure to conduct a DPIA when required can result in ICO enforcement action.
+2. **Legal Requirement**: A DPIA is **mandatory** under Privacy Act 1988 (APPs) Article 35 when processing is likely to result in high risk to individuals. Failure to conduct a DPIA when required can result in OAIC enforcement action.
 
 3. **Use Write Tool**: DPIAs are large documents (typically 3,000-10,000 words). You MUST use the Write tool to create the file. Do NOT output the full DPIA in the chat.
 
 4. **Risk Assessment Focus**: DPIA risks focus on **impact on individuals** (privacy harm, discrimination, physical harm, financial loss, reputational damage), NOT organizational risks. This is different from the risk register.
 
-5. **Screening is Critical**: Always perform the ICO 9-criteria screening first. If the screening shows DPIA not required, don't generate a full DPIA unless the user explicitly requests it.
+5. **Screening is Critical**: Always perform the OAIC 9-criteria screening first. If the screening shows DPIA not required, don't generate a full DPIA unless the user explicitly requests it.
 
 6. **Data Model Dependency**: A DPIA cannot be generated without a data model. The data model is the source of truth for what personal data is being processed.
 
@@ -410,7 +410,7 @@ If YES:
 
 8. **Mitigation Sources**: Extract security controls from the Secure by Design assessment as DPIA mitigations. This creates traceability from risks → mitigations → security controls.
 
-9. **ICO Consultation Threshold**: If ANY residual risk remains HIGH after mitigations, ICO prior consultation is required before processing can begin.
+9. **OAIC Consultation Threshold**: If ANY residual risk remains HIGH after mitigations, OAIC prior consultation is required before processing can begin.
 
 10. **Children's Data**: If processing children's data, the DPIA must include additional assessment of age verification, parental consent, best interests, and child-friendly privacy notices.
 
@@ -421,19 +421,19 @@ If YES:
 13. **Review Cycle**: DPIAs must be reviewed regularly (recommended: 12 months) and updated when:
     - New processing activities are added
     - Data protection risks change
-    - ICO guidance is updated
+    - OAIC guidance is updated
     - A data breach occurs
 
 ## Success Criteria
 
 - ✅ DPIA document created at `projects/{project_id}/ARC-{PROJECT_ID}-DPIA-v${VERSION}.md`
-- ✅ ICO 9-criteria screening performed and documented
+- ✅ OAIC 9-criteria screening performed and documented
 - ✅ All personal data and special category data from data model included
 - ✅ Processing purposes extracted from requirements
 - ✅ Data subjects and vulnerable groups identified from stakeholders
 - ✅ Risk assessment completed with likelihood, severity, and overall risk scores
 - ✅ Mitigations proposed for all high and medium risks
-- ✅ ICO prior consultation flagged if residual high risks remain
+- ✅ OAIC prior consultation flagged if residual high risks remain
 - ✅ Data subject rights implementation assessed (SAR, deletion, portability, etc.)
 - ✅ International transfer safeguards identified if applicable
 - ✅ Children's data assessment completed if applicable
@@ -446,7 +446,7 @@ If YES:
 ## Example Usage
 
 ```
-/arckit:dpia Generate DPIA for NHS appointment booking system
+/arckit:dpia Generate DPIA for public health appointment system
 
 /arckit:dpia Create data protection impact assessment for HMRC chatbot handling taxpayer queries
 

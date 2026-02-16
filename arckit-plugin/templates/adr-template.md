@@ -62,7 +62,7 @@ Stakeholders kept up-to-date with one-way communication.
 - [Name, Role]
 - [Team/Group name]
 
-### 2.4 UK Government Escalation Context
+### 2.4 Australian Government Escalation Context
 
 **Decision Level**: [Team / Cross-team / Department / Cross-government]
 
@@ -92,7 +92,7 @@ Stakeholders kept up-to-date with one-way communication.
 
 - **Business context**: [Link to business requirements BR-XXX]
 - **Technical context**: [Link to technical requirements FR-XXX, NFR-XXX]
-- **Regulatory context**: [GDPR, GDS Service Standard, Cyber Essentials, etc.]
+- **Regulatory context**: [GDPR, Digital Service Standard, Essential Eight, etc.]
 
 ### 3.3 Supporting Links
 
@@ -125,10 +125,10 @@ These forces influence the decision. They are often in tension with each other.
 
 ### 4.3 Regulatory & Compliance Drivers
 
-- **GDS Service Standard**: [Which points apply? Point 4: Open standards, Point 9: Hosting, etc.]
-- **Technology Code of Practice**: [Which points? Point 5: Cloud first, Point 8: Reuse, Point 13: AI]
-- **NCSC Cyber Security**: [Cyber Essentials Plus, CAF principles]
-- **Data Protection**: [UK GDPR Article 25: Data protection by design, Article 35: DPIA]
+- **Digital Service Standard**: [Which points apply? Point 4: Open standards, Point 9: Hosting, etc.]
+- **Digital Experience Policy**: [Which points? Point 5: Cloud first, Point 8: Reuse, Point 13: AI]
+- **ASD ACSC Cyber Security**: [Essential Eight maturity uplift, CAF principles]
+- **Data Protection**: [Privacy Act 1988 (APPs) Article 25: Data protection by design, Article 35: DPIA]
 - **Accessibility**: [WCAG 2.2 AA, Public Sector Bodies Accessibility Regulations]
 
 ### 4.4 Alignment to Architecture Principles
@@ -169,11 +169,11 @@ Reference architecture principles from `projects/000-global/ARC-000-PRIN-v*.md`:
 - **OPEX**: [Ongoing costs: support, training, maintenance per year]
 - **TCO (3-year)**: [Total cost of ownership]
 
-#### GDS Service Standard Impact
+#### Digital Service Standard Impact
 | Point | Impact | Notes |
 |-------|--------|-------|
 | 4. Open standards | [Positive/Negative/Neutral] | [Explanation] |
-| 5. Security | [Impact] | [NCSC guidance compliance] |
+| 5. Security | [Impact] | [ASD ACSC guidance compliance] |
 | 9. Technology | [Impact] | [Cloud hosting, scalability] |
 
 ---
@@ -217,7 +217,7 @@ Reference architecture principles from `projects/000-global/ARC-000-PRIN-v*.md`:
 > In the context of building a citizen-facing chatbot service,
 > facing the need for secure, compliant, and scalable conversational AI,
 > we decided for Azure OpenAI Service with Government instance,
-> to achieve UK data residency and NCSC-assured cloud hosting,
+> to achieve Australian data residency and ASD ACSC-assured cloud hosting,
 > accepting higher costs compared to consumer OpenAI API.
 
 ### 6.3 Justification (Why This Option?)
@@ -307,16 +307,16 @@ Reference architecture principles from `projects/000-global/ARC-000-PRIN-v*.md`:
 
 ### 8.3 Compliance Verification
 
-**GDS Service Assessment**:
+**Digital Service Standard assurance review**:
 - [ ] Point [X]: [How this decision addresses Service Standard point]
 - [ ] Evidence prepared for assessment
 
-**Technology Code of Practice**:
-- [ ] Point [X]: [How this decision addresses TCoP point]
+**Digital Experience Policy**:
+- [ ] Point [X]: [How this decision addresses DX Policy / DSS point]
 
 **Security assurance**:
-- [ ] NCSC Cloud Security Principles: [Which principles apply?]
-- [ ] Cyber Essentials controls: [Impact on 5 controls]
+- [ ] ASD ACSC Cloud Security Principles: [Which principles apply?]
+- [ ] Essential Eight controls: [Impact on 5 controls]
 - [ ] Security testing completed: [Pen test, vulnerability scan]
 
 **Data protection**:
@@ -389,10 +389,10 @@ Reference architecture principles from `projects/000-global/ARC-000-PRIN-v*.md`:
 - [API references]
 - [Best practice guides]
 
-**UK Government guidance**:
-- [GDS Service Manual link]
-- [NCSC guidance link]
-- [GOV.UK Architecture patterns]
+**Australian Government guidance**:
+- [DTA Service Manual link]
+- [ASD ACSC guidance link]
+- [Australia.gov.au Architecture patterns]
 
 **Research and evidence**:
 - [Academic papers]
@@ -497,7 +497,7 @@ graph TD
     A[Problem: Need data persistence] --> B{Decision Drivers}
     B --> C[Performance > 1000 TPS]
     B --> D[ACID compliance required]
-    B --> E[UK data residency]
+    B --> E[Australian data residency]
     C --> F{Evaluate Options}
     D --> F
     E --> F
@@ -524,11 +524,11 @@ graph TD
 
 ---
 
-*This ADR follows the MADR v4.0 format enhanced with UK Government requirements and ArcKit governance standards.*
+*This ADR follows the MADR v4.0 format enhanced with Australian Government requirements and ArcKit governance standards.*
 
 *For more information:*
 - *MADR: https://adr.github.io/madr/*
-- *UK Gov ADR Framework: https://www.gov.uk/government/publications/architectural-decision-record-framework*
+- *Australian Government ADR Framework: https://architecture.digital.gov.au/*
 - *ArcKit Documentation: [Link to project README]*
 
 ## External References

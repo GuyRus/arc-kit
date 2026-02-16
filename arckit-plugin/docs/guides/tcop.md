@@ -1,6 +1,6 @@
-# Technology Code of Practice Playbook
+# Digital Experience Policy Playbook
 
-`/arckit.tcop` generates a Technology Code of Practice (TCoP) review document for UK Government technology projects.
+`/arckit.tcop` generates a Digital Experience Policy and Digital Service Standard (DSS) review document for Australian Government technology projects.
 
 ---
 
@@ -18,7 +18,7 @@
 ## Command
 
 ```bash
-/arckit.tcop Create TCoP review for <project>
+/arckit.tcop Create DX Policy / DSS review for <project>
 ```
 
 Output: `projects/<id>/ARC-<id>-TCOP-v1.0.md`
@@ -27,20 +27,20 @@ Output: `projects/<id>/ARC-<id>-TCOP-v1.0.md`
 
 ---
 
-## TCoP Review Structure
+## DX Policy / DSS Review Structure
 
 | Section | Contents |
 |---------|----------|
 | Executive Summary | Overall compliance status |
 | Project Overview | What's being delivered |
-| 13 Points Assessment | Compliance against each TCoP point |
+| 13 Points Assessment | Compliance against each DX Policy / DSS point |
 | Evidence Summary | Supporting documentation |
 | Gaps & Recommendations | Non-compliance with remediation |
 | Approval Readiness | Ready for spend control assessment |
 
 ---
 
-## 13 TCoP Points
+## 13 DX Policy / DSS Points
 
 | # | Point | Focus |
 |---|-------|-------|
@@ -55,7 +55,7 @@ Output: `projects/<id>/ARC-<id>-TCOP-v1.0.md`
 | 9 | Integrate and adapt technology | Legacy integration |
 | 10 | Make better use of data | Data-driven decisions |
 | 11 | Define your purchasing strategy | Procurement approach |
-| 12 | Meet the Service Standard | GDS Service Standard alignment |
+| 12 | Meet the Service Standard | Digital Service Standard alignment |
 | 13 | Spend controls | Comply with spending requirements |
 
 ---
@@ -77,15 +77,15 @@ Output: `projects/<id>/ARC-<id>-TCOP-v1.0.md`
 |-------|----------------|-----------------|
 | Discovery | Define requirements and users | `/arckit.requirements`, `/arckit.stakeholders` |
 | Architecture | Design solution | `/arckit.diagram`, `/arckit.hld-review` |
-| Compliance | Create TCoP review | `/arckit.tcop` |
+| Compliance | Create DX Policy / DSS review | `/arckit.tcop` |
 | Approval | Submit for spend control | Manual |
-| Delivery | Build with TCoP compliance | `/arckit.backlog` |
+| Delivery | Build with DX Policy / DSS compliance | `/arckit.backlog` |
 
 ---
 
 ## Review Checklist
 
-- All 13 TCoP points assessed.
+- All 13 DX Policy / DSS points assessed.
 - Each point has compliance status with evidence.
 - Gaps have remediation actions with owners.
 - User research evidence documented (Point 1).

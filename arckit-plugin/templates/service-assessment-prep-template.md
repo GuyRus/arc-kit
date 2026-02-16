@@ -1,4 +1,4 @@
-# GDS Service Assessment Preparation Report
+# Digital Service Standard assurance review Preparation Report
 
 > **Template Status**: Beta | **Version**: [VERSION] | **Command**: `/arckit.service-assessment`
 
@@ -7,7 +7,7 @@
 | Field | Value |
 |-------|-------|
 | **Document ID** | ARC-[PROJECT_ID]-SVCASS-v[VERSION] |
-| **Document Type** | GDS Service Assessment Preparation Report |
+| **Document Type** | Digital Service Standard assurance review Preparation Report |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
 | **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
@@ -214,7 +214,7 @@ Priority: Strengthens overall case but not blocking
 - **Ready to book after**: [Date]
 
 **How to Book**:
-1. Contact GDS Central Digital & Data Office assessment team
+1. Contact DTA Central Digital & Data Office assessment team
 2. Book 5 weeks in advance minimum
 3. Assessments typically on Tuesday, Wednesday, or Thursday
 4. Duration: 4 hours
@@ -327,7 +327,7 @@ Optional supplementary:
 - [ ] Create "tracking amber evidence" document
 - [ ] Assign owners to each amber point
 - [ ] Set deadlines (within 3 months)
-- [ ] Schedule check-ins with GDS team
+- [ ] Schedule check-ins with DTA team
 
 ### If You Fail (Red)
 
@@ -365,24 +365,24 @@ Optional supplementary:
 
 ## Resources
 
-### GDS Service Standard Resources
+### Digital Service Standard Resources
 
 **Official Guidance**:
-- [Service Standard](https://www.gov.uk/service-manual/service-standard)
-- [What happens at assessment](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work)
-- [Book assessment](https://www.gov.uk/service-manual/service-assessments/book-a-service-assessment)
-- [Service Standard Reports](https://www.gov.uk/service-standard-reports)
+- [Service Standard](https://www.dta.gov.au/help-and-advice/digital-service-standard)
+- [What happens at assessment](https://www.dta.gov.au/help-and-advice/digital-service-standard)
+- [Book assessment](https://www.dta.gov.au/help-and-advice/digital-service-standard)
+- [Service Standard Reports](https://www.dta.gov.au/help-and-advice/digital-service-standard)
 
 **Phase-Specific Guidance**:
-- [Alpha phase](https://www.gov.uk/service-manual/agile-delivery/how-the-alpha-phase-works)
-- [Beta phase](https://www.gov.uk/service-manual/agile-delivery/how-the-beta-phase-works)
-- [Live phase](https://www.gov.uk/service-manual/agile-delivery/how-the-live-phase-works)
+- [Alpha phase](https://www.dta.gov.au/help-and-advice/digital-service-standard)
+- [Beta phase](https://www.dta.gov.au/help-and-advice/digital-service-standard)
+- [Live phase](https://www.dta.gov.au/help-and-advice/digital-service-standard)
 
 ### Related ArcKit Commands
 
 - `/arckit.analyze` - Comprehensive governance analysis
 - `/arckit.traceability` - Requirements traceability matrix
-- `/arckit.tcop` - Technology Code of Practice assessment
+- `/arckit.tcop` - Digital Experience Policy assessment
 - `/arckit.secure` - Secure by Design assessment
 
 ## External References

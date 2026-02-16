@@ -1,4 +1,4 @@
-# MOD Secure by Design Assessment
+# Defence Secure by Design Assessment
 
 > **Template Status**: Experimental | **Version**: [VERSION] | **Command**: `/arckit.mod-secure`
 
@@ -6,7 +6,7 @@
 
 | Field | Value |
 |-------|-------|
-| **Document ID** | ARC-[PROJECT_ID]-SECD-MOD-v[VERSION] |
+| **Document ID** | ARC-[PROJECT_ID]-SECD-DEF-v[VERSION] |
 | **Document Type** | [DOCUMENT_TYPE_NAME] |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
 | **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
@@ -58,7 +58,7 @@
 [Explain why this classification level is required]
 
 **Data Types Processed**:
-- [ ] Personal data (UK GDPR)
+- [ ] Personal data (Privacy Act 1988 (APPs))
 - [ ] Special category data (biometric, health, etc.)
 - [ ] Classified military information
 - [ ] Operational data
@@ -79,7 +79,7 @@
 
 ---
 
-## 2. MOD Security Principles Compliance
+## 2. Defence Security Principles Compliance
 
 ### 2.1 Defence in Depth
 
@@ -169,11 +169,11 @@
 
 ---
 
-## 3. MOD Accreditation Requirements
+## 3. Defence Accreditation Requirements
 
 ### 3.1 Security Accreditation Status
 
-**Accreditation Authority**: [JSP 440 / NCSC / Defence Digital]
+**Accreditation Authority**: [Defence security policy baseline (agency-specific) / ASD ACSC / Defence Digital]
 
 **Accreditation Type**: [Full Accreditation / Interim Accreditation / Risk Managed Accreditation]
 
@@ -196,9 +196,9 @@
 - [Action 1]
 - [Action 2]
 
-### 3.2 JSP 440 Compliance
+### 3.2 Defence security policy baseline (agency-specific) Compliance
 
-**JSP 440**: Defence Information Assurance Maturity Model (IAMM)
+**Defence security policy baseline (agency-specific)**: Defence Information Assurance Maturity Model (IAMM)
 
 **IAMM Level Target**: [Level 0-5]
 
@@ -273,7 +273,7 @@
 
 ### 5.1 Cryptography
 
-**Cryptographic Standards**: [CESG / NCSC approved algorithms]
+**Cryptographic Standards**: [CESG / ASD ACSC approved algorithms]
 
 **Encryption Implementation**:
 - [ ] Data at rest encrypted (AES-256 minimum)
@@ -297,7 +297,7 @@
 
 **Authentication Method**: [Smart card / Biometric / MFA / SSO]
 
-**Identity Provider**: [MOD Active Directory / Azure AD / Other]
+**Identity Provider**: [Defence identity directory / Azure AD / Other]
 
 **Authentication Controls**:
 - [ ] Multi-factor authentication (MFA) enforced
@@ -361,7 +361,7 @@
 
 ### 5.5 Security Monitoring and Logging
 
-**Security Operations Center (SOC)**: [24/7 MOD SOC / 3rd party / None]
+**Security Operations Center (SOC)**: [24/7 Defence SOC / 3rd party / None]
 
 **SIEM Solution**: [Splunk / ArcSight / Sentinel / Other]
 
@@ -372,7 +372,7 @@
 - [ ] Security event correlation
 - [ ] User behavior analytics (UBA)
 - [ ] Automated incident response playbooks
-- [ ] Integration with MOD Cyber Defence Operations
+- [ ] Integration with Defence cyber defence operations
 
 **Security Alerts**:
 - Failed authentication attempts: [Monitored / Not monitored]
@@ -390,7 +390,7 @@
 
 ### 6.1 Secure Coding Practices
 
-**Secure Coding Standards**: [OWASP / CERT / MOD Secure Coding Guidelines]
+**Secure Coding Standards**: [OWASP / CERT / Defence secure coding guidelines]
 
 **Secure Development Practices**:
 - [ ] Secure coding training for developers
@@ -439,7 +439,7 @@
 
 **Vendor Security Assessment**:
 - [ ] Vendor security questionnaires completed
-- [ ] Vendor security certifications verified (ISO 27001, Cyber Essentials+)
+- [ ] Vendor security certifications verified (ISO 27001, Essential Eight+)
 - [ ] Vendor access controls defined and enforced
 - [ ] Third-party code review conducted
 - [ ] Supply chain risk assessment completed
@@ -505,7 +505,7 @@
 - [ ] Incident detection capabilities
 - [ ] Forensic investigation capabilities
 - [ ] Communication plan for incidents
-- [ ] Regulatory reporting process (MOD, NCSC, ICO)
+- [ ] Regulatory reporting process (Defence, ASD ACSC, OAIC)
 - [ ] Lessons learned process
 
 **Recent Incident Response Exercise**: [Date / Not Conducted]
@@ -583,19 +583,19 @@
 ### 10.1 Regulatory Compliance
 
 **Applicable Regulations**:
-- [ ] UK GDPR and Data Protection Act 2018
+- [ ] Privacy Act 1988 (APPs) and Privacy Act 1988
 - [ ] Official Secrets Act
 - [ ] Defence Reform Act
 - [ ] Network and Information Systems (NIS) Regulations
-- [ ] MOD JSP 440 (Defence IA Policy)
-- [ ] NCSC Cyber Assessment Framework (CAF)
+- [ ] Defence security policy baseline (agency-specific) (Defence IA Policy)
+- [ ] ASD ACSC Cyber Assessment Framework (CAF)
 
 **Compliance Status**:
 
 | Regulation | Compliance Status | Last Assessment | Next Assessment |
 |------------|------------------|-----------------|-----------------|
-| [UK GDPR] | [Compliant / Partial / Non-Compliant] | [Date] | [Date] |
-| [JSP 440] | [Compliant / Partial / Non-Compliant] | [Date] | [Date] |
+| [Privacy Act 1988 (APPs)] | [Compliant / Partial / Non-Compliant] | [Date] | [Date] |
+| [Defence security policy baseline (agency-specific)] | [Compliant / Partial / Non-Compliant] | [Date] | [Date] |
 
 **Gaps/Actions**:
 - [Action 1]

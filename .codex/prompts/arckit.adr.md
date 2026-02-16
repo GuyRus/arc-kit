@@ -2,7 +2,7 @@
 description: "Document architectural decisions with options analysis and traceability"
 ---
 
-You are helping an enterprise architect create an Architecture Decision Record (ADR) following MADR v4.0 format enhanced with UK Government requirements.
+You are helping an enterprise architect create an Architecture Decision Record (ADR) following MADR v4.0 format enhanced with Australian Government requirements.
 
 ## User Input
 
@@ -123,7 +123,7 @@ fi
    - **Escalation level**: Team / Cross-team / Department / Cross-government
    - **Governance forum**: Architecture Review Board, TDA, Programme Board, etc.
 
-### 6. **Generate comprehensive ADR** following MADR v4.0 + UK Gov framework:
+### 6. **Generate comprehensive ADR** following MADR v4.0 + Australian Government framework:
 
    **Document Control** (see "Auto-Populate Document Control Fields" section below for full details):
    - Document ID: ARC-{PROJECT_ID}-ADR-{NUM}-v${VERSION} (use `generate-document-id.sh`)
@@ -138,7 +138,7 @@ fi
    - **Deciders**: Who has authority to approve this ADR?
    - **Consulted**: Subject matter experts to involve (two-way communication)
    - **Informed**: Stakeholders to keep updated (one-way communication)
-   - **UK Government Escalation Context**:
+   - **Australian Government Escalation Context**:
      - Team: Local implementation (frameworks, libraries, testing)
      - Cross-team: Integration patterns, shared services, APIs
      - Department: Technology standards, cloud providers, security
@@ -149,7 +149,7 @@ fi
    - Why is this decision needed?
    - Business context (link to BR-xxx requirements)
    - Technical context (link to FR-xxx, NFR-xxx requirements)
-   - Regulatory context (GDPR, GDS Service Standard, Cyber Essentials)
+   - Regulatory context (GDPR, Digital Service Standard, Essential Eight)
    - Supporting links (user stories, requirements, research)
 
    **Decision Drivers (Forces)**:
@@ -160,10 +160,10 @@ fi
      - Link to BR-xxx requirements
      - Link to stakeholder goals
    - **Regulatory & compliance drivers**:
-     - GDS Service Standard (which points apply?)
-     - Technology Code of Practice (Point 5: Cloud first, Point 8: Reuse, Point 13: AI)
-     - NCSC Cyber Security (Cyber Essentials, CAF principles)
-     - Data Protection (UK GDPR Article 25, 35)
+     - Digital Service Standard (which points apply?)
+     - Digital Experience Policy (Point 5: Cloud first, Point 8: Reuse, Point 13: AI)
+     - ASD ACSC Cyber Security (Essential Eight, CAF principles)
+     - Data Protection (Privacy Act 1988 (APPs) Article 25, 35)
    - **Alignment to architecture principles**: Create table showing which principles support/conflict
 
    **Considered Options** (MINIMUM 2-3 options, always include "Do Nothing"):
@@ -182,7 +182,7 @@ fi
      - CAPEX: One-time costs (licenses, hardware, migration)
      - OPEX: Ongoing costs (support, training, maintenance per year)
      - TCO (3-year): Total cost of ownership
-   - **GDS Service Standard Impact**: Create table showing impact on relevant points
+   - **Digital Service Standard Impact**: Create table showing impact on relevant points
 
    **Option: Do Nothing (Baseline)**:
    - Always include this as baseline comparison
@@ -220,9 +220,9 @@ fi
      - Success metrics (how to measure if goals achieved)
      - Alerts and dashboards
    - **Compliance verification**:
-     - GDS Service Assessment: Which points addressed, evidence prepared
-     - Technology Code of Practice: Which points addressed
-     - Security assurance: NCSC principles, Cyber Essentials, security testing
+     - Digital Service Standard assurance review: Which points addressed, evidence prepared
+     - Digital Experience Policy: Which points addressed
+     - Security assurance: ASD ACSC principles, Essential Eight, security testing
      - Data protection: DPIA updated, data flows, privacy notice
 
    **Links to Supporting Documents**:
@@ -245,7 +245,7 @@ fi
    - **External references**:
      - Standards and RFCs
      - Vendor documentation
-     - UK Government guidance (GDS Service Manual, NCSC, GOV.UK patterns)
+     - Australian Government guidance (DTA Service Manual, ASD ACSC, Australia.gov.au patterns)
      - Research and evidence
 
    **Implementation Plan**:
@@ -340,7 +340,7 @@ DOC_ID=$(.arckit/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "ADR" "${V
 **User-provided fields** (extract from project metadata or user input):
 - `[PROJECT_NAME]` → Full project name from project metadata or user input
 - `[OWNER_NAME_AND_ROLE]` → Document owner (prompt user if not in metadata)
-- `[CLASSIFICATION]` → Default to "OFFICIAL" for UK Gov, "PUBLIC" otherwise (or prompt user)
+- `[CLASSIFICATION]` → Default to "OFFICIAL" for Australian Government, "PUBLIC" otherwise (or prompt user)
 
 **Calculated fields**:
 - `[YYYY-MM-DD]` for Review Date → Current date + 30 days (requirements, research, risks)
@@ -455,11 +455,11 @@ The footer should be populated with:
    - [ ] Verify with testing
    - [ ] Schedule ADR review ({Date})
 
-   ### UK Government Compliance
+   ### Australian Government Compliance
    **Escalation Level**: {Level}
    **Governance Forum**: {Forum}
-   **GDS Service Standard**: Points {X, Y, Z} addressed
-   **Technology Code of Practice**: Points {A, B, C} addressed
+   **Digital Service Standard**: Points {X, Y, Z} addressed
+   **Digital Experience Policy**: Points {A, B, C} addressed
    ```
 
 ### 11. **Provide guidance on ADR lifecycle**:
@@ -489,13 +489,13 @@ The footer should be populated with:
 - **Minimum Options**: Always analyze at least 2-3 options plus "Do Nothing" baseline
 - **Y-Statement**: This is the concise justification format - always include it
 - **Traceability**: Every ADR must link to requirements, principles, stakeholders, risks
-- **UK Government**: Include escalation level and governance forum for compliance
+- **Australian Government**: Include escalation level and governance forum for compliance
 - **MADR Format**: Follow MADR v4.0 structure (Context, Decision Drivers, Options, Outcome, Consequences)
 - **Evidence-Based**: Decisions should be supported by research findings, benchmarks, PoCs
 - **Wardley Evolution**: Consider evolution stage (Genesis/Custom/Product/Commodity) when choosing options
-- **GDS Service Standard**: Document which Service Standard points the decision addresses
-- **Technology Code of Practice**: Show TCoP compliance (Point 5: Cloud first, Point 8: Reuse, etc.)
-- **Security**: Include NCSC guidance, Cyber Essentials, security testing requirements
+- **Digital Service Standard**: Document which Service Standard points the decision addresses
+- **Digital Experience Policy**: Show DX Policy / DSS compliance (Point 5: Cloud first, Point 8: Reuse, etc.)
+- **Security**: Include ASD ACSC guidance, Essential Eight, security testing requirements
 - **Review Schedule**: Every ADR needs review schedule and trigger events for re-evaluation
 - **Rollback Plan**: Document how to rollback if decision proves wrong
 - **Cost Analysis**: Always include CAPEX, OPEX, TCO for each option
@@ -515,11 +515,11 @@ The footer should be populated with:
 - "Adopt Kubernetes for Container Orchestration"
 - "Implement CQRS Pattern for Read/Write Separation"
 
-## UK Government Escalation Guidance
+## Australian Government Escalation Guidance
 
 | Level | Decision Makers | Example Decisions | Governance Forum |
 |-------|----------------|-------------------|------------------|
 | **Team** | Tech Lead, Senior Developers | Framework choice, testing strategy, code patterns | Team standup, Sprint review |
 | **Cross-team** | Technical Architects, Lead Engineers | Integration patterns, API standards, shared libraries | Architecture Forum, Technical Design Review |
 | **Department** | Enterprise Architects, CTO, Architecture Board | Cloud provider, security framework, technology standards | Architecture Review Board, Enterprise Architecture Board |
-| **Cross-government** | Technical Design Authority, GDS | National infrastructure, cross-department APIs, GOV.UK standards | Technical Design Council, GDS Architecture Community |
+| **Cross-government** | Technical Design Authority, DTA | National infrastructure, cross-department APIs, Australia.gov.au standards | Technical Design Council, DTA Architecture Community |

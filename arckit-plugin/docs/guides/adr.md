@@ -1,6 +1,6 @@
 # Architecture Decision Record (ADR) Guide
 
-`/arckit.adr` produces MADR v4.0-compatible architecture decision records backed by governance metadata and UK Government escalation requirements.
+`/arckit.adr` produces MADR v4.0-compatible architecture decision records backed by governance metadata and Australian Government escalation requirements.
 
 ---
 
@@ -11,7 +11,7 @@
 | Requirements & principles | Provide evaluation criteria and constraints |
 | Risk register | Ensures mitigations or accepts residual risk |
 | HLD/DLD references | Supplies context diagrams and interfaces |
-| Compliance artefacts | Link to TCoP, Secure by Design, AI Playbook evidence when impacted |
+| Compliance artefacts | Link to DX Policy / DSS, Secure by Design, AI Playbook evidence when impacted |
 
 ---
 
@@ -54,5 +54,5 @@ Output: `projects/<id>/decisions/ARC-<id>-ADR-001-v1.0.md` (uses multi-instance 
 
 - Decision ties directly to stakeholder drivers or requirements IDs.
 - Risks and mitigations reference the risk register entry numbers.
-- Compliance impacts call out required evidence (TCoP point, Secure by Design activity, ATRS field).
+- Compliance impacts call out required evidence (DX Policy / DSS point, Secure by Design activity, ATRS field).
 - Follow-on actions list named owners and due dates; backlog items reference `/arckit.backlog`.

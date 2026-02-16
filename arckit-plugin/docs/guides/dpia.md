@@ -16,7 +16,7 @@
 
 ## Trigger Checklist
 
-Tick any that apply (two or more = DPIA mandatory per ICO):
+Tick any that apply (two or more = DPIA mandatory per OAIC):
 - Evaluation or scoring (profiling, ranking, credit risk)
 - Automated decisions with legal/significant effect
 - Systematic monitoring or surveillance
@@ -53,7 +53,7 @@ Output: `projects/<id>/ARC-<id>-DPIA-v1.0.md`
    - Risk table and residual scores
    - Mitigation action plan and owners
 4. Log actions in backlog/assurance tracker
-5. Re-run after mitigations; seek ICO consultation if residual risk remains “High”
+5. Re-run after mitigations; seek OAIC consultation if residual risk remains “High”
 ```
 
 ---

@@ -1,10 +1,10 @@
 ---
-description: "Generate a Technology Code of Practice (TCoP) review document for a UK Government technology project"
+description: "Generate a Digital Experience Policy and Digital Service Standard (DSS) review document for a Australian Government technology project"
 ---
 
-# Technology Code of Practice Review
+# Digital Experience Policy Review
 
-You are helping to conduct a **Technology Code of Practice (TCoP) review** for a UK Government technology project or programme.
+You are helping to conduct a **Digital Experience Policy and Digital Service Standard (DSS) review** for a Australian Government technology project or programme.
 
 ## User Input
 
@@ -14,13 +14,13 @@ $ARGUMENTS
 
 ## Context
 
-The Technology Code of Practice is a set of 13 criteria to help government design, build and buy technology. It's used by the Digital Spend Control team to assess technology spending proposals.
+The Digital Experience Policy is a set of 13 criteria to help government design, build and buy technology. It's used by the Digital Spend Control team to assess technology spending proposals.
 
-**TCoP Reference**: https://www.gov.uk/guidance/the-technology-code-of-practice
+**DX Policy / DSS Reference**: https://www.dta.gov.au/help-and-advice/digital-experience-policy
 
 ## Your Task
 
-Generate a comprehensive TCoP review document by:
+Generate a comprehensive DX Policy / DSS review document by:
 
 1. **Loading the template** (with user override support):
    - **First**, check if `.arckit/templates/tcop-review-template.md` exists in the project root
@@ -59,7 +59,7 @@ Generate a comprehensive TCoP review document by:
    - **Risk**: High/critical risks, mitigations, risk appetite
    - **Diagrams**: Component topology, deployment targets, integration points
 
-3. **Assess compliance**: Based on the user's description and any existing project documentation, assess compliance against all 13 TCoP points:
+3. **Assess compliance**: Based on the user's description and any existing project documentation, assess compliance against all 13 DX Policy / DSS points:
    - Point 1: Define user needs
    - Point 2: Make things accessible and inclusive
    - Point 3: Be open and use open source
@@ -78,10 +78,10 @@ Generate a comprehensive TCoP review document by:
 
    Scan for external (non-ArcKit) documents the user may have provided:
 
-   **Departmental TCoP Interpretations & Previous Assessments**:
+   **Departmental DX Policy / DSS Interpretations & Previous Assessments**:
    - **Look in**: `projects/{project-dir}/external/`
    - **File types**: PDF (.pdf), Word (.docx), Markdown (.md)
-   - **What to extract**: Previous TCoP assessment results, departmental interpretations of TCoP points, remediation plans
+   - **What to extract**: Previous DX Policy / DSS assessment results, departmental interpretations of DX Policy / DSS points, remediation plans
    - **Examples**: `previous-tcop-assessment.pdf`, `departmental-tcop-guidance.docx`
 
    **Technology Policies**:
@@ -93,14 +93,14 @@ Generate a comprehensive TCoP review document by:
    **Enterprise-Wide Technology Standards**:
    - **Look in**: `projects/000-global/external/`
    - **File types**: PDF, Word, Markdown
-   - **What to extract**: Enterprise technology standards, digital strategy documents, cross-project TCoP compliance evidence
+   - **What to extract**: Enterprise technology standards, digital strategy documents, cross-project DX Policy / DSS compliance evidence
 
-   **User prompt**: If no external docs found but they would improve the TCoP assessment, ask:
-   "Do you have any previous TCoP assessments or departmental technology policy documents? I can read PDFs directly. Place them in `projects/{project-dir}/external/` and re-run, or skip."
+   **User prompt**: If no external docs found but they would improve the DX Policy / DSS assessment, ask:
+   "Do you have any previous DX Policy / DSS assessments or departmental technology policy documents? I can read PDFs directly. Place them in `projects/{project-dir}/external/` and re-run, or skip."
 
    **Important**: This command works without external documents. They enhance output quality but are never blocking.
 
-5. **For each TCoP point**:
+5. **For each DX Policy / DSS point**:
    - Assess status: ✅ Compliant / ⚠️ Partially Compliant / ❌ Non-Compliant / N/A Not Applicable
    - Provide evidence of how the project meets (or fails to meet) the criteria
    - Check relevant checklist items based on project information
@@ -123,7 +123,7 @@ Generate a comprehensive TCoP review document by:
      - Read the existing document to understand its scope
      - Compare against current project state and compliance evidence
      - **Minor increment** (e.g., 1.0 → 1.1): Scope unchanged — refreshed assessments, updated evidence, corrected details
-     - **Major increment** (e.g., 1.0 → 2.0): Scope materially changed — new TCoP points assessed, fundamentally different compliance posture, significant project changes
+     - **Major increment** (e.g., 1.0 → 2.0): Scope materially changed — new DX Policy / DSS points assessed, fundamentally different compliance posture, significant project changes
    - For v1.1+/v2.0+: Add a Revision History entry describing what changed from the previous version
 
 10. **Save the document**: Write to `projects/[project-folder]/ARC-{PROJECT_ID}-TCOP-v${VERSION}.md`
@@ -148,14 +148,14 @@ DOC_ID=$(.arckit/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "TCOP" "${
 - `[PROJECT_ID]` → Extract from project path (e.g., "001" from "projects/001-project-name")
 - `[VERSION]` → Determined version from step 8
 - `[DATE]` / `[YYYY-MM-DD]` → Current date in YYYY-MM-DD format
-- `[DOCUMENT_TYPE_NAME]` → "Technology Code of Practice Review"
+- `[DOCUMENT_TYPE_NAME]` → "Digital Experience Policy Review"
 - `ARC-[PROJECT_ID]-TCOP-v[VERSION]` → Use generated DOC_ID from Step 1
 - `[COMMAND]` → "arckit.tcop"
 
 **User-provided fields** (extract from project metadata or user input):
 - `[PROJECT_NAME]` → Full project name from project metadata or user input
 - `[OWNER_NAME_AND_ROLE]` → Document owner (prompt user if not in metadata)
-- `[CLASSIFICATION]` → Default to "OFFICIAL" for UK Gov, "PUBLIC" otherwise (or prompt user)
+- `[CLASSIFICATION]` → Default to "OFFICIAL" for Australian Government, "PUBLIC" otherwise (or prompt user)
 
 **Calculated fields**:
 - `[YYYY-MM-DD]` for Review Date → Current date + 30 days (requirements, research, risks)
@@ -217,7 +217,7 @@ The footer should be populated with:
 
 The document must include:
 - Executive summary with overall compliance status
-- Detailed assessment for each of the 13 TCoP points
+- Detailed assessment for each of the 13 DX Policy / DSS points
 - Evidence and checklist items for each point
 - Gaps and required actions
 - Overall compliance scorecard (X/13 compliant)
@@ -251,7 +251,7 @@ The document must include:
 
 **For AI/ML systems**: Also consider requirements from the AU AI governance assessment (may need AITS - Algorithmic Transparency Record)
 
-**For public-facing services**: Point 13 (Service Standard) is mandatory - must pass GDS service assessments
+**For public-facing services**: Point 13 (Service Standard) is mandatory - must pass DTA service assessments
 
 **For Digital Spend Control submissions**: Focus on points most relevant to spending approval:
 - Point 5 (Cloud First)
@@ -260,30 +260,30 @@ The document must include:
 
 **Data protection**: If processing personal data, Point 7 is critical - DPIA completion is mandatory before going live
 
-## UK Government Context
+## Australian Government Context
 
 Be aware of:
-- **Digital Marketplace**: G-Cloud, DOS frameworks for procurement
-- **GDS Service Standard**: 14-point standard for public services
-- **NCSC guidance**: Cyber security best practices
-- **UK GDPR**: Data protection requirements
-- **Cyber Essentials**: Baseline security certification
+- **BuyICT and AusTender channels**: BuyICT cloud panels, DOS frameworks for procurement
+- **Digital Service Standard**: 14-point standard for public services
+- **ASD ACSC guidance**: Cyber security best practices
+- **Privacy Act 1988 (APPs)**: Data protection requirements
+- **Essential Eight**: Baseline security certification
 - **Cloud First policy**: Public cloud preferred unless justified otherwise
 
 ## Example Output Structure
 
 ```markdown
-# Technology Code of Practice (TCoP) Review
+# Digital Experience Policy and Digital Service Standard (DSS) Review
 
 **Project**: Benefits Eligibility Chatbot
-**Overall TCoP Compliance**: Partially Compliant
+**Overall DX Policy / DSS Compliance**: Partially Compliant
 
-## TCoP Point 1: Define User Needs
+## DX Policy / DSS Point 1: Define User Needs
 **Status**: ✅ Compliant
 **Evidence**: User research completed with 50+ DWP claimants...
 [Checked items and gaps listed]
 
-## TCoP Point 6: Make Things Secure
+## DX Policy / DSS Point 6: Make Things Secure
 **Status**: ⚠️ Partially Compliant
 **Evidence**: Threat model exists, but penetration testing not yet completed...
 **Gaps/Actions Required**:
@@ -301,8 +301,8 @@ Be aware of:
 
 - Be thorough but practical - this is a governance document, not just a checkbox exercise
 - Highlight blockers that prevent progression to next phase
-- Reference official GOV.UK guidance URLs for each point
+- Reference official Australia.gov.au guidance URLs for each point
 - Consider the project's maturity - don't expect Live compliance in Discovery
 - Provide specific, actionable recommendations rather than generic advice
 
-Generate the TCoP review now based on the project information provided.
+Generate the DX Policy / DSS review now based on the project information provided.
