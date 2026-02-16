@@ -2,7 +2,7 @@
 
 `/arckit.datascout` discovers external data sources — APIs, datasets, open data portals, and commercial providers — that can fulfil a project's data and integration requirements.
 
-> **Agent Architecture**: This command delegates to the `arckit-datascout` autonomous agent. The agent runs as a subprocess with its own context window, searching api.gov.uk, data.gov.uk, department developer hubs, and commercial API providers without polluting your main conversation. The slash command launches the agent and relays its summary back to you.
+> **Agent Architecture**: This command delegates to the `arckit-datascout` autonomous agent. The agent runs as a subprocess with its own context window, searching api.gov.au, data.gov.au, department developer hubs, and commercial API providers without polluting your main conversation. The slash command launches the agent and relays its summary back to you.
 
 ---
 
@@ -38,7 +38,7 @@ Data source discovery is the systematic identification and evaluation of externa
 
 | Scenario | Prompt seed | Focus |
 |---------|-------------|-------|
-| Open data first | "Discover UK Government open data sources for <project>" | Prioritises data.gov.uk, ONS, NHS Digital |
+| Open data first | "Discover Australian Government open data sources for <project>" | Prioritises data.gov.au, ONS, Australian Institute of Health and Welfare (AIHW) |
 | Commercial APIs | "Find commercial data APIs for <capability>" | Compares pricing, SLAs, coverage |
 | Gap analysis | "Identify which data requirements have no external source" | Highlights gaps needing internal collection |
 | Data model enrichment | "Find sources to populate the data model for <project>" | Maps sources to existing entities |
@@ -70,7 +70,7 @@ Outputs: `projects/<id>/ARC-<id>-DSCT-v1.0.md`
 - **Gap analysis** for unmet data needs with recommended actions
 - **Data model impact** (new entities, attributes, sync strategy)
 - **Requirements traceability** (every DR-xxx mapped to a source or flagged as gap)
-- **UK Government open data opportunities** (TCoP Point 10 compliance)
+- **Australian Government open data opportunities** (DX Policy / DSS Point 10 compliance)
 
 ---
 
@@ -82,37 +82,37 @@ Outputs: `projects/<id>/ARC-<id>-DSCT-v1.0.md`
 | **Data Quality** | 20% | Accuracy, completeness, consistency, timeliness |
 | **License & Cost** | 15% | OGL vs commercial, pricing sustainability, total cost |
 | **API Quality** | 15% | RESTful, documentation, SDKs, versioning, error handling |
-| **Compliance** | 15% | GDPR, UK data residency, classification, DPA 2018 |
+| **Compliance** | 15% | GDPR, Australian data residency, classification, DPA 2018 |
 | **Reliability** | 10% | SLA, uptime, vendor stability, support |
 
 ---
 
-## UK Government Open Data Guidance
+## Australian Government Open Data Guidance
 
-For UK Government projects, datascout prioritises open data sources.
+For Australian Government projects, datascout prioritises open data sources.
 
-### UK Government API Catalogue (Always Checked)
+### Australian Government API Catalogue (Always Checked)
 
-The command always searches https://www.api.gov.uk/ first — the authoritative directory of UK public sector APIs maintained by the Data Standards Authority. It dynamically discovers available departments, API counts, and developer hubs at runtime rather than relying on a static list.
+The command always searches https://www.api.gov.au/ first — the authoritative directory of Australian public sector APIs maintained by the Data Standards Authority. It dynamically discovers available departments, API counts, and developer hubs at runtime rather than relying on a static list.
 
-It also fetches https://www.api.gov.uk/dashboard/ to identify which departments have APIs relevant to the project's requirements, then follows links to discover each department's own developer portal for richer documentation, sandbox environments, and registration details.
+It also fetches https://www.api.gov.au/dashboard/ to identify which departments have APIs relevant to the project's requirements, then follows links to discover each department's own developer portal for richer documentation, sandbox environments, and registration details.
 
-### Key UK Open Data Portals
+### Key AU Open Data Portals
 
 | Portal | URL | Coverage |
 |--------|-----|----------|
-| data.gov.uk | https://www.data.gov.uk/ | Central UK open data |
-| ONS | https://www.ons.gov.uk/ | Statistics and demographics |
-| NHS Digital | https://digital.nhs.uk/ | Health and social care |
+| data.gov.au | https://www.data.gov.au/ | Central Australian open data |
+| ABS | https://www.abs.gov.au/ | Statistics and demographics |
+| Australian Institute of Health and Welfare (AIHW) | https://digital.nhs.uk/ | Health and social care |
 | OS Data Hub | https://osdatahub.os.uk/ | Geospatial data |
-| Companies House | https://developer.company-information.service.gov.uk/ | Company data |
-| Environment Agency | https://environment.data.gov.uk/ | Environmental data |
-| Land Registry | https://use-land-property-data.service.gov.uk/ | Property data |
+| ABR/ASIC | https://abr.business.gov.au/ | Business and company data |
+| Environment Agency | https://environment.data.gov.au/ | Environmental data |
+| State/Territory Land Registries | https://www.data.gov.au/ | Property and land datasets |
 | Police API | https://data.police.uk/docs/ | Crime data |
 
-### TCoP Point 10: Make Better Use of Data
+### DX Policy / DSS Point 10: Make Better Use of Data
 
-The Technology Code of Practice requires UK Government projects to:
+The Digital Experience Policy requires Australian Government projects to:
 - Consume existing open data before building new data collection
 - Use common data standards and identifiers (UPRN, company number, etc.)
 - Consider publishing project data as open data (OGL)

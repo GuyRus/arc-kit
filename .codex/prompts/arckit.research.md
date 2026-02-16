@@ -43,7 +43,7 @@ Find the project directory in `projects/` (user may specify name/number, otherwi
 - **Stakeholders**: Priorities and success criteria for vendor evaluation
 - **Data Model**: Data storage and processing needs for technology matching
 
-Detect if Australian Government project (look for "Australian Government", "Ministry of", "Department for", "NHS", "MOD" in project name or requirements).
+Detect if Australian Government project (look for "Australian Government", "Ministry of", "Department for", "Australian public health services", "MOD" in project name or requirements).
 
 ### Step 1b: Check for External Documents (optional)
 

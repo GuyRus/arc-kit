@@ -55,14 +55,14 @@ This document presents AWS-specific technology research findings for the project
 
 **Reference Architecture**: [Link to AWS reference architecture]
 
-### UK Government Suitability
+### Australian Government Suitability
 
 | Criteria | Status | Notes |
 |----------|--------|-------|
-| **UK Region Availability** | ✅ eu-west-2 (London) | Primary UK region |
-| **G-Cloud Listing** | ✅ G-Cloud 14 | Framework: [RM1557.14] |
+| **AU Region Availability** | ✅ ap-southeast-2 (Sydney) | Primary Australian region |
+| **BuyICT cloud panels Listing** | ✅ BuyICT cloud panels 14 | Framework: [RM1557.14] |
 | **Data Classification** | ✅ OFFICIAL / OFFICIAL-SENSITIVE | AWS GovCloud for higher |
-| **NCSC Cloud Security Principles** | ✅ 14/14 principles met | [Link to attestation] |
+| **ASD ACSC Cloud Security Principles** | ✅ 14/14 principles met | [Link to attestation] |
 
 ---
 
@@ -131,16 +131,16 @@ This document presents AWS-specific technology research findings for the project
 - **Event-Driven**: EventBridge, SNS, SQS integration
 - **Other AWS Services**: [List integrations]
 
-**UK Region Availability**:
-- ✅ eu-west-2 (London) - Primary
+**AU Region Availability**:
+- ✅ ap-southeast-2 (Sydney) - Primary
 - ✅ eu-west-1 (Ireland) - DR option
-- [Any limitations in UK region]
+- [Any limitations in Australian region]
 
 **Compliance Certifications**:
 - ✅ ISO 27001, 27017, 27018
 - ✅ SOC 1, 2, 3
-- ✅ UK Cyber Essentials Plus
-- ✅ UK G-Cloud
+- ✅ Essential Eight maturity uplift
+- ✅ BuyICT cloud panels
 - ✅ GDPR compliant
 
 ---
@@ -158,7 +158,7 @@ This document presents AWS-specific technology research findings for the project
 | Cost (monthly) | £[X] | £[Y] | [Service] |
 | Performance | [Rating] | [Rating] | [Service] |
 | Ease of Use | [Rating] | [Rating] | [Service] |
-| UK Availability | ✅ | ✅ | Tie |
+| AU Availability | ✅ | ✅ | Tie |
 | Feature Match | [X]% | [Y]% | [Service] |
 
 **Recommendation**: [Service Name] - [Rationale]
@@ -187,7 +187,7 @@ This document presents AWS-specific technology research findings for the project
 
 ```mermaid
 graph TB
-    subgraph "AWS eu-west-2 (London)"
+    subgraph "AWS ap-southeast-2 (Sydney)"
         subgraph "Edge"
             CF[CloudFront]
             WAF[AWS WAF]
@@ -274,16 +274,16 @@ graph TB
 | Network | vpc-flow-logs-enabled, vpc-sg-open-only-to-authorized-ports | ✅ |
 | IAM | iam-password-policy, iam-user-mfa-enabled | ✅ |
 
-### UK Government Security Alignment
+### Australian Government Security Alignment
 
 | Framework | Alignment | Notes |
 |-----------|-----------|-------|
-| **NCSC Cloud Security Principles** | ✅ 14/14 | Full attestation available |
-| **Cyber Essentials Plus** | ✅ Certified | AWS controls map to CE+ |
-| **UK GDPR** | ✅ Compliant | UK data residency, DPA signed |
+| **ASD ACSC Cloud Security Principles** | ✅ 14/14 | Full attestation available |
+| **Essential Eight maturity uplift** | ✅ Certified | AWS controls map to CE+ |
+| **Privacy Act 1988 (APPs)** | ✅ Compliant | Australian data residency, DPA signed |
 | **OFFICIAL** | ✅ Suitable | Standard AWS services |
 | **OFFICIAL-SENSITIVE** | ✅ Suitable | Additional controls required |
-| **SECRET** | ⚠️ AWS GovCloud | US-only, not available in UK |
+| **SECRET** | ⚠️ AWS GovCloud | US-only, not available in Australian sovereign defaults |
 
 ### AWS GuardDuty & Security Hub
 
@@ -382,7 +382,7 @@ Resources:
 ```hcl
 # main.tf
 provider "aws" {
-  region = "eu-west-2"
+  region = "ap-southeast-2"
 }
 
 module "vpc" {
@@ -392,7 +392,7 @@ module "vpc" {
   name = "${var.project_name}-vpc"
   cidr = "10.0.0.0/16"
 
-  azs             = ["eu-west-2a", "eu-west-2b", "eu-west-2c"]
+  azs             = ["ap-southeast-2a", "ap-southeast-2b", "ap-southeast-2c"]
   private_subnets = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
   public_subnets  = ["10.0.101.0/24", "10.0.102.0/24", "10.0.103.0/24"]
 
@@ -488,26 +488,26 @@ artifacts:
 
 ---
 
-## UK Government Considerations
+## Australian Government Considerations
 
-### G-Cloud Procurement
+### BuyICT cloud panels Procurement
 
-**AWS on G-Cloud 14**:
+**AWS on BuyICT cloud panels 14**:
 - **Framework**: RM1557.14
 - **Supplier**: Amazon Web Services EMEA SARL
-- **Service ID**: [Service ID from Digital Marketplace]
+- **Service ID**: [Service ID from BuyICT and AusTender channels]
 
 **Procurement Steps**:
-1. Search Digital Marketplace for "Amazon Web Services"
+1. Search BuyICT and AusTender channels for "Amazon Web Services"
 2. Review service description and pricing
 3. Direct award (if requirements clear) or further competition
-4. Use call-off contract under G-Cloud terms
+4. Use call-off contract under BuyICT cloud panels terms
 
 ### AWS GovCloud (if SECRET classification required)
 
 For SECRET data classification:
 - **AWS GovCloud**: US-only isolated region
-- **Note**: Not available in UK - consider alternative approaches
+- **Note**: Not available in Australian sovereign defaults - consider alternative approaches
 - **Alternative**: Implement strong controls on standard AWS for OFFICIAL-SENSITIVE
 - **Contact**: AWS Public Sector team for guidance
 
@@ -515,13 +515,13 @@ For SECRET data classification:
 
 | Data Type | Storage Location | Replication | Notes |
 |-----------|------------------|-------------|-------|
-| Primary Data | eu-west-2 (London) | Cross-AZ | GDPR compliant |
-| Backups | eu-west-2 | Cross-AZ or S3 Cross-Region to eu-west-1 | Within EU |
-| Logs | eu-west-2 | N/A | CloudWatch Logs |
+| Primary Data | ap-southeast-2 (Sydney) | Cross-AZ | GDPR compliant |
+| Backups | ap-southeast-2 | Cross-AZ or S3 Cross-Region to eu-west-1 | Within EU |
+| Logs | ap-southeast-2 | N/A | CloudWatch Logs |
 
 ### Regional Availability Check
 
-**Services confirmed available in eu-west-2 (London)**:
+**Services confirmed available in ap-southeast-2 (Sydney)**:
 
 | Service | Availability | Notes |
 |---------|--------------|-------|
@@ -573,7 +573,7 @@ For SECRET data classification:
 ### Integration with Other ArcKit Commands
 
 - Run `/arckit.diagram` to create detailed AWS architecture diagrams
-- Run `/arckit.secure` to validate against UK Secure by Design
+- Run `/arckit.secure` to validate against Australian Secure by Design expectations
 - Run `/arckit.devops` to plan AWS CodePipeline/GitHub Actions
 - Run `/arckit.finops` to create AWS cost management strategy
 

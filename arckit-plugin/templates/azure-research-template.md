@@ -55,14 +55,14 @@ This document presents Azure-specific technology research findings for the proje
 
 **Reference Architecture**: [Link to Azure reference architecture]
 
-### UK Government Suitability
+### Australian Government Suitability
 
 | Criteria | Status | Notes |
 |----------|--------|-------|
-| **UK Region Availability** | ✅ UK South, UK West | Primary: UK South |
-| **G-Cloud Listing** | ✅ G-Cloud 14 | Framework: [RM1557.14] |
+| **AU Region Availability** | ✅ Australia East, Australia Southeast | Primary: Australia East |
+| **BuyICT cloud panels Listing** | ✅ BuyICT cloud panels 14 | Framework: [RM1557.14] |
 | **Data Classification** | ✅ OFFICIAL / OFFICIAL-SENSITIVE | Azure Government for SECRET |
-| **NCSC Cloud Security Principles** | ✅ 14/14 principles met | [Link to attestation] |
+| **ASD ACSC Cloud Security Principles** | ✅ 14/14 principles met | [Link to attestation] |
 
 ---
 
@@ -129,16 +129,16 @@ This document presents Azure-specific technology research findings for the proje
 - **Event-Driven**: Event Grid, Service Bus integration
 - **Other Azure Services**: [List integrations]
 
-**UK Region Availability**:
-- ✅ UK South (Primary)
-- ✅ UK West (DR)
-- [Any limitations in UK regions]
+**AU Region Availability**:
+- ✅ Australia East (Primary)
+- ✅ Australia Southeast (DR)
+- [Any limitations in Australian regions]
 
 **Compliance Certifications**:
 - ✅ ISO 27001, 27017, 27018
 - ✅ SOC 1, 2, 3
-- ✅ UK Cyber Essentials Plus
-- ✅ UK G-Cloud
+- ✅ Essential Eight maturity uplift
+- ✅ BuyICT cloud panels
 - ✅ GDPR compliant
 
 ---
@@ -156,7 +156,7 @@ This document presents Azure-specific technology research findings for the proje
 | Cost (monthly) | £[X] | £[Y] | [Service] |
 | Performance | [Rating] | [Rating] | [Service] |
 | Ease of Use | [Rating] | [Rating] | [Service] |
-| UK Availability | ✅ | ✅ | Tie |
+| AU Availability | ✅ | ✅ | Tie |
 | Feature Match | [X]% | [Y]% | [Service] |
 
 **Recommendation**: [Service Name] - [Rationale]
@@ -185,7 +185,7 @@ This document presents Azure-specific technology research findings for the proje
 
 ```mermaid
 graph TB
-    subgraph "Azure UK South"
+    subgraph "Azure Australia East"
         subgraph "Frontend"
             CDN[Azure CDN]
             AppGW[Application Gateway]
@@ -265,13 +265,13 @@ graph TB
 | **DevOps Security (DS)** | DS-1, DS-2, DS-3 | DevOps, GitHub Advanced Security |
 | **Governance & Strategy (GS)** | GS-1, GS-2, GS-3 | Policy, Blueprints, Management Groups |
 
-### UK Government Security Alignment
+### Australian Government Security Alignment
 
 | Framework | Alignment | Notes |
 |-----------|-----------|-------|
-| **NCSC Cloud Security Principles** | ✅ 14/14 | Full attestation available |
-| **Cyber Essentials Plus** | ✅ Certified | Azure controls map to CE+ |
-| **UK GDPR** | ✅ Compliant | UK data residency, DPA signed |
+| **ASD ACSC Cloud Security Principles** | ✅ 14/14 | Full attestation available |
+| **Essential Eight maturity uplift** | ✅ Certified | Azure controls map to CE+ |
+| **Privacy Act 1988 (APPs)** | ✅ Compliant | Australian data residency, DPA signed |
 | **OFFICIAL** | ✅ Suitable | Standard Azure services |
 | **OFFICIAL-SENSITIVE** | ✅ Suitable | Additional controls required |
 | **SECRET** | ⚠️ Azure Government | Separate tenant required |
@@ -339,7 +339,7 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "main" {
   name     = "rg-${var.project_name}-${var.environment}"
-  location = "UK South"
+  location = "Australia East"
 }
 
 module "networking" {
@@ -454,36 +454,36 @@ stages:
 
 ---
 
-## UK Government Considerations
+## Australian Government Considerations
 
-### G-Cloud Procurement
+### BuyICT cloud panels Procurement
 
-**Azure on G-Cloud 14**:
+**Azure on BuyICT cloud panels 14**:
 - **Framework**: RM1557.14
 - **Supplier**: Microsoft Limited
-- **Service ID**: [Service ID from Digital Marketplace]
+- **Service ID**: [Service ID from BuyICT and AusTender channels]
 
 **Procurement Steps**:
-1. Search Digital Marketplace for "Microsoft Azure"
+1. Search BuyICT and AusTender channels for "Microsoft Azure"
 2. Review service description and pricing
 3. Direct award (if requirements clear) or further competition
-4. Use call-off contract under G-Cloud terms
+4. Use call-off contract under BuyICT cloud panels terms
 
 ### Azure Government (if SECRET classification required)
 
 For SECRET data classification:
-- **Azure Government UK**: Separate sovereign cloud
+- **agency-specific sovereign controls**: Separate sovereign cloud
 - **Accreditation**: IL3+ certified
 - **Access**: Requires MOD/government sponsorship
-- **Contact**: [Azure Government UK team]
+- **Contact**: [agency-specific sovereign controls team]
 
 ### Data Residency
 
 | Data Type | Storage Location | Replication | Notes |
 |-----------|------------------|-------------|-------|
-| Primary Data | UK South | UK West (GRS) | GDPR compliant |
-| Backups | UK South/West | Within UK | No cross-border |
-| Logs | UK South | N/A | Log Analytics workspace |
+| Primary Data | Australia East | Australia Southeast (GRS) | GDPR compliant |
+| Backups | Australia East/West | Within Australia | No cross-border |
+| Logs | Australia East | N/A | Log Analytics workspace |
 
 ---
 
@@ -527,7 +527,7 @@ For SECRET data classification:
 ### Integration with Other ArcKit Commands
 
 - Run `/arckit.diagram` to create detailed Azure architecture diagrams
-- Run `/arckit.secure` to validate against UK Secure by Design
+- Run `/arckit.secure` to validate against Australian Secure by Design expectations
 - Run `/arckit.devops` to plan Azure DevOps/GitHub Actions pipelines
 - Run `/arckit.finops` to create Azure cost management strategy
 

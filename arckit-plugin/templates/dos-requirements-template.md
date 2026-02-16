@@ -1,4 +1,4 @@
-# UK Digital Marketplace: Digital Outcomes and Specialists
+# Australian Government procurement channels: Digital Outcomes and Specialists
 
 > **Template Status**: Beta | **Version**: [VERSION] | **Command**: `/arckit.dos`
 
@@ -264,7 +264,7 @@ Reference: `/arckit.traceability` for traceability matrix generation and validat
 
 ## 11. Evaluation Criteria
 
-Suppliers will be evaluated according to Digital Marketplace guidelines:
+Suppliers will be evaluated according to BuyICT and AusTender channels guidelines:
 
 ### 11.1 Technical Capability (40%)
 
@@ -384,12 +384,12 @@ Vendors must provide:
 
 1. **Review & Refine**: Validate this document with stakeholders
 2. **Budget Approval**: Obtain budget sign-off before publishing
-3. **Publish on Digital Marketplace**:
-   - Go to: https://www.digitalmarketplace.service.gov.uk/
+3. **Publish on BuyICT and AusTender channels**:
+   - Go to: https://www.austender.gov.au/
    - Select "Digital Outcomes and Specialists"
    - Post requirements (publicly visible)
    - Set closing date for proposals
-4. **Answer Supplier Questions**: Via Digital Marketplace platform (visible to all)
+4. **Answer Supplier Questions**: Via BuyICT and AusTender channels platform (visible to all)
 5. **Evaluate Proposals**: Using criteria in Section 11
 6. **Conduct Assessments**: Interview/technical assessment for shortlisted suppliers
 7. **Award Contract**: To highest-scoring supplier
@@ -413,12 +413,12 @@ Vendors must provide:
 
 ## 15. Resources and References
 
-### 15.1 Digital Marketplace Guidance
+### 15.1 BuyICT and AusTender channels Guidance
 
-- **Digital Marketplace**: https://www.digitalmarketplace.service.gov.uk/
-- **DOS Buyers Guide**: https://www.gov.uk/guidance/digital-outcomes-and-specialists-buyers-guide
-- **General Buying Guide**: https://www.gov.uk/guidance/buying-and-selling-on-the-digital-marketplace
-- **Contracts Finder**: https://www.gov.uk/contracts-finder
+- **BuyICT and AusTender channels**: https://www.austender.gov.au/
+- **DOS Buyers Guide**: https://www.finance.gov.au/government/procurement
+- **General Buying Guide**: https://www.finance.gov.au/government/procurement
+- **Contracts Finder**: https://www.tenders.gov.au/
 
 ### 15.2 Project Documents
 
@@ -444,13 +444,13 @@ Vendors must provide:
 - Supplier questions and answers must be visible to all bidders
 - Changes to requirements must be published to all suppliers
 
-**GDS Approval**:
-- New or redesigned services may require formal GDS approval
+**DTA Approval**:
+- New or redesigned services may require formal DTA approval
 - Check if spend control process applies to your organisation
 - Consult with digital/technology leadership before publishing
 
 **Transparency**:
-- Requirements are published publicly on Digital Marketplace
+- Requirements are published publicly on BuyICT and AusTender channels
 - Evaluation criteria must be published before receiving proposals
 - Award details must be published on Contracts Finder after completion
 

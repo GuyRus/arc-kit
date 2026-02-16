@@ -53,7 +53,7 @@ After installation, restart Claude Code to load the MCP server.
 |---------|-------------|-------|
 | Service selection | "Research Google Cloud services for <capability>" | Maps requirements to Google Cloud services |
 | Architecture pattern | "Research Google Cloud architecture pattern for <pattern>" | Reference architectures from Architecture Center |
-| UK Government | "Research Google Cloud for UK Government <project>" | G-Cloud, europe-west2, NCSC compliance |
+| Australian Government | "Research Google Cloud for Australian Government <project>" | BuyICT cloud panels, australia-southeast1, ASD ACSC compliance |
 | AI/ML workloads | "Research Google Cloud AI services for <use case>" | Vertex AI, Gemini API |
 | Migration | "Research Google Cloud migration options for <workload>" | Migrate to GCP, modernization paths |
 | Security assessment | "Research Security Command Center for <domain>" | SCC mapping, Architecture Framework security |
@@ -93,30 +93,30 @@ The command uses three Google Developer Knowledge MCP tools:
 - **Architecture Pattern**: Reference architecture from Google Cloud Architecture Center
 - **Architecture Framework Assessment**: All 6 pillars evaluated per service
 - **Security Command Center**: Finding categories and CIS Benchmark for GCP
-- **UK Government Compliance**: G-Cloud, europe-west2 region, NCSC principles
+- **Australian Government Compliance**: BuyICT cloud panels, australia-southeast1 region, ASD ACSC principles
 - **Cost Estimates**: Monthly and 3-year TCO with optimization recommendations
 - **Implementation Guidance**: Terraform templates, Cloud Build pipelines
 
 ---
 
-## UK Government Features
+## Australian Government Features
 
-When UK Government project detected:
+When Australian Government project detected:
 
 | Area | Coverage |
 |------|----------|
-| **G-Cloud** | Framework reference, service IDs, procurement steps |
-| **Data Residency** | europe-west2 (London) availability, cross-region replication |
+| **BuyICT cloud panels** | Framework reference, service IDs, procurement steps |
+| **Data Residency** | australia-southeast1 (Sydney) availability, cross-region replication |
 | **Classification** | OFFICIAL, OFFICIAL-SENSITIVE suitability |
-| **NCSC** | 14 Cloud Security Principles alignment |
-| **Note** | No Google Cloud Government UK (US-only) — not suitable for SECRET |
+| **ASD ACSC** | 14 Cloud Security Principles alignment |
+| **Note** | No default Australian sovereign Google Cloud enclave is assumed; validate agency-specific protected hosting requirements |
 
 ---
 
 ## Follow-on Actions
 
 - Feed Google Cloud findings into `/arckit.diagram` for GCP architecture diagrams
-- Run `/arckit.secure` to validate against UK Secure by Design
+- Run `/arckit.secure` to validate against Australian Secure by Design expectations
 - Run `/arckit.devops` to plan Cloud Build CI/CD pipelines
 - Run `/arckit.finops` to create Google Cloud FinOps cost management strategy
 - Run `/arckit.adr` to document Google Cloud service selection decisions
@@ -130,7 +130,7 @@ When UK Government project detected:
 | Scope | Multi-cloud, SaaS, open-source | Google Cloud-specific only |
 | Source | Web search, multiple sources | Google Developer Knowledge MCP (authoritative) |
 | Depth | Build vs buy analysis | Deep Google Cloud service analysis |
-| Compliance | General UK Gov | Google Cloud-specific UK compliance |
+| Compliance | General Australian Government | Google Cloud-specific Australian compliance |
 | Code samples | Limited | Terraform, Cloud Build |
 | Cost estimates | High-level | Detailed Google Cloud pricing |
 
@@ -146,4 +146,4 @@ When UK Government project detected:
 - [Google Cloud Architecture Center](https://cloud.google.com/architecture) - Reference architectures
 - [Google Cloud Architecture Framework](https://cloud.google.com/architecture/framework) - Design guidance
 - [Google Cloud Security Best Practices](https://cloud.google.com/security/best-practices) - Security controls
-- [Google Cloud UK Compliance](https://cloud.google.com/security/compliance/offerings#/regions=Europe) - UK Government compliance
+- [Google Cloud compliance offerings](https://cloud.google.com/security/compliance) - assess against Australian requirements

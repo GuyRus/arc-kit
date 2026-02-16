@@ -1,6 +1,6 @@
 # Digital Outcomes and Specialists Playbook
 
-`/arckit.dos` generates Digital Outcomes and Specialists (DOS) procurement documentation for the UK Digital Marketplace.
+`/arckit.dos` generates Digital Outcomes and Specialists (DOS) procurement documentation for the Australian Government procurement channels.
 
 ---
 
@@ -29,7 +29,7 @@ Output: `projects/<id>/ARC-<id>-DOS-v1.0.md`
 
 | Section | Contents |
 |---------|----------|
-| Opportunity Summary | Brief description for Digital Marketplace |
+| Opportunity Summary | Brief description for BuyICT and AusTender channels |
 | Background | Organisation context and current situation |
 | Problem Statement | What problem needs solving |
 | Outcomes Required | Specific, measurable outcomes expected |
@@ -69,7 +69,7 @@ Output: `projects/<id>/ARC-<id>-DOS-v1.0.md`
 |-------|----------------|-----------------|
 | Discovery | Define requirements and outcomes | `/arckit.requirements`, `/arckit.stakeholders` |
 | Preparation | Create DOS documentation | `/arckit.dos` |
-| Publication | Publish on Digital Marketplace | Manual |
+| Publication | Publish on BuyICT and AusTender channels | Manual |
 | Evaluation | Score supplier proposals | `/arckit.evaluate` |
 | Award | Contract negotiation | Manual |
 
@@ -87,12 +87,12 @@ Output: `projects/<id>/ARC-<id>-DOS-v1.0.md`
 
 ---
 
-## Digital Marketplace Requirements
+## BuyICT and AusTender channels Requirements
 
 | Requirement | Description |
 |-------------|-------------|
 | Word Limits | Opportunity summary max 100 words |
-| Evaluation | Must use Digital Marketplace scoring |
+| Evaluation | Must use BuyICT and AusTender channels scoring |
 | Questions | Max 5 assessment questions |
 | Publication | Minimum 2 weeks open |
 

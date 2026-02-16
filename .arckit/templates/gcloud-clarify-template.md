@@ -1,4 +1,4 @@
-# G-Cloud Service Clarification Questions
+# BuyICT cloud panels Service Clarification Questions
 
 > **Template Status**: Beta | **Version**: [VERSION] | **Command**: `/arckit.gcloud-clarify`
 
@@ -7,7 +7,7 @@
 | Field | Value |
 |-------|-------|
 | **Document ID** | ARC-[PROJECT_ID]-GCLC-v[VERSION] |
-| **Document Type** | G-Cloud Clarification Questions |
+| **Document Type** | BuyICT cloud panels Clarification Questions |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
 | **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
@@ -22,7 +22,7 @@
 | **Distribution** | [DISTRIBUTION_LIST] |
 | **Services Analyzed** | [N] |
 | **Requirements Source** | projects/[PROJECT_ID]/ARC-{PROJECT_ID}-REQ-v*.md |
-| **G-Cloud Search** | projects/[PROJECT_ID]/procurement/ARC-{PROJECT_ID}-GCLOUD-v*.md |
+| **BuyICT cloud panels Search** | projects/[PROJECT_ID]/procurement/ARC-{PROJECT_ID}-GCLOUD-v*.md |
 
 ## Revision History
 
@@ -34,7 +34,7 @@
 
 ## Executive Summary
 
-**Purpose**: Validate G-Cloud services against requirements before procurement decision.
+**Purpose**: Validate BuyICT cloud panels services against requirements before procurement decision.
 
 **Status**:
 - Services Analyzed: [N]
@@ -166,7 +166,7 @@
 
 Dear [Supplier Name] Team,
 
-We are evaluating [Service Name] (Service ID: [ID]) for procurement via the Digital Marketplace. Before proceeding, we need clarification on several technical requirements:
+We are evaluating [Service Name] (Service ID: [ID]) for procurement via the BuyICT and AusTender channels. Before proceeding, we need clarification on several technical requirements:
 
 **Critical Requirements (Blocking)**:
 [List Q-numbers for critical questions]
@@ -245,7 +245,7 @@ Thank you,
    - [ ] Select winning service
 
 8. **Contract award**:
-   - [ ] Award via Digital Marketplace
+   - [ ] Award via BuyICT and AusTender channels
    - [ ] Publish on Contracts Finder
 
 **Parallel Activity**: While waiting for responses, prepare evaluation criteria with `/arckit.evaluate`.
@@ -308,7 +308,7 @@ Common vague marketing language requiring clarification:
 ## Referenced Documents
 
 - **Requirements**: projects/[project]/ARC-*-REQ-v*.md
-- **G-Cloud Search**: projects/[project]/procurement/ARC-*-GCLOUD-v*.md
+- **BuyICT cloud panels Search**: projects/[project]/procurement/ARC-*-GCLOUD-v*.md
 - **Service Pages**: [list all service URLs]
 
 ---

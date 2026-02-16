@@ -1,6 +1,6 @@
-# G-Cloud Search Playbook
+# BuyICT cloud panels Search Playbook
 
-`/arckit.gcloud-search` finds G-Cloud services on the UK Digital Marketplace with live search and comparison capabilities.
+`/arckit.gcloud-search` finds BuyICT cloud panels services on the Australian Government procurement channels with live search and comparison capabilities.
 
 ---
 
@@ -17,7 +17,7 @@
 ## Command
 
 ```bash
-/arckit.gcloud-search Find G-Cloud services for <requirement>
+/arckit.gcloud-search Find BuyICT cloud panels services for <requirement>
 ```
 
 Output: `projects/<id>/ARC-<id>-GCLD-v1.0.md`
@@ -37,7 +37,7 @@ Output: `projects/<id>/ARC-<id>-GCLD-v1.0.md`
 
 ---
 
-## G-Cloud Categories (Lots)
+## BuyICT cloud panels Categories (Lots)
 
 | Lot | Description | Examples |
 |-----|-------------|----------|
@@ -54,8 +54,8 @@ Output: `projects/<id>/ARC-<id>-GCLD-v1.0.md`
 | Service Category | Narrow by service type |
 | Supplier Size | SME vs large enterprise |
 | Security Clearance | SC, DV cleared suppliers |
-| Data Location | UK, EU, global |
-| Certifications | ISO 27001, Cyber Essentials+ |
+| Data Location | Australia, approved jurisdictions, global |
+| Certifications | ISO 27001, Essential Eight+ |
 
 ---
 
@@ -83,7 +83,7 @@ Output: `projects/<id>/ARC-<id>-GCLD-v1.0.md`
 
 ---
 
-## Digital Marketplace Tips
+## BuyICT and AusTender channels Tips
 
 | Tip | Description |
 |-----|-------------|

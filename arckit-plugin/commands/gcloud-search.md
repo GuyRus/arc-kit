@@ -1,8 +1,8 @@
 ---
-description: Find G-Cloud services on UK Digital Marketplace with live search and comparison
+description: Find BuyICT cloud panels services on Australian Government procurement channels with live search and comparison
 ---
 
-You are helping an enterprise architect find and compare G-Cloud services on the UK Digital Marketplace.
+You are helping an enterprise architect find and compare BuyICT cloud panels services on the Australian Government procurement channels.
 
 ## User Input
 
@@ -12,7 +12,7 @@ $ARGUMENTS
 
 ## Context
 
-**G-Cloud** is the UK Digital Marketplace framework for procuring off-the-shelf cloud services:
+**BuyICT cloud panels** is the Australian Government procurement channels framework for procuring off-the-shelf cloud services:
 - Cloud hosting, IaaS, PaaS
 - SaaS platforms and tools
 - Cloud support services
@@ -20,8 +20,8 @@ $ARGUMENTS
 
 This command:
 1. Analyzes your project requirements to identify cloud service needs
-2. Generates G-Cloud procurement requirements
-3. **Searches the Digital Marketplace for matching services** (live search)
+2. Generates BuyICT cloud panels procurement requirements
+3. **Searches the BuyICT and AusTender channels for matching services** (live search)
 4. Compares services and provides recommendations
 
 ## Instructions
@@ -89,14 +89,14 @@ DOC_ID=$(${CLAUDE_PLUGIN_ROOT}/scripts/bash/generate-document-id.sh "${PROJECT_I
 - `[PROJECT_ID]` → Extract from project path (e.g., "001" from "projects/001-project-name")
 - `[VERSION]` → "1.0" (or increment if previous version exists)
 - `[DATE]` / `[YYYY-MM-DD]` → Current date in YYYY-MM-DD format
-- `[DOCUMENT_TYPE_NAME]` → "G-Cloud Service Requirements"
+- `[DOCUMENT_TYPE_NAME]` → "BuyICT cloud panels Service Requirements"
 - `ARC-[PROJECT_ID]-GCLD-v[VERSION]` → Use generated DOC_ID
 - `[COMMAND]` → "arckit.gcloud-search"
 
 *User-provided fields* (extract from project metadata or user input):
 - `[PROJECT_NAME]` → Full project name from project metadata or user input
 - `[OWNER_NAME_AND_ROLE]` → Document owner (prompt user if not in metadata)
-- `[CLASSIFICATION]` → Default to "OFFICIAL" for UK Gov, "PUBLIC" otherwise (or prompt user)
+- `[CLASSIFICATION]` → Default to "OFFICIAL" for Australian Government, "PUBLIC" otherwise (or prompt user)
 
 *Calculated fields*:
 - `[YYYY-MM-DD]` for Review Date → Current date + 30 days
@@ -126,16 +126,16 @@ The footer should be populated with:
 
 ---
 
-### 4. Generate G-Cloud Requirements Document
+### 4. Generate BuyICT cloud panels Requirements Document
 
 Create directory: `projects/[project]/procurement/`
 
 Generate `projects/[project]/procurement/ARC-{PROJECT_ID}-GCLD-v1.0.md`:
 
 ```markdown
-# UK Digital Marketplace: G-Cloud Service Procurement
+# Australian Government procurement channels: BuyICT cloud panels Service Procurement
 
-**Framework**: G-Cloud
+**Framework**: BuyICT cloud panels
 **Service Category**: [Cloud Hosting / Cloud Software / Cloud Support]
 **Generated**: [DATE]
 **Project**: [PROJECT_NAME]
@@ -186,8 +186,8 @@ The service **MUST** provide:
 
 ### 2.4 Compliance Requirements
 - **[Compliance Standard]**: [From NFR-C-xxx]
-- **[Certification Needed]**: [e.g., ISO 27001, Cyber Essentials Plus]
-- **[Data Residency]**: [e.g., UK data centers only, GDPR compliance]
+- **[Certification Needed]**: [e.g., ISO 27001, Essential Eight maturity uplift]
+- **[Data Residency]**: [e.g., Australian data centres only, Privacy Act 1988 (APPs) compliance]
 
 ### 2.5 Integration Requirements
 - **[Integration Point]**: [From INT-xxx]
@@ -231,8 +231,8 @@ The service **SHOULD** provide:
 
 ### 5.3 Security & Compliance (15%)
 
-- **Security Certifications** (5%): ISO 27001, Cyber Essentials Plus, etc.
-- **Data Protection** (5%): GDPR compliance, data residency
+- **Security Certifications** (5%): ISO 27001, Essential Eight maturity uplift, etc.
+- **Data Protection** (5%): Privacy Act 1988 (APPs) compliance, data residency
 - **Compliance Standards** (5%): Industry-specific certifications
 
 ### 5.4 Cost & Support (10%)
@@ -243,7 +243,7 @@ The service **SHOULD** provide:
 
 ```
 
-### 5. Search Digital Marketplace (WebSearch)
+### 5. Search BuyICT and AusTender channels (WebSearch)
 
 **IMPORTANT**: Now perform **live marketplace search** to find actual services.
 
@@ -253,13 +253,13 @@ For each service category identified:
 
 Create search query:
 ```
-site:digitalmarketplace.service.gov.uk g-cloud [service category] [key requirements]
+site:austender.gov.au cloud services [service category] [key requirements]
 ```
 
 **Examples**:
-- `site:digitalmarketplace.service.gov.uk g-cloud cloud hosting kubernetes`
-- `site:digitalmarketplace.service.gov.uk g-cloud monitoring prometheus grafana`
-- `site:digitalmarketplace.service.gov.uk g-cloud email delivery service`
+- `site:austender.gov.au cloud services cloud hosting kubernetes`
+- `site:austender.gov.au cloud services monitoring prometheus grafana`
+- `site:austender.gov.au cloud services email delivery service`
 
 **Include in query**:
 - Service category name
@@ -268,7 +268,7 @@ site:digitalmarketplace.service.gov.uk g-cloud [service category] [key requireme
 
 #### 5.2 Execute WebSearch
 
-Use WebSearch tool to search Digital Marketplace.
+Use WebSearch tool to search BuyICT and AusTender channels.
 
 **For each major service type needed** (up to 3 service types):
 1. Execute WebSearch with built query
@@ -297,7 +297,7 @@ For each service found:
 
 ---
 
-## 6. Digital Marketplace Search Results
+## 6. BuyICT and AusTender channels Search Results
 
 **Search Performed**: [DATE and TIME]
 **Search Queries Used**:
@@ -380,7 +380,7 @@ For each service found:
 - ✅ Provides [X/Y] desirable features
 - ✅ [Compliance advantage - e.g., strongest security certification coverage]
 - ✅ [Cost advantage - e.g., best value for required features]
-- ✅ [Other advantage - e.g., UK data residency, 24/7 support]
+- ✅ [Other advantage - e.g., Australian data residency, 24/7 support]
 
 **Next Steps for This Service**:
 1. Visit service page: [Link]
@@ -433,7 +433,7 @@ For each service found:
 **If WebSearch finds 0 matches**:
 - Explain no results found for this query
 - Suggest alternative search terms (broader)
-- Provide manual search guidance: go to https://www.digitalmarketplace.service.gov.uk/
+- Provide manual search guidance: go to https://www.austender.gov.au/
 - List specific search terms to try manually
 - Note: Service may exist but not indexed well - encourage direct marketplace search
 
@@ -450,7 +450,7 @@ Add to end of `ARC-{PROJECT_ID}-GCLD-v1.0.md`:
 ### 9.1 For Procurement Team
 
 1. **Review Shortlisted Services**:
-   - Visit each service page on Digital Marketplace
+   - Visit each service page on BuyICT and AusTender channels
    - Verify MUST requirements are met (contact suppliers for clarification)
 
 2. **Request Additional Information**:
@@ -469,7 +469,7 @@ Add to end of `ARC-{PROJECT_ID}-GCLD-v1.0.md`:
    - Proof of concept if needed for complex integrations
 
 5. **Award Contract**:
-   - Select service via Digital Marketplace
+   - Select service via BuyICT and AusTender channels
    - Create call-off contract
    - Publish award on Contracts Finder
 
@@ -482,7 +482,7 @@ Before committing to a service:
 - ✅ **Contract Terms**: Exit strategy, data export, termination terms reviewed
 - ✅ **Integration Testing**: API/integration capabilities validated
 - ✅ **Security Review**: Certifications verified, security practices reviewed
-- ✅ **Data Protection**: GDPR compliance confirmed, data residency verified
+- ✅ **Data Protection**: Privacy Act 1988 (APPs) compliance confirmed, data residency verified
 - ✅ **Support Terms**: SLA understood, support hours acceptable
 - ✅ **References**: Spoke with at least 2 existing clients
 
@@ -490,10 +490,10 @@ Before committing to a service:
 
 ## 10. Resources
 
-- **Digital Marketplace**: https://www.digitalmarketplace.service.gov.uk/
-- **G-Cloud Buyers Guide**: https://www.gov.uk/guidance/g-cloud-buyers-guide
-- **Buying Guide**: https://www.gov.uk/guidance/buying-and-selling-on-the-digital-marketplace
-- **Contracts Finder**: https://www.gov.uk/contracts-finder
+- **BuyICT and AusTender channels**: https://www.austender.gov.au/
+- **BuyICT cloud panels Buyers Guide**: https://www.finance.gov.au/government/procurement
+- **Buying Guide**: https://www.finance.gov.au/government/procurement
+- **Contracts Finder**: https://www.tenders.gov.au/
 
 ---
 
@@ -507,15 +507,15 @@ Before committing to a service:
 4. [Service 4 Name] - [Supplier]: [URL]
 5. [Service 5 Name] - [Supplier]: [URL]
 
-**Browse More**: https://www.digitalmarketplace.service.gov.uk/g-cloud/search
+**Browse More**: https://www.austender.gov.au/g-cloud/search
 
 ---
 
 ## 12. Important Notes
 
-**Framework Agreements**: G-Cloud services are pre-approved - no separate tender needed
+**Framework Agreements**: BuyICT cloud panels services are pre-approved - no separate tender needed
 
-**Call-Off Contracts**: Each service purchase creates a call-off contract under the G-Cloud framework
+**Call-Off Contracts**: Each service purchase creates a call-off contract under the BuyICT cloud panels framework
 
 **Integration Testing**: Ensure service can integrate per INT-xxx requirements before commitment
 
@@ -545,9 +545,9 @@ Before finalizing, validate output:
 Output to user:
 
 ```
-✅ Generated G-Cloud service search for [PROJECT_NAME]
+✅ Generated BuyICT cloud panels service search for [PROJECT_NAME]
 
-Framework: G-Cloud
+Framework: BuyICT cloud panels
 Document: projects/[project]/procurement/ARC-{PROJECT_ID}-GCLD-v1.0.md
 
 Requirements Summary:
@@ -576,7 +576,7 @@ Next Steps:
 3. Contact supplier for detailed information
 4. Validate integration requirements (INT-xxx)
 5. Complete due diligence checklist (Section 9.2)
-6. Award contract via Digital Marketplace
+6. Award contract via BuyICT and AusTender channels
 
 Important: All shortlisted services should be validated against MUST requirements before selection.
 ```
@@ -594,30 +594,30 @@ Important: All shortlisted services should be validated against MUST requirement
 ## Search Query Examples
 
 **For Cloud Hosting**:
-- `site:digitalmarketplace.service.gov.uk g-cloud cloud hosting kubernetes docker`
-- `site:digitalmarketplace.service.gov.uk g-cloud iaas virtual machines linux`
-- `site:digitalmarketplace.service.gov.uk g-cloud paas cloud platform managed`
+- `site:austender.gov.au cloud services cloud hosting kubernetes docker`
+- `site:austender.gov.au cloud services iaas virtual machines linux`
+- `site:austender.gov.au cloud services paas cloud platform managed`
 
 **For SaaS Platforms**:
-- `site:digitalmarketplace.service.gov.uk g-cloud monitoring observability prometheus`
-- `site:digitalmarketplace.service.gov.uk g-cloud email delivery service smtp`
-- `site:digitalmarketplace.service.gov.uk g-cloud ci cd pipeline automation`
-- `site:digitalmarketplace.service.gov.uk g-cloud analytics data warehouse`
+- `site:austender.gov.au cloud services monitoring observability prometheus`
+- `site:austender.gov.au cloud services email delivery service smtp`
+- `site:austender.gov.au cloud services ci cd pipeline automation`
+- `site:austender.gov.au cloud services analytics data warehouse`
 
 **For Specialized Services**:
-- `site:digitalmarketplace.service.gov.uk g-cloud cdn content delivery network`
-- `site:digitalmarketplace.service.gov.uk g-cloud backup disaster recovery`
-- `site:digitalmarketplace.service.gov.uk g-cloud security scanning vulnerability`
+- `site:austender.gov.au cloud services cdn content delivery network`
+- `site:austender.gov.au cloud services backup disaster recovery`
+- `site:austender.gov.au cloud services security scanning vulnerability`
 
 ## Error Handling
 
 - **No requirements**: ERROR "Run /arckit:requirements first - need to define service needs"
 - **Custom development detected**: ERROR "This is for custom development - use /arckit:dos instead"
-- **No service needs found**: WARN "No cloud service requirements found - are you sure this is G-Cloud procurement?"
+- **No service needs found**: WARN "No cloud service requirements found - are you sure this is BuyICT cloud panels procurement?"
 - **No search results**: Suggest broader search terms, provide manual search guidance
 - **Few search results (1-2)**: Show what was found, suggest alternative searches
 
-## G-Cloud vs DOS Guidance
+## BuyICT cloud panels vs DOS Guidance
 
 If requirements suggest custom development rather than cloud services:
 ```
@@ -625,7 +625,7 @@ If requirements suggest custom development rather than cloud services:
 
 Your requirements suggest custom development (FR-xxx functional requirements for building features).
 
-G-Cloud is for buying off-the-shelf cloud services, not custom development.
+BuyICT cloud panels is for buying off-the-shelf cloud services, not custom development.
 
 ✅ Use /arckit:dos instead - Digital Outcomes and Specialists
 

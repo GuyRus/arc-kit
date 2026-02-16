@@ -55,14 +55,14 @@ This document presents Google Cloud-specific technology research findings for th
 
 **Reference Architecture**: [Link to Google Cloud reference architecture]
 
-### UK Government Suitability
+### Australian Government Suitability
 
 | Criteria | Status | Notes |
 |----------|--------|-------|
-| **UK Region Availability** | ✅ europe-west2 (London) | Primary UK region |
-| **G-Cloud Listing** | ✅ G-Cloud 14 | Framework: [RM1557.14] |
-| **Data Classification** | ✅ OFFICIAL / OFFICIAL-SENSITIVE | No UK sovereign cloud for higher |
-| **NCSC Cloud Security Principles** | ✅ 14/14 principles met | [Link to attestation] |
+| **AU Region Availability** | ✅ australia-southeast1 (Sydney) | Primary Australian region |
+| **BuyICT cloud panels Listing** | ✅ BuyICT cloud panels 14 | Framework: [RM1557.14] |
+| **Data Classification** | ✅ OFFICIAL / OFFICIAL-SENSITIVE | No Australian sovereign cloud option for higher |
+| **ASD ACSC Cloud Security Principles** | ✅ 14/14 principles met | [Link to attestation] |
 
 ---
 
@@ -131,16 +131,16 @@ This document presents Google Cloud-specific technology research findings for th
 - **Event-Driven**: Eventarc, Pub/Sub integration
 - **Other Google Cloud Services**: [List integrations]
 
-**UK Region Availability**:
-- ✅ europe-west2 (London) - Primary
+**AU Region Availability**:
+- ✅ australia-southeast1 (Sydney) - Primary
 - ✅ europe-west1 (Belgium) - DR option
-- [Any limitations in UK region]
+- [Any limitations in Australian region]
 
 **Compliance Certifications**:
 - ✅ ISO 27001, 27017, 27018
 - ✅ SOC 1, 2, 3
-- ✅ UK Cyber Essentials Plus
-- ✅ UK G-Cloud
+- ✅ Essential Eight maturity uplift
+- ✅ BuyICT cloud panels
 - ✅ GDPR compliant
 
 ---
@@ -158,7 +158,7 @@ This document presents Google Cloud-specific technology research findings for th
 | Cost (monthly) | £[X] | £[Y] | [Service] |
 | Performance | [Rating] | [Rating] | [Service] |
 | Ease of Use | [Rating] | [Rating] | [Service] |
-| UK Availability | ✅ | ✅ | Tie |
+| AU Availability | ✅ | ✅ | Tie |
 | Feature Match | [X]% | [Y]% | [Service] |
 
 **Recommendation**: [Service Name] - [Rationale]
@@ -187,7 +187,7 @@ This document presents Google Cloud-specific technology research findings for th
 
 ```mermaid
 graph TB
-    subgraph "Google Cloud europe-west2 (London)"
+    subgraph "Google Cloud australia-southeast1 (Sydney)"
         subgraph "Edge"
             CDN[Cloud CDN]
             LB[Cloud Load Balancing]
@@ -274,18 +274,18 @@ graph TB
 | Storage | storage.uniformBucketLevelAccess, storage.publicAccessPrevention | ✅ |
 | IAM | iam.disableServiceAccountKeyCreation, iam.allowedPolicyMemberDomains | ✅ |
 | Network | compute.restrictVpcPeering, compute.restrictLoadBalancerCreationForTypes | ✅ |
-| Resource | gcp.resourceLocations (europe-west2 only) | ✅ |
+| Resource | gcp.resourceLocations (australia-southeast1 only) | ✅ |
 
-### UK Government Security Alignment
+### Australian Government Security Alignment
 
 | Framework | Alignment | Notes |
 |-----------|-----------|-------|
-| **NCSC Cloud Security Principles** | ✅ 14/14 | Full attestation available |
-| **Cyber Essentials Plus** | ✅ Certified | Google Cloud controls map to CE+ |
-| **UK GDPR** | ✅ Compliant | UK data residency, DPA signed |
+| **ASD ACSC Cloud Security Principles** | ✅ 14/14 | Full attestation available |
+| **Essential Eight maturity uplift** | ✅ Certified | Google Cloud controls map to CE+ |
+| **Privacy Act 1988 (APPs)** | ✅ Compliant | Australian data residency, DPA signed |
 | **OFFICIAL** | ✅ Suitable | Standard Google Cloud services |
 | **OFFICIAL-SENSITIVE** | ✅ Suitable | VPC Service Controls + additional controls |
-| **SECRET** | ❌ Not available | No Google Cloud Government UK |
+| **SECRET** | ❌ Not available | No Google Cloud sovereign enclave (Australia) |
 
 ### Security Command Center & Chronicle
 
@@ -295,7 +295,7 @@ graph TB
 - Enable Event Threat Detection for runtime threat detection
 - Enable Container Threat Detection for GKE workloads
 - Use Chronicle SIEM for security analytics and threat hunting
-- Enforce Organization Policy constraints for region restriction (europe-west2)
+- Enforce Organization Policy constraints for region restriction (australia-southeast1)
 
 ---
 
@@ -311,7 +311,7 @@ graph TB
 # main.tf
 provider "google" {
   project = var.project_id
-  region  = "europe-west2"
+  region  = "australia-southeast1"
 }
 
 # VPC Network
@@ -323,7 +323,7 @@ resource "google_compute_network" "main" {
 resource "google_compute_subnetwork" "main" {
   name          = "${var.project_name}-subnet"
   ip_cidr_range = "10.0.0.0/24"
-  region        = "europe-west2"
+  region        = "australia-southeast1"
   network       = google_compute_network.main.id
 
   secondary_ip_range {
@@ -340,7 +340,7 @@ resource "google_compute_subnetwork" "main" {
 # GKE Cluster (Autopilot)
 resource "google_container_cluster" "main" {
   name     = "${var.project_name}-cluster"
-  location = "europe-west2"
+  location = "australia-southeast1"
 
   enable_autopilot = true
 
@@ -362,7 +362,7 @@ resource "google_container_cluster" "main" {
 # Cloud SQL (PostgreSQL)
 resource "google_sql_database_instance" "main" {
   name             = "${var.project_name}-db"
-  region           = "europe-west2"
+  region           = "australia-southeast1"
   database_version = "POSTGRES_15"
 
   settings {
@@ -395,19 +395,19 @@ steps:
 
   # Build container image
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'europe-west2-docker.pkg.dev/$PROJECT_ID/${_REPO}/${_IMAGE}:$COMMIT_SHA', '.']
+    args: ['build', '-t', 'australia-southeast1-docker.pkg.dev/$PROJECT_ID/${_REPO}/${_IMAGE}:$COMMIT_SHA', '.']
 
   # Push to Artifact Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'europe-west2-docker.pkg.dev/$PROJECT_ID/${_REPO}/${_IMAGE}:$COMMIT_SHA']
+    args: ['push', 'australia-southeast1-docker.pkg.dev/$PROJECT_ID/${_REPO}/${_IMAGE}:$COMMIT_SHA']
 
   # Deploy to GKE
   - name: 'gcr.io/cloud-builders/gke-deploy'
     args:
       - run
       - --filename=k8s/
-      - --image=europe-west2-docker.pkg.dev/$PROJECT_ID/${_REPO}/${_IMAGE}:$COMMIT_SHA
-      - --location=europe-west2
+      - --image=australia-southeast1-docker.pkg.dev/$PROJECT_ID/${_REPO}/${_IMAGE}:$COMMIT_SHA
+      - --location=australia-southeast1
       - --cluster=${_CLUSTER}
 
 substitutions:
@@ -468,26 +468,26 @@ options:
 
 ---
 
-## UK Government Considerations
+## Australian Government Considerations
 
-### G-Cloud Procurement
+### BuyICT cloud panels Procurement
 
-**Google Cloud on G-Cloud 14**:
+**Google Cloud on BuyICT cloud panels 14**:
 - **Framework**: RM1557.14
 - **Supplier**: Google Cloud EMEA Limited
-- **Service ID**: [Service ID from Digital Marketplace]
+- **Service ID**: [Service ID from BuyICT and AusTender channels]
 
 **Procurement Steps**:
-1. Search Digital Marketplace for "Google Cloud"
+1. Search BuyICT and AusTender channels for "Google Cloud"
 2. Review service description and pricing
 3. Direct award (if requirements clear) or further competition
-4. Use call-off contract under G-Cloud terms
+4. Use call-off contract under BuyICT cloud panels terms
 
 ### SECRET Classification
 
 For SECRET data classification:
-- **Google Cloud Government**: US-only (Google Cloud Government is not available in the UK)
-- **Note**: Google Cloud does not offer a UK sovereign cloud
+- **Google Cloud Government**: US-only (no default Google Cloud sovereign enclave is available for Australia)
+- **Note**: Google Cloud does not offer a Australian sovereign cloud option
 - **Alternative**: Use AWS GovCloud or Microsoft Cloud for Sovereignty for SECRET workloads
 - **Recommendation**: Google Cloud is suitable for OFFICIAL and OFFICIAL-SENSITIVE with appropriate controls
 
@@ -495,13 +495,13 @@ For SECRET data classification:
 
 | Data Type | Storage Location | Replication | Notes |
 |-----------|------------------|-------------|-------|
-| Primary Data | europe-west2 (London) | Multi-zone | GDPR compliant |
-| Backups | europe-west2 | Regional / europe-west1 for cross-region | Within Europe |
-| Logs | europe-west2 | N/A | Cloud Logging |
+| Primary Data | australia-southeast1 (Sydney) | Multi-zone | GDPR compliant |
+| Backups | australia-southeast1 | Regional / europe-west1 for cross-region | Within Europe |
+| Logs | australia-southeast1 | N/A | Cloud Logging |
 
 ### Regional Availability Check
 
-**Services confirmed available in europe-west2 (London)**:
+**Services confirmed available in australia-southeast1 (Sydney)**:
 
 | Service | Availability | Notes |
 |---------|--------------|-------|
@@ -553,7 +553,7 @@ For SECRET data classification:
 ### Integration with Other ArcKit Commands
 
 - Run `/arckit.diagram` to create detailed Google Cloud architecture diagrams
-- Run `/arckit.secure` to validate against UK Secure by Design
+- Run `/arckit.secure` to validate against Australian Secure by Design expectations
 - Run `/arckit.devops` to plan Cloud Build/GitHub Actions pipelines
 - Run `/arckit.finops` to create Google Cloud cost management strategy
 

@@ -1,4 +1,4 @@
-# UK Digital Marketplace: G-Cloud Service Procurement
+# Australian Government procurement channels: BuyICT cloud panels Service Procurement
 
 > **Template Status**: Beta | **Version**: [VERSION] | **Command**: `/arckit.gcloud-search`
 
@@ -7,7 +7,7 @@
 | Field | Value |
 |-------|-------|
 | **Document ID** | ARC-[PROJECT_ID]-GCLD-v[VERSION] |
-| **Document Type** | G-Cloud Service Requirements |
+| **Document Type** | BuyICT cloud panels Service Requirements |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
 | **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
@@ -20,7 +20,7 @@
 | **Reviewed By** | [REVIEWER_NAME] ([YYYY-MM-DD]) or PENDING |
 | **Approved By** | [APPROVER_NAME] ([YYYY-MM-DD]) or PENDING |
 | **Distribution** | [DISTRIBUTION_LIST] |
-| **Framework** | G-Cloud |
+| **Framework** | BuyICT cloud panels |
 | **Service Category** | [Cloud Hosting / Cloud Software / Cloud Support] |
 | **Requirements Source** | projects/[PROJECT_ID]/ARC-{PROJECT_ID}-REQ-v*.md |
 
@@ -85,8 +85,8 @@ The service **MUST** provide:
 
 | ID | Requirement | Certification |
 |----|-------------|---------------|
-| NFR-C-xxx | [From NFR-C-xxx] | [e.g., ISO 27001, Cyber Essentials Plus] |
-| NFR-C-xxx | [Data Residency] | [e.g., UK data centers only, GDPR compliance] |
+| NFR-C-xxx | [From NFR-C-xxx] | [e.g., ISO 27001, Essential Eight maturity uplift] |
+| NFR-C-xxx | [Data Residency] | [e.g., Australian data centres only, Privacy Act 1988 (APPs) compliance] |
 
 ### 2.5 Integration Requirements
 
@@ -144,8 +144,8 @@ The service **SHOULD** provide:
 
 | Criterion | Weight | Description |
 |-----------|--------|-------------|
-| Security Certifications | 5% | ISO 27001, Cyber Essentials Plus, etc. |
-| Data Protection | 5% | GDPR compliance, data residency |
+| Security Certifications | 5% | ISO 27001, Essential Eight maturity uplift, etc. |
+| Data Protection | 5% | Privacy Act 1988 (APPs) compliance, data residency |
 | Compliance Standards | 5% | Industry-specific certifications |
 
 ### 5.4 Cost & Support (10%)
@@ -165,9 +165,9 @@ The service **SHOULD** provide:
 **Search Terms Used**:
 - Primary: [main service category]
 - Secondary: [specific capabilities]
-- Filters: [UK data centers, certifications, etc.]
+- Filters: [Australian data centres, certifications, etc.]
 
-**Digital Marketplace URL**: https://www.digitalmarketplace.service.gov.uk/g-cloud/search
+**BuyICT and AusTender channels URL**: https://www.austender.gov.au/g-cloud/search
 
 ### Shortlisted Services
 
@@ -176,8 +176,8 @@ The service **SHOULD** provide:
 | Field | Value |
 |-------|-------|
 | **Supplier** | [Supplier Name] |
-| **Service ID** | [G-Cloud Service ID] |
-| **Service URL** | [Link to Digital Marketplace page] |
+| **Service ID** | [BuyICT cloud panels Service ID] |
+| **Service URL** | [Link to BuyICT and AusTender channels page] |
 | **Category** | [Cloud Hosting / Cloud Software / Cloud Support] |
 | **Pricing Model** | [Per user / Per GB / Per transaction / etc.] |
 
@@ -284,7 +284,7 @@ The service **SHOULD** provide:
 
 ### Contract Award
 
-10. **Award contract**: Via Digital Marketplace
+10. **Award contract**: Via BuyICT and AusTender channels
 11. **Publish on Contracts Finder**: Legal requirement for transparency
 12. **Onboarding**: Begin service implementation
 
@@ -292,12 +292,12 @@ The service **SHOULD** provide:
 
 ## 10. Resources and References
 
-### Digital Marketplace Guidance
+### BuyICT and AusTender channels Guidance
 
-- **Digital Marketplace**: https://www.digitalmarketplace.service.gov.uk/
-- **G-Cloud Buyers Guide**: https://www.gov.uk/guidance/g-cloud-buyers-guide
-- **General Buying Guide**: https://www.gov.uk/guidance/buying-and-selling-on-the-digital-marketplace
-- **Contracts Finder**: https://www.gov.uk/contracts-finder
+- **BuyICT and AusTender channels**: https://www.austender.gov.au/
+- **BuyICT cloud panels Buyers Guide**: https://www.finance.gov.au/government/procurement
+- **General Buying Guide**: https://www.finance.gov.au/government/procurement
+- **Contracts Finder**: https://www.tenders.gov.au/
 
 ### Project Documents
 
@@ -317,12 +317,12 @@ The service **SHOULD** provide:
 
 **Search Date**: [DATE]
 
-**Digital Marketplace Filters Applied**:
+**BuyICT and AusTender channels Filters Applied**:
 - Lot: [Cloud Hosting / Cloud Software / Cloud Support]
 - Categories: [Selected categories]
 - Capabilities: [Selected capabilities]
 - Certifications: [Required certifications]
-- Data location: [UK only / EU / etc.]
+- Data location: [Australia only / approved jurisdictions / etc.]
 
 **Search Queries**:
 1. `[Primary search term]` - [N] results
@@ -338,7 +338,7 @@ The service **SHOULD** provide:
 
 | Term | Definition |
 |------|------------|
-| G-Cloud | UK Government framework for procuring cloud services |
+| BuyICT cloud panels | Australian Government framework for procuring cloud services |
 | DOS | Digital Outcomes and Specialists framework for custom development |
 | SLA | Service Level Agreement |
 | DR/BC | Disaster Recovery / Business Continuity |

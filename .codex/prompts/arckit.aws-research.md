@@ -10,7 +10,7 @@ You are an enterprise architect specialising in AWS. You research AWS services, 
 2. Use MCP tools extensively to gather authoritative AWS documentation
 3. Match requirements to specific AWS services with configurations
 4. Assess against Well-Architected Framework (6 pillars) and Security Hub controls
-5. Check regional availability (eu-west-2 London for UK projects)
+5. Check regional availability (ap-southeast-2 for Australian projects)
 6. Estimate costs with optimization recommendations
 7. Generate architecture diagrams (Mermaid)
 8. Write a comprehensive research document to file
@@ -60,7 +60,7 @@ Find the project directory in `projects/` (user may specify name/number, otherwi
 - **Principles**: Cloud-first policy, approved platforms, compliance constraints
 - **Stakeholders**: Scale expectations, compliance requirements
 
-Detect if UK Government project (look for "UK Government", "Ministry of", "Department for", "NHS", "MOD").
+Detect if Australian Government project (look for "Australian Government", "Ministry of", "Department for", "Australian public health services", "MOD").
 
 ### Step 3: Read Template and VERSION
 
@@ -92,8 +92,8 @@ For each requirement category, use MCP tools extensively:
 - Extract: features, pricing models, SLA, security features, integration capabilities
 
 **Regional Availability Check**:
-- `get_regional_availability`: Check every recommended service in eu-west-2 (London)
-- Critical for UK Government projects — all services must be available in London region
+- `get_regional_availability`: Check every recommended service in ap-southeast-2 (Sydney)
+- Critical for Australian Government projects — all services must be available in Australian region
 
 **Architecture Patterns**:
 - `search_documentation`: "AWS architecture [pattern type]"
@@ -111,25 +111,25 @@ For each requirement category, use MCP tools extensively:
 **Code Samples**:
 - `search_documentation`: "AWS [service] CDK example", "AWS [service] CloudFormation template", "AWS [service] Terraform"
 
-### Step 6: UK Government Specific Research (if applicable)
+### Step 6: Australian Government Specific Research (if applicable)
 
-- **G-Cloud**: Search Digital Marketplace for "Amazon Web Services", note framework reference
-- **Data Residency**: Confirm eu-west-2 availability, check cross-region replication (eu-west-1 for DR)
+- **BuyICT cloud panels**: Search BuyICT and AusTender channels for "Amazon Web Services", note framework reference
+- **Data Residency**: Confirm ap-southeast-2 availability, check cross-region replication (eu-west-1 for DR)
 - **Classification**: OFFICIAL = standard AWS, OFFICIAL-SENSITIVE = additional controls, SECRET = not available on public AWS
-- **NCSC**: Reference AWS attestation against 14 NCSC Cloud Security Principles
+- **ASD ACSC**: Reference AWS attestation against 14 ASD ACSC Cloud Security Principles
 
 ### Step 7: Cost Estimation
 
 - `search_documentation`: "AWS [service] pricing" for each service
 - Map requirements to service configurations
-- Calculate based on projected usage with eu-west-2 pricing
+- Calculate based on projected usage with ap-southeast-2 pricing
 - Include optimization: Reserved Instances, Savings Plans, Spot, Graviton, S3 Intelligent-Tiering
 
 ### Step 8: Generate Architecture Diagram
 
 Create a Mermaid diagram showing:
 - AWS services and relationships
-- UK region placement (eu-west-2 primary, eu-west-1 DR)
+- Australian region placement (ap-southeast-2 primary, eu-west-1 DR)
 - Network topology (VPC, subnets, NAT gateways)
 - Security boundaries (Security Groups, NACLs, WAF)
 - Data flows
@@ -169,7 +169,7 @@ Auto-populate fields:
 - `[VERSION]` = determined version from Step 9
 - `[DATE]` = current date (YYYY-MM-DD)
 - `[STATUS]` = "DRAFT"
-- `[CLASSIFICATION]` = "OFFICIAL" (UK Gov) or "PUBLIC"
+- `[CLASSIFICATION]` = "OFFICIAL" (Australian Government) or "PUBLIC"
 
 Include the generation metadata footer:
 ```
@@ -189,7 +189,7 @@ Return ONLY a concise summary including:
 - AWS services recommended (table: category, service, configuration, monthly estimate)
 - Architecture pattern used
 - Security alignment (Security Hub controls, Well-Architected pillars)
-- UK Government suitability (G-Cloud, UK region, classification)
+- Australian Government suitability (BuyICT cloud panels, Australian region, classification)
 - Estimated monthly cost
 - What's in the document
 - Next steps (`/arckit:diagram`, `/arckit:secure`, `/arckit:devops`)
@@ -197,7 +197,7 @@ Return ONLY a concise summary including:
 ## Quality Standards
 
 - **Official Sources Only**: Use only AWS documentation via MCP, not third-party blogs
-- **UK Focus**: Always check eu-west-2 (London) availability using `get_regional_availability`
+- **AU Focus**: Always check ap-southeast-2 (Sydney) availability using `get_regional_availability`
 - **Well-Architected**: Assess every recommendation against all 6 pillars (including Sustainability)
 - **Security Hub**: Map recommendations to AWS Foundational Security Best Practices
 - **Cost Accuracy**: Use AWS Pricing Calculator data where possible
@@ -206,5 +206,5 @@ Return ONLY a concise summary including:
 ## Edge Cases
 
 - **No requirements found**: Stop, tell user to run `/arckit:requirements`
-- **Service not in eu-west-2**: Flag as a blocker for UK Government projects, suggest alternatives
+- **Service not in ap-southeast-2**: Flag as a blocker for Australian Government projects, suggest alternatives
 - **SECRET classification**: Note that public AWS is not suitable, suggest AWS GovCloud or alternatives

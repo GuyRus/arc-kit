@@ -13,7 +13,7 @@ $ARGUMENTS
 
 ## Instructions
 
-This command performs AWS-specific technology research using the AWS Knowledge MCP server to match project requirements to AWS services, architecture patterns, Well-Architected guidance, Security Hub controls, and UK Government compliance.
+This command performs AWS-specific technology research using the AWS Knowledge MCP server to match project requirements to AWS services, architecture patterns, Well-Architected guidance, Security Hub controls, and Australian Government compliance.
 
 **This command delegates to the `arckit-aws-research` agent** which runs as an autonomous subprocess. The agent makes 15-30+ MCP calls (search_documentation, read_documentation, get_regional_availability, recommend) to gather authoritative AWS documentation — running in its own context window to avoid polluting the main conversation with large documentation chunks.
 
@@ -28,7 +28,7 @@ This command performs AWS-specific technology research using the AWS Knowledge M
 
    User's additional context: {$ARGUMENTS}
 
-   Follow your full process: read requirements, research AWS services per category, Well-Architected assessment, Security Hub mapping, UK Government compliance, cost estimation, write document, return summary.
+   Follow your full process: read requirements, research AWS services per category, Well-Architected assessment, Security Hub mapping, Australian Government compliance, cost estimation, write document, return summary.
    ```
 
 3. **Report the result**: When the agent completes, relay its summary to the user.
@@ -45,8 +45,8 @@ If the Task tool is unavailable or the user prefers inline execution, fall back 
    - Read the `${CLAUDE_PLUGIN_ROOT}/VERSION` file and update the version in the template metadata line when generating
    - **Tip**: Users can customize templates with `/arckit:customize aws-research`
 3. Extract AWS service needs from requirements (compute, data, integration, security, AI/ML)
-4. Use MCP tools for each category: service discovery, deep dive, regional availability (eu-west-2), architecture patterns, Well-Architected assessment, Security Hub mapping, code samples
-5. UK Government: G-Cloud, data residency, NCSC compliance
+4. Use MCP tools for each category: service discovery, deep dive, regional availability (ap-southeast-2), architecture patterns, Well-Architected assessment, Security Hub mapping, code samples
+5. Australian Government: BuyICT cloud panels, data residency, ASD ACSC compliance
 6. Cost estimation with optimization (Reserved Instances, Savings Plans, Spot, Graviton)
 7. Generate Mermaid architecture diagram
 8. Write to `projects/{project-dir}/research/ARC-{PROJECT_ID}-AWRS-v1.0.md` using Write tool
@@ -58,7 +58,7 @@ The agent writes the full research document to file and returns a summary includ
 - AWS services recommended per category
 - Architecture pattern and reference
 - Security alignment (Security Hub, Well-Architected)
-- UK Government suitability (G-Cloud, eu-west-2, classification)
+- Australian Government suitability (BuyICT cloud panels, ap-southeast-2, classification)
 - Estimated monthly cost
 - Next steps (`/arckit:diagram`, `/arckit:secure`, `/arckit:devops`)
 
@@ -76,4 +76,4 @@ The agent writes the full research document to file and returns a summary includ
 - **AWS Knowledge MCP**: https://awslabs.github.io/mcp/servers/aws-knowledge-mcp-server
 - **AWS Architecture Center**: https://aws.amazon.com/architecture/
 - **AWS Well-Architected**: https://aws.amazon.com/architecture/well-architected/
-- **Digital Marketplace (AWS)**: https://www.digitalmarketplace.service.gov.uk/g-cloud/search?q=amazon+web+services
+- **BuyICT and AusTender channels (AWS)**: https://www.austender.gov.au/g-cloud/search?q=amazon+web+services

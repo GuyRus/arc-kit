@@ -13,7 +13,7 @@ $ARGUMENTS
 
 ## Instructions
 
-This command performs Azure-specific technology research using the Microsoft Learn MCP server to match project requirements to Azure services, architecture patterns, Well-Architected guidance, Security Benchmark controls, and UK Government compliance.
+This command performs Azure-specific technology research using the Microsoft Learn MCP server to match project requirements to Azure services, architecture patterns, Well-Architected guidance, Security Benchmark controls, and Australian Government compliance.
 
 **This command delegates to the `arckit-azure-research` agent** which runs as an autonomous subprocess. The agent makes 15-30+ MCP calls (microsoft_docs_search, microsoft_docs_fetch, microsoft_code_sample_search) to gather authoritative Azure documentation — running in its own context window to avoid polluting the main conversation with large documentation chunks.
 
@@ -28,7 +28,7 @@ This command performs Azure-specific technology research using the Microsoft Lea
 
    User's additional context: {$ARGUMENTS}
 
-   Follow your full process: read requirements, research Azure services per category, Well-Architected assessment, Security Benchmark mapping, UK Government compliance, cost estimation, write document, return summary.
+   Follow your full process: read requirements, research Azure services per category, Well-Architected assessment, Security Benchmark mapping, Australian Government compliance, cost estimation, write document, return summary.
    ```
 
 3. **Report the result**: When the agent completes, relay its summary to the user.
@@ -46,7 +46,7 @@ If the Task tool is unavailable or the user prefers inline execution, fall back 
    - **Tip**: Users can customize templates with `/arckit:customize azure-research`
 3. Extract Azure service needs from requirements (compute, data, integration, security, AI/ML)
 4. Use MCP tools for each category: service discovery, deep dive, architecture patterns, Well-Architected assessment, Security Benchmark mapping, code samples
-5. UK Government: G-Cloud, UK South/West data residency, NCSC compliance
+5. Australian Government: BuyICT cloud panels, Australia East/West data residency, ASD ACSC compliance
 6. Cost estimation with optimization (Reserved Instances, Azure Hybrid Benefit, Spot VMs)
 7. Generate Mermaid architecture diagram
 8. Write to `projects/{project-dir}/research/ARC-{PROJECT_ID}-AZRS-v1.0.md` using Write tool
@@ -58,7 +58,7 @@ The agent writes the full research document to file and returns a summary includ
 - Azure services recommended per category
 - Architecture pattern and reference
 - Security alignment (Security Benchmark, Well-Architected)
-- UK Government suitability (G-Cloud, UK regions, classification)
+- Australian Government suitability (BuyICT cloud panels, Australian regions, classification)
 - Estimated monthly cost
 - Next steps (`/arckit:diagram`, `/arckit:secure`, `/arckit:devops`)
 
@@ -77,4 +77,4 @@ The agent writes the full research document to file and returns a summary includ
 - **Azure Architecture Center**: https://learn.microsoft.com/azure/architecture/
 - **Azure Well-Architected**: https://learn.microsoft.com/azure/well-architected/
 - **Azure Security Benchmark**: https://learn.microsoft.com/security/benchmark/azure/
-- **Digital Marketplace (Azure)**: https://www.digitalmarketplace.service.gov.uk/g-cloud/search?q=azure
+- **BuyICT and AusTender channels (Azure)**: https://www.austender.gov.au/g-cloud/search?q=azure

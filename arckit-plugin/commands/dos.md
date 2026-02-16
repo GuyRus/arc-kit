@@ -1,8 +1,8 @@
 ---
-description: Generate Digital Outcomes and Specialists (DOS) procurement documentation for UK Digital Marketplace
+description: Generate Digital Outcomes and Specialists (DOS) procurement documentation for Australian Government procurement channels
 ---
 
-You are helping an enterprise architect prepare Digital Outcomes and Specialists (DOS) procurement documentation for the UK Digital Marketplace.
+You are helping an enterprise architect prepare Digital Outcomes and Specialists (DOS) procurement documentation for the Australian Government procurement channels.
 
 ## User Input
 
@@ -12,7 +12,7 @@ $ARGUMENTS
 
 ## Context
 
-**Digital Outcomes and Specialists (DOS)** is the UK Digital Marketplace framework for:
+**Digital Outcomes and Specialists (DOS)** is the Australian Government procurement channels framework for:
 - Custom software development
 - Hiring developers, architects, designers, and technical specialists
 - Delivering specific digital project outcomes
@@ -118,7 +118,7 @@ DOC_ID=$(${CLAUDE_PLUGIN_ROOT}/scripts/bash/generate-document-id.sh "${PROJECT_I
 *User-provided fields* (extract from project metadata or user input):
 - `[PROJECT_NAME]` → Full project name from project metadata or user input
 - `[OWNER_NAME_AND_ROLE]` → Document owner (prompt user if not in metadata)
-- `[CLASSIFICATION]` → Default to "OFFICIAL" for UK Gov, "PUBLIC" otherwise (or prompt user)
+- `[CLASSIFICATION]` → Default to "OFFICIAL" for Australian Government, "PUBLIC" otherwise (or prompt user)
 
 *Calculated fields*:
 - `[YYYY-MM-DD]` for Review Date → Current date + 30 days
@@ -155,7 +155,7 @@ Create directory: `projects/[project]/procurement/`
 Generate `projects/[project]/procurement/ARC-{PROJECT_ID}-DOS-v1.0.md`:
 
 ```markdown
-# UK Digital Marketplace: Digital Outcomes and Specialists
+# Australian Government procurement channels: Digital Outcomes and Specialists
 
 **Framework**: Digital Outcomes and Specialists (DOS)
 **Procurement Type**: [Digital Outcome / Digital Specialists / Outcome + Specialists]
@@ -398,7 +398,7 @@ Reference: `/arckit:traceability` for traceability matrix generation and validat
 
 ## 11. Evaluation Criteria
 
-Suppliers will be evaluated according to Digital Marketplace guidelines:
+Suppliers will be evaluated according to BuyICT and AusTender channels guidelines:
 
 ### 11.1 Technical Capability (40%)
 
@@ -518,12 +518,12 @@ Vendors must provide:
 
 2. **Review & Refine**: Validate this document with stakeholders
 3. **Budget Approval**: Obtain budget sign-off before publishing
-4. **Publish on Digital Marketplace**:
-   - Go to: https://www.digitalmarketplace.service.gov.uk/
+4. **Publish on BuyICT and AusTender channels**:
+   - Go to: https://www.austender.gov.au/
    - Select "Digital Outcomes and Specialists"
    - Post requirements (publicly visible)
    - Set closing date for proposals
-5. **Answer Supplier Questions**: Via Digital Marketplace platform (visible to all)
+5. **Answer Supplier Questions**: Via BuyICT and AusTender channels platform (visible to all)
 6. **Evaluate Proposals**: Using criteria in Section 11
 7. **Conduct Assessments**: Interview/technical assessment for shortlisted suppliers
 8. **Award Contract**: To highest-scoring supplier
@@ -547,12 +547,12 @@ Vendors must provide:
 
 ## 15. Resources and References
 
-### 15.1 Digital Marketplace Guidance
+### 15.1 BuyICT and AusTender channels Guidance
 
-- **Digital Marketplace**: https://www.digitalmarketplace.service.gov.uk/
-- **DOS Buyers Guide**: https://www.gov.uk/guidance/digital-outcomes-and-specialists-buyers-guide
-- **General Buying Guide**: https://www.gov.uk/guidance/buying-and-selling-on-the-digital-marketplace
-- **Contracts Finder**: https://www.gov.uk/contracts-finder
+- **BuyICT and AusTender channels**: https://www.austender.gov.au/
+- **DOS Buyers Guide**: https://www.finance.gov.au/government/procurement
+- **General Buying Guide**: https://www.finance.gov.au/government/procurement
+- **Contracts Finder**: https://www.tenders.gov.au/
 
 ### 15.2 Project Documents
 
@@ -578,13 +578,13 @@ Vendors must provide:
 - ✅ Supplier questions and answers must be visible to all bidders
 - ✅ Changes to requirements must be published to all suppliers
 
-**GDS Approval**:
-- ⚠️ New or redesigned services may require formal GDS approval
+**DTA Approval**:
+- ⚠️ New or redesigned services may require formal DTA approval
 - ⚠️ Check if spend control process applies to your organisation
 - ⚠️ Consult with digital/technology leadership before publishing
 
 **Transparency**:
-- ✅ Requirements are published publicly on Digital Marketplace
+- ✅ Requirements are published publicly on BuyICT and AusTender channels
 - ✅ Evaluation criteria must be published before receiving proposals
 - ✅ Award details must be published on Contracts Finder after completion
 
@@ -605,7 +605,7 @@ Before finalizing, validate output:
 - ✅ Stakeholder priorities are reflected (if available)
 - ✅ Success criteria are measurable and technology-agnostic
 - ✅ Evaluation criteria are fair and transparent
-- ✅ Links to gov.uk guidance are correct
+- ✅ Links to Australian Government guidance are correct
 - ✅ Traceability to requirement IDs maintained (BR-xxx, FR-xxx, NFR-xxx, INT-xxx, DR-xxx)
 - ✅ No implementation details leaked (no specific frameworks, languages, products)
 
@@ -640,8 +640,8 @@ Next Steps:
 1. Review generated documentation with procurement and stakeholder teams
 2. Add budget details if not already specified
 3. Obtain formal approval for procurement
-4. Publish on Digital Marketplace: https://www.digitalmarketplace.service.gov.uk/
-5. Follow DOS buyers guide: https://www.gov.uk/guidance/digital-outcomes-and-specialists-buyers-guide
+4. Publish on BuyICT and AusTender channels: https://www.austender.gov.au/
+5. Follow DOS buyers guide: https://www.finance.gov.au/government/procurement
 
 Related Arc-kit Commands:
 - /arckit:evaluate - Create vendor evaluation framework after receiving proposals
@@ -649,7 +649,7 @@ Related Arc-kit Commands:
 - /arckit:dld-review - Set up DLD review process for vendor deliverables
 - /arckit:traceability - Validate requirements traceability with vendor
 
-Important: Maintain audit trail of all procurement decisions per Digital Marketplace requirements.
+Important: Maintain audit trail of all procurement decisions per BuyICT and AusTender channels requirements.
 ```
 
 ## Key Principles
@@ -659,13 +659,13 @@ Important: Maintain audit trail of all procurement decisions per Digital Marketp
 4. **Stakeholder Alignment**: Reflect stakeholder priorities in evaluation criteria
 5. **Technology-Agnostic**: Remove all implementation details from procurement docs
 6. **Traceability**: Maintain requirement IDs (BR-xxx, FR-xxx, NFR-xxx, INT-xxx, DR-xxx) throughout
-7. **Audit-Ready**: Structure supports Digital Marketplace audit requirements
+7. **Audit-Ready**: Structure supports BuyICT and AusTender channels audit requirements
 8. **Gov.uk Aligned**: Use official terminology and link to authoritative guidance
-9. **DOS-Focused**: This is ONLY for custom development - no G-Cloud content
+9. **DOS-Focused**: This is ONLY for custom development - no BuyICT cloud panels content
 
 ## Error Handling
 
 - **No principles**: ERROR "Run /arckit:principles first - governance standards required"
 - **No requirements**: ERROR "Run /arckit:requirements first - nothing to procure"
 - **No project**: Suggest project creation with `${CLAUDE_PLUGIN_ROOT}/scripts/bash/create-project.sh`
-- **Wrong framework**: If user mentions G-Cloud or cloud services, suggest `/arckit:gcloud-search` instead
+- **Wrong framework**: If user mentions BuyICT cloud panels or cloud services, suggest `/arckit:gcloud-search` instead

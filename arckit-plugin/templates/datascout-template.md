@@ -39,7 +39,7 @@ This document presents data source discovery findings for the **[PROJECT_NAME]**
 
 **Data Source Categories Identified**: [N] categories based on requirement analysis
 
-**Discovery Approach**: [UK Government open data, commercial API research, free/freemium API discovery, WebSearch-powered market research]
+**Discovery Approach**: [Australian Government open data, commercial API research, free/freemium API discovery, WebSearch-powered market research]
 
 ### Key Findings
 
@@ -53,7 +53,7 @@ This document presents data source discovery findings for the **[PROJECT_NAME]**
 
 | Source Type | Count | Cost Range | Key Providers |
 |-------------|-------|------------|---------------|
-| **UK Government Open Data** | [X] | Free (OGL) | [List] |
+| **Australian Government Open Data** | [X] | Free (OGL) | [List] |
 | **Commercial APIs** | [Y] | £[X]-£[Y]/year | [List] |
 | **Free/Freemium APIs** | [Z] | Free (rate-limited) | [List] |
 | **Open Source Datasets** | [W] | Free | [List] |
@@ -138,13 +138,13 @@ This document presents data source discovery findings for the **[PROJECT_NAME]**
 | **Authentication** | [None / API Key / OAuth 2.0] |
 | **Rate Limits** | [X requests/minute, Y requests/day] |
 | **Update Frequency** | [Real-time / Hourly / Daily / Monthly / Quarterly / Annual] |
-| **Coverage** | [Geographic: UK-wide / England only / etc.] |
+| **Coverage** | [Geographic: Australia-wide / England only / etc.] |
 | **Temporal Coverage** | [From YYYY to present] |
 | **Data Quality** | [Completeness %, known issues] |
 | **Documentation** | [URL, quality: Excellent/Good/Fair/Poor] |
 | **SLA** | [Uptime guarantee, response time] |
 | **GDPR Status** | [No personal data / Anonymised / Contains PII] |
-| **UK Data Residency** | [Yes / No / N/A] |
+| **Australian Data Residency** | [Yes / No / N/A] |
 
 **Requirements Fit**:
 - ✅ Covers: [Which data fields match requirements]
@@ -189,7 +189,7 @@ This document presents data source discovery findings for the **[PROJECT_NAME]**
 | **Provider** | [Name] | [Name] | [Name] |
 | **License** | [OGL] | [Commercial] | [Free tier] |
 | **Cost (Annual)** | [£0] | [£X] | [£0 / £Y over limit] |
-| **Coverage** | [UK-wide] | [Global] | [UK-wide] |
+| **Coverage** | [Australia-wide] | [Global] | [Australia-wide] |
 | **Freshness** | [Daily] | [Real-time] | [Hourly] |
 | **API Quality** | [Good] | [Excellent] | [Fair] |
 | **Requirements Fit** | [/25] | [/25] | [/25] |
@@ -229,7 +229,7 @@ This document presents data source discovery findings for the **[PROJECT_NAME]**
 | **Data Quality** | 20% | Accuracy, completeness, consistency, timeliness, and known quality issues |
 | **License & Cost** | 15% | License terms (OGL, CC, proprietary), pricing sustainability, total cost |
 | **API Quality** | 15% | REST/GraphQL, documentation quality, SDKs, versioning, error handling, pagination |
-| **Compliance** | 15% | GDPR, UK data residency, data classification, terms of use, DPA 2018 |
+| **Compliance** | 15% | GDPR, Australian data residency, data classification, terms of use, DPA 2018 |
 | **Reliability** | 10% | SLA, uptime history, vendor stability, community/support, track record |
 
 ---
@@ -393,16 +393,16 @@ This document presents data source discovery findings for the **[PROJECT_NAME]**
 
 ---
 
-## UK Government Open Data Opportunities
+## Australian Government Open Data Opportunities
 
-> **Note**: Only applicable if this is a UK Government project
+> **Note**: Only applicable if this is a Australian Government project
 
-### TCoP Point 10: Make Better Use of Data
+### DX Policy / DSS Point 10: Make Better Use of Data
 
 **Open Data Consumed**:
 | Source | Dataset | License | Requirement | Status |
 |--------|---------|---------|-------------|--------|
-| [data.gov.uk] | [Dataset name] | OGL v3.0 | [DR-xxx] | ✅ Recommended |
+| [data.gov.au] | [Dataset name] | OGL v3.0 | [DR-xxx] | ✅ Recommended |
 | [ONS] | [Dataset name] | OGL v3.0 | [DR-xxx] | ✅ Recommended |
 
 **Open Data Publishing Opportunities**:
@@ -412,8 +412,8 @@ This document presents data source discovery findings for the **[PROJECT_NAME]**
 **Common Data Standards Used**:
 - [UPRN for property addresses]
 - [Company Number for business entities]
-- [NHS Number for patient identification]
-- [Other UK Government identifiers]
+- [Australian public health services Number for patient identification]
+- [Other Australian Government identifiers]
 
 **Data Ethics Framework Compliance**:
 - [ ] Clear user need for data collection
@@ -482,7 +482,7 @@ This document presents data source discovery findings for the **[PROJECT_NAME]**
 ### Appendix A: Research Methodology
 
 **Data Sources Searched**:
-- UK Government open data portals (data.gov.uk, ONS, NHS Digital, etc.)
+- Australian Government open data portals (data.gov.au, ONS, Australian Institute of Health and Welfare (AIHW), etc.)
 - Commercial data provider websites
 - API directories and documentation
 - GitHub and open source repositories
@@ -505,9 +505,9 @@ This document presents data source discovery findings for the **[PROJECT_NAME]**
 - **API**: Application Programming Interface
 - **ETL**: Extract, Transform, Load
 - **OGL**: Open Government Licence
-- **GDPR**: General Data Protection Regulation (UK GDPR / EU GDPR)
-- **DPA 2018**: Data Protection Act 2018
-- **TCoP**: Technology Code of Practice (UK Government)
+- **GDPR**: General Data Protection Regulation (Privacy Act 1988 (APPs) / EU GDPR)
+- **DPA 2018**: Privacy Act 1988
+- **DX Policy / DSS**: Digital Experience Policy (Australian Government)
 - **SLA**: Service Level Agreement
 - **TTL**: Time To Live (cache expiry)
 - **UPRN**: Unique Property Reference Number

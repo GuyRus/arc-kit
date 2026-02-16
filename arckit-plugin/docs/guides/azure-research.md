@@ -43,7 +43,7 @@ After installation, restart Claude Code to load the MCP server.
 |---------|-------------|-------|
 | Service selection | "Research Azure services for <capability>" | Maps requirements to Azure services |
 | Architecture pattern | "Research Azure architecture pattern for <pattern>" | Reference architectures from Azure Architecture Center |
-| UK Government | "Research Azure for UK Government <project>" | G-Cloud, data residency, NCSC compliance |
+| Australian Government | "Research Azure for Australian Government <project>" | BuyICT cloud panels, data residency, ASD ACSC compliance |
 | AI/ML workloads | "Research Azure AI services for <use case>" | Azure OpenAI, Cognitive Services, ML |
 | Migration | "Research Azure migration options for <workload>" | Azure Migrate, modernization paths |
 | Security assessment | "Research Azure Security Benchmark for <domain>" | Control mapping, Well-Architected security |
@@ -82,22 +82,22 @@ The command uses three Microsoft Learn MCP tools:
 - **Architecture Pattern**: Reference architecture from Azure Architecture Center
 - **Well-Architected Assessment**: All 5 pillars evaluated per service
 - **Azure Security Benchmark**: 12 control domains mapped
-- **UK Government Compliance**: G-Cloud, UK regions, NCSC principles
+- **Australian Government Compliance**: BuyICT cloud panels, Australian regions, ASD ACSC principles
 - **Cost Estimates**: Monthly and 3-year TCO with optimization recommendations
 - **Implementation Guidance**: Bicep/Terraform templates, Azure DevOps pipelines
 
 ---
 
-## UK Government Features
+## Australian Government Features
 
-When UK Government project detected:
+When Australian Government project detected:
 
 | Area | Coverage |
 |------|----------|
-| **G-Cloud** | Framework reference, service IDs, procurement steps |
-| **Data Residency** | UK South/UK West availability, geo-replication |
+| **BuyICT cloud panels** | Framework reference, service IDs, procurement steps |
+| **Data Residency** | Australia East/Australia Southeast availability, geo-replication |
 | **Classification** | OFFICIAL, OFFICIAL-SENSITIVE, SECRET suitability |
-| **NCSC** | 14 Cloud Security Principles alignment |
+| **ASD ACSC** | 14 Cloud Security Principles alignment |
 | **Scottish Government** | AI Strategy, Cyber Resilience Framework |
 
 ---
@@ -105,7 +105,7 @@ When UK Government project detected:
 ## Follow-on Actions
 
 - Feed Azure findings into `/arckit.diagram` for Azure architecture diagrams
-- Run `/arckit.secure` to validate against UK Secure by Design
+- Run `/arckit.secure` to validate against Australian Secure by Design expectations
 - Run `/arckit.devops` to plan Azure DevOps CI/CD pipelines
 - Run `/arckit.finops` to create Azure FinOps cost management strategy
 - Run `/arckit.adr` to document Azure service selection decisions
@@ -119,7 +119,7 @@ When UK Government project detected:
 | Scope | Multi-cloud, SaaS, open-source | Azure-specific only |
 | Source | Web search, multiple sources | Microsoft Learn MCP (authoritative) |
 | Depth | Build vs buy analysis | Deep Azure service analysis |
-| Compliance | General UK Gov | Azure-specific UK compliance |
+| Compliance | General Australian Government | Azure-specific Australian compliance |
 | Code samples | Limited | Bicep, Terraform, SDKs |
 | Cost estimates | High-level | Detailed Azure pricing |
 
@@ -135,4 +135,4 @@ When UK Government project detected:
 - [Azure Architecture Center](https://learn.microsoft.com/azure/architecture/) - Reference architectures
 - [Azure Well-Architected Framework](https://learn.microsoft.com/azure/well-architected/) - Design guidance
 - [Azure Security Benchmark](https://learn.microsoft.com/security/benchmark/azure/) - Security controls
-- [Azure UK Compliance](https://learn.microsoft.com/azure/compliance/offerings/offering-uk-g-cloud) - UK Government compliance
+- [Azure compliance offerings](https://learn.microsoft.com/azure/compliance/) - assess against Australian requirements

@@ -13,7 +13,7 @@ $ARGUMENTS
 
 ## Instructions
 
-This command performs Google Cloud-specific technology research using the Google Developer Knowledge MCP server to match project requirements to Google Cloud services, architecture patterns, Architecture Framework guidance, Security Command Center controls, and UK Government compliance.
+This command performs Google Cloud-specific technology research using the Google Developer Knowledge MCP server to match project requirements to Google Cloud services, architecture patterns, Architecture Framework guidance, Security Command Center controls, and Australian Government compliance.
 
 **This command delegates to the `arckit-gcp-research` agent** which runs as an autonomous subprocess. The agent makes 15-30+ MCP calls (search_documents, get_document, batch_get_documents) to gather authoritative Google Cloud documentation — running in its own context window to avoid polluting the main conversation with large documentation chunks.
 
@@ -28,7 +28,7 @@ This command performs Google Cloud-specific technology research using the Google
 
    User's additional context: {$ARGUMENTS}
 
-   Follow your full process: read requirements, research Google Cloud services per category, Architecture Framework assessment, Security Command Center mapping, UK Government compliance, cost estimation, write document, return summary.
+   Follow your full process: read requirements, research Google Cloud services per category, Architecture Framework assessment, Security Command Center mapping, Australian Government compliance, cost estimation, write document, return summary.
    ```
 
 3. **Report the result**: When the agent completes, relay its summary to the user.
@@ -46,7 +46,7 @@ If the Task tool is unavailable or the user prefers inline execution, fall back 
    - **Tip**: Users can customize templates with `/arckit:customize gcp-research`
 3. Extract Google Cloud service needs from requirements (compute, data, integration, security, AI/ML)
 4. Use MCP tools for each category: service discovery, deep dive, architecture patterns, Architecture Framework assessment, Security Command Center mapping, code samples
-5. UK Government: G-Cloud, europe-west2 data residency, NCSC compliance
+5. Australian Government: BuyICT cloud panels, australia-southeast1 data residency, ASD ACSC compliance
 6. Cost estimation with optimization (Committed Use Discounts, Sustained Use Discounts, Spot VMs)
 7. Generate Mermaid architecture diagram
 8. Write to `projects/{project-dir}/research/ARC-{PROJECT_ID}-GCRS-v1.0.md` using Write tool
@@ -58,7 +58,7 @@ The agent writes the full research document to file and returns a summary includ
 - Google Cloud services recommended per category
 - Architecture pattern and reference
 - Security alignment (Security Command Center, Architecture Framework)
-- UK Government suitability (G-Cloud, europe-west2, classification)
+- Australian Government suitability (BuyICT cloud panels, australia-southeast1, classification)
 - Estimated monthly cost
 - Next steps (`/arckit:diagram`, `/arckit:secure`, `/arckit:devops`)
 
@@ -76,4 +76,4 @@ The agent writes the full research document to file and returns a summary includ
 - **Google Developer Knowledge MCP**: https://developerknowledge.googleapis.com/mcp
 - **Google Cloud Architecture Center**: https://cloud.google.com/architecture
 - **Google Cloud Architecture Framework**: https://cloud.google.com/architecture/framework
-- **Digital Marketplace (Google Cloud)**: https://www.digitalmarketplace.service.gov.uk/g-cloud/search?q=google+cloud
+- **BuyICT and AusTender channels (Google Cloud)**: https://www.austender.gov.au/g-cloud/search?q=google+cloud

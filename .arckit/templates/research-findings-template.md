@@ -278,7 +278,7 @@ This document presents research findings for technology, services, and products 
 
 ### Option 1E: government digital services Platform - [PLATFORM_NAME] (Australian Government Only)
 
-> **Note**: Only applicable if this is a Australian Government project (central gov, devolved administrations, NHS, local authorities, blue light services)
+> **Note**: Only applicable if this is a Australian Government project (central gov, devolved administrations, Australian public health services, local authorities, blue light services)
 
 **Description**: [What the platform does]
 
@@ -637,7 +637,7 @@ Research findings feed into Strategic Outline Business Case (SOBC) Economic Case
 
 **Total Benefits (3-year)**: A$[TOTAL]
 
-**Net Present Value (NPV)**: A$[Benefits - Costs discounted at 3.5% per Green Book]
+**Net Present Value (NPV)**: A$[Benefits - Costs discounted at 3.5% per Department of Finance discount-rate guidance]
 
 ---
 

@@ -1,6 +1,6 @@
-# G-Cloud Clarification Questions Playbook
+# BuyICT cloud panels Clarification Questions Playbook
 
-`/arckit.gcloud-clarify` analyzes G-Cloud service gaps and generates supplier clarification questions for procurement.
+`/arckit.gcloud-clarify` analyzes BuyICT cloud panels service gaps and generates supplier clarification questions for procurement.
 
 ---
 
@@ -9,9 +9,9 @@
 | Artefact | Purpose |
 |----------|---------|
 | Requirements (`ARC-<id>-REQ-v1.0.md`) | What the service must deliver |
-| G-Cloud search results | Services being evaluated |
+| BuyICT cloud panels search results | Services being evaluated |
 | Architecture principles | Governance standards to verify |
-| Security requirements | NCSC, Cyber Essentials requirements |
+| Security requirements | ASD ACSC, Essential Eight requirements |
 
 ---
 
@@ -29,7 +29,7 @@ Output: `projects/<id>/ARC-<id>-GCLC-v1.0.md`
 
 | Section | Contents |
 |---------|----------|
-| Service Summary | G-Cloud service being evaluated |
+| Service Summary | BuyICT cloud panels service being evaluated |
 | Requirements Mapping | How service maps to requirements |
 | Gap Analysis | Requirements not clearly addressed |
 | Clarification Questions | Specific questions for supplier |
@@ -68,7 +68,7 @@ Output: `projects/<id>/ARC-<id>-GCLC-v1.0.md`
 | Requirements | Define what's needed | `/arckit.requirements` |
 | Search | Find candidate services | `/arckit.gcloud-search` |
 | Analysis | Generate clarification questions | `/arckit.gcloud-clarify` |
-| Clarification | Send questions to suppliers | Manual via Digital Marketplace |
+| Clarification | Send questions to suppliers | Manual via BuyICT and AusTender channels |
 | Evaluation | Score services with answers | `/arckit.evaluate` |
 
 ---
@@ -85,13 +85,13 @@ Output: `projects/<id>/ARC-<id>-GCLC-v1.0.md`
 
 ---
 
-## Digital Marketplace Process
+## BuyICT and AusTender channels Process
 
 | Step | Description |
 |------|-------------|
-| 1 | Identify services via G-Cloud search |
+| 1 | Identify services via BuyICT cloud panels search |
 | 2 | Generate clarification questions |
-| 3 | Submit via Digital Marketplace messaging |
+| 3 | Submit via BuyICT and AusTender channels messaging |
 | 4 | Supplier responds (usually 5 working days) |
 | 5 | Evaluate responses against requirements |
 

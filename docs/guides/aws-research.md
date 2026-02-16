@@ -43,7 +43,7 @@ After installation, restart Claude Code to load the MCP server.
 |---------|-------------|-------|
 | Service selection | "Research AWS services for <capability>" | Maps requirements to AWS services |
 | Architecture pattern | "Research AWS architecture pattern for <pattern>" | Reference architectures from AWS Architecture Center |
-| UK Government | "Research AWS for UK Government <project>" | G-Cloud, eu-west-2, NCSC compliance |
+| Australian Government | "Research AWS for Australian Government <project>" | BuyICT cloud panels, ap-southeast-2, ASD ACSC compliance |
 | AI/ML workloads | "Research AWS AI services for <use case>" | Bedrock, SageMaker |
 | Migration | "Research AWS migration options for <workload>" | Migration Hub, modernization paths |
 | Security assessment | "Research AWS Security Hub for <domain>" | Control mapping, Well-Architected security |
@@ -72,7 +72,7 @@ The command uses five AWS Knowledge MCP tools:
 |------|---------|
 | `search_documentation` | Search AWS documentation for services, patterns, best practices |
 | `read_documentation` | Retrieve complete documentation pages for detailed analysis |
-| `get_regional_availability` | Check service/feature availability in eu-west-2 (London) |
+| `get_regional_availability` | Check service/feature availability in ap-southeast-2 (Sydney) |
 | `list_regions` | Get all AWS regions for multi-region planning |
 | `recommend` | Get content recommendations for AWS topics |
 
@@ -84,30 +84,30 @@ The command uses five AWS Knowledge MCP tools:
 - **Architecture Pattern**: Reference architecture from AWS Architecture Center
 - **Well-Architected Assessment**: All 6 pillars evaluated per service (including Sustainability)
 - **AWS Security Hub**: Foundational Security Best Practices mapping
-- **UK Government Compliance**: G-Cloud, eu-west-2 region, NCSC principles
+- **Australian Government Compliance**: BuyICT cloud panels, ap-southeast-2 region, ASD ACSC principles
 - **Cost Estimates**: Monthly and 3-year TCO with optimization recommendations
 - **Implementation Guidance**: CDK/CloudFormation/Terraform templates
 
 ---
 
-## UK Government Features
+## Australian Government Features
 
-When UK Government project detected:
+When Australian Government project detected:
 
 | Area | Coverage |
 |------|----------|
-| **G-Cloud** | Framework reference, service IDs, procurement steps |
-| **Data Residency** | eu-west-2 (London) availability via `get_regional_availability` |
+| **BuyICT cloud panels** | Framework reference, service IDs, procurement steps |
+| **Data Residency** | ap-southeast-2 (Sydney) availability via `get_regional_availability` |
 | **Classification** | OFFICIAL, OFFICIAL-SENSITIVE suitability |
-| **NCSC** | 14 Cloud Security Principles alignment |
-| **Note** | AWS GovCloud is US-only (not available for UK SECRET) |
+| **ASD ACSC** | 14 Cloud Security Principles alignment |
+| **Note** | AWS sovereign options are agency-specific; assess against Australian classification controls |
 
 ---
 
 ## Follow-on Actions
 
 - Feed AWS findings into `/arckit.diagram` for AWS architecture diagrams
-- Run `/arckit.secure` to validate against UK Secure by Design
+- Run `/arckit.secure` to validate against Australian Secure by Design expectations
 - Run `/arckit.devops` to plan AWS CodePipeline CI/CD
 - Run `/arckit.finops` to create AWS FinOps cost management strategy
 - Run `/arckit.adr` to document AWS service selection decisions
@@ -121,8 +121,8 @@ When UK Government project detected:
 | Scope | Multi-cloud, SaaS, open-source | AWS-specific only |
 | Source | Web search, multiple sources | AWS Knowledge MCP (authoritative) |
 | Depth | Build vs buy analysis | Deep AWS service analysis |
-| Regional | General | `get_regional_availability` for eu-west-2 |
-| Compliance | General UK Gov | AWS-specific UK compliance |
+| Regional | General | `get_regional_availability` for ap-southeast-2 |
+| Compliance | General Australian Government | AWS-specific Australian compliance |
 | Code samples | Limited | CDK, CloudFormation, Terraform |
 | Cost estimates | High-level | Detailed AWS pricing |
 
@@ -138,4 +138,4 @@ When UK Government project detected:
 - [AWS Architecture Center](https://aws.amazon.com/architecture/) - Reference architectures
 - [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/) - Design guidance
 - [AWS Security Best Practices](https://aws.amazon.com/security/) - Security controls
-- [AWS UK Compliance](https://aws.amazon.com/compliance/uk-data-protection/) - UK Government compliance
+- [AWS compliance offerings](https://aws.amazon.com/compliance/programs/) - assess against Australian requirements

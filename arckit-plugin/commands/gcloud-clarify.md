@@ -1,8 +1,8 @@
 ---
-description: Analyze G-Cloud service gaps and generate supplier clarification questions
+description: Analyze BuyICT cloud panels service gaps and generate supplier clarification questions
 ---
 
-You are helping an enterprise architect validate G-Cloud services and generate clarification questions for suppliers.
+You are helping an enterprise architect validate BuyICT cloud panels services and generate clarification questions for suppliers.
 
 ## User Input
 
@@ -12,7 +12,7 @@ $ARGUMENTS
 
 ## Context
 
-After using `/arckit:gcloud-search` to find G-Cloud services, you have a shortlist but face challenges:
+After using `/arckit:gcloud-search` to find BuyICT cloud panels services, you have a shortlist but face challenges:
 - Service descriptions may be vague or use marketing language
 - Technical details may be missing or ambiguous
 - Compliance claims may lack evidence
@@ -30,7 +30,7 @@ Scan the project directory for existing artifacts and read them to inform this a
 - `ARC-*-REQ-*.md` in `projects/{project}/` — Requirements specification
   - Extract: All MUST requirements (BR-xxx, FR-xxx, NFR-xxx, INT-xxx, DR-xxx), SHOULD requirements, compliance (NFR-C-xxx), integration (INT-xxx), performance (NFR-P-xxx), security (NFR-S-xxx)
   - If missing: ERROR "Run `/arckit:requirements` first — need source requirements"
-- `ARC-*-GCLD-*.md` in `projects/{project}/procurement/` — G-Cloud search results
+- `ARC-*-GCLD-*.md` in `projects/{project}/procurement/` — BuyICT cloud panels search results
   - Extract: Shortlisted services (top 3-5), service names, supplier names, service links, key features, Must-Have Match scores, Desirable Features scores, compliance mentions, pricing
   - If missing: ERROR "Run `/arckit:gcloud-search` first — need service search results"
 
@@ -44,7 +44,7 @@ Scan the project directory for existing artifacts and read them to inform this a
 
 **What to extract from each document**:
 - **Requirements**: MUST/SHOULD requirements with IDs for systematic gap analysis
-- **G-Cloud Search**: Shortlisted services with features and scores for clarification targeting
+- **BuyICT cloud panels Search**: Shortlisted services with features and scores for clarification targeting
 - **Principles**: Technology constraints and compliance standards for gap context
 
 ### 3. Gap Analysis
@@ -81,11 +81,11 @@ Identify vague marketing language that needs clarification:
 #### C. Compliance Gaps
 
 For compliance requirements (NFR-C-xxx):
-- Are required certifications explicitly mentioned? (ISO 27001, Cyber Essentials Plus, etc.)
+- Are required certifications explicitly mentioned? (ISO 27001, Essential Eight maturity uplift, etc.)
 - Are certification numbers provided?
 - Are expiry dates mentioned?
-- Is data residency specified? (UK data centers)
-- Is GDPR compliance confirmed?
+- Is data residency specified? (Australian data centres)
+- Is Privacy Act 1988 (APPs) compliance confirmed?
 
 #### D. Integration Gaps
 
@@ -205,14 +205,14 @@ DOC_ID=$(${CLAUDE_PLUGIN_ROOT}/scripts/bash/generate-document-id.sh "${PROJECT_I
 - `[PROJECT_ID]` → Extract from project path (e.g., "001" from "projects/001-project-name")
 - `[VERSION]` → "1.0" (or increment if previous version exists)
 - `[DATE]` / `[YYYY-MM-DD]` → Current date in YYYY-MM-DD format
-- `[DOCUMENT_TYPE_NAME]` → "G-Cloud Clarification Questions"
+- `[DOCUMENT_TYPE_NAME]` → "BuyICT cloud panels Clarification Questions"
 - `ARC-[PROJECT_ID]-GCLC-v[VERSION]` → Use generated DOC_ID
 - `[COMMAND]` → "arckit.gcloud-clarify"
 
 *User-provided fields* (extract from project metadata or user input):
 - `[PROJECT_NAME]` → Full project name from project metadata or user input
 - `[OWNER_NAME_AND_ROLE]` → Document owner (prompt user if not in metadata)
-- `[CLASSIFICATION]` → Default to "OFFICIAL" for UK Gov, "PUBLIC" otherwise (or prompt user)
+- `[CLASSIFICATION]` → Default to "OFFICIAL" for Australian Government, "PUBLIC" otherwise (or prompt user)
 
 *Calculated fields*:
 - `[YYYY-MM-DD]` for Review Date → Current date + 30 days
@@ -247,7 +247,7 @@ The footer should be populated with:
 Create `projects/[project]/procurement/ARC-{PROJECT_ID}-GCLC-v1.0.md`:
 
 ```markdown
-# G-Cloud Service Clarification Questions
+# BuyICT cloud panels Service Clarification Questions
 
 **Project**: [PROJECT_NAME]
 **Date**: [DATE]
@@ -257,7 +257,7 @@ Create `projects/[project]/procurement/ARC-{PROJECT_ID}-GCLC-v1.0.md`:
 
 ## Executive Summary
 
-**Purpose**: Validate G-Cloud services against requirements before procurement decision.
+**Purpose**: Validate BuyICT cloud panels services against requirements before procurement decision.
 
 **Status**:
 - Services Analyzed: [N]
@@ -325,7 +325,7 @@ Subject: Technical Clarification Required - [Service Name]
 
 Dear [Supplier Name] Team,
 
-We are evaluating [Service Name] (Service ID: [ID]) for procurement via the Digital Marketplace. Before proceeding, we need clarification on several technical requirements:
+We are evaluating [Service Name] (Service ID: [ID]) for procurement via the BuyICT and AusTender channels. Before proceeding, we need clarification on several technical requirements:
 
 **Critical Requirements (Blocking)**:
 [List Q-numbers for critical questions]
@@ -402,7 +402,7 @@ Thank you,
    - [ ] Select winning service
 
 8. ✅ **Contract award**:
-   - [ ] Award via Digital Marketplace
+   - [ ] Award via BuyICT and AusTender channels
    - [ ] Publish on Contracts Finder
 
 **Parallel Activity**: While waiting for responses, prepare evaluation criteria with `/arckit:evaluate`.
@@ -412,7 +412,7 @@ Thank you,
 ## 📎 Referenced Documents
 
 - **Requirements**: projects/[project]/ARC-*-REQ-*.md
-- **G-Cloud Search**: projects/[project]/procurement/gcloud-ARC-*-REQ-*.md
+- **BuyICT cloud panels Search**: projects/[project]/procurement/gcloud-ARC-*-REQ-*.md
 - **Service Pages**: [list all service URLs]
 
 ---
@@ -440,7 +440,7 @@ Before finalizing, validate output:
 Output to user:
 
 ```
-✅ Generated G-Cloud clarification questions for [PROJECT_NAME]
+✅ Generated BuyICT cloud panels clarification questions for [PROJECT_NAME]
 
 Services Analyzed: [N]
 Document: projects/[project]/procurement/ARC-{PROJECT_ID}-GCLC-v1.0.md
@@ -501,15 +501,15 @@ Important: Do not award contracts to services with CRITICAL gaps until gaps are 
 ## Error Handling
 
 - **No ARC-*-REQ-*.md**: ERROR "Requirements not found - run /arckit:requirements first"
-- **No gcloud-ARC-*-REQ-*.md**: ERROR "G-Cloud search results not found - run /arckit:gcloud-search first"
+- **No gcloud-ARC-*-REQ-*.md**: ERROR "BuyICT cloud panels search results not found - run /arckit:gcloud-search first"
 - **No services shortlisted**: ERROR "No services to clarify - gcloud-search found no results"
 - **All MUST requirements confirmed**: INFO "All MUST requirements confirmed with evidence - minimal clarification needed. Proceed to /arckit:evaluate"
 
 ## Integration with Workflow
 
-**Complete G-Cloud Procurement Workflow**:
+**Complete BuyICT cloud panels Procurement Workflow**:
 1. `/arckit:requirements` → Define service needs
-2. `/arckit:gcloud-search` → Find services on Digital Marketplace
+2. `/arckit:gcloud-search` → Find services on BuyICT and AusTender channels
 3. **`/arckit:gcloud-clarify`** → Identify gaps, generate questions
 4. *Supplier engagement* → Send questions, receive responses
 5. `/arckit:evaluate` → Score suppliers based on responses
