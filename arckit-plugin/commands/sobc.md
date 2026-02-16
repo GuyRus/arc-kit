@@ -1,12 +1,12 @@
 ---
-description: Create Strategic Outline Business Case (SOBC) using UK Government Green Book 5-case model
+description: "Create Strategic Outline Business Case (SOBC) using Australian Government Green Book 5-case model"
 ---
 
 You are helping an enterprise architect create a Strategic Outline Business Case (SOBC) to justify investment in a technology project.
 
 ## About SOBC
 
-A **Strategic Outline Business Case (SOBC)** is the first stage in the UK Government business case lifecycle:
+A **Strategic Outline Business Case (SOBC)** is the first stage in the Australian Government business case lifecycle:
 - **SOBC**: Strategic Outline (this command) - High-level case for change, done BEFORE detailed requirements
 - **OBC**: Outline Business Case - After some design work, with refined costs
 - **FBC**: Full Business Case - Detailed case with accurate costs, ready for final approval
@@ -21,7 +21,7 @@ $ARGUMENTS
 
 ## Instructions
 
-This command creates a **Strategic Outline Business Case (SOBC)** following HM Treasury Green Book 5-case model. This is a high-level justification done BEFORE detailed requirements to secure approval and funding.
+This command creates a **Strategic Outline Business Case (SOBC)** aligned to Australian Government investment governance and Finance assurance expectations. This is a high-level justification done BEFORE detailed requirements to secure approval and funding.
 
 **When to use this:**
 - **After**: `/arckit:stakeholders` (MANDATORY - SOBC must link to stakeholder goals)
@@ -60,7 +60,7 @@ This command creates a **Strategic Outline Business Case (SOBC)** following HM T
 2. **Understand the request**: The user may be:
    - Creating initial SOBC (most common)
    - Updating existing SOBC with new information
-   - Creating UK Government Green Book 5-case model (automatic for UK projects)
+   - Creating Australian Government-aligned business case model (automatic for Australian Government projects)
    - Evaluating multiple strategic options
 
 3. **Check for External Documents** (optional):
@@ -90,7 +90,7 @@ This command creates a **Strategic Outline Business Case (SOBC)** following HM T
    **Important**: This command works without external documents. They enhance output quality but are never blocking.
 
 4. **Determine project context**:
-   - If user mentions "UK Government", "public sector", "department", "ministry" → Use full Green Book format
+   - If user mentions "Australian Government", "public sector", "department", "ministry" → Use full AU Commonwealth business case format
    - Otherwise → Use Green Book structure but adapt language for private sector
    - Check stakeholder analysis for government-specific stakeholders (Minister, Permanent Secretary, Treasury, NAO)
 
@@ -124,12 +124,12 @@ This command creates a **Strategic Outline Business Case (SOBC)** following HM T
    **Read the template** (with user override support):
    - **First**, check if `.arckit/templates/sobc-template.md` exists in the project root
    - **If found**: Read the user's customized template (user override takes precedence)
-   - **If not found**: Read `${CLAUDE_PLUGIN_ROOT}/templates/sobc-template.md` (default)
+   - **If not found**: Read `.arckit/templates/sobc-template.md` (default)
 
-   > **Note**: Read the `${CLAUDE_PLUGIN_ROOT}/VERSION` file and update the version in the template metadata line when generating.
+   > **Note**: Read the `.arckit/VERSION` file and update the version in the template metadata line when generating.
    > **Tip**: Users can customize templates with `/arckit:customize sobc`
 
-   **Five Cases (HM Treasury Green Book Model)**:
+   **Five Cases (AU Commonwealth-aligned model)**:
 
    **A. Strategic Case**:
    - **Problem Statement**: What's broken? (from stakeholder pain points)
@@ -168,11 +168,11 @@ This command creates a **Strategic Outline Business Case (SOBC)** following HM T
 
    **C. Commercial Case**:
    - **Procurement Strategy**:
-     - UK Government: Digital Marketplace route (G-Cloud, DOS, Crown Hosting)
+     - Australian Government: BuyICT and CPR-compliant sourcing route (BuyICT, DOS, Australian Government hosting controls)
      - Private Sector: Build vs Buy vs Partner
    - **Market Assessment**:
      - Supplier availability
-     - SME opportunities (UK Gov requirement)
+     - SME opportunities (Australian Government requirement)
      - Competition considerations
    - **Sourcing Route**: How will we acquire this?
    - **Contract Approach**: Framework, bespoke, managed service?
@@ -181,7 +181,7 @@ This command creates a **Strategic Outline Business Case (SOBC)** following HM T
    - **Budget Requirement**: How much needed?
    - **Funding Source**: Where does money come from?
    - **Approval Thresholds**: Who must approve?
-     - UK Gov: HMT approval needed above £X?
+     - Australian Government: Finance approval needed above A$X?
      - Private: Board approval needed?
    - **Affordability**: Can organization afford this?
    - **Cash Flow**: When do we need money?
@@ -221,7 +221,7 @@ This command creates a **Strategic Outline Business Case (SOBC)** following HM T
    ```
    Stakeholder Driver D-1 (CFO: Reduce costs - FINANCIAL, HIGH)
      → Strategic Case: Cost pressure driving change
-       → Economic Case: Benefit B-1: £2M annual savings (maps to CFO Goal G-1)
+       → Economic Case: Benefit B-1: A$2M annual savings (maps to CFO Goal G-1)
          → Financial Case: 18-month payback acceptable to CFO
            → Management Case: CFO sits on steering committee (RACI: Accountable)
              → Success Criterion: CFO Outcome O-1 measured monthly
@@ -256,7 +256,7 @@ Before generating the document ID, check if a previous version exists:
 ### Step 1: Generate Document ID
 ```bash
 # Use the ArcKit document ID generation script
-DOC_ID=$(${CLAUDE_PLUGIN_ROOT}/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "SOBC" "${VERSION}")
+DOC_ID=$(.arckit/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "SOBC" "${VERSION}")
 # Example output: ARC-001-SOBC-v1.0
 ```
 
@@ -267,7 +267,7 @@ DOC_ID=$(${CLAUDE_PLUGIN_ROOT}/scripts/bash/generate-document-id.sh "${PROJECT_I
 - `[VERSION]` → Determined version from Step 0
 - `[DATE]` / `[YYYY-MM-DD]` → Current date in YYYY-MM-DD format
 - `[DOCUMENT_TYPE_NAME]` → "Strategic Outline Business Case (SOBC)"
-- `[CLASSIFICATION]` → Default to "OFFICIAL" for UK Gov, "INTERNAL" for private sector
+- `[CLASSIFICATION]` → Default to "OFFICIAL" for Australian Government, "INTERNAL" for private sector
 - `[STATUS]` → "DRAFT" for new documents
 
 **User-specified fields** (must be confirmed with user):
@@ -282,7 +282,7 @@ DOC_ID=$(${CLAUDE_PLUGIN_ROOT}/scripts/bash/generate-document-id.sh "${PROJECT_I
    - Later stages will be: `ARC-{PROJECT_ID}-OBC-v*.md` (Outline Business Case), `ARC-{PROJECT_ID}-FBC-v*.md` (Full Business Case)
 
 11. **Use appropriate language**:
-   - **UK Government**: Use Green Book terminology (intervention, public value, social benefit, spending controls)
+   - **Australian Government**: Use AU Commonwealth investment terminology and evidence expectations
    - **Private Sector**: Adapt to commercial language (investment, shareholder value, competitive advantage)
    - **Always**: Link to stakeholder analysis for credibility
 
@@ -300,8 +300,8 @@ Provide:
    - "Created Strategic Outline Business Case (SOBC) for [project name]"
    - "Analyzed [X] options against [Y] stakeholder goals"
    - "Recommended: Option [X] - [name]"
-   - "Estimated investment: £[X]M over 3 years"
-   - "Expected benefits: £[X]M over 3 years from [stakeholder goals]"
+   - "Estimated investment: A$[X]M over 3 years"
+   - "Expected benefits: A$[X]M over 3 years from [stakeholder goals]"
    - "Payback period: [X] months"
    - "Business case lifecycle stage: SOBC (strategic outline)"
 3. **Next steps**:
@@ -318,15 +318,15 @@ Provide:
 **Pattern 1: Technology Modernization**:
 - Strategic Case: Legacy systems failing, stakeholder frustration high
 - Economic Case: 3-5 options from do-nothing to complete rebuild
-- Commercial Case: Cloud migration, Digital Marketplace G-Cloud
-- Financial Case: £2-5M over 3 years, CFO approval needed
+- Commercial Case: Cloud migration, BuyICT and CPR-compliant sourcing BuyICT
+- Financial Case: A$2-5M over 3 years, CFO approval needed
 - Management Case: Phased migration, minimal disruption
 
 **Pattern 2: New Digital Service**:
 - Strategic Case: Citizen/customer demand, competitive pressure
 - Economic Case: MVP vs full-featured comparison
 - Commercial Case: Build in-house vs platform vendor
-- Financial Case: £500K-2M year 1, ongoing £200K/year
+- Financial Case: A$500K-2M year 1, ongoing A$200K/year
 - Management Case: Agile delivery, beta to live
 
 **Pattern 3: Compliance/Risk Driven**:
@@ -336,9 +336,9 @@ Provide:
 - Financial Case: Non-negotiable spend, insurance cost reduction
 - Management Case: Deadline-driven, stakeholder compliance team owns
 
-## UK Government Specific Guidance
+## Australian Government Specific Guidance
 
-For UK Government/public sector projects, ensure:
+For Australian Government/public sector projects, ensure:
 
 1. **Strategic Case includes**:
    - Policy alignment (manifesto commitments, departmental objectives)
@@ -353,21 +353,21 @@ For UK Government/public sector projects, ensure:
    - Wider economic benefits
 
 3. **Commercial Case includes**:
-   - Digital Marketplace assessment (G-Cloud, DOS)
+   - BuyICT and CPR-compliant sourcing assessment (BuyICT, DOS)
    - SME participation commitment
    - Social value (minimum 10% weighting)
    - Open source consideration
 
 4. **Financial Case includes**:
-   - HM Treasury approval thresholds
+   - Department of Finance approval thresholds
    - Spending Review settlement alignment
    - Value for money assessment
    - Whole-life costs
 
 5. **Management Case includes**:
    - Service Standard assessment plan
-   - GDS/CDDO engagement
-   - Cyber security (NCSC consultation)
+   - DTA engagement
+   - Cyber security (ASD/ACSC consultation)
    - Accessibility (WCAG 2.2 AA compliance)
    - Data protection (ICO/DPIA requirements)
 
@@ -387,12 +387,12 @@ If project seems too small for full 5-case:
 
 ## Template Reference
 
-Use the template at `${CLAUDE_PLUGIN_ROOT}/templates/sobc-template.md` as the structure. Fill in with:
+Use the template at `.arckit/templates/sobc-template.md` as the structure. Fill in with:
 - Stakeholder analysis data (goals, drivers, outcomes, conflicts)
 - Architecture principles (strategic alignment)
 - User's project description
 - Industry/sector best practices
-- UK Government guidance (if applicable)
+- Australian Government guidance (if applicable)
 
 ## Output Instructions
 
@@ -430,17 +430,17 @@ After writing the file, show ONLY a concise summary:
 **Economic Case**:
 - Options Appraised: [Number] options evaluated
 - Preferred Option: [Option number and name]
-- NPV over [X] years: £[Amount]
+- NPV over [X] years: A$[Amount]
 - BCR (Benefit-Cost Ratio): [Ratio]
-- Key Benefits: [Top 3-5 benefits with £ values]
+- Key Benefits: [Top 3-5 benefits with A$ values]
 
 **Commercial Case**:
-- Procurement Route: [e.g., Digital Marketplace, G-Cloud, Open tender]
+- Procurement Route: [e.g., BuyICT and CPR-compliant sourcing, BuyICT, Open tender]
 - Contract Strategy: [e.g., Single supplier, Framework, Multi-supplier]
 - Risk Allocation: [Public/Private split]
 
 **Financial Case**:
-- Total Budget Required: £[Amount]
+- Total Budget Required: A$[Amount]
 - Funding Source: [e.g., Spending Review settlement, reserves]
 - Affordability: [Confirmed/To be confirmed]
 - Cash Flow: [Summary of phasing]
@@ -451,9 +451,9 @@ After writing the file, show ONLY a concise summary:
 - Key Risks: [Top 3-5 risks]
 - Timeline: [Start] - [End] ([Duration])
 
-**UK Government Specific** (if applicable):
+**Australian Government Specific** (if applicable):
 - Green Book Compliance: [5-case model, options appraisal, sensitivity analysis]
-- Technology Code of Practice: [Points addressed]
+- Digital Experience Policy: [Points addressed]
 - Service Standard: [Assessment plan]
 - Social Value: [% weighting in procurement]
 

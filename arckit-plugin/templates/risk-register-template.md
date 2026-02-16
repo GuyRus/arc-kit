@@ -201,7 +201,7 @@ Legend: ██ Critical (20-25)  ▓▓ High (13-19)  ░░ Medium (6-12)  ··
 
 **Consequences if Realized:**
 [What happens if this risk occurs? Tangible impacts:]
-- [Impact 1: e.g., "£2M budget overrun"]
+- [Impact 1: e.g., "A$2M budget overrun"]
 - [Impact 2: e.g., "6-month project delay"]
 - [Impact 3: e.g., "Loss of stakeholder confidence"]
 
@@ -259,7 +259,7 @@ Legend: ██ Critical (20-25)  ▓▓ High (13-19)  ░░ Medium (6-12)  ··
 
 **Alternative Responses Considered:**
 - **Tolerate**: Rejected - Risk score too high, exceeds appetite
-- **Transfer**: Considered - Would require £X insurance, cost-prohibitive
+- **Transfer**: Considered - Would require A$X insurance, cost-prohibitive
 - **Terminate**: Not viable - Activity essential to strategic objectives
 
 #### Risk Appetite Assessment
@@ -281,14 +281,14 @@ Legend: ██ Critical (20-25)  ▓▓ High (13-19)  ░░ Medium (6-12)  ··
    - Description: [Detailed action]
    - Owner: [Name, Role]
    - Due Date: [Date]
-   - Cost: £[X]
+   - Cost: A$[X]
    - Expected Impact: Reduce likelihood from 4 to 3
 
 2. **[Mitigation Action 2]**
    - Description: [Detailed action]
    - Owner: [Name, Role]
    - Due Date: [Date]
-   - Cost: £[X]
+   - Cost: A$[X]
    - Expected Impact: Reduce impact from 4 to 3
 
 **Target Residual Risk After Mitigations:**
@@ -393,7 +393,7 @@ Legend: ██ Critical (20-25)  ▓▓ High (13-19)  ░░ Medium (6-12)  ··
 - R-003: [Title] - Residual: 16 (High)
 
 **Key Themes:**
-- [Theme 1: e.g., "GDPR/DPA 2018 compliance complexity"]
+- [Theme 1: e.g., "Privacy Act 1988 / APPs/Privacy Act 1988 compliance complexity"]
 - [Theme 2: e.g., "Regulatory change during project"]
 
 **Category Risk Profile:** ⚠️ Concerning - Compliance risks harder to mitigate, legal review needed
@@ -541,38 +541,38 @@ Legend: ██ Critical (20-25)  ▓▓ High (13-19)  ░░ Medium (6-12)  ··
 
 | Priority | Action | Risk(s) Addressed | Owner | Due Date | Cost | Expected Impact | Status |
 |----------|--------|-------------------|-------|----------|------|-----------------|--------|
-| 1 | [Action 1] | R-003 (COMPLIANCE) | CCO | 2025-11-01 | £50K | Reduce from 16 to 8 | Not Started |
-| 2 | [Action 2] | R-001 (STRATEGIC) | CEO | 2025-11-15 | £20K | Reduce from 16 to 9 | In Progress |
+| 1 | [Action 1] | R-003 (COMPLIANCE) | CCO | 2025-11-01 | A$50K | Reduce from 16 to 8 | Not Started |
+| 2 | [Action 2] | R-001 (STRATEGIC) | CEO | 2025-11-15 | A$20K | Reduce from 16 to 9 | In Progress |
 
 **Total Urgent Actions:** 2
-**Total Cost:** £70K
+**Total Cost:** A$70K
 **Expected Risk Reduction:** 15 points total
 
 ### Priority 2: HIGH (High Risks Within Appetite)
 
 | Priority | Action | Risk(s) Addressed | Owner | Due Date | Cost | Expected Impact | Status |
 |----------|--------|-------------------|-------|----------|------|-----------------|--------|
-| 3 | [Action 3] | R-002 (TECHNOLOGY) | CTO | 2025-12-01 | £30K | Reduce from 12 to 6 | Not Started |
-| 4 | [Action 4] | R-005 (REPUTATIONAL) | CEO | 2025-12-15 | £15K | Reduce from 12 to 8 | Planning |
+| 3 | [Action 3] | R-002 (TECHNOLOGY) | CTO | 2025-12-01 | A$30K | Reduce from 12 to 6 | Not Started |
+| 4 | [Action 4] | R-005 (REPUTATIONAL) | CEO | 2025-12-15 | A$15K | Reduce from 12 to 8 | Planning |
 
 **Total High Priority Actions:** 2
-**Total Cost:** £45K
+**Total Cost:** A$45K
 **Expected Risk Reduction:** 10 points total
 
 ### Priority 3: MEDIUM (Medium Risks Requiring Treatment)
 
 | Priority | Action | Risk(s) Addressed | Owner | Due Date | Cost | Expected Impact | Status |
 |----------|--------|-------------------|-------|----------|------|-----------------|--------|
-| 5 | [Action 5] | R-007 (TECHNOLOGY) | CTO | 2026-01-15 | £10K | Reduce from 8 to 4 | Not Started |
-| 6 | [Action 6] | R-009 (FINANCIAL) | CFO | 2026-02-01 | £5K | Reduce from 8 to 6 | Not Started |
+| 5 | [Action 5] | R-007 (TECHNOLOGY) | CTO | 2026-01-15 | A$10K | Reduce from 8 to 4 | Not Started |
+| 6 | [Action 6] | R-009 (FINANCIAL) | CFO | 2026-02-01 | A$5K | Reduce from 8 to 6 | Not Started |
 
 **Total Medium Priority Actions:** 2
-**Total Cost:** £15K
+**Total Cost:** A$15K
 **Expected Risk Reduction:** 6 points total
 
 **Overall Action Plan Summary:**
 - **Total Actions:** 6
-- **Total Investment:** £130K
+- **Total Investment:** A$130K
 - **Expected Risk Reduction:** 31 points (34% reduction)
 - **Target Completion:** 2026-02-01
 
@@ -587,10 +587,10 @@ Legend: ██ Critical (20-25)  ▓▓ High (13-19)  ░░ Medium (6-12)  ··
 - **R-001** (STRATEGIC, 16): Demonstrates need for immediate action to address [strategic driver]
 
 ### SOBC Economic Case (Part B)
-- **Risk-adjusted costs** use financial risks + HM Treasury optimism bias
-- **R-004** (FINANCIAL, 9): £2M budget risk → Add 15% contingency (£300K)
-- **R-009** (FINANCIAL, 8): Cost escalation risk → Add 10% contingency (£200K)
-- **Total risk contingency:** £500K added to Economic Case costs
+- **Risk-adjusted costs** use financial risks + Department of Finance optimism bias
+- **R-004** (FINANCIAL, 9): A$2M budget risk → Add 15% contingency (A$300K)
+- **R-009** (FINANCIAL, 8): Cost escalation risk → Add 10% contingency (A$200K)
+- **Total risk contingency:** A$500K added to Economic Case costs
 
 ### SOBC Management Case (Part E - Risk Management)
 - **Full risk register** included in Management Case Part E
@@ -683,7 +683,7 @@ Legend: ██ Critical (20-25)  ▓▓ High (13-19)  ░░ Medium (6-12)  ··
 
 ## K. Orange Book Compliance Checklist
 
-This risk register demonstrates compliance with HM Treasury Orange Book (2023):
+This risk register demonstrates compliance with Department of Finance Orange Book (2023):
 
 ### Part I - Risk Management Principles
 
@@ -740,11 +740,11 @@ This risk register demonstrates compliance with HM Treasury Orange Book (2023):
 
 | Score | Rating | Financial Impact | Schedule Impact | Stakeholder Impact | Description |
 |-------|--------|------------------|-----------------|-------------------|-------------|
-| 1 | Negligible | < £50K | < 1 week | Minimal concern | Easily absorbed, routine management |
-| 2 | Minor | £50K-£200K | 1-4 weeks | Minor concern | Manageable within contingency |
-| 3 | Moderate | £200K-£500K | 1-2 months | Significant concern | Requires management effort and approval |
-| 4 | Major | £500K-£2M | 2-6 months | Severe concern | Threatens key objectives, difficult recovery |
-| 5 | Catastrophic | > £2M | > 6 months | Existential threat | Project failure, major stakeholder impact |
+| 1 | Negligible | < A$50K | < 1 week | Minimal concern | Easily absorbed, routine management |
+| 2 | Minor | A$50K-A$200K | 1-4 weeks | Minor concern | Manageable within contingency |
+| 3 | Moderate | A$200K-A$500K | 1-2 months | Significant concern | Requires management effort and approval |
+| 4 | Major | A$500K-A$2M | 2-6 months | Severe concern | Threatens key objectives, difficult recovery |
+| 5 | Catastrophic | > A$2M | > 6 months | Existential threat | Project failure, major stakeholder impact |
 
 ### Risk Score Matrix (Likelihood × Impact)
 
@@ -767,7 +767,7 @@ This risk register demonstrates compliance with HM Treasury Orange Book (2023):
 | CFO | D-001: Reduce costs | R-009 | ROI not achieved due to low adoption | FINANCIAL | 8 |
 | CTO | D-002: Modernize architecture (STRATEGIC, HIGH) | R-001 | Strategic direction changes mid-project | STRATEGIC | 16 |
 | CTO | D-002: Modernize architecture | R-002 | Legacy integration fails at scale | TECHNOLOGY | 12 |
-| CCO | D-003: Ensure compliance (COMPLIANCE, CRITICAL) | R-003 | GDPR non-compliance in data transfer | COMPLIANCE | 16 |
+| CCO | D-003: Ensure compliance (COMPLIANCE, CRITICAL) | R-003 | Privacy Act 1988 / APPs non-compliance in data transfer | COMPLIANCE | 16 |
 | Operations | D-004: Minimize downtime (OPERATIONAL, HIGH) | R-006 | Service outage during cutover | OPERATIONAL | 6 |
 | CEO | D-005: Protect reputation (REPUTATIONAL, HIGH) | R-005 | Public service failure damages trust | REPUTATIONAL | 12 |
 
@@ -818,7 +818,7 @@ This risk register demonstrates compliance with HM Treasury Orange Book (2023):
 
 ---
 
-*This risk register follows HM Treasury Orange Book (2023) principles and integrates with ArcKit's stakeholder-driven architecture governance framework.*
+*This risk register follows Department of Finance Orange Book (2023) principles and integrates with ArcKit's stakeholder-driven architecture governance framework.*
 
 *For questions or updates, contact: [Risk Register Owner Name and Email]*
 

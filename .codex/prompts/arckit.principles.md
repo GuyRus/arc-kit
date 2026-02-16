@@ -106,7 +106,7 @@ Before completing the document, populate document information fields:
 - `[DOCUMENT_TYPE_NAME]` → Document purpose
 - `ARC-[PROJECT_ID]-PRIN-v[VERSION]` → Generated document ID
 - `[STATUS]` → "DRAFT" for new documents
-- `[CLASSIFICATION]` → Default to "OFFICIAL" (UK Gov) or "PUBLIC"
+- `[CLASSIFICATION]` → Default to "OFFICIAL" (Australian Government) or "PUBLIC"
 
 ### User-provided fields:
 - `[PROJECT_NAME]` → Full project name

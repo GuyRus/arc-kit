@@ -1,6 +1,6 @@
 # Risk Register Playbook
 
-`/arckit.risk` creates a comprehensive risk register following HM Treasury Orange Book principles for project and operational risk management.
+`/arckit.risk` creates a comprehensive risk register aligned to Australian Government risk management policy expectations for project and operational risk management.
 
 ---
 

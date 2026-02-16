@@ -1,12 +1,12 @@
 ---
-description: "Create comprehensive risk register following HM Treasury Orange Book principles"
+description: "Create comprehensive risk register aligned to Australian Government risk governance principles"
 ---
 
-You are helping an enterprise architect create a comprehensive risk register following the UK Government Orange Book (2023) risk management framework.
+You are helping an enterprise architect create a comprehensive risk register following the Australian Government Orange Book (2023) risk management framework.
 
 ## About Orange Book Risk Management
 
-The **Orange Book** is HM Treasury's guidance on risk management in government. The 2023 update provides:
+The Commonwealth risk baseline is set through PGPA risk requirements, the Commonwealth Risk Management Policy, and supporting Finance guidance. It provides:
 
 - **Part I**: 5 Risk Management Principles (Governance, Integration, Collaboration, Risk Processes, Continual Improvement)
 - **Part II**: Risk Control Framework (4-pillar "house" structure)
@@ -22,7 +22,7 @@ $ARGUMENTS
 
 ## Instructions
 
-This command creates a **comprehensive risk register** following HM Treasury Orange Book principles and integrates with ArcKit's stakeholder-driven workflow.
+This command creates a **comprehensive risk register** following Department of Finance Orange Book principles and integrates with ArcKit's stakeholder-driven workflow.
 
 **When to use this:**
 - **After**: `/arckit:stakeholders` (MANDATORY - every risk needs an owner)
@@ -91,7 +91,7 @@ This command creates a **comprehensive risk register** following HM Treasury Ora
    **Important**: This command works without external documents. They enhance output quality but are never blocking.
 
 4. **Determine project context**:
-   - If user mentions "UK Government", "public sector", "department", "ministry" → Include regulatory/parliamentary risks
+   - If user mentions "Australian Government", "public sector", "department", "ministry" → Include regulatory/parliamentary risks
    - If user mentions specific industry → Include industry-specific risk categories
    - Check stakeholder analysis for context on project scale, complexity, stakeholders
 
@@ -127,12 +127,12 @@ This command creates a **comprehensive risk register** following HM Treasury Ora
    **COMPLIANCE/REGULATORY Risks**:
    - Non-compliance with laws, regulations, policies
    - Audit findings, regulatory penalties
-   - Data protection (GDPR, DPA 2018), procurement rules
-   - Example: "GDPR non-compliance due to data transfer"
+   - Data protection (Privacy Act 1988 / APPs, Privacy Act 1988), procurement rules
+   - Example: "Privacy Act 1988 / APPs non-compliance due to data transfer"
 
    **REPUTATIONAL Risks**:
    - Damage to reputation, stakeholder confidence, public perception
-   - Media scrutiny, parliamentary questions (UK Gov)
+   - Media scrutiny, parliamentary scrutiny and Senate Estimates exposure
    - Service failures visible to public
    - Example: "High-profile service outage damages citizen trust"
 
@@ -410,7 +410,7 @@ Before completing the document, populate document information fields:
 - `[DOCUMENT_TYPE_NAME]` → Document purpose
 - `ARC-[PROJECT_ID]-RISK-v[VERSION]` → Generated document ID
 - `[STATUS]` → "DRAFT" for new documents
-- `[CLASSIFICATION]` → Default to "OFFICIAL" (UK Gov) or "PUBLIC"
+- `[CLASSIFICATION]` → Default to "OFFICIAL" (Australian Government) or "PUBLIC"
 
 ### User-provided fields:
 - `[PROJECT_NAME]` → Full project name
@@ -436,7 +436,7 @@ Before completing the document, populate document information fields:
 Provide:
 1. **Location**: `projects/NNN-project-name/ARC-{PROJECT_ID}-RISK-v1.0.md`
 2. **Summary**:
-   - "Created comprehensive risk register following HM Treasury Orange Book"
+   - "Created comprehensive risk register following Department of Finance Orange Book"
    - "Identified [X] risks across 6 categories"
    - "Risk profile: [X] Critical, [Y] High, [Z] Medium, [W] Low"
    - "Overall residual risk score: [X]/500 ([Y]% reduction from inherent)"
@@ -476,7 +476,7 @@ Ensure the risk register demonstrates Orange Book compliance:
 **Pattern 2: New Digital Service**:
 - STRATEGIC: User adoption below target (High)
 - TECHNOLOGY: Scalability limitations at peak (High)
-- COMPLIANCE: GDPR/Accessibility non-compliance (Critical)
+- COMPLIANCE: Privacy Act 1988 / APPs/Accessibility non-compliance (Critical)
 - OPERATIONAL: Support team not ready for go-live (Medium)
 
 **Pattern 3: Vendor Procurement**:
@@ -485,9 +485,9 @@ Ensure the risk register demonstrates Orange Book compliance:
 - TECHNOLOGY: Vendor lock-in limits future options (High)
 - REPUTATIONAL: Vendor security breach affects reputation (High)
 
-## UK Government Specific Risks
+## Australian Government Specific Risks
 
-For UK Government/public sector projects, include:
+For Australian Government/public sector projects, include:
 
 **STRATEGIC**:
 - Policy/ministerial direction change mid-project
@@ -495,7 +495,7 @@ For UK Government/public sector projects, include:
 - Machinery of government changes
 
 **COMPLIANCE/REGULATORY**:
-- Spending controls (HMT approval delays)
+- Spending controls (Finance approval delays)
 - NAO audit findings
 - PAC scrutiny and recommendations
 - FOI requests reveal sensitive information
@@ -508,8 +508,8 @@ For UK Government/public sector projects, include:
 - Select Committee inquiry
 
 **OPERATIONAL**:
-- GDS Service Assessment failure
-- CDDO digital spend control rejection
+- Digital Service Standard assessment failure
+- DTA digital spend control rejection
 - Civil service headcount restrictions
 - Security clearance delays
 
@@ -533,6 +533,6 @@ Use the template at `.arckit/templates/risk-register-template.md` as the structu
 - Organizational risk appetite (if exists)
 - User's project description
 - Industry/sector specific risks
-- UK Government risks (if applicable)
+- Australian Government risks (if applicable)
 
 Generate a comprehensive, Orange Book-compliant risk register that enables informed decision-making and effective risk management.

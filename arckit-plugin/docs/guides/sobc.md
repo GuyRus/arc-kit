@@ -1,6 +1,6 @@
 # Strategic Outline Business Case Playbook
 
-`/arckit.sobc` creates a Strategic Outline Business Case (SOBC) using the UK Government Green Book 5-case model.
+`/arckit.sobc` creates a Strategic Outline Business Case (SOBC) using the Australian Government Green Book 5-case model.
 
 ---
 
@@ -110,9 +110,9 @@ Output: `projects/<id>/ARC-<id>-SOBC-v1.0.md`
 
 | Threshold | Approval Required |
 |-----------|-------------------|
-| <£5m | Departmental |
-| £5m-£25m | Department + CDDO |
-| >£25m | HMT + IPA |
+| [Agency threshold] | Agency delegated approval |
+| [Portfolio threshold] | Agency + portfolio/central digital assurance |
+| [Major proposal threshold] | Cabinet/Finance assurance as applicable |
 
 *Note: Thresholds vary by department and project type*
 

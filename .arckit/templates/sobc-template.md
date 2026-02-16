@@ -43,15 +43,15 @@
 
 **Strategic Fit**: [1-2 sentences: How does this align with organizational strategy?]
 
-**Investment Required**: £[X]M over [Y] years
-- Capital: £[X]M
-- Operational (3 years): £[X]M
+**Investment Required**: A$[X]M over [Y] years
+- Capital: A$[X]M
+- Operational (3 years): A$[X]M
 
-**Expected Benefits**: £[X]M over [Y] years
+**Expected Benefits**: A$[X]M over [Y] years
 - [Top 3 benefits with values]
 
 **Return on Investment**: 
-- NPV: £[X]M (discounted at 3.5%)
+- NPV: A$[X]M (discounted at 3.5%)
 - Payback Period: [X] months
 - ROI: [X]%
 
@@ -87,7 +87,7 @@
 
 | Stakeholder | Driver ID | Pain Point | Impact | Intensity |
 |-------------|-----------|------------|--------|-----------|
-| [CFO] | D-001 | [High infrastructure costs] | [£2M annual overspend] | CRITICAL |
+| [CFO] | D-001 | [High infrastructure costs] | [A$2M annual overspend] | CRITICAL |
 | [CTO] | D-003 | [Cannot attract talent with legacy tech] | [30% developer turnover] | HIGH |
 | [Operations] | D-005 | [80 hours/week manual processing] | [Team burnout, errors] | HIGH |
 
@@ -111,7 +111,7 @@
 
 **Strategic Alignment**:
 - [Organizational Strategy 1]: [How this project supports it]
-- [Manifesto Commitment (UK Gov)]: [How this delivers it]
+- [Manifesto Commitment (Australian Government)]: [How this delivers it]
 - [Architecture Principles]: [Which principles this enforces]
 
 ### A1.3 Stakeholder Goals
@@ -120,7 +120,7 @@
 
 | Goal ID | Stakeholder | SMART Goal | Current State | Target State | Timeline |
 |---------|-------------|------------|---------------|--------------|----------|
-| G-001 | CFO | Reduce infrastructure costs 40% by Q4 2025 | £5M/year | £3M/year | 18 months |
+| G-001 | CFO | Reduce infrastructure costs 40% by Q4 2025 | A$5M/year | A$3M/year | 18 months |
 | G-002 | CTO | Increase deployment frequency 10x | 1/month | 10/day | 12 months |
 | G-003 | Operations | Reduce manual work 80% | 80 hrs/week | 16 hrs/week | 24 months |
 
@@ -157,8 +157,8 @@
 - [Factor 3: e.g., Competitive threat: Competitor launching similar]
 
 **Opportunity Cost of Delay**:
-- [Cost 1: £X per month in continued overspend]
-- [Cost 2: Lost revenue opportunity: £Y]
+- [Cost 1: A$X per month in continued overspend]
+- [Cost 2: Lost revenue opportunity: A$Y]
 - [Cost 3: Stakeholder frustration increasing]
 
 **Window of Opportunity**:
@@ -191,11 +191,11 @@ Before analyzing options, define what "success" looks like:
 **Description**: Continue with current systems and processes.
 
 **Costs** (3-year):
-- Capital: £0
-- Operational: £[X]M (continued high running costs)
-- Total: £[X]M
+- Capital: A$0
+- Operational: A$[X]M (continued high running costs)
+- Total: A$[X]M
 
-**Benefits**: £0 (no improvement)
+**Benefits**: A$0 (no improvement)
 
 **Pros**:
 - ✅ No upfront investment
@@ -208,9 +208,9 @@ Before analyzing options, define what "success" looks like:
 - ❌ Competitive disadvantage worsens
 
 **Risks**:
-- [Risk 1]: Compliance failure → £[X]M fine + reputational damage
-- [Risk 2]: System failure → £[X] per hour downtime
-- [Risk 3]: Staff attrition → Recruitment costs £[X]
+- [Risk 1]: Compliance failure → A$[X]M fine + reputational damage
+- [Risk 2]: System failure → A$[X] per hour downtime
+- [Risk 3]: Staff attrition → Recruitment costs A$[X]
 
 **Stakeholder Goals Met**: 0%
 
@@ -228,19 +228,19 @@ Before analyzing options, define what "success" looks like:
 - [Component 3]: [Manual workarounds acceptable]
 
 **Costs** (3-year) - ROM (±40%):
-- Capital: £[X]M
-  - [Item 1]: £[X]
-  - [Item 2]: £[X]
-- Operational: £[X]M over 3 years
-  - [Item 1]: £[X]/year
-- Total 3-year TCO: £[X]M
+- Capital: A$[X]M
+  - [Item 1]: A$[X]
+  - [Item 2]: A$[X]
+- Operational: A$[X]M over 3 years
+  - [Item 1]: A$[X]/year
+- Total 3-year TCO: A$[X]M
 
 **Benefits** (3-year):
-- **B-001** (from CFO Goal G-001): Cost reduction £[X]M
-- **B-002** (from CTO Goal G-002): Efficiency gain £[X]M
-- Total: £[X]M
+- **B-001** (from CFO Goal G-001): Cost reduction A$[X]M
+- **B-002** (from CTO Goal G-002): Efficiency gain A$[X]M
+- Total: A$[X]M
 
-**Net Benefit**: £[X]M (Benefits - Costs)
+**Net Benefit**: A$[X]M (Benefits - Costs)
 
 **Pros**:
 - ✅ Lower upfront investment
@@ -275,31 +275,31 @@ Before analyzing options, define what "success" looks like:
 - [Component 3]: [Cloud-native, scalable]
 
 **Costs** (3-year) - ROM (±30%):
-- Capital: £[X]M
-  - [Infrastructure]: £[X]
-  - [Software licenses]: £[X]
-  - [Implementation services]: £[X]
-  - [Training]: £[X]
-- Operational: £[X]M over 3 years
-  - [Managed services]: £[X]/year
-  - [Support & maintenance]: £[X]/year
-  - [Staff costs (reduced)]: £[X]/year
-- Total 3-year TCO: £[X]M
+- Capital: A$[X]M
+  - [Infrastructure]: A$[X]
+  - [Software licenses]: A$[X]
+  - [Implementation services]: A$[X]
+  - [Training]: A$[X]
+- Operational: A$[X]M over 3 years
+  - [Managed services]: A$[X]/year
+  - [Support & maintenance]: A$[X]/year
+  - [Staff costs (reduced)]: A$[X]/year
+- Total 3-year TCO: A$[X]M
 
 **Benefits** (3-year):
 
 | Benefit ID | Benefit Description | Stakeholder Goal | Type | Year 1 | Year 2 | Year 3 | 3-Year Total |
 |------------|---------------------|------------------|------|--------|--------|--------|--------------|
-| B-001 | Infrastructure cost reduction | CFO G-001 | FINANCIAL | £0.5M | £2M | £2M | £4.5M |
-| B-002 | Productivity gain (automation) | Operations G-003 | OPERATIONAL | £0.3M | £1M | £1M | £2.3M |
-| B-003 | Revenue from faster time-to-market | CTO G-002 | STRATEGIC | £0.2M | £0.8M | £1.5M | £2.5M |
-| B-004 | Compliance risk reduction | CISO G-004 | RISK | £0.1M | £0.5M | £0.5M | £1.1M |
-| **Total Benefits** | | | | **£1.1M** | **£4.3M** | **£5M** | **£10.4M** |
+| B-001 | Infrastructure cost reduction | CFO G-001 | FINANCIAL | A$0.5M | A$2M | A$2M | A$4.5M |
+| B-002 | Productivity gain (automation) | Operations G-003 | OPERATIONAL | A$0.3M | A$1M | A$1M | A$2.3M |
+| B-003 | Revenue from faster time-to-market | CTO G-002 | STRATEGIC | A$0.2M | A$0.8M | A$1.5M | A$2.5M |
+| B-004 | Compliance risk reduction | CISO G-004 | RISK | A$0.1M | A$0.5M | A$0.5M | A$1.1M |
+| **Total Benefits** | | | | **A$1.1M** | **A$4.3M** | **A$5M** | **A$10.4M** |
 
 **Net Present Value** (3.5% discount rate):
-- Total Benefits PV: £[X]M
-- Total Costs PV: £[X]M
-- **NPV: £[X]M** (positive = good investment)
+- Total Benefits PV: A$[X]M
+- Total Costs PV: A$[X]M
+- **NPV: A$[X]M** (positive = good investment)
 
 **Return on Investment**:
 - **ROI: [X]%** over 3 years
@@ -307,7 +307,7 @@ Before analyzing options, define what "success" looks like:
 
 **Pros**:
 - ✅ 85% of stakeholder goals met
-- ✅ Positive NPV £[X]M
+- ✅ Positive NPV A$[X]M
 - ✅ Acceptable payback period
 - ✅ Scalable for future growth
 - ✅ Modern technology stack (attracts talent)
@@ -342,13 +342,13 @@ Before analyzing options, define what "success" looks like:
 - [Component 3]: [Multi-region, 99.999% availability]
 
 **Costs** (3-year) - ROM (±40%):
-- Capital: £[X]M (significantly higher)
-- Operational: £[X]M over 3 years
-- Total 3-year TCO: £[X]M
+- Capital: A$[X]M (significantly higher)
+- Operational: A$[X]M over 3 years
+- Total 3-year TCO: A$[X]M
 
-**Benefits** (3-year): £[X]M (marginally higher than Option 2)
+**Benefits** (3-year): A$[X]M (marginally higher than Option 2)
 
-**Net Benefit**: £[X]M (lower than Option 2 due to diminishing returns)
+**Net Benefit**: A$[X]M (lower than Option 2 due to diminishing returns)
 
 **Pros**:
 - ✅ 100% of stakeholder goals met
@@ -356,7 +356,7 @@ Before analyzing options, define what "success" looks like:
 - ✅ Exceeds all requirements
 
 **Cons**:
-- ❌ High cost (£[X]M more than Option 2)
+- ❌ High cost (A$[X]M more than Option 2)
 - ❌ Long implementation (18 months)
 - ❌ Complexity may not be justified
 - ❌ Over-engineering risk
@@ -372,21 +372,21 @@ Before analyzing options, define what "success" looks like:
 **Recommendation**: **Option 2: Balanced Approach**
 
 **Rationale**:
-1. **Best Value**: Highest NPV at £[X]M
+1. **Best Value**: Highest NPV at A$[X]M
 2. **Stakeholder Satisfaction**: Meets 85% of goals (vs 40% for Option 1, 100% for Option 3)
 3. **Acceptable Risk**: Manageable implementation with phased approach
 4. **Affordability**: Within budget constraints
 5. **Deliverability**: Realistic 12-month timeline
 
 **Sensitivity Analysis**:
-- If costs increase 20%: NPV still positive (£[X]M)
+- If costs increase 20%: NPV still positive (A$[X]M)
 - If benefits reduce 20%: ROI still acceptable ([X]% vs [Y]% threshold)
 - If timeline extends 6 months: Payback still within acceptable range
 
-**Optimism Bias Adjustment** (UK Government):
+**Optimism Bias Adjustment** (Australian Government):
 - Standard uplift for IT projects: +40% on costs
-- Adjusted Total Cost: £[X]M → £[X]M (with uplift)
-- NPV with optimism bias: Still positive at £[X]M
+- Adjusted Total Cost: A$[X]M → A$[X]M (with uplift)
+- NPV with optimism bias: Still positive at A$[X]M
 
 ---
 
@@ -406,15 +406,15 @@ Before analyzing options, define what "success" looks like:
 - **Tier 2** (Specialist vendors): [Category] - Niche expertise
 - **Tier 3** (SMEs): [Capability] - Agility, innovation
 
-**UK Government Digital Marketplace Assessment** (if applicable):
-- **G-Cloud 14**: [X] suppliers offering [capability]
+**Australian Government BuyICT and CPR-compliant sourcing Assessment** (if applicable):
+- **BuyICT 14**: [X] suppliers offering [capability]
 - **DOS6**: [Y] suppliers for outcomes/specialists
 - **SME participation**: [Z]% of suppliers are SMEs
 
 ### C1.2 Sourcing Route
 
 **Recommended Route**:
-- **UK Government**: Digital Marketplace - [G-Cloud | DOS Outcomes | DOS Specialists]
+- **Australian Government**: BuyICT and CPR-compliant sourcing - [BuyICT | panel sourcing | panel sourcing]
 - **Private Sector**: [Competitive tender | Framework | Direct award if justified]
 
 **Rationale**:
@@ -447,13 +447,13 @@ Before analyzing options, define what "success" looks like:
 
 **Key Contract Terms**:
 - Service Level Agreements (SLAs): [Availability %, Response times]
-- Penalties: [£X] per hour downtime beyond SLA
+- Penalties: [A$X] per hour downtime beyond SLA
 - Intellectual Property: [Crown/Client owns IP for bespoke development]
 - Termination: [X] months notice, exit management included
 
 ### C1.4 Social Value
 
-**UK Government Requirement**: Minimum 10% weighting on social value in evaluation.
+**Australian Government Requirement**: Minimum 10% weighting on social value in evaluation.
 
 **Social Value Themes**:
 1. **Economic**: Create jobs in [region], apprenticeships
@@ -471,99 +471,99 @@ Before analyzing options, define what "success" looks like:
 
 ## D1. Budget Requirement
 
-**Total Investment Required**: £[X]M over [Y] years
+**Total Investment Required**: A$[X]M over [Y] years
 
 ### D1.1 Capital Expenditure (CapEx)
 
 | Item | Year 1 | Year 2 | Year 3 | Total |
 |------|--------|--------|--------|-------|
-| Infrastructure (servers, cloud setup) | £[X] | £[X] | £0 | £[X]M |
-| Software licenses (perpetual/3-year) | £[X] | £0 | £0 | £[X]M |
-| Implementation services (vendor) | £[X] | £[X] | £0 | £[X]M |
-| Internal project costs (staff time) | £[X] | £[X] | £0 | £[X]M |
-| Contingency (15%) | £[X] | £[X] | £0 | £[X]M |
-| **Total CapEx** | **£[X]M** | **£[X]M** | **£0** | **£[X]M** |
+| Infrastructure (servers, cloud setup) | A$[X] | A$[X] | A$0 | A$[X]M |
+| Software licenses (perpetual/3-year) | A$[X] | A$0 | A$0 | A$[X]M |
+| Implementation services (vendor) | A$[X] | A$[X] | A$0 | A$[X]M |
+| Internal project costs (staff time) | A$[X] | A$[X] | A$0 | A$[X]M |
+| Contingency (15%) | A$[X] | A$[X] | A$0 | A$[X]M |
+| **Total CapEx** | **A$[X]M** | **A$[X]M** | **A$0** | **A$[X]M** |
 
 ### D1.2 Operational Expenditure (OpEx)
 
 | Item | Year 1 | Year 2 | Year 3 | 3-Year Total |
 |------|--------|--------|--------|--------------|
-| Managed services (cloud, support) | £[X] | £[X] | £[X] | £[X]M |
-| Software subscriptions (SaaS) | £[X] | £[X] | £[X] | £[X]M |
-| Support & maintenance (vendor) | £[X] | £[X] | £[X] | £[X]M |
-| Internal staff costs (reduced headcount) | £[X] | £[X] | £[X] | £[X]M |
-| Training & change management | £[X] | £[X] | £0 | £[X]M |
-| **Total OpEx** | **£[X]M** | **£[X]M** | **£[X]M** | **£[X]M** |
+| Managed services (cloud, support) | A$[X] | A$[X] | A$[X] | A$[X]M |
+| Software subscriptions (SaaS) | A$[X] | A$[X] | A$[X] | A$[X]M |
+| Support & maintenance (vendor) | A$[X] | A$[X] | A$[X] | A$[X]M |
+| Internal staff costs (reduced headcount) | A$[X] | A$[X] | A$[X] | A$[X]M |
+| Training & change management | A$[X] | A$[X] | A$0 | A$[X]M |
+| **Total OpEx** | **A$[X]M** | **A$[X]M** | **A$[X]M** | **A$[X]M** |
 
 ### D1.3 Total Cost of Ownership (TCO)
 
 | | Year 1 | Year 2 | Year 3 | 3-Year Total |
 |---|--------|--------|--------|--------------|
-| CapEx | £[X]M | £[X]M | £0 | £[X]M |
-| OpEx | £[X]M | £[X]M | £[X]M | £[X]M |
-| **Total TCO** | **£[X]M** | **£[X]M** | **£[X]M** | **£[X]M** |
+| CapEx | A$[X]M | A$[X]M | A$0 | A$[X]M |
+| OpEx | A$[X]M | A$[X]M | A$[X]M | A$[X]M |
+| **Total TCO** | **A$[X]M** | **A$[X]M** | **A$[X]M** | **A$[X]M** |
 
 **Notes**:
 - All costs in [current year] prices
 - Excludes VAT (if applicable)
-- Optimism bias NOT YET applied (add 40% for UK Gov)
+- Optimism bias NOT YET applied (add 40% for Australian Government)
 
 ## D2. Funding Source
 
 **Budget Allocation**:
 - **Source**: [IT Capital Budget | Digital Transformation Fund | Spending Review settlement]
-- **Amount Available**: £[X]M
+- **Amount Available**: A$[X]M
 - **Timing**: [Financial years when available]
 
 **Budget Approval Path**:
-1. [Departmental board]: Up to £[X]M
-2. [Finance committee]: £[X]M to £[Y]M
-3. [HM Treasury]: Above £[Y]M (UK Government)
+1. [Departmental board]: Up to A$[X]M
+2. [Finance committee]: A$[X]M to A$[Y]M
+3. [Department of Finance]: Above A$[Y]M (Australian Government)
 
 **Funding Gaps** (if any):
-- Gap: £[X]M in Year [Y]
+- Gap: A$[X]M in Year [Y]
 - **Mitigation**: [Defer non-critical components | Seek additional funds | Phase differently]
 
 ## D3. Affordability
 
 **Organizational Budget Context**:
-- Total IT budget: £[X]M/year
+- Total IT budget: A$[X]M/year
 - This project: [X]% of IT budget
 - Assessment: **Affordable** | **Marginal** | **Not Affordable**
 
 **Cash Flow Impact**:
-- Largest single payment: £[X]M in [Month/Year]
+- Largest single payment: A$[X]M in [Month/Year]
 - **Cashflow Risk**: [Assessment]
 - **Mitigation**: [Payment staging, reserve usage]
 
 **Ongoing Affordability**:
-- Year 3+ OpEx: £[X]M/year
-- Funded by: [Savings from decommissioned systems: £[X]M + Budget increase: £[X]M]
+- Year 3+ OpEx: A$[X]M/year
+- Funded by: [Savings from decommissioned systems: A$[X]M + Budget increase: A$[X]M]
 
 ## D4. Financial Appraisal
 
-### D4.1 Economic Appraisal (UK Government Green Book)
+### D4.1 Economic Appraisal (Australian Government Green Book)
 
-**Discount Rate**: 3.5% (HMT standard social time preference rate)
+**Discount Rate**: 3.5% (Finance standard social time preference rate)
 
 **Net Present Value Calculation**:
 
 | Year | Costs | Benefits | Net Cashflow | Discount Factor | Present Value |
 |------|-------|----------|--------------|-----------------|---------------|
-| 0 | £[X]M | £0 | -£[X]M | 1.000 | -£[X]M |
-| 1 | £[X]M | £[X]M | -£[X]M | 0.966 | -£[X]M |
-| 2 | £[X]M | £[X]M | +£[X]M | 0.934 | +£[X]M |
-| 3 | £[X]M | £[X]M | +£[X]M | 0.902 | +£[X]M |
-| **Total** | **£[X]M** | **£[X]M** | **+£[X]M** | | **£[X]M (NPV)** |
+| 0 | A$[X]M | A$0 | -A$[X]M | 1.000 | -A$[X]M |
+| 1 | A$[X]M | A$[X]M | -A$[X]M | 0.966 | -A$[X]M |
+| 2 | A$[X]M | A$[X]M | +A$[X]M | 0.934 | +A$[X]M |
+| 3 | A$[X]M | A$[X]M | +A$[X]M | 0.902 | +A$[X]M |
+| **Total** | **A$[X]M** | **A$[X]M** | **+A$[X]M** | | **A$[X]M (NPV)** |
 
-**NPV Result**: £[X]M (positive = good investment)
+**NPV Result**: A$[X]M (positive = good investment)
 
 ### D4.2 Return on Investment
 
 **ROI Calculation**:
 ```
 ROI = (Total Benefits - Total Costs) / Total Costs × 100%
-ROI = (£[X]M - £[X]M) / £[X]M × 100% = [X]%
+ROI = (A$[X]M - A$[X]M) / A$[X]M × 100% = [X]%
 ```
 
 **Payback Period**:
@@ -596,7 +596,7 @@ Derived from stakeholder analysis RACI matrix in `ARC-{PROJECT_ID}-STKE-v*.md`:
 | Decision/Activity | Responsible | Accountable | Consulted | Informed |
 |-------------------|-------------|-------------|-----------|----------|
 | Overall programme success | Programme Manager | SRO ([Name, CFO]) | Steering Committee | All stakeholders |
-| Budget approval | Finance Director | SRO | Permanent Secretary (UK Gov) | HMT |
+| Budget approval | Finance Director | SRO | Permanent Secretary (Australian Government) | Finance |
 | Requirements definition | Business Analyst | Product Owner | Stakeholders | Delivery team |
 | Technical design | Solution Architect | CTO | Security, Operations | Developers |
 | Procurement | Commercial Manager | SRO | Finance, Legal | Suppliers |
@@ -689,8 +689,8 @@ Derived from stakeholder analysis RACI matrix in `ARC-{PROJECT_ID}-STKE-v*.md`:
 - [Skill 3: e.g., Legacy System Knowledge] - **Available**: Current staff
 
 **Training Plan**:
-- [Training 1]: For [X] people, £[Y], [Timeline]
-- [Training 2]: For [X] people, £[Y], [Timeline]
+- [Training 1]: For [X] people, A$[Y], [Timeline]
+- [Training 2]: For [X] people, A$[Y], [Timeline]
 
 ## E5. Change Management
 
@@ -737,7 +737,7 @@ Derived from stakeholder analysis RACI matrix in `ARC-{PROJECT_ID}-STKE-v*.md`:
 | End users (180) | Core functionality | 1 day | Online + Classroom | 2 weeks before go-live |
 | Support team (5) | Technical + troubleshooting | 5 days | Hands-on | 2 months before go-live |
 
-**Training Costs**: Included in OpEx (£[X] Year 1)
+**Training Costs**: Included in OpEx (A$[X] Year 1)
 
 ## E6. Benefits Realization
 
@@ -747,12 +747,12 @@ Derived from stakeholder analysis RACI matrix in `ARC-{PROJECT_ID}-STKE-v*.md`:
 
 - **Description**: Reduce infrastructure costs 40% by migrating to cloud and decommissioning legacy systems
 - **Owner**: CFO
-- **Baseline**: £5M/year (current state)
-- **Target**: £3M/year (40% reduction)
+- **Baseline**: A$5M/year (current state)
+- **Target**: A$3M/year (40% reduction)
 - **Measurement**: Monthly cloud spend reports vs baseline
 - **Timeline**: 
-  - Month 6 post-live: 20% reduction (£4M/year)
-  - Month 12 post-live: 40% reduction (£3M/year)
+  - Month 6 post-live: 20% reduction (A$4M/year)
+  - Month 12 post-live: 40% reduction (A$3M/year)
 - **Assumptions**: Legacy systems decommissioned Month 3 post-live
 - **Dependencies**: Successful data migration, no major incidents
 - **Status**: Not yet realized (pre-project)
@@ -777,10 +777,10 @@ Derived from stakeholder analysis RACI matrix in `ARC-{PROJECT_ID}-STKE-v*.md`:
 - **Baseline**: 1 deployment/month, 12/year
 - **Target**: 10 deployments/day, 2400/year (200x increase)
 - **Measurement**: CI/CD pipeline metrics
-- **Value Assumption**: Each additional feature = £10K revenue/month
+- **Value Assumption**: Each additional feature = A$10K revenue/month
 - **Timeline**:
-  - Month 3 post-live: 3x deployment frequency = £200K revenue
-  - Month 12 post-live: 10x deployment frequency = £800K revenue
+  - Month 3 post-live: 3x deployment frequency = A$200K revenue
+  - Month 12 post-live: 10x deployment frequency = A$800K revenue
 - **Status**: Not yet realized (pre-project)
 
 ### E6.2 Benefits Measurement
@@ -807,13 +807,13 @@ Derived from stakeholder analysis RACI matrix in `ARC-{PROJECT_ID}-STKE-v*.md`:
 
 | Risk ID | Risk Description | Stakeholder Impact | Likelihood | Impact | Score | Mitigation | Owner |
 |---------|------------------|-------------------|------------|--------|-------|------------|-------|
-| R-001 | Funding not secured | All stakeholders (project cancelled) | Medium | Critical | 12 | Early HMT engagement, phased spend | SRO |
+| R-001 | Funding not secured | All stakeholders (project cancelled) | Medium | Critical | 12 | Early Finance engagement, phased spend | SRO |
 | R-002 | Vendor implementation fails | Delays, cost overrun | Low | Major | 8 | Strong contract terms, rigorous procurement | Commercial |
 | R-003 | Stakeholder resistance | Adoption failure, benefits not realized | Medium | Major | 12 | Change management programme, early engagement | Change Mgr |
 | R-004 | Integration complexity underestimated | Delays, rework | Medium | Major | 12 | POC critical interfaces upfront, phased integration | Architect |
 | R-005 | Skills gap (cloud expertise) | Poor design, technical debt | High | Moderate | 12 | Training, vendor support, hire contractor | CTO |
 | R-006 | Legacy system dependency | Cannot decommission, savings not realized | Medium | Moderate | 9 | Data migration plan, parallel running period | PM |
-| R-007 | Cyber security incident during migration | Data breach, reputational damage | Low | Critical | 9 | NCSC consultation, penetration testing | CISO |
+| R-007 | Cyber security incident during migration | Data breach, reputational damage | Low | Critical | 9 | ASD/ACSC consultation, penetration testing | CISO |
 | R-008 | Scope creep | Budget overrun, timeline delay | High | Moderate | 12 | Strong change control, fixed MVP scope | PM |
 | R-009 | Key person dependency (SRO leaves) | Governance failure | Low | Major | 8 | Deputy SRO identified, knowledge transfer | SRO |
 | R-010 | Market changes (better solution emerges) | Wrong technology choice | Low | Moderate | 6 | Market watch, flexible procurement | Commercial |
@@ -823,7 +823,7 @@ Derived from stakeholder analysis RACI matrix in `ARC-{PROJECT_ID}-STKE-v*.md`:
 **Risk Appetite**:
 - **Financial Risk**: Low (cannot exceed budget by >10%)
 - **Delivery Risk**: Medium (accept some timeline risk for quality)
-- **Reputational Risk**: Low (UK Gov cannot afford public failure)
+- **Reputational Risk**: Low (Australian Government cannot afford public failure)
 
 ### E7.2 Risk Mitigation Summary
 
@@ -847,9 +847,9 @@ Derived from stakeholder analysis RACI matrix in `ARC-{PROJECT_ID}-STKE-v*.md`:
 
 **Recommended Option**: **Option 2: Balanced Approach**
 
-**Investment**: £[X]M over 3 years
+**Investment**: A$[X]M over 3 years
 
-**Expected Return**: £[X]M over 3 years (NPV: £[X]M, ROI: [X]%)
+**Expected Return**: A$[X]M over 3 years (NPV: A$[X]M, ROI: [X]%)
 
 **Stakeholder Goals Met**: 85%
 
@@ -864,10 +864,10 @@ Derived from stakeholder analysis RACI matrix in `ARC-{PROJECT_ID}-STKE-v*.md`:
 ## F2. Conditions for Approval
 
 **Mandatory Conditions**:
-1. Funding secured: £[X]M confirmed available
+1. Funding secured: A$[X]M confirmed available
 2. SRO appointed and accepted role
 3. Steering Committee established
-4. HM Treasury approval (if threshold exceeded) - UK Gov
+4. Department of Finance approval (if threshold exceeded) - Australian Government
 
 **Recommended Conditions**:
 1. Proof of Concept for critical integration completed successfully
@@ -877,7 +877,7 @@ Derived from stakeholder analysis RACI matrix in `ARC-{PROJECT_ID}-STKE-v*.md`:
 ## F3. Next Steps if Approved
 
 **Immediate Actions** (Month 1):
-1. **Funding Approval**: Finance Director secures £[X]M allocation - **Target: [Date]**
+1. **Funding Approval**: Finance Director secures A$[X]M allocation - **Target: [Date]**
 2. **Team Mobilization**: SRO appoints Project Manager and core team - **Target: [Date]**
 3. **Stakeholder Kickoff**: SRO briefs all stakeholders on approval - **Target: [Date]**
 
@@ -888,7 +888,7 @@ Derived from stakeholder analysis RACI matrix in `ARC-{PROJECT_ID}-STKE-v*.md`:
 
 **Phase 2: Procurement** (Months 2-4):
 1. **SOW Generation**: Run `/arckit.sow` to create RFP - **Target: [Date]**
-2. **Digital Marketplace**: Publish opportunity on Digital Marketplace (UK Gov) - **Target: [Date]**
+2. **BuyICT and CPR-compliant sourcing**: Publish opportunity on BuyICT and CPR-compliant sourcing (Australian Government) - **Target: [Date]**
 3. **Vendor Evaluation**: Score and compare vendors using `/arckit.evaluate` - **Target: [Date]**
 4. **Contract Award**: Award contract to selected vendor - **Target: [Date]**
 
@@ -924,7 +924,7 @@ If this SOBC is not approved:
 
 **Do Nothing Consequences**: If project cancelled:
 - Stakeholder goals not met (0%)
-- Continued overspend: £[X]M over 3 years
+- Continued overspend: A$[X]M over 3 years
 - Compliance risk increases
 - Competitive disadvantage worsens
 
@@ -998,7 +998,7 @@ If this SOBC is not approved:
 | [Name] | Senior Responsible Owner | | |
 | [Name] | Finance Director | | |
 | [Name] | Chief Technology Officer | | |
-| [Name] | Permanent Secretary (UK Gov) | | |
+| [Name] | Permanent Secretary (Australian Government) | | |
 
 **Approval Decision**: **APPROVED** | **APPROVED WITH CONDITIONS** | **REJECTED** | **DEFERRED**
 
@@ -1016,7 +1016,7 @@ If this SOBC is not approved:
 
 *Document created using ArcKit `/arckit.sobc` command*
 *Template version: 1.0*
-*Green Book compliant: Yes (HM Treasury 5-case model)*
+*Green Book compliant: Yes (Department of Finance 5-case model)*
 
 ## External References
 

@@ -142,7 +142,7 @@ The threat landscape requires assuming breach, eliminating implicit trust, and c
 
 **Compliance Frameworks**:
 - [NIST Cybersecurity Framework | ISO 27001 | SOC 2 Type II | CIS Controls]
-- [GDPR | HIPAA | PCI-DSS | FedRAMP] (if applicable)
+- [Privacy Act 1988 / APPs | HIPAA | PCI-DSS | FedRAMP] (if applicable)
 
 **Exceptions**:
 - NONE. Security principles are non-negotiable.
@@ -206,7 +206,7 @@ Data classification, residency, retention, and access controls MUST comply with 
 **Data Residency**:
 - Personal data must reside in jurisdictions compliant with applicable regulations
 - Cross-border data transfers require legal basis (adequacy decisions, standard contractual clauses)
-- Regulatory requirements (GDPR, CCPA, sector-specific) dictate storage locations
+- Regulatory requirements (Privacy Act 1988 / APPs, CCPA, sector-specific) dictate storage locations
 
 **Data Retention**:
 - Automatic deletion after defined retention period

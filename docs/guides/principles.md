@@ -48,6 +48,6 @@ Example snippet:
 
 - Review principles at least annually alongside enterprise strategy.
 - Flag deprecated principles but keep history for audit.
-- Link principles to relevant standards (TCoP, Cyber Essentials, ISO, internal policies).
+- Link principles to relevant standards (Digital Experience Policy, Digital Service Standard, Essential Eight, PSPF/ISM, ISO, internal policies).
 - Keep counts manageable (10–20 core principles plus domain extensions).
 - Use the same IDs in `/arckit.principles-compliance`, design reviews, and vendor contracts.

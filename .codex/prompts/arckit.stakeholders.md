@@ -119,7 +119,7 @@ $ARGUMENTS
    - Acknowledge conflicts honestly
    - Provide practical resolution strategies
    - Include both quantitative and qualitative measures
-   - Consider UK Government context if applicable (Minister accountability, public scrutiny, parliamentary questions, transparency requirements)
+   - Consider Australian Government context if applicable (Minister accountability, public scrutiny, parliamentary questions, transparency requirements)
 
 7. **Write the output**:
    - Write to `projects/{project-dir}/ARC-{PROJECT_ID}-STKE-v1.0.md`
@@ -141,7 +141,7 @@ Before completing the document, populate document information fields:
 - `[DOCUMENT_TYPE_NAME]` → Document purpose
 - `ARC-[PROJECT_ID]-STKE-v[VERSION]` → Generated document ID
 - `[STATUS]` → "DRAFT" for new documents
-- `[CLASSIFICATION]` → Default to "OFFICIAL" (UK Gov) or "PUBLIC"
+- `[CLASSIFICATION]` → Default to "OFFICIAL" (Australian Government) or "PUBLIC"
 
 ### User-provided fields:
 - `[PROJECT_NAME]` → Full project name
@@ -182,7 +182,7 @@ You should:
 - Create project "cloud-migration" (gets number 001)
 - Identify stakeholders: CFO, CTO, Operations Director, CISO, App Owners, End Users
 - Document drivers:
-  - CFO: Reduce datacenter costs by £2M annually (FINANCIAL)
+  - CFO: Reduce datacenter costs by A$2M annually (FINANCIAL)
   - CTO: Modernize tech stack to attract talent (STRATEGIC)
   - Operations: Minimize downtime risk during migration (RISK)
   - CISO: Improve security posture and compliance (COMPLIANCE)
@@ -192,7 +192,7 @@ You should:
   - G-3: Zero unplanned downtime during migration
   - G-4: Achieve ISO 27001 certification
 - Map to outcomes:
-  - O-1: £2M annual cost savings (CFO satisfied)
+  - O-1: A$2M annual cost savings (CFO satisfied)
   - O-2: 50% faster time-to-market for new features (CTO satisfied)
   - O-3: 99.95% uptime maintained (Operations satisfied)
   - O-4: Zero security incidents during migration (CISO satisfied)
@@ -200,12 +200,12 @@ You should:
 - Resolution strategy: Phased approach - start with low-risk apps for quick wins, save critical apps for later when team has experience
 - Write to `projects/001-cloud-migration/ARC-001-STKE-v1.0.md`
 
-**Example 2**: UK Government AI project
+**Example 2**: Australian Government AI project
 ```
 /arckit:stakeholders Analyze stakeholders for a DWP benefits chatbot where the Minister wants quick delivery, Civil Service wants due diligence, Citizens need accuracy, and ICO requires data protection
 ```
 
-You should identify UK Government specific drivers:
+You should identify Australian Government specific drivers:
 - Minister: Deliver manifesto commitment, respond to parliamentary questions (POLITICAL)
 - Permanent Secretary: Ensure proper governance, avoid NAO criticism (RISK/ACCOUNTABILITY)
 - Service Delivery: Reduce call center volume, improve citizen experience (OPERATIONAL)
@@ -214,12 +214,12 @@ You should identify UK Government specific drivers:
 - ICO: Data protection compliance, transparency (REGULATORY)
 - Treasury: Value for money, spending controls (FINANCIAL)
 
-Include UK-specific outcomes like:
+Include Australian Government-specific outcomes like:
 - Ministerial dashboard metrics for parliamentary questions
 - NAO audit readiness
-- GDS service assessment pass rate
-- Technology Code of Practice compliance
-- User satisfaction on GOV.UK
+- Digital Service Standard assessment pass rate
+- Digital Experience Policy compliance
+- User satisfaction on government digital services
 
 ## Important Notes
 
