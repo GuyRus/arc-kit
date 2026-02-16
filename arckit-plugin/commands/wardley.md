@@ -4,7 +4,7 @@ description: "Create strategic Wardley Maps for architecture decisions and build
 
 # ArcKit: Wardley Mapping for Strategic Architecture
 
-You are an expert enterprise architect and Wardley Mapping strategist helping create strategic maps for architecture decisions, build vs buy analysis, vendor evaluation, and UK Government procurement strategy.
+You are an expert enterprise architect and Wardley Mapping strategist helping create strategic maps for architecture decisions, build vs buy analysis, vendor evaluation, and Australian Government procurement strategy.
 
 ## What is Wardley Mapping?
 
@@ -51,8 +51,8 @@ Scan the project directory for existing artifacts and read them to inform this m
 **OPTIONAL** (read if available, skip silently if missing):
 - `ARC-*-DATA-*.md` in `projects/{current_project}/` — Data model
   - Extract: Data components, storage technology, data flow patterns
-- `ARC-*-TCOP-*.md` in `projects/{current_project}/` — TCoP review
-  - Extract: UK Government compliance requirements, reuse opportunities
+- `ARC-*-TCOP-*.md` in `projects/{current_project}/` — DX Policy / Digital Service Standard review
+  - Extract: Australian Government compliance requirements, reuse opportunities
 - `ARC-*-AIGA-*.md` in `projects/{current_project}/` — AU AI governance assessment
   - Extract: AI component risk levels, human oversight requirements
 - Existing maps in `projects/{current_project}/wardley-maps/`
@@ -141,15 +141,15 @@ Based on the user's request, determine which type of Wardley Map to create:
 **Output**: Multiple maps showing each vendor's approach, with strategic analysis
 
 ### Mode E: Procurement Strategy Map
-**Purpose**: Guide UK Government Digital Marketplace procurement strategy
+**Purpose**: Guide Australian Government procurement and sourcing strategy
 
 **When to Use**:
 - Before creating SOW/RFP
-- When deciding procurement routes (G-Cloud, DOS Outcomes, DOS Specialists)
+- When deciding procurement routes (BuyICT, panel sourcing, panel sourcing)
 - For build vs buy decisions at component level
 - When identifying reuse opportunities
 
-**Output**: Map with components color-coded by procurement strategy (build, G-Cloud, DOS, reuse GOV.UK services)
+**Output**: Map with components color-coded by procurement strategy (build, BuyICT, DOS, reuse existing government services)
 
 ## Step 3: Create the Wardley Map
 
@@ -171,7 +171,7 @@ From requirements and architecture context, identify components and classify by:
 
 ### Example Component Classification
 
-**Example: Benefits Eligibility Chatbot (UK Government)**
+**Example: Benefits Eligibility Assistant (Australian Government)**
 
 ```
 User Need: "Check benefits eligibility" [0.95, 0.20] (Genesis - novel user need)
@@ -179,8 +179,8 @@ Capability: "Conversational AI" [0.85, 0.35] (Custom - emerging capability)
 Component: "GPT-4 Integration" [0.68, 0.72] (Product - commercial LLM)
 Component: "Human Review Queue" [0.65, 0.45] (Custom - bespoke workflow)
 Component: "Benefits Rules Engine" [0.55, 0.42] (Custom - domain-specific)
-Component: "GOV.UK Notify" [0.45, 0.92] (Commodity - government utility)
-Component: "Authentication (GOV.UK Verify)" [0.38, 0.68] (Product - government product)
+Component: "government digital services Notify" [0.45, 0.92] (Commodity - government utility)
+Component: "Authentication (government digital services Verify)" [0.38, 0.68] (Product - government product)
 Component: "Cloud Hosting (AWS)" [0.22, 0.95] (Commodity - cloud utility)
 Component: "Database (RDS)" [0.18, 0.92] (Commodity - cloud utility)
 ```
@@ -252,43 +252,43 @@ To deepen strategic analysis beyond build vs buy, read and apply these reference
 
 Include a **Doctrine Assessment Summary**, **Applicable Gameplay Patterns**, and **Climatic Pattern Analysis** section in the output document.
 
-## Step 4: UK Government Specific Analysis (if applicable)
+## Step 4: Australian Government Specific Analysis (if applicable)
 
-If this is a UK Government project, add:
+If this is a Australian Government project, add:
 
-### GOV.UK Services Mapping
+### government digital services Services Mapping
 
-Map reusable GOV.UK services as commodity/product components:
+Map reusable government digital services services as commodity/product components:
 
 ```wardley
-component GOV.UK Notify [0.45, 0.92]
-component GOV.UK Pay [0.42, 0.90]
-component GOV.UK Design System [0.72, 0.75]
-component GOV.UK PaaS [0.28, 0.85]
-component GOV.UK Verify [0.38, 0.68]
+component government digital services Notify [0.45, 0.92]
+component government digital services Pay [0.42, 0.90]
+component government digital services Design System [0.72, 0.75]
+component government digital services PaaS [0.28, 0.85]
+component government digital services Verify [0.38, 0.68]
 ```
 
-**Strategic Recommendation**: Always use GOV.UK services where available (avoid building custom alternatives)
+**Strategic Recommendation**: Always use government digital services services where available (avoid building custom alternatives)
 
-### Digital Marketplace Procurement Strategy
+### BuyICT and CPR-compliant sourcing Procurement Strategy
 
 For each component, recommend procurement route:
 
 | Component | Evolution | Procurement Route | Framework |
 |-----------|-----------|-------------------|-----------|
-| Genesis (< 0.25) | Build in-house OR DOS Outcomes (discovery + build) | DOS Outcomes |
-| Custom (0.25-0.50) | DOS Outcomes (if strategic) OR G-Cloud (if product exists) | DOS Outcomes / G-Cloud |
-| Product (0.50-0.75) | G-Cloud (commercial products) | G-Cloud |
-| Commodity (> 0.75) | G-Cloud (cloud services: AWS, Azure, GCP) | G-Cloud |
+| Genesis (< 0.25) | Build in-house OR panel sourcing (discovery + build) | panel sourcing |
+| Custom (0.25-0.50) | panel sourcing (if strategic) OR BuyICT (if product exists) | panel sourcing / BuyICT |
+| Product (0.50-0.75) | BuyICT (commercial products) | BuyICT |
+| Commodity (> 0.75) | BuyICT (cloud services: AWS, Azure, GCP) | BuyICT |
 
-### Technology Code of Practice Mapping
+### Digital Experience Policy Mapping
 
-Map components to TCoP points:
+Map components to DX Policy / Digital Service Standard points:
 
 - **Point 3 (Open Source)**: Annotate components that should use open source
 - **Point 5 (Cloud First)**: Highlight commodity cloud services
-- **Point 8 (Share/Reuse)**: Identify GOV.UK services and cross-government reuse
-- **Point 11 (Purchasing)**: Link to Digital Marketplace procurement strategy
+- **Point 8 (Share/Reuse)**: Identify government digital services services and cross-government reuse
+- **Point 11 (Purchasing)**: Link to BuyICT and CPR-compliant sourcing procurement strategy
 
 ### AU AI governance assessment Compliance (for AI systems)
 
@@ -347,7 +347,7 @@ DOC_ID=$(.arckit/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "WARD" "${
 *User-provided fields* (extract from project metadata or user input):
 - `[PROJECT_NAME]` → Full project name from project metadata or user input
 - `[OWNER_NAME_AND_ROLE]` → Document owner (prompt user if not in metadata)
-- `[CLASSIFICATION]` → Default to "OFFICIAL" for UK Gov, "PUBLIC" otherwise (or prompt user)
+- `[CLASSIFICATION]` → Default to "OFFICIAL" for Australian Government, "PUBLIC" otherwise (or prompt user)
 
 *Calculated fields*:
 - `[YYYY-MM-DD]` for Review Date → Current date + 30 days
@@ -407,10 +407,10 @@ The Wardley Map document must include:
    - Evolution velocity (12-month, 24-month predictions)
    - Strategic implications
 
-8. **UK Government Context** (if applicable):
-   - GOV.UK services mapping
-   - Digital Marketplace procurement strategy
-   - TCoP compliance mapping
+8. **Australian Government Context** (if applicable):
+   - government digital services services mapping
+   - BuyICT and CPR-compliant sourcing procurement strategy
+   - DX Policy / Digital Service Standard compliance mapping
 
 9. **Dependencies and Value Chain**:
    - Component dependency tree
@@ -428,7 +428,7 @@ The Wardley Map document must include:
 12. **Traceability**:
     - Link to requirements (BR-001, FR-001, etc.)
     - Link to architecture principles
-    - Link to UK Government assessments (TCoP, AU AI governance assessment, AITS)
+    - Link to Australian Government assessments (DX Policy / Digital Service Standard, AU AI governance assessment, AITS)
 
 ## Step 6: Integration with ArcKit Workflow
 
@@ -453,8 +453,8 @@ Recommend next steps based on map insights:
 # If map shows build vs buy decisions needed
 "Your map identifies several build vs buy decisions. Consider running `/arckit:evaluate` to compare vendor options."
 
-# If map shows UK Government project
-"As a UK Government project, I recommend running `/arckit:tcop` to assess Technology Code of Practice compliance."
+# If map shows Australian Government project
+"As a Australian Government project, I recommend running `/arckit:tcop` to assess Digital Experience Policy compliance."
 
 # If map shows AI components with HIGH-RISK
 "Your map includes HIGH-RISK AI components. I recommend running `/arckit:ai-playbook` and `/arckit:atrs`."
@@ -479,18 +479,18 @@ The `/arckit:analyze` command should include Wardley Map validation:
 - ✅ Components correctly positioned by evolution stage
 - ✅ Build decisions align with Genesis/Custom stage
 - ✅ Buy decisions align with Product/Commodity stage
-- ✅ GOV.UK services used where available (UK Government projects)
+- ✅ government digital services services used where available (Australian Government projects)
 - ⚠️ High-risk: Building commodity components (waste of investment)
 - ⚠️ High-risk: Buying for Genesis needs (no market solutions exist)
 
-## Example: UK Government Benefits Chatbot
+## Example: Australian Government Benefits Chatbot
 
 **User Request**: "Create a Wardley Map for the DWP Benefits Eligibility Chatbot showing current state and procurement strategy"
 
 **Context**:
 - HIGH-RISK AI system (affects access to benefits)
-- Must comply with TCoP, AU AI governance assessment, AITS
-- Procurement via G-Cloud Digital Marketplace
+- Must comply with DX Policy / Digital Service Standard, AU AI governance assessment, AITS
+- Procurement via BuyICT BuyICT and CPR-compliant sourcing
 - Uses GPT-4 (commercial LLM product)
 - Needs human-in-the-loop review
 
@@ -501,9 +501,9 @@ title DWP Benefits Eligibility Chatbot - Procurement Strategy
 
 anchor Citizen [0.95, 0.63]
 annotation 1 [0.35, 0.25] HIGH-RISK AI - Human oversight mandatory
-annotation 2 [0.85, 0.92] Use GOV.UK services - don't build
+annotation 2 [0.85, 0.92] Use government digital services services - don't build
 annotation 3 [0.48, 0.45] Build custom - competitive advantage
-note G-Cloud procurement for commodity/product components [0.75, 0.15]
+note BuyICT procurement for commodity/product components [0.75, 0.15]
 
 component Citizen [0.95, 0.20]
 component Benefits Eligibility Guidance [0.92, 0.25]
@@ -512,8 +512,8 @@ component Human Review Queue [0.82, 0.45]
 component GPT-4 LLM Service [0.68, 0.72]
 component Benefits Rules Engine [0.65, 0.42]
 component Bias Testing Framework [0.62, 0.35]
-component GOV.UK Notify [0.55, 0.92]
-component GOV.UK Design System [0.72, 0.75]
+component government digital services Notify [0.55, 0.92]
+component government digital services Design System [0.72, 0.75]
 component Authentication [0.48, 0.68]
 component DWP Benefits Database [0.45, 0.52]
 component Cloud Hosting AWS [0.28, 0.95]
@@ -524,8 +524,8 @@ Benefits Eligibility Guidance -> Conversational Interface
 Benefits Eligibility Guidance -> Human Review Queue
 Conversational Interface -> GPT-4 LLM Service
 Conversational Interface -> Benefits Rules Engine
-Human Review Queue -> GOV.UK Notify
-Conversational Interface -> GOV.UK Design System
+Human Review Queue -> government digital services Notify
+Conversational Interface -> government digital services Design System
 Conversational Interface -> Authentication
 Benefits Rules Engine -> DWP Benefits Database
 Benefits Rules Engine -> Bias Testing Framework
@@ -550,22 +550,22 @@ style wardley
 - ✅ Benefits Rules Engine (0.42 - Custom): Domain-specific, strategic IP
 - ✅ Bias Testing Framework (0.35 - Custom): HIGH-RISK AI requirement
 
-**Buy - Product** (G-Cloud):
+**Buy - Product** (BuyICT):
 - ✅ GPT-4 LLM Service (0.72 - Product): Commercial LLM via Azure/AWS
-- ✅ Authentication (0.68 - Product): Use Auth0 or GOV.UK Verify
+- ✅ Authentication (0.68 - Product): Use Auth0 or government digital services Verify
 
-**Buy - Commodity** (G-Cloud):
-- ✅ Cloud Hosting AWS (0.95 - Commodity): G-Cloud AWS
+**Buy - Commodity** (BuyICT):
+- ✅ Cloud Hosting AWS (0.95 - Commodity): BuyICT AWS
 - ✅ PostgreSQL RDS (0.92 - Commodity): AWS managed database
 
-**Reuse** (GOV.UK Services):
-- ✅ GOV.UK Notify (0.92 - Commodity): Email/SMS notifications
-- ✅ GOV.UK Design System (0.75 - Product): Frontend components, accessibility
+**Reuse** (government digital services Services):
+- ✅ government digital services Notify (0.92 - Commodity): Email/SMS notifications
+- ✅ government digital services Design System (0.75 - Product): Frontend components, accessibility
 
 **Procurement Strategy**:
-- G-Cloud for: AWS hosting, GPT-4 (via Azure OpenAI), Auth0
+- BuyICT for: AWS hosting, GPT-4 (via Azure OpenAI), Auth0
 - Build in-house: Conversational interface, rules engine, human review queue
-- Reuse GOV.UK: Notify, Design System (already available)
+- Reuse government digital services: Notify, Design System (already available)
 
 **HIGH-RISK AI Requirements**:
 - Human Review Queue (Custom, 0.45): Mandatory human-in-the-loop
@@ -574,10 +574,10 @@ style wardley
 - DPIA + EqIA: Mandatory for HIGH-RISK AI
 
 **Next Steps**:
-1. Run `/arckit:sow` to create RFP for G-Cloud procurement (AWS, GPT-4, Auth0)
+1. Run `/arckit:sow` to create RFP for BuyICT procurement (AWS, GPT-4, Auth0)
 2. Run `/arckit:ai-playbook` to complete AU AI governance assessment
 3. Run `/arckit:atrs` to generate AI transparency statement
-4. Run `/arckit:tcop` to validate TCoP compliance (Cloud First, Open Standards, Reuse)
+4. Run `/arckit:tcop` to validate DX Policy / Digital Service Standard compliance (Cloud First, Open Standards, Reuse)
 
 ## Important Notes
 
@@ -615,10 +615,10 @@ style wardley
    - ❌ Building commodity components (e.g., custom auth instead of Auth0)
    - ❌ Buying for Genesis needs (no market solutions exist yet)
 
-5. **UK Government Specific Mistakes**:
-   - ❌ Building custom notification service instead of GOV.UK Notify
-   - ❌ Not using GOV.UK Design System (accessibility, consistency)
-   - ❌ Wrong Digital Marketplace framework for evolution stage
+5. **Australian Government Specific Mistakes**:
+   - ❌ Building custom notification service instead of government digital services Notify
+   - ❌ Not using government digital services Design System (accessibility, consistency)
+   - ❌ Wrong BuyICT and CPR-compliant sourcing framework for evolution stage
 
 6. **AI Project Mistakes**:
    - ❌ Not mapping human-in-the-loop as mandatory component
@@ -657,7 +657,7 @@ The document must be:
 - ✅ Actionable (clear build/buy/rent decisions)
 - ✅ Traceable (linked to requirements and principles)
 - ✅ Strategic (evolution predictions and gameplay)
-- ✅ Compliant (UK Government TCoP, AU AI governance assessment if applicable)
+- ✅ Compliant (Australian Government DX Policy / Digital Service Standard, AU AI governance assessment if applicable)
 
 After creating the map, provide a summary to the user:
 
@@ -678,7 +678,7 @@ After creating the map, provide a summary to the user:
 💡 Build vs Buy Recommendations:
 - BUILD: {components} (Genesis/Custom with competitive advantage)
 - BUY: {components} (Product/Commodity with mature market)
-- REUSE: {components} (GOV.UK services)
+- REUSE: {components} (government digital services services)
 
 ⚠️ High-Risk Areas:
 - {risk_1}
@@ -691,7 +691,7 @@ After creating the map, provide a summary to the user:
 
 🔗 Recommended Commands:
 - /arckit:sow - Generate RFP for vendor procurement
-- /arckit:tcop - Assess Technology Code of Practice compliance
+- /arckit:tcop - Assess Digital Experience Policy compliance
 - /arckit:ai-playbook - Assess AU AI governance compliance (if AI components)
 ```
 

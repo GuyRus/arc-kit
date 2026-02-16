@@ -377,7 +377,7 @@
 
 #### NFR-C-1: Data Privacy Compliance
 
-**Applicable Regulations**: [GDPR | CCPA | HIPAA | PCI-DSS | SOX | FedRAMP]
+**Applicable Regulations**: [Privacy Act 1988 / APPs | State/Territory privacy law | HIPAA (if applicable) | PCI-DSS (if applicable) | SOX (if applicable)]
 
 **Compliance Requirements**:
 - [ ] Data subject rights (access, deletion, portability)

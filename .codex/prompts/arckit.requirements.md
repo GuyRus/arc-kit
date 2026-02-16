@@ -204,7 +204,7 @@ DOC_ID=$(.arckit/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "REQ" "${V
 **User-provided fields** (extract from project metadata or user input):
 - `[PROJECT_NAME]` → Full project name from project metadata or user input
 - `[OWNER_NAME_AND_ROLE]` → Document owner (prompt user if not in metadata)
-- `[CLASSIFICATION]` → Default to "OFFICIAL" for UK Gov, "PUBLIC" otherwise (or prompt user)
+- `[CLASSIFICATION]` → Default to "OFFICIAL" for Australian Government, "PUBLIC" otherwise (or prompt user)
 
 **Calculated fields**:
 - `[YYYY-MM-DD]` for Review Date → Current date + 30 days (requirements, research, risks)
@@ -291,7 +291,7 @@ The footer should be populated with:
    - [Which stakeholders won/lost in conflicts]
 
    **Compliance Requirements**:
-   - [List key compliance frameworks: PCI-DSS, GDPR, HIPAA, etc.]
+   - [List key compliance frameworks: PCI-DSS, Privacy Act 1988 / APPs, HIPAA, etc.]
 
    **Key Gaps/TBDs**:
    - [List any major gaps that need follow-up]
@@ -301,7 +301,7 @@ The footer should be populated with:
    - Business Requirements with measurable success criteria
    - Functional Requirements organized by user journey
    - Non-Functional Requirements with specific targets
-   - Data Requirements with GDPR considerations
+   - Data Requirements with Privacy Act 1988 / APPs considerations
    - Integration Requirements with third-party systems
    - Acceptance Criteria for each requirement
    - Requirements Traceability Matrix
@@ -336,4 +336,4 @@ You should:
 - Be specific and measurable (avoid "fast", use "<2 seconds")
 - Include WHY (rationale) not just WHAT
 - Make acceptance criteria testable
-- Flag compliance requirements clearly (PCI-DSS, HIPAA, SOX, GDPR, etc.)
+- Flag compliance requirements clearly (PCI-DSS, HIPAA, SOX, Privacy Act 1988 / APPs, etc.)

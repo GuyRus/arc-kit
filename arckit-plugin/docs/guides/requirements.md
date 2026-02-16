@@ -44,7 +44,7 @@ For public sector projects, MoSCoW priorities are automatically assigned.
 
 - Every requirement includes acceptance criteria and traceability references (stakeholder IDs, risks, principles).
 - Conflicts and dependencies are called out (e.g. BR vs NFR tension).
-- Regulatory obligations (TCoP, GDPR, WCAG, PCI-DSS) are captured explicitly.
+- Regulatory obligations (Privacy Act/APP, Digital Experience Policy, Digital Service Standard, WCAG, sector-specific obligations) are captured explicitly.
 - Integration requirements specify protocols, authentication, and error handling.
 - Data requirements include lawful basis and retention aligned with DPIA outputs.
 

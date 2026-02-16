@@ -11,7 +11,7 @@
 | Scenario | Prompt seed | Focus |
 |---------|-------------|-------|
 | Build vs buy | “Research options for <capability> and recommend build vs buy” | Compares custom development vs product |
-| Supplier shortlist | “Research G-Cloud services for <need> including pricing tiers” | Public sector supplier discovery |
+| Supplier shortlist | “Research BuyICT/panel services for <need> including pricing tiers” | Public sector supplier discovery |
 | Standards review | “Research regulatory obligations for <domain>” | Highlights policies, certifications, compliance |
 | Migration | “Research tooling to migrate from <legacy> to <target>” | Guides modernisation approaches |
 | Risk investigation | “Research security/operational risks for <technology>” | Informs risk register and mitigations |

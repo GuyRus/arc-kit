@@ -1,6 +1,6 @@
 # Data Model Quick Guide
 
-`/arckit.data-model` transforms Data Requirements (DR-xxx) into an ERD, governance catalogue, and GDPR compliance pack.
+`/arckit.data-model` transforms Data Requirements (DR-xxx) into an ERD, governance catalogue, and Privacy Act 1988 / APPs compliance pack.
 
 ---
 
@@ -30,7 +30,7 @@ Output: `projects/<id>/ARC-<id>-DATA-v1.0.md`
 |---------|------------|-------------|
 | Mermaid ERD | Normalised entity diagram ready for mermaid.live | Share with architects for validation |
 | Entity catalogue | Attributes, data types, keys, derived fields | Flag unknown data types for modelling session |
-| GDPR pack | PII inventory, legal basis, retention, data subject rights | Review with DPO; schedule DPIA if high risk |
+| Privacy/APP pack | PII inventory, legal basis, retention, data subject rights | Review with DPO; schedule DPIA if high risk |
 | Governance matrix | Owner, steward, custodian, classification | Update RACI and onboarding materials |
 | CRUD & integrations | Component ↔ entity access + upstream/downstream feeds | Align with API contracts and ETL plans |
 | Data quality | KPIs, controls, monitoring cadence | Feed into ServiceNow service design |

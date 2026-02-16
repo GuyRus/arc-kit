@@ -137,4 +137,4 @@ Visualize at: https://create.wardleymaps.ai
 
 For casual Wardley Mapping questions — evolution stage lookups, doctrine assessments, build vs. buy guidance, or interactive map creation — just ask naturally. The **wardley-mapping** skill activates automatically for conversational queries without generating formal documents.
 
-Use `/arckit:wardley` when you need a **formal architecture artifact** with document control, project integration, and UK Government compliance.
+Use `/arckit:wardley` when you need a **formal architecture artifact** with document control, project integration, and Australian Government compliance and sourcing context.

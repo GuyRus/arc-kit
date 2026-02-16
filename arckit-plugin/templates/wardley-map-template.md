@@ -148,7 +148,7 @@ style wardley
 - [ ] Use commodity/utility services (cloud, SaaS)
 - [ ] Focus on cost efficiency, not features
 - [ ] Avoid custom development at all costs
-- [ ] Use Digital Marketplace (G-Cloud) if UK Government
+- [ ] Use BuyICT and CPR-compliant sourcing (BuyICT) if Australian Government
 - [ ] Automate procurement and provisioning
 
 ---
@@ -177,7 +177,7 @@ style wardley
 
 | Component | Evolution Stage | Market Options | Rationale | Procurement Route |
 |-----------|----------------|----------------|-----------|-------------------|
-| {Component} | Product/Commodity | {vendor_names} | {rationale} | {RFP/G-Cloud/Direct} |
+| {Component} | Product/Commodity | {vendor_names} | {rationale} | {RFP/BuyICT/Direct} |
 
 **Buy Criteria**:
 - ✅ Product/Commodity stage (> 0.50 evolution)
@@ -193,7 +193,7 @@ style wardley
 
 | Component | Evolution Stage | Provider | Rationale | Procurement Route |
 |-----------|----------------|----------|-----------|-------------------|
-| {Component} | Commodity | {provider_name} | {rationale} | {G-Cloud/Direct} |
+| {Component} | Commodity | {provider_name} | {rationale} | {BuyICT/Direct} |
 
 **Rent Criteria**:
 - ✅ Commodity stage (> 0.75 evolution)
@@ -255,44 +255,44 @@ style wardley
 
 ---
 
-## UK Government Context (if applicable)
+## Australian Government Context (if applicable)
 
-### GOV.UK Services and Platforms
+### Government Services and Platforms
 
-**Mapped GOV.UK Components**:
+**Mapped Government Service Components**:
 
-| GOV.UK Service | Evolution Stage | Current Usage | Rationale for Evolution Position |
+| government digital services Service | Evolution Stage | Current Usage | Rationale for Evolution Position |
 |----------------|----------------|---------------|----------------------------------|
-| GOV.UK Pay | Commodity (0.90) | {usage_status} | {rationale} |
-| GOV.UK Notify | Commodity (0.92) | {usage_status} | {rationale} |
-| GOV.UK Design System | Product (0.75) | {usage_status} | {rationale} |
-| GOV.UK PaaS | Commodity (0.85) | {usage_status} | {rationale} |
-| GOV.UK Verify | Product (0.68) | {usage_status} | {rationale} |
+| government digital services Pay | Commodity (0.90) | {usage_status} | {rationale} |
+| government digital services Notify | Commodity (0.92) | {usage_status} | {rationale} |
+| government digital services Design System | Product (0.75) | {usage_status} | {rationale} |
+| government digital services PaaS | Commodity (0.85) | {usage_status} | {rationale} |
+| government digital services Verify | Product (0.68) | {usage_status} | {rationale} |
 | {Custom Service} | {stage} | {usage_status} | {rationale} |
 
 **Reuse Opportunities**:
-- [ ] GOV.UK Pay for payment processing (avoid building custom)
-- [ ] GOV.UK Notify for notifications (SMS, email)
-- [ ] GOV.UK Design System for frontend (accessibility compliance)
-- [ ] GOV.UK PaaS for hosting (cloud-first compliance)
+- [ ] government digital services Pay for payment processing (avoid building custom)
+- [ ] government digital services Notify for notifications (SMS, email)
+- [ ] government digital services Design System for frontend (accessibility compliance)
+- [ ] government digital services PaaS for hosting (cloud-first compliance)
 - [ ] Cross-government shared components
 
-### Digital Marketplace Procurement Strategy
+### BuyICT and CPR-compliant sourcing Procurement Strategy
 
-**Components to Procure via Digital Marketplace**:
+**Components to Procure via BuyICT and CPR-compliant sourcing**:
 
 | Component | Evolution Stage | Framework | Rationale |
 |-----------|----------------|-----------|-----------|
-| {Component} | Product/Commodity | G-Cloud / DOS | {rationale} |
+| {Component} | Product/Commodity | BuyICT / DOS | {rationale} |
 
 **Procurement Recommendations**:
-- **Genesis/Custom** (< 0.50): Consider DOS Outcomes for discovery + build
-- **Product** (0.50-0.75): G-Cloud for commercial off-the-shelf products
-- **Commodity** (> 0.75): G-Cloud for cloud services (AWS, Azure, GCP)
+- **Genesis/Custom** (< 0.50): Consider panel sourcing for discovery + build
+- **Product** (0.50-0.75): BuyICT for commercial off-the-shelf products
+- **Commodity** (> 0.75): BuyICT for cloud services (AWS, Azure, GCP)
 
-### Technology Code of Practice Mapping
+### Digital Experience Policy Mapping
 
-| TCoP Point | Related Components | Compliance Status | Gap Analysis |
+| DX Policy / Digital Service Standard Point | Related Components | Compliance Status | Gap Analysis |
 |------------|-------------------|-------------------|--------------|
 | 1. User Needs | {components} | {status} | {gaps} |
 | 2. Accessibility | {components} | {status} | {gaps} |
@@ -327,7 +327,7 @@ flowchart TD
     C1 --> CA[Component A<br/>Genesis - Build]
     C1 --> CB[Component B<br/>Custom - Build]
     C1 --> CC[Component C<br/>Commodity - Buy]
-    CC --> CP[Cloud Provider<br/>Commodity - G-Cloud]
+    CC --> CP[Cloud Provider<br/>Commodity - BuyICT]
 
     style UN fill:#FFE4B5
     style CA fill:#E8F5E9
@@ -506,8 +506,8 @@ A Wardley Map is a visual representation of:
 
 - **Wardley Mapping**: https://learnwardleymapping.com/
 - **Create Maps**: https://create.wardleymaps.ai
-- **UK Government Digital Marketplace**: https://www.digitalmarketplace.service.gov.uk/
-- **Technology Code of Practice**: https://www.gov.uk/guidance/the-technology-code-of-practice
+- **Australian Government BuyICT and CPR-compliant sourcing**: https://www.digitalmarketplace.service.digital.gov.au/
+- **Digital Experience Policy**: https://www.digital.gov.au/guidance/the-technology-code-of-practice
 
 ## External References
 

@@ -1,5 +1,5 @@
 ---
-description: Create comprehensive data model with entity relationships, GDPR compliance, and data governance
+description: "Create comprehensive data model with entity relationships, Privacy Act 1988 / APPs compliance, and data governance"
 ---
 
 You are helping an enterprise architect create a comprehensive data model for a project that will guide database design, API specifications, and compliance requirements.
@@ -34,7 +34,7 @@ $ARGUMENTS
      - Extract: Database technology recommendations, data platform choices
 
    **What to extract from each document**:
-   - **Requirements**: DR-xxx for entity identification, NFR-SEC for privacy/GDPR, INT-xxx for data exchange
+   - **Requirements**: DR-xxx for entity identification, NFR-SEC for privacy/Privacy Act 1988 / APPs, INT-xxx for data exchange
    - **Stakeholders**: Data owners, governance roles, RACI for data stewardship
    - **Principles**: Data governance standards, classification policies
 
@@ -66,15 +66,15 @@ $ARGUMENTS
 4. **Read the template** (with user override support):
    - **First**, check if `.arckit/templates/data-model-template.md` exists in the project root
    - **If found**: Read the user's customized template (user override takes precedence)
-   - **If not found**: Read `${CLAUDE_PLUGIN_ROOT}/templates/data-model-template.md` (default)
+   - **If not found**: Read `.arckit/templates/data-model-template.md` (default)
 
-   > **Note**: Read the `${CLAUDE_PLUGIN_ROOT}/VERSION` file and update the version in the template metadata line when generating.
+   > **Note**: Read the `.arckit/VERSION` file and update the version in the template metadata line when generating.
    > **Tip**: Users can customize templates with `/arckit:customize data-model`
 
 5. **Extract data requirements**:
    - Read the project's requirements document (`ARC-*-REQ-*.md`)
    - Extract ALL Data Requirements (DR-xxx)
-   - Also look for privacy/GDPR requirements in NFR section
+   - Also look for privacy/Privacy Act 1988 / APPs requirements in NFR section
    - Identify integration requirements (INT-xxx) that involve data exchange
    - Note any data-related business requirements (BR-xxx)
 
@@ -84,7 +84,7 @@ $ARGUMENTS
    - Total number of entities identified
    - Data classification summary (Public, Internal, Confidential, Restricted)
    - PII/sensitive data identified (Yes/No)
-   - GDPR/DPA 2018 compliance status
+   - Privacy Act 1988 / APPs/Privacy Act 1988 compliance status
    - Key data governance stakeholders
 
    **B. Visual Entity-Relationship Diagram (ERD)**:
@@ -105,7 +105,7 @@ $ARGUMENTS
      - **Technical Owner**: Data steward or database team
      - **Data Classification**: Public/Internal/Confidential/Restricted
      - **Estimated Volume**: Initial records + growth rate
-     - **Retention Period**: How long data is kept (GDPR requirement)
+     - **Retention Period**: How long data is kept (Privacy Act 1988 / APPs requirement)
      - **Attributes Table**:
        ```
        | Attribute | Type | Required | PII | Description | Validation | Source Req |
@@ -115,7 +115,7 @@ $ARGUMENTS
        ```
      - **Relationships**: What other entities this connects to
      - **Indexes**: Primary key, foreign keys, performance indexes
-     - **Privacy Notes**: GDPR considerations, data subject rights
+     - **Privacy Notes**: Privacy Act 1988 / APPs considerations, data subject rights
 
    **D. Data Governance Matrix**:
    - For each entity, identify:
@@ -124,7 +124,7 @@ $ARGUMENTS
      - **Data Custodian**: Technical team managing storage/backups
      - **Access Control**: Who can view/modify (roles/permissions)
      - **Sensitivity**: Public, Internal, Confidential, Restricted
-     - **Compliance**: GDPR, PCI-DSS, HIPAA, etc.
+     - **Compliance**: Privacy Act 1988 / APPs, PCI-DSS, HIPAA, etc.
      - **Quality SLA**: Accuracy, completeness, timeliness targets
 
    **E. CRUD Matrix** (Create, Read, Update, Delete):
@@ -146,12 +146,12 @@ $ARGUMENTS
    - **Master Data Management**: Which system is "source of truth" for each entity
 
    **G. Privacy & Compliance**:
-   - **GDPR/DPA 2018 Compliance**:
+   - **Privacy Act 1988 / APPs/Privacy Act 1988 Compliance**:
      - List all PII attributes across all entities
      - Document legal basis for processing (consent, contract, legitimate interest, etc.)
      - Data subject rights implementation (access, rectification, erasure, portability)
      - Data retention schedules per entity
-     - Cross-border data transfer considerations (UK-EU adequacy)
+     - Cross-border data transfer considerations (AU and international transfer mechanisms)
    - **Data Protection Impact Assessment (DPIA)**:
      - Is DPIA required? (Yes if high-risk processing of PII)
      - Key privacy risks identified
@@ -160,7 +160,7 @@ $ARGUMENTS
    - **Sector-Specific Compliance**:
      - PCI-DSS: If payment card data (special handling requirements)
      - HIPAA: If healthcare data (US projects)
-     - FCA regulations: If financial services (UK)
+     - APRA/ASIC regulations: If financial services (AU)
      - Government Security Classifications: If public sector (OFFICIAL, SECRET)
 
    **H. Data Quality Framework**:
@@ -199,12 +199,12 @@ $ARGUMENTS
    - **Data Archival**: When to move data from hot to cold storage
    - **Testing Data**: Anonymization/pseudonymization for test environments
 
-7. **UK Government Compliance** (if applicable):
+7. **Australian Government Compliance** (if applicable):
    - **Government Security Classifications**: OFFICIAL, SECRET, TOP SECRET
-   - **Data Standards**: Use GDS Data Standards Catalogue where applicable
+   - **Data Standards**: Use DTA Data Standards Catalogue where applicable
    - **Open Standards**: Preference for open data formats (JSON, CSV, OData)
    - **ICO Data Protection**: Reference ICO guidance for public sector
-   - **National Cyber Security Centre (NCSC)**: Data security patterns
+   - **National Cyber Security Centre (ASD/ACSC)**: Data security patterns
 
 8. **Write the output**:
    - Write to `projects/{project-dir}/ARC-{PROJECT_ID}-DATA-v1.0.md`
@@ -227,7 +227,7 @@ Before completing the document, populate document information fields:
 - `[DOCUMENT_TYPE_NAME]` → Document purpose
 - `ARC-[PROJECT_ID]-DATA-v[VERSION]` → Generated document ID
 - `[STATUS]` → "DRAFT" for new documents
-- `[CLASSIFICATION]` → Default to "OFFICIAL" (UK Gov) or "PUBLIC"
+- `[CLASSIFICATION]` → Default to "OFFICIAL" (Australian Government) or "PUBLIC"
 
 ### User-provided fields:
 - `[PROJECT_NAME]` → Full project name
@@ -242,7 +242,7 @@ Before completing the document, populate document information fields:
 ```markdown
 **Generated by**: ArcKit `/arckit:data-model` command
 **Generated on**: {DATE}
-**ArcKit Version**: [Read from ${CLAUDE_PLUGIN_ROOT}/VERSION]
+**ArcKit Version**: [Read from .arckit/VERSION]
 **Project**: {PROJECT_NAME} (Project {PROJECT_ID})
 **AI Model**: [Actual model name]
 ```
@@ -253,7 +253,7 @@ Before completing the document, populate document information fields:
    - How many total attributes across all entities
    - How many entities contain PII (privacy-sensitive)
    - Data classification breakdown (Public/Internal/Confidential/Restricted)
-   - GDPR compliance status (compliant / needs DPIA / gaps identified)
+   - Privacy Act 1988 / APPs compliance status (compliant / needs DPIA / gaps identified)
    - Key data governance stakeholders identified
    - Requirements coverage (% of DR-xxx requirements modeled)
    - Suggested next steps (e.g., "Review data model with data protection officer before proceeding to HLD" or "Run `/arckit:hld-review` to validate database technology choices")
@@ -269,7 +269,7 @@ You should:
 - Generate comprehensive data model:
   - Mermaid ERD showing Customer, Transaction, PaymentMethod, RefundRequest entities
   - Detailed entity catalog with attributes, PII flags, retention periods
-  - GDPR compliance: PII identified, legal basis documented, DPIA required
+  - Privacy Act 1988 / APPs compliance: PII identified, legal basis documented, DPIA required
   - Data governance: CFO owns financial data, DPO owns PII, IT owns storage
   - CRUD matrix: Payment API can create transactions, Admin can read all, Reporting read-only
   - PCI-DSS compliance: Payment card data encrypted, tokenized, not stored long-term
@@ -281,13 +281,13 @@ You should:
 ## Important Notes
 
 - **Data model drives database schema, API contracts, and data governance policies**
-- **GDPR compliance is MANDATORY for any PII - identify and protect it**
+- **Privacy Act 1988 / APPs compliance is MANDATORY for any PII - identify and protect it**
 - **Every entity MUST trace back to at least one DR-xxx requirement**
 - **Data ownership is critical - assign business owners from stakeholder RACI matrix**
 - **PII requires special handling**: encryption at rest, encryption in transit, access controls, audit logging, retention limits
 - **Use Mermaid ERD syntax** for GitHub-renderable diagrams (not PlantUML or other formats)
 - **Data quality metrics should be measurable** (not "high quality", use "99% accuracy")
-- **Consider data lifecycle**: creation, updates, archival, deletion (GDPR "right to erasure")
+- **Consider data lifecycle**: creation, updates, archival, deletion (Privacy Act 1988 / APPs "right to erasure")
 - **Reference architecture principles** from any `ARC-000-PRIN-*.md` file in `projects/000-global/` if they exist
 - **Flag any DR-xxx requirements that cannot be modeled** (gaps for requirements clarification)
 
@@ -338,11 +338,11 @@ After writing the file, show ONLY a concise summary:
 - One-to-One: [Number]
 
 **Attributes**: [Number] total attributes across all entities
-- PII Attributes: [Number] (GDPR-sensitive)
+- PII Attributes: [Number] (Privacy Act 1988 / APPs-sensitive)
 - Encrypted Attributes: [Number]
 - Indexed Attributes: [Number] (for performance)
 
-**GDPR Compliance**:
+**Privacy Act 1988 / APPs Compliance**:
 - PII Entities: [List entities containing PII]
 - Legal Basis: [e.g., Consent, Contract, Legitimate Interest]
 - DPIA Required: [Yes/No]
@@ -354,7 +354,7 @@ After writing the file, show ONLY a concise summary:
 - Access Controls: [Summary of who can access what]
 
 **Compliance Requirements**:
-- [List: GDPR, PCI-DSS, HIPAA, SOX, etc. as applicable]
+- [List: Privacy Act 1988 / APPs, PCI-DSS, HIPAA, SOX, etc. as applicable]
 
 **Requirements Traceability**:
 - Data Requirements Mapped: [Number] DR-xxx requirements
@@ -364,7 +364,7 @@ After writing the file, show ONLY a concise summary:
 
 - Entity Relationship Diagram (Mermaid ERD)
 - Detailed Entity Catalog (all attributes, data types, constraints)
-- GDPR Compliance Matrix (PII identification and protection)
+- Privacy Act 1988 / APPs Compliance Matrix (PII identification and protection)
 - Data Governance Framework (ownership, CRUD matrix)
 - Data Quality Metrics (accuracy, completeness, timeliness targets)
 - Data Retention Policy (by entity)

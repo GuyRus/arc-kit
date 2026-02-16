@@ -45,11 +45,11 @@
   - 🔴 Restricted: [X] entities (payment card data, health records, etc.)
 
 ### Compliance Summary
-- **GDPR/DPA 2018 Status**: [COMPLIANT | NEEDS_DPIA | GAPS_IDENTIFIED]
+- **Privacy Act 1988 / APPs/Privacy Act 1988 Status**: [COMPLIANT | NEEDS_DPIA | GAPS_IDENTIFIED]
 - **PII Entities**: [X] entities contain personally identifiable information
 - **Data Protection Impact Assessment (DPIA)**: [REQUIRED | NOT_REQUIRED | COMPLETED]
 - **Data Retention**: [Longest retention period] (driven by [regulation/requirement])
-- **Cross-Border Transfers**: [YES | NO] (UK to [countries])
+- **Cross-Border Transfers**: [YES | NO] (Australia to [countries])
 
 ### Key Data Governance Stakeholders
 - **Data Owner (Business)**: [Name/Role] - Accountable for data quality and usage
@@ -74,7 +74,7 @@ erDiagram
 
     CUSTOMER {
         uuid customer_id PK "Unique identifier"
-        string email UK "Contact email (PII)"
+        string email "Contact email (PII)"
         string first_name "First name (PII)"
         string last_name "Last name (PII)"
         string phone "Phone number (PII)"
@@ -126,7 +126,7 @@ erDiagram
 - **Cardinality**: `||` = exactly one, `o{` = zero or more, `|{` = one or more
 - **Primary Keys (PK)**: Uniquely identify each record
 - **Foreign Keys (FK)**: Reference other entities
-- **Unique Keys (UK)**: Must be unique but not primary identifier
+- **Unique Keys (Context)**: Must be unique but not primary identifier
 
 ---
 
@@ -158,7 +158,7 @@ erDiagram
 **Data Retention**:
 - **Active Period**: [X] years in primary database
 - **Archive Period**: [Y] years in cold storage
-- **Total Retention**: [Z] years (driven by [GDPR | tax law | regulatory requirement])
+- **Total Retention**: [Z] years (driven by [Privacy Act 1988 / APPs | tax law | regulatory requirement])
 - **Deletion Policy**: [Hard delete | Soft delete | Anonymization] after retention period
 
 #### Attributes
@@ -217,7 +217,7 @@ erDiagram
 
 #### Privacy & Compliance
 
-**GDPR/DPA 2018 Considerations**:
+**Privacy Act 1988 / APPs/Privacy Act 1988 Considerations**:
 - **Contains PII**: [YES | NO]
 - **PII Attributes**: [List of PII columns: email, first_name, last_name, phone, etc.]
 - **Legal Basis for Processing**: [Consent | Contract | Legal Obligation | Vital Interests | Public Task | Legitimate Interests]
@@ -235,7 +235,7 @@ erDiagram
 **Sector-Specific Compliance**:
 - **PCI-DSS**: [Applicable if payment card data] - Special handling requirements
 - **HIPAA**: [Applicable if healthcare data] - US healthcare regulations
-- **FCA Regulations**: [Applicable if financial services] - UK financial conduct rules
+- **Australian financial regulations**: [Applicable if financial services] - Australian financial conduct rules
 - **Government Security Classification**: [OFFICIAL | SECRET | TOP SECRET]
 
 **Audit Logging**:
@@ -273,7 +273,7 @@ erDiagram
 [Primary Key, Foreign Keys, Unique Constraints, Performance Indexes]
 
 #### Privacy & Compliance
-[GDPR considerations, PII handling, Data subject rights, Compliance requirements]
+[Privacy Act 1988 / APPs considerations, PII handling, Data subject rights, Compliance requirements]
 
 ---
 
@@ -285,9 +285,9 @@ erDiagram
 
 | Entity | Business Owner | Data Steward | Technical Custodian | Sensitivity | Compliance | Quality SLA | Access Control |
 |--------|----------------|--------------|---------------------|-------------|------------|-------------|----------------|
-| E-001: [Entity] | [CFO] | [Data Governance Lead] | [Database Team] | CONFIDENTIAL | GDPR, PCI-DSS | 99% accuracy | Role: Admin, Finance |
+| E-001: [Entity] | [CFO] | [Data Governance Lead] | [Database Team] | CONFIDENTIAL | Privacy Act 1988 / APPs, PCI-DSS | 99% accuracy | Role: Admin, Finance |
 | E-002: [Entity] | [CTO] | [Data Governance Lead] | [Database Team] | INTERNAL | None | 95% completeness | Role: All authenticated |
-| E-003: [Entity] | [CMO] | [Marketing Data Lead] | [Database Team] | CONFIDENTIAL | GDPR, Marketing regs | 98% accuracy | Role: Marketing, Sales |
+| E-003: [Entity] | [CMO] | [Marketing Data Lead] | [Database Team] | CONFIDENTIAL | Privacy Act 1988 / APPs, Marketing regs | 98% accuracy | Role: Marketing, Sales |
 
 **Governance Notes**:
 - **Business Owner**: Accountable for data quality, accuracy, and appropriate usage
@@ -429,7 +429,7 @@ erDiagram
 
 ## Privacy & Compliance
 
-### GDPR / UK Data Protection Act 2018 Compliance
+### Privacy Act 1988 / APP Compliance
 
 #### PII Inventory
 
@@ -440,18 +440,18 @@ erDiagram
 
 **Total PII Attributes**: [X] attributes across [Y] entities
 
-**Special Category Data** (sensitive PII under GDPR Article 9):
+**Special Category Data** (sensitive PII under Privacy Act 1988 / APPs Article 9):
 - [None | Health data | Biometric data | etc.] in entity [E-XXX]
-- Requires explicit consent or legal basis beyond standard GDPR
+- Requires explicit consent or legal basis beyond standard Privacy Act 1988 / APPs
 
 #### Legal Basis for Processing
 
 | Entity | Purpose | Legal Basis | Notes |
 |--------|---------|-------------|-------|
-| E-001: Customer | Customer account management | Contract (GDPR Art 6(1)(b)) | Processing necessary to perform contract |
-| E-002: Transaction | Payment processing | Contract (GDPR Art 6(1)(b)) | Financial transaction execution |
-| E-003: PaymentMethod | Payment processing | Contract (GDPR Art 6(1)(b)) | Store for future transactions with consent |
-| E-004: RefundRequest | Refund processing | Contract (GDPR Art 6(1)(b)) | Customer service obligation |
+| E-001: Customer | Customer account management | Contract (Privacy Act 1988 / APPs Art 6(1)(b)) | Processing necessary to perform contract |
+| E-002: Transaction | Payment processing | Contract (Privacy Act 1988 / APPs Art 6(1)(b)) | Financial transaction execution |
+| E-003: PaymentMethod | Payment processing | Contract (Privacy Act 1988 / APPs Art 6(1)(b)) | Store for future transactions with consent |
+| E-004: RefundRequest | Refund processing | Contract (Privacy Act 1988 / APPs Art 6(1)(b)) | Customer service obligation |
 
 **Consent Management** (if applicable):
 - **Opt-in Required**: Marketing communications (E-001.marketing_consent)
@@ -464,7 +464,7 @@ erDiagram
 - **Endpoint**: [/api/v1/subject-access-request]
 - **Authentication**: Multi-factor authentication required
 - **Response Format**: JSON containing all personal data
-- **Response Time**: Within 30 days (GDPR requirement)
+- **Response Time**: Within 30 days (Privacy Act 1988 / APPs requirement)
 - **Entities Included**: E-001, E-002, E-003, E-004 (all entities with PII)
 
 **Right to Rectification**:
@@ -501,9 +501,9 @@ erDiagram
 
 | Entity | Active Retention | Archive Retention | Total Retention | Legal Basis | Deletion Method |
 |--------|------------------|-------------------|-----------------|-------------|-----------------|
-| E-001: Customer | Active account + 2 years | 5 years | 7 years | Tax law, GDPR | Anonymize PII, retain transactions |
+| E-001: Customer | Active account + 2 years | 5 years | 7 years | Tax law, Privacy Act 1988 / APPs | Anonymize PII, retain transactions |
 | E-002: Transaction | 3 years | 4 years | 7 years | Tax law (HMRC) | Hard delete after 7 years |
-| E-003: PaymentMethod | Active account | N/A | Until deleted by user | GDPR | Hard delete on user request |
+| E-003: PaymentMethod | Active account | N/A | Until deleted by user | Privacy Act 1988 / APPs | Hard delete on user request |
 | E-004: RefundRequest | 3 years | 4 years | 7 years | Financial records | Hard delete after 7 years |
 
 **Retention Policy Enforcement**:
@@ -513,16 +513,16 @@ erDiagram
 #### Cross-Border Data Transfers
 
 **Data Locations**:
-- **Primary Database**: [UK | EU | US] - [Cloud provider, region]
-- **Backup Storage**: [UK | EU | US] - [Cloud provider, region]
+- **Primary Database**: [AU | regional | offshore] - [Cloud provider, region]
+- **Backup Storage**: [AU | regional | offshore] - [Cloud provider, region]
 - **Downstream Systems**: [List countries where data is transferred]
 
-**UK-EU Data Transfers**:
-- **Adequacy Decision**: UK-EU adequacy decision in effect (no additional safeguards required as of 2025)
+**AU-International Data Transfers**:
+- **Adequacy Decision**: Assess legal transfer mechanism and safeguards for each destination jurisdiction
 - **Standard Contractual Clauses (SCCs)**: [Required | Not required]
 
-**UK-US Data Transfers**:
-- **UK Extension to EU-US Data Privacy Framework**: [Applicable | Not applicable]
+**AU-US Data Transfers**:
+- **Transfer mechanism**: [Contractual controls | Adequacy mechanism | Other lawful basis]
 - **Standard Contractual Clauses (SCCs)**: Required for US transfers
 - **Supplementary Measures**: [Encryption in transit, encryption at rest, access controls]
 
@@ -530,7 +530,7 @@ erDiagram
 
 **DPIA Required**: [YES | NO]
 
-**Triggers for DPIA** (GDPR Article 35):
+**Triggers for DPIA** (Privacy Act 1988 / APPs Article 35):
 - ✅ Large-scale processing of special category data (health, biometric, etc.)
 - ✅ Systematic monitoring of publicly accessible areas (CCTV, tracking)
 - ✅ Automated decision-making with legal or significant effects (credit scoring, profiling)
@@ -597,7 +597,7 @@ erDiagram
 
 ---
 
-#### FCA Regulations (Financial Conduct Authority - UK)
+#### Australian financial regulations (APRA/ASIC context)
 
 **Applicability**: [APPLICABLE | NOT_APPLICABLE]
 
@@ -605,7 +605,7 @@ erDiagram
 
 ---
 
-#### Government Security Classifications (UK Public Sector)
+#### Government Security Classifications (Australian Government)
 
 **Applicability**: [APPLICABLE | NOT_APPLICABLE]
 
@@ -764,7 +764,7 @@ erDiagram
 | DR-003 | Store payment methods securely | E-003: PaymentMethod | payment_method_id, method_type, last_four, card_brand | ✅ Implemented | PCI-DSS compliant tokenization |
 | DR-004 | Support refund workflows | E-004: RefundRequest | refund_id, transaction_id, refund_amount, reason, status | ✅ Implemented | |
 | DR-005 | Maintain merchant registry | E-005: Merchant | merchant_id, merchant_name, merchant_code, contact_email | ✅ Implemented | |
-| DR-006 | GDPR: Right to erasure | E-001: Customer | [All PII fields] | ✅ Implemented | Anonymization process defined |
+| DR-006 | Privacy Act 1988 / APPs: Right to erasure | E-001: Customer | [All PII fields] | ✅ Implemented | Anonymization process defined |
 | DR-007 | PCI-DSS: Secure card storage | E-003: PaymentMethod | [Tokenized PAN] | ✅ Implemented | PAN not stored, token only |
 | DR-008 | 7-year retention for financial records | E-002: Transaction | [All fields] | ✅ Implemented | Archive policy defined |
 
@@ -801,7 +801,7 @@ erDiagram
   - Benefits: Time-based queries, automatic downsampling, compression
 
 **Chosen Technology**: [PostgreSQL 15+]
-- **Justification**: [Strong ACID guarantees for financial transactions, excellent JSON support for flexible attributes, mature ecosystem, GDPR compliance tooling]
+- **Justification**: [Strong ACID guarantees for financial transactions, excellent JSON support for flexible attributes, mature ecosystem, Privacy Act 1988 / APPs compliance tooling]
 - **Cloud Provider**: [AWS RDS | Azure Database for PostgreSQL | Google Cloud SQL]
 - **High Availability**: [Multi-AZ deployment | Read replicas | Failover strategy]
 
@@ -905,8 +905,8 @@ erDiagram
 ### Glossary
 
 - **PII (Personally Identifiable Information)**: Data that can identify an individual (email, name, phone, etc.)
-- **GDPR (General Data Protection Regulation)**: EU regulation on data privacy (UK version: DPA 2018)
-- **DPA 2018 (Data Protection Act 2018)**: UK implementation of GDPR
+- **Privacy Act 1988 / APPs**: Australian privacy law and principles governing personal information handling.
+- **Privacy Act 1988**: Primary Australian privacy legislation for Commonwealth entities and APP entities.
 - **DPIA (Data Protection Impact Assessment)**: Assessment of privacy risks for high-risk processing
 - **PCI-DSS (Payment Card Industry Data Security Standard)**: Security standard for handling payment card data
 - **Cardinality**: Number of instances in a relationship (one-to-one, one-to-many, many-to-many)
@@ -918,11 +918,11 @@ erDiagram
 
 ### References
 
-- [HM Treasury Green Book](https://www.gov.uk/government/publications/the-green-book-appraisal-and-evaluation-in-central-governent) - Business case guidance (may reference data costs)
-- [ICO Data Protection](https://ico.org.uk/for-organisations/guide-to-data-protection/) - UK GDPR compliance guidance
+- [Department of Finance investment and assurance guidance](https://www.finance.gov.au/government/assurance-reviews-and-risk-assessment) - Business case and assurance guidance (including data-related costs))
+- [ICO Data Protection](https://ico.org.uk/for-organisations/guide-to-data-protection/) - Privacy Act 1988 / APPs compliance guidance
 - [PCI Security Standards](https://www.pcisecuritystandards.org/) - Payment card data security
-- [NCSC Cloud Security Principles](https://www.ncsc.gov.uk/collection/cloud/the-cloud-security-principles) - UK government cloud security
-- [GDS Data Standards](https://www.gov.uk/government/collections/data-standards-for-government) - UK government data standards
+- [ASD/ACSC cloud security guidance](https://www.cyber.gov.au/) - Australian Government cyber security guidance
+- [DTA standards and policy guidance](https://www.digital.gov.au/policy) - Australian Government digital policy and standards
 
 ---
 
