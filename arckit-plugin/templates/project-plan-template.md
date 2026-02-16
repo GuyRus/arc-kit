@@ -33,9 +33,9 @@
 
 **Project**: [PROJECT_NAME]
 **Duration**: [X weeks/months]
-**Budget**: £[amount]
+**Budget**: A$[amount]
 **Team**: [X FTE average]
-**Delivery Model**: GDS Agile Delivery (Discovery → Alpha → Beta → Live)
+**Delivery Model**: AU Service Lifecycle Delivery (Discovery → Alpha → Beta → Live)
 
 **Objective**: [One-sentence goal from business case]
 
@@ -49,6 +49,16 @@
 - Alpha Complete (HLD approved): Week [Y]
 - Beta Complete (Go-Live approved): Week [Z]
 - Production Launch: Week [Z+1]
+
+## AU Policy Alignment (Mandatory)
+
+| Policy / Framework | Planning expectation | Status / evidence |
+|------|----------------------|-------------------|
+| Digital Experience Policy + Digital Service Standard | Service design and delivery quality criteria reflected in phases and gates | [Evidence / SOURCE_GAP] |
+| Finance assurance expectations (Gateway/IRA where applicable) | Assurance checkpoints and evidence packs included | [Evidence / SOURCE_GAP] |
+| Commonwealth Procurement Rules (CPRs) | Sourcing/procurement path includes value-for-money controls | [Evidence / SOURCE_GAP] |
+| Privacy Act 1988 + APPs | Privacy planning, DPIA triggers, and data handling controls planned | [Evidence / SOURCE_GAP] |
+| PSPF + ASD ISM | Security controls and assurance activities included in plan | [Evidence / SOURCE_GAP] |
 
 ---
 
@@ -345,11 +355,11 @@ graph TB
 
 | Phase | Duration | Team Cost | Infrastructure | Vendor/License | Total |
 |-------|----------|-----------|----------------|----------------|-------|
-| Discovery | [X] weeks | £[X] | £[X] | £[X] | £[X] |
-| Alpha | [Y-X] weeks | £[X] | £[X] | £[X] | £[X] |
-| Beta | [Z-Y] weeks | £[X] | £[X] | £[X] | £[X] |
-| Live (Year 1) | 12 months | £[X] | £[X] | £[X] | £[X] |
-| **Total** | | | | | **£[TOTAL]** |
+| Discovery | [X] weeks | A$[X] | A$[X] | A$[X] | A$[X] |
+| Alpha | [Y-X] weeks | A$[X] | A$[X] | A$[X] | A$[X] |
+| Beta | [Z-Y] weeks | A$[X] | A$[X] | A$[X] | A$[X] |
+| Live (Year 1) | 12 months | A$[X] | A$[X] | A$[X] | A$[X] |
+| **Total** | | | | | **A$[TOTAL]** |
 
 ---
 
@@ -381,7 +391,7 @@ graph TB
 
 | Term | Definition |
 |------|------------|
-| GDS | Government Digital Service |
+| Digital Service Standard (DSS) | Australian Government Digital Service Standard |
 | HLD | High-Level Design |
 | DLD | Detailed-Level Design |
 | UAT | User Acceptance Testing |

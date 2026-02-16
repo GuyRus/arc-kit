@@ -1,6 +1,6 @@
 # Project Plan Playbook
 
-`/arckit.plan` creates a GDS-aligned delivery plan with phases, gates, dependencies, and Mermaid timelines.
+`/arckit.plan` creates an AU Commonwealth-aligned delivery plan with phases, gates, dependencies, and Mermaid timelines.
 
 ---
 
@@ -11,6 +11,14 @@
 | Stakeholder analysis & principles | Populate governance roles and success criteria |
 | Risk register & business case | Feed gate actions and critical path |
 | Requirements overview | Determines key activities across phases |
+
+### AU policy baseline for planning
+
+- Digital Experience Policy and Digital Service Standard
+- Finance assurance review expectations (Gateway/IRA where applicable)
+- Commonwealth Procurement Rules (CPRs)
+- Privacy Act 1988 + APPs
+- PSPF + ASD ISM
 
 ---
 
@@ -30,7 +38,7 @@ Output: `projects/<id>/ARC-<id>-PLAN-v1.0.md` plus Mermaid diagrams.
 |---------|----------|
 | Timeline overview | Discovery → Alpha → Beta → Live with dates and milestones |
 | Phase detail | Activities, deliverables, owners, entry/exit criteria |
-| Gate checklist | Evidence required for GDS Discovery/Alpha/Beta/Live assessments |
+| Gate checklist | Evidence required for Discovery/Alpha/Beta/Live gates and AU assurance checkpoints |
 | Dependency matrix | ArcKit commands sequenced with predecessors |
 | Risk & mitigation | Key timeline threats with contingency |
 
@@ -49,9 +57,9 @@ Output: `projects/<id>/ARC-<id>-PLAN-v1.0.md` plus Mermaid diagrams.
 
 ## Review Checklist
 
-- Phases align to GDS guidance and organisational governance.
+- Phases align to Digital Experience Policy / Digital Service Standard and organisational governance.
 - Each gate lists approvers and evidence (business case, design review, DPIA).
-- Dependencies cover compliance artefacts (TCoP, AI Playbook, Secure by Design).
+- Dependencies cover AU compliance artefacts (CPRs, Privacy/APP, PSPF/ISM, AI Playbook where relevant).
 - Buffer time included for procurement, assurance, and change freeze windows.
 - Risks highlight delivery blockers (supplier delay, funding approval, staffing).
 

@@ -4,12 +4,12 @@ description: "Create project plan with timeline, phases, gates, and Mermaid diag
 
 # ArcKit: Project Plan Generation
 
-You are an expert project planner helping create comprehensive project plans with visual timelines and gate-driven governance for UK Government projects following GDS Agile Delivery methodology.
+You are an expert project planner helping create comprehensive project plans with visual timelines and gate-driven governance for Australian Government projects following an AU service lifecycle (Discovery → Alpha → Beta → Live).
 
 ## What is a Project Plan?
 
 A project plan shows:
-- **Phases**: Discovery → Alpha → Beta → Live (GDS framework)
+- **Phases**: Discovery → Alpha → Beta → Live (AU digital service lifecycle)
 - **Timeline**: Gantt chart with activities, dependencies, and milestones
 - **Gates**: Decision points with approval criteria (Discovery, Alpha, Beta assessments)
 - **Workflow**: How artifacts flow through gates
@@ -49,7 +49,7 @@ Read existing project artifacts to tailor the plan:
 3. **Read Architecture Principles** (if available):
    - File: Any `ARC-000-PRIN-*.md` file in `projects/000-global/`
    - Extract: Complexity constraints (security, compliance)
-   - Impact: PCI-DSS/GDPR = additional time for threat modeling
+   - Impact: Privacy Act/APP and PSPF/ISM obligations = additional time for assurance and control design
 
 4. **Read Business Case** (if available):
    - File: Any `ARC-*-SOBC-*.md` file in `projects/{current_project}/`
@@ -87,7 +87,7 @@ Before determining project parameters, use the **AskUserQuestion** tool to gathe
 
 **Question 1** — header: `Approach`, multiSelect: false
 > "What delivery approach should this project follow?"
-- **Agile GDS (Recommended)**: Discovery, Alpha, Beta, Live phases with iterative sprints — standard for UK Government
+- **Agile Service Lifecycle (Recommended)**: Discovery, Alpha, Beta, Live phases with iterative sprints — standard for Australian Government digital delivery
 - **Waterfall**: Sequential phases with formal stage gates — suited for fixed-scope, compliance-heavy projects
 - **Hybrid**: Agile delivery within waterfall governance gates — common for large programmes with external vendors
 
@@ -97,11 +97,13 @@ Before determining project parameters, use the **AskUserQuestion** tool to gathe
 - **Medium (6-12 months)**: 30-100 requirements, 3-5 integrations, some custom development
 - **Large (12-24 months)**: 100+ requirements, 5+ integrations, significant custom development, multiple compliance regimes
 
-Apply the user's selections when calculating timeline durations and structuring the Gantt chart. The delivery approach determines the phase structure (GDS phases vs waterfall stages vs hybrid). The complexity tier determines phase durations in Step 2 below.
+Apply the user's selections when calculating timeline durations and structuring the Gantt chart. The delivery approach determines the phase structure (service lifecycle phases vs waterfall stages vs hybrid). The complexity tier determines phase durations in Step 2 below.
 
 ## Step 2: Determine Project Complexity
 
 Based on artifacts and user input, classify the project:
+
+> **AU policy alignment note**: Where compliance is in scope, explicitly plan for Digital Experience Policy / Digital Service Standard conformance, Finance assurance checkpoints, CPR procurement controls, and Privacy/PSPF/ISM obligations.
 
 ### Small Projects (3-6 months)
 **Characteristics**:
@@ -123,7 +125,7 @@ Based on artifacts and user input, classify the project:
 - 30-100 total requirements
 - 3-5 external integrations
 - Some custom development
-- PCI-DSS, GDPR, or moderate compliance
+- Privacy Act/APP, PSPF/ISM, or moderate compliance obligations
 
 **Timeline**:
 - Discovery: 4-8 weeks
@@ -137,7 +139,7 @@ Based on artifacts and user input, classify the project:
 - 100+ total requirements
 - 5+ external integrations
 - Significant custom development
-- Multiple compliance regimes (PCI-DSS + GDPR + sector-specific)
+- Multiple compliance regimes (Privacy Act/APP + PSPF/ISM + sector-specific)
 - Data migration required
 
 **Timeline**:
@@ -154,7 +156,7 @@ Create a summary with:
 - Project name and objective
 - Duration and budget
 - Team size (FTE by phase)
-- Delivery model (GDS Agile Delivery)
+- Delivery model (AU service lifecycle delivery)
 - Success criteria (from business case or requirements)
 - Key milestones
 
@@ -166,9 +168,9 @@ Create a summary with:
 
 **Project**: {Project Name}
 **Duration**: {X weeks/months}
-**Budget**: £{amount}
+**Budget**: A${amount}
 **Team**: {X FTE average}
-**Delivery Model**: GDS Agile Delivery (Discovery → Alpha → Beta → Live)
+**Delivery Model**: AU Service Lifecycle Delivery (Discovery → Alpha → Beta → Live)
 
 **Objective**: {One-sentence goal from business case}
 
@@ -419,7 +421,7 @@ DOC_ID=$(.arckit/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "PLAN" "${
 *User-provided fields* (extract from project metadata or user input):
 - `[PROJECT_NAME]` → Full project name from project metadata or user input
 - `[OWNER_NAME_AND_ROLE]` → Document owner (prompt user if not in metadata)
-- `[CLASSIFICATION]` → Default to "OFFICIAL" for UK Gov, "PUBLIC" otherwise (or prompt user)
+- `[CLASSIFICATION]` → Default to "OFFICIAL" for Australian Government internal work, "PUBLIC" otherwise (or prompt user)
 
 *Calculated fields*:
 - `[YYYY-MM-DD]` for Review Date → Current date + 30 days
@@ -469,9 +471,9 @@ The footer should be populated with:
 
 3. **Tailor to context**:
    - If vendor procurement needed: Add 6-8 weeks to Alpha for SOW/evaluation/selection
-   - If compliance heavy (PCI-DSS, GDPR): Add 4-8 weeks for security work
+   - If compliance heavy (Privacy Act/APP, PSPF/ISM): Add 4-8 weeks for privacy/security and assurance work
    - If data migration needed: Add 4-12 weeks to Beta
-   - If UK Government: Reference GDS Service Manual, TCoP compliance checks
+   - If Australian Government: Reference Digital Experience Policy, Digital Service Standard, and Finance assurance expectations
 
 ## Step 5: Summarize
 
@@ -508,7 +510,7 @@ After writing the plan, provide a summary:
 
 ## Important Notes
 
-- **GDS Phases**: Always use Discovery → Alpha → Beta → Live (UK Government standard)
+- **Service lifecycle phases**: Use Discovery → Alpha → Beta → Live as default unless user explicitly selects an alternative model
 - **Gates are Mandatory**: Don't skip Discovery, Alpha, Beta assessments
 - **Vendor Procurement**: If needed, adds 6-8 weeks to Alpha phase
 - **Living Document**: Plan should be updated at each gate based on actual progress
