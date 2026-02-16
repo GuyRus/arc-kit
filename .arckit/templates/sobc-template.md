@@ -408,7 +408,7 @@ Before analyzing options, define what "success" looks like:
 
 **Australian Government BuyICT and CPR-compliant sourcing Assessment** (if applicable):
 - **BuyICT 14**: [X] suppliers offering [capability]
-- **DOS6**: [Y] suppliers for outcomes/specialists
+- **specialist sourcing6**: [Y] suppliers for outcomes/specialists
 - **SME participation**: [Z]% of suppliers are SMEs
 
 ### C1.2 Sourcing Route
@@ -542,7 +542,7 @@ Before analyzing options, define what "success" looks like:
 
 ## D4. Financial Appraisal
 
-### D4.1 Economic Appraisal (Australian Government Green Book)
+### D4.1 Economic Appraisal (Australian Government Department of Finance business case guidance)
 
 **Discount Rate**: 3.5% (Finance standard social time preference rate)
 
@@ -1016,7 +1016,7 @@ If this SOBC is not approved:
 
 *Document created using ArcKit `/arckit.sobc` command*
 *Template version: 1.0*
-*Green Book compliant: Yes (Department of Finance 5-case model)*
+*Department of Finance business case guidance compliant: Yes (Department of Finance 5-case model)*
 
 ## External References
 

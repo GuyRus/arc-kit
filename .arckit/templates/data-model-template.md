@@ -542,17 +542,17 @@ erDiagram
 - **Privacy Risks Identified**: [List key privacy risks]
 - **Mitigation Measures**: [List controls to reduce risks]
 - **Residual Risk**: [HIGH | MEDIUM | LOW]
-- **ICO Consultation Required**: [YES | NO] - If high residual risk, consult ICO before processing
+- **OAIC Consultation Required**: [YES | NO] - If high residual risk, consult OAIC before processing
 
-#### ICO Registration & Notifications
+#### OAIC Registration & Notifications
 
-**ICO Registration**: [REGISTERED | REQUIRED | EXEMPT]
-- **Registration Number**: [ICO-XXXXXXXX]
+**OAIC Registration**: [REGISTERED | REQUIRED | EXEMPT]
+- **Registration Number**: [OAIC-XXXXXXXX]
 - **Renewal Date**: [Annual renewal date]
 
 **Data Breach Notification**:
 - **Breach Detection**: Automated monitoring, security alerts
-- **ICO Notification Deadline**: Within 72 hours if high risk to rights and freedoms
+- **OAIC Notification Deadline**: Within 72 hours if high risk to rights and freedoms
 - **Data Subject Notification**: Without undue delay if high risk
 - **Breach Log**: All breaches logged (even if not reportable) in incident management system
 
@@ -919,7 +919,7 @@ erDiagram
 ### References
 
 - [Department of Finance investment and assurance guidance](https://www.finance.gov.au/government/assurance-reviews-and-risk-assessment) - Business case and assurance guidance (including data-related costs))
-- [ICO Data Protection](https://ico.org.uk/for-organisations/guide-to-data-protection/) - Privacy Act 1988 / APPs compliance guidance
+- [OAIC Data Protection](https://ico.org.uk/for-organisations/guide-to-data-protection/) - Privacy Act 1988 / APPs compliance guidance
 - [PCI Security Standards](https://www.pcisecuritystandards.org/) - Payment card data security
 - [ASD/ACSC cloud security guidance](https://www.cyber.gov.au/) - Australian Government cyber security guidance
 - [DTA standards and policy guidance](https://www.digital.gov.au/policy) - Australian Government digital policy and standards

@@ -213,7 +213,7 @@ Scan for external (non-ArcKit) documents the user may have provided:
   - Data as a product
   - Self-serve infrastructure
   - Computational governance
-  - UK Government compliance (TCoP, GDPR)
+  - Australian Government compliance (DX Policy / DSS, Privacy Act 1988 (APPs))
 
 ### Step 6: Generate the Data Mesh Contract
 
@@ -285,11 +285,11 @@ Using the template and context gathered, generate a comprehensive data mesh cont
    - Data classification: Based on PII content
    - Encryption: AES-256 at rest, TLS 1.3 in transit
    - Access controls: RBAC with roles (Consumer-Read, Analyst-FullRead, Admin)
-   - **GDPR/UK GDPR Compliance**:
+   - **Privacy Act 1988 (APPs)/Privacy Act 1988 (APPs) Compliance**:
      - PII inventory from ARC-*-DATA-*.md or schema
      - Legal basis: CONTRACT / LEGITIMATE_INTEREST / CONSENT
      - Data subject rights: API endpoint for access/rectification/erasure
-     - Cross-border transfers: Default to UK (London region)
+     - Cross-border transfers: Default to Australia (Sydney region)
      - DPIA status: REQUIRED if PII exists, NOT_REQUIRED otherwise
    - Audit logging: All API access, schema changes, PII access
 
@@ -302,7 +302,7 @@ Using the template and context gathered, generate a comprehensive data mesh cont
    - Attribution requirements
    - Usage constraints (no redistribution, no reverse engineering)
    - Data quality feedback
-   - Compliance with own GDPR obligations
+   - Compliance with own Privacy Act 1988 (APPs) obligations
    - Security (protect credentials, rotate keys)
 
 10. **Pricing (Section 9)**:
@@ -311,8 +311,8 @@ Using the template and context gathered, generate a comprehensive data mesh cont
     - If external consumers: Consider commercial pricing
 
 11. **Infrastructure (Section 10)**:
-    - Cloud provider: AWS (default for UK Gov) / Azure / GCP
-    - Region: UK (London) - eu-west-2
+    - Cloud provider: AWS (default for Australian Government) / Azure / GCP
+    - Region: Australia (Sydney) - ap-southeast-2
     - High availability: Multi-AZ
     - DR: RTO 4 hours, RPO 15 minutes
     - Infrastructure components: API Gateway, Compute (Lambda/ECS), Database (RDS), Cache (Redis), Storage (S3)
@@ -390,7 +390,7 @@ DOC_ID=$(.arckit/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "DMC" "${V
 *User-provided fields* (extract from project metadata or user input):
 - `[PROJECT_NAME]` → Full project name from project metadata or user input
 - `[OWNER_NAME_AND_ROLE]` → Document owner (prompt user if not in metadata)
-- `[CLASSIFICATION]` → Default to "OFFICIAL" for UK Gov, "PUBLIC" otherwise (or prompt user)
+- `[CLASSIFICATION]` → Default to "OFFICIAL" for Australian Government, "PUBLIC" otherwise (or prompt user)
 
 *Calculated fields*:
 - `[YYYY-MM-DD]` for Review Date → Current date + 30 days
@@ -478,7 +478,7 @@ After writing the file, show the user a concise summary (do NOT show the full do
 - Classification: {OFFICIAL-SENSITIVE} (contains PII)
 - Encryption: AES-256 at rest, TLS 1.3 in transit
 - Access Control: RBAC (Consumer-Read, Analyst-FullRead, Admin)
-- GDPR Compliant: ✅
+- Privacy Act 1988 (APPs) Compliant: ✅
 
 ### Governance
 - Change Process: Minor (7 days notice), Major (90 days notice)
@@ -491,7 +491,7 @@ After writing the file, show the user a concise summary (do NOT show the full do
 
 1. **Review Contract**: Open the file and customize placeholders ({...})
 2. **Domain Team Review**: Product Owner should review all sections
-3. **DPO Review** (if PII): Ensure GDPR compliance is accurate
+3. **DPO Review** (if PII): Ensure Privacy Act 1988 (APPs) compliance is accurate
 4. **Security Review**: Validate encryption and access controls
 5. **Publish to Catalogue**: Register contract in data catalogue for discovery
 6. **Consumer Onboarding**: Set up sandbox environment for consumers to test
@@ -527,21 +527,21 @@ Based on what artifacts exist, recommend next steps:
 ```
 ⚠️  This contract contains PII ({N} fields marked as PII).
 
-UK GDPR Article 35 may require a Data Protection Impact Assessment (DPIA).
+Privacy Act 1988 (APPs) Article 35 may require a Data Protection Impact Assessment (DPIA).
 
 Consider running: /arckit:dpia Generate DPIA for {project_name}
 ```
 
-**If this is a UK Government project**:
+**If this is a Australian Government project**:
 ```
-💡 UK Government Alignment:
-   - Technology Code of Practice: Point 8 (Share, reuse and collaborate) ✅
+💡 Australian Government Alignment:
+   - Digital Experience Policy: Point 8 (Share, reuse and collaborate) ✅
    - National Data Strategy: Pillar 1 (Unlocking value) ✅
    - Data Quality Framework: 5 dimensions covered ✅
 
 Consider running:
-   - /arckit:tcop - Technology Code of Practice assessment
-   - /arckit:service-assessment - GDS Service Standard (if digital service)
+   - /arckit:tcop - Digital Experience Policy assessment
+   - /arckit:service-assessment - Digital Service Standard (if digital service)
 ```
 
 ## Important Notes
@@ -550,10 +550,10 @@ Consider running:
 
 2. **ODCS Compliance**: This contract follows Open Data Contract Standard (ODCS) v3.0.2. The Appendix A contains a YAML export that can be consumed programmatically.
 
-3. **UK Government Context**: If this is a UK Government project, ensure:
-   - Data stored in UK (London region)
-   - UK GDPR compliance
-   - Technology Code of Practice alignment
+3. **Australian Government Context**: If this is a Australian Government project, ensure:
+   - Data stored in Australia (Sydney region)
+   - Privacy Act 1988 (APPs) compliance
+   - Digital Experience Policy alignment
    - National Data Strategy alignment
    - Data Quality Framework coverage
 

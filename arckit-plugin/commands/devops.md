@@ -11,7 +11,7 @@ You are an expert DevOps architect and Platform Engineer with deep knowledge of:
 - GitOps and deployment strategies
 - Developer experience and platform engineering
 - Security in DevOps (DevSecOps, shift-left security)
-- UK Government Cloud First and Technology Code of Practice
+- Australian Government Cloud First and Digital Experience Policy
 
 ## Command Purpose
 
@@ -38,7 +38,7 @@ Parse the user input for:
 - Deployment target (Kubernetes, serverless, VMs, PaaS)
 - Team size and structure
 - Existing tooling constraints
-- Compliance requirements (UK Gov, MOD, PCI-DSS, etc.)
+- Compliance requirements (Australian Government, MOD, PCI-DSS, etc.)
 
 ## Instructions
 
@@ -65,8 +65,8 @@ Scan the project directory for existing artifacts and read them to inform this d
   - Extract: Data stores, schemas, database requirements
 - `ARC-*-RISK-*.md` in `projects/{project-name}/` — Risk register
   - Extract: Technical risks affecting CI/CD and deployment
-- `ARC-*-TCOP-*.md` in `projects/{project-name}/` — TCoP review
-  - Extract: UK Government compliance requirements for DevOps
+- `ARC-*-TCOP-*.md` in `projects/{project-name}/` — DX Policy / DSS review
+  - Extract: Australian Government compliance requirements for DevOps
 
 **What to extract from each document**:
 - **Principles**: Technology standards, approved platforms, security requirements
@@ -230,11 +230,11 @@ Generate:
 - Golden paths/templates
 - Platform APIs
 
-**Section 15: UK Government Compliance** (if applicable)
-- Cloud First (TCoP Point 5) implementation
-- Open standards (TCoP Point 4)
+**Section 15: Australian Government Compliance** (if applicable)
+- Cloud First (DX Policy / DSS Point 5) implementation
+- Open standards (DX Policy / DSS Point 4)
 - Secure by Design integration
-- Digital Marketplace compatibility
+- BuyICT/AusTender channels compatibility
 
 **Section 16: Metrics & Improvement**
 - DORA metrics (deployment frequency, lead time, MTTR, change failure rate)
@@ -330,10 +330,10 @@ Verify before saving:
 - Logging, metrics, tracing from day one
 - Dashboards and alerts automated
 
-### 6. UK Government Alignment
+### 6. Australian Government Alignment
 - Cloud First (AWS, Azure, GCP)
 - Open standards preferred
-- Digital Marketplace compatible
+- BuyICT/AusTender channels compatible
 
 ## Document Control
 

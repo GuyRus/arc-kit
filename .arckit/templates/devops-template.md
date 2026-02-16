@@ -789,7 +789,7 @@ flowchart LR
 |-----------|------|--------|
 | [CIS Benchmarks] | [InSpec / Prowler] | [X] checks |
 | [PCI-DSS] | [Custom policies] | [X] checks |
-| [UK Gov] | [Custom policies] | TCoP, Cyber Essentials |
+| [Australian Government] | [Custom policies] | DX Policy / DSS, Essential Eight |
 
 ---
 
@@ -862,9 +862,9 @@ flowchart LR
 
 ---
 
-## 15. UK Government Compliance
+## 15. Australian Government Compliance
 
-### Technology Code of Practice
+### Digital Experience Policy
 
 | Point | Requirement | Implementation |
 |-------|-------------|----------------|

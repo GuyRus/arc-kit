@@ -110,7 +110,7 @@ Before generating the roadmap, use the **AskUserQuestion** tool to gather strate
 
 **Question 2** — header: `Year format`, multiSelect: false
 > "Which year notation should the roadmap use?"
-- **UK Financial Year (Recommended)**: FY 2025/26, FY 2026/27 — April to March, standard for UK Government and public sector
+- **Australian Financial Year (Recommended)**: FY 2025/26, FY 2026/27 — April to March, standard for Australian Government and public sector
 - **Calendar Year**: CY 2025, CY 2026 — January to December, standard for private sector and international
 
 Apply the user's selections: the horizon determines the number of financial years covered, the Gantt chart duration, and the level of detail in later years (nearer years have more detail). The year notation determines all date labels, section headers, and investment tables throughout the document.
@@ -137,7 +137,7 @@ Create a comprehensive multi-year architecture roadmap with the following sectio
 
 #### Roadmap Timeline
 - **Visual Timeline**: Mermaid Gantt chart showing 3-5 year timeline
-  - Use financial year notation: FY 2024/25, FY 2025/26, etc. (if UK Government) OR calendar years
+  - Use financial year notation: FY 2024/25, FY 2025/26, etc. (if Australian Government) OR calendar years
   - Show 4 major phases: Foundation, Migration, Transformation, Optimization
   - Include governance gates as milestones
   - **IMPORTANT**: Remember Mermaid gantt syntax - no `<br/>` tags in task names
@@ -234,7 +234,7 @@ flowchart TD
 #### Governance & Decision Gates
 - **Governance Structure**: ARB (monthly), Programme Board (monthly), Steering Committee (quarterly)
 - **Review Cycles**: Weekly progress, monthly ARB, quarterly business review, annual strategic review
-- **Service Standard Assessment Gates** (if UK Government): Alpha, Beta, Live assessments with dates
+- **Service Standard Assessment Gates** (if Australian Government): Alpha, Beta, Live assessments with dates
 - **Decision Gates**: Go/No-Go gates at major phase transitions
 
 #### Success Metrics & KPIs
@@ -258,18 +258,18 @@ Link roadmap back to source artifacts:
 - **Appendix C**: Vendor Roadmap Alignment
 - **Appendix D**: Compliance & Standards Roadmap
 
-### 5. UK Government Specifics
+### 5. Australian Government Specifics
 
-If the user indicates this is a UK Government project, include:
+If the user indicates this is a Australian Government project, include:
 
 - **Financial Year Notation**: Use "FY 2024/25", "FY 2025/26" format (not calendar years)
 - **Spending Review Alignment**: Mention SR periods and budget cycles
 - **Service Standard Assessment Gates**: Include Alpha, Beta, Live assessment milestones
-- **TCoP (Technology Code of Practice)**: Reference compliance with 13 points
-- **NCSC CAF**: Include security baseline progression
-- **Cyber Essentials/ISO 27001**: Security certification timeline
-- **Digital Marketplace**: If procurement involved, reference G-Cloud/DOS
-- **Cross-Government Services**: Reference GOV.UK Pay, Notify, Design System integration
+- **DX Policy / DSS (Digital Experience Policy)**: Reference compliance with 13 points
+- **ASD ACSC CAF**: Include security baseline progression
+- **Essential Eight/ISO 27001**: Security certification timeline
+- **BuyICT/AusTender channels**: If procurement involved, reference BuyICT cloud panels/specialist sourcing
+- **Cross-Government Services**: Reference Australia.gov.au Pay, Notify, Design System integration
 
 ### 6. MOD Specifics
 
@@ -320,7 +320,7 @@ DOC_ID=$(.arckit/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "ROAD" "${
 *User-provided fields* (extract from project metadata or user input):
 - `[PROJECT_NAME]` → Full project name from project metadata or user input
 - `[OWNER_NAME_AND_ROLE]` → Document owner (prompt user if not in metadata)
-- `[CLASSIFICATION]` → Default to "OFFICIAL" for UK Gov, "PUBLIC" otherwise (or prompt user)
+- `[CLASSIFICATION]` → Default to "OFFICIAL" for Australian Government, "PUBLIC" otherwise (or prompt user)
 
 *Calculated fields*:
 - `[YYYY-MM-DD]` for Review Date → Current date + 30 days
@@ -437,7 +437,7 @@ After writing the file, show a concise summary (NOT the full document):
    - Plan (arckit.plan) = Single project, detailed tasks, delivery-focused, team execution
 
 4. **Financial Years**:
-   - UK Government: Use "FY 2024/25" notation (April-March)
+   - Australian Government: Use "FY 2024/25" notation (April-March)
    - US/Other: Can use calendar years or fiscal years as appropriate
 
 5. **Capability Maturity**: Use 5-level model (L1: Initial, L2: Repeatable, L3: Defined, L4: Managed, L5: Optimized)

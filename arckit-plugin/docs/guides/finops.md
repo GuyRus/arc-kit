@@ -41,7 +41,7 @@ Output: `projects/<id>/ARC-<id>-FINOPS-v1.0.md`
 | Governance & Policies | Approval workflows, quotas, exception handling |
 | FinOps Tooling | Native cloud tools, third-party, automation |
 | Sustainability & Carbon | Carbon footprint, green practices, sustainability reporting |
-| UK Government Compliance | Spending controls, Treasury Green Book, G-Cloud tracking |
+| Australian Government Compliance | Spending controls, Department of Finance business case guidance, BuyICT cloud panels tracking |
 | Operating Model | Review cadence, stakeholder engagement, escalation |
 | Metrics & KPIs | Cost efficiency, unit economics, optimization targets |
 
@@ -90,7 +90,7 @@ Output: `projects/<id>/ARC-<id>-FINOPS-v1.0.md`
 - Governance framework matches organizational structure.
 - Budget alerts configured at 50%, 75%, 90%, 100%.
 - Commitment management plan defined (RI/Savings Plans).
-- UK Government spending controls addressed (if applicable).
+- Australian Government spending controls addressed (if applicable).
 
 ---
 

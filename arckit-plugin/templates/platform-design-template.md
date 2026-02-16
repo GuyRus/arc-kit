@@ -464,7 +464,7 @@ The Motivations Matrix maps how different entities' motivations align or conflic
 **Conflict 3: Data Privacy vs. Personalization**
 - **Entities**: E-002 (Demand) vs. Platform
 - **Conflict**: Users want privacy; platform needs data for personalization
-- **Platform Solution**: [e.g., Privacy-preserving analytics, user-controlled data sharing, GDPR compliance]
+- **Platform Solution**: [e.g., Privacy-preserving analytics, user-controlled data sharing, Privacy Act 1988 (APPs) compliance]
 - **Success Metric**: [e.g., 90% user consent for data sharing + zero privacy incidents]
 
 ---
@@ -1243,7 +1243,7 @@ The Platform Design Canvas synthesizes insights from all previous canvases into 
 | [Principle 1] | [Implementation detail] |
 | [Principle 2] | [Implementation detail] |
 
-### 8.5 UK Government Context
+### 8.5 Australian Government Context
 
 **Government as a Platform (GaaP) Alignment**:
 
@@ -1252,29 +1252,29 @@ This platform embodies GaaP principles:
 2. **Ecosystem Orchestration**: [How platform enables ecosystem - e.g., "SME suppliers access £10M government procurement opportunities"]
 3. **Data Sharing**: [How platform enables data flows - e.g., "Supplier performance data shared across departments"]
 
-**Technology Code of Practice (TCoP) Compliance**:
+**Digital Experience Policy and Digital Service Standard (DSS) Compliance**:
 
-| TCoP Point | Compliance Approach |
+| DX Policy / DSS Point | Compliance Approach |
 |------------|---------------------|
 | **Point 5: Use cloud first** | Platform runs on [AWS/Azure/GCP], serverless architecture |
-| **Point 8: Share, reuse and collaborate** | Integrates GOV.UK Pay, Notify; open-sources platform design |
-| **Point 11: Define your purchasing strategy** | Platform IS the purchasing strategy - Digital Marketplace model |
+| **Point 8: Share, reuse and collaborate** | Integrates Australia.gov.au Pay, Notify; open-sources platform design |
+| **Point 11: Define your purchasing strategy** | Platform IS the purchasing strategy - BuyICT/AusTender channels model |
 
-**GDS Service Standard Implications**:
+**Digital Service Standard Implications**:
 
 | Service Standard Point | Platform Consideration |
 |------------------------|------------------------|
 | **Point 2: Solve a whole problem for users** | Platform solves entire procurement lifecycle, not just matching |
 | **Point 5: Make sure everyone can use the service** | WCAG 2.1 AA compliance, mobile-first design |
-| **Point 9: Create a secure service** | Cyber Essentials Plus, penetration testing, data encryption |
-| **Point 13: Use common platforms and components** | GOV.UK Pay, Notify, Design System integration |
+| **Point 9: Create a secure service** | Essential Eight Plus, penetration testing, data encryption |
+| **Point 13: Use common platforms and components** | Australia.gov.au Pay, Notify, Design System integration |
 
-**Digital Marketplace Positioning**:
+**BuyICT/AusTender channels Positioning**:
 
-This platform operates within Digital Marketplace ecosystem:
-- **G-Cloud**: [If applicable - e.g., "Platform listed as G-Cloud SaaS service"]
-- **DOS**: [If applicable - e.g., "Platform providers are DOS suppliers"]
-- **Differentiation**: [How this platform differs from/complements Digital Marketplace - e.g., "Digital Marketplace provides discovery; we provide transaction engine, learning services, and ecosystem orchestration"]
+This platform operates within BuyICT/AusTender channels ecosystem:
+- **BuyICT cloud panels**: [If applicable - e.g., "Platform listed as BuyICT cloud panels SaaS service"]
+- **specialist sourcing**: [If applicable - e.g., "Platform providers are specialist sourcing suppliers"]
+- **Differentiation**: [How this platform differs from/complements BuyICT/AusTender channels - e.g., "BuyICT/AusTender channels provides discovery; we provide transaction engine, learning services, and ecosystem orchestration"]
 
 ---
 
@@ -1436,7 +1436,7 @@ This platform operates within Digital Marketplace ecosystem:
 - [ ] **MVP Canvas**: Critical assumptions, MVP scope, liquidity strategy, validation metrics
 - [ ] **Platform Design Canvas**: All 6 building blocks synthesized
 - [ ] **Traceability**: Links to stakeholders, requirements, Wardley maps, risks
-- [ ] **UK Gov Context**: GaaP, TCoP, Service Standard, Digital Marketplace positioning
+- [ ] **Australian Government Context**: GaaP, DX Policy / DSS, Service Standard, BuyICT/AusTender channels positioning
 
 ### Appendix C: Glossary
 
@@ -1480,7 +1480,7 @@ This platform operates within Digital Marketplace ecosystem:
 - [ ] Legal & Compliance (for marketplace/platform models)
 
 **Platform Design Toolkit**: Open-source methodology from Boundaryless.io (CC-BY-SA)
-**ArcKit Integration**: Connects PDT strategy design to UK Government governance, procurement, and delivery frameworks
+**ArcKit Integration**: Connects PDT strategy design to Australian Government governance, procurement, and delivery frameworks
 
 ## External References
 

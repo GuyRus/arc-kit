@@ -34,7 +34,7 @@ Output:
 | Sidebar Navigation | Collapsible tree of all projects and documents |
 | Markdown Rendering | Full GitHub-flavored markdown support |
 | Mermaid Diagrams | Auto-rendered diagram visualizations |
-| GOV.UK Styling | Professional government design system |
+| Australia.gov.au Styling | Professional government design system |
 | Mobile Responsive | Works on all screen sizes |
 | Document Caching | Fast navigation between documents |
 
@@ -48,7 +48,7 @@ Output:
 | Planning | SOBC, Project Plan, Roadmap, Backlog |
 | Architecture | Principles, HLD, DLD, Data Model, Wardley Map |
 | Governance | Risk Register, Traceability Matrix |
-| Compliance | TCoP, Secure by Design, AI Playbook, ATRS, DPIA |
+| Compliance | DX Policy / DSS, Secure by Design, AI Playbook, ATRS, DPIA |
 | Operations | ServiceNow, DevOps, MLOps, FinOps |
 | Procurement | SoW, Evaluation Criteria, Vendor Documents |
 | Diagrams | All architecture diagrams (Mermaid) |
@@ -135,7 +135,7 @@ Supported diagram types:
 
 | Component | Library | Version |
 |-----------|---------|---------|
-| Styling | GOV.UK Frontend | 5.13.0 |
+| Styling | Australia.gov.au Frontend | 5.13.0 |
 | Markdown | marked.js | 15.0.6 |
 | Diagrams | mermaid.js | 11.4.1 |
 
@@ -212,4 +212,4 @@ Benefits:
 2. **Auto-Discovery**: Scans for known ArcKit artifact patterns.
 3. **Lazy Loading**: Documents fetched on demand for performance.
 4. **Offline-Capable**: Once loaded, documents cached in memory.
-5. **Accessible**: GOV.UK design system ensures accessibility.
+5. **Accessible**: Australia.gov.au design system ensures accessibility.

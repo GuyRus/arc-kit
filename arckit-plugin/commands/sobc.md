@@ -1,5 +1,5 @@
 ---
-description: "Create Strategic Outline Business Case (SOBC) using Australian Government Green Book 5-case model"
+description: "Create Strategic Outline Business Case (SOBC) using Australian Government Department of Finance business case guidance 5-case model"
 ---
 
 You are helping an enterprise architect create a Strategic Outline Business Case (SOBC) to justify investment in a technology project.
@@ -76,7 +76,7 @@ This command creates a **Strategic Outline Business Case (SOBC)** aligned to Aus
    **Organizational Financial Policies**:
    - **Look in**: `projects/000-global/policies/`
    - **File types**: PDF, Word, Markdown
-   - **What to extract**: Spending thresholds, approval gates, Green Book discount rates, procurement rules
+   - **What to extract**: Spending thresholds, approval gates, Department of Finance business case guidance discount rates, procurement rules
    - **Examples**: `spending-policy.pdf`, `procurement-thresholds.docx`
 
    **Enterprise-Wide Investment Frameworks**:
@@ -91,7 +91,7 @@ This command creates a **Strategic Outline Business Case (SOBC)** aligned to Aus
 
 4. **Determine project context**:
    - If user mentions "Australian Government", "public sector", "department", "ministry" → Use full AU Commonwealth business case format
-   - Otherwise → Use Green Book structure but adapt language for private sector
+   - Otherwise → Use Department of Finance business case guidance structure but adapt language for private sector
    - Check stakeholder analysis for government-specific stakeholders (Minister, Permanent Secretary, Treasury, NAO)
 
 5. **Read stakeholder analysis carefully**:
@@ -107,7 +107,7 @@ This command creates a **Strategic Outline Business Case (SOBC)** aligned to Aus
 
    **Question 1** — header: `Options`, multiSelect: false
    > "How many strategic options should be evaluated in the Economic Case?"
-   - **4 options (Recommended)**: Do Nothing + Minimal + Balanced + Comprehensive — standard Green Book options appraisal
+   - **4 options (Recommended)**: Do Nothing + Minimal + Balanced + Comprehensive — standard Department of Finance business case guidance options appraisal
    - **3 options**: Do Nothing + two alternatives — suitable for straightforward investment decisions
    - **5 options**: Do Nothing + four alternatives — for complex programmes with multiple viable approaches
 
@@ -168,7 +168,7 @@ This command creates a **Strategic Outline Business Case (SOBC)** aligned to Aus
 
    **C. Commercial Case**:
    - **Procurement Strategy**:
-     - Australian Government: BuyICT and CPR-compliant sourcing route (BuyICT, DOS, Australian Government hosting controls)
+     - Australian Government: BuyICT and CPR-compliant sourcing route (BuyICT, specialist sourcing, Australian Government hosting controls)
      - Private Sector: Build vs Buy vs Partner
    - **Market Assessment**:
      - Supplier availability
@@ -348,12 +348,12 @@ For Australian Government/public sector projects, ensure:
 
 2. **Economic Case includes**:
    - Social Cost Benefit Analysis (if required)
-   - Green Book discount rates (3.5% standard)
+   - Department of Finance business case guidance discount rates (3.5% standard)
    - Optimism bias adjustment (add contingency)
    - Wider economic benefits
 
 3. **Commercial Case includes**:
-   - BuyICT and CPR-compliant sourcing assessment (BuyICT, DOS)
+   - BuyICT and CPR-compliant sourcing assessment (BuyICT, specialist sourcing)
    - SME participation commitment
    - Social value (minimum 10% weighting)
    - Open source consideration
@@ -369,7 +369,7 @@ For Australian Government/public sector projects, ensure:
    - DTA engagement
    - Cyber security (ASD/ACSC consultation)
    - Accessibility (WCAG 2.2 AA compliance)
-   - Data protection (ICO/DPIA requirements)
+   - Data protection (OAIC/DPIA requirements)
 
 ## Error Handling
 
@@ -452,7 +452,7 @@ After writing the file, show ONLY a concise summary:
 - Timeline: [Start] - [End] ([Duration])
 
 **Australian Government Specific** (if applicable):
-- Green Book Compliance: [5-case model, options appraisal, sensitivity analysis]
+- Department of Finance business case guidance Compliance: [5-case model, options appraisal, sensitivity analysis]
 - Digital Experience Policy: [Points addressed]
 - Service Standard: [Assessment plan]
 - Social Value: [% weighting in procurement]

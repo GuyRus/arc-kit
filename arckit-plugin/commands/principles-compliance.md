@@ -29,7 +29,7 @@ More artifacts = better evidence = more accurate assessment:
 - Any `ARC-*-REQ-*.md` file in `projects/{project-dir}/` - Requirements to assess against principles
 - `projects/{project-dir}/vendors/{vendor}/hld-v*.md` - High-Level Design
 - `projects/{project-dir}/vendors/{vendor}/dld-v*.md` - Detailed Low-Level Design
-- Any `ARC-*-TCOP-*.md` file in `projects/{project-dir}/` - Technology Code of Practice compliance
+- Any `ARC-*-TCOP-*.md` file in `projects/{project-dir}/` - Digital Experience Policy compliance
 - Any `ARC-*-SECD-*.md` file in `projects/{project-dir}/` - Security assessment
 - Any `ARC-*-DATA-*.md` file in `projects/{project-dir}/` - Data architecture
 - Any `ARC-*-TRAC-*.md` file in `projects/{project-dir}/` - Requirements traceability
@@ -188,14 +188,14 @@ Load only the information needed for assessment. Do NOT read entire files - extr
 - CI/CD pipeline description
 
 **From compliance assessments** (if exist):
-- `ARC-*-TCOP-*.md` - TCoP point scores
-- `ARC-*-SECD-*.md` - NCSC CAF assessment results
+- `ARC-*-TCOP-*.md` - DX Policy / DSS point scores
+- `ARC-*-SECD-*.md` - ASD ACSC CAF assessment results
 - `ARC-*-SECD-MOD-*.md` - MOD CAAT assessment
 - `ARC-*-AIGA-*.md` - AI principles scores
 - `ARC-*-AITS-*.md` - Algorithmic transparency
 
 **From other artifacts**:
-- Any `ARC-*-DATA-*.md` file - Entity-relationship diagram, GDPR compliance
+- Any `ARC-*-DATA-*.md` file - Entity-relationship diagram, Privacy Act 1988 (APPs) compliance
 - Any `ARC-*-TRAC-*.md` file - Requirements coverage
 - `ARC-*-SNOW-*.md` - Operational design
 - Any `ARC-*-STKE-*.md` file - Business drivers
@@ -224,7 +224,7 @@ Look for evidence of compliance in project artifacts:
 - Example: "Load testing demonstrates capacity growth" → Look for test results
 
 **Compliance Assessment Evidence**:
-- Do compliance assessments (TCoP, Secure by Design) validate this principle?
+- Do compliance assessments (DX Policy / DSS, Secure by Design) validate this principle?
 - Example: Security principle → Check ARC-*-SECD-*.md findings
 
 #### B. RAG Status Assignment
@@ -500,7 +500,7 @@ Display concise summary (NOT full document):
 
 **Compliance Assessment Evidence**:
 [IF compliance docs exist:]
-- ✅ **TCoP Point {N}**: {Assessment result}
+- ✅ **DX Policy / DSS Point {N}**: {Assessment result}
 - ✅ **Secure by Design - {Control}**: {Assessment result}
 - ✅ **AU AI governance assessment Principle {N}**: {Assessment result}
 - [OR]
@@ -806,7 +806,7 @@ This assessment was based on the following artifacts:
 - Operational metrics (monitoring dashboards, SLA reports)
 
 **Secondary Evidence** (supporting):
-- Compliance assessments (TCoP, Secure by Design, AU AI governance assessment)
+- Compliance assessments (DX Policy / DSS, Secure by Design, AU AI governance assessment)
 - Architecture diagrams showing principle implementation
 - Traceability matrices linking requirements to design
 - Stakeholder requirements driving principle adherence
@@ -854,7 +854,7 @@ After generating the assessment document:
    - /arckit:analyze - Run comprehensive gap analysis
    - /arckit:hld-review - Review vendor HLD against principles
    - /arckit:dld-review - Review vendor DLD against principles
-   - /arckit:service-assessment - GDS Service Standard assessment (UK Gov)
+   - /arckit:service-assessment - Digital Service Standard assessment (Australian Government)
    ```
 
 3. **Track in Project**:

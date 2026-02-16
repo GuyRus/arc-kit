@@ -11,7 +11,7 @@ You are an expert FinOps practitioner and cloud economist with deep knowledge of
 - Showback/chargeback models and unit economics
 - Cloud governance and tagging strategies
 - Budgeting, forecasting, and anomaly detection
-- UK Government spending controls and Treasury Green Book
+- Australian Government spending controls and Department of Finance business case guidance
 
 ## Command Purpose
 
@@ -38,7 +38,7 @@ Parse the user input for:
 - Budget constraints or targets
 - Team structure and accountability model
 - Existing cost management tooling
-- Compliance requirements (UK Gov spending controls, etc.)
+- Compliance requirements (Australian Government spending controls, etc.)
 
 ## Instructions
 
@@ -208,10 +208,10 @@ Generate:
 - Green region preferences
 - Sustainability reporting
 
-**Section 13: UK Government Compliance** (if applicable)
-- Cabinet Office Digital Spend Controls
-- Treasury Green Book alignment
-- G-Cloud/Digital Marketplace cost tracking
+**Section 13: Australian Government Compliance** (if applicable)
+- Department of Finance / DTA Digital Spend Controls
+- Department of Finance business case guidance alignment
+- BuyICT cloud panels/BuyICT/AusTender channels cost tracking
 - Annual technology spend reporting
 
 **Section 14: FinOps Operating Model**
@@ -236,7 +236,7 @@ Verify before saving:
 - [ ] Reporting cadence meets stakeholder requirements
 - [ ] Optimization strategies aligned with workload patterns
 - [ ] Governance framework matches organizational structure
-- [ ] UK Gov compliance addressed (if applicable)
+- [ ] Australian Government compliance addressed (if applicable)
 
 ### Phase 5: Output
 
@@ -311,10 +311,10 @@ Verify before saving:
 - Optimization is ongoing, not one-time
 - Automation reduces toil and improves consistency
 
-### 6. UK Government Alignment
-- Align with Cabinet Office spending controls
-- Support Treasury Green Book business cases
-- Enable G-Cloud/Digital Marketplace reporting
+### 6. Australian Government Alignment
+- Align with Department of Finance / DTA spending controls
+- Support Department of Finance business case guidance business cases
+- Enable BuyICT cloud panels/BuyICT/AusTender channels reporting
 
 ## Document Control
 

@@ -323,9 +323,9 @@ gantt
 #### Timeline by Financial Year
 
 **FY [YEAR]**:
-- Initiative 3.1: Achieve Cyber Essentials certification
-- Initiative 3.2: Implement NCSC CAF baseline controls
-- **Milestones**: Cyber Essentials certified
+- Initiative 3.1: Achieve Essential Eight certification
+- Initiative 3.2: Implement ASD ACSC CAF baseline controls
+- **Milestones**: Essential Eight certified
 - **Investment**: £[AMOUNT]
 
 **FY [YEAR+1]**:
@@ -470,7 +470,7 @@ flowchart TD
 |-----------------|-------------|-------------------|
 | **Budget** | Total budget capped at £[AMOUNT] | Prioritization required |
 | **Timeline** | Must achieve [milestone] by [DATE] | Parallel workstreams needed |
-| **Regulatory** | Must maintain GDPR compliance throughout migration | Data migration approach constrained |
+| **Regulatory** | Must maintain Privacy Act 1988 (APPs) compliance throughout migration | Data migration approach constrained |
 | **Technical** | Legacy system integration required until FY [YEAR] | Cannot fully decommission until then |
 
 ---
@@ -507,7 +507,7 @@ flowchart TD
 | **Quarterly Business Review** | Quarterly | Strategic alignment check | Roadmap refresh, strategic adjustments |
 | **Annual Strategic Review** | Annually | Multi-year strategy alignment | Spending Review inputs, 5-year refresh |
 
-### Service Standard Assessment Gates (UK Government)
+### Service Standard Assessment Gates (Australian Government)
 
 #### Alpha Assessment - FY [YEAR] Q[N]
 **Focus**: Validate approach, prove concept feasibility
@@ -695,10 +695,10 @@ flowchart TD
 
 | Standard/Compliance | Current Status | FY [YEAR] | FY [YEAR+1] | FY [YEAR+2] | FY [YEAR+3] |
 |---------------------|----------------|-----------|-------------|-------------|-------------|
-| Cyber Essentials | Not achieved | Certified | Maintained | Plus certified | Maintained |
+| Essential Eight | Not achieved | Certified | Maintained | Plus certified | Maintained |
 | ISO 27001 | Gap identified | Planning | Certification | Maintained | Maintained |
-| NCSC CAF | Baseline only | Full baseline | Enhanced | Advanced | Advanced |
-| UK GDPR | Compliant | Compliant | Enhanced | Optimized | Optimized |
+| ASD ACSC CAF | Baseline only | Full baseline | Enhanced | Advanced | Advanced |
+| Privacy Act 1988 (APPs) | Compliant | Compliant | Enhanced | Optimized | Optimized |
 | PCI-DSS | Not applicable | N/A | Planning | Certified | Maintained |
 
 ## External References

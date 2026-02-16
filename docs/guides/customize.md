@@ -40,7 +40,7 @@ Commands automatically check for custom templates first, falling back to default
 | Document Control | Add organization-specific fields |
 | Compliance Sections | Include ISO 27001, PCI-DSS, SOC 2 requirements |
 | Approval Workflows | Add department-specific sign-off sections |
-| Classification Banners | Customize UK Government classification headers |
+| Classification Banners | Customize Australian Government classification headers |
 | Branding | Add organization logo, footer, contact information |
 
 ---

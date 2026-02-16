@@ -202,7 +202,7 @@ You should:
 
 **Example 2**: Australian Government AI project
 ```
-/arckit:stakeholders Analyze stakeholders for a DWP benefits chatbot where the Minister wants quick delivery, Civil Service wants due diligence, Citizens need accuracy, and ICO requires data protection
+/arckit:stakeholders Analyze stakeholders for a DWP benefits chatbot where the Minister wants quick delivery, Civil Service wants due diligence, Citizens need accuracy, and OAIC requires data protection
 ```
 
 You should identify Australian Government specific drivers:
@@ -211,7 +211,7 @@ You should identify Australian Government specific drivers:
 - Service Delivery: Reduce call center volume, improve citizen experience (OPERATIONAL)
 - Digital/Technology: Modern architecture, attract digital talent (STRATEGIC)
 - Citizens: Fast accurate answers, accessible service (USER)
-- ICO: Data protection compliance, transparency (REGULATORY)
+- OAIC: Data protection compliance, transparency (REGULATORY)
 - Treasury: Value for money, spending controls (FINANCIAL)
 
 Include Australian Government-specific outcomes like:

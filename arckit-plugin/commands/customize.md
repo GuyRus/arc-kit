@@ -57,8 +57,8 @@ Display as a table:
 | `dpia` | `/arckit:dpia` | Data Protection Impact Assessment |
 | `evaluation-criteria` | `/arckit:evaluate` | Vendor evaluation framework |
 | `finops` | `/arckit:finops` | FinOps cloud cost management |
-| `gcloud-clarify` | `/arckit:gcloud-clarify` | G-Cloud clarification questions |
-| `gcloud-requirements` | `/arckit:gcloud-search` | G-Cloud service requirements |
+| `gcloud-clarify` | `/arckit:gcloud-clarify` | BuyICT cloud panels clarification questions |
+| `gcloud-requirements` | `/arckit:gcloud-search` | BuyICT cloud panels service requirements |
 | `hld-review` | `/arckit:hld-review` | High-level design review |
 | `jsp-936` | `/arckit:jsp-936` | AU defence AI assurance pathway |
 | `mlops` | `/arckit:mlops` | MLOps strategy |
@@ -71,20 +71,20 @@ Display as a table:
 | `research-findings` | `/arckit:research` | Technology research findings |
 | `risk-register` | `/arckit:risk` | Risk register (Orange Book) |
 | `roadmap` | `/arckit:roadmap` | Architecture roadmap |
-| `service-assessment-prep` | `/arckit:service-assessment` | GDS Service Standard prep |
+| `service-assessment-prep` | `/arckit:service-assessment` | Digital Service Standard prep |
 | `servicenow-design` | `/arckit:servicenow` | ServiceNow service design |
 | `sobc` | `/arckit:sobc` | Strategic Outline Business Case |
 | `sow` | `/arckit:sow` | Statement of Work / RFP |
 | `stakeholder-drivers` | `/arckit:stakeholders` | Stakeholder analysis |
 | `story` | `/arckit:story` | Project story with timeline |
-| `tcop-review` | `/arckit:tcop` | Technology Code of Practice |
+| `tcop-review` | `/arckit:tcop` | Digital Experience Policy |
 | `traceability-matrix` | `/arckit:traceability` | Requirements traceability |
 | `au-ai-governance-assessment` | `/arckit:ai-playbook` | AU AI governance assessment |
 | `au-ai-use-case-register` | `/arckit:ai-playbook` | AU AI use case register |
 | `au-ai-governance-checklist` | `/arckit:ai-playbook` | AU AI governance checklist |
 | `au-ai-transparency-statement` | `/arckit:atrs` | AU AI transparency statement |
 | `au-ai-impact-assessment` | `/arckit:ai-playbook` | AU AI impact assessment |
-| `tcop-review` | `/arckit:tcop` | TCoP review template |
+| `tcop-review` | `/arckit:tcop` | DX Policy / DSS review template |
 | `secure-by-design` | `/arckit:secure` | Secure by Design template |
 | `vendor-scoring` | `/arckit:evaluate` | Vendor scoring matrix |
 | `wardley-map` | `/arckit:wardley` | Wardley Map documentation |

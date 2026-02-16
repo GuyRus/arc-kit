@@ -292,7 +292,7 @@ action: {warn / fail / quarantine}
 | **Normal** (P3) | {<1 business day} | {Business hours} | {Jira Service Desk} |
 | **Low** (P4) | {<3 business days} | {Business hours} | {Jira Service Desk} |
 
-**Business Hours**: {Monday-Friday 09:00-17:00 UK time}
+**Business Hours**: {Monday-Friday 09:00-17:00 AEST/AEDT}
 
 **Escalation Path**: {Support team → Product Owner → Domain Lead}
 
@@ -414,16 +414,16 @@ GET /data-products/{product_id}/quality
 - {PII access logged and audited}
 - {PII cannot be exported without anonymization}
 
-### 6.4 GDPR / UK GDPR Compliance
+### 6.4 Privacy Act 1988 (APPs) / Privacy Act 1988 (APPs) Compliance
 
 | Requirement | Implementation |
 |-------------|----------------|
 | **PII Inventory** | {See Property table - PII column marked Yes} |
 | **Legal Basis** | {CONTRACT / LEGITIMATE_INTEREST / CONSENT} |
 | **Data Subject Rights** | {API endpoint for access, rectification, erasure requests} |
-| **Cross-Border Transfers** | {Data stored in UK (London region), no transfers outside UK/EEA} |
+| **Cross-Border Transfers** | {Data stored in Australia (Sydney region), no transfers outside approved Australian jurisdictions} |
 | **Retention** | {See Section 4.4 - automated deletion per policy} |
-| **Breach Notification** | {ICO notification within 72 hours if breach affects >100 individuals} |
+| **Breach Notification** | {OAIC notification within 72 hours if breach affects >100 individuals} |
 | **DPIA Status** | {COMPLETED / NOT_REQUIRED} - Reference: `projects/{PROJECT_ID}/ARC-{PROJECT_ID}-DPIA-v*.md` |
 
 **PII Processing Details**:
@@ -514,7 +514,7 @@ GET /data-products/{product_id}/quality
    - {Do NOT redistribute raw data without Product Owner approval}
    - {Do NOT reverse-engineer or bypass access controls}
 3. **Data Quality Feedback**: {Report data quality issues via Slack #data-support within 24 hours}
-4. **Compliance**: {Comply with your own GDPR obligations if handling PII}
+4. **Compliance**: {Comply with your own Privacy Act 1988 (APPs) obligations if handling PII}
 5. **Security**: {Protect API credentials, rotate keys every 90 days}
 6. **Rate Limits**: {Stay within allocated rate limits; request increase if needed}
 7. **Monitoring**: {Monitor your own usage; domain team may throttle excessive use}
@@ -558,7 +558,7 @@ GET /data-products/{product_id}/quality
 
 **Cloud Provider**: {AWS / Azure / GCP / On-Premise}
 
-**Region**: {UK (London) - eu-west-2}
+**Region**: {Australia (Sydney) - ap-southeast-2}
 
 **High Availability**: {Multi-AZ deployment across 3 availability zones}
 
@@ -566,7 +566,7 @@ GET /data-products/{product_id}/quality
 - **RTO (Recovery Time Objective)**: {4 hours}
 - **RPO (Recovery Point Objective)**: {15 minutes}
 - **Backup Frequency**: {Continuous replication + daily snapshots}
-- **DR Region**: {UK (Dublin) - eu-west-1}
+- **DR Region**: {Australia secondary region (agency-defined)}
 
 ### 10.2 Infrastructure Components
 
@@ -819,5 +819,5 @@ sla:
 **References**:
 - Open Data Contract Standard (ODCS): https://github.com/bitol-io/open-data-contract-standard
 - Data Mesh (Zhamak Dehghani): https://www.oreilly.com/library/view/data-mesh/9781492092384/
-- UK Government Data Quality Framework: https://www.gov.uk/government/publications/the-government-data-quality-framework
-- National Data Strategy: https://www.gov.uk/government/publications/uk-national-data-strategy
+- Australian Government Data Quality Framework: https://www.datacommissioner.gov.au/
+- National Data Strategy: https://www.datacommissioner.gov.au/

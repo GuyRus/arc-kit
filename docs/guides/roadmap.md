@@ -42,8 +42,8 @@ Outputs: `projects/<id>/ARC-<id>-ROAD-v1.0.md` plus optional Mermaid timeline sn
 
 ## Governance Hooks
 
-- Reference the GDS Agile Delivery phases and cite which artefacts unlock each gate.
-- Call out when compliance activities (TCoP, Secure by Design, AI Playbook) must be completed to avoid blocking approvals.
+- Reference the DTA Agile Delivery phases and cite which artefacts unlock each gate.
+- Call out when compliance activities (DX Policy / DSS, Secure by Design, AI Playbook) must be completed to avoid blocking approvals.
 - Include explicit “decision hold points” for vendor selection, architecture reviews, and budget refresh.
 
 ---

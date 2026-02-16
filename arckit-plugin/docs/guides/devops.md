@@ -43,7 +43,7 @@ Output: `projects/<id>/ARC-<id>-DEVOPS-v1.0.md`
 | DevSecOps | SAST, DAST, SCA, container scanning, compliance as code |
 | Release Management | Versioning, changelog, release notes, hotfix process |
 | Platform Engineering | IDP design, self-service portal, golden paths |
-| UK Government Compliance | Cloud First (TCoP Point 5), open standards, Secure by Design |
+| Australian Government Compliance | Cloud First (DX Policy / DSS Point 5), open standards, Secure by Design |
 | Metrics & Improvement | DORA metrics, engineering metrics, continuous improvement |
 
 ---
@@ -81,7 +81,7 @@ Output: `projects/<id>/ARC-<id>-DEVOPS-v1.0.md`
 - Secret management defined with rotation procedures.
 - Rollback procedures documented for each deployment type.
 - DORA metrics defined with baseline targets.
-- UK Government Cloud First policy addressed (if applicable).
+- Australian Government Cloud First policy addressed (if applicable).
 
 ---
 

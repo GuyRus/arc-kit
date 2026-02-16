@@ -93,11 +93,11 @@ The strategy command sits at a synthesis point in the ArcKit workflow:
 
 ```bash
 # Ensure prerequisites exist
-/arckit.principles Create principles for NHS Appointment Booking
-/arckit.stakeholders Analyze stakeholders for NHS Appointment Booking
+/arckit.principles Create principles for myGov/health digital servicesointment Booking
+/arckit.stakeholders Analyze stakeholders for myGov/health digital servicesointment Booking
 
 # Create strategy
-/arckit.strategy Create architecture strategy for NHS Appointment Booking
+/arckit.strategy Create architecture strategy for myGov/health digital servicesointment Booking
 ```
 
 ### Comprehensive (All strategic artifacts)
@@ -159,15 +159,15 @@ After creating the strategy, typical next steps include:
 
 ---
 
-## UK Government Context
+## Australian Government Context
 
-For UK Government projects, the strategy will include:
+For Australian Government projects, the strategy will include:
 
 - **Financial year notation**: FY 2024/25, FY 2025/26
-- **GDS Service Standard**: Discovery/Alpha/Beta/Live phases
-- **TCoP alignment**: Technology Code of Practice references
+- **Digital Service Standard**: Discovery/Alpha/Beta/Live phases
+- **DX Policy / DSS alignment**: Digital Experience Policy references
 - **Spending Review**: SR period alignment
-- **G-Cloud/DOS**: Procurement route references
+- **BuyICT cloud panels/specialist sourcing**: Procurement route references
 
 ---
 

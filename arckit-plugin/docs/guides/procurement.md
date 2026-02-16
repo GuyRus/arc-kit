@@ -39,11 +39,11 @@ Receive proposals → /arckit.evaluate Score <vendor>
 |-----------------|----------------|---------|
 | Technical capability | 40% | Alignment with requirements, architecture approach |
 | Delivery approach | 20% | Plan, resourcing, tooling, risk handling |
-| Compliance & security | 20% | Standards coverage (TCoP, Cyber Essentials, JSP 604, etc.) |
+| Compliance & security | 20% | Standards coverage (DX Policy / DSS, Essential Eight, JSP 604, etc.) |
 | Commercials | 15% | Pricing transparency, TCO, payment schedule |
-| Social value / sustainability | 5% | UK government reporting obligations |
+| Social value / sustainability | 5% | Australian Government reporting obligations |
 
-Adjust to local policy (e.g. Cabinet Office commercial frameworks).
+Adjust to local policy (e.g. Department of Finance / DTA commercial frameworks).
 
 ---
 

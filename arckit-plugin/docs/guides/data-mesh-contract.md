@@ -46,17 +46,17 @@ Unlike traditional data models, mesh contracts emphasize:
 | SLAs | Freshness, availability, quality KPIs | Define monitoring thresholds in observability platform |
 | Access methods | APIs, query endpoints, data feeds | Document authentication and rate limits |
 | Data quality | Validation rules, testing requirements | Implement automated quality checks |
-| Governance & policy | GDPR compliance, access controls, audit hooks | Review with DPO; integrate with governance platform |
+| Governance & policy | Privacy Act 1988 (APPs) compliance, access controls, audit hooks | Review with DPO; integrate with governance platform |
 | Consumer obligations | Usage constraints, attribution, support SLA | Publish in data catalogue for discovery |
 | Change management | Versioning, deprecation, approval workflow | Establish governance board review cadence |
 
 ---
 
-## UK Government Context
+## Australian Government Context
 
-### Technology Code of Practice Alignment
+### Digital Experience Policy Alignment
 
-| TCoP Point | Mesh Contract Application |
+| DX Policy / DSS Point | Mesh Contract Application |
 |------------|---------------------------|
 | **8. Share, reuse and collaborate** | Federated data products replace siloed databases |
 | **6. Make things secure** | Access policies and encryption enforced at contract level |
@@ -130,12 +130,12 @@ Contracts align with NDS pillars:
 
 ## Compliance Focus
 
-### GDPR / UK GDPR
+### Privacy Act 1988 (APPs) / Privacy Act 1988 (APPs)
 
 - **PII inventory** – List all personal data fields in contract
 - **Legal basis** – Document lawful basis for processing
 - **Data subject rights** – Mechanism for access, rectification, erasure
-- **Cross-border transfers** – If data leaves UK, document adequacy decisions
+- **Cross-border transfers** – If data leaves Australia, document adequacy decisions
 - **Retention** – Contract specifies deletion policy
 
 ### Security Standards
@@ -229,6 +229,6 @@ Contracts align with NDS pillars:
 - **PayPal Data Contract Template**: https://github.com/paypal/data-contract-template
 - **Open Data Contract Standard (ODCS)**: https://github.com/bitol-io/open-data-contract-standard
 - **Data Mesh book (Zhamak Dehghani)**: O'Reilly 2022
-- **UK Government Data Quality Framework**: https://www.gov.uk/government/publications/the-government-data-quality-framework
-- **National Data Strategy**: https://www.gov.uk/government/publications/uk-national-data-strategy
-- **GovS 005: Data Standards**: https://www.gov.uk/government/publications/open-standards-for-government
+- **Australian Government Data Quality Framework**: https://www.datacommissioner.gov.au/
+- **National Data Strategy**: https://www.datacommissioner.gov.au/
+- **GovS 005: Data Standards**: https://www.dta.gov.au/help-and-advice/digital-service-standard

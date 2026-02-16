@@ -46,4 +46,4 @@ Output: `projects/<id>/ARC-<id>-STKE-v1.0.md`
 - Conflicts between stakeholders are documented with resolution actions.
 - Change readiness level recorded (advocate, neutral, resistant).
 - Communication plan covers weekly, monthly, and gate-specific touchpoints.
-- Ensure GOV.UK accessibility and language considerations for citizen stakeholders.
+- Ensure Australia.gov.au accessibility and language considerations for citizen stakeholders.

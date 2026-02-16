@@ -510,17 +510,17 @@ flowchart TB
 
 ---
 
-## 13. UK Government Compliance
+## 13. Australian Government Compliance
 
-### Cabinet Office Spend Controls
+### Department of Finance / DTA Spend Controls
 
 | Control | Threshold | Requirement |
 |---------|-----------|-------------|
-| Digital spend | >£100k | Cabinet Office approval |
-| Technology spend | >£100k | Cabinet Office approval |
-| External hosting | Any | Justify vs G-Cloud |
+| Digital spend | >£100k | Department of Finance / DTA approval |
+| Technology spend | >£100k | Department of Finance / DTA approval |
+| External hosting | Any | Justify vs BuyICT cloud panels |
 
-### Treasury Green Book Alignment
+### Department of Finance business case guidance Alignment
 
 | Aspect | Implementation |
 |--------|----------------|
@@ -529,11 +529,11 @@ flowchart TB
 | Risk assessment | Cost overrun scenarios modeled |
 | Benefits realization | Cost savings tracked vs baseline |
 
-### G-Cloud / Digital Marketplace Tracking
+### BuyICT cloud panels / BuyICT/AusTender channels Tracking
 
 | Metric | Current | Target |
 |--------|---------|--------|
-| G-Cloud spend | [£X,XXX] | [Track separately] |
+| BuyICT cloud panels spend | [£X,XXX] | [Track separately] |
 | Marketplace spend | [£X,XXX] | [Track separately] |
 | SME percentage | [X%] | [>33%] |
 
@@ -541,9 +541,9 @@ flowchart TB
 
 | Report | Frequency | Recipient |
 |--------|-----------|-----------|
-| Annual technology spend | Annual | Cabinet Office |
+| Annual technology spend | Annual | Department of Finance / DTA |
 | Transparency data | Annual | Public |
-| G-Cloud spend | Quarterly | Crown Commercial Service |
+| BuyICT cloud panels spend | Quarterly | Crown Commercial Service |
 
 ---
 

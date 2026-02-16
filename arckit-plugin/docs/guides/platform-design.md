@@ -11,7 +11,7 @@
 3. [The 8 PDT Canvases](#the-8-pdt-canvases)
 4. [Prerequisites](#prerequisites)
 5. [Command Usage](#command-usage)
-6. [UK Government Context](#uk-government-context)
+6. [Australian Government Context](#uk-government-context)
 7. [Integration with ArcKit Workflow](#integration-with-arckit-workflow)
 8. [Examples](#examples)
 9. [Common Pitfalls](#common-pitfalls)
@@ -41,10 +41,10 @@ The **Platform Design Toolkit (PDT)** is an open-source methodology from [Bounda
 
 ### Examples of Multi-Sided Platforms
 
-- **Government**: GOV.UK (citizens ↔ services), Digital Marketplace (buyers ↔ suppliers)
-- **Healthcare**: NHS App (patients ↔ providers), booking platforms
+- **Government**: Australia.gov.au (citizens ↔ services), BuyICT/AusTender channels (buyers ↔ suppliers)
+- **Healthcare**: myGov/health digital services (patients ↔ providers), booking platforms
 - **Education**: Online learning (students ↔ educators ↔ employers)
-- **Procurement**: G-Cloud (public sector ↔ suppliers)
+- **Procurement**: BuyICT cloud panels (public sector ↔ suppliers)
 - **Data**: Data marketplaces (data providers ↔ data consumers)
 
 ---
@@ -91,10 +91,10 @@ Is there a supply side AND demand side?
 
 **Output**: Entity relationship diagram (Mermaid), entity classification table
 
-**Example** (NHS appointment booking):
+**Example** (public health appointment booking):
 - Supply: GP practices, hospitals, specialists
 - Demand: Patients, caregivers
-- Supporting: NHS Digital, ICB data services, payment gateway
+- Supporting: AIHW / Services Australia digital services, ICB data services, payment gateway
 
 ---
 
@@ -154,7 +154,7 @@ Is there a supply side AND demand side?
 
 **Output**: 5+ learning services with data sources and feedback loops
 
-**Example** (G-Cloud):
+**Example** (BuyICT cloud panels):
 - Supplier performance data → Buyer recommendations
 - Procurement patterns → Cost benchmarks
 - Security assessments → Risk scoring
@@ -232,7 +232,7 @@ Is there a supply side AND demand side?
 
 4. **Wardley Maps** (`/arckit.wardley`)
    - Component evolution → Build vs. buy decisions
-   - Example: "Payment processing" at Commodity (0.9) → Use Stripe/GOV.UK Pay, don't build
+   - Example: "Payment processing" at Commodity (0.9) → Use Stripe/Australia.gov.au Pay, don't build
 
 ### Workflow Order
 
@@ -253,7 +253,7 @@ Is there a supply side AND demand side?
 ### Basic Usage
 
 ```
-/arckit.platform-design Design NHS appointment booking platform
+/arckit.platform-design Design public health appointment booking platform
 ```
 
 **Output**: Creates `projects/<id>/ARC-<id>-PLAT-v1.0.md` with all 8 canvases
@@ -263,7 +263,7 @@ Is there a supply side AND demand side?
 ### Advanced Usage
 
 ```
-/arckit.platform-design Design Digital Marketplace for training services connecting:
+/arckit.platform-design Design BuyICT/AusTender channels for training services connecting:
 - Supply: Training providers, independent trainers, content creators
 - Demand: Public sector organizations, L&D departments, individual learners
 - Supporting: Accreditation bodies (e.g., CPD Standards Office), payment gateway, LMS integrations
@@ -271,8 +271,8 @@ Is there a supply side AND demand side?
 Focus on:
 1. Liquidity bootstrapping (solve chicken-and-egg)
 2. Quality assurance (accreditation, reviews, outcomes)
-3. GaaP integration (GOV.UK Pay, Notify, Design System)
-4. Data sharing (GDPR compliance, learner records portability)
+3. GaaP integration (Australia.gov.au Pay, Notify, Design System)
+4. Data sharing (Privacy Act 1988 (APPs) compliance, learner records portability)
 ```
 
 ### What the Command Does
@@ -285,26 +285,26 @@ Focus on:
    - Wardley maps → Build vs. buy decisions (component evolution)
    - Architecture principles → Governance principles
 4. **Generates all 8 canvases**: Complete PDT methodology with depth
-5. **Adds UK Government context**: GaaP, TCoP, Service Standard, Digital Marketplace
+5. **Adds Australian Government context**: GaaP, DX Policy / DSS, Service Standard, BuyICT/AusTender channels
 6. **Creates traceability**: Links to stakeholders, requirements, principles, Wardley maps
 7. **Writes file**: Uses Write tool to create markdown document (avoids token limit)
 8. **Shows summary**: Displays key metrics, entity counts, transaction types (not full document)
 
 ---
 
-## UK Government Context
+## Australian Government Context
 
 ### Government as a Platform (GaaP)
 
-The UK Government's [GaaP strategy](https://www.gov.uk/government/publications/government-as-a-platform) treats common capabilities as platforms:
+The Australian Government's [GaaP strategy](https://architecture.digital.gov.au/) treats common capabilities as platforms:
 
 | Platform | Supply Side | Demand Side | Transactions |
 |----------|------------|-------------|--------------|
-| **GOV.UK Pay** | Payment providers (Stripe, Worldpay) | Public sector services | Payment processing |
-| **GOV.UK Notify** | Telcos (SMS, email providers) | Government services | Notifications |
-| **Digital Marketplace** | Suppliers (G-Cloud, DOS) | Public sector buyers | Procurement |
-| **GOV.UK Design System** | Design contributors | Service teams | UI components, patterns |
-| **GOV.UK Verify** (deprecated) | Identity providers | Services needing auth | Identity verification |
+| **Australia.gov.au Pay** | Payment providers (Stripe, Worldpay) | Public sector services | Payment processing |
+| **Australia.gov.au Notify** | Telcos (SMS, email providers) | Government services | Notifications |
+| **BuyICT/AusTender channels** | Suppliers (BuyICT cloud panels, specialist sourcing) | Public sector buyers | Procurement |
+| **Australia.gov.au Design System** | Design contributors | Service teams | UI components, patterns |
+| **Australia.gov.au Verify** (deprecated) | Identity providers | Services needing auth | Identity verification |
 
 **Platform Design Principles** (from GaaP):
 1. **Common components**: Reusable across departments
@@ -313,30 +313,30 @@ The UK Government's [GaaP strategy](https://www.gov.uk/government/publications/g
 4. **API-first**: Programmatic access
 5. **Data portability**: User owns their data
 
-### Technology Code of Practice (TCoP)
+### Digital Experience Policy and Digital Service Standard (DSS)
 
-Platform designs must align with [TCoP points](https://www.gov.uk/guidance/the-technology-code-of-practice):
+Platform designs must align with [DX Policy / DSS points](https://www.dta.gov.au/help-and-advice/digital-experience-policy):
 
 - **Point 3 (Be open and use open source)**: Platform APIs should use open standards (REST, GraphQL, OAuth2)
 - **Point 5 (Use cloud first)**: Platform infrastructure on AWS/Azure/GCP
-- **Point 8 (Share, reuse and collaborate)**: Leverage GOV.UK common platforms
-- **Point 11 (Define your purchasing strategy)**: Digital Marketplace for commercial services
+- **Point 8 (Share, reuse and collaborate)**: Leverage Australia.gov.au common platforms
+- **Point 11 (Define your purchasing strategy)**: BuyICT/AusTender channels for commercial services
 
 ### Service Standard
 
-Platform services assessed against [14 points](https://www.gov.uk/service-manual/service-standard):
+Platform services assessed against [14 points](https://www.dta.gov.au/help-and-advice/digital-service-standard):
 
 - **Point 2 (Solve a whole problem for users)**: Platform solves transaction costs, not just matching
 - **Point 5 (Make sure everyone can use the service)**: WCAG 2.2 AA accessibility
-- **Point 9 (Create a secure service)**: Secure by Design (NCSC CAF)
+- **Point 9 (Create a secure service)**: Secure by Design (ASD ACSC CAF)
 - **Point 13 (Use and contribute to open standards)**: Open Data Contract Standard for data products
 
-### Digital Marketplace Integration
+### BuyICT/AusTender channels Integration
 
-Platform designs often need to procure services via [Digital Marketplace](https://www.digitalmarketplace.service.gov.uk):
+Platform designs often need to procure services via [BuyICT/AusTender channels](https://www.austender.gov.au/):
 
-- **G-Cloud**: Buy cloud software/support (e.g., CRM platform, analytics tools)
-- **DOS**: Commission custom development (e.g., platform MVP, integration work)
+- **BuyICT cloud panels**: Buy cloud software/support (e.g., CRM platform, analytics tools)
+- **specialist sourcing**: Commission custom development (e.g., platform MVP, integration work)
 
 Use `/arckit.gcloud-search` to find relevant services, `/arckit.dos` to generate procurement docs.
 
@@ -404,7 +404,7 @@ graph TD
 
 ## Examples
 
-### Example 1: NHS Appointment Booking Platform ✅
+### Example 1: myGov/health digital servicesointment Booking Platform ✅
 
 **Use Case**: Enable patients to book GP/specialist appointments across trusts
 
@@ -415,16 +415,16 @@ graph TD
 - Network effects: More providers → more choice → more patients → more data → better matching
 
 **Key Canvases**:
-- **Ecosystem**: NHS trusts, GP practices, patients, NHS Digital (identity), ICBs (data governance)
+- **Ecosystem**: public hospitals, primary care networks, patients, AIHW / Services Australia digital services (identity), ICBs (data governance)
 - **Transactions**: Book appointment, reschedule, cancel, SMS reminder, outcomes reporting
 - **Learning Engine**: No-show prediction, optimal appointment duration, provider ratings
 - **MVP**: Pilot with 3 GP practices in one ICB, 1000 patients, validate 20% reduction in phone bookings
 
-**Outcome**: Platform design feeds into technical requirements, data model (patient records, calendars), integration requirements (NHS Login, PDS, GP systems), architecture diagrams.
+**Outcome**: Platform design feeds into technical requirements, data model (patient records, calendars), integration requirements (myGov identity, health provider directories, clinical systems), architecture diagrams.
 
 ---
 
-### Example 2: Digital Marketplace for Training Services ✅
+### Example 2: BuyICT/AusTender channels for Training Services ✅
 
 **Use Case**: Connect public sector organizations with training providers
 
@@ -440,7 +440,7 @@ graph TD
 - **Learning Engine**: Course effectiveness (pre/post assessments), provider quality (ratings + outcomes), skill gap analysis
 - **MVP**: 10 accredited providers, 5 departments, 100 learners, validate 30% cost reduction vs. traditional procurement
 
-**Outcome**: Informs G-Cloud service search (LMS, video platforms), DOS procurement (custom development), requirements (GDPR for learner data, WCAG 2.2 AA), Service Standard assessment.
+**Outcome**: Informs BuyICT cloud panels service search (LMS, video platforms), specialist sourcing procurement (custom development), requirements (Privacy Act 1988 (APPs) for learner data, WCAG 2.2 AA), Service Standard assessment.
 
 ---
 
@@ -520,11 +520,11 @@ graph TD
 
 ### 5. Forgetting Data Governance
 
-**Mistake**: Designing data flows without GDPR/data protection considerations.
+**Mistake**: Designing data flows without Privacy Act 1988 (APPs)/data protection considerations.
 
 **Example**: "Platform shares patient data with all providers for better matching."
 
-**Fix**: Platform Design Canvas should include governance rules (consent, data minimization, right to erasure). Use `/arckit.dpia` for GDPR compliance.
+**Fix**: Platform Design Canvas should include governance rules (consent, data minimization, right to erasure). Use `/arckit.dpia` for Privacy Act 1988 (APPs) compliance.
 
 ---
 
@@ -553,12 +553,12 @@ graph TD
 - **"Modern Monopolies" (2016)**: Moazed, Johnson - Explains platform vs. pipeline businesses
 - **Transaction Cost Economics**: Coase, Williamson - Academic foundation for why platforms reduce costs
 
-### UK Government Resources
+### Australian Government Resources
 
-- **Government as a Platform**: [gov.uk/government/publications/government-as-a-platform](https://www.gov.uk/government/publications/government-as-a-platform)
-- **Technology Code of Practice**: [gov.uk/guidance/the-technology-code-of-practice](https://www.gov.uk/guidance/the-technology-code-of-practice)
-- **Service Standard**: [gov.uk/service-manual/service-standard](https://www.gov.uk/service-manual/service-standard)
-- **Digital Marketplace**: [digitalmarketplace.service.gov.uk](https://www.digitalmarketplace.service.gov.uk)
+- **Government as a Platform**: [architecture.digital.gov.au](https://architecture.digital.gov.au/)
+- **Digital Experience Policy**: [dta.gov.au/help-and-advice/digital-experience-policy](https://www.dta.gov.au/help-and-advice/digital-experience-policy)
+- **Service Standard**: [dta.gov.au/help-and-advice/digital-service-standard](https://www.dta.gov.au/help-and-advice/digital-service-standard)
+- **BuyICT/AusTender channels**: [austender.gov.au](https://www.austender.gov.au/)
 
 ### Related ArcKit Commands
 
@@ -567,4 +567,4 @@ graph TD
 - `/arckit.data-mesh-contract` - Data product contracts for data platforms
 - `/arckit.diagram` - Platform architecture diagrams (C4 model)
 - `/arckit.backlog` - MVP features → user stories → sprints
-- `/arckit.service-assessment` - GDS Service Standard for platform services
+- `/arckit.service-assessment` - Digital Service Standard for platform services

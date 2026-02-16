@@ -186,17 +186,17 @@ Create a comprehensive Architecture Strategy document that synthesises insights 
 - Short-term actions (90 days)
 - Recommended follow-on artifacts with ArcKit commands
 
-### 5. UK Government Specifics
+### 5. Australian Government Specifics
 
-If the user indicates this is a UK Government project, include:
+If the user indicates this is a Australian Government project, include:
 
 - **Financial Year Notation**: Use "FY 2024/25", "FY 2025/26" format
 - **Spending Review Alignment**: Reference SR periods
-- **GDS Service Standard**: Reference Discovery/Alpha/Beta/Live phases
-- **TCoP (Technology Code of Practice)**: Reference 13 points
-- **NCSC CAF**: Security maturity progression
-- **Cross-Government Services**: GOV.UK Pay, Notify, Design System
-- **G-Cloud/DOS**: Procurement alignment
+- **Digital Service Standard**: Reference Discovery/Alpha/Beta/Live phases
+- **DX Policy / DSS (Digital Experience Policy)**: Reference 13 points
+- **ASD ACSC CAF**: Security maturity progression
+- **Cross-Government Services**: Australia.gov.au Pay, Notify, Design System
+- **BuyICT cloud panels/specialist sourcing**: Procurement alignment
 
 ### 6. MOD Specifics
 
@@ -246,7 +246,7 @@ DOC_ID=$(.arckit/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "STRAT" "$
 *User-provided fields* (extract from project metadata or user input):
 - `[PROJECT_NAME]` → Full project name from project metadata or user input
 - `[OWNER_NAME_AND_ROLE]` → Document owner (prompt user if not in metadata)
-- `[CLASSIFICATION]` → Default to "OFFICIAL" for UK Gov, "PUBLIC" otherwise (or prompt user)
+- `[CLASSIFICATION]` → Default to "OFFICIAL" for Australian Government, "PUBLIC" otherwise (or prompt user)
 
 *Calculated fields*:
 - `[YYYY-MM-DD]` for Review Date → Current date + 30 days
@@ -373,4 +373,4 @@ After writing the file, show a concise summary (NOT the full document):
 
 9. **Version Management**: If a strategy already exists (ARC-*-STRAT-v*.md), create a new version (v2.0) rather than overwriting. Strategies should be versioned to track evolution.
 
-10. **Financial Years**: For UK Government, use "FY 2024/25" notation (April-March). For US/other contexts, use appropriate fiscal year notation.
+10. **Financial Years**: For Australian Government, use "FY 2024/25" notation (April-March). For US/other contexts, use appropriate fiscal year notation.

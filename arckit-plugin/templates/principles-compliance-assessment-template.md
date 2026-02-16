@@ -109,7 +109,7 @@
 - ⚪ Implementation not yet started (project in [phase])
 
 **Compliance Assessment Evidence**:
-- ✅ **TCoP Point [N]**: [Assessment result]
+- ✅ **DX Policy / DSS Point [N]**: [Assessment result]
 - ✅ **Secure by Design - [Control]**: [Assessment result]
 - [OR]
 - ⚪ Compliance assessments not yet performed
@@ -336,7 +336,7 @@
 - Operational metrics (monitoring dashboards, SLA reports)
 
 **Secondary Evidence** (supporting):
-- Compliance assessments (TCoP, Secure by Design, AI Playbook)
+- Compliance assessments (DX Policy / DSS, Secure by Design, AI Playbook)
 - Architecture diagrams showing principle implementation
 - Traceability matrices linking requirements to design
 - Stakeholder requirements driving principle adherence

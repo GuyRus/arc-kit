@@ -342,7 +342,7 @@ This returns a document ID like: `ARC-001-PLAT-v1.0`
      5. Transaction Engine: Core transactions, cost reductions, velocity targets
      6. Learning Engine: Learning services summary, revenue, impact
    - Strategic Alignment: Link to stakeholders, requirements, principles, Wardley maps
-   - UK Government Context: GaaP, TCoP, Service Standard, Digital Marketplace
+   - Australian Government Context: GaaP, DX Policy / DSS, Service Standard, BuyICT/AusTender channels
 
 5. **Auto-populate from artifacts** (from Step 3):
    - Entity portraits from ARC-*-STKE-*.md
@@ -350,11 +350,11 @@ This returns a document ID like: `ARC-001-PLAT-v1.0`
    - Build vs. buy from wardley-maps/ARC-*-WARD-*.md
    - Governance from ARC-000-PRIN-*.md
 
-6. **UK Government Context** (if applicable):
+6. **Australian Government Context** (if applicable):
    - Government as a Platform (GaaP) principles
-   - Technology Code of Practice (TCoP) alignment
-   - GDS Service Standard implications
-   - Digital Marketplace positioning (G-Cloud, DOS)
+   - Digital Experience Policy and Digital Service Standard (DSS) alignment
+   - Digital Service Standard implications
+   - BuyICT/AusTender channels positioning (BuyICT cloud panels, specialist sourcing)
 
 7. **Generate complete traceability** (Section 9):
    - Stakeholder → Entity → Value Proposition
@@ -483,13 +483,13 @@ After writing the file, provide a **concise summary** (NOT the full document):
 ✅ **Architecture Principles** → Platform governance from ARC-000-PRIN-*.md
    - {N} principles applied to platform design
 
-## UK Government Context
+## Australian Government Context
 
 {IF applicable:}
 ✅ **Government as a Platform (GaaP)** alignment documented
-✅ **Technology Code of Practice (TCoP)** compliance approach
-✅ **GDS Service Standard** implications analyzed
-✅ **Digital Marketplace** positioning (G-Cloud/DOS)
+✅ **Digital Experience Policy and Digital Service Standard (DSS)** compliance approach
+✅ **Digital Service Standard** implications analyzed
+✅ **BuyICT/AusTender channels** positioning (BuyICT cloud panels/specialist sourcing)
 
 ## Traceability
 
@@ -566,7 +566,7 @@ The Platform Design Canvas (Section 8) provides a single-page synthesis perfect 
    - Network effects analysis
    - MVP validation strategy
 
-4. **UK Government Context**: If project is UK gov/public sector, emphasize GaaP, TCoP, Digital Marketplace
+4. **Australian Government Context**: If project is Australian Government/public sector, emphasize GaaP, DX Policy / DSS, BuyICT/AusTender channels
 
 5. **Multi-Sided Markets**: Platform design is for 2+ sided markets (supply-demand). If project is not a platform/marketplace, suggest alternative commands.
 
@@ -585,9 +585,9 @@ The Platform Design Canvas (Section 8) provides a single-page synthesis perfect 
 ## Example Use Cases
 
 **Good Use Cases for Platform Design**:
-- Multi-sided marketplaces (e.g., supplier-buyer platforms, G-Cloud)
-- Data sharing platforms (e.g., cross-government data mesh, NHS data sharing)
-- Service platforms (e.g., GOV.UK services ecosystem, local government platforms)
+- Multi-sided marketplaces (e.g., supplier-buyer platforms, BuyICT cloud panels)
+- Data sharing platforms (e.g., cross-government data mesh, Australian public health data sharing)
+- Service platforms (e.g., Australia.gov.au services ecosystem, local government platforms)
 - Ecosystem orchestration (e.g., vendor ecosystem, partner network, app store)
 
 **Not Suitable for Platform Design**:

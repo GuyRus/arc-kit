@@ -13,7 +13,7 @@ The Pages Generator creates a `docs/index.html` file that:
 - **Displays** all ArcKit artifacts in a navigable web interface
 - **Renders** Mermaid diagrams inline
 - **Organizes** documents by project with sidebar navigation
-- **Follows** GOV.UK Design System styling
+- **Follows** Australia.gov.au Design System styling
 - **Works** with GitHub Pages hosting
 
 ## Your Task
@@ -102,7 +102,7 @@ projects/
 │   ├── ARC-001-MLOP-v1.0.md     # MLOps Strategy
 │   ├── ARC-001-FINOPS-v1.0.md   # FinOps Strategy
 │   ├── ARC-001-OPS-v1.0.md      # Operational Readiness
-│   ├── ARC-001-TCOP-v1.0.md     # TCoP Review
+│   ├── ARC-001-TCOP-v1.0.md     # DX Policy / DSS Review
 │   ├── ARC-001-SECD-v1.0.md     # Secure by Design
 │   ├── ARC-001-SECD-MOD-v1.0.md # MOD Secure by Design
 │   ├── ARC-001-AIGA-v1.0.md     # AU AI Governance Assessment
@@ -168,7 +168,7 @@ Only include these known artifact types. Match by type code pattern `ARC-{PID}-{
 | | TRAC | `ARC-*-TRAC-*.md` | Traceability Matrix |
 | | PRIN-COMP | `ARC-*-PRIN-COMP-*.md` | Principles Compliance |
 | **Compliance** | | | |
-| | TCOP | `ARC-*-TCOP-*.md` | TCoP Assessment |
+| | TCOP | `ARC-*-TCOP-*.md` | DX Policy / DSS Assessment |
 | | SECD | `ARC-*-SECD-*.md` | Secure by Design |
 | | SECD-MOD | `ARC-*-SECD-MOD-*.md` | MOD Secure by Design |
 | | AIGA | `ARC-*-AIGA-*.md` | AU AI Governance Assessment |
@@ -190,9 +190,9 @@ Only include these known artifact types. Match by type code pattern `ARC-{PID}-{
 | **Procurement** | | | |
 | | SOW | `ARC-*-SOW-*.md` | Statement of Work |
 | | EVAL | `ARC-*-EVAL-*.md` | Evaluation Criteria |
-| | DOS | `ARC-*-DOS-*.md` | DOS Requirements |
-| | GCLD | `ARC-*-GCLD-*.md` | G-Cloud Search |
-| | GCLC | `ARC-*-GCLC-*.md` | G-Cloud Clarifications |
+| | specialist sourcing | `ARC-*-specialist sourcing-*.md` | specialist sourcing Requirements |
+| | GCLD | `ARC-*-GCLD-*.md` | BuyICT cloud panels Search |
+| | GCLC | `ARC-*-GCLC-*.md` | BuyICT cloud panels Clarifications |
 | | DMC | `ARC-*-DMC-*.md` | Data Mesh Contract |
 | | | `vendors/*/*.md` | Vendor Documents |
 | **Research** | | | |
@@ -421,7 +421,7 @@ Features:
 - Sidebar navigation for all projects
 - Markdown rendering with syntax highlighting
 - Mermaid diagram support (auto-rendered)
-- GOV.UK Design System styling
+- Australia.gov.au Design System styling
 - Responsive mobile layout
 - Private repo graceful degradation (links to GitHub for document viewing)
 

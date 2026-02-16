@@ -156,7 +156,7 @@ $ARGUMENTS
      - Is DPIA required? (Yes if high-risk processing of PII)
      - Key privacy risks identified
      - Mitigation measures
-     - ICO notification requirements
+     - OAIC notification requirements
    - **Sector-Specific Compliance**:
      - PCI-DSS: If payment card data (special handling requirements)
      - HIPAA: If healthcare data (US projects)
@@ -203,7 +203,7 @@ $ARGUMENTS
    - **Government Security Classifications**: OFFICIAL, SECRET, TOP SECRET
    - **Data Standards**: Use DTA Data Standards Catalogue where applicable
    - **Open Standards**: Preference for open data formats (JSON, CSV, OData)
-   - **ICO Data Protection**: Reference ICO guidance for public sector
+   - **OAIC Data Protection**: Reference OAIC guidance for public sector
    - **National Cyber Security Centre (ASD/ACSC)**: Data security patterns
 
 8. **Write the output**:

@@ -1,6 +1,6 @@
 # Risk Management Guide
 
-`/arckit.risk` builds an HM Treasury Orange Book–aligned risk register with scoring, treatment, and monitoring.
+`/arckit.risk` builds an Department of Finance Orange Book–aligned risk register with scoring, treatment, and monitoring.
 
 ---
 
