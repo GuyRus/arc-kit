@@ -1,0 +1,14 @@
+{
+  "id": "finance-national-framework-assurance-ai-page",
+  "title": "National framework for assurance of AI in government (web page)",
+  "owner": "Department of Finance",
+  "canonicalUrl": "https://www.finance.gov.au/government/public-data/data-and-digital-ministers-meeting/national-framework-assurance-artificial-intelligence-government",
+  "sourceUrl": "https://www.finance.gov.au/government/public-data/data-and-digital-ministers-meeting/national-framework-assurance-artificial-intelligence-government",
+  "accessedAtAEDT": "2026-02-15T20:07:26.902828+11:00",
+  "checksumSha256": "3c433976f2eb31cad474bb1d09c7c3adb7016186b24d30be8289d32c5979b4ca",
+  "format": "html",
+  "originalPath": "originals/finance-national-framework-assurance-ai-page.html",
+  "convertedPath": "converted/finance-national-framework-assurance-ai-page.txt",
+  "conversionMethod": "Custom HTMLParser text extraction",
+  "notes": "Canonical page for framework and supporting sections."
+}

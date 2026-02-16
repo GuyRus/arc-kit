@@ -1,0 +1,14 @@
+{
+  "id": "legislation-privacy-act-1988",
+  "title": "Privacy Act 1988 (latest compilation PDF)",
+  "owner": "Federal Register of Legislation",
+  "canonicalUrl": "https://www.legislation.gov.au/C2004A03712/latest/downloads",
+  "sourceUrl": "https://www.legislation.gov.au/C2004A03712/2025-06-10/2025-06-10/text/original/pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:37.991160+11:00",
+  "checksumSha256": "f5d68b3c1dad8d938a8c1c6f06b4c23796a4641870f8e38f546be00f7b89375e",
+  "format": "pdf",
+  "originalPath": "originals/legislation-privacy-act-1988.pdf",
+  "convertedPath": "converted/legislation-privacy-act-1988.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "Primary statutory privacy obligation for AI deployments handling personal information."
+}

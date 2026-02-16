@@ -1,0 +1,520 @@
+Guidance for the artificial intelligence impact assessment tool | digital.gov.au 
+Skip to main content 
+
+Menu 
+
+Close 
+
+Explore 
+
+Close 
+
+Explore 
+
+Investment Oversight Framework (IOF) 
+
+Close 
+
+Investment Oversight Framework (IOF) 
+
+State 1: Strategic Planning 
+
+State 2: Prioritisation 
+
+State 3: Contestability 
+
+State 4: Assurance 
+
+State 5: Sourcing 
+
+State 6: Operations 
+
+Digital Capability Assessment Process (DCAP) 
+
+ICT Investment Approval Process 
+
+Policy 
+
+Close 
+
+Policy 
+
+Artificial intelligence 
+
+- APS AI plan 2025 
+
+- AI technical standard 
+
+Cloud Policy 
+
+Benefits Management Policy 
+
+Digital Experience Policy 
+
+- Digital Experience Toolkit 
+
+Enabling government 
+
+Close 
+
+Enabling government 
+
+Major Digital Projects Report 2026 
+
+Buying and selling 
+
+Digital architecture 
+
+Policy toolkit: alpha 
+
+Secretaries Digital and Data Committee 
+
+SSA Review 
+
+Featured initiatives 
+
+Close 
+
+Featured initiatives 
+
+Data and Digital Government Strategy 
+
+Trial of Microsoft 365 Copilot 
+
+Get involved 
+
+Observatory 
+
+Enterprise Resource Planning (ERP) 
+
+Digital project research series 
+
+About 
+
+Contact 
+
+Search 
+
+Explore 
+
+Investment Oversight Framework (IOF) 
+
+State 1: Strategic Planning 
+
+State 2: Prioritisation 
+
+State 3: Contestability 
+
+State 4: Assurance 
+
+State 5: Sourcing 
+
+State 6: Operations 
+
+Digital Capability Assessment Process (DCAP) 
+
+ICT Investment Approval Process 
+
+Policy 
+
+Artificial intelligence 
+
+- APS AI plan 2025 
+
+- AI technical standard 
+
+Cloud Policy 
+
+Benefits Management Policy 
+
+Digital Experience Policy 
+
+- Digital Experience Toolkit 
+
+Enabling government 
+
+Major Digital Projects Report 2026 
+
+Buying and selling 
+
+Digital architecture 
+
+Policy toolkit: alpha 
+
+Secretaries Digital and Data Committee 
+
+SSA Review 
+
+Featured initiatives 
+
+Data and Digital Government Strategy 
+
+Trial of Microsoft 365 Copilot 
+
+Get involved 
+
+Observatory 
+
+Enterprise Resource Planning (ERP) 
+
+Digital project research series 
+
+About 
+
+Contact 
+
+Search 
+
+Artificial intelligence impact assessment tool 
+
+Home 
+
+Artificial intelligence impact assessment tool 
+
+Guidance for the artificial intelligence impact assessment tool 
+
+Guidance for the artificial intelligence impact assessment tool 
+
+Introduction 
+
+This document provides guidance for completing the Australian Government artificial intelligence (AI) impact assessment tool (the tool). Use this supporting guidance to understand, interpret and complete the tool. 
+
+The impact assessment tool is for Australian Government teams working on an AI use case. It helps teams identify, assess and manage AI use case impacts and risks against Australia's AI Ethics Principles . 
+
+Agencies can use the tool to fulfill AI use case impact assessment requirements under the Policy for the responsible use of AI in government (the AI policy). Refer to the impact assessment tool document for assessment instructions and to the AI policy for key definitions and implementation requirements. 
+
+This guidance mirrors the AI impact assessment tool’s 12-section structure. For advice on completing a section in the tool, find the corresponding section number in this guidance 
+
+Assessing officers should familiarise themselves with the AI policy and the AI Ethics Principles. Also consider other Digital Transformation Agency (DTA) resources designed to support government AI adoption, including: 
+
+the AI technical standard 
+
+AI procurement resources, including the Guidance on AI procurement in government , AI contract template and AI model clauses 
+
+guidance on the use of public generative AI tools for agencies and for staff . 
+
+The DTA welcomes user feedback on the tool and supporting guidance. Please send questions or suggestions to ai@dta.gov.au . 
+
+Disclaimer 
+
+The Digital Transformation Agency (DTA) provides the AI impact assessment tool and supporting guidance to assist Australia Government agencies to assess their proposed use of artificial intelligence (AI). Agencies should not treat the tool or guidance as legal advice or as authorising proposed AI use. Agencies are responsible for any decisions relating to their use of AI and for seeking technical and legal advice as appropriate. 
+
+Next page 
+
+1. Basic information 
+
+Artificial intelligence 
+
+Australian public service AI plan 2025 
+
+Foreword 
+
+Introduction 
+
+What we plan to achieve 
+
+Trust: Transparency, ethics and governance 
+
+People: Capability building and engagement 
+
+Tools: Access, infrastructure and support 
+
+Appendix A: Plan deliverables 
+
+Statement of Intent on AI in the Australian Public Service 
+
+AI Plan for the Australian Public Service 2025: At a glance 
+
+Technical standard for government’s use of artificial intelligence 
+
+Introduction, scope and audience 
+
+AI system lifecycle 
+
+Summary of requirements in the standard 
+
+Interactive table of statements 
+
+Whole of AI lifecycle statements 
+
+Statement 1: Define an operational model 
+
+Statement 2: Define the reference architecture 
+
+Statement 3: Identify and build people capabilities 
+
+Statement 4: Enable AI auditing 
+
+Statement 5: Provide explainability based on the use case 
+
+Statement 6: Manage system bias 
+
+Statement 7: Apply version control practices 
+
+Statement 8: Apply watermarking techniques 
+
+Design statements 
+
+Statement 9: Conduct pre-work 
+
+Statement 10: Adopt a human-centred approach 
+
+Statement 11: Design safety systemically 
+
+Statement 12: Define success criteria 
+
+Data statements 
+
+Statement 13: Establish data supply chain management processes 
+
+Statement 14: Implement data orchestration processes 
+
+Statement 15: Implement data transformation and feature engineering practices 
+
+Statement 16: Ensure data quality is acceptable 
+
+Statement 17: Validate and select data Agencies must 
+
+Statement 18: Enable data fusion, integration and sharing 
+
+Statement 19: Establish the model and context dataset 
+
+Train statements 
+
+Statement 20: Plan the model architecture 
+
+Statement 21: Establish training environment 
+
+Statement 22: Implement model creation, tuning, and grounding 
+
+Statement 23: Validate, assess, and update model 
+
+Statement 24: Select trained models 
+
+Statement 25: Implement continuous improvement frameworks 
+
+Evaluate statements 
+
+Statement 26: Adapt test strategies and practices for AI systems 
+
+Statement 27: Test for specified behaviour 
+
+Statement 28: Test for safety, robustness, and reliability 
+
+Statement 29: Test for conformance and compliance 
+
+Statement 30: Test for intended and unintended consequences 
+
+Integrate statements 
+
+Statement 31: Undertake integration planning 
+
+Statement 32: Manage integration as a continuous practice 
+
+Deploy statements 
+
+Statement 33: Create business continuity plans 
+
+Statement 34: Configure a staging environment 
+
+Statement 35: Deploy to a production environment 
+
+Statement 36: Implement rollout and safe rollback mechanisms 
+
+Monitor statements 
+
+Statement 37: Establish monitoring framework 
+
+Statement 38: Undertake ongoing testing and monitoring 
+
+Statement 39: Establish incident resolution processes 
+
+Decommission statements 
+
+Statement 40: Create a decommissioning plan 
+
+Statement 41: Shut down the AI system 
+
+Statement 42: Finalise documentation and reporting 
+
+Use Case Assessment 
+
+Key terms 
+
+Trial of Microsoft 365 Copilot 
+
+Summary report 
+
+Executive summary 
+
+Evaluation findings, methodology and approach 
+
+Appendix 
+
+Full report 
+
+Executive summary and glossary 
+
+Employee-related outcomes 
+
+Productivity 
+
+Whole-of-government adoption of generative AI 
+
+Unintended outcomes 
+
+Appendix A 
+
+Appendix B 
+
+Appendix C 
+
+Appendix D 
+
+Appendix E 
+
+Survey questions 
+
+Evaluation briefing 
+
+AI in government policy 
+
+Policy aim 
+
+Implementation 
+
+Strategy and oversight 
+
+Preparedness and operations 
+
+AI use case impact assessment 
+
+Appendices 
+
+Accountability 
+
+Transparency statements 
+
+Staff training 
+
+Agency guidance on public generative AI 
+
+Staff guidance on public generative AI 
+
+Resources 
+
+AI impact assessment tool 
+
+Introduction 
+
+Guidance for the tool 
+
+1. Basic information 
+
+2. Purpose and expected benefits 
+
+3. Inherent risk assessment 
+
+4. Threshold assessment outcome 
+
+5. Fairness 
+
+6. Reliability and safety 
+
+7. Privacy protection and security 
+
+8. Transparency and explainability 
+
+9. Contestability 
+
+10. Human-centred values 
+
+11. Accountability 
+
+12. Use case review and next steps 
+
+Appendix - Risk rating guidance 
+
+Pilot AI assurance framework 
+
+Introduction 
+
+1. Basic information 
+
+2. Purpose and expected benefits 
+
+3. Threshold assessment 
+
+4. Fairness 
+
+5. Reliability and safety 
+
+6. Privacy protection and security 
+
+7. Transparency and explainability 
+
+8. Contestability 
+
+9. Accountability 
+
+10. Human-centred values 
+
+11. Internal review and next steps 
+
+Pilot AI assurance framework guidance 
+
+Guidance 1. Basic information 
+
+Guidance 2. Purpose and expected benefits 
+
+Guidance 3. Threshold assessment 
+
+Guidance 4. Fairness 
+
+Guidance 5. Reliability and safety 
+
+Guidance 6. Privacy protection and security 
+
+Guidance 7. Transparency and explainability 
+
+Guidance 8. Contestability 
+
+Guidance 9. Accountability 
+
+Guidance 10. Human-centred values 
+
+Guidance 11. Internal review and next steps 
+
+Attachment 
+
+Pilot implementation report: Australian Government artificial intelligence (AI) assurance framework 
+
+Findings and recommendations 
+
+Recommendations 
+
+Context, data and rationale 
+
+Appendix A: Pilot agencies 
+
+Appendix B: Post-assessment survey questions 
+
+Related frameworks 
+
+Use classification 
+
+Insights 
+
+Connect with the digital community 
+
+Share, build or learn digital experience and skills with training and events, and collaborate with peers across government. 
+
+Join the Digital Profession 
+
+An initiative of the Digital Transformation Agency 
+
+© Commonwealth of Australia. With the exception of the Commonwealth Coat of Arms and where otherwise noted, this work is licensed under the CC BY 4.0 license. 
+
+Privacy l Disclaimer and copyright l Accessibility 
+
+Return focus to the top of the page

@@ -1,0 +1,94 @@
+                  Checklist
+                  Privacy considerations when using
+                  commercially available AI products
+
+
+Who is this guidance for?                                 Privacy issue
+This guidance is targeted at organisations that are       Are you collecting, generating or inferring personal
+deploying AI systems that were built with, collect,       information using an AI system?
+store, use or disclose personal information. A
+‘deployer’ is any individual or organisation that         Considerations
+supplies or uses an AI system to provide a product
+or service.                                               To assess whether you will be compliant with your
+                                                          entity’s obligations under APP 3, consider:
+This guidance is intended to assist organisations to
+comply with their privacy obligations when using          • Is the collection or generation reasonably
+commercially available AI products.                         necessary for your entity’s functions or activities?
+
+                                                          • Are you collecting or generating personal
+                                                            information using AI only by lawful and fair means?
+Privacy issue                                             • Would it be unreasonable or impracticable to
+Are you using or disclosing personal information in         collect the personal information directly from
+the context of an AI system?                                the individual?
+
+                                                          • If you’re collecting or generating sensitive
+Considerations                                              information using AI, do you have the
+                                                            individual’s consent?
+To assess whether you will be compliant with your
+entity’s obligations under APP 6, consider:
+
+• Is the purpose for which you intend to use or
+  disclose the personal information the same as the
+  purpose for which you originally collected it?
+
+• If it is a secondary use or disclosure, would the
+  individual reasonably expect you to use or disclose
+  it for the secondary purpose?
+
+• If it is a secondary use or disclosure, is it related
+  to the primary purpose of collection (or if the
+  information is sensitive information, is it directly
+  related to the primary purpose?)
+Privacy issue                                          Privacy issue
+Have you taken reasonable steps to ensure the          Has your organisation put in place appropriate
+accuracy of personal information in relation to the    transparency and accountability measures?
+AI system?
+                                                       Considerations
+Considerations
+                                                       To comply with your organisation’s obligations under
+To comply with your APP 10 obligations, your           APP 1 and APP 5, you should consider:
+organisation should consider:
+                                                       • Have you informed individuals about how their
+• Is the personal information being input into the       personal information is used in connection with AI,
+  product accurate and of a high quality?                including at the time you collect their information
+                                                         and in your organisation’s Privacy Policy?
+• Do your records clearly indicate where information
+  is the product of an AI output and therefore a       • Does your organisation have in place procedures
+  probabilistic assessment rather than fact?             and resources to be able to understand and explain
+                                                         the AI systems you are using, and particularly
+• Do you have processes in place to ensure               how they use, disclose and generate personal
+  appropriate human oversight of AI outputs, with a      information?
+  human user responsible for verifying the accuracy
+  of any personal information obtained through AI?
+
+• Does your organisation ensure that individuals are   Privacy issue
+  made aware of when AI is used in ways that may
+  materially affect them?                              What ongoing assurance processes need to be put
+                                                       in place?
+
+
+               Examples of personal information        Considerations
+               include a person’s name, email
+                                                       Your organisation will need to ensure it has
+               address and images or videos
+                                                       established appropriate processes and systems
+               where a person is identifiable.
+                                                       to ensure it complies with its APP obligations
+                                                       throughout the lifecycle of the AI system. Consider:
+
+                                                       • Do you have policies in place that outline the
+                                                         permitted and prohibited uses of the system?
+   Learn more                                          • Have you provided appropriate training of staff
+   The OAIC’s guidance on Privacy and the                about the operation of the AI system and the
+   use of commercially available AI products             potential privacy and security risks?
+   includes practices that organisations that          • Do you have processes in place to provide ongoing
+   are APP entities must follow to comply with           monitoring of AI systems to ensure they are
+   their obligations under the Privacy Act as            operating as intended? Have you provided for
+   well as good privacy practice when using              regular audits or reviews?
+   commercially available AI products.
+
+
+
+
+                                                                                                 oaic.gov.au
+

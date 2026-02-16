@@ -1,0 +1,14 @@
+{
+  "id": "acsc-introduction-to-ai",
+  "title": "An introduction to artificial intelligence (November 2023)",
+  "owner": "Australian Signals Directorate / Australian Cyber Security Centre",
+  "canonicalUrl": "https://www.cyber.gov.au/business-government/secure-design/artificial-intelligence/an-introduction-to-artificial-intelligence",
+  "sourceUrl": "https://www.cyber.gov.au/sites/default/files/2025-03/An%20introduction%20to%20artificial%20intelligence%20%28November%202023%29.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:40.194081+11:00",
+  "checksumSha256": "d0789f8c7bd3ba72d8270833e21136df2d1293e58696eef94a183f28b02dd2e9",
+  "format": "pdf",
+  "originalPath": "originals/acsc-introduction-to-ai.pdf",
+  "convertedPath": "converted/acsc-introduction-to-ai.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "ACSC AI primer for risk and control context."
+}

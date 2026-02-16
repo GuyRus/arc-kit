@@ -1,0 +1,89 @@
+                 Checklist
+                 Privacy considerations when developing
+                 or training generative AI models
+
+
+Who is this guidance for?                                Privacy issue
+This guidance is intended for developers of              Have reasonable steps been taken to ensure
+generative artificial intelligence (AI) models or        accuracy at the planning stage?
+systems who are subject to the Privacy Act. A
+developer includes any organisation who designs,         Considerations
+builds, trains, adapts or combines AI models and
+applications. This includes adapting through             •   Is the training data accurate, factual and up to
+fine-tuning, which refers to modifying a trained AI          date considering the purpose it may be used for?
+model (developed by them or someone else) with
+a smaller, targeted fine-tuning dataset to adapt it to   •   What impact will the accuracy of the data have on
+suit more specialised use cases.                             the model’s outputs?
+
+                                                         •   Are the limitations of the model communicated
+                                                             clearly to potential users, for example through the
+Privacy issue                                                use of appropriate disclaimers?
+
+Can obligations to implement practices, procedures       •   Can the model be updated if training data
+and systems to ensure APP compliance be met?                 becomes inaccurate or out-of-date?
+
+                                                         •   Have diverse testing methods or other review
+Considerations                                               tools or controls been implemented to identify
+                                                             and remedy potential accuracy issues?
+•   Has a privacy by design approach been adopted?
+                                                         •   Has a system to tag content been implemented
+•   Has a privacy impact assessment been completed?          (e.g. use of watermarks)?
+
+                                                         •   Have any other steps to address the risk of
+                                                             inaccuracy been taken?
+Privacy issue                                                  Privacy issue
+Can obligations in relation to collection be met?              Can obligations in relation to use and disclosure
+                                                               be met?
+Considerations
+                                                               Considerations
+•   Is there personal or sensitive information in the
+    data to be collected?                                      •   What is the primary purpose the personal
+                                                                   information was collected for?
+•   Could de-identified data be used, or other data
+    minimisation techniques integrated to ensure               •   Where the AI-related use is a secondary purpose,
+    only necessary information is collected or used?               what were the reasonable expectations of the
+                                                                   individual at the time of collection?
+•   Once collected, has the data been reviewed and
+    any unnecessary data been deleted?                         •   What was provided in the APP 5 notification
+                                                                   (and privacy policy) to individuals at the time
+•   Is there valid consent for the collection of any               of collection? Have any new notifications been
+    sensitive information or has sensitive information             provided?
+    been deleted?
+                                                               •   Does consent need to be sought for the
+•   Is the means of data collection lawful and fair?               secondary AI related use, and/or could a
+•   Could the data be collected directly from                      meaningful and informed opt-out be provided as
+    individuals rather than from a third party?                    an option?
+
+•   Where data is collected from a third party,
+    has information been sought about the                      Privacy issue
+    circumstances of the original collection (including        Have transparency obligations been met?
+    notification and transparency measures) and
+    have these circumstances been considered?
+                                                               Considerations
+•   Have assurances been sought from relevant third
+    parties in relation to the provenance of the data          •   Are the privacy policy and any APP 5 notifications
+    and circumstances of collection?                               clearly expressed and up-to-date? Do they clearly
+                                                                   indicate and explain the use of the data for AI
+•   If scraped data has been used, have measures                   training purposes?
+    been undertaken to ensure this method of
+    collection complies with privacy obligations?              •   Have steps been taken to notify affected
+                                                                   individuals that their data has been collected?
+
+               Examples of personal information                •   Where data scraping has been used and
+               include a person’s name, email                      individual notification is not possible, has general
+               address and images or videos                        notification been considered?
+               where a person is identifiable.
+
+
+
+
+    Learn more
+    The OAIC’s Guidance on privacy and developing and training generative AI models includes practices
+    that developers that are APP entities must follow in order to comply with their obligations under the Privacy
+    Act as well as good privacy practices for developers when developing and training models.
+
+
+
+
+                                                                                                          oaic.gov.au
+

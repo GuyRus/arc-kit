@@ -1,0 +1,14 @@
+{
+  "id": "dta-standard-ai-transparency-statements",
+  "title": "Standard for AI transparency statements 2.0",
+  "owner": "Digital Transformation Agency",
+  "canonicalUrl": "https://www.digital.gov.au/ai/ai-in-government-policy/standard-ai-transparency-statements",
+  "sourceUrl": "https://www.digital.gov.au/sites/default/files/documents/2025-12/Standard%20for%20AI%20transparency%20statements%202.0_0.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:24.588933+11:00",
+  "checksumSha256": "bcd3a3cac366fce0d5b0f003ebaee7d66e5062020e204ed500d21d7ad1d99af1",
+  "format": "pdf",
+  "originalPath": "originals/dta-standard-ai-transparency-statements.pdf",
+  "convertedPath": "converted/dta-standard-ai-transparency-statements.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "Minimum transparency statement content standard."
+}

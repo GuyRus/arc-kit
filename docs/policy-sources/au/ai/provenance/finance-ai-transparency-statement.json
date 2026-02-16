@@ -1,0 +1,14 @@
+{
+  "id": "finance-ai-transparency-statement",
+  "title": "Department of Finance AI transparency statement",
+  "owner": "Department of Finance",
+  "canonicalUrl": "https://www.finance.gov.au/about-us/artificial-intelligence-ai-transparency-statement",
+  "sourceUrl": "https://www.finance.gov.au/about-us/artificial-intelligence-ai-transparency-statement",
+  "accessedAtAEDT": "2026-02-15T20:07:26.980000+11:00",
+  "checksumSha256": "ab11d68b91b86553947c3de5d3b1cd548c905c05a77fb4a8e28959beee544808",
+  "format": "html",
+  "originalPath": "originals/finance-ai-transparency-statement.html",
+  "convertedPath": "converted/finance-ai-transparency-statement.txt",
+  "conversionMethod": "Custom HTMLParser text extraction",
+  "notes": "Agency AI transparency implementation example."
+}

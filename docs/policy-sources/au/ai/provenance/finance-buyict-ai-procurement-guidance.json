@@ -1,0 +1,14 @@
+{
+  "id": "finance-buyict-ai-procurement-guidance",
+  "title": "BuyICT AI procurement guidance reference",
+  "owner": "Department of Finance (BuyICT)",
+  "canonicalUrl": "https://www.buyict.gov.au/sp?id=resources_and_policies&kb=KB0010685",
+  "sourceUrl": "https://www.buyict.gov.au/sp?id=resources_and_policies&kb=KB0010685",
+  "accessedAtAEDT": "2026-02-15T20:07:31.488600+11:00",
+  "checksumSha256": "1e549461e34679b4a10bc46c6dad9b3df4e9cb6b3de6a53b7450526d3c99c4d4",
+  "format": "html",
+  "originalPath": "originals/finance-buyict-ai-procurement-guidance.html",
+  "convertedPath": "converted/finance-buyict-ai-procurement-guidance.txt",
+  "conversionMethod": "Custom HTMLParser text extraction",
+  "notes": "Referenced by DTA guidance; JS-rendered page may limit static extraction."
+}

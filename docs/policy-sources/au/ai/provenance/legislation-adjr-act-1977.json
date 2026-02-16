@@ -1,0 +1,14 @@
+{
+  "id": "legislation-adjr-act-1977",
+  "title": "Administrative Decisions (Judicial Review) Act 1977 (latest compilation PDF)",
+  "owner": "Federal Register of Legislation",
+  "canonicalUrl": "https://www.legislation.gov.au/C2004A01697/latest/downloads",
+  "sourceUrl": "https://www.legislation.gov.au/C2004A01697/2026-01-22/2026-01-22/text/original/pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:38.650505+11:00",
+  "checksumSha256": "fbf2a112d6e41740d4c42d4d821dab1a7a314f2edd85c10fe493da9d2ebfcfba",
+  "format": "pdf",
+  "originalPath": "originals/legislation-adjr-act-1977.pdf",
+  "convertedPath": "converted/legislation-adjr-act-1977.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "Judicial review mechanism relevant where AI informs administrative decisions."
+}

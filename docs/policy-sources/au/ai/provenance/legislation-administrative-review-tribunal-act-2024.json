@@ -1,0 +1,14 @@
+{
+  "id": "legislation-administrative-review-tribunal-act-2024",
+  "title": "Administrative Review Tribunal Act 2024 (latest compilation PDF)",
+  "owner": "Federal Register of Legislation",
+  "canonicalUrl": "https://www.legislation.gov.au/C2024A00040/latest/downloads",
+  "sourceUrl": "https://www.legislation.gov.au/C2024A00040/2026-01-22/2026-01-22/text/original/pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:38.821113+11:00",
+  "checksumSha256": "200a94de1c79d011103f3100175a1b0d64c6287746dacde4acd998521cdad7df",
+  "format": "pdf",
+  "originalPath": "originals/legislation-administrative-review-tribunal-act-2024.pdf",
+  "convertedPath": "converted/legislation-administrative-review-tribunal-act-2024.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "Merits review framework for federal administrative decisions."
+}

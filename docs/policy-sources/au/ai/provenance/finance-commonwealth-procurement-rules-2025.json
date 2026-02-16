@@ -1,0 +1,14 @@
+{
+  "id": "finance-commonwealth-procurement-rules-2025",
+  "title": "Commonwealth Procurement Rules 2025",
+  "owner": "Department of Finance",
+  "canonicalUrl": "https://www.finance.gov.au/government/procurement/commonwealth-procurement-rules",
+  "sourceUrl": "https://www.finance.gov.au/sites/default/files/2025-10/Commonwealth-Procurement-Rules-2025.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:28.669266+11:00",
+  "checksumSha256": "1b1d08c2d87e2c966d2d31e7923e2ccc2352b8fa132d4aee009116f934360a28",
+  "format": "pdf",
+  "originalPath": "originals/finance-commonwealth-procurement-rules-2025.pdf",
+  "convertedPath": "converted/finance-commonwealth-procurement-rules-2025.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "Procurement baseline used for AI procurement decisions."
+}

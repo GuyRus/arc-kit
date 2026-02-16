@@ -1,0 +1,14 @@
+{
+  "id": "pspf-policy-advisory-gen-ai-2025",
+  "title": "PSPF Policy Advisory 001-2025: Official information use with generative artificial intelligence",
+  "owner": "Department of Home Affairs (PSPF)",
+  "canonicalUrl": "https://www.protectivesecurity.gov.au/publications-library/pspf-policy-advisory-001-2025-official-information-use-generative-artificial-intelligence",
+  "sourceUrl": "https://www.protectivesecurity.gov.au/system/files/2025-10/pspf-policy-advisory-information-use-gen-ai.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:42.067015+11:00",
+  "checksumSha256": "c0027a89818adfa0d27185e69316809ddb9c5cb3b2d7f4d9f976fa20188587fd",
+  "format": "pdf",
+  "originalPath": "originals/pspf-policy-advisory-gen-ai-2025.pdf",
+  "convertedPath": "converted/pspf-policy-advisory-gen-ai-2025.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "Explicit PSPF advisory for generative AI use with official information."
+}

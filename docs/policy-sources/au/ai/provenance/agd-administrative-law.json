@@ -1,0 +1,14 @@
+{
+  "id": "agd-administrative-law",
+  "title": "Administrative law (federal administrative review context)",
+  "owner": "Attorney-General's Department",
+  "canonicalUrl": "https://www.ag.gov.au/legal-system/administrative-law",
+  "sourceUrl": "https://www.ag.gov.au/legal-system/administrative-law",
+  "accessedAtAEDT": "2026-02-15T20:07:37.828852+11:00",
+  "checksumSha256": "0c820ba1bc4fe026fe2f3ef330071170067f551764bafcef59c11a4b7ee17a5c",
+  "format": "html",
+  "originalPath": "originals/agd-administrative-law.html",
+  "convertedPath": "converted/agd-administrative-law.txt",
+  "conversionMethod": "Custom HTMLParser text extraction",
+  "notes": "Administrative law context for automated decision-making and review rights."
+}

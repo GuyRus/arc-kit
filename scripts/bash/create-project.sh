@@ -169,7 +169,7 @@ Place organization-wide governance documents here. These are read by commands ac
 - Procurement policies and spending thresholds
 - Cloud-first mandates and approved supplier lists
 - AI governance frameworks and ethical guidelines
-- MOD/Defence security policies (JSP 440, CAAT)
+- Defence and national-security policy overlays (where applicable)
 
 ## How It Works
 Commands like /arckit.principles, /arckit.risk, /arckit.secure, and /arckit.sobc
@@ -234,7 +234,7 @@ Use ArcKit commands to generate project artifacts in the recommended order:
 
 ### Alpha Phase
 4. \`/arckit.requirements\` - Define comprehensive requirements
-5. \`/arckit.data-model\` - Design data model and GDPR compliance
+5. \`/arckit.data-model\` - Design data model and privacy compliance
 6. \`/arckit.wardley\` - Create Wardley maps for strategic planning
 7. \`/arckit.research\` - Research technology options (if needed)
 8. \`/arckit.sow\` - Generate Statement of Work for vendor procurement (if needed)
@@ -246,9 +246,10 @@ Use ArcKit commands to generate project artifacts in the recommended order:
 12. \`/arckit.traceability\` - Generate requirements traceability matrix
 
 ### Compliance (as needed)
-- \`/arckit.secure\` - UK Government Secure by Design review
+- \`/arckit.secure\` - Secure-by-design review
 - \`/arckit.tcop\` - Technology Code of Practice assessment
-- \`/arckit.ai-playbook\` - AI Playbook compliance (for AI systems)
+- \`/arckit.ai-playbook\` - AU AI governance assessment pack (for AI systems)
+- \`/arckit.atrs\` - AU AI transparency statement
 
 ## Project Structure
 
@@ -307,6 +308,12 @@ $PROJECT_DIR_NAME/
 | WARD | Wardley Map |
 | TCOP | Technology Code of Practice |
 | SECD | Secure by Design |
+| AIGA | AU AI Governance Assessment |
+| AIUR | AU AI Use Case Register |
+| AITS | AU AI Transparency Statement |
+| AIIA | AU AI Impact Assessment |
+| AIGC | AU AI Governance Checklist |
+| ADEF | AU Defence AI Assurance Pathway |
 
 ## Status
 

@@ -1,0 +1,14 @@
+{
+  "id": "oaic-ndb-about-scheme",
+  "title": "About the Notifiable Data Breaches scheme",
+  "owner": "Office of the Australian Information Commissioner",
+  "canonicalUrl": "https://www.oaic.gov.au/privacy/notifiable-data-breaches/about-the-notifiable-data-breaches-scheme",
+  "sourceUrl": "https://www.oaic.gov.au/privacy/notifiable-data-breaches/about-the-notifiable-data-breaches-scheme",
+  "accessedAtAEDT": "2026-02-15T20:07:37.480863+11:00",
+  "checksumSha256": "7c660a1a9bf8adff780161bd2caaf408bc89c6fe0419f881841cad8278cd819d",
+  "format": "html",
+  "originalPath": "originals/oaic-ndb-about-scheme.html",
+  "convertedPath": "converted/oaic-ndb-about-scheme.txt",
+  "conversionMethod": "Custom HTMLParser text extraction",
+  "notes": "Statutory NDB scheme summary and obligations."
+}

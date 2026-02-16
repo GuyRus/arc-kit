@@ -1,0 +1,14 @@
+{
+  "id": "oaic-checklist-commercial-ai-products",
+  "title": "Checklist – privacy and use of commercial AI products",
+  "owner": "Office of the Australian Information Commissioner",
+  "canonicalUrl": "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-the-use-of-commercially-available-ai-products",
+  "sourceUrl": "https://www.oaic.gov.au/__data/assets/pdf_file/0017/243071/Checklist-privacy-and-use-of-commercial-AI-products.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:34.339210+11:00",
+  "checksumSha256": "c4207205e7c7321770236406477f5b3ed89a93cf54970f1033f0fc91baaa756c",
+  "format": "pdf",
+  "originalPath": "originals/oaic-checklist-commercial-ai-products.pdf",
+  "convertedPath": "converted/oaic-checklist-commercial-ai-products.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "Companion checklist for operational use of commercial AI products."
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pspf-guidelines-2025",
+  "title": "PSPF Guidelines 2025",
+  "owner": "Department of Home Affairs (PSPF)",
+  "canonicalUrl": "https://www.protectivesecurity.gov.au/publications-library/pspf-guidelines-2025",
+  "sourceUrl": "https://www.protectivesecurity.gov.au/system/files/2025-12/pspf-release-2025-guidelines.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:42.720652+11:00",
+  "checksumSha256": "123386895c6c04be41c2c22114586dc763142066ffa013b26ded6166fc2ceae0",
+  "format": "pdf",
+  "originalPath": "originals/pspf-guidelines-2025.pdf",
+  "convertedPath": "converted/pspf-guidelines-2025.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "Protective security baseline; use for AI system security posture intersection."
+}

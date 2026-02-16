@@ -1,0 +1,14 @@
+{
+  "id": "oaic-checklist-training-ai-model",
+  "title": "Checklist – privacy considerations for training AI models",
+  "owner": "Office of the Australian Information Commissioner",
+  "canonicalUrl": "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-developing-and-training-generative-ai-models",
+  "sourceUrl": "https://www.oaic.gov.au/__data/assets/pdf_file/0016/243070/Checklist-privacy-consideration-training-AI-model-029596.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:33.431974+11:00",
+  "checksumSha256": "7d644269aaa9f19b60e57a545724332430a945f618809cd4a931a80c8363cc97",
+  "format": "pdf",
+  "originalPath": "originals/oaic-checklist-training-ai-model.pdf",
+  "convertedPath": "converted/oaic-checklist-training-ai-model.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "Companion checklist for AI model training privacy controls."
+}

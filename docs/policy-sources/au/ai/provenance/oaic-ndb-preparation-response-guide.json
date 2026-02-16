@@ -1,0 +1,14 @@
+{
+  "id": "oaic-ndb-preparation-response-guide",
+  "title": "Data breach preparation and response guide",
+  "owner": "Office of the Australian Information Commissioner",
+  "canonicalUrl": "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/preventing-preparing-for-and-responding-to-data-breaches/data-breach-preparation-and-response",
+  "sourceUrl": "https://www.oaic.gov.au/__data/assets/pdf_file/0023/214637/NDB-Team-Data-Breach-Preparation-and-Response-guide-June-2024.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:36.885404+11:00",
+  "checksumSha256": "70d4a30d62700501e34487a30bc012c259dc3991d8b34cb6b3453f965a270358",
+  "format": "pdf",
+  "originalPath": "originals/oaic-ndb-preparation-response-guide.pdf",
+  "convertedPath": "converted/oaic-ndb-preparation-response-guide.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "NDB operational guidance relevant to AI incidents involving personal information."
+}

@@ -1,0 +1,14 @@
+{
+  "id": "dta-guidance-staff-training-on-ai",
+  "title": "Guidance for staff training on AI 2.0",
+  "owner": "Digital Transformation Agency",
+  "canonicalUrl": "https://www.digital.gov.au/ai/ai-in-government-policy/staff-training",
+  "sourceUrl": "https://www.digital.gov.au/sites/default/files/documents/2025-12/Guidance%20for%20staff%20training%20on%20AI%202.0.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:24.875652+11:00",
+  "checksumSha256": "7d81ab99a6d9239613ddee0370d034772335b75a3199c2316d5f568080d637c7",
+  "format": "pdf",
+  "originalPath": "originals/dta-guidance-staff-training-on-ai.pdf",
+  "convertedPath": "converted/dta-guidance-staff-training-on-ai.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "Staff training obligations for safe AI use."
+}

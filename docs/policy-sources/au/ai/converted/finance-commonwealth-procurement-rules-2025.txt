@@ -1,0 +1,1321 @@
+Commonwealth
+Procurement Rules
+17 November 2025
+
+
+
+
+Achieving value for money
+Department of Finance (Commercial)                   Creative Commons licence
+
+Copyright Notice
+© Commonwealth of Australia 2025
+ISBN: 978-1-925205-70-1                              With the exception of the Commonwealth
+                                                     Coat of Arms, any material protected by
+                                                     a trade mark, and when otherwise noted,
+Further information
+                                                     this work is licensed under a Creative
+For more information on other Finance                Commons Attribution 4.0 International licence
+initiatives please visit the Department’s website:   (https://creativecommons.org/licenses/by/4.0/).
+finance.gov.au
+                                                     The details of the relevant licence conditions
+Content from this website should be attributed       are available on the Creative Commons website
+as the Department of Finance.                        (accessible using the links provided), as is the full
+                                                     legal code for the CC BY 4.0 International licence.
+                                                     Use of the Coat of Arms
+                                                     The terms under which the Coat of Arms can
+                                                     be used are detailed on the following website:
+                                                     www.pmc.gov.au/honours-and-symbols/
+                                                     commonwealth-coat-arms.
+1. Foreword
+I am pleased to release the Commonwealth Procurement Rules (CPRs) reflecting the Australian
+Government’s policies and expectations for procuring officials.
+The Commonwealth procurement framework (framework) plays a vital role in shaping Australia’s
+economy. The CPRs are the foundation of that framework and support flexibility for Government entities
+to determine the best and most appropriate approach to procure the goods and services they need, with
+procurements undertaken to the highest standards of ethics and probity. These CPRs support open
+and fair competition and uphold strong local and international engagements between the Australian
+Government and businesses.
+For the first time, the CPRs have introduced requirements to prioritise Australian businesses in
+procurements below the relevant procurement thresholds, and likewise prioritise procurement from
+Australian Small and Medium Enterprises (SMEs) for panels such as the Management Advisory
+Services Panel, People Panel and the Digital Marketplace. To support this, the definition of an Australian
+business, released earlier this year, has been incorporated into the CPRs. The CPRs have also lifted
+the non‑construction procurement threshold for the first time in 20 years, increasing the number of
+procurement opportunities available exclusively for Australian businesses.
+By using Commonwealth procurement to support Australian businesses and SMEs, including Indigenous
+businesses, the Government is building a strong economy supporting Australian ingenuity and innovation.
+The Australian Government is committed to seeking greater opportunities for Australian businesses in
+Commonwealth procurement consistent with our international obligations.
+I have made these Commonwealth Procurement Rules under section 105B(1) of the Public Governance,
+Performance and Accountability Act 2013. The previous Commonwealth Procurement Rules 1 July 2024
+(F2024L00627) are repealed when this instrument commences on 17 November 2025.
+
+
+
+Katy Gallagher
+Minister for Finance
+
+
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                  3
+Contents
+1.      Foreword                                                   3
+
+2.      Procurement framework                                      6
+        Procurement                                                 7
+        Resource Management Framework                               8
+        International obligations                                   9
+
+3.      How to use the Commonwealth Procurement Rules              9
+        Compliance with the two divisions of the CPRs              10
+        Using Appendix A exemptions                                10
+
+
+Division 1: Rules for all procurements                             11
+4.      Value for money                                            12
+        Considering value for money                                12
+        Achieving value for money                                  12
+        Broader benefits to the Australian economy                 13
+        Procurement-connected policies                             13
+        Coordinated procurement                                    13
+        Cooperative procurement                                    14
+        Contract end dates                                         14
+        Third-party procurement                                    14
+
+5.      Encouraging competition                                    15
+        Consideration of Australian businesses                     15
+        Small and Medium Enterprises                               16
+
+6.      Efficient, effective, economical and ethical procurement   16
+        Ethical behaviour                                          17
+        Judicial Review                                            17
+        Commonwealth contracts                                     17
+
+7.      Accountability and transparency                            18
+        Records                                                    18
+        AusTender                                                  18
+        Annual procurement plans                                   18
+        Notifications to the market                                19
+        Providing information                                      19
+        Reporting arrangements                                     19
+        Subcontractors                                             20
+        Treatment of confidential information                      20
+        Standard verification                                      21
+        Other obligations                                          21
+
+
+
+
+Department of Finance | Commonwealth Procurement Rules 2025         4
+8.      Procurement risk                                                 22
+
+9.      Procurement method                                               22
+        Requirement to estimate value of procurement                     22
+        Procurement thresholds                                           23
+        Procurement methods                                              23
+        Procurement from existing arrangements                           23
+
+
+Division 2: Additional rules for procurements at or above the relevant
+procurement threshold                                                    24
+10.     Additional rules                                                 25
+        Non-discrimination                                               25
+        Conditions for limited tender                                    25
+        Request documentation                                            26
+        Specifications                                                   26
+        Modification of evaluation criteria or specifications            27
+        Conditions for participation                                     27
+        Negotiations                                                     27
+        Minimum time limits                                              28
+        Late submissions                                                 29
+        Handling of submissions and additional information               29
+        Awarding contracts                                               29
+
+Appendix A: Exemptions                                                   31
+
+Appendix B: Definitions                                                  32
+
+
+
+
+Department of Finance | Commonwealth Procurement Rules 2025               5
+2. Procurement framework
+2.1       The Commonwealth Procurement Rules (CPRs) are issued by the Minister for Finance
+          (Finance Minister) under section 105B(1) of the Public Governance, Performance and
+          Accountability Act 2013 (PGPA Act).
+2.2       Officials from non-corporate Commonwealth entities and prescribed corporate Commonwealth
+          entities listed in section 30 of the Public Governance, Performance and Accountability Rule
+          2014 (PGPA Rule) must comply with the CPRs when performing duties related to procurement.
+          These entities will collectively be referred to as relevant entities throughout the CPRs.
+2.3       Rules that must be complied with in undertaking procurement are denoted by the term ‘must’.
+          Non-corporate Commonwealth entities must report non-compliance with the rules of the CPRs
+          through the Commonwealth’s compliance reporting process. The term ‘should’ indicates good
+          practice.
+2.4       The CPRs are the core of the procurement framework, which also includes:
+           a. web-based guidance, developed by the Department of Finance (Finance) to assist entities to
+              implement the procurement framework;
+           b. Resource Management Guides, which advise of key changes and developments in the
+              procurement framework; and
+           c. templates, such as the Commonwealth Contracting Suite, which simplify and streamline
+              processes, creating uniformity across Commonwealth contracts to reduce the burden on
+              businesses when contracting with the Commonwealth.
+
+2.5       An Accountable Authority may use Accountable Authority Instructions to set out
+          entity-specific operational rules to ensure compliance with the rules of the procurement framework.
+2.6       These CPRs do not apply to the extent that an official applies measures determined by their
+          Accountable Authority (or an official to whom the Accountable Authority delegates the power to
+          determine such measures) to be necessary for the maintenance or restoration of international
+          peace and security, to protect human health, for the protection of essential security interests,
+          or to protect national treasures of artistic, historic or archaeological value.1 2
+
+
+
+
+1     Where such measures are applied, because Divisions 1 and 2 do not apply in full to the procurement, this has the effect that
+      the procurement is not a covered procurement under the Government Procurement (Judicial Review) Act 2018; see section 6
+      of these CPRs.
+2     Officials are reminded that where paragraph 2.6 is applied, obligations under the PGPA Act continue to apply in relation to the
+      proper use and management of public resources.
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                                             6
+Procurement
+2.7       Procurement is the process of acquiring goods and services. It begins when a need has been
+          identified and a decision has been made on the procurement requirement. Procurement continues
+          through the processes of risk assessment, analysis of markets and their supply chains, seeking
+          and evaluating alternative solutions and the awarding and reporting of a contract.
+2.8       In addition to the acquisition of goods and services by a relevant entity for its own use,
+          procurement includes the acquisition of goods and services on behalf of another relevant entity
+          or a third party.
+2.9       Procurement does not include:
+          a. grants (whether in the form of a contract, conditional gift or deed);3
+          b. investments (or divestments);
+          c. sales by tender;
+          d. loans;
+          e. procurement of goods and services for resale or procurement of goods and services used in
+             the production or supply of goods and services for resale;
+          f. any property right not acquired through the expenditure of relevant money (for example, a right
+             to pursue a legal claim for negligence);
+          g. statutory appointments;
+          h. appointments made by a minister using the executive power (for example, the appointment of a
+             person to an advisory board);
+          i. the engagement of employees, such as under the Public Service Act 1999, the Parliamentary
+             Service Act 1999, a relevant entity’s enabling legislation or the common law concept of
+             employment, or the secondment of employees between and within Commonwealth entities and
+             from state, territory and local government entities; or
+          j. arrangements between non-corporate Commonwealth entities where no other potential
+             suppliers were approached.
+
+2.10      Following the awarding of the contract, the delivery of and payment for the goods and services
+          and, where relevant, the ongoing management of the contract and consideration of disposal of
+          goods, are important elements in achieving the objectives of the procurement.
+
+
+
+
+3     As defined in the Commonwealth Grants Rules and Principles, available at www.finance.gov.au/government/
+      commonwealth-grants.
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                     7
+Resource Management Framework
+2.11   Relevant entities and officials operate in an environment of legislation and Commonwealth policy.
+       Within that broad context, the Resource Management Framework consists of the legislation and
+       policy governing the management of the Commonwealth’s resources. Figure 1 sets out the main
+       elements of this environment related to procurement.
+
+Figure 1: Legislation and policy
+
+
+
+
+2.12   The procurement framework is a subset of the Resource Management Framework related to the
+       procurement of goods and services.
+2.13   Section 16 of the PGPA Act outlines an Accountable Authority’s duty to establish appropriate
+       internal control systems for their relevant entity. The CPRs provide the necessary framework
+       for Accountable Authorities when issuing Accountable Authority Instructions and operational
+       requirements in relation to procurement. In the area of procurement, an Accountable Authority
+       should provide a mechanism to:
+       a. apply the principles and requirements of the resource management and procurement
+          frameworks, focusing on the relevant entity’s operations; and
+       b. provide primary operational instructions to relevant entity officials in carrying out their duties
+          related to procurement, in a way that is tailored to a relevant entity’s particular circumstances
+          and needs.
+
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                    8
+2.14      Non-compliance with the requirements of the Resource Management Framework, including in
+          relation to procurement, may attract a range of criminal, civil or administrative remedies, including
+          under the Public Service Act 1999 and the Crimes Act 1914.
+
+
+International obligations
+2.15      Australia is party to a range of free trade arrangements. These arrangements are implemented
+          domestically by legislation and/or Commonwealth policy. Relevant international obligations have
+          been incorporated in these CPRs. Therefore, an official undertaking a procurement is not required
+          to refer directly to international agreements.
+
+
+
+3. How to use the Commonwealth
+   Procurement Rules
+3.1       The CPRs set out the rules that officials must comply with when they procure goods and services.
+          The CPRs also indicate good practice. The CPRs have been designed to provide officials with
+          flexibility in developing and implementing procurement processes that reflect their relevant
+          entity’s needs.
+3.2       Except where required by law, it is the government’s policy position that ministers will not:4
+           a. be involved in the conduct of procurement processes; or
+           b. direct officials about the conduct of procurement processes.
+3.3       Where ministers are required to have a role in a procurement process, that role and any decisions
+          arising from that role should be appropriately documented and these CPRs must be applied by
+          officials to the maximum extent practicable.
+           a. With specific regard to where a procurement is a covered procurement under the Government
+              Procurement (Judicial Review) Act 2018, all relevant CPR paragraphs (as identified in 6.11 and
+              Division 2) must be applied.
+
+3.4       Achieving value for money is the core rule of the CPRs. This requires the consideration of the
+          financial and non-financial costs and benefits associated with procurement.
+3.5       Further information and guidance on applying the CPRs are available on Finance’s procurement
+          policy website at www.finance.gov.au/procurement.
+3.6       Relevant entities may have additional rules, guidance, templates or tools that apply when
+          conducting procurements.
+3.7       Where the CPRs refer to thresholds and values, these are inclusive of the Goods and Services Tax
+          (GST).
+
+
+
+
+4     Consistent with section 19 of the PGPA Act, an Accountable Authority may keep the minister informed about the conduct of
+      procurement processes.
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                                      9
+Compliance with the two divisions of the CPRs
+3.8    Officials of non-corporate Commonwealth entities must comply with the ‘rules for all procurements’
+       listed in Division 1, regardless of the procurement value. Officials must also comply with the
+       ‘additional rules’ listed in Division 2 when the estimated value of the procurement is at or above the
+       relevant procurement threshold and when an Appendix A exemption does not apply.
+3.9    Officials of corporate Commonwealth entities prescribed in section 30 of the PGPA Rule as having
+       to comply with the CPRs must comply with the ‘rules for all procurements’ listed in Division 1 and
+       the ‘additional rules’ listed in Division 2 when the expected value of the procurement is at or above
+       the relevant procurement threshold and when an Appendix A exemption does not apply.
+3.10   Despite being prescribed corporate Commonwealth entities, Australian Digital Health Agency,
+       Australian Human Rights Commission, High Speed Rail Authority, National Portrait Gallery of
+       Australia, Old Parliament House, and Regional Investment Corporation, must apply a procurement
+       threshold and reporting threshold of $125,000 for procurements other than the procurement of
+       construction services. They may opt-in to coordinated procurements and must only comply with
+       those policies of the Commonwealth that specify compliance by corporate Commonwealth entities.
+3.11   Despite being a corporate Commonwealth entity, the Commonwealth Superannuation Corporation,
+       in regard to the administrative services that relate to the superannuation schemes it administers
+       only, must apply a procurement threshold of $125,000 and a reporting threshold of $10,000 for
+       procurements other than the procurement of construction services. They may opt-in to coordinated
+       procurements and must only comply with those policies of the Commonwealth that specify
+       compliance by corporate Commonwealth entities.
+
+
+Using Appendix A exemptions
+3.12   When an Appendix A exemption applies, the additional rules of Division 2 for procurements at or
+       above the relevant procurement threshold do not apply to the procurement, but the relevant entity
+       must still comply with the rules for all procurements (Division 1), excluding paragraphs 4.7, 4.8,
+       7.27 and 7.28. This does not prevent a relevant entity from voluntarily conducting the procurement
+       for goods or services covered by an Appendix A exemption in accordance with some or all of the
+       processes and principles of Division 2.
+
+
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                               10
+Division 1
+Rules for all procurements
+4. Value for money
+
+Considering value for money
+4.1       A thorough consideration of value for money begins by officials clearly understanding and
+          expressing the goals and purpose of the procurement.
+4.2       When a business requirement arises, officials should consider whether a procurement will deliver
+          the best value for money. It is important to take into consideration:
+           a. stakeholder input;
+           b. the scale and scope of the business requirement;
+           c. the relevant entity’s resourcing and budget;
+           d. obligations and opportunities under other existing arrangements;
+           e. relevant Commonwealth policies; and
+           f. the market’s capacity to competitively respond to a procurement.
+
+4.3       When a relevant entity determines that procurement represents the best value for money,
+          these considerations will inform the development and implementation of the procurement.
+
+
+Achieving value for money
+4.4       Achieving value for money is the core rule of the CPRs. Officials responsible for a procurement
+          must be satisfied, after reasonable enquiries, that the procurement achieves a value for money
+          outcome. Procurements should:
+           a. encourage competition amongst potential suppliers;
+           b. use public resources in an efficient, effective, economical and ethical manner that is not
+              inconsistent with the policies of the Commonwealth;5
+           c. facilitate accountable and transparent decision making;
+           d. encourage appropriate engagement with risk; and
+           e. be commensurate with the scale and scope of the business requirement.
+
+4.5       Price is not the sole factor when assessing value for money. When conducting a procurement,
+          an official must consider the relevant financial and non-financial costs and benefits of each
+          submission including, but not limited to the:
+           a. quality of the goods and services;
+           b. fitness for purpose of the proposal;
+           c. potential supplier’s relevant experience, performance history and ethical conduct;
+           d. flexibility of the proposal (including innovation and adaptability over the lifecycle of the
+              procurement);
+           e. environmental sustainability of the proposed goods and services (such as energy efficiency,
+              climate change impact, environmental impact, circularity of the goods and services and use
+              of recycled materials);6 and
+           f. whole-of-life costs.
+
+
+
+
+5     See sections 15 and 21 of the PGPA Act.
+6     Recognising the Australian Government’s commitment to sustainable procurement practices, entities are required to consider
+      the Australian Government’s Sustainable Procurement Guide (available at www.dcceew.gov.au/environment/protection/
+      waste/sustainable-procurement/sustainable-procurement-guide) where there is opportunity for increased environmental
+      sustainability.
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                                        12
+4.6       Whole-of-life costs could include:
+           a. the initial purchase price of the goods and services;
+           b. maintenance and operating costs;
+           c. transition out costs;
+           d. licensing costs (when applicable);
+           e. the cost of additional features procured after the initial procurement;
+           f. consumable costs; and
+           g. decommissioning, remediation and disposal costs (including waste disposal).
+
+
+Broader benefits to the Australian economy
+4.7       In addition to the value for money considerations at paragraphs 4.4 – 4.6, for procurements above
+          $1 million (or $7.5 million for construction services) (except procurements covered by Appendix A
+          and procurements from standing offers), officials are required to consider the economic benefit of
+          the procurement to the Australian economy.
+4.8       The policy operates within the context of relevant national and international agreements and
+          procurement policies to which Australia is a signatory, including free trade agreements and the
+          Australia and New Zealand Government Procurement Agreement.7
+
+
+Procurement-connected policies
+4.9       Procurement-connected policies are policies of the Commonwealth for which procurement has
+          been identified as a means of delivery. Non-corporate Commonwealth entities and prescribed
+          corporate Commonwealth entities must comply with a procurement-connected policy where
+          the policy indicates that it is applicable to the procurement process. Finance maintains a list of
+          procurement-connected policies at www.finance.gov.au/procurement.
+4.10      Generally, procurement-connected policies are the responsibility of entities other than Finance.
+          The relevant policy-owning entity is responsible for administering, reviewing and providing
+          information on the policy as required.
+
+
+Coordinated procurement
+4.11      Coordinated procurement refers to whole-of-Australian-Government arrangements for procuring goods
+          and services. A list of coordinated arrangements can be found at www.finance.gov.au/procurement.
+4.12      Non-corporate Commonwealth entities must use coordinated arrangements. Exemptions
+          from coordinated arrangements can only be granted jointly by the requesting non-corporate
+          Commonwealth entity’s portfolio minister and the Finance Minister when a non-corporate
+          Commonwealth entity can demonstrate a special need for an alternative arrangement.8
+          Prescribed corporate Commonwealth entities may opt-in to coordinated arrangements.
+
+
+
+
+7     Available at: www.dfat.gov.au/trade/agreements/in-force/anzcerta/australia-new-zealand-closer-economic-relations-trade-
+      agreement.
+8     Or when the coordinated arrangement specifies an alternative approach for obtaining exemptions.
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                                     13
+Cooperative procurement
+4.13   Cooperative procurements involve more than one relevant entity as the buyer. Relevant entities
+       can procure cooperatively by approaching the market together or by joining an existing contract of
+       another relevant entity.
+4.14   If a relevant entity intends to join an existing contract of another relevant entity, the initial request
+       documentation and the contract must have already specified potential use by other relevant
+       entities.
+4.15   Relevant entities joining an existing contract must ensure that:
+       a. value for money is achieved;
+       b. the goods and services being procured are the same as provided for within the contract; and
+       c. the terms and conditions of the contract are not being materially altered.
+
+
+Contract end dates
+4.16   When a contract does not specify an end date it must allow for periodic review and subsequent
+       termination of the contract by the relevant entity, if the relevant entity determines that it does not
+       continue to represent value for money.
+
+
+Third-party procurement
+4.17   Procurement by third parties on behalf of a relevant entity can be a valid way to procure goods and
+       services, provided it achieves value for money.
+4.18   Relevant entities must not use third-party arrangements to avoid the rules in the CPRs when
+       procuring goods and services.
+
+
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                        14
+5. Encouraging competition
+5.1       Competition is a key element of the Australian Government’s procurement framework.
+5.2       Participation in procurement imposes costs on relevant entities and potential suppliers.
+          Those costs should be considered when designing a process that is commensurate with
+          the scale, scope and risk of the proposed procurement.
+5.3       Subject to these CPRs, potential suppliers to government must be treated equitably based on their
+          commercial, legal, technical and financial abilities.
+
+
+Consideration of Australian businesses
+5.4       For procurements with an expected value at or above $10,000 and below the relevant procurement
+          threshold, excluding procurements from a standing offer, non-corporate Commonwealth entities
+          must invite only Australian businesses to make submissions.
+          a. Where relevant, the requirements under the Indigenous Procurement Policy must first be
+             satisfied, before an Australian business is approached.
+          b. If there are no submissions, or no submissions represent value for money, the procuring entity
+             may undertake a procurement using a relevant procurement method.
+          c. An official responsible for a procurement may determine that approaching an Australian
+             business, or Australian businesses is not appropriate for the procurement and that paragraph
+             5.4 does not apply. The basis for this decision must be documented.
+5.5       For procurements with an expected value below $125,000 from the Management Advisory
+          Services Panel, the People Panel, or any standing offer managed by the Digital Transformation
+          Agency9 (DTA), non-corporate Commonwealth entities must invite only Small and Medium
+          Enterprises (SMEs) on the relevant standing offer to make submissions.
+          a. With respect to standing offers managed by the DTA, where relevant, the requirements under
+             the Indigenous Procurement Policy must first be satisfied, before an SME is approached.
+          b. If there are no submissions, no submissions represent value for money, or the relevant
+             standing offer does not include an SME, the procuring entity may invite other suppliers on
+             the relevant standing offer to make submissions.
+          c. An official responsible for a procurement may determine that approaching an SME, or SMEs,
+             is not appropriate for the procurement and that paragraph 5.5 does not apply. The basis for this
+             decision must be documented.
+
+
+
+
+9     For DTA standing offers refer to https://www.dta.gov.au/our-initiatives/buyict
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                15
+Small and Medium Enterprises
+5.6     To ensure that SMEs can engage in fair competition for Australian Government business, officials
+        should apply procurement practices that do not unfairly discriminate against SMEs and provide
+        appropriate opportunities for SMEs to compete. Officials should consider, in the context of value
+        for money:
+        a. the benefits of doing business with competitive SMEs when specifying requirements and
+           evaluating value for money;
+        b. barriers to entry, such as costly preparation of submissions, that may prevent SMEs from
+           competing;
+        c. SMEs’ capabilities and their commitment to local or regional markets; and
+        d. the potential benefits of having a larger, more competitive supplier base, including the
+           disaggregation of large projects into smaller packages, where appropriate, that maximise
+           competition.
+
+5.7     The Australian Government is committed to non-corporate Commonwealth entities procuring at
+        least 25 per cent of contracts by value from SMEs, for contracts with a value of up to $1 billion.
+5.8     In addition, the government has a target of non-corporate Commonwealth entities procuring
+        40 per cent of contracts, by value from SMEs, for contracts with a value of up to $20 million.
+5.9     The Australian Government recognises the importance of paying suppliers on time, particularly
+        SMEs. Non-corporate Commonwealth entities must make all payments to suppliers within the
+        maximum payment terms, following the acknowledgement of the satisfactory delivery of goods or
+        services and the receipt of a correctly rendered invoice.10
+
+
+
+6. Efficient, effective, economical and
+   ethical procurement
+6.1     The Australian Government promotes the proper use and management of public resources.
+        Proper means efficient, effective, economical and ethical. For non-corporate Commonwealth
+        entities, this would also include being not inconsistent with the policies of the Commonwealth.11
+6.2     Efficient relates to the achievement of the maximum value for the resources used. In procurement,
+        it includes the selection of a procurement method that is the most appropriate for the procurement
+        activity, given the scale, scope and risk of the procurement.
+6.3     Effective relates to the extent to which intended outcomes or results are achieved. It concerns the
+        immediate characteristics, especially price, quality and quantity, and the degree to which these
+        contribute to specified outcomes.
+6.4     Economical relates to minimising cost. It emphasises the requirement to avoid waste and sharpens
+        the focus on the level of resources that the Commonwealth applies to achieve outcomes.
+6.5     Ethical relates to honesty, integrity, probity, diligence, fairness and consistency. Ethical behaviour
+        identifies and manages conflicts of interests, and does not make improper use of an individual’s
+        position.
+
+
+
+
+10 The Commonwealth’s payment terms are set out in the government’s Supplier Pay On-Time or Pay Interest Policy,
+   available at www.finance.gov.au/resource-management-guide-417.
+11 See sections 15 and 21 of the PGPA Act.
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                        16
+6.6     Officials must make reasonable enquiries that the procurement is carried out considering
+        relevant regulations and/or regulatory frameworks, including but not limited to tenderers’
+        practices regarding:
+        a. labour regulations, including ethical employment practices;
+        b. workplace health and safety; and
+        c. environmental impacts.
+
+
+Ethical behaviour
+6.7     In particular, officials undertaking procurement must act ethically throughout the procurement.
+        Ethical behaviour includes:
+        a. dealing with potential suppliers, tenderers and suppliers equitably, including by seeking
+           appropriate internal or external advice when probity issues arise;
+        b. carefully considering the use of public resources; and
+        c. complying with all directions, including relevant entity requirements, in relation to gifts or
+           hospitality, the Australian Privacy Principles of the Privacy Act 1988 and the security provisions
+           of the Crimes Act 1914.
+
+6.8     Officials undertaking procurement must seek to prevent corrupt practices by recognising and
+        dealing with actual, potential and perceived conflicts of interest and not accepting inappropriate
+        gifts or hospitality.
+6.9     Relevant entities must not seek to benefit from supplier practices that may be dishonest, unethical
+        or unsafe. This includes not entering into contracts with tenderers who have had a judicial decision
+        against them (not including decisions under appeal) relating to employee entitlements and who
+        have not satisfied any resulting order. Officials should seek declarations from all tenderers
+        confirming that they have no such unsettled orders against them.
+6.10    If a complaint about procurement is received, relevant entities must apply timely, equitable and
+        non-discriminatory complaint-handling procedures, including providing acknowledgement soon
+        after the complaint has been received. Relevant entities should aim to manage the complaint
+        process internally, when possible, through communication and conciliation.
+
+
+Judicial Review
+6.11    For the purposes of paragraph (a) of the definition of relevant Commonwealth Procurement Rules
+        in section 4 of the Government Procurement (Judicial Review) Act 2018, the following paragraphs
+        of Division 1 of these CPRs are declared to be relevant provisions: paragraphs 4.18, 5.3, 6.8, 7.2,
+        7.10, 7.13 – 7.18, 7.20, and 9.3 – 9.6.
+
+
+Commonwealth contracts
+6.12    Non-corporate Commonwealth entities must use the Commonwealth Contracting Suite for
+        contracts under $200,000. Corporate Commonwealth entities are encouraged to apply the suite
+        of templates.12
+6.13    Relevant entities must incorporate the Commonwealth Supplier Code of Conduct13 into all
+        Commonwealth forms of contract.
+        a. An Accountable Authority (or an official to whom the Accountable Authority delegates the power to
+           determine such measures) may determine that a contract should not include the Commonwealth
+           Supplier Code of Conduct, in part or in full, and document the basis for this decision.
+
+
+12 Further information is provided in Resource Management Guide No. 420 – Mandatory use of the Commonwealth Contracting
+   Suite for procurement under $200,000, available at www.finance.gov.au/resource-management-guide-420
+13 Available at www.finance.gov.au/supplier-code-of-conduct.
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                               17
+7. Accountability and transparency
+7.1     The Australian Government is committed to ensuring accountability and transparency in its
+        procurement activities. Accountability means that officials are responsible for the actions
+        and decisions that they take in relation to procurement and for the resulting outcomes.
+        Transparency involves relevant entities taking steps to enable appropriate scrutiny of their
+        procurement activity. The fundamental elements of accountability and transparency in
+        procurement are outlined in this section.
+
+
+Records
+7.2     Officials must maintain for each procurement a level of documentation commensurate with the
+        scale, scope and risk of the procurement.
+7.3     Documentation should provide accurate and concise information on:
+        a. the requirement for the procurement;
+        b. the process that was followed;
+        c. how value for money was considered and achieved;
+        d. relevant approvals; and
+        e. relevant decisions and the basis of those decisions.
+
+7.4     Relevant entities must have access to evidence of agreements with suppliers, in the form of one
+        or a combination of the following documents: a written contract, a purchase order, an invoice or
+        a receipt.
+7.5     Documentation must be retained in accordance with the Archives Act 1983.
+
+
+AusTender
+7.6     AusTender,14 the Australian Government’s procurement information system, is a centralised
+        web-based facility that publishes a range of information, including relevant entities’ planned
+        procurements, open tenders and key details of contracts awarded. It also supports secure
+        electronic tendering to deliver integrity and efficiency for relevant entities and potential suppliers.
+7.7     AusTender is the system used to enable relevant entities to meet their publishing obligations
+        under the CPRs. It also enables relevant entities to monitor and review their AusTender-based
+        procurements, including approaches to market, publication of contracts, and amendments to
+        contracts.
+
+
+Annual procurement plans
+7.8     In order to draw the market’s early attention to potential procurement opportunities, each relevant
+        entity must maintain on AusTender a current procurement plan containing a short strategic
+        procurement outlook.
+7.9     The annual procurement plan should include the subject matter of any significant planned
+        procurement and the estimated publication date of the approach to market. Relevant entities
+        should update their plans regularly throughout the year.
+
+
+
+
+14 AusTender is available at www.tenders.gov.au.
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                       18
+Notifications to the market
+7.10    Relevant entities must use AusTender to publish open tenders and, to the extent practicable,
+        to make relevant request documentation available.
+7.11    Relevant entities may use AusTender to publish limited tender approaches to market and make
+        relevant request documentation available.
+7.12    Relevant entities should include relevant evaluation criteria in request documentation to enable
+        the proper identification, assessment and comparison of submissions on a fair, common and
+        appropriately transparent basis.
+7.13    In any additional notification through other avenues, such as printed media, the details selected for
+        inclusion in the notification must be the same as those published on AusTender.
+7.14    When a relevant entity provides request documentation or any other document already published
+        on AusTender in any other form (for example, a printed version), that documentation must be the
+        same as that published on AusTender.
+7.15    The initial approach to market for a multi-stage procurement must include, for every stage,
+        the criteria that will be used to select potential suppliers, and if applicable, any limitation on the
+        number of potential suppliers that will be invited to make submissions.
+
+
+Providing information
+7.16    Officials must, on request, promptly provide to eligible potential suppliers, request
+        documentation that includes all information necessary to permit the potential supplier to
+        prepare and lodge submissions.
+7.17    Following the rejection of a submission or the award of a contract, officials must promptly
+        inform affected tenderers of the decision. Notification should be provided in writing, and must
+        be provided in writing if requested by the tenderer. Debriefings must be made available, on
+        request, to unsuccessful tenderers outlining the reasons the submission was unsuccessful.
+        Debriefings must also be made available, on request, to the successful supplier(s).
+
+
+Reporting arrangements
+7.18    Relevant entities must report contracts on AusTender within 42 days of entering into a contract
+        when it is valued at or above the reporting threshold.15 The reporting thresholds are:
+        a. $10,000 for non-corporate Commonwealth entity contracts
+        b. for prescribed corporate Commonwealth entity contracts
+             i. $400,000 for procurements other than procurement of construction services or
+             ii. $7.5 million for procurement of construction services.
+
+7.19    Relevant entities must report amendments on AusTender within 42 days where:
+        a. a previously unreported contract is amended to be valued at or above, the relevant reporting
+           threshold; or
+        b. an amendment increases or decreases the reported contract value by $10,000 or more; or
+        c. accumulated unreported amendments will vary the reported contract value by $10,000 or more.
+
+
+
+
+15 Further information is provided in Resource Management Guide No. 423 – Procurement Publishing and Reporting Obligations,
+   available at www.finance.gov.au/resource-management-guide-423.
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                                   19
+7.20   All standing offers must be reported on AusTender within 42 days of the relevant entity entering
+       into or amending such arrangements. Relevant details in the standing offer notice, such as supplier
+       details and the names of other relevant entities participating in the arrangement, must be reported
+       and kept current.
+
+
+Subcontractors
+7.21   Relevant entities must make available on request, the names of any subcontractor(s) engaged by
+       a contractor in respect of a contract.
+       a. Relevant entities must require contractors to agree to the public disclosure of the names of any
+          subcontractors engaged to perform services in relation to a contract.
+       b. Contractors must be required to inform relevant subcontractors that the subcontractor’s
+          participation in fulfilling a contract may be publicly disclosed.
+
+
+Treatment of confidential information
+7.22   When conducting a procurement and awarding a contract, relevant entities should take appropriate
+       steps to protect the Commonwealth’s confidential information. This includes observing legal
+       obligations, such as those under the Privacy Act 1988, and statutory secrecy provisions.
+7.23   Submissions must be treated as confidential before and after the award of a contract.
+7.24   Once a contract has been awarded, the terms of the contract, including parts of the contract drawn
+       from the supplier’s submission, are not confidential unless the relevant entity has determined and
+       identified in the contract that specific information is to be kept confidential in accordance with the
+       ‘confidentiality test’ set out in the guidance on Confidentiality throughout the Procurement Cycle at
+       www.finance.gov.au/confidentiality-throughout-procurement-cycle.
+7.25   The need to maintain the confidentiality of information should always be balanced against the
+       public accountability and transparency requirements of the Australian Government. It is therefore
+       important for officials to plan for, and facilitate, appropriate disclosure of procurement information.
+       In particular, officials should:
+       a. include provisions in request documentation and contracts that alert potential suppliers to
+          the public accountability requirements of the Australian Government, including disclosure
+          to the Parliament and its committees or other Commonwealth entities where it serves the
+          Commonwealth’s legitimate interests such as for policy development, research, compliance,
+          regulatory and other non-commercial purposes;
+       b. when relevant, include a provision in contracts to enable the Australian National Audit Office
+          to access contractors’ records and premises to carry out appropriate audits; and
+       c. consider, on a case-by-case basis, any request by a supplier for material to be treated
+          confidentially after the award of a contract, and enter into commitments to maintain
+          confidentiality only when such commitments are appropriate.
+
+7.26   When confidential information is required to be disclosed, for example, following a request from a
+       parliamentary committee, reasonable notice in writing must be given to the party from whom the
+       information originated.
+
+
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                      20
+Standard verification
+7.27   For procurements valued at or above the relevant procurement threshold, where a standard
+       is determined to be applicable for goods or services being procured, tender responses must
+       demonstrate the capability to meet the standard, and contracts must contain evidence of the
+       applicable standards.
+7.28   Where applying a standard for goods or services, relevant entities must make reasonable
+       enquiries to determine compliance with that standard during the contract period, including:
+        a. gathering evidence of relevant certifications; and
+        b. periodic auditing of compliance by an independent assessor.
+
+
+Other obligations
+7.29   Other reporting and disclosure obligations apply to officials undertaking procurement, including:
+        a. disclosure of procurement information for relevant entity annual reporting purposes;
+        b. disclosure of non-compliance with the CPRs through the Commonwealth’s compliance reporting
+           process;
+        c. disclosure to the Parliament and its committees, as appropriate, in line with the Government
+           Guidelines for Official Witnesses before Parliamentary Committees and Related Matters16;
+        d. disclosure of information consistent with the Freedom of Information Act 1982;
+        e. disclosure of discoverable information that is relevant to a case before a court; and
+        f. reporting requirements under the Modern Slavery Act 2018.
+
+
+
+
+16 Available at www.aph.gov.au/Parliamentary_Business/Committees/House/Guidelines_for_witnesses.
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                21
+8. Procurement risk
+8.1    Risk management comprises the activities and actions taken by a relevant entity to ensure that it is
+       mindful of the risks it faces, that it makes informed decisions in managing these risks, and identifies
+       and harnesses potential opportunities.17
+8.2    Relevant entities must establish processes to identify, analyse, allocate and treat risk when
+       conducting a procurement. The effort directed to risk assessment and management should
+       be commensurate with the scale, scope and risk of the procurement. Relevant entities should
+       consider risks and their potential impact when making decisions relating to value for money
+       assessments, approvals of proposals to spend relevant money and the terms of the contract.
+8.3    Relevant entities should consider and manage their procurement security risk, including in relation
+       to cyber security risk, in accordance with the Australian Government Protective Security Policy
+       Framework.18
+8.4    As a general principle, risks should be borne by the party best placed to manage them; that is,
+       relevant entities should generally not accept risk which another party is better placed to manage.
+       Similarly, when a relevant entity is best placed to manage a particular risk, it should not seek to
+       inappropriately transfer that risk to the supplier.
+        a. Relevant entities should limit insurance requirements in contracts by reflecting the actual risk
+           borne by suppliers in contractual liability caps.
+        b. Suppliers should not be directed to take out insurance until a contract is to be awarded.
+
+
+9. Procurement method
+9.1    Australian Government procurement is conducted by open tender or limited tender.
+       These methods are detailed in this section.
+
+
+Requirement to estimate value of procurement
+9.2    The expected value of a procurement must be estimated before a decision on the procurement method
+       is made. The expected value is the maximum value of the proposed contract, including options,
+       extensions, renewals or other mechanisms that may be executed over the life of the contract.
+9.3    The maximum value of the goods and services being procured must include:
+        a. all forms of remuneration, including any premiums, fees, commissions, interest, allowances and
+           other revenue streams that may be provided for in the proposed contract;
+        b. the value of the goods and services being procured, including the value of any options in the
+           proposed contract; and
+        c. any taxes or charges.
+
+9.4    When a procurement is to be conducted in multiple parts with contracts awarded either at the same
+       time or over a period of time, with one or more suppliers, the expected value of the goods and
+       services being procured must include the maximum value of all of the contracts.
+9.5    A procurement must not be divided into separate parts solely for the purpose of avoiding a relevant
+       procurement threshold.
+9.6    When the maximum value of a procurement over its entire duration cannot be estimated the
+       procurement must be treated as being valued above the relevant procurement threshold.
+
+
+17 Department of Finance, Comcover Commonwealth Risk Management Policy, available at www.finance.gov.au/government/
+   comcover/risk-services/management.
+18 Available at www.protectivesecurity.gov.au.
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                           22
+Procurement thresholds
+9.7    When the expected value of a procurement is at or above the relevant procurement threshold
+       and an exemption in Appendix A is not applied, the rules in Division 2 must also be followed.
+       The procurement thresholds are:
+       a. for non-corporate Commonwealth entities, other than for procurements of
+          construction services, the procurement threshold is $125,000;
+       b. for prescribed corporate Commonwealth entities, other than for procurements of
+          construction services, the procurement threshold is $400,000; or
+       c. for procurements of construction services by relevant entities, the procurement threshold
+          is $7.5 million.
+
+
+Procurement methods
+Method 1 – Open tender
+9.8    Open tender involves publishing an open approach to market and inviting submissions.
+       This includes multi-stage procurements, provided the first stage is an open approach to market.
+
+Method 2 – Limited tender
+9.9    Limited tender involves a relevant entity approaching one or more potential suppliers to make
+       submissions, when the process does not meet the rules for open tender.
+9.10   For procurements at or above the relevant procurement threshold, limited tender can only be
+       conducted in accordance with paragraph 10.3, or when a procurement is exempt as detailed in
+       Appendix A.
+9.11   When conducting a limited tender in accordance with paragraph 9.10, the relevant exemption or
+       limited tender condition must be reported on AusTender.
+
+
+Procurement from existing arrangements
+Procurements from standing offers
+9.12   Procurements from an existing standing offer are not subject to the rules in Division 2 of these
+       CPRs. However, these procurements must comply with the rules in Division 1.
+9.13   Officials should report the original procurement method used to establish the standing offer when
+       they report procurements from standing offers.
+9.14   To maximise competition, when a standing offer includes multiple potential suppliers, officials
+       should approach multiple potential suppliers.
+
+
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                23
+Division 2
+Additional rules for
+procurements at or
+above the relevant
+procurement threshold
+10. Additional rules
+10.1   A procurement, except a procurement that is specifically exempt in accordance with Appendix
+       A, is subject to the rules contained in Division 2 if the expected value of the procurement is at,
+       or above, the relevant procurement threshold.
+       a. The rules set out in Division 2 are additional to those in Division 1 and must not be interpreted
+          or applied in a manner that diminishes or negates Division 1.
+
+
+Non-discrimination
+10.2   Subject to these CPRs, potential suppliers to government must not be discriminated against due
+       to their size, degree of foreign affiliation or ownership, location, or the origin of their goods and
+       services.
+
+
+Conditions for limited tender
+10.3   A relevant entity must only conduct a procurement at or above the relevant procurement threshold
+       through limited tender in the following circumstances:
+       a. when, in response to an open approach to market:
+            i. no submissions, or no submissions that represented value for money, were received,
+            ii. no submissions that met the minimum content and format requirements for submission
+                as stated in the request documentation were received, or
+            iii. no tenderers satisfied the conditions for participation,
+               and the relevant entity does not substantially modify the essential requirements of the
+               procurement; or
+       b. when, for reasons of extreme urgency brought about by events unforeseen by the relevant
+          entity, the goods and services could not be obtained in time under open tender; or
+       c. for procurements made under exceptionally advantageous conditions that arise only in the
+          very short term, such as from unusual disposals, unsolicited innovative proposals, liquidation,
+          bankruptcy, or receivership, and which are not routine procurement from regular suppliers; or
+       d. when the goods and services can be supplied only by a particular business and there is no
+          reasonable alternative or substitute for one of the following reasons:
+            i. the requirement is for works of art,
+            ii. to protect patents, copyrights, or other exclusive rights, or proprietary information, or
+            iii. due to an absence of competition for technical reasons; or
+       e. for additional deliveries of goods and services by the original supplier or authorised
+          representative that are intended either as replacement parts, extensions, or continuing services
+          for existing equipment, software, services, or installations, when a change of supplier would
+          compel the relevant entity to procure goods and services that do not meet requirements for
+          compatibility with existing equipment or services; or
+       f. for procurements in a commodity market; or
+       g. when a relevant entity procures a prototype or a first good or service that is intended for limited
+          trial or that is developed at the relevant entity’s request in the course of, and for, a particular
+          contract for research, experiment, study, or original development; or
+       h. in the case of a contract awarded to the winner of a design contest, provided that
+            i. the contest has been organised in a manner that is consistent with these CPRs, and
+            ii. the contest is judged by an independent jury with a view to a design contract being
+                awarded to the winner.
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                    25
+10.4   A procurement at or above the relevant procurement threshold conducted by limited tender is not
+       required to meet the rules in paragraphs 10.6 – 10.8 (Request documentation), 10.20 – 10.31
+       (Minimum time limits), or 10.35 (Awarding contracts).
+10.5   In accordance with the general rules for accountability set out in these CPRs, for each contract
+       awarded through limited tender, an official must prepare and appropriately file within the relevant
+       entity’s records management system a written report that includes:
+       a. the value and type of goods and services procured;
+       b. a statement indicating the circumstances and conditions that justified the use of limited tender;
+          and
+       c. a record demonstrating how the procurement represented value for money in the
+          circumstances.
+
+
+Request documentation
+10.6   Request documentation must include a complete description of:
+       a. the procurement, including the nature, scope and the quantity of the goods and services to be
+          procured or, where the quantity is not known, the estimated quantity, and any requirements to
+          be fulfilled, including any specifications, conformity certification, plans, drawings, or instructional
+          materials;
+       b. any conditions for participation, including any financial guarantees, information and documents
+          that potential suppliers are required to submit;
+       c. any minimum content and format requirements;
+       d. evaluation criteria to be considered in assessing submissions and, if applicable to the
+          evaluation, the relative importance of those criteria;
+       e. the relevant entity’s intention to conduct negotiations, where applicable;
+       f. any dates for the delivery of goods or supply of services, taking into account the complexity of
+          the procurement; and
+       g. any other terms or conditions relevant to the procurement.
+
+10.7   However, relevant entities are not obligated to release confidential information, information
+       sensitive to essential security or information that may impede competition.
+10.8   Relevant entities must ensure that potential suppliers and tenderers are dealt with fairly and in
+       a non-discriminatory manner when providing information leading to, or following, an approach to
+       market. Relevant entities must promptly reply to any reasonable request from a potential supplier
+       for relevant information about a procurement, and when responding to such enquiries, must
+       avoid a potential supplier, or group of potential suppliers, gaining an advantage in a competitive
+       procurement process.
+
+
+Specifications
+10.9   A relevant entity must not use specifications or prescribe any conformity assessment procedure
+       with the purpose or effect of creating an unnecessary obstacle to trade.
+10.10 In prescribing specifications for goods and services, a relevant entity must, where appropriate:
+       a. set out the specifications in terms of performance and functional requirements; and
+       b. base specifications on international standards, when they exist and apply to the relevant
+          procurement, except when the use of international standards would fail to meet the relevant
+          entity’s requirements.
+
+
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                    26
+10.11 A specification must not require or refer to a particular trademark or trade name, patent, copyright,
+      design or type, specific origin, producer, or supplier, unless there is no other sufficiently precise
+      or intelligible way of describing the requirement. In an exceptional circumstance when this type of
+      specification is used, words such as ‘or equivalent’ must be included in the specification.
+10.12 A relevant entity may conduct market research and other activities in developing specifications for
+      a particular procurement and allow a supplier that has been engaged to provide those services to
+      participate in procurements related to those services. Relevant entities must ensure that such a
+      supplier will not have an advantage over other potential suppliers.
+
+
+Modification of evaluation criteria or specifications
+10.13 When, during the course of a procurement, a relevant entity modifies the evaluation criteria
+      or specifications set out in an approach to market or in request documentation, or amends or
+      reissues an approach to market or request documentation, it must transmit all modifications or
+      amended or reissued documents:
+       a. to all the potential suppliers that are participating at the time the information is amended,
+          if known, and, in all other cases, in the same manner as the original information; and
+       b. in adequate time to allow potential suppliers to modify and re-lodge their submissions,
+          if required.
+
+
+Conditions for participation
+10.14 Relevant entities may specify conditions for participation that potential suppliers must be able
+      to demonstrate compliance with in order to participate in a procurement or, if applicable, class of
+      procurement. Conditions for participation must be limited to those that will ensure that a potential
+      supplier has the legal, commercial, technical and financial abilities to fulfil the requirements of the
+      procurement.
+10.15 Conditions for participation may require relevant prior experience when that experience is essential
+      to meet the requirements of the procurement but must not specify, as a requirement, that potential
+      suppliers have previous experience with the relevant entity or with the Australian Government or in
+      a particular location.
+10.16 In assessing whether a tenderer satisfies the conditions for participation, a relevant entity must:
+       a. evaluate financial, commercial, and technical abilities on the basis of the tenderer’s business
+          activities, wherever they have occurred; and
+       b. base its determination solely on the conditions for participation that the relevant entity has
+          specified in either the approach to market or the request documentation.
+
+10.17 A relevant entity may exclude a tenderer on grounds such as bankruptcy, insolvency, false
+      declarations, or significant deficiencies in performance of any substantive requirement or obligation
+      under a prior contract.
+
+
+Negotiations
+10.18 A relevant entity may conduct negotiations where:
+       a. the relevant entity has indicated its intent to conduct negotiations in the request documentation,
+          as outlined in paragraph 10.6(e); or
+       b. following an evaluation, no single tenderer is assessed as providing best value for money,
+          in accordance with the essential requirements and evaluation criteria specified in the approach
+          to market and request documentation.
+
+
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                 27
+10.19 Where a relevant entity conducts negotiations, the relevant entity must:
+       a. ensure that any elimination of a tenderer participating in negotiations is carried out in
+          accordance with the essential requirements and evaluation criteria specified in the approach
+          to market and request documentation; and
+       b. provide a common deadline for the remaining participating tenderers to submit any revised
+          tenders.
+
+
+Minimum time limits
+10.20 Potential suppliers must be required to lodge submissions in accordance with a common deadline.
+10.21 Relevant entities must provide sufficient time for potential suppliers to prepare and lodge
+      submissions in response to an approach to market. Time limits discussed in this section represent
+      minimum time limits to lodge submissions and should not be treated as default time limits.
+10.22 The time limit for potential suppliers to lodge a submission must be at least 25 days from the date
+      and time that a relevant entity publishes an approach to market for an open tender.
+10.23 The 25 day period referred to in paragraph 10.22 must be extended by five days for each of the
+      following circumstances:
+       a. when a relevant entity does not make request documentation available electronically from the
+          date that a relevant entity publishes an approach to market; and/or
+       b. when a relevant entity does not accept submissions electronically.
+10.24 A relevant entity may establish a time limit that is less than 25 days but no less than 10 days under
+      the following circumstances:
+       a. when the relevant entity has published details of the procurement in an annual procurement
+          plan on AusTender, at least 40 days and not more than 12 months in advance, and those
+          details include a description of the procurement, the timing of the approach to market and the
+          procedure to obtain request documentation;
+       b. when the relevant entity procures commercial goods and services (unless the relevant entity
+          does not accept the submissions electronically, in which case the minimum time limit must be
+          no less than 13 days); or
+       c. when a genuine state of urgency renders the normal time limit impracticable.
+
+10.25 In the case of a multi-stage procurement, each approach to market must comply with the time
+      limits stated in paragraph 10.22 – 10.24.
+10.26 When a relevant entity intends to specify conditions for participation that require potential suppliers
+      to undertake a separate registration procedure, the relevant entity must state the time limit for
+      responding to the registration in the approach to market. Any such conditions for participation
+      must be published in sufficient time to enable all potential suppliers to complete the registration
+      procedures within the time limit for the procurement.
+10.27 When a relevant entity extends the time limit for registration or submission, the new time limit must
+      apply equitably.
+
+
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                28
+Late submissions
+10.28 Late submissions must not be accepted unless the submission is late as a consequence of
+      mishandling by the relevant entity. A relevant entity must not penalise any potential supplier whose
+      submission is received after the specified deadline if the delay is due solely to mishandling by the
+      relevant entity.
+10.29 Relevant entity mishandling does not include mishandling by a courier or mail service provider
+      engaged by a potential supplier to deliver a submission. It is the responsibility of the potential
+      supplier to ensure that the submission is dispatched in sufficient time for it to be received by the
+      relevant entity by the deadline.
+10.30 Late submissions should be returned unopened to the potential supplier who submitted them, to:
+         a. ensure that they are not evaluated or compared with submissions which were submitted by the
+            due time and date;
+         b. demonstrate to other tenderers that the process for receiving submissions is fair and impartial;
+            and
+         c. eliminate scope for any suggestion that the submission was rejected for any reason other than
+            because it was late.
+
+10.31 It may be necessary to open a late submission if there is no return address or any indication of
+      which approach to market the submission relates. When a submission has been opened under
+      such circumstances the potential supplier should be advised that the submission was rejected
+      due to lateness and advised of the reason it was opened.
+
+
+Handling of submissions and additional information
+10.32 Procedures to receive, open and handle submissions must guarantee fairness and impartiality
+      and must ensure that submissions and additional information received from tenderers is treated in
+      confidence.
+10.33 When a relevant entity provides tenderers with opportunities to correct unintentional errors of
+      form between the opening of submissions and any decision, the relevant entity must provide the
+      opportunity equitably to all tenderers.
+10.34 Further consideration must be given only to submissions that meet minimum content and format
+      requirements.
+
+
+Awarding contracts
+10.35 Unless a relevant entity determines that it is not in the public interest to award a contract,19 it must
+      award a contract to the tenderer that the relevant entity has determined:
+         a. satisfies the conditions for participation;
+         b. is fully capable of undertaking the contract; and
+         c. will provide the best value for money, in accordance with the essential requirements and
+            evaluation criteria specified in the approach to market and request documentation.
+
+10.36 A relevant entity must not use options, cancel a procurement, or terminate or modify an awarded
+      contract, so as to avoid the rules of Division 2 of these CPRs.
+
+
+
+
+19 Public interest grounds generally arise in response to unforeseen events or new information that materially affects the objectives
+   or reasons underlying the original procurement requirement as specified in the request document.
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                                        29
+Appendices
+Appendix A: Exemptions
+Procurements of the following kinds of goods and services are exempt from the rules of Division 2 of the
+CPRs, and from paragraphs 4.7, 4.8, 7.27 and 7.28 of Division 1:
+1.    procurement (including leasing) of land, existing buildings or other immovable property or any
+      associated rights (note: the procurement of construction services is not exempt);
+2.    procurement of goods and services from another Commonwealth entity, or a state, territory or local
+      government entity;
+3.    procurements funded by international grants, loans or other assistance, when the provision of such
+      assistance is subject to conditions inconsistent with this document;
+4.    procurements funded by grants and sponsorship payments from non-Commonwealth entities;
+5.    procurement for the direct purpose of providing foreign assistance;
+6.    procurement of research and development services, but not the procurement of inputs to research
+      and development;
+7.    the engagement of an expert or neutral person, including engaging counsel or barristers, for any
+      current or anticipated litigation or dispute;
+8.    procurement of goods and services (including construction) outside Australian territory, for
+      consumption outside Australian territory;
+9.    acquisition of fiscal agency or depository services, liquidation and management services for
+      regulated financial institutions, and sale and distribution services for government debt;
+10. procurement by the Future Fund Management Agency of investment management, investment
+    advisory, or master custody and safekeeping services for the purposes of managing and investing
+    the assets of the Future Fund;
+11. procurement of blood plasma products or plasma fractionation services;
+12. procurement of government advertising services;20
+13. procurement of goods and services by, or on behalf of, the Defence Intelligence Organisation,
+    the Australian Signals Directorate, or the Australian Geospatial-Intelligence Organisation;
+14. contracts for labour hire;
+15. procurement of goods and services from a business that primarily exists to provide the services of
+    persons with a disability;
+16. procurement of goods and services from an SME meeting the definition of an Indigenous Enterprise
+    in the Indigenous Procurement Policy; and
+17. procurement of goods and services valued up to $500,000 from an SME (note: the requirements
+    under the Indigenous Procurement Policy must first be satisfied before this exemption is applied).
+
+
+
+
+20 This includes information and advertising services for the development and implementation of information and advertising
+   campaigns.
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                                   31
+Appendix B: Definitions
+The following definitions apply for the purposes of these CPRs:
+Accountable Authority – as defined in section 8 of the PGPA Act.
+Amendment – changes to a contract, including options that have been exercised, contract extensions,
+variations and renewals.
+Annual procurement plan – a document published on AusTender through which relevant entities
+provide a short summary of their strategic procurement outlook for the coming year and information on
+significant procurements they plan to undertake.
+Approach to market – any notice inviting potential suppliers to participate in a procurement which may
+include a request for tender, request for quote, request for expression of interest, request for information
+or request for proposal.
+Note: the acronym ‘ATM’ is used on AusTender and other procurement documents to reference an
+approach to market.
+
+AusTender – the central web-based facility for the publication of Australian Government procurement
+information, including business opportunities, annual procurement plans and contracts awarded.
+Australian business –
+• is a business, including any parent business, that:
+  – has 50% or more Australian ownership, or is principally traded on an Australian equities market; and
+  – is an Australian resident for tax purposes; and
+• is a business that has its principal place of business in Australia.
+For the purpose of paragraph 5.4 only, an Australian business also includes a New Zealand business.
+Note: Relevant entities must apply the guidance at www.finance.gov.au/australian-business when
+applying this definition.
+
+Commercial goods and services – commercial goods and services are of a type that are offered for
+sale to, and routinely purchased by, non-government buyers for non-government purposes, including any
+modifications common in the commercial marketplace and any minor modifications not common in the
+commercial marketplace.
+Commodity market – a recognised exchange dealing in generic, largely unprocessed, goods that can be
+processed and resold.
+Commonwealth entity – as defined in section 8 of the PGPA Act.
+Conditions for participation – minimum conditions that potential suppliers must demonstrate
+compliance with, in order to participate in a procurement process or for submissions to be considered.
+This may include a requirement to undertake an accreditation or validation procedure.
+Construction services – procurements related to the construction of buildings and procurements of
+works as defined by the Public Works Committee Act 1969.
+Contract – an arrangement, as defined in section 23(2) of the PGPA Act, for the procurement of goods
+and/or services under which relevant money is payable or may become payable. Note: this includes
+standing offers and panels.
+
+
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                    32
+Contracts for labour hire – a contract under which a relevant entity engages an individual to provide
+labour, when the individual is engaged either directly or through a firm which primarily exists to provide
+the services of only that individual. This includes the appointment of an eminent individual to a special
+role by an Accountable Authority, or the appointment of a person or persons by an Accountable Authority
+to a governance committee (for example, an audit committee, ethics committee or steering committee),
+but does not include the engagement of consultants.
+Corporate Commonwealth entities – as defined in section 8 of the PGPA Act.
+Days – means calendar days.
+End date (in a contract) – can be defined by reference to a specific date or by reference to a specific
+event.
+Evaluation criteria – the criteria that are used to evaluate the compliance and/or relative ranking of
+submissions. Evaluation criteria must be clearly stated in the request documentation.
+Goods – every type of right, interest or thing which is legally capable of being owned. This includes, but
+is not restricted to, physical goods and real property as well as intangibles such as intellectual property,
+contract options and goodwill.
+Goods and Services Tax (GST) – the Goods and Services Tax, as defined by the A New Tax System
+(Goods and Services Tax) Act 1999.
+Indigenous Procurement Policy – a procurement-connected policy as defined in paragraphs 4.9 and
+4.10, available at: www.niaa.gov.au/resource-centre/indigenous-procurement-policy.
+Limited tender – involves a relevant entity approaching one or more potential suppliers to make
+submissions, when the process does not meet the rules for open tender.
+Management Advisory Services Panel – the whole-of-Australian-Government mandatory
+coordinated arrangement of the same name, managed by the Department of Finance, available at
+www.finance.gov.au/government/procurement/whole-australian-government-procurement/management-
+advisory-services-panel.
+Minimum content and format requirements – criteria that a tenderer’s submission is required to meet,
+when responding to an approach to market, to be eligible for further consideration in a procurement process.
+Multi-stage procurement – involves an initial approach to market followed by one or more subsequent
+approaches to market (for example, inviting expressions of interest followed by a request for tender).
+New Zealand business – as defined in New Zealand’s Government Procurement Rules, available at
+www.procurement.govt.nz.
+Non-corporate Commonwealth entities – as defined in section 8 of the PGPA Act.
+Officials – as defined in section 8 of the PGPA Act.
+Open approach to market – any notice inviting all potential suppliers to participate in a procurement
+which may include a request for tender, request for quote, request for expression of interest, request for
+information and request for proposal.
+Open tender – involves publishing an open approach to market and inviting submissions. This includes
+multi-stage procurements, provided the first stage is an open approach to market.
+People Panel – the whole-of-Australian-Government mandatory coordinated arrangement of the
+same name, managed by the Department of Finance, available at www.finance.gov.au/government/
+procurement/whole-australian-government-procurement/people-panel.
+Potential supplier – an entity or person who may respond to an approach to market.
+
+
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                    33
+Procurement – refer to paragraphs 2.7 to 2.9.
+Procurement thresholds – refer to paragraph 9.7.
+Public resources – as defined in section 8 of the PGPA Act.
+Relevant money – as defined in section 8 of the PGPA Act.
+Relevant entity – non-corporate Commonwealth entities and prescribed corporate Commonwealth
+entities (listed in section 30 of the PGPA Rule) that must comply with the CPRs when performing duties
+related to procurement.
+Reported contract – a contract published on AusTender.
+Reporting threshold – the value at which any contract must be reported, either due to the initial value
+being at, or above, the reporting threshold, or as the result of contract amendments changing the value
+to be at, or above the reporting threshold.
+Request documentation – documentation provided to potential suppliers to enable them to understand
+and assess the requirements of the procuring relevant entity and to prepare appropriate and responsive
+submissions. This general term includes documentation for expressions of interest, open tender and
+limited tender.
+Research and development – research is described as systematic enquiry or investigation into a subject
+in order to discover facts or principles. Research includes surveys, market research, scientific research
+and educational research. Development applies to the function of creating/producing new and improved
+products, devices, processes or services. Development also extends to design, proof of concept and the
+production of prototypes.
+Small and Medium Enterprises (SMEs) – an Australian business or New Zealand business with
+fewer than 200 full-time equivalent employees. When assessing the number of employees a business
+has, employees of any associated entities (as defined in s 50AAA of the Corporations Act 2001) to
+the business are included. Associated entities to a business include a business’s parent company,
+a business’s subsidiaries, and any related bodies corporate to the business.
+Specification – a description of the features of the goods and services to be procured.
+Standards – means a document approved by a recognised body such as Standards Australia, the
+International Organization for Standardization, the International Electrotechnical Commission or the
+International Telecommunication Union that provides for common and repeated use, rules, guidelines
+or characteristics for goods or services, or related processes and production methods, with which
+compliance is not mandatory, unless the goods or services are subject to regulation by government.
+Standing offer – a Commonwealth arrangement setting out the terms and conditions, including a basis
+for pricing, under which a supplier agrees to supply specified goods and services to a relevant entity or
+entities for a specified period.
+Submission – any formally submitted response from a potential supplier to an approach to market.
+Submissions may include tenders, responses to expressions of interest or responses to request for quote.
+Supplier – an entity or person who has entered into a contract with the Commonwealth.
+Tenderer – an entity or person who has responded with a submission to an approach to market.
+
+
+
+
+Department of Finance | Commonwealth Procurement Rules 2025                                                 34
+Department of Finance | Commonwealth Procurement Rules 2025   35
+finance.gov.au
+

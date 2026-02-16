@@ -1,5 +1,5 @@
 ---
-description: Create strategic Wardley Maps for architecture decisions and build vs buy analysis
+description: "Create strategic Wardley Maps for architecture decisions and build vs buy analysis"
 ---
 
 # ArcKit: Wardley Mapping for Strategic Architecture
@@ -53,7 +53,7 @@ Scan the project directory for existing artifacts and read them to inform this m
   - Extract: Data components, storage technology, data flow patterns
 - `ARC-*-TCOP-*.md` in `projects/{current_project}/` — TCoP review
   - Extract: UK Government compliance requirements, reuse opportunities
-- `ARC-*-AIPB-*.md` in `projects/{current_project}/` — AI Playbook assessment
+- `ARC-*-AIGA-*.md` in `projects/{current_project}/` — AU AI governance assessment
   - Extract: AI component risk levels, human oversight requirements
 - Existing maps in `projects/{current_project}/wardley-maps/`
   - Extract: Previous strategic analysis, evolution predictions
@@ -245,10 +245,10 @@ For each component, determine:
 
 To deepen strategic analysis beyond build vs buy, read and apply these reference files:
 
-- **Doctrine assessment**: Read `${CLAUDE_PLUGIN_ROOT}/skills/wardley-mapping/references/doctrine.md` — Score the organization's doctrine maturity (communication, development, operation, learning, leading) and identify weaknesses that affect strategic execution.
-- **Gameplay patterns**: Read `${CLAUDE_PLUGIN_ROOT}/skills/wardley-mapping/references/gameplay-patterns.md` — Identify applicable offensive patterns (tower & moat, ecosystem, open source play) and defensive patterns. Flag anti-patterns (legacy trap, premature innovation).
-- **Climatic patterns**: Read `${CLAUDE_PLUGIN_ROOT}/skills/wardley-mapping/references/climatic-patterns.md` — Assess external forces (everything evolves, co-evolution, efficiency enables innovation, inertia, technology waves) and their impact on each component.
-- **Mapping examples**: Read `${CLAUDE_PLUGIN_ROOT}/skills/wardley-mapping/references/mapping-examples.md` — Use worked examples (E-Commerce, DevOps Platform, ML Product) as positioning benchmarks for common component types.
+- **Doctrine assessment**: Read `.arckit/skills/wardley-mapping/references/doctrine.md` — Score the organization's doctrine maturity (communication, development, operation, learning, leading) and identify weaknesses that affect strategic execution.
+- **Gameplay patterns**: Read `.arckit/skills/wardley-mapping/references/gameplay-patterns.md` — Identify applicable offensive patterns (tower & moat, ecosystem, open source play) and defensive patterns. Flag anti-patterns (legacy trap, premature innovation).
+- **Climatic patterns**: Read `.arckit/skills/wardley-mapping/references/climatic-patterns.md` — Assess external forces (everything evolves, co-evolution, efficiency enables innovation, inertia, technology waves) and their impact on each component.
+- **Mapping examples**: Read `.arckit/skills/wardley-mapping/references/mapping-examples.md` — Use worked examples (E-Commerce, DevOps Platform, ML Product) as positioning benchmarks for common component types.
 
 Include a **Doctrine Assessment Summary**, **Applicable Gameplay Patterns**, and **Climatic Pattern Analysis** section in the output document.
 
@@ -290,7 +290,7 @@ Map components to TCoP points:
 - **Point 8 (Share/Reuse)**: Identify GOV.UK services and cross-government reuse
 - **Point 11 (Purchasing)**: Link to Digital Marketplace procurement strategy
 
-### AI Playbook Compliance (for AI systems)
+### AU AI governance assessment Compliance (for AI systems)
 
 If project includes AI components:
 
@@ -298,7 +298,7 @@ If project includes AI components:
 - Flag HIGH-RISK AI requirements:
   - Human-in-the-loop (add as Custom component, 0.45 evolution)
   - Bias testing (add as Custom capability)
-  - ATRS publication requirement (add note)
+  - AI transparency publication requirement (add note)
   - DPIA/EqIA mandatory (add annotation)
 
 ## Step 5: Generate Output
@@ -315,9 +315,9 @@ Create the Wardley Map document using the template:
 **Read the template** (with user override support):
 - **First**, check if `.arckit/templates/wardley-map-template.md` exists in the project root
 - **If found**: Read the user's customized template (user override takes precedence)
-- **If not found**: Read `${CLAUDE_PLUGIN_ROOT}/templates/wardley-map-template.md` (default)
+- **If not found**: Read `.arckit/templates/wardley-map-template.md` (default)
 
-> **Note**: Read the `${CLAUDE_PLUGIN_ROOT}/VERSION` file and update the version in the template metadata line when generating.
+> **Note**: Read the `.arckit/VERSION` file and update the version in the template metadata line when generating.
 > **Tip**: Users can customize templates with `/arckit:customize wardley`
 
 
@@ -330,7 +330,7 @@ Before completing the document, populate ALL document control fields in the head
 **Generate Document ID**:
 ```bash
 # Use the ArcKit document ID generation script
-DOC_ID=$(${CLAUDE_PLUGIN_ROOT}/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "WARD" "${VERSION}" --filename --next-num "projects/${PROJECT_DIR}/wardley-maps")
+DOC_ID=$(.arckit/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "WARD" "${VERSION}" --filename --next-num "projects/${PROJECT_DIR}/wardley-maps")
 # Example output: ARC-001-WARD-001-v1.0.md
 ```
 
@@ -369,7 +369,7 @@ The footer should be populated with:
 ```markdown
 **Generated by**: ArcKit `/arckit:wardley` command
 **Generated on**: {DATE} {TIME} GMT
-**ArcKit Version**: [Read from ${CLAUDE_PLUGIN_ROOT}/VERSION]
+**ArcKit Version**: [Read from .arckit/VERSION]
 **Project**: {PROJECT_NAME} (Project {PROJECT_ID})
 **AI Model**: [Use actual model name, e.g., "claude-sonnet-4-5-20250929"]
 **Generation Context**: [Brief note about source documents used]
@@ -428,7 +428,7 @@ The Wardley Map document must include:
 12. **Traceability**:
     - Link to requirements (BR-001, FR-001, etc.)
     - Link to architecture principles
-    - Link to UK Government assessments (TCoP, AI Playbook, ATRS)
+    - Link to UK Government assessments (TCoP, AU AI governance assessment, AITS)
 
 ## Step 6: Integration with ArcKit Workflow
 
@@ -489,7 +489,7 @@ The `/arckit:analyze` command should include Wardley Map validation:
 
 **Context**:
 - HIGH-RISK AI system (affects access to benefits)
-- Must comply with TCoP, AI Playbook, ATRS
+- Must comply with TCoP, AU AI governance assessment, AITS
 - Procurement via G-Cloud Digital Marketplace
 - Uses GPT-4 (commercial LLM product)
 - Needs human-in-the-loop review
@@ -570,13 +570,13 @@ style wardley
 **HIGH-RISK AI Requirements**:
 - Human Review Queue (Custom, 0.45): Mandatory human-in-the-loop
 - Bias Testing Framework (Custom, 0.35): Fairness testing for protected characteristics
-- ATRS publication: Required before Live phase
+- AI transparency publication: Required before Live phase
 - DPIA + EqIA: Mandatory for HIGH-RISK AI
 
 **Next Steps**:
 1. Run `/arckit:sow` to create RFP for G-Cloud procurement (AWS, GPT-4, Auth0)
-2. Run `/arckit:ai-playbook` to complete AI Playbook assessment
-3. Run `/arckit:atrs` to generate ATRS record
+2. Run `/arckit:ai-playbook` to complete AU AI governance assessment
+3. Run `/arckit:atrs` to generate AI transparency statement
 4. Run `/arckit:tcop` to validate TCoP compliance (Cloud First, Open Standards, Reuse)
 
 ## Important Notes
@@ -623,7 +623,7 @@ style wardley
 6. **AI Project Mistakes**:
    - ❌ Not mapping human-in-the-loop as mandatory component
    - ❌ Missing bias testing for HIGH-RISK AI
-   - ❌ Not flagging ATRS publication requirement
+   - ❌ Not flagging AI transparency publication requirement
 
 ### Map Versioning
 
@@ -657,7 +657,7 @@ The document must be:
 - ✅ Actionable (clear build/buy/rent decisions)
 - ✅ Traceable (linked to requirements and principles)
 - ✅ Strategic (evolution predictions and gameplay)
-- ✅ Compliant (UK Government TCoP, AI Playbook if applicable)
+- ✅ Compliant (UK Government TCoP, AU AI governance assessment if applicable)
 
 After creating the map, provide a summary to the user:
 
@@ -692,7 +692,7 @@ After creating the map, provide a summary to the user:
 🔗 Recommended Commands:
 - /arckit:sow - Generate RFP for vendor procurement
 - /arckit:tcop - Assess Technology Code of Practice compliance
-- /arckit:ai-playbook - Assess AI Playbook compliance (if AI components)
+- /arckit:ai-playbook - Assess AU AI governance compliance (if AI components)
 ```
 
 ---

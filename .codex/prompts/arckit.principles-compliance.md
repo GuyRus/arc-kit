@@ -191,8 +191,8 @@ Load only the information needed for assessment. Do NOT read entire files - extr
 - `ARC-*-TCOP-*.md` - TCoP point scores
 - `ARC-*-SECD-*.md` - NCSC CAF assessment results
 - `ARC-*-SECD-MOD-*.md` - MOD CAAT assessment
-- `ARC-*-AIPB-*.md` - AI principles scores
-- `ARC-*-ATRS-*.md` - Algorithmic transparency
+- `ARC-*-AIGA-*.md` - AI principles scores
+- `ARC-*-AITS-*.md` - Algorithmic transparency
 
 **From other artifacts**:
 - Any `ARC-*-DATA-*.md` file - Entity-relationship diagram, GDPR compliance
@@ -502,7 +502,7 @@ Display concise summary (NOT full document):
 [IF compliance docs exist:]
 - ✅ **TCoP Point {N}**: {Assessment result}
 - ✅ **Secure by Design - {Control}**: {Assessment result}
-- ✅ **AI Playbook Principle {N}**: {Assessment result}
+- ✅ **AU AI governance assessment Principle {N}**: {Assessment result}
 - [OR]
 - ⚪ Compliance assessments not yet performed
 
@@ -806,7 +806,7 @@ This assessment was based on the following artifacts:
 - Operational metrics (monitoring dashboards, SLA reports)
 
 **Secondary Evidence** (supporting):
-- Compliance assessments (TCoP, Secure by Design, AI Playbook)
+- Compliance assessments (TCoP, Secure by Design, AU AI governance assessment)
 - Architecture diagrams showing principle implementation
 - Traceability matrices linking requirements to design
 - Stakeholder requirements driving principle adherence

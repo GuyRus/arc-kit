@@ -1,5 +1,5 @@
 ---
-description: Perform comprehensive governance quality analysis across architecture artifacts (requirements, principles, designs, assessments)
+description: "Perform comprehensive governance quality analysis across architecture artifacts (requirements, principles, designs, assessments)"
 ---
 
 ## User Input
@@ -18,7 +18,7 @@ Identify inconsistencies, gaps, ambiguities, and compliance issues across all ar
 
 **Architecture Principles Authority**: The architecture principles (`ARC-000-PRIN-*.md` in `projects/000-global/`) are **non-negotiable**. Any conflicts with principles are automatically CRITICAL and require adjustment of requirements, designs, or vendor proposals—not dilution or reinterpretation of the principles.
 
-**UK Government Compliance Authority** (if applicable): TCoP, AI Playbook, and ATRS compliance are mandatory for UK government projects. Non-compliance is CRITICAL.
+**UK Government Compliance Authority** (if applicable): TCoP, AU AI governance assessment, and AITS compliance are mandatory for UK government projects. Non-compliance is CRITICAL.
 
 ## Execution Steps
 
@@ -27,9 +27,9 @@ Identify inconsistencies, gaps, ambiguities, and compliance issues across all ar
 **Read the template** (with user override support):
 - **First**, check if `.arckit/templates/analysis-report-template.md` exists in the project root
 - **If found**: Read the user's customized template (user override takes precedence)
-- **If not found**: Read `${CLAUDE_PLUGIN_ROOT}/templates/analysis-report-template.md` (default)
+- **If not found**: Read `.arckit/templates/analysis-report-template.md` (default)
 
-> **Note**: Read the `${CLAUDE_PLUGIN_ROOT}/VERSION` file and update the version in the template metadata line when generating.
+> **Note**: Read the `.arckit/VERSION` file and update the version in the template metadata line when generating.
 > **Tip**: Users can customize templates with `/arckit:customize analyze`
 
 ### 1. Discover Project Context
@@ -56,8 +56,8 @@ projects/
     │       ├── dld-v1.md
     │       └── reviews/
     ├── ARC-*-TCOP-*.md (if UK Gov)
-    ├── ARC-*-AIPB-*.md (if UK Gov AI)
-    ├── ARC-*-ATRS-*.md (if UK Gov AI)
+    ├── ARC-*-AIGA-*.md (if UK Gov AI)
+    ├── ARC-*-AITS-*.md (if UK Gov AI)
     ├── ARC-*-SECD-MOD-*.md (if MOD project)
     └── ARC-{PROJECT_ID}-TRAC-v*.md (traceability matrix)
 ```
@@ -136,8 +136,8 @@ Load only minimal necessary context from each artifact:
 
 **From UK Government Assessments** (if exist):
 - `ARC-*-TCOP-*.md`: TCoP compliance status
-- `ARC-*-AIPB-*.md`: AI Playbook compliance status
-- `ARC-*-ATRS-*.md`: ATRS record completeness
+- `ARC-*-AIGA-*.md`: AU AI governance compliance status
+- `ARC-*-AITS-*.md`: AI transparency statement completeness
 
 **From MOD Assessment** (if exists):
 - `ARC-*-SECD-MOD-*.md`: MOD SbD compliance status
@@ -192,8 +192,8 @@ Create internal representations (do not include raw artifacts in output):
 
 **UK Government Compliance Matrix** (if applicable):
 - TCoP: 13 points with compliance status
-- AI Playbook: 10 principles + 6 themes with compliance status
-- ATRS: Mandatory fields completion status
+- AU AI governance assessment: 10 principles + 6 themes with compliance status
+- AITS: Mandatory fields completion status
 
 **MOD Compliance Matrix** (if ARC-*-SECD-MOD-*.md exists):
 - 7 SbD Principles with compliance status
@@ -383,7 +383,7 @@ Focus on high-signal findings. Limit to 50 findings total; aggregate remainder i
 - Critical issues resolved?
 - Evidence provided for each point?
 
-**AI Playbook** (for AI systems):
+**AU AI governance assessment** (for AI systems):
 - Assessment exists for AI/ML systems?
 - Risk level determined (High/Medium/Low)?
 - All 10 principles assessed?
@@ -392,8 +392,8 @@ Focus on high-signal findings. Limit to 50 findings total; aggregate remainder i
 - Bias testing completed?
 - Human oversight model defined?
 
-**ATRS** (for AI systems):
-- ATRS record exists for algorithmic tools?
+**AITS** (for AI systems):
+- AI transparency statement exists for algorithmic tools?
 - Tier 1 (public summary) completed?
 - Tier 2 (technical details) completed?
 - All mandatory fields filled?
@@ -402,8 +402,8 @@ Focus on high-signal findings. Limit to 50 findings total; aggregate remainder i
 **Compliance Alignment**:
 - Requirements aligned with TCoP?
 - Design complies with TCoP (Cloud First, Open Standards, Secure)?
-- AI requirements comply with AI Playbook?
-- ATRS record reflects requirements and design?
+- AI requirements comply with AU AI governance assessment?
+- AI transparency statement reflects requirements and design?
 
 #### J. MOD Secure by Design Compliance (if ARC-*-SECD-MOD-*.md exists)
 
@@ -517,8 +517,8 @@ Use this heuristic to prioritise findings:
 - Data Model: PII not identified (GDPR compliance failure)
 - Data Model: Data owners not from stakeholder RACI matrix
 - UK Gov: TCoP non-compliance for mandatory points
-- UK Gov: AI Playbook blocking issues for high-risk AI
-- UK Gov: Missing mandatory ATRS for central government AI
+- UK Gov: AU AI governance assessment blocking issues for high-risk AI
+- UK Gov: Missing mandatory AITS for central government AI
 - MOD: CAAT not registered (MANDATORY for all programmes)
 - MOD: No DTSL appointed (required from Discovery phase)
 - MOD: SECRET+ data without classification-specific controls
@@ -540,7 +540,7 @@ Use this heuristic to prioritise findings:
 - Data Model: CRUD matrix doesn't align with HLD component design
 - Vendor design doesn't address SOW requirements
 - UK Gov: TCoP partial compliance with gaps
-- UK Gov: AI Playbook non-compliance for medium-risk AI
+- UK Gov: AU AI governance assessment non-compliance for medium-risk AI
 - MOD: SbD Principles partially compliant with significant gaps
 - MOD: NIST CSF functions not fully covered
 
@@ -601,7 +601,7 @@ Generate a comprehensive Markdown report and save it to `projects/{project-dir}/
 | R1 | Requirements Quality | HIGH | ARC-*-REQ-*.md:L45-52 | Duplicate security requirements | Merge NFR-S-001 and NFR-S-005 |
 | P1 | Principles Alignment | CRITICAL | ARC-*-REQ-*.md:L120 | Violates Cloud-First principle | Change to cloud-native architecture |
 | T1 | Traceability | HIGH | No HLD coverage | NFR-P-002 (10K TPS) not addressed | Add performance architecture section to HLD |
-| UK1 | UK Gov Compliance | CRITICAL | Missing DPIA | AI system requires DPIA before deployment | Complete DPIA for AI Playbook compliance |
+| UK1 | UK Gov Compliance | CRITICAL | Missing DPIA | AI system requires DPIA before deployment | Complete DPIA for AU AI governance compliance |
 
 ---
 
@@ -780,7 +780,7 @@ Generate a comprehensive Markdown report and save it to `projects/{project-dir}/
 
 **Critical TCoP Issues**: {count}
 
-### AI Playbook (if AI system)
+### AU AI governance assessment (if AI system)
 
 **Risk Level**: HIGH-RISK / MEDIUM-RISK / LOW-RISK
 **Overall Score**: {score}/160 ({percentage}%)
@@ -789,9 +789,9 @@ Generate a comprehensive Markdown report and save it to `projects/{project-dir}/
 **Blocking Issues**:
 - [ ] DPIA not completed (MANDATORY for high-risk)
 - [ ] No human-in-the-loop (REQUIRED for high-risk)
-- [ ] ATRS not published (MANDATORY for central government)
+- [ ] AITS not published (MANDATORY for central government)
 
-### ATRS (if AI system)
+### AITS (if AI system)
 
 **Completeness**: {percentage}%
 **Status**: ✅ Ready for Publication / ⚠️ Incomplete / ❌ Missing
@@ -976,7 +976,7 @@ Generate a comprehensive Markdown report and save it to `projects/{project-dir}/
 
 1. **[P1] Add Cloud-First architecture**: Current design violates Cloud-First principle. Redesign with AWS/Azure/GCP.
 2. **[R1] Cover security requirements**: NFR-S-003, NFR-S-007, NFR-S-012 have no design coverage. Add security architecture to HLD.
-3. **[UK1] Complete DPIA**: HIGH-RISK AI system requires completed DPIA before deployment (AI Playbook MANDATORY).
+3. **[UK1] Complete DPIA**: HIGH-RISK AI system requires completed DPIA before deployment (AU AI governance assessment MANDATORY).
 
 ### High Priority Actions (SHOULD resolve before implementation/procurement)
 
@@ -1047,8 +1047,8 @@ Generate a comprehensive Markdown report and save it to `projects/{project-dir}/
 
 ### UK Government Compliance (if applicable)
 - TCoP Score: {score}/130 ({percentage}%)
-- AI Playbook Score: {score}/160 ({percentage}%)
-- ATRS Completeness: {percentage}%
+- AU AI governance assessment Score: {score}/160 ({percentage}%)
+- AITS Completeness: {percentage}%
 - **UK Gov Compliance Score**: {percentage}%
 
 ### MOD Compliance (if applicable)
@@ -1105,8 +1105,8 @@ Based on findings, consider running:
 
 **UK Government Compliance**:
 - `/arckit:tcop` - Complete TCoP assessment for UK Gov projects
-- `/arckit:ai-playbook` - Complete AI Playbook assessment for AI systems
-- `/arckit:atrs` - Generate ATRS record for algorithmic tools
+- `/arckit:ai-playbook` - Complete AU AI governance assessment for AI systems
+- `/arckit:atrs` - Generate AI transparency statement for algorithmic tools
 - `/arckit:secure` - UK Government Secure by Design review
 
 **MOD Compliance**:
@@ -1214,7 +1214,7 @@ Before completing the document, populate ALL document control fields in the head
 **Generate Document ID**:
 ```bash
 # Use the ArcKit document ID generation script
-DOC_ID=$(${CLAUDE_PLUGIN_ROOT}/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "ANAL" "${VERSION}")
+DOC_ID=$(.arckit/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "ANAL" "${VERSION}")
 # Example output: ARC-001-ANAL-v1.0
 ```
 
@@ -1253,7 +1253,7 @@ The footer should be populated with:
 ```markdown
 **Generated by**: ArcKit `/arckit:analyze` command
 **Generated on**: {DATE} {TIME} GMT
-**ArcKit Version**: [Read from ${CLAUDE_PLUGIN_ROOT}/VERSION]
+**ArcKit Version**: [Read from .arckit/VERSION]
 **Project**: {PROJECT_NAME} (Project {PROJECT_ID})
 **AI Model**: [Use actual model name, e.g., "claude-sonnet-4-5-20250929"]
 **Generation Context**: [Brief note about source documents used]
@@ -1361,7 +1361,7 @@ Unlike Spec Kit's focus on code implementation, ArcKit analyze focuses on:
 - **Requirements quality**: Completeness, testability, traceability
 - **Procurement readiness**: SOW quality, vendor evaluation fairness
 - **Design alignment**: Requirements → design traceability
-- **UK Government compliance**: TCoP, AI Playbook, ATRS (if applicable)
+- **UK Government compliance**: TCoP, AU AI governance assessment, AITS (if applicable)
 - **Security & compliance**: Not just mentioned, but architected
 - **Decision quality**: Objective, defensible, auditable
 
@@ -1379,7 +1379,7 @@ You should:
    - Requirements (BR, FR, NFR, INT, DR)
    - Data model (if exists - RECOMMENDED if DR-xxx)
    - Designs (HLD, DLD)
-   - UK Gov assessments (TCoP, AI Playbook, ATRS)
+   - UK Gov assessments (TCoP, AU AI governance assessment, AITS)
    - MOD assessment (SbD with CAAT)
    - Traceability matrix
 3. Run detection passes:
@@ -1390,7 +1390,7 @@ You should:
    - Data model consistency (DR-xxx to entities, data governance, design alignment)
    - Principles alignment (violations, coverage)
    - Traceability (coverage gaps, orphans)
-   - UK Gov compliance (TCoP, AI Playbook, ATRS)
+   - UK Gov compliance (TCoP, AU AI governance assessment, AITS)
    - MOD compliance (7 SbD Principles, NIST CSF, CAAT, Three Lines of Defence)
    - Consistency (terminology, data model, tech stack)
    - Security & compliance coverage
@@ -1446,8 +1446,8 @@ After analysis, you may need:
 
 **UK Government Compliance**:
 - `/arckit:tcop` - Complete TCoP assessment
-- `/arckit:ai-playbook` - Complete AI Playbook assessment
-- `/arckit:atrs` - Generate ATRS record
+- `/arckit:ai-playbook` - Complete AU AI governance assessment
+- `/arckit:atrs` - Generate AI transparency statement
 - `/arckit:secure` - UK Government Secure by Design review
 
 **MOD Compliance**:

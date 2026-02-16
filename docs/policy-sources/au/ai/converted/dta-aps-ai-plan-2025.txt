@@ -1,0 +1,1139 @@
+AI Plan
+for the Australian Public Service
+
+
+
+
+                                         20
+                                         25
+
+Adopting AI to deliver for Australians
+Contents
+Foreword������������������������������������������������������������������������������������������� 4
+Introduction������������������������������������������������������������������������������������ 5
+        Taking an adaptive and collaborative approach ��������������������� 6
+
+What we plan to achieve���������������������������������������������������������7
+        Objectives ��������������������������������������������������������������������������������������������������� 7
+        Scope and deliverables ����������������������������������������������������������������������� 8
+        Actions to drive adoption �������������������������������������������������������������������� 9
+        APS AI Plan implementation timeline �����������������������������������������10
+        Context and background ������������������������������������������������������������������� 11
+        Responsibility for the plan ����������������������������������������������������������������12
+
+Trust: Transparency, ethics and governance�������������� 13
+        AI in government policy and guidance updates��������������������14
+        AI Review Committee���������������������������������������������������������������������������15
+        Clear expectations of external service providers ���������������15
+        AI strategic communication initiatives���������������������������������������15
+
+People: Capability building and engagement�������������� 17
+        Foundational learning �������������������������������������������������������������������������18
+        Staff consultation and engagement �������������������������������������������19
+        AI delivery and enablement (AIDE) �����������������������������������������������19
+        Chief AI Officers �������������������������������������������������������������������������������������19
+
+Tools: Access, infrastructure and support ������������������� 21
+        GovAI: Centrally hosted AI services ��������������������������������������������22
+        GovAI Chat ������������������������������������������������������������������������������������������������23
+        Guidance on public and enterprise AI services ��������������������23
+        Support for AI tool procurement ���������������������������������������������������23
+        Re-using intellectual property ��������������������������������������������������������24
+        Central register of generative AI assessments ��������������������24
+        New whole-of-government cloud policy ����������������������������������25
+
+Appendix A: Plan deliverables�������������������������������������������� 26
+Further information
+For more information on the AI Plan for the
+                                                     Creative Commons licence
+Australian Public Service visit digital.gov.au
+or contact aiplan@finance.gov.au.
+
+Published
+November 2025
+                                                     With the exception of the Coat of Arms,
+Acknowledgements                                     this publication is licensed under a Creative
+The Australian Government thanks the                 Commons Attribution 4.0 International Licence.
+participants from the Technology in Government
+Roundtable who provided valuable input, as well      Creative Commons Attribution 4.0 International
+as officers from across the Australian Public        Licence is a standard form licence agreement
+Service who contributed to the development of        that allows you to distribute, remix, adapt,
+this document.                                       and build upon the material in any medium or
+                                                     format, so long as attribution is given to the
+Ownership of intellectual property rights            creator. The license allows for commercial use.
+in the publication
+Unless otherwise stated, copyright (and any          You must give appropriate credit, provide a link
+other intellectual property rights, if any) in the   to the license, and indicate if changes were
+publication is owned by the Commonwealth             made. You may do so in any reasonable manner,
+of Australia.                                        but not in any way that suggests the licensor
+                                                     endorses you or your use. The full licence terms
+ISBN: 978-1-925205-75-6                              are available from creativecommons.org.
+
+
+
+AI Plan for the Australian Public Service 2025                                                      3
+Foreword
+Australians deserve to benefit from the possibilities that new technologies bring. Generative
+artificial intelligence (AI) provides us with the means to improve public services, make it easier for
+people and businesses to interact with government, and to help manage employee workloads.
+
+This plan ensures that every public servant will have training and access to generative AI tools.
+The Plan sets a proactive stance to increase AI adoption. It ensures the Australian Government
+keeps pace with community expectations as well as international peers.
+
+Keeping trust with the Australian people will be critical to successful adoption of this new technology.
+The plan affirms the clear policies and guidance that exist for public servants, ensuring that AI will be
+used safely and responsibly, and is accompanied by a public Statement of Intent setting out how the
+Albanese Government expects AI to be used – and not used – by the public service.
+
+This plan sets out our commitment to engage openly and constructively to ensure the introduction
+of AI across the APS is transparent, inclusive, and well-managed. This will be backed by
+comprehensive workforce planning, identification of how jobs may change, the new skills and
+training required, and managing change with our employees and their unions.
+
+By strengthening existing consultation frameworks, we will provide meaningful avenues for input
+so staff are engaged and supported through ongoing change as we together build a more capable
+and future-ready public service.
+
+This plan lays the foundations for seizing new opportunities while ensuring flexibility to adapt as AI
+evolves. Together, we can build a modern, responsive public service that captures the opportunity
+of AI, spreads the benefits widely and keeps Australians safe.
+
+
+
+Senator the Hon Katy Gallagher
+Minister for Finance
+12 November 2025
+
+
+
+
+AI Plan for the Australian Public Service 2025                                                           4
+Introduction
+The challenge
+
+Artificial intelligence (AI) , particularly generative AI, is revolutionising the way we do business and
+has the potential to transform the way governments deliver for the communities they serve. Yet, as
+with any transformation, there are barriers to adoption relating to culture, trust, and resourcing.
+Our challenge is to overcome these hurdles and facilitate timely adoption to deliver better
+outcomes for the Australian people.
+
+
+
+
+The vision
+
+The AI Plan for the Australian Public
+Service (APS) will improve government
+service delivery, policy outcomes,
+efficiency, and productivity, through
+substantially increasing the use of AI
+in government.
+Every public servant will have the training
+and guidance required to use generative
+AI safely and responsibly, alongside secure
+access to generative AI tools, and every
+agency will have a Chief AI Officer to
+drive adoption, with AI use tracked and
+reported on.
+
+
+
+The Australian Government is focused on capturing the opportunity of AI. It’s vital to ensure
+the benefits of this technology are shared equitably, creating a higher standard of living for
+all Australians.
+
+To do this, we are broadening the safe and responsible use of AI by government agencies.
+By focusing on improving the AI maturity of the public sector, we can unlock the benefits of
+this technology while minimising the potential for harm.
+
+In practice this means faster, more consistent government services, enhanced policy advice
+and a more capable workforce.
+
+
+
+    To better serve the public, every public servant will have:
+    1. foundational training and capability supports to use generative AI tools safely,
+       responsibly and effectively
+    2. access to generative AI tools
+    3. clear guidance on how to use these tools responsibly
+    4. leadership and support from Chief AI Officers to promote adoption
+    5. opportunities to collaborate, build on and reuse work of others.
+
+
+
+
+AI Plan for the Australian Public Service 2025                                                             5
+Taking an adaptive and collaborative approach
+Generative AI capabilities are increasingly embedded across digital infrastructure including
+search engines, enterprise tools and everyday consumer services, often without explicitly
+notifying users. This ubiquitous integration creates both opportunities and governance
+challenges for government agencies.
+
+The technology is also advancing rapidly. The plan establishes the foundations for government
+action, and will iterate and adapt to realise future opportunities in a changing technology
+environment. Throughout this process, we will continue to engage with our employees and their
+unions. It is vital that we listen to our people on how best to adopt AI, where the benefits can be
+achieved, what problems we can solve for them and the community, and what concerns they have.
+We will manage this transition in an inclusive way that leverages the experience and expertise of
+our people.
+
+We will also work to enhance cross-sector collaboration between government, industry, community
+and academia to accelerate the spread of technological expertise and innovation. This will build
+trust through transparency and codesign, while ensuring initiatives remain people centred
+and responsive to real world needs. Active engagement through hackathons, participation in
+collaborative initiatives like the AI CoLab and other innovative approaches create space for new
+solutions and capability building, driving innovation in partnership with the private sector, research
+organisations and state and territory governments.
+
+
+
+
+AI Plan for the Australian Public Service 2025                                                        6
+What we plan to achieve
+    The AI Plan for the APS positions the government to improve service delivery, policy outcomes,
+    efficiency and productivity by substantially increasing the safe and responsible use of AI
+    in government.
+
+
+
+Objectives
+To uplift AI maturity across the public sector, this plan targets the following objectives:
+• Improving AI literacy – As AI becomes increasingly widespread and available, everyone in
+  government needs basic AI literacy and training.
+• Leading by example – The government has an important role to play in modelling responsible
+  and ethical AI adoption. We need to understand the technology, know how we can benefit from it
+  and support public servants to use it safely and appropriately.
+• Expanding generative AI use – Current levels of AI adoption are inconsistent. Improving our AI
+  maturity means broadening the safe, responsible use of generative AI to all agencies.
+• Coordinating government’s approach – AI transformation needs to be coordinated across the
+  pillars of trust, people and tools. We’ve learned that it’s not enough to provide the technology –
+  people need training and support to adopt AI in a considered way.
+• Driving systemic adoption – Advancing AI maturity requires a coordinated program of projects
+  and investments to support systemic change – removing barriers and accelerating adoption for
+  all agencies.
+It is only by uplifting AI maturity that we can expect this technology to deliver meaningful
+productivity gains. The Productivity Commission assesses that broader AI adoption could drive up
+to 4.3 per cent labour productivity growth over the next decade in the market sector (around $116
+billion in GDP). Significant increases are also expected to accrue to the public sector, which has
+been associated with low productivity growth in recent years. By 2030, AI adoption could lift public
+sector gross value added by 13 per cent, delivering $19 billion in annual value (Merom, 2025).
+
+The Australian Government is one of the nation’s largest employers. The policies we establish
+for the public sector will play a pivotal role in shaping the adoption of AI across the economy and
+unlocking the associated benefits.
+
+
+
+
+AI Plan for the Australian Public Service 2025                                                         7
+    Strategic alignment
+    Data and Digital Government Strategy: This plan supports progress toward the
+    government’s 2030 vision to deliver simple, secure and connected public services, for all
+    people and businesses, through world-class data and digital capabilities.
+
+    APS Reform agenda: This plan aligns with and builds on the APS Reform agenda by
+    embedding digital skills in the workforce and driving sustainable AI adoption to build a
+    stronger APS that delivers better outcomes for the community.
+
+
+
+Scope and deliverables
+The scope of this plan is limited to initiatives that focus on the adoption and use of AI by
+government agencies. It does not apply to industry or personal use of these technologies.
+
+While these initiatives focus primarily on generative AI, the plan is not strictly limited to these
+applications. As new opportunities emerge, other uses of AI may be incorporated into initiatives.
+
+Specific deliverables are detailed within individual initiatives (see Appendix A).
+
+These initiatives are organised into three mutually reinforcing pillars, around which the plan
+is structured:
+
+
+
+
+   Trust                   People                Tools
+
+
+
+
+Trust
+Building confidence through transparency,
+ethical use, and strong governance.
+
+People
+Uplifting capability across the APS to support safe and effective
+use of AI, while remaining conscious of the impact change has
+on people.
+
+Tools
+Expanding access to secure, fit-for-purpose AI technologies.
+
+
+
+
+AI Plan for the Australian Public Service 2025                                                        8
+In combination, Trust, People and Tools form an integrated approach. This enables us to support
+change management as we adopt AI across the APS. Each pillar’s success is vital to the others:
+skilled people and clear policies are needed to use new AI tools effectively, and the tools and
+experiences gained will inform ongoing policy refinement.
+
+The use of AI by military, defence, intelligence, and law enforcement agencies is not subject to
+public reporting requirements. These agencies remain subject to strong existing oversight and
+accountability arrangements to ensure responsible and trustworthy use of AI.
+
+
+Actions to drive adoption
+
+    • Everyone in the APS completing training on the fundamentals of AI use in the APS and
+      having access to guidance to use AI safely and securely
+    • All public servants having access to generative AI tools
+    • Each agency and department appointing a senior executive as Chief AI Officer
+    • All agencies tracking and reporting their AI use
+
+
+
+These targets are based on an 18-month timeframe. Broadly, these align with two overarching
+milestones:
+• July 2026 (0–12 months)
+• July 2026 onwards (12+ months).
+Individual initiatives also contain their own targets and measures (see Appendix A).
+
+As an iterative plan, targets and delivery schedules will be updated to account for new
+developments and emerging opportunities.
+
+
+
+
+AI Plan for the Australian Public Service 2025                                                     9
+APS AI Plan implementation timeline
+
+
+            JUL 2025                         DEC 2025                         JUL 2026
+
+
+
+ Trust
+                      AI in government policy
+                       and guidance updates
+
+                                                                       AI Review Committee
+
+
+                                                          Clear expectations of external service providers
+
+
+                                                    AI strategic communications
+
+
+
+People
+                                                       Foundational learning
+
+
+                                                 Staff consultation and engagement
+
+
+                                                                    AI delivery and enablement
+
+
+                                                                         Chief AI Officers
+
+
+
+  Tools
+                    GovAI open
+                                                        GovAI: Centrally hosted AI services
+                       trial
+
+                                                                              GovAI Chat
+
+                      Guidance on public and
+                      enterprise AI services
+                                                        Support for AI tool
+                                                          procurement
+
+
+                                                                   Re-using intellectual property
+
+                                                       Central register of
+                                                    generative AI assessments
+
+                                      New whole-of-government
+                                            cloud policy
+
+
+
+
+            JUL 2025                         DEC 2025                         JUL 2026
+
+
+
+
+AI Plan for the Australian Public Service 2025                                                               10
+Context and background
+This plan is being progressed in alignment with work to develop a national plan for AI, led by the
+Department of Industry, Science and Resources, to deliver Australia’s ambition for AI across
+our economy.
+
+
+
+    Australia’s AI Ambition
+    To strengthen Australia’s economy, society and security, the Government’s vision for AI in
+    Australia focuses on:
+    • capturing the opportunities of AI
+    • ensuring the benefits are shared widely, and
+    • keeping Australians safe.
+
+
+
+Many AI initiatives are already underway, with progress being made against these objectives,
+but to date, the adoption of generative AI across government has been inconsistent. There are
+varying levels of AI maturity between – and even within – agencies.
+
+AI maturity in the APS is a journey: starting with no formal adoption, progressing through leadership
+engagement and foundational capability, advancing to data-driven improvements in services, and
+advancing to AI becoming standard practice throughout government.
+
+Agencies are also facing a complex mix of uncertainties and risks in dealing with AI. There are risks
+around the appropriate use of AI, and the advent of AI and the speed of its advancements has
+heightened the need to manage privacy, cyber security and sovereignty risks. The rapidly changing
+digital environment will also likely introduce new risks and considerations. The plan seeks to get the
+balance right – capturing the opportunities and maximising the benefits, while minimising harms
+and mitigating risks.
+
+
+
+    Governance, training and communications initiatives already delivered
+    • Technical standard for government’s use of AI
+    • Guidance on the use of OFFICIAL information in public generative AI tools
+    • Sponsored GovHack 2025
+    • AI in government fundamentals eLearning (available for all staff)
+    • AI Government Showcase of AI use-cases with industry and academia
+    • GovAI applied eLearning
+    • APS Academy MasterCraft webinars for new users
+    • APS Academy Lunch and Learn webinars on AI use cases in the APS and how to implement
+      AI in APS organisations delivered in partnership with GovAI
+
+
+
+
+AI Plan for the Australian Public Service 2025                                                       11
+Responsibility for the plan
+Implementation of the plan is a joint responsibility, led by:
+• Department of Finance
+• Digital Transformation Agency (DTA)
+• Australian Public Service Commission (APSC).
+While these 3 agencies own this plan, individual agencies remain responsible for their own adoption
+and use of AI.
+
+This work is being progressed in alignment with work to develop a national plan for AI, led by
+Department of Industry, Science and Resources.
+
+Everyone in the Australian Government has a role to play in the safe, responsible adoption of
+AI – participating in training, following whole-of-government and agency specific policies, and
+contributing to the AI transformation of government.
+
+
+
+
+AI Plan for the Australian Public Service 2025                                                    12
+Trust: Transparency,
+ethics and governance
+      AI adoption in the APS requires a
+      strong authorising environment and
+      the maintenance of public trust.
+      AI tools should ultimately serve the
+      public and should be used safely
+      and responsibly by the public service,
+      in line with the DTA’s Policy for the
+      responsible use of AI in government
+      and the Department of Industry, Science
+      and Resources AI Ethics Principles.
+           The initiatives under this pillar build on existing security and privacy safeguards
+           governing the use of ICT and data, including the Protective Security Policy Framework
+           (PSPF), the Information Security Manual (ISM), the Privacy Act 1988, guidance from the
+           Office of the Australian Information Commissioner (OAIC), the Data Availability and
+           Transparency Act and guidance from the Office of the National Data Commissioner
+           (ONDC). They will also strengthen governance, improve transparency, and ensure clear
+           and consistent communication across the APS and with the community.
+
+
+
+                   AI in government policy                      AI Review
+                   and guidance updates                         Committee
+                    Providing clarity, enhance            Enhancing oversight and
+                     accountability and risk             ensuring consistent, ethical
+                          management                          deployment of AI
+
+                        Lead agency: DTA                     Lead agency: DTA
+
+
+
+
+                   Clear expectations of                       AI strategic
+                 external service providers                  communications
+                      Service providers are              Ensuring consistent, clear
+                    responsible for their work           messaging on the safe and
+                         when using AI                   responsible adoption of AI
+
+                        Lead agency: DTA                    Lead agency: Finance
+
+
+
+
+AI in government policy and guidance updates
+The government will update the Policy for responsible use of AI in government (the AI in government
+policy) to strengthen public trust in government by providing clarity, enhancing accountability, and
+ensuring effective risk identification and management in the use of AI. The AI in government policy
+took effect on 1 September 2024. It laid the foundation by introducing accountability measures,
+transparency requirements, and guidance for foundational training. As AI adoption across the
+APS accelerates and the technology landscape evolves, the DTA is updating this policy to include
+a broader set of AI governance practices that will support agencies to confidently adopt AI while
+building public trust.
+
+The new requirements include requiring agencies to develop a strategic position on AI adoption and
+to communicate this position to staff. This will support agencies to better engage with and realise
+the benefits of AI. Accountability requirements will be strengthened so that each in-scope use case
+has a clearly assigned accountable officer and is recorded in an internal register. This strengthens
+and builds on the important role of the AI Accountable Official, a role mandated under the existing
+policy to ensure the requirements of the policy are met.
+
+The update also builds trust in government use of AI through mandating the AI impact assessment
+tool for in-scope use cases, which targets governance and risk management actions towards
+higher-risk use cases.
+
+
+
+
+AI Plan for the Australian Public Service 2025                                                      14
+AI Review Committee
+The government will establish an AI Review Committee to enhance whole-of-government oversight
+and ensure consistent, responsible deployment of AI across the APS. The committee will comprise
+experts from right across the APS, ensuring best practice approaches inform decision-making,
+drawing on the guidance and insights of the Australian Information Commissioner, Privacy
+Commissioner, Commonwealth Ombudsman and others who oversee government administration.
+
+This committee will provide advice and non-binding recommendations to agencies on high-risk
+AI use cases. It will ensure decisions around sensitive or complex AI deployments are grounded in
+cross-disciplinary scrutiny, consider diverse voices, and uphold government AI safety.
+
+Beyond case-by-case reviews, the committee may conduct deep dives into emerging AI risks and
+ethics issues. For example, if a future central AI use case register identifies a surge in deployments
+within a particular domain – such as predictive analytics in compliance or employment decisions –
+the committee could be tasked with providing targeted advice.
+
+This function would enable early identification of systemic risks and support proactive guidance
+to agencies, including on remedies when things do not go to plan. The committee will also support
+responses and recommendations following serious AI incidents, and ensure lessons and available
+remedies are reflected in future proposals, supporting continuous improvement in government
+AI practices.
+
+
+Clear expectations of external service providers
+The Digital Transformation Agency’s Digital Sourcing ClauseBank includes optional clauses stating
+that service provider use of AI is approved by the buyer. The government will expand this approach
+by requiring all suppliers under the whole of government Management Advisory Services and
+People Panels to advise of any planned use of AI in the delivery of services when responding to
+requests for quotes.
+
+The government will also add to the broader Commonwealth Contracting Suite and Clausebank
+clauses which clearly state that consultants and external contractors remain fully responsible
+for the services they deliver - regardless of whether generative AI is used in their development or
+delivery - and that ensure transparency and accountability in the use of generative AI technologies
+by external providers.
+
+A clause will also be added to the Commonwealth ClauseBank that ensures transparency and
+accountability in the use of generative AI technologies by external providers.
+
+These will better equip agencies to assess risks and manage compliance throughout the
+procurement lifecycle, and meet their probity obligations under the Commonwealth Procurement
+Rules and the Policy for the responsible use of AI in government.
+
+
+AI strategic communication initiatives
+Clear and consistent communication about AI is essential to building trust and confidence across
+the APS. Staff need to understand what AI can be used for, what’s allowed, and how risks are being
+managed, as well as where to go for help and what to do when things don’t go to plan. This helps
+them feel confident, empowered, and supported in using AI safely and responsibly.
+
+A centrally coordinated approach to these communications will ensure that all agencies are aligned
+with whole-of-government policies and expectations. It also supports transparency, because
+openness and consistency in how we talk about AI helps build trust across the APS and reinforces
+confidence in how decisions are made.
+
+
+
+
+AI Plan for the Australian Public Service 2025                                                       15
+Strategic communication will play a key role in reinforcing existing consultation and engagement
+frameworks across the APS such as provisions in Enterprise Agreements, agency consultative
+committees and the APS Consultative Committee. It will complement these processes by delivering
+consistent messaging, practical tools, and resources to help employees understand and adapt to
+the integration of AI in their work. It will also support the establishment of genuine consultation,
+ensuring transparency, building trust, and fostering workforce support for change.
+
+
+
+    Going forward: Earning and keeping trust with Australians
+    Generative AI offers new opportunities to improve how government serves Australians and to
+    build trust through open and transparent engagement with communities. The government will
+    guide AI use with a clear understanding of Australians’ diverse needs, incorporating ongoing
+    insights from implementation, and carefully considering where and how AI is appropriate and
+    what is fundamental to responsible use. As new uses and applications emerge, the government
+    will ensure that the guardrails are appropriate and fit-for-purpose so that our uses are ethical,
+    moral, legal and people-first.
+
+
+
+
+AI Plan for the Australian Public Service 2025                                                          16
+People: Capability building
+and engagement
+      Public servants must be equipped with
+      the right skills to use AI responsibly and
+      effectively. This requires support at a
+      whole-of-APS level, within and between
+      organisations, and for individuals.
+            The initiatives under this pillar target sector-wide capability building, to support all APS
+            staff to use this technology effectively, safely and appropriately – including building on
+            the cybersecurity uplift of agencies’ IT systems.
+
+            Building trust will require clear and transparent engagement with staff and unions.
+            Ongoing and genuine consultation grounded in existing obligations and mechanisms,
+            such as APS Enterprise Agreements and the APS Consultative Committee, will be part of
+            the rollout of AI technologies, ensuring transparency and fostering a sense of ownership
+            and support for change among employees.
+
+
+
+                Foundational learning                               Staff consultation
+                                                                    and engagement
+                    Build capability,
+                  improve confidence,                       Embedding genuine staff and union
+                support experimentation                   engagement in AI-related APS changes
+
+                   Lead agency: APSC                                Lead agency: APSC
+
+
+
+
+                     AI delivery and                                 Chief AI Officers
+                      enablement
+                                                                  Accelerating adoption,
+                Central team accelerating                         driving cultural change,
+                       AI adoption                                 connecting agencies
+
+                  Lead agency: Finance                             Lead agency: Finance
+
+
+
+
+Foundational learning
+The government will build the foundational capability of public servants to use AI responsibly,
+ethically and effectively. The approach to building capability will be taken alongside addressing the
+role of leaders in shaping AI adoption.
+
+A foundational AI literacy training offering will be mandated for all staff through the AI in
+Government Policy update. This will be supported by practical training such as the GovAI interactive
+learning, resources (website, newsletters), and live webinars with public servants experienced with
+use of AI. The aim is to provide all public servants with capability foundations together with flexible,
+just-in-time learning to keep pace with rapid AI technological change and be confident in using AI
+responsibly and effectively.
+
+Supporting leaders to provide safe and responsible adoption environments for staff will also
+be a focus. Regular information on leading organisations in AI adoption, and dedicated
+masterclasses will be provided to support senior leaders in this task.
+
+In addition, communities of practice and peer learning will be implemented over time to embed capability
+and drive sustainable adoption, including through the Chief AI Officers initiative.
+
+
+
+
+AI Plan for the Australian Public Service 2025                                                             18
+Staff consultation and engagement
+Meaningful consultation with staff and unions will be critical to building trust in AI adoption across
+the APS. It will ensure employees have a voice in how AI is introduced, how to get the benefits, what
+problems can be solved with AI and where it is likely to have a significant effect or material impact
+on them, including impacts related to gender, cultural identity, and First Nations peoples.
+
+To support this, the APSC will issue a Circular setting out clear standards for consultation on
+AI-related workplace changes. These standards will align with existing obligations in APS Enterprise
+Agreements and specifically address the use of AI in the APS. The Circular will complement existing
+engagement frameworks across the APS, such as Agency Consultative Committees, which enable
+inclusive and representative input from employees and unions. These mechanisms support
+meaningful input from employees and unions, particularly ahead of major workplace changes.
+Genuine and effective consultation generally involves providing employees and their relevant
+union with a genuine opportunity to influence the decision prior to it being made.
+
+
+AI delivery and enablement (AIDE)
+The Australian Government will establish a central function, AI delivery and enablement (AIDE), to take
+the lead in accelerating the uptake of safe and effective AI which will ensure timely adoption and more
+efficient government services. This multidisciplinary team will complement, but not replace, existing
+whole-of-government structures and processes with a dedicated focus on adoption through helping
+tackle common adoption barriers, navigating and reducing the complex compliance uncertainties
+raised by AI, and identifying and sharing lessons. Through their work, the team could help bring core
+work back into the public service.
+
+Recognising that early adopters face challenges and delays, this team will help to expose and
+question existing assumptions and processes that might be inadvertently slowing adoption. It will
+explore the implications for public services raised by first-movers to inform future implementations.
+It will capture use-cases that can inform broader opportunities for whole-of-government adoption
+of AI and promote re-use of solutions. The team will leverage the enthusiasm and skills existing
+across the APS to help it understand emerging issues early on and to help pull together guidance
+on what works – and what does not. Noting the fast-moving nature of the technology, the team will
+take a flexible and iterative approach informed by learning from across the APS. For this reason,
+the team will also have responsibility for ensuring the effective implementation of this plan.
+
+
+Chief AI Officers
+Agencies will appoint Chief AI Officers in recognition of the fundamental shift that generative
+AI is bringing to government operations. These senior leaders will accelerate consistent and
+collaborative AI capability development across the APS, identifying where AI can meaningfully
+improve Australians’ lives through faster service delivery, better-targeted policy interventions, and
+more efficient allocation of resources.
+
+Chief AI Officers will drive adoption and advocate for strategic change within their agencies.
+Their responsibilities will include leading internal engagement, sharing guidance and use cases,
+providing contestable advice, and overseeing AI adoption, experimentation, and innovation.
+Chief AI Officers will have the mission and authority to effect change, and will focus on enabling
+strategic uptake and innovation.
+
+Chief AI Officers are responsible for leading the required change in their agencies, while AI
+Accountable Officials are responsible for the governance required to comply with the AI in
+government policy. Agencies will have flexibility to determine who best in their structure meets
+the needs of the Chief AI Officer role. Some agencies, such as smaller organisations, may opt to
+have both the Chief AI Officer and Accountable Official roles fulfilled by the same leader.
+
+
+
+
+AI Plan for the Australian Public Service 2025                                                       19
+Chief AI Officers will be supported by early adopters and experts within their agencies who have
+hands-on experience applying AI in their work, whether for personal efficiency, specific job-related
+functions, or workflow integration. A peer working group will develop shared training materials for
+distribution via platforms such as GovAI, APS Professions and the APS Academy. This network
+will build on the existing AI Community of Practice, serving as a forum to provide feedback on
+common, reusable AI use cases, ways of working and strategies. Chief AI Officers will convert AI’s
+potential into demonstrable improvements in government performance, driving the capabilities and
+collaborative approaches needed to deliver for Australians.
+
+
+
+    Going forward: Continual learning and adapting
+    The plan provides a strong foundation for achieving broad AI literacy across the APS.
+    Ongoing training will support staff in their continual and iterative learning journey as more
+    is discovered about how best to use AI to get better outcomes, and what it means for how
+    we work. Ongoing staff engagement and consultation will help agencies to adapt, manage
+    change effectively, and consider the impacts on employees, particularly women and
+    First Nations peoples.
+
+
+
+
+AI Plan for the Australian Public Service 2025                                                      20
+                              Tools: Access, infrastructure
+                              and support
+                                                 APS officials need to be empowered
+                                                 with the right AI tools to do their jobs
+                                                 safely and effectively. This means
+                                                 providing access to public web-based
+                                                 AI for low-risk activities, and to secure
+                                                 AI tools for more sensitive activities.
+
+
+
+
+AI Plan for the Australian Public Service 2025                                               21
+           The initiatives under this pillar ensure that all public servants can access the tools they
+           need through a three-tier approach:
+           • universal availability of generative AI through GovAI and GovAI Chat,
+             providing a safe and secure baseline chat interface to all APS officers
+           • public and enterprise AI services, enabling the use of public AI tools for public and
+             OFFICIAL information where it meets agency needs
+           • custom AI solutions, tailored for specific workflows or specialised use cases.
+The Tools pillar provides the technical foundation for APS AI adoption, enabling agency innovation
+and empowering individual staff, while meeting people’s expectations within trusted governance
+settings. This plan notes that many specialised AI uses are usually best developed at an agency‑level
+and does not intend to impede such adoption.
+
+
+
+          GovAI                       GovAI Chat              Guidance on public           Support for AI tool
+                                                               and enterprise AI             procurement
+          Technical                    Universally
+        infrastructure               accessible and                Clarity and             Speeding processes,
+      providing central              secure chat tool          consistency on using        sharing information,
+     AI tools and model                                         public LLMs up to             and assisting
+    brokerage services,          Lead agency: Finance               OFFICIAL                    agencies
+     preventing vendor
+            lock-in                                             Lead agency: DTA/           Lead agency: DTA
+                                                                  Home Affairs
+   Lead agency: Finance
+
+
+
+
+                       Re-using                   Central register            New whole-of-
+                      Intellectual                of generative AI           government cloud
+                       Property                    assessments                    policy
+
+                   Re-using solutions,           Sharing and aligning           Driving cloud
+                    ensuring visibility,           assessments to            adoption, unlocking
+                  removing duplication            avoid duplication          greater AI potential
+
+                  Lead agency: Finance           Lead agency: Finance         Lead agency: DTA
+
+
+
+
+GovAI: Centrally hosted AI services
+The government will leverage GovAI as a centralised AI hosting
+service to provide agencies a secure, Australian-based platform
+for developing customised AI solutions at low cost. By incorporating predefined guardrails, GovAI
+ensures that security and privacy remain paramount throughout the development process.
+
+GovAI will include a use case library and a vendor agnostic platform with a model selection
+option based on need, enabling agencies to access a diverse range of AI models for their own
+development – including an onshore instance of OpenAI’s GPT models – without negotiating
+individual arrangements with commercial vendors. The inclusion of additional onshore models
+would further strengthen Australia’s data sovereignty, reduce technical barriers, and deliver
+measurable cost and time efficiencies across government.
+
+
+
+
+AI Plan for the Australian Public Service 2025                                                                    22
+Within a technology-agnostic framework, GovAI allows teams to engage with tools from multiple
+industry providers, mitigating the risks associated with vendor lock-in and technological
+obsolescence. Promoting the use of GovAI also minimises duplication, fosters shared learning,
+and accelerates both capability uplift and delivery timelines.
+
+As a foundational technical service, GovAI will provide the necessary infrastructure and technical
+skills to develop, test, and support secure access to generative AI alongside customised agency-
+specific solutions and other whole-of-government applications.
+
+
+GovAI Chat
+The government will provide access to secure generative AI, through GovAI Chat, for everyone
+in the Australian Public Service. GovAI Chat will provide the capabilities of modern generative AI tools,
+while allowing users to leverage government data. Responses will be fast, current, and auditable
+through familiar and secure interfaces. Where smaller agencies may lack the scale and resourcing to
+adopt native AI tools, this will support staff across all agencies to safely and effectively experiment
+with AI tools and integrate them within their workflows.
+
+The underlying framework will be flexible to respond to user needs and feature requests as
+technology evolves. It will be rolled out in an iterative fashion to allow for extensive and ongoing
+user testing with users and teams, across roles and agencies to ensure it meets practical needs.
+
+This will increase the capability of the APS to deliver more for the Australian public, while maintaining
+standards and complying with legal frameworks for cyber security and data sovereignty. The result
+will be a safer and smarter way to work that supports operational integrity and delivers value
+through time saved and reduced rework.
+
+
+Guidance on public and enterprise AI services
+The government will develop clear guidance on the use of public generative AI tools to give
+public servants confidence to use platforms like ChatGPT, Claude, and Gemini up to OFFICIAL level
+information. The Department of Home Affairs will issue policy guidance to outline requirements for
+using these tools via web browsers. DTA will also update its existing guidance on the use of public
+generative AI to reflect this and include practical examples to support responsible use.
+
+The work will help shift the risk appetite across agencies and enable staff to access general-
+purpose AI tools at no cost. Each agency will need to implement the changes independently
+and should consider using safeguards like upload blockers to manage risks around classified or
+personal information or other sensitive information.
+
+
+Support for AI tool procurement
+The government will continue to enhance AI procurement pathways to make it easier for agencies
+to access trusted AI products and services in line with government standards. This will help
+address concerns from agencies that are cautious about adopting tools when changes like added
+generative AI features are introduced without prior notice or clear guidance. DTA is introducing
+AI-specific subcategories within procurement panels like BuyICT and Digital Marketplace, helping
+agencies identify vendors with proven capabilities and adopt AI tools consistently and quickly.
+This also helps ensure alignment with the government’s technical and ethical standards, reducing
+duplication and accelerating the safe adoption of AI solutions across the APS.
+
+
+
+
+AI Plan for the Australian Public Service 2025                                                              23
+The DTA is also developing guidance to support AI procurement across government. The guidance
+will include a practical procurement checklist and aims to help agencies find and manage AI-related
+risks while supporting procurement best practices. The Department of Finance and the DTA are
+working together to ensure that current procurement arrangements remain fit-for-purpose for a
+rapidly evolving supplier ecosystem and new business offerings.
+
+Women are significantly underrepresented across STEM and mixed STEM occupations.
+As government plays a key market-shaping role, future consideration will be given to better
+integrating gender equity objectives in AI or STEM-related procurement to ensure public
+investment aligns with both productivity and social equity goals, which will help deliver on
+objectives of Working for Women: A Strategy for Gender Equality.
+
+Additionally, procurement processes, risk, and security assessments are often duplicated across
+agencies due to low visibility. AI adoption is slowed and disincentivised where agencies are faced
+with these processes.
+
+
+Re-using intellectual property
+GovAI will provide a platform for making intellectual property (IP) discoverable and reusable
+across the APS which will reduce duplication, reduce costs, and accelerate knowledge sharing
+within the APS. Agencies frequently procure valuable IP from consultancies or develop their
+own IP including strategies, code for scenario analysis, and applications (many of which will be
+AI empowered). But these materials are often invisible across government. As a result, agencies
+approach the market at significant expense for work that already exists. The platform will be
+consistent with the intellectual property principles for Commonwealth entities.
+
+Making IP easily discoverable will allow agencies and centres of excellence (such as Australian
+Government Consulting) to efficiently synthesise insights from existing contract materials,
+approaches and reports, and consolidate Commonwealth-owned outputs. With tailored support to
+align materials with each agency’s needs, the APS could strengthen internal capability and reduce
+dependence on external contractors.
+
+The existing GovAI Use Case Library, which already includes 20 detailed AI use cases from across
+the APS, could be augmented to support this expanded capability. This could also learn from similar
+models, like the United Kingdom’s i.AI Incubator with its open-source suite of tools on GitHub.
+As well as reuse of IP, having a common disclaimer for collecting data will ensure transparency
+around the government’s use of that data with AI tools.
+
+Consistent with the Data and Digital Government Strategy, agencies will make non-sensitive
+government data open by default. Opening and sharing these data assets enables AI development
+that supports evidence-based decision-making, drives productivity across sectors, and delivers
+better outcomes for people and business.
+
+
+Central register of generative AI assessments
+The government will create a centralised register, hosted on GovAI, for completed assessments for
+AI systems and services. For instance, this could include those conducted for Foreign Ownership,
+Control or Influence (FOCI) risk assessments, Information Security Registered Assessors
+Program (IRAP) assessments, cyber-security assessments of systems, and relevant impact
+assessments. This will help streamline procurement and deployment processes across the APS.
+Sharing of already completed processes will allow agencies to reference and reuse existing
+evaluations, speeding adoption. Agencies will be able to access prior assessments of platforms
+and tools conducted by other departments, not only saving time but also ensuring alignment
+with all security requirements across agencies.
+
+
+
+
+AI Plan for the Australian Public Service 2025                                                       24
+The framework and documentation will be established in coordination with lead policy bodies
+such as the DTA and Department of Finance, and in close consultation with relevant bodies such
+as the Australian Signals Directorate (ASD) and the Department of Home Affairs. While agencies
+are ultimately responsible for ensuring compliance and risk management, sharing creates a
+starting foundation to achieve efficiencies and reduce duplicated effort where possible.
+
+
+New whole-of-government cloud policy
+Cloud adoption is critical for agencies to unlock the full potential of AI through enhancing service
+delivery, enabling real-time data access, and supporting advanced analytics. The government will
+develop a new whole-of-government cloud policy to support responsible AI use in government by
+ensuring agencies can securely and efficiently leverage cloud infrastructure.
+
+The policy will set clear requirements for cloud use, guiding agencies to accelerate cloud uptake while
+maintaining compliance with protective security standards and uplifting workforce capability. It will also
+address legacy migration challenges, ensuring that transitions are managed safely and efficiently.
+
+
+
+    Going forward: Safe and secure data for Australians
+    As the government adopts and uses more AI, maintaining the security and safety of
+    Australians’ data will be critical. Consistent with existing information security and data
+    protection frameworks and practices, the government will take a proactive approach
+    throughout AI implementation to give Australians confidence their data is protected.
+
+
+
+
+AI Plan for the Australian Public Service 2025                                                          25
+Appendix A: Plan deliverables
+ Trust
+ Initiative                  Description                                Targets, deliverables and measures                      Expected timeframe
+
+ AI in government policy     The government will update AI policy to    • Updated Policy for the responsible use of AI in       • For publication in December 2025
+ and guidance updates        strengthen public trust in government        government published in December 2025
+                             by providing clarity, enhancing
+                                                                        • Australian Government AI impact assessment tool
+                             accountability, and ensuring effective
+                                                                          to be published in December 2025
+                             risk identification and management in
+                             the use of AI.
+
+ AI Review Committee         Establish an AI Review Committee           • Establishment - Identify membership, establish        • Mid 2026: establish
+                             to enhance whole-of-government               ToRs and secretariat, and amend policy and AI
+                                                                                                                                • Late 2026: operationalise
+                             oversight and ensure consistent,             impact tool to reflect new high-risk use case
+                             responsible deployment of AI across          workflow                                              • Late 2026 to early 2027: full maturity
+                             the APS.
+                                                                        • Operationalise - Initial review of 1-2 high risk AI
+                                                                          projects. Provision of advice, and reflection of
+                                                                          lessons learned
+                                                                        • Full maturity – review of all high risk cases –
+                                                                          with meetings every 6 weeks, written advice
+                                                                          to agencies, and full integration into Australian
+                                                                          Government AI impact assessment workflows
+                                                                          across agencies
+
+ Clear expectations          Equip agencies to assess risks and         • Requiring suppliers under the whole of government     • By end 2025: MAS and People Panel
+ of external service         manage compliance throughout the             Management Advisory Services (MAS) and People
+                                                                                                                                • Early 2026: Commonwealth Contracting Suite and Clausebank
+ providers                   procurement lifecycle, and meet              Panels to advise of any planned use of AI in
+                             their probity obligations under the          delivering services
+                             Commonwealth Procurement Rules and
+                                                                        • Update the Commonwealth Contracting Suite and
+                             the Policy for the responsible use of AI
+                                                                          Clausebank to include clauses in Commonwealth
+                             in government.
+                                                                          contracts clarifying accountabilities and
+                                                                          transparency requirements regarding the use of AI
+
+ AI strategic                A centrally coordinated approach to        • Develop clear AI messaging frameworks,                • Early 2026: Complete cmmunications plan; CAIO cohort operationalised
+ communications              internal communication to ensure             stakeholder engagement plans, and content               to provide messaging and authorising environment across APS
+                             agencies are aligned with consistent,        assets (FAQs, briefs) that support stakeholder
+                                                                                                                                • Mid 2026: Integration of AI use cases and benefits into standard
+                             clear messaging on the safe and              engagement, trust-building and transparency
+                                                                                                                                  reporting (including transparency statements); Establish initial
+                             responsible adoption of AI.
+                                                                                                                                  materials on consultation and engagement approaches
+                                                                                                                                • Late 2026: Ongoing BAU; ongoing CAIO communications,
+                                                                                                                                  transparency statements, etc; Adjustments to materials where
+                                                                                                                                  needed to remain current and fit-for-purpose
+
+
+
+
+AI Plan for the Australian Public Service 2025                                                                                                                                                           26
+  People
+ Initiative                  Description                                 Targets, deliverables and measures                        Expected timeframe
+
+ Foundational learning       Build the foundational capability of        • Agencies must implement mandatory training for          • Mandatory requirement of foundational AI literacy training will be
+                             public servants to use AI responsibly         all staff on responsible AI use under the updated         implemented as part of the AI in Government Policy Update by the
+                             and effectively                               Responsible use of AI in government policy                end of 2025
+                                                                           (December 2025)
+                                                                                                                                   • Agencies have 12 months to implement mandatory training
+                                                                         • Deliver practical learning, including via interactive     requirement. DTA’s AI fundamentals training module is available via
+                                                                           training resources and webinars                           APSC (APS Academy) for agency use to meet this requirement
+                                                                         • Develop and deliver foundational senior leader          • Practical learning webinars have commenced and will be delivered on
+                                                                           capability supports on leading AI adoption                an ongoing basis
+                                                                         • Work with the Chief AI Officers to continue to          • Foundational senior leader capability supports will be underway by
+                                                                           build communities of practice and encourage peer          the end of 2025
+                                                                           learning to support sustainable AI adoption
+                                                                                                                                   • Work with CAIOs will progress alongside their appointments in 2026,
+                                                                                                                                     and will be ongoing to support sustainable capability development
+
+ Staff consultation and      Issue a Circular setting out clear          • A Circular issued by the APSC with clear standards      • End of 2025 or early 2026 (subject to consultation, with unions and
+ engagement                  standards for consultation on AI-related      for AI-related consultation                               agencies, on proposed Circular contents)
+                             workplace changes.
+                                                                          – Standards in the Circular align with APS
+                                                                            Enterprise Agreements
+                                                                          – The Circular complements existing engagement
+                                                                            mechanisms (e.g. Agency Consultative
+                                                                            Committees) to support meaningful consultation
+
+ AI delivery and             Establish a central function to take        • Portfolio of high-priority AI use cases adopted         • Early 2026: Establish and commence meetings of CAIOs; Formalise
+ enablement                  the lead in accelerating the deliberate       across APS agencies.                                      initial scan of adoption barriers, possible tracking and reporting metrics
+                             uptake of safe and effective AI.
+                                                                         • Authoritative guidance and frameworks to resolve        • Mid 2026: Adoption strategy for priority use cases; Publish research
+                                                                           common AI adoption barriers                               and insights gathered from engagement, including on adoption
+                                                                                                                                     barriers; Prototype and test adoption metrics and reporting
+                                                                         • APS AI Plan implementation and communication
+                                                                                                                                     protocols
+                                                                           materials
+                                                                                                                                   • Late 2026: Tracking insights to inform APS-wide adoption initiatives;
+                                                                         • System-wide AI tracking, monitoring, and
+                                                                                                                                     Scale priority use case adoption strategy; Resolve and scale
+                                                                           evaluation protocols
+                                                                                                                                     solutions to first set of adoption barriers
+                                                                                                                                   • Late 2026: Ongoing BAU; 1-year review of use case portfolio,
+                                                                                                                                     resolved adoption barriers, AI adoption metrics, and AI Plan progress
+
+ Chief AI Officers           Appointment of SES-level leaders to         • CAIOs to be appointed by every agency                   • All agencies are expected to appoint CAIOs in 2026
+                             accelerate consistent and collaborative
+                             AI capability development across the
+                             APS. Chief AI Officers (CAIOs) will drive
+                             adoption and advocate for strategic
+                             change within their agencies.
+
+
+
+
+AI Plan for the Australian Public Service 2025                                                                                                                                                                    27
+  Tools
+ Initiative                  Description                                  Targets, deliverables and measures                      Expected timeframe
+
+ GovAI open trial / GovAI:   Leverage GovAI as a centralised AI           • Tools that boost productivity and support safe,       • Late 2026 for foundational capabilities with milestone deliverables
+ centrally hosted AI         hosting service to provide agencies a          responsible AI use                                      throughout 2026, including provision of vetted, onshore versions of
+ services                    secure, Australian-based platform for                                                                  AI models and capability support
+                                                                          • Interactive training, use case library, and
+                             developing customised AI solutions at
+                                                                            collaboration space to uplift capability and
+                             low cost.
+                                                                            encourage use
+                                                                          • Development environments and AI model
+                                                                            brokerage for safe Gen AI experimentation and
+                                                                            deployment
+                                                                          • Shared knowledge stores to support AI training
+                                                                            and inference
+
+ GovAI Chat                  Provide access to secure generative AI       • Pilot a purpose-built AI assistant, GovAI Chat,       • Mid 2026 for a beta trial to be deployed to gather APS user feedback,
+                             for everyone in the public service.            for APS staff leveraging GovAI                          and to test core functions and security
+
+ Guidance on public and      Clear guidance on the use of public          • Protective Security Policy Framework Policy           • Completed
+ enterprise AI services      generative AI tools to give public             Advisory 1 – OFFICIAL Information Use with
+                             servants confidence to use platforms           Generative Artificial Intelligence published 07
+                             like ChatGPT, Claude, and Gemini up to         October 2025 (Department of Home Affairs)
+                             OFFICIAL level information.
+                                                                          • Updated Staff guidance on public generative AI
+                                                                            published 10 October 2025 (Digital Transformation
+                                                                            Agency)
+                                                                          • Updated Agency guidance on public generative AI
+                                                                            published 10 October 2025 (Digital Transformation
+                                                                            Agency
+
+ Support for AI tool         Continue to enhance AI procurement           • Guidance on AI procurement in government to be        • Guidance on AI procurement to be published by December 2025
+ procurement                 pathways to make it easier for agencies to     published by December 2025
+                                                                                                                                  • Broader AI procurement tool changes to be complete by late 2025 to
+                             access trusted AI products and services
+                                                                          • Introducing AI-specific subcategories within            early 2026
+                             in line with government standards.
+                                                                            Marketplaces and Panels on BuyICT.gov.au
+                                                                          • AI Model Contract published by October 2025
+                                                                          • Existing AI model contract clauses to be maintained
+                                                                            and updated in line with AI advancements
+
+ Re-using intellectual       Provide a platform where intellectual        • An upgraded GovAI Use Case Library that               • Early to mid 2026: Service design and consultation
+ property                    property (IP) is discoverable and reusable     supports IP storage and reuse across agencies
+                                                                                                                                  • Late 2026: Development and launch
+                             across the APS which will reduce               in collaboration with Australian Government
+                             duplication, reduce costs, and accelerate      Consulting
+                             knowledge sharing within the APS.
+
+
+
+
+AI Plan for the Australian Public Service 2025                                                                                                                                                              28
+  Tools
+ Initiative                  Description                                Targets, deliverables and measures                    Expected timeframe
+
+ Central register            A centralised register for completed       • Establish a secure, centralised register            • Mid 2026: OFFICIAL:Sensitive document storage
+ of generative AI            assessments for AI systems and services.     for completed generative AI assessments
+ assessments                                                              (including FOCI, IRAP, cyber-security, and impact
+                                                                          assessments), enabling agencies to reference and
+                                                                          reuse prior evaluations to streamline procurement
+                                                                          and diffusion across the APS.
+
+ New whole-of-               A new whole-of-government cloud            • Whole-of-government cloud policy published in       • Completed
+ government cloud            policy to support responsible AI use in      December 2025
+ policy                      government by ensuring agencies can
+                             securely and efficiently leverage cloud
+                             infrastructure.
+
+
+
+
+AI Plan for the Australian Public Service 2025                                                                                                                                  29
+

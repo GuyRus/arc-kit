@@ -51,8 +51,8 @@ First, analyze existing project artifacts to understand what to diagram:
 
 6. **Read UK Government Assessments** (if applicable):
    - File: Any `ARC-*-TCOP-*.md` file in `projects/{current_project}/` (TCoP)
-   - File: Any `ARC-*-AIPB-*.md` file in `projects/{current_project}/` (AI Playbook)
-   - File: Any `ARC-*-ATRS-*.md` file in `projects/{current_project}/` (ATRS)
+   - File: Any `ARC-*-AIGA-*.md` file in `projects/{current_project}/` (AU AI governance assessment)
+   - File: Any `ARC-*-AITS-*.md` file in `projects/{current_project}/` (AITS)
    - Identify: GOV.UK services, compliance requirements, HIGH-RISK AI components
 
 ## Step 1b: Check for External Documents (optional)
@@ -461,7 +461,7 @@ For each component, annotate with:
 **From UK Government** (if applicable):
 - GOV.UK services: "GOV.UK Notify", "GOV.UK Pay", "GOV.UK Design System"
 - TCoP compliance: "Cloud First (AWS)", "Open Source (PostgreSQL)"
-- AI Playbook: "HIGH-RISK AI - Human-in-the-loop", "Bias testing required"
+- AU AI governance assessment: "HIGH-RISK AI - Human-in-the-loop", "Bias testing required"
 
 ### Mermaid Syntax Guidelines
 
@@ -631,7 +631,7 @@ The diagram document must include:
 10. **UK Government Compliance** (if applicable):
     - TCoP point compliance
     - GOV.UK services used
-    - AI Playbook compliance (for AI systems)
+    - AU AI governance compliance (for AI systems)
 
 11. **Wardley Map Integration**:
     - Component positioning by evolution
@@ -642,7 +642,7 @@ The diagram document must include:
     - Requirements document
     - HLD/DLD
     - Wardley Map
-    - TCoP/AI Playbook assessments
+    - TCoP/AU AI governance assessments
 
 ## Step 5: Validation
 
@@ -881,7 +881,7 @@ The document must be:
 - ✅ Valid Mermaid syntax (tested at mermaid.live)
 - ✅ Traceable (linked to requirements and design documents)
 - ✅ Strategic (includes Wardley Map context)
-- ✅ Compliant (UK Government TCoP, AI Playbook if applicable)
+- ✅ Compliant (UK Government TCoP, AU AI governance assessment if applicable)
 
 After creating the diagram, provide a summary to the user:
 

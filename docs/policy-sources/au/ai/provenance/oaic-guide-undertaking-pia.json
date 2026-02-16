@@ -1,0 +1,14 @@
+{
+  "id": "oaic-guide-undertaking-pia",
+  "title": "Guide to undertaking privacy impact assessments",
+  "owner": "Office of the Australian Information Commissioner",
+  "canonicalUrl": "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/privacy-impact-assessments/guide-to-undertaking-privacy-impact-assessments",
+  "sourceUrl": "https://www.oaic.gov.au/__data/assets/pdf_file/0013/2074/guide-to-undertaking-privacy-impact-assessments.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:35.943849+11:00",
+  "checksumSha256": "e3b58618832c121d5a4de811c9c7edd14447e3084c564684baac4c05d23e41ee",
+  "format": "pdf",
+  "originalPath": "originals/oaic-guide-undertaking-pia.pdf",
+  "convertedPath": "converted/oaic-guide-undertaking-pia.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "PIA guidance used for AI project privacy impact analysis."
+}

@@ -1,0 +1,14 @@
+{
+  "id": "dta-ai-impact-assessment-guidance-page",
+  "title": "AI impact assessment tool guidance (web page)",
+  "owner": "Digital Transformation Agency",
+  "canonicalUrl": "https://www.digital.gov.au/ai/impact-assessment-tool/guidance",
+  "sourceUrl": "https://www.digital.gov.au/ai/impact-assessment-tool/guidance",
+  "accessedAtAEDT": "2026-02-15T20:07:25.532173+11:00",
+  "checksumSha256": "e4bcd5f1e498e682ccc881c0effd1893a06de520fb6311e1cda9e34c2685daca",
+  "format": "html",
+  "originalPath": "originals/dta-ai-impact-assessment-guidance-page.html",
+  "convertedPath": "converted/dta-ai-impact-assessment-guidance-page.txt",
+  "conversionMethod": "Custom HTMLParser text extraction",
+  "notes": "Canonical guidance page for impact assessment process."
+}

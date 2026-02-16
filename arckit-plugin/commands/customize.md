@@ -1,5 +1,5 @@
 ---
-description: Copy plugin templates to project for customization
+description: "Copy plugin templates to project for customization"
 ---
 
 You are helping a user customize ArcKit document templates for their project or organization.
@@ -12,11 +12,11 @@ $ARGUMENTS
 
 ## Overview
 
-ArcKit uses document templates to generate consistent architecture artifacts. Users can customize these templates by copying them to `${CLAUDE_PLUGIN_ROOT}/templates/`. When a template exists in the custom directory, it takes precedence over the default template.
+ArcKit uses document templates to generate consistent architecture artifacts. Users can customize these templates by copying them to `.arckit/templates/`. When a template exists in the custom directory, it takes precedence over the default template.
 
 **Template locations:**
-- **Defaults**: `${CLAUDE_PLUGIN_ROOT}/templates/` (shipped with ArcKit, refreshed by `arckit init`)
-- **User overrides**: `${CLAUDE_PLUGIN_ROOT}/templates/` (your customizations, preserved across updates)
+- **Defaults**: `.arckit/templates/` (shipped with ArcKit, refreshed by `arckit init`)
+- **User overrides**: `.arckit/templates/` (your customizations, preserved across updates)
 
 ## Instructions
 
@@ -30,10 +30,10 @@ The user may request:
 
 ### 2. **List Available Templates**
 
-If user wants to see available templates, list them from `${CLAUDE_PLUGIN_ROOT}/templates/`:
+If user wants to see available templates, list them from `.arckit/templates/`:
 
 ```bash
-ls -1 ${CLAUDE_PLUGIN_ROOT}/templates/*.md | xargs -n1 basename | sed 's/-template\.md$//'
+ls -1 .arckit/templates/*.md | xargs -n1 basename | sed 's/-template\.md$//'
 ```
 
 Display as a table:
@@ -49,7 +49,7 @@ Display as a table:
 | `azure-research` | `/arckit:azure-research` | Azure service research findings |
 | `backlog` | `/arckit:backlog` | Product backlog with user stories |
 | `data-mesh-contract` | `/arckit:data-mesh-contract` | Data product contracts |
-| `data-model` | `/arckit:data-model` | Data model with GDPR compliance |
+| `data-model` | `/arckit:data-model` | Data model with privacy compliance |
 | `datascout` | `/arckit:datascout` | External data source discovery |
 | `devops` | `/arckit:devops` | DevOps strategy and CI/CD |
 | `dld-review` | `/arckit:dld-review` | Detailed design review |
@@ -60,9 +60,9 @@ Display as a table:
 | `gcloud-clarify` | `/arckit:gcloud-clarify` | G-Cloud clarification questions |
 | `gcloud-requirements` | `/arckit:gcloud-search` | G-Cloud service requirements |
 | `hld-review` | `/arckit:hld-review` | High-level design review |
-| `jsp-936` | `/arckit:jsp-936` | MOD AI assurance (JSP 936) |
+| `jsp-936` | `/arckit:jsp-936` | AU defence AI assurance pathway |
 | `mlops` | `/arckit:mlops` | MLOps strategy |
-| `mod-secure-by-design` | `/arckit:mod-secure` | MOD Secure by Design |
+| `mod-secure-by-design` | `/arckit:mod-secure` | Defence Secure by Design |
 | `operationalize` | `/arckit:operationalize` | Operational readiness pack |
 | `platform-design` | `/arckit:platform-design` | Platform Design Toolkit |
 | `principles-compliance-assessment` | `/arckit:principles-compliance` | Principles compliance scorecard |
@@ -79,10 +79,13 @@ Display as a table:
 | `story` | `/arckit:story` | Project story with timeline |
 | `tcop-review` | `/arckit:tcop` | Technology Code of Practice |
 | `traceability-matrix` | `/arckit:traceability` | Requirements traceability |
-| `uk-gov-ai-playbook` | `/arckit:ai-playbook` | AI Playbook compliance |
-| `uk-gov-atrs` | `/arckit:atrs` | Algorithmic Transparency Record |
-| `uk-gov-tcop` | `/arckit:tcop` | TCoP review template |
-| `ukgov-secure-by-design` | `/arckit:secure` | UK Gov Secure by Design |
+| `au-ai-governance-assessment` | `/arckit:ai-playbook` | AU AI governance assessment |
+| `au-ai-use-case-register` | `/arckit:ai-playbook` | AU AI use case register |
+| `au-ai-governance-checklist` | `/arckit:ai-playbook` | AU AI governance checklist |
+| `au-ai-transparency-statement` | `/arckit:atrs` | AU AI transparency statement |
+| `au-ai-impact-assessment` | `/arckit:ai-playbook` | AU AI impact assessment |
+| `tcop-review` | `/arckit:tcop` | TCoP review template |
+| `secure-by-design` | `/arckit:secure` | Secure by Design template |
 | `vendor-scoring` | `/arckit:evaluate` | Vendor scoring matrix |
 | `wardley-map` | `/arckit:wardley` | Wardley Map documentation |
 
@@ -97,13 +100,13 @@ mkdir -p .arckit/templates-custom
 ```bash
 # Map short name to full filename
 TEMPLATE_NAME="$USER_INPUT"  # e.g., "requirements"
-SOURCE="${CLAUDE_PLUGIN_ROOT}/templates/${TEMPLATE_NAME}-template.md"
-DEST="${CLAUDE_PLUGIN_ROOT}/templates/${TEMPLATE_NAME}-template.md"
+SOURCE=".arckit/templates/${TEMPLATE_NAME}-template.md"
+DEST=".arckit/templates/${TEMPLATE_NAME}-template.md"
 
 # Check if source exists
 if [[ -f "$SOURCE" ]]; then
     cp "$SOURCE" "$DEST"
-    echo "✅ Copied ${TEMPLATE_NAME}-template.md to ${CLAUDE_PLUGIN_ROOT}/templates/"
+    echo "✅ Copied ${TEMPLATE_NAME}-template.md to .arckit/templates/"
 else
     echo "❌ Template not found: ${TEMPLATE_NAME}"
     echo "Run '/arckit:customize list' to see available templates"
@@ -113,8 +116,8 @@ fi
 **Copy all templates:**
 ```bash
 mkdir -p .arckit/templates-custom
-cp ${CLAUDE_PLUGIN_ROOT}/templates/*-template.md ${CLAUDE_PLUGIN_ROOT}/templates/
-echo "✅ Copied all templates to ${CLAUDE_PLUGIN_ROOT}/templates/"
+cp .arckit/templates/*-template.md .arckit/templates/
+echo "✅ Copied all templates to .arckit/templates/"
 ```
 
 ### 4. **Show Template Info**
@@ -122,7 +125,7 @@ echo "✅ Copied all templates to ${CLAUDE_PLUGIN_ROOT}/templates/"
 If user asks about a specific template (e.g., "info requirements"), read and summarize:
 - What document it generates
 - Key sections included
-- UK Government frameworks referenced
+- Policy frameworks referenced
 - Common customization points
 
 ### 5. **Provide Customization Guidance**
@@ -132,22 +135,22 @@ After copying, explain:
 ```markdown
 ## Template Customization Guide
 
-Your template has been copied to `${CLAUDE_PLUGIN_ROOT}/templates/`. You can now customize it.
+Your template has been copied to `.arckit/templates/`. You can now customize it.
 
 ### How It Works
 
 When you run an ArcKit command (e.g., `/arckit:requirements`):
 
-1. Command checks: Does `${CLAUDE_PLUGIN_ROOT}/templates/requirements-template.md` exist?
+1. Command checks: Does `.arckit/templates/requirements-template.md` exist?
 2. **If YES** → Uses YOUR customized template
-3. **If NO** → Uses default from `${CLAUDE_PLUGIN_ROOT}/templates/`
+3. **If NO** → Uses default from `.arckit/templates/`
 
 ### Common Customizations
 
-**Remove UK Government sections** (for non-UK Gov projects):
-- Delete "UK Government Alignment" sections
-- Remove TCoP, GDS Service Standard references
-- Change classification from "OFFICIAL-SENSITIVE" to your scheme
+**Adapt jurisdiction-specific sections**:
+- Remove policy-framework sections not relevant to your context
+- Update mandatory control references to your applicable standards
+- Change classification defaults to your organisation scheme
 
 **Change Document Control fields**:
 - Add organization-specific fields (Cost Centre, Programme, etc.)
@@ -166,32 +169,32 @@ When you run an ArcKit command (e.g., `/arckit:requirements`):
 ### Keeping Templates Updated
 
 When ArcKit CLI updates with new template features:
-- Default templates in `${CLAUDE_PLUGIN_ROOT}/templates/` are refreshed by `arckit init`
-- Your customizations in `${CLAUDE_PLUGIN_ROOT}/templates/` are **preserved**
+- Default templates in `.arckit/templates/` are refreshed by `arckit init`
+- Your customizations in `.arckit/templates/` are **preserved**
 - Compare your templates with defaults periodically to adopt new features
 
 To see the current default template:
 \`\`\`bash
-cat ${CLAUDE_PLUGIN_ROOT}/templates/{name}-template.md
+cat .arckit/templates/{name}-template.md
 \`\`\`
 
 To compare with your customization:
 \`\`\`bash
-diff ${CLAUDE_PLUGIN_ROOT}/templates/{name}-template.md ${CLAUDE_PLUGIN_ROOT}/templates/{name}-template.md
+diff .arckit/templates/{name}-template.md .arckit/templates/{name}-template.md
 \`\`\`
 
 ### Reverting to Default
 
 To stop using a custom template and revert to default:
 \`\`\`bash
-rm ${CLAUDE_PLUGIN_ROOT}/templates/{name}-template.md
+rm .arckit/templates/{name}-template.md
 \`\`\`
 
 ### Git Recommendations
 
 Commit your customized templates to share with your team:
 \`\`\`bash
-git add ${CLAUDE_PLUGIN_ROOT}/templates/
+git add .arckit/templates/
 git commit -m "Add organization-specific document templates"
 \`\`\`
 ```
@@ -205,17 +208,17 @@ After completing the request, show:
 
 **Action**: [Listed templates / Copied X template(s)]
 
-**Location**: `${CLAUDE_PLUGIN_ROOT}/templates/`
+**Location**: `.arckit/templates/`
 
 **Files**:
 - [List of files copied or available]
 
 **Next Steps**:
-1. Edit the template(s) in `${CLAUDE_PLUGIN_ROOT}/templates/`
+1. Edit the template(s) in `.arckit/templates/`
 2. Run the corresponding `/arckit:*` command
 3. Your customized template will be used automatically
 
-**Tip**: Use `diff ${CLAUDE_PLUGIN_ROOT}/templates/{name}-template.md ${CLAUDE_PLUGIN_ROOT}/templates/{name}-template.md` to compare with the default.
+**Tip**: Use `diff .arckit/templates/{name}-template.md .arckit/templates/{name}-template.md` to compare with the default.
 ```
 
 ## Example Usage

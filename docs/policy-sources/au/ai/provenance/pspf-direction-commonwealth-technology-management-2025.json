@@ -1,0 +1,14 @@
+{
+  "id": "pspf-direction-commonwealth-technology-management-2025",
+  "title": "Direction 004-2025: Commonwealth technology management",
+  "owner": "Department of Home Affairs (PSPF)",
+  "canonicalUrl": "https://www.protectivesecurity.gov.au/publications-library/direction-004-2025-commonwealth-technology-management",
+  "sourceUrl": "https://www.protectivesecurity.gov.au/system/files/2025-11/PSPF-Direction-004-2025.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:42.332994+11:00",
+  "checksumSha256": "32b80c1367e2136e64ec2cec42ba8a0be1b7ea358bea684604ff6421cba1a79d",
+  "format": "pdf",
+  "originalPath": "originals/pspf-direction-commonwealth-technology-management-2025.pdf",
+  "convertedPath": "converted/pspf-direction-commonwealth-technology-management-2025.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "Mandatory direction affecting management of Commonwealth technology assets."
+}

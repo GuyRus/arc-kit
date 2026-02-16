@@ -1,0 +1,14 @@
+{
+  "id": "pspf-release-2025-summary-changes",
+  "title": "PSPF Release 2025 summary of changes",
+  "owner": "Department of Home Affairs (PSPF)",
+  "canonicalUrl": "https://www.protectivesecurity.gov.au/publications-library/pspf-release-2025-summary-changes",
+  "sourceUrl": "https://www.protectivesecurity.gov.au/system/files/2025-07/pspf-release-2025-summary-changes.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:47.745468+11:00",
+  "checksumSha256": "45760468bad96df52a3d11702ec7bdae02e437c3182589acb0b6c40b4c64eea1",
+  "format": "pdf",
+  "originalPath": "originals/pspf-release-2025-summary-changes.pdf",
+  "convertedPath": "converted/pspf-release-2025-summary-changes.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "Change summary for PSPF policy updates including AI-relevant advisory updates."
+}

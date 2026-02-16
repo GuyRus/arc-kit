@@ -1,0 +1,14 @@
+{
+  "id": "acsc-guidelines-secure-ai-system-development",
+  "title": "Guidelines for secure AI system development (November 2023)",
+  "owner": "Australian Signals Directorate / Australian Cyber Security Centre",
+  "canonicalUrl": "https://www.cyber.gov.au/business-government/secure-design/artificial-intelligence/guidelines-for-secure-ai-system-development",
+  "sourceUrl": "https://www.cyber.gov.au/sites/default/files/2025-03/Guidelines%20for%20secure%20AI%20system%20development%20%28November%202023%29.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:39.558658+11:00",
+  "checksumSha256": "b050b262b0a70fa520c87914026d137b7c5bc92eb48f7deecc40004bfe4be4be",
+  "format": "pdf",
+  "originalPath": "originals/acsc-guidelines-secure-ai-system-development.pdf",
+  "convertedPath": "converted/acsc-guidelines-secure-ai-system-development.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "ACSC AI-specific secure development guidance."
+}

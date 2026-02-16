@@ -1,0 +1,14 @@
+{
+  "id": "oaic-top5-commercial-ai-products",
+  "title": "Top 5 takeaways – privacy and use of commercial AI products",
+  "owner": "Office of the Australian Information Commissioner",
+  "canonicalUrl": "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-the-use-of-commercially-available-ai-products",
+  "sourceUrl": "https://www.oaic.gov.au/__data/assets/pdf_file/0018/243072/Top5-takeaways-privacy-and-use-of-commercial-AI-products.pdf",
+  "accessedAtAEDT": "2026-02-15T20:07:33.897155+11:00",
+  "checksumSha256": "c6a25ba7fbb4e20c34ac8dc8a0a66495d01513bfe263e0ae96713062ed64d4d1",
+  "format": "pdf",
+  "originalPath": "originals/oaic-top5-commercial-ai-products.pdf",
+  "convertedPath": "converted/oaic-top5-commercial-ai-products.txt",
+  "conversionMethod": "pdftotext -layout",
+  "notes": "Companion quick guide for procurement and use of AI products."
+}

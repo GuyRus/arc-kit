@@ -49,7 +49,7 @@ Generate a comprehensive TCoP review document by:
 
    **OPTIONAL** (read if available, skip silently if missing):
    - `ARC-*-RSCH-*.md` or `ARC-*-AWSR-*.md` or `ARC-*-AZUR-*.md` — Technology research (for technology choices)
-   - `ARC-*-AIPB-*.md` — AI Playbook assessment (for AI/ML systems)
+   - `ARC-*-AIGA-*.md` — AU AI governance assessment (for AI/ML systems)
    - `ARC-*-DPIA-*.md` — DPIA (for data protection context)
 
    **What to extract from each document**:
@@ -249,7 +249,7 @@ The document must include:
 
 ## Special Considerations
 
-**For AI/ML systems**: Also consider requirements from the AI Playbook (may need ATRS - Algorithmic Transparency Record)
+**For AI/ML systems**: Also consider requirements from the AU AI governance assessment (may need AITS - Algorithmic Transparency Record)
 
 **For public-facing services**: Point 13 (Service Standard) is mandatory - must pass GDS service assessments
 
