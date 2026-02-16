@@ -36,10 +36,10 @@ Scan the project directory for existing artifacts and read them to inform the pr
 - `ARC-*-RSCH-*.md` or `ARC-*-AWSR-*.md` or `ARC-*-AZUR-*.md` — Technology research
 - `ARC-*-WARD-*.md` — Wardley maps (strategic positioning)
 - `ARC-*-PLAN-*.md` — Project plan (timeline, phases, gates)
-- `ARC-*-SOW-*.md` or `ARC-*-DOS-*.md` — Procurement documents
+- `ARC-*-SOW-*.md` or `ARC-*-panel sourcing-*.md` — Procurement documents
 - `ARC-*-EVAL-*.md` — Vendor evaluation
 - `ARC-*-HLDR-*.md` or `ARC-*-DLDR-*.md` — Design reviews
-- `ARC-*-TCOP-*.md` — TCoP review
+- `ARC-*-TCOP-*.md` — DX Policy / Digital Service Standard review
 - `ARC-*-SECD-*.md` or `ARC-*-MSBD-*.md` — Security assessments
 - `ARC-*-DPIA-*.md` — DPIA
 - `ARC-*-AIGA-*.md` — AU AI governance assessment
@@ -150,7 +150,7 @@ find "$PROJECT_DIR" -type f -name "*.md" | sort
 
 **Procurement Artifacts**:
 - `ARC-*-SOW-*.md` - Statement of Work
-- `ARC-*-DOS-*.md` - Digital Outcomes and Specialists
+- `ARC-*-panel sourcing-*.md` - Digital Outcomes and Specialists
 - `ARC-*-EVAL-*.md` - Vendor evaluation framework
 - `vendors/*/scoring.md` - Vendor scoring sheets
 
@@ -163,8 +163,8 @@ find "$PROJECT_DIR" -type f -name "*.md" | sort
 - `ARC-*-SNOW-*.md` - ServiceNow CMDB and SLA design
 
 **Compliance Artifacts**:
-- `ARC-*-TCOP-*.md` - Technology Code of Practice
-- `ARC-*-SVCASS-*.md` - GDS Service Assessment
+- `ARC-*-TCOP-*.md` - Digital Experience Policy / Digital Service Standard
+- `ARC-*-SVCASS-*.md` - DTA Service Assessment
 - `ARC-*-SECD-*.md` - Security assessment
 - `ARC-*-SECD-MOD-*.md` - MOD security (if defence)
 - `ARC-*-AIGA-*.md` - AU AI governance assessment (if AI system)
@@ -276,7 +276,7 @@ For each artifact found, **read the file** and extract key information:
 - ROI: Return on Investment
 - BCR: Benefit-Cost Ratio
 - Strategic alignment: Key strategic objectives
-- Procurement route: G-Cloud/DOS/Traditional
+- Procurement route: BuyICT/panel/direct
 
 **Requirements (`ARC-*-REQ-*.md`)**:
 - BR count: Count of BR-xxx requirements
@@ -290,7 +290,7 @@ For each artifact found, **read the file** and extract key information:
 **Data Model (`ARC-*-DATA-*.md`)**:
 - Entity count: Number of entities defined
 - Relationship count: Number of relationships
-- GDPR compliance: Lawful basis, data subject rights
+- Privacy Act 1988 / APPs compliance: Lawful basis, data subject rights
 - Key entities: List primary entities
 
 **Research Findings (`ARC-*-RSCH-*.md`)**:
@@ -312,7 +312,7 @@ For each artifact found, **read the file** and extract key information:
 - Integration points: External systems
 
 **ARC-*-SOW-*.md**:
-- Procurement route: G-Cloud/DOS/Traditional
+- Procurement route: BuyICT/panel/direct
 - Requirement count: How many requirements in SOW
 - Deliverables: Key deliverables listed
 - Commercial terms: Payment structure, KPIs
@@ -355,7 +355,7 @@ For each artifact found, **read the file** and extract key information:
 - Compliance percentage: Score as percentage
 - Status: PASS/PARTIAL/FAIL or READY/NOT READY
 - Key findings: List main findings
-- Framework name: TCoP, GDS Service Standard, NCSC CAF, etc.
+- Framework name: DX Policy, Digital Service Standard, PSPF/ISM, etc.
 
 **Traceability Matrix (`ARC-*-TRAC-*.md`)**:
 - Traceability coverage: Percentage
@@ -551,7 +551,7 @@ mindmap
     Business Case
       SOBC Approved
       [NPV] NPV
-      Data Model GDPR Compliant
+      Data Model Privacy Act 1988 / APPs Compliant
     [... continue for all phases ...]
 ```
 
@@ -575,7 +575,7 @@ For **the 2 key chapters** in the template, write a comprehensive narrative usin
 - Timeline context: Dates, duration, percentage of project
 - What happened: Translating approved designs into delivery plans
 - Key activities:
-  - Product Backlog: Requirements → GDS user stories, MoSCoW prioritization, sprint planning
+  - Product Backlog: Requirements → DTA user stories, MoSCoW prioritization, sprint planning
   - ServiceNow Design: CMDB CIs, SLA definitions, incident/change management workflows
 - Backlog Summary: Story count, sprint count, velocity assumptions
 - Traceability Chain: Requirements → User Stories → Sprint Backlog, Components → CMDB CIs
@@ -740,7 +740,7 @@ After writing the file, show the user a **concise summary** (NOT the full docume
 📊 **Project Timeline Summary**
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-**Project**: Cabinet Office GenAI Chatbot Platform
+**Project**: DTA/PM&C GenAI Chatbot Platform
 **Duration**: 79 days (11 weeks) from 2024-01-15 to 2024-04-03
 **Artifacts Created**: 23 artifacts
 **Commands Executed**: 22 ArcKit commands
@@ -766,16 +766,16 @@ Governance & Traceability      4 days      5%
 ✅ Architecture Principles Established
 ✅ 8 Stakeholders Analyzed → 12 Goals → 15 Outcomes
 ✅ 35 Risks Identified (8 high, 15 medium, 12 low)
-✅ Business Case: NPV £2.4M, ROI 187%, BCR 2.87
+✅ Business Case: NPV A$2.4M, ROI 187%, BCR 2.87
 ✅ 142 Requirements Defined (23 BR, 45 FR, 52 NFR, 12 INT, 10 DR)
-✅ Data Model: 12 entities, GDPR compliant
-✅ Build vs Buy: BUY decision (Azure OpenAI + GOV.UK services)
-✅ Vendor Selected: Microsoft (92/100 score) via G-Cloud
+✅ Data Model: 12 entities, Privacy Act 1988 / APPs compliant
+✅ Build vs Buy: BUY decision (Azure OpenAI + government digital services services)
+✅ Vendor Selected: Microsoft (92/100 score) via BuyICT
 ✅ HLD + DLD Approved
 ✅ 67 User Stories → 12 Sprints (24 weeks delivery)
-✅ TCoP: 13/13 points ✓
+✅ DX Policy / Digital Service Standard: 13/13 points ✓
 ✅ Service Standard: 14/14 points (Ready for Beta)
-✅ NCSC CAF: 14/14 principles ✓
+✅ ASD/ACSC CAF: 14/14 principles ✓
 ✅ Traceability: 98% coverage ✓
 
 📈 **Timeline Insights**
@@ -848,7 +848,7 @@ The story demonstrates systematic architecture governance from stakeholder needs
 
 ```bash
 # Generate story for a specific project
-/arckit:story Cabinet Office GenAI
+/arckit:story DTA/PM&C GenAI
 
 # Generate story for project by number
 /arckit:story 009

@@ -43,7 +43,7 @@ Output: `projects/<id>/ARC-<id>-SNOW-v1.0.md`
 | Reporting & Dashboards | KPIs, dashboards, executive reporting |
 | Integration Architecture | External system integrations, APIs, data flows |
 | Automation | Flow Designer, IntegrationHub, auto-assignment |
-| UK Government Considerations | Cross-government ITSM, NCSC alignment |
+| Australian Government Considerations | Cross-government ITSM, PSPF/ISM/ASD alignment |
 
 ---
 

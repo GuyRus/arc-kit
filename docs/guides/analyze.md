@@ -21,7 +21,7 @@ _Command:_ `arckit.analyze --project <path>` or run inside the project root.
 
 - Latest requirements, risk register, diagrams, and design reviews committed.
 - Traceability matrix refreshed (`/arckit.traceability`).
-- Recent compliance artefacts (TCoP, AI Playbook, DPIA) generated if applicable.
+- Recent compliance artefacts (DX Policy/DSS, AI Playbook, DPIA) generated if applicable.
 
 ---
 
@@ -32,7 +32,7 @@ _Command:_ `arckit.analyze --project <path>` or run inside the project root.
 | Requirements Coverage | Completeness, IDs, acceptance criteria, MoSCoW | Create missing requirements; align with stakeholders |
 | Risk Assessment | Category coverage, treatment, owners, review cadence | Assign owners; raise change requests for mitigations |
 | Traceability | Links across lifecycle artefacts | Add missing links; file backlog items for orphan work |
-| Compliance | TCoP, GDPR, accessibility, security | Schedule remedial work or update evidence packs |
+| Compliance | DX Policy/DSS, Privacy Act/APP, accessibility, security | Schedule remedial work or update evidence packs |
 | Architecture Quality | Diagram freshness, decision rationale | Trigger design review if drift detected |
 
 ---

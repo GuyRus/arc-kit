@@ -18,7 +18,7 @@ Identify inconsistencies, gaps, ambiguities, and compliance issues across all ar
 
 **Architecture Principles Authority**: The architecture principles (`ARC-000-PRIN-*.md` in `projects/000-global/`) are **non-negotiable**. Any conflicts with principles are automatically CRITICAL and require adjustment of requirements, designs, or vendor proposals—not dilution or reinterpretation of the principles.
 
-**UK Government Compliance Authority** (if applicable): TCoP, AU AI governance assessment, and AITS compliance are mandatory for UK government projects. Non-compliance is CRITICAL.
+**Australian Government Compliance Authority** (if applicable): DX Policy / Digital Service Standard, AU AI governance assessment, and AITS compliance are required for in-scope Australian Government projects. Non-compliance is CRITICAL.
 
 ## Execution Steps
 
@@ -55,9 +55,9 @@ projects/
     │       ├── hld-v1.md
     │       ├── dld-v1.md
     │       └── reviews/
-    ├── ARC-*-TCOP-*.md (if UK Gov)
-    ├── ARC-*-AIGA-*.md (if UK Gov AI)
-    ├── ARC-*-AITS-*.md (if UK Gov AI)
+    ├── ARC-*-TCOP-*.md (if Australian Government)
+    ├── ARC-*-AIGA-*.md (if Australian Government AI)
+    ├── ARC-*-AITS-*.md (if Australian Government AI)
     ├── ARC-*-SECD-MOD-*.md (if MOD project)
     └── ARC-{PROJECT_ID}-TRAC-v*.md (traceability matrix)
 ```
@@ -109,7 +109,7 @@ Load only minimal necessary context from each artifact:
 **From any `ARC-*-DATA-*.md` file in `projects/{project-dir}/`** (if exists):
 - Entity-Relationship Diagram (ERD)
 - Entity catalog (E-001, E-002, etc.)
-- PII identification and GDPR compliance
+- PII identification and Privacy Act 1988 / APPs compliance
 - Data governance matrix (owners, stewards, custodians)
 - CRUD matrix (component access patterns)
 - Data integration mapping (upstream/downstream)
@@ -134,8 +134,8 @@ Load only minimal necessary context from each artifact:
 - Database schemas
 - Security implementation
 
-**From UK Government Assessments** (if exist):
-- `ARC-*-TCOP-*.md`: TCoP compliance status
+**From policy and assurance assessments** (if exist):
+- `ARC-*-TCOP-*.md`: DX Policy / Digital Service Standard compliance status
 - `ARC-*-AIGA-*.md`: AU AI governance compliance status
 - `ARC-*-AITS-*.md`: AI transparency statement completeness
 
@@ -190,8 +190,8 @@ Create internal representations (do not include raw artifacts in output):
 - Which requirements are addressed in HLD/DLD?
 - Which components implement which requirements?
 
-**UK Government Compliance Matrix** (if applicable):
-- TCoP: 13 points with compliance status
+**Australian Government Compliance Matrix** (if applicable):
+- DX Policy / Digital Service Standard: 13 points with compliance status
 - AU AI governance assessment: 10 principles + 6 themes with compliance status
 - AITS: Mandatory fields completion status
 
@@ -364,7 +364,7 @@ Focus on high-signal findings. Limit to 50 findings total; aggregate remainder i
 **Data Governance Alignment**:
 - Data owners from stakeholder RACI matrix?
 - Data stewards and custodians assigned?
-- PII identified and GDPR compliance documented?
+- PII identified and Privacy Act 1988 / APPs compliance documented?
 
 **Data Model Quality**:
 - ERD exists and renderable (Mermaid syntax)?
@@ -375,9 +375,9 @@ Focus on high-signal findings. Limit to 50 findings total; aggregate remainder i
 **Missing Data Model**:
 - Project has DR-xxx requirements but no data model (RECOMMENDED to run `/arckit:data-model`)
 
-#### I. UK Government Compliance (if applicable)
+#### I. Australian Government Compliance (if applicable)
 
-**Technology Code of Practice (TCoP)**:
+**Digital Experience Policy / Digital Service Standard (DX Policy / Digital Service Standard)**:
 - Assessment exists?
 - All 13 points assessed?
 - Critical issues resolved?
@@ -397,11 +397,11 @@ Focus on high-signal findings. Limit to 50 findings total; aggregate remainder i
 - Tier 1 (public summary) completed?
 - Tier 2 (technical details) completed?
 - All mandatory fields filled?
-- Ready for GOV.UK publication?
+- Ready for government digital services publication?
 
 **Compliance Alignment**:
-- Requirements aligned with TCoP?
-- Design complies with TCoP (Cloud First, Open Standards, Secure)?
+- Requirements aligned with DX Policy / Digital Service Standard?
+- Design complies with DX Policy / Digital Service Standard (Cloud First, Open Standards, Secure)?
 - AI requirements comply with AU AI governance assessment?
 - AI transparency statement reflects requirements and design?
 
@@ -411,7 +411,7 @@ Focus on high-signal findings. Limit to 50 findings total; aggregate remainder i
 - Principle 1 (Understand and Define Context): Context documented, data classification determined?
 - Principle 2 (Apply Security from the Start): Security embedded from inception, not bolt-on?
 - Principle 3 (Apply Defence in Depth): Layered security controls implemented?
-- Principle 4 (Follow Secure Design Patterns): NCSC/NIST guidance applied?
+- Principle 4 (Follow Secure Design Patterns): ASD/ACSC/NIST guidance applied?
 - Principle 5 (Continuously Manage Risk): Risk register maintained, continuous testing?
 - Principle 6 (Secure the Supply Chain): SBOM maintained, supplier attestations obtained?
 - Principle 7 (Enable Through-Life Assurance): Continuous monitoring, incident response capability?
@@ -442,8 +442,8 @@ Focus on high-signal findings. Limit to 50 findings total; aggregate remainder i
 - Supplier security requirements in contracts?
 
 **Classification-Specific Requirements**:
-- OFFICIAL: Cyber Essentials baseline, basic access controls?
-- OFFICIAL-SENSITIVE: Cyber Essentials Plus, MFA, enhanced logging, DPIA?
+- OFFICIAL: Essential Eight baseline, basic access controls?
+- OFFICIAL-SENSITIVE: Essential Eight Plus, MFA, enhanced logging, DPIA?
 - SECRET: SC personnel, CESG crypto, air-gap/assured network, enhanced physical security?
 - TOP SECRET: DV personnel, compartmented security, strict access control?
 
@@ -490,13 +490,13 @@ Focus on high-signal findings. Limit to 50 findings total; aggregate remainder i
 
 **Compliance Coverage**:
 - Compliance requirements (NFR-C-xxx) exist?
-- Regulatory requirements identified (GDPR, PCI-DSS, HIPAA, etc.)?
+- Regulatory requirements identified (Privacy Act 1988 / APPs, PCI-DSS, HIPAA, etc.)?
 - Compliance validated in design?
 - Audit requirements addressed?
 
 **Data Protection**:
 - Personal data handling defined?
-- GDPR/UK GDPR compliance addressed?
+- Privacy Act 1988 / APPs/Privacy Act 1988 / APPs compliance addressed?
 - Data retention policy defined?
 - Data breach procedures defined?
 
@@ -514,11 +514,11 @@ Use this heuristic to prioritise findings:
 - SOBC: Benefits not traced to stakeholder goals or requirements
 - SOBC: Costs inadequate for requirements scope (budget shortfall)
 - Data Model: DR-xxx requirements with no entity mapping
-- Data Model: PII not identified (GDPR compliance failure)
+- Data Model: PII not identified (Privacy Act 1988 / APPs compliance failure)
 - Data Model: Data owners not from stakeholder RACI matrix
-- UK Gov: TCoP non-compliance for mandatory points
-- UK Gov: AU AI governance assessment blocking issues for high-risk AI
-- UK Gov: Missing mandatory AITS for central government AI
+- Australian Government: DX Policy / Digital Service Standard non-compliance for mandatory points
+- Australian Government: AU AI governance assessment blocking issues for high-risk AI
+- Australian Government: Missing mandatory AITS for central government AI
 - MOD: CAAT not registered (MANDATORY for all programmes)
 - MOD: No DTSL appointed (required from Discovery phase)
 - MOD: SECRET+ data without classification-specific controls
@@ -539,8 +539,8 @@ Use this heuristic to prioritise findings:
 - Data Model: Database schema in DLD doesn't match data model entities
 - Data Model: CRUD matrix doesn't align with HLD component design
 - Vendor design doesn't address SOW requirements
-- UK Gov: TCoP partial compliance with gaps
-- UK Gov: AU AI governance assessment non-compliance for medium-risk AI
+- Australian Government: DX Policy / Digital Service Standard partial compliance with gaps
+- Australian Government: AU AI governance assessment non-compliance for medium-risk AI
 - MOD: SbD Principles partially compliant with significant gaps
 - MOD: NIST CSF functions not fully covered
 
@@ -555,7 +555,7 @@ Use this heuristic to prioritise findings:
 - SOBC: Missing business case (recommended for major investments)
 - Data Model: Missing data model (recommended if DR-xxx exist)
 - Data Model: Data quality metrics not defined
-- UK Gov: TCoP minor gaps
+- Australian Government: DX Policy / Digital Service Standard minor gaps
 - MOD: CAAT self-assessment incomplete (some question sets missing)
 - MOD: Third Line of Defence not fully implemented
 
@@ -601,7 +601,7 @@ Generate a comprehensive Markdown report and save it to `projects/{project-dir}/
 | R1 | Requirements Quality | HIGH | ARC-*-REQ-*.md:L45-52 | Duplicate security requirements | Merge NFR-S-001 and NFR-S-005 |
 | P1 | Principles Alignment | CRITICAL | ARC-*-REQ-*.md:L120 | Violates Cloud-First principle | Change to cloud-native architecture |
 | T1 | Traceability | HIGH | No HLD coverage | NFR-P-002 (10K TPS) not addressed | Add performance architecture section to HLD |
-| UK1 | UK Gov Compliance | CRITICAL | Missing DPIA | AI system requires DPIA before deployment | Complete DPIA for AU AI governance compliance |
+| UK1 | Australian Government Compliance | CRITICAL | Missing DPIA | AI system requires DPIA before deployment | Complete DPIA for AU AI governance compliance |
 
 ---
 
@@ -721,7 +721,7 @@ Generate a comprehensive Markdown report and save it to `projects/{project-dir}/
 **Critical Issues**:
 - Non-measurable benefits: {count}
 - Benefits without requirement support: {count}
-- Budget shortfall: £{amount} (requirements scope exceeds budget)
+- Budget shortfall: A${amount} (requirements scope exceeds budget)
 
 ---
 
@@ -733,7 +733,7 @@ Generate a comprehensive Markdown report and save it to `projects/{project-dir}/
 | Requirement ID | Description | Entities | Attributes | Status |
 |----------------|-------------|----------|------------|--------|
 | DR-001 | Store customer data | E-001: Customer | customer_id, email, name | ✅ Complete |
-| DR-005 | GDPR erasure | E-001: Customer | [All PII] | ✅ Complete |
+| DR-005 | Privacy Act 1988 / APPs erasure | E-001: Customer | [All PII] | ✅ Complete |
 | DR-008 | Payment history | ❌ No entity | N/A | ❌ Missing |
 
 **Data Requirements Coverage**:
@@ -745,7 +745,7 @@ Generate a comprehensive Markdown report and save it to `projects/{project-dir}/
 - ERD exists and renderable: ✅ Yes / ❌ No
 - Entities with complete specs: {count}/{total}
 - PII identified: ✅ Yes / ⚠️ Partial / ❌ No
-- GDPR compliance documented: ✅ Yes / ⚠️ Partial / ❌ No
+- Privacy Act 1988 / APPs compliance documented: ✅ Yes / ⚠️ Partial / ❌ No
 
 **Data Governance**:
 | Entity | Data Owner (from RACI) | Data Steward | Technical Custodian | Status |
@@ -760,14 +760,14 @@ Generate a comprehensive Markdown report and save it to `projects/{project-dir}/
 
 **Critical Issues**:
 - DR-xxx requirements with no entity mapping: {count}
-- PII not identified (GDPR risk): {count} entities
+- PII not identified (Privacy Act 1988 / APPs risk): {count} entities
 - Data owners not from RACI matrix: {count} entities
 
 ---
 
-## UK Government Compliance Analysis
+## Australian Government Compliance Analysis
 
-### Technology Code of Practice (TCoP)
+### Digital Experience Policy / Digital Service Standard (DX Policy / Digital Service Standard)
 
 **Overall Score**: {score}/130 ({percentage}%)
 **Status**: ✅ Compliant / ⚠️ Partial / ❌ Non-Compliant
@@ -776,9 +776,9 @@ Generate a comprehensive Markdown report and save it to `projects/{project-dir}/
 |-------|-------------|--------|-------|--------|
 | 1 | Define User Needs | ✅ | 9/10 | Minor: User research from 2023 (update) |
 | 5 | Use Cloud First | ✅ | 10/10 | AWS cloud-native |
-| 6 | Make Things Secure | ❌ | 3/10 | Missing: Cyber Essentials, threat model |
+| 6 | Make Things Secure | ❌ | 3/10 | Missing: Essential Eight, threat model |
 
-**Critical TCoP Issues**: {count}
+**Critical DX Policy / Digital Service Standard Issues**: {count}
 
 ### AU AI governance assessment (if AI system)
 
@@ -816,7 +816,7 @@ Generate a comprehensive Markdown report and save it to `projects/{project-dir}/
 | 1. Understand and Define Context | ✅ | 9/10 | Minor: Data classification pending final review |
 | 2. Apply Security from the Start | ⚠️ | 6/10 | Security architecture not in initial specs |
 | 3. Apply Defence in Depth | ❌ | 3/10 | Missing: Network segmentation, IDS/IPS |
-| 4. Follow Secure Design Patterns | ✅ | 8/10 | NCSC guidance applied, minor OWASP gaps |
+| 4. Follow Secure Design Patterns | ✅ | 8/10 | ASD/ACSC guidance applied, minor OWASP gaps |
 | 5. Continuously Manage Risk | ✅ | 9/10 | Risk register active, continuous monitoring planned |
 | 6. Secure the Supply Chain | ⚠️ | 5/10 | Missing: SBOM, supplier attestations |
 | 7. Enable Through-Life Assurance | ⚠️ | 6/10 | Monitoring planned, incident response incomplete |
@@ -882,7 +882,7 @@ Generate a comprehensive Markdown report and save it to `projects/{project-dir}/
 | Cryptography (CESG-approved) | ✅ / ❌ | AES-256, TLS 1.3 |
 | Network security (air-gap/assured) | ✅ / ⚠️ / ❌ | Assured connectivity approved |
 | Physical security | ✅ / ❌ | Enhanced access controls in place |
-| Cyber Essentials / Cyber Essentials Plus | ✅ / ❌ | Cyber Essentials Plus certified |
+| Essential Eight / Essential Eight Plus | ✅ / ❌ | Essential Eight Plus certified |
 
 ### Critical Issues (Deployment Blockers)
 
@@ -962,7 +962,7 @@ Generate a comprehensive Markdown report and save it to `projects/{project-dir}/
 
 ### Compliance Posture
 - Regulatory requirements identified: ✅ Yes / ❌ No
-- GDPR/UK GDPR compliance: ✅ Yes / ⚠️ Partial / ❌ No
+- Privacy Act 1988 / APPs/Privacy Act 1988 / APPs compliance: ✅ Yes / ⚠️ Partial / ❌ No
 - Industry compliance (PCI-DSS, HIPAA, etc.): ✅ Yes / ⚠️ Partial / ❌ No / N/A
 - Audit readiness: ✅ Yes / ⚠️ Partial / ❌ No
 
@@ -1045,11 +1045,11 @@ Generate a comprehensive Markdown report and save it to `projects/{project-dir}/
 - Data model-design alignment: {percentage}%
 - **Data Model Score**: {percentage}%
 
-### UK Government Compliance (if applicable)
-- TCoP Score: {score}/130 ({percentage}%)
+### Australian Government Compliance (if applicable)
+- DX Policy / Digital Service Standard Score: {score}/130 ({percentage}%)
 - AU AI governance assessment Score: {score}/160 ({percentage}%)
 - AITS Completeness: {percentage}%
-- **UK Gov Compliance Score**: {percentage}%
+- **Australian Government Compliance Score**: {percentage}%
 
 ### MOD Compliance (if applicable)
 - 7 SbD Principles Score: {score}/70 ({percentage}%)
@@ -1099,15 +1099,15 @@ Based on findings, consider running:
 
 **Requirements & Design**:
 - `/arckit:requirements` - Refine requirements to address ambiguity/gaps
-- `/arckit:data-model` - Create data model with ERD, GDPR compliance (RECOMMENDED if DR-xxx exist)
+- `/arckit:data-model` - Create data model with ERD, Privacy Act 1988 / APPs compliance (RECOMMENDED if DR-xxx exist)
 - `/arckit:hld-review` - Re-review HLD after addressing issues
 - `/arckit:dld-review` - Re-review DLD after addressing issues
 
-**UK Government Compliance**:
-- `/arckit:tcop` - Complete TCoP assessment for UK Gov projects
+**Australian Government Compliance**:
+- `/arckit:tcop` - Complete DX Policy / Digital Service Standard assessment for Australian Government projects
 - `/arckit:ai-playbook` - Complete AU AI governance assessment for AI systems
 - `/arckit:atrs` - Generate AI transparency statement for algorithmic tools
-- `/arckit:secure` - UK Government Secure by Design review
+- `/arckit:secure` - Australian Government Secure by Design review
 
 **MOD Compliance**:
 - `/arckit:mod-secure` - MOD Secure by Design assessment with CAAT (MANDATORY for MOD projects)
@@ -1231,7 +1231,7 @@ DOC_ID=$(.arckit/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "ANAL" "${
 *User-provided fields* (extract from project metadata or user input):
 - `[PROJECT_NAME]` → Full project name from project metadata or user input
 - `[OWNER_NAME_AND_ROLE]` → Document owner (prompt user if not in metadata)
-- `[CLASSIFICATION]` → Default to "OFFICIAL" for UK Gov, "PUBLIC" otherwise (or prompt user)
+- `[CLASSIFICATION]` → Default to "OFFICIAL" for Australian Government, "PUBLIC" otherwise (or prompt user)
 
 *Calculated fields*:
 - `[YYYY-MM-DD]` for Review Date → Current date + 30 days
@@ -1300,7 +1300,7 @@ After writing the file, provide a summary message to the user:
 - Traceability Score: {percentage}%
 - Stakeholder Alignment: {percentage}%
 - Risk Management: {percentage}%
-- UK Gov Compliance: {percentage}% (if applicable)
+- Australian Government Compliance: {percentage}% (if applicable)
 - MOD SbD Compliance: {percentage}% (if applicable)
 
 **Top 3 Critical Issues**:
@@ -1347,7 +1347,7 @@ After outputting the report, ask:
 - **DO write analysis report** to `projects/{project-dir}/ARC-{PROJECT_ID}-ANAL-v1.0.md`
 - **NEVER hallucinate missing sections** (if absent, report them accurately)
 - **Prioritize principle violations** (these are always CRITICAL)
-- **Prioritize UK Gov compliance issues** (mandatory for public sector)
+- **Prioritize Australian Government compliance issues** (mandatory for public sector)
 - **Use examples over exhaustive rules** (cite specific instances, not generic patterns)
 - **Report zero issues gracefully** (emit success report with metrics)
 - **Be specific**: Cite line numbers, requirement IDs, exact quotes
@@ -1361,7 +1361,7 @@ Unlike Spec Kit's focus on code implementation, ArcKit analyze focuses on:
 - **Requirements quality**: Completeness, testability, traceability
 - **Procurement readiness**: SOW quality, vendor evaluation fairness
 - **Design alignment**: Requirements → design traceability
-- **UK Government compliance**: TCoP, AU AI governance assessment, AITS (if applicable)
+- **Australian Government compliance**: DX Policy / Digital Service Standard, AU AI governance assessment, AITS (if applicable)
 - **Security & compliance**: Not just mentioned, but architected
 - **Decision quality**: Objective, defensible, auditable
 
@@ -1379,7 +1379,7 @@ You should:
    - Requirements (BR, FR, NFR, INT, DR)
    - Data model (if exists - RECOMMENDED if DR-xxx)
    - Designs (HLD, DLD)
-   - UK Gov assessments (TCoP, AU AI governance assessment, AITS)
+   - Australian Government assessments (DX Policy / Digital Service Standard, AU AI governance assessment, AITS)
    - MOD assessment (SbD with CAAT)
    - Traceability matrix
 3. Run detection passes:
@@ -1390,7 +1390,7 @@ You should:
    - Data model consistency (DR-xxx to entities, data governance, design alignment)
    - Principles alignment (violations, coverage)
    - Traceability (coverage gaps, orphans)
-   - UK Gov compliance (TCoP, AU AI governance assessment, AITS)
+   - Australian Government compliance (DX Policy / Digital Service Standard, AU AI governance assessment, AITS)
    - MOD compliance (7 SbD Principles, NIST CSF, CAAT, Three Lines of Defence)
    - Consistency (terminology, data model, tech stack)
    - Security & compliance coverage
@@ -1403,13 +1403,13 @@ You should:
    - Risk management analysis
    - Business case analysis
    - Data model analysis
-   - UK Gov compliance dashboard
+   - Australian Government compliance dashboard
    - MOD compliance dashboard
    - Metrics dashboard
    - Next steps and recommendations
 6. Ask if user wants remediation guidance
 
-Example output: "Architecture Governance Analysis Report" with 18 findings (3 CRITICAL, 6 HIGH, 7 MEDIUM, 2 LOW), 87% requirements coverage, 92% stakeholder traceability, 85% risk mitigation, TCoP score 98/130 (75%), MOD SbD score 58/70 (83%), recommendation: "Resolve 3 CRITICAL issues (1 stakeholder orphan, 2 high risks unmitgated) before procurement"
+Example output: "Architecture Governance Analysis Report" with 18 findings (3 CRITICAL, 6 HIGH, 7 MEDIUM, 2 LOW), 87% requirements coverage, 92% stakeholder traceability, 85% risk mitigation, DX Policy / Digital Service Standard score 98/130 (75%), MOD SbD score 58/70 (83%), recommendation: "Resolve 3 CRITICAL issues (1 stakeholder orphan, 2 high risks unmitgated) before procurement"
 
 ## Important Notes
 
@@ -1438,17 +1438,17 @@ After analysis, you may need:
 
 **Requirements & Data**:
 - `/arckit:requirements` - Fix requirements issues
-- `/arckit:data-model` - Create data model with ERD and GDPR compliance
+- `/arckit:data-model` - Create data model with ERD and Privacy Act 1988 / APPs compliance
 
 **Design Reviews**:
 - `/arckit:hld-review` - Re-review high-level design
 - `/arckit:dld-review` - Re-review detailed design
 
-**UK Government Compliance**:
-- `/arckit:tcop` - Complete TCoP assessment
+**Australian Government Compliance**:
+- `/arckit:tcop` - Complete DX Policy / Digital Service Standard assessment
 - `/arckit:ai-playbook` - Complete AU AI governance assessment
 - `/arckit:atrs` - Generate AI transparency statement
-- `/arckit:secure` - UK Government Secure by Design review
+- `/arckit:secure` - Australian Government Secure by Design review
 
 **MOD Compliance**:
 - `/arckit:mod-secure` - MOD Secure by Design assessment with CAAT

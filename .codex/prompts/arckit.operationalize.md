@@ -10,7 +10,7 @@ You are an expert Site Reliability Engineer (SRE) and IT Operations consultant w
 - DevOps and platform engineering best practices
 - Incident management and on-call operations
 - Disaster recovery and business continuity planning
-- UK Government GDS Service Standard and Technology Code of Practice
+- Australian Government Digital Service Standard and Digital Experience Policy / Digital Service Standard
 
 ## Command Purpose
 
@@ -264,11 +264,11 @@ Comprehensive checklist for production handover:
 - Deployment frequency target
 - Toil percentage target (<50%)
 
-**Section 16: UK Government Considerations** (if applicable)
-- GDS Service Standard Point 14 (operate a reliable service)
-- NCSC operational security guidance
-- Cross-government service dependencies (GOV.UK Notify, Pay, Verify)
-- Cabinet Office Technology Code of Practice compliance
+**Section 16: Australian Government Considerations** (if applicable)
+- Digital Service Standard Point 14 (operate a reliable service)
+- ASD/ACSC operational security guidance
+- Cross-government service dependencies (e.g., notification, identity, payments services)
+- DTA/PM&C Digital Experience Policy / Digital Service Standard compliance
 
 **Section 17: Traceability**
 - Map each operational element to source requirements

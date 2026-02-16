@@ -803,27 +803,27 @@ curl -f https://[service]/health
 
 ---
 
-## 16. UK Government Considerations
+## 16. Australian Government Considerations
 
-### GDS Service Standard
+### Digital Service Standard
 
 | Point | Requirement | Status |
 |-------|-------------|--------|
 | 14 | Operate a reliable service | [Met / Partial / Not Met] |
 
-### NCSC Guidance
+### ASD/ACSC Guidance
 
-- [ ] Logging and monitoring per NCSC guidelines
-- [ ] Incident response aligned with NCSC framework
+- [ ] Logging and monitoring per ASD/ACSC guidelines
+- [ ] Incident response aligned with ASD/ACSC framework
 - [ ] Secure by Design principles in operations
 
 ### Cross-Government Dependencies
 
 | Service | Usage | Fallback |
 |---------|-------|----------|
-| GOV.UK Notify | [Purpose] | [Fallback] |
-| GOV.UK Pay | [Purpose] | [Fallback] |
-| GOV.UK Verify/One Login | [Purpose] | [Fallback] |
+| Government notification service | [Purpose] | [Fallback] |
+| Government payment service | [Purpose] | [Fallback] |
+| Government identity service | [Purpose] | [Fallback] |
 
 ---
 

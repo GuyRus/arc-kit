@@ -32,7 +32,7 @@ Output: `projects/<id>/ARC-<id>-STORY-v1.0.md`
 | Timeline | Gantt, flowchart, event log | Show pacing, critical path, blockers |
 | Narrative chapters | Foundation → Business Case → Requirements → Research → Procurement → Design → Delivery → Compliance | Retrospectives, onboarding |
 | Traceability | Stakeholder → Requirement → Work item → Test | Assurance evidence |
-| Governance achievements | TCoP, Service Standard, Secure by Design, AI Playbook | Compliance pack |
+| Governance achievements | DX Policy, Digital Service Standard, security controls, AI Playbook | Compliance pack |
 | Lessons learned & actions | What worked, what didn’t, forward plan | Continuous improvement |
 
 ---

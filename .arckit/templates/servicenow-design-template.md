@@ -215,12 +215,12 @@
 
 ---
 
-## 10. UK Government Compliance
+## 10. Australian Government Compliance
 
-### GDS Service Standard
+### Digital Service Standard
 - **Point 5**: WCAG 2.2 AA compliance monitored
 - **Point 10**: Success metrics in ServiceNow dashboards
-- **Point 13**: Reuse common platforms (GOV.UK Notify, Pay)
+- **Point 13**: Reuse common platforms (e.g., shared notification/payment services)
 
 ### ITIL v4 Practices
 - **Plan**: Change Management (CAB)

@@ -134,12 +134,13 @@ flowchart TD
     ServiceNow["arckit.servicenow<br/>[DATE]<br/>ServiceNow Design"] --> Compliance
 
     Compliance{Compliance<br/>Requirements?}
-    Compliance -->|UK Gov| TCoP["arckit.tcop<br/>[DATE]<br/>TCoP Review"]
+    Compliance -->|AU Policy| PolicyReview["policy/compliance review
+[DATE]"]
     Compliance -->|All Projects| Secure["arckit.secure<br/>[DATE]<br/>Secure by Design"]
     Compliance -->|MOD| ModSecure["arckit.mod-secure<br/>[DATE]<br/>MOD Security"]
     Compliance -->|AI System| AIPlaybook["arckit.ai-playbook<br/>[DATE]<br/>AI Playbook"]
 
-    TCoP --> Trace
+    PolicyReview --> Trace
     Secure --> Trace
     ModSecure --> Trace
     AIPlaybook --> Trace
@@ -169,7 +170,7 @@ flowchart TD
 | 3 | [DATE] | [DAYS] | Risk | `/arckit.risk` | ARC-{PROJECT_ID}-RISK-v*.md | Identified [N] risks ([X] high, [Y] medium, [Z] low) |
 | 4 | [DATE] | [DAYS] | Business Case | `/arckit.sobc` | ARC-{PROJECT_ID}-SOBC-v*.md | Strategic Outline Business Case (5-case model) |
 | 5 | [DATE] | [DAYS] | Requirements | `/arckit.requirements` | ARC-{PROJECT_ID}-REQ-v*.md | [BR] business, [FR] functional, [NFR] non-functional reqs |
-| 6 | [DATE] | [DAYS] | Data | `/arckit.data-model` | ARC-{PROJECT_ID}-DATA-v*.md | [N] entities, [M] relationships, GDPR compliance |
+| 6 | [DATE] | [DAYS] | Data | `/arckit.data-model` | ARC-{PROJECT_ID}-DATA-v*.md | [N] entities, [M] relationships, Privacy Act 1988 / APPs compliance |
 | 7 | [DATE] | [DAYS] | Research | `/arckit.research` | ARC-{PROJECT_ID}-RSCH-v*.md | Evaluated [N] options (build vs buy analysis) |
 | 8 | [DATE] | [DAYS] | Strategy | `/arckit.wardley` | wardley-maps/ARC-*-WARD-*.md | Strategic positioning and evolution |
 | 9 | [DATE] | [DAYS] | Architecture | `/arckit.diagram` | diagrams/ARC-*-DIAG-*.md | C4 context/container/component diagrams |
@@ -179,9 +180,9 @@ flowchart TD
 | 13 | [DATE] | [DAYS] | Design Review | `/arckit.dld-review` | vendors/[VENDOR]/reviews/ARC-*-DLDR-*.md | Detailed design assessment |
 | 14 | [DATE] | [DAYS] | Delivery | `/arckit.backlog` | ARC-*-BKLG-*.md | [N] user stories across [M] sprints |
 | 15 | [DATE] | [DAYS] | Operations | `/arckit.servicenow` | ARC-*-SNOW-*.md | CMDB, SLAs, incident management |
-| 16 | [DATE] | [DAYS] | Compliance | `/arckit.tcop` | ARC-*-TCOP-*.md | Technology Code of Practice (13 points) |
-| 17 | [DATE] | [DAYS] | Compliance | `/arckit.service-assessment` | ARC-*-SVCASS-*.md | GDS Service Standard (14 points) |
-| 18 | [DATE] | [DAYS] | Security | `/arckit.secure` | ARC-*-SECD-*.md | NCSC CAF, Cyber Essentials, UK GDPR |
+| 16 | [DATE] | [DAYS] | Compliance | `/arckit.tcop` | ARC-*-TCOP-*.md | Digital Experience Policy / Digital Service Standard (13 points) |
+| 17 | [DATE] | [DAYS] | Compliance | `/arckit.service-assessment` | ARC-*-SVCASS-*.md | Digital Service Standard (14 points) |
+| 18 | [DATE] | [DAYS] | Security | `/arckit.secure` | ARC-*-SECD-*.md | ASD/ACSC CAF, Essential Eight, Privacy Act 1988 / APPs |
 | 19 | [DATE] | [DAYS] | AI Compliance | `/arckit.ai-playbook` | ARC-*-AIPB-*.md | Responsible AI deployment |
 | 20 | [DATE] | [DAYS] | Transparency | `/arckit.atrs` | ARC-*-ATRS-*.md | Algorithmic Transparency Recording |
 | 21 | [DATE] | [DAYS] | Traceability | `/arckit.traceability` | ARC-*-TRAC-*.md | End-to-end requirement traceability |
@@ -280,7 +281,7 @@ Following vendor selection, the chosen vendor ([VENDOR_NAME]) provided High-Leve
    - Reviewed DLD document from [VENDOR_NAME]
    - Assessment against:
      - API specifications (completeness, RESTful compliance)
-     - Database schemas (normalization, indexing, GDPR)
+     - Database schemas (normalization, indexing, Privacy Act 1988 / APPs)
      - Security controls (authentication, authorization, encryption)
      - Performance optimizations (caching, CDN, load balancing)
      - Operational considerations (monitoring, logging, alerting)
@@ -344,7 +345,7 @@ With approved designs, the project moved into detailed delivery planning, transl
 **Key Activities**:
 
 1. **Product Backlog** (`/arckit.backlog` - [DATE])
-   - Converted [TOTAL_REQS] requirements into [TOTAL_STORIES] GDS-style user stories
+   - Converted [TOTAL_REQS] requirements into [TOTAL_STORIES] DTA-style user stories
    - Story format: "As a [user type], I need to [action], so that [benefit]"
    - Prioritization using MoSCoW (Must/Should/Could/Won't)
    - Sprint planning:
@@ -515,8 +516,8 @@ flowchart TD
     end
 
     subgraph Compliance
-        TCoP[Technology<br/>Code of Practice]
-        ServiceAssessment[GDS Service<br/>Standard]
+        DX Policy / Digital Service Standard[Technology<br/>Code of Practice]
+        ServiceAssessment[DTA Service<br/>Standard]
         Secure[Secure by<br/>Design]
         AIPlaybook[AI<br/>Playbook]
         ATRS[ATRS<br/>Record]
@@ -554,7 +555,7 @@ flowchart TD
     Diagrams --> ServiceNow
     NFR --> ServiceNow
 
-    SOW --> TCoP
+    SOW --> DX Policy / Digital Service Standard
     Diagrams --> Secure
     NFR --> Secure
     Research --> AIPlaybook
@@ -576,7 +577,7 @@ flowchart TD
     style Research fill:#f3e5f5
     style SOW fill:#fce4ec
     style Stories fill:#e8f5e9
-    style TCoP fill:#fff3e0
+    style DX Policy / Digital Service Standard fill:#fff3e0
     style Traceability fill:#f1f8e9
 ```
 
@@ -625,7 +626,7 @@ mindmap
       SOBC Approved
       [NPV] NPV
       [BCR] BCR
-      Data Model GDPR Compliant
+      Data Model Privacy Act 1988 / APPs Compliant
     Requirements
       [TOTAL] Requirements Defined
       [PERCENTAGE]% Must-have Requirements
@@ -701,7 +702,7 @@ Complete list of all artifacts generated during this project:
 | 14 | DLD Review | `projects/{project_id}/vendors/[vendor]/reviews/ARC-*-DLDR-*.md` | [DATE] | `/arckit.dld-review` | ✅ |
 | 15 | Product Backlog | `projects/{project_id}/ARC-*-BKLG-*.md` | [DATE] | `/arckit.backlog` | ✅ |
 | 16 | ServiceNow Design | `projects/{project_id}/ARC-*-SNOW-*.md` | [DATE] | `/arckit.servicenow` | ✅ |
-| 17 | TCoP Review | `projects/{project_id}/ARC-*-TCOP-*.md` | [DATE] | `/arckit.tcop` | ✅ |
+| 17 | DX Policy / Digital Service Standard Review | `projects/{project_id}/ARC-*-TCOP-*.md` | [DATE] | `/arckit.tcop` | ✅ |
 | 18 | Service Assessment | `projects/{project_id}/ARC-*-SVCASS-*.md` | [DATE] | `/arckit.service-assessment` | ✅ |
 | 19 | Secure by Design | `projects/{project_id}/ARC-*-SECD-*.md` | [DATE] | `/arckit.secure` | ✅ |
 | 20 | AI Playbook | `projects/{project_id}/ARC-*-AIPB-*.md` | [DATE] | `/arckit.ai-playbook` | ✅ |
@@ -720,7 +721,7 @@ Complete chronological log of all project activities extracted from git history:
 [DATE] [TIME] - /arckit.stakeholders - Stakeholder Analysis: [N] stakeholders, [M] goals, [P] outcomes
 [DATE] [TIME] - /arckit.risk - Risk Register: [TOTAL] risks identified ([HIGH] high, [MEDIUM] medium, [LOW] low)
 [DATE] [TIME] - /arckit.sobc - Strategic Outline Business Case: NPV [VALUE], BCR [RATIO]
-[DATE] [TIME] - /arckit.data-model - Data Model: [N] entities, [M] relationships, GDPR compliant
+[DATE] [TIME] - /arckit.data-model - Data Model: [N] entities, [M] relationships, Privacy Act 1988 / APPs compliant
 [DATE] [TIME] - /arckit.requirements - Requirements: [BR] BR, [FR] FR, [NFR] NFR, [INT] INT, [DR] DR
 [DATE] [TIME] - /arckit.research - Technology Research: [N] options evaluated, decision: [BUILD/BUY]
 [DATE] [TIME] - /arckit.wardley - Wardley Map: [MAP_NAME] created
@@ -731,9 +732,9 @@ Complete chronological log of all project activities extracted from git history:
 [DATE] [TIME] - /arckit.dld-review - DLD Review: [VERDICT] with [N] findings
 [DATE] [TIME] - /arckit.backlog - Product Backlog: [N] stories across [M] sprints
 [DATE] [TIME] - /arckit.servicenow - ServiceNow Design: [N] CIs, [M] SLAs defined
-[DATE] [TIME] - /arckit.tcop - TCoP Review: [N]/13 points satisfied
+[DATE] [TIME] - /arckit.tcop - DX Policy / Digital Service Standard Review: [N]/13 points satisfied
 [DATE] [TIME] - /arckit.service-assessment - Service Assessment: [N]/14 points satisfied, [READY/NOT READY]
-[DATE] [TIME] - /arckit.secure - Secure by Design: NCSC CAF [N]/14 principles, Cyber Essentials [LEVEL]
+[DATE] [TIME] - /arckit.secure - Secure by Design: ASD/ACSC CAF [N]/14 principles, Essential Eight [LEVEL]
 [DATE] [TIME] - /arckit.ai-playbook - AI Playbook: [N] ethical principles assessed
 [DATE] [TIME] - /arckit.atrs - ATRS Record: Transparency record published
 [DATE] [TIME] - /arckit.traceability - Traceability Matrix: [PERCENTAGE]% coverage achieved
@@ -811,9 +812,9 @@ ArcKit commands used in this project:
 |---------|---------|-------------|
 | `/arckit.principles` | Establish architecture principles | Start of program/project |
 | `/arckit.stakeholders` | Analyze stakeholders, goals, outcomes | After principles, before requirements |
-| `/arckit.risk` | Create risk register (HM Treasury Orange Book) | After stakeholder analysis |
+| `/arckit.risk` | Create risk register (Australian Government risk governance baseline) | After stakeholder analysis |
 | `/arckit.sobc` | Strategic Outline Business Case (Green Book) | Before detailed requirements |
-| `/arckit.data-model` | Define data model, ERD, GDPR compliance | With requirements definition |
+| `/arckit.data-model` | Define data model, ERD, Privacy Act 1988 / APPs compliance | With requirements definition |
 | `/arckit.requirements` | Define BR/FR/NFR/INT/DR requirements | After business case |
 | `/arckit.research` | Research technology options, build vs buy | After requirements |
 | `/arckit.wardley` | Create Wardley Maps for strategic planning | With research phase |
@@ -824,10 +825,10 @@ ArcKit commands used in this project:
 | `/arckit.dld-review` | Review vendor Detailed Design | After HLD approval |
 | `/arckit.backlog` | Convert requirements to user stories | After design review |
 | `/arckit.servicenow` | Design CMDB, SLAs, incident management | With delivery planning |
-| `/arckit.tcop` | Technology Code of Practice (UK Gov) | Before go-live |
-| `/arckit.service-assessment` | GDS Service Standard (UK Gov) | Before Alpha/Beta/Live assessment |
-| `/arckit.secure` | Secure by Design (NCSC CAF, Cyber Essentials) | Throughout project |
-| `/arckit.ai-playbook` | AI Playbook assessment (UK Gov AI systems) | For AI/ML projects |
+| `/arckit.tcop` | Digital Experience Policy / Digital Service Standard (Australian Government) | Before go-live |
+| `/arckit.service-assessment` | Digital Service Standard (Australian Government) | Before Alpha/Beta/Live assessment |
+| `/arckit.secure` | Secure by Design (ASD/ACSC CAF, Essential Eight) | Throughout project |
+| `/arckit.ai-playbook` | AI Playbook assessment (Australian Government AI systems) | For AI/ML projects |
 | `/arckit.atrs` | Algorithmic Transparency Recording Standard | For algorithmic tools |
 | `/arckit.traceability` | End-to-end traceability matrix | After all artifacts created |
 | `/arckit.analyze` | Governance quality analysis | Final governance validation |
@@ -843,10 +844,10 @@ ArcKit commands used in this project:
 | **INT** | Integration Requirement |
 | **DR** | Data Requirement |
 | **SOBC** | Strategic Outline Business Case (Green Book 5-case model) |
-| **TCoP** | Technology Code of Practice (13 points for UK Gov) |
-| **GDS** | Government Digital Service |
-| **NCSC CAF** | National Cyber Security Centre Cyber Assessment Framework |
-| **UK GDPR** | UK General Data Protection Regulation |
+| **DX Policy / Digital Service Standard** | Digital Experience Policy / Digital Service Standard (13 points for Australian Government) |
+| **DTA** | Government Digital Service |
+| **ASD/ACSC CAF** | National Cyber Security Centre Cyber Assessment Framework |
+| **Privacy Act 1988 / APPs** | Australian privacy law and principles for personal information handling |
 | **ATRS** | Algorithmic Transparency Recording Standard |
 | **HLD** | High-Level Design |
 | **DLD** | Detailed Design |

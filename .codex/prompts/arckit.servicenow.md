@@ -7,7 +7,7 @@ description: "Create comprehensive ServiceNow service design with CMDB, SLAs, in
 You are an expert ServiceNow architect and ITSM consultant with deep knowledge of:
 - ServiceNow platform (ITSM, CMDB, Change Management, Incident Management)
 - ITIL v4 service management framework
-- UK Government GDS Service Standard and Technology Code of Practice
+- Australian Government Digital Service Standard and Digital Experience Policy / Digital Service Standard
 - Enterprise architecture and service design
 - Operational best practices for complex systems
 
@@ -27,7 +27,7 @@ Use `/arckit:servicenow` after completing:
 1. Requirements (`/arckit:requirements`)
 2. Architecture diagrams (`/arckit:diagram`) - especially C4 diagrams
 3. High-Level Design (HLD) or Detailed Design (DLD) - if available
-4. Technology Code of Practice assessment (`/arckit:tcop`) - for UK Gov projects
+4. Digital Experience Policy / Digital Service Standard assessment (`/arckit:tcop`) - for Australian Government projects
 
 This command should be run **before** implementation begins, so that operational processes are designed in parallel with development.
 
@@ -218,10 +218,10 @@ Generate:
 - Table mapping requirement ID → ServiceNow design element
 - Especially NFRs → SLAs
 
-**11. UK Government Specific Considerations** (if TCoP assessment exists):
-- GDS Service Standard compliance points
+**11. Australian Government Specific Considerations** (if policy/compliance assessment exists):
+- Digital Service Standard compliance points
 - ITIL v4 practices implemented
-- Digital Marketplace (G-Cloud) requirements if applicable
+- BuyICT/panel procurement requirements if applicable
 
 ### Phase 4: Validation
 
@@ -244,11 +244,11 @@ After generation, validate the design:
 - [ ] Monitoring covers all critical components
 - [ ] Escalation paths are clearly defined
 
-**UK Government Checks** (if applicable):
+**Australian Government Checks** (if applicable):
 - [ ] WCAG 2.2 AA monitoring mentioned (if public-facing)
-- [ ] UK GDPR considerations in CMDB attributes (PII processing)
+- [ ] Privacy Act / APP considerations in CMDB attributes (PII processing)
 - [ ] ITIL v4 practices correctly implemented
-- [ ] GDS Service Standard points addressed
+- [ ] Digital Service Standard points addressed
 
 ### Phase 5: Output and Recommendations
 
@@ -298,7 +298,7 @@ Do NOT:
 
 ## Example Usage
 
-### Example 1: UK Government DWP Benefits Chatbot
+### Example 1: Australian Government DWP Benefits Chatbot
 
 **User Input**:
 ```
@@ -315,14 +315,14 @@ Do NOT:
    - NFR: <500ms response time → Performance SLA
    - NFR: 10,000 concurrent users → Capacity target
    - Components: Web App, API, GPT-4 Integration, PostgreSQL → 4 CMDB CIs
-   - Dependencies: GOV.UK Verify, DWP Legacy Systems → 2 external Service CIs
+   - Dependencies: government digital services Verify, DWP Legacy Systems → 2 external Service CIs
 6. Generate comprehensive ServiceNow design with:
    - Service tier: Tier 1 (99.95% SLA)
    - Support: 24/7 on-call via PagerDuty
    - 6 CMDB CIs (service + 4 apps + 1 database)
    - P1 incident response: 15 minutes
    - Change approval: CAB required (high-risk AI system)
-   - UK GDPR compliance monitoring in place
+   - Privacy Act 1988 / APPs compliance monitoring in place
 
 ### Example 2: E-commerce Payment Service
 
@@ -364,10 +364,10 @@ Do NOT:
 - Don't promise 99.99% SLA without multi-region failover
 - Incident response times should match service tier and architecture maturity
 
-### 4. UK Government Compliance
-- For UK Gov projects, always include GDS Service Standard considerations
+### 4. Australian Government Compliance
+- For Australian Government projects, always include Digital Service Standard considerations
 - For HIGH-RISK AI, flag additional oversight in change management
-- For PII processing, include UK GDPR compliance monitoring
+- For PII processing, include Privacy Act 1988 / APPs compliance monitoring
 
 ### 5. ITIL v4 Alignment
 - Use ITIL v4 terminology (Service Value Chain, not Service Lifecycle)
@@ -391,7 +391,7 @@ Before completing the document, populate document information fields:
 - `[DOCUMENT_TYPE_NAME]` → Document purpose
 - `ARC-[PROJECT_ID]-SNOW-v[VERSION]` → Generated document ID
 - `[STATUS]` → "DRAFT" for new documents
-- `[CLASSIFICATION]` → Default to "OFFICIAL" (UK Gov) or "PUBLIC"
+- `[CLASSIFICATION]` → Default to "OFFICIAL" (Australian Government) or "PUBLIC"
 
 ### User-provided fields:
 - `[PROJECT_NAME]` → Full project name
@@ -473,10 +473,10 @@ Before completing the document, populate document information fields:
 **Purpose**: Prove that every requirement has operational support.
 **Key Content**: Table mapping requirement IDs to ServiceNow design elements.
 
-### Section 11: UK Government Specific Considerations
-**Purpose**: Address UK Gov compliance and best practices.
-**Key Content**: GDS Service Standard, ITIL v4, G-Cloud requirements.
-**CRITICAL**: Only include if TCoP assessment exists.
+### Section 11: Australian Government Specific Considerations
+**Purpose**: Address Australian Government compliance and best practices.
+**Key Content**: Digital Service Standard, ITIL v4, BuyICT requirements.
+**CRITICAL**: Only include if DX Policy / Digital Service Standard assessment exists.
 
 ## Validation Checklist
 
@@ -507,10 +507,10 @@ Before presenting the ServiceNow design to the user, verify:
 - [ ] Runbooks have specific commands (not generic instructions)
 - [ ] URLs, phone numbers, Slack channels specified (even if placeholder)
 
-### UK Government (if applicable):
-- [ ] GDS Service Standard points addressed
+### Australian Government (if applicable):
+- [ ] Digital Service Standard points addressed
 - [ ] ITIL v4 practices correctly implemented
-- [ ] UK GDPR compliance mentioned (if PII processing)
+- [ ] Privacy Act 1988 / APPs compliance mentioned (if PII processing)
 - [ ] WCAG 2.2 AA monitoring mentioned (if public-facing)
 - [ ] AITS transparency mentioned (if algorithmic decision-making)
 

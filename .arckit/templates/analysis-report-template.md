@@ -138,17 +138,17 @@
 
 ---
 
-## UK Government Compliance (if applicable)
+## Australian Government Compliance (if applicable)
 
-### Technology Code of Practice (TCoP)
+### Digital Experience Policy / Digital Service Standard
 
-| TCoP Point | Status | Evidence | Gaps |
+| Policy/Standard Control | Status | Evidence | Gaps |
 |------------|--------|----------|------|
 | 1. Define user needs | [✅/⚠️/❌] | [Evidence] | [Gaps] |
 | 2. Make things accessible | [✅/⚠️/❌] | [Evidence] | [Gaps] |
 | [Continue for all 13 points...] | | | |
 
-**TCoP Score**: [X]/130 ([percentage]%)
+**Policy/Standards Score**: [X]/[total] ([percentage]%)
 
 ### AI Playbook Compliance (if AI system)
 
@@ -167,7 +167,7 @@
 **Data Model Exists**: [✅ Yes / ❌ No]
 
 **Data Requirements Coverage**:
-| DR-ID | Entity | Covered in Model? | GDPR Basis | Issues |
+| DR-ID | Entity | Covered in Model? | Privacy basis | Issues |
 |-------|--------|-------------------|------------|--------|
 | DR-001 | [Entity] | [✅/❌] | [Basis] | [Issues] |
 
@@ -205,7 +205,7 @@
 #### [FINDING-ID]: [Finding Title]
 
 **Severity**: 🔴 CRITICAL
-**Category**: [Requirements Quality / Principles Alignment / Traceability / UK Gov Compliance / etc.]
+**Category**: [Requirements Quality / Principles Alignment / Traceability / Australian Government Compliance / etc.]
 **Location**: [file:line or artifact reference]
 
 **Description**:
@@ -273,7 +273,7 @@
 | Data Model | `projects/[project]/ARC-*-DATA-v*.md` | [Date] | [✅ Analyzed / ❌ Not Found] |
 | HLD | `projects/[project]/vendors/[vendor]/hld-v1.md` | [Date] | [✅ Analyzed / ❌ Not Found] |
 | DLD | `projects/[project]/vendors/[vendor]/dld-v1.md` | [Date] | [✅ Analyzed / ❌ Not Found] |
-| TCoP Assessment | `projects/[project]/ARC-*-TCOP-*.md` | [Date] | [✅ Analyzed / ❌ Not Found] |
+| Policy/standards assessment | `projects/[project]/ARC-*-TCOP-*.md` | [Date] | [✅ Analyzed / ❌ Not Found] |
 | Traceability Matrix | `projects/[project]/ARC-*-TRAC-*.md` | [Date] | [✅ Analyzed / ❌ Not Found] |
 
 ---
@@ -289,7 +289,7 @@
 - Stakeholder traceability
 - Risk coverage and mitigation
 - Business case alignment
-- UK Government compliance (if applicable)
+- Australian Government compliance (if applicable)
 - Design quality (HLD/DLD)
 
 **Severity Classification**:

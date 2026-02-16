@@ -44,7 +44,7 @@ Output: `projects/<id>/ARC-<id>-OPS-v1.0.md`
 | Knowledge Transfer | Training materials, SME contacts, onboarding |
 | Handover Checklist | Comprehensive go-live checklist |
 | Operational Metrics | MTTR, MTBF, change failure rate, deployment frequency |
-| UK Government Considerations | GDS Point 14, NCSC guidance, cross-government dependencies |
+| Australian Government Considerations | Digital Service Standard operational reliability, ASD/ACSC guidance, cross-government dependencies |
 
 ---
 

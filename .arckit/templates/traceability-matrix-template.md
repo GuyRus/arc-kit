@@ -217,7 +217,7 @@ Components in design that do NOT trace back to any requirement (potential over-e
 
 | NFR ID | Requirement | Design Controls | Evidence | Audit Trail | Status | Comments |
 |--------|-------------|-----------------|----------|-------------|--------|----------|
-| NFR-C-1 | GDPR compliance | [Data residency, deletion APIs] | [Compliance doc] | [Audit logs] | [✅ \| ⚠️ \| ❌] | |
+| NFR-C-1 | Privacy Act / APP compliance | [Data residency, deletion APIs] | [Compliance doc] | [Audit logs] | [✅ \| ⚠️ \| ❌] | |
 | NFR-C-2 | Audit logging | [7-year retention, immutable] | [Log config] | [Log analysis] | [✅ \| ⚠️ \| ❌] | |
 
 ---
