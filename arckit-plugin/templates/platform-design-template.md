@@ -9,7 +9,7 @@
 | **Document ID** | `{document_id}` |
 | **Document Type** | Platform Strategy Design |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
-| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
+| **Classification** | [OFFICIAL / PROTECTED / SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
 | **Version** | [VERSION] |
 | **Created Date** | [YYYY-MM-DD] |
@@ -54,7 +54,7 @@
 | **Entities Onboarded** (Supply Side) | [Number] | [Timeframe] |
 | **Entities Onboarded** (Demand Side) | [Number] | [Timeframe] |
 | **Transaction Volume** | [Number/month] | [Timeframe] |
-| **Transaction Value** | [£/month] | [Timeframe] |
+| **Transaction Value** | [A$/month] | [Timeframe] |
 | **Network Effects** | [Metric - e.g., % increase in value per new user] | [Timeframe] |
 
 ### Critical Success Factors
@@ -223,7 +223,7 @@ Entity portraits provide deep context on 3-5 key entities in the ecosystem. Each
 
 **Long-term Goals (18+ months):**
 1. [Goal 1 - e.g., "Become recognized leader in niche"]
-2. [Goal 2 - e.g., "Scale business to £500K annual revenue"]
+2. [Goal 2 - e.g., "Scale business to A$500K annual revenue"]
 3. [Goal 3 - e.g., "Reduce dependency on large clients"]
 
 #### 2.2.4 Gains Sought
@@ -232,7 +232,7 @@ Entity portraits provide deep context on 3-5 key entities in the ecosystem. Each
 
 1. **Customer Acquisition**
    - [How platform helps them find customers]
-   - **Value Metric**: [e.g., Cost per acquisition reduced from £500 to £50]
+   - **Value Metric**: [e.g., Cost per acquisition reduced from A$500 to A$50]
 
 2. **Operational Efficiency**
    - [How platform reduces their operational burden]
@@ -433,7 +433,7 @@ The Motivations Matrix maps how different entities' motivations align or conflic
 - **Entities**: E-001 (Supply) ↔ E-002 (Demand)
 - **Shared Motivation**: Both want efficient, low-friction transactions
 - **Platform Role**: Provide matching algorithm, reduce search costs, ensure quality
-- **Value Creation**: £X million in transaction value enabled annually
+- **Value Creation**: A$X million in transaction value enabled annually
 
 **Synergy 2: Quality Assurance**
 - **Entities**: E-002 (Demand) ↔ E-003 (Regulator)
@@ -488,10 +488,10 @@ The Transactions Board identifies all transactions in the ecosystem and analyzes
 
 | Transaction ID | Transaction Name | From Entity | To Entity | Existing? | Current Channel | Transaction Costs (Without Platform) | Platform Channel | Transaction Costs (With Platform) | Cost Reduction |
 |----------------|------------------|-------------|-----------|-----------|-----------------|--------------------------------------|------------------|-----------------------------------|----------------|
-| **T-001** | [e.g., Service Request] | E-002 (Demand) | E-001 (Supply) | ❌ No | N/A - doesn't happen | £500 (search) + 2 weeks (time) | Platform marketplace | £50 (search) + 2 days | **90% cost reduction** |
+| **T-001** | [e.g., Service Request] | E-002 (Demand) | E-001 (Supply) | ❌ No | N/A - doesn't happen | A$500 (search) + 2 weeks (time) | Platform marketplace | A$50 (search) + 2 days | **90% cost reduction** |
 | **T-002** | [e.g., Service Delivery] | E-001 (Supply) | E-002 (Demand) | ✅ Yes | Email, manual coordination | 5 hours coordination + 10% errors | Platform workflow | 30 min coordination + 2% errors | **90% time saved** |
 | **T-003** | [e.g., Payment] | E-002 (Demand) | E-001 (Supply) | ✅ Yes | Bank transfer, invoicing | 7 days payment + 5% bad debt | Platform escrow | 1 day payment + 0.5% bad debt | **86% faster** |
-| **T-004** | [e.g., Quality Verification] | E-003 (Regulator) | E-001 (Supply) | ✅ Yes | Annual manual audit | £2000/audit, 12-month cycles | Platform continuous monitoring | £200/year, real-time | **90% cost reduction** |
+| **T-004** | [e.g., Quality Verification] | E-003 (Regulator) | E-001 (Supply) | ✅ Yes | Annual manual audit | A$2000/audit, 12-month cycles | Platform continuous monitoring | A$200/year, real-time | **90% cost reduction** |
 | **T-005** | [e.g., Performance Feedback] | E-002 (Demand) | E-001 (Supply) | ❌ No | N/A - doesn't happen | No feedback loop | Platform rating system | Real-time ratings | **New capability** |
 
 **Add 10-20 transactions to comprehensively map the ecosystem**
@@ -499,32 +499,32 @@ The Transactions Board identifies all transactions in the ecosystem and analyzes
 ### 4.3 Transaction Cost Analysis
 
 **Total Ecosystem Transaction Costs (Without Platform):**
-- Search Costs: [£X per transaction]
-- Information Costs: [£Y per transaction]
-- Negotiation Costs: [£Z per transaction]
-- Coordination Costs: [£A per transaction]
-- Enforcement Costs: [£B per transaction]
-- **TOTAL**: [£X+Y+Z+A+B per transaction]
+- Search Costs: [A$X per transaction]
+- Information Costs: [A$Y per transaction]
+- Negotiation Costs: [A$Z per transaction]
+- Coordination Costs: [A$A per transaction]
+- Enforcement Costs: [A$B per transaction]
+- **TOTAL**: [A$X+Y+Z+A+B per transaction]
 
 **Total Ecosystem Transaction Costs (With Platform):**
-- Search Costs: [£reduced]
-- Information Costs: [£reduced]
-- Negotiation Costs: [£reduced]
-- Coordination Costs: [£reduced]
-- Enforcement Costs: [£reduced]
-- **TOTAL**: [£reduced total per transaction]
+- Search Costs: [A$reduced]
+- Information Costs: [A$reduced]
+- Negotiation Costs: [A$reduced]
+- Coordination Costs: [A$reduced]
+- Enforcement Costs: [A$reduced]
+- **TOTAL**: [A$reduced total per transaction]
 
 **Platform Value Creation**:
-- **Cost Reduction per Transaction**: [e.g., £450 saved per transaction]
+- **Cost Reduction per Transaction**: [e.g., A$450 saved per transaction]
 - **Annual Transaction Volume**: [e.g., 10,000 transactions/year]
-- **Annual Value Created**: [e.g., £4.5 million/year in transaction cost savings]
+- **Annual Value Created**: [e.g., A$4.5 million/year in transaction cost savings]
 
 ### 4.4 Transaction Enablement (New Transactions)
 
 **Transactions That Don't Exist Today (But Will With Platform):**
 
 1. **T-001: Service Request** (Supply-Demand matching)
-   - **Why it doesn't exist**: Search costs too high (£500), 2-week delay
+   - **Why it doesn't exist**: Search costs too high (A$500), 2-week delay
    - **How platform enables**: Automated matching, AI recommendations, instant quotes
    - **Value unlocked**: "Long tail" of small transactions become economically viable
 
@@ -543,9 +543,9 @@ The Transactions Board identifies all transactions in the ecosystem and analyzes
 | Transaction | Current Channel | Channel Problems | Platform Channel | Channel Improvements |
 |-------------|----------------|------------------|------------------|----------------------|
 | Service Discovery | Google search, word of mouth | Fragmented, no quality signal, high search cost | Platform marketplace with filters, ratings, AI matching | 90% faster discovery, quality-assured |
-| Contract Negotiation | Email, phone calls, manual contracts | Slow (2 weeks), legal costs (£1000+), template inconsistency | Platform standard terms, automated T&Cs, e-signature | 95% faster, £900 cost saving |
+| Contract Negotiation | Email, phone calls, manual contracts | Slow (2 weeks), legal costs (A$1000+), template inconsistency | Platform standard terms, automated T&Cs, e-signature | 95% faster, A$900 cost saving |
 | Payment Processing | Invoice → bank transfer | 7-30 day delay, manual reconciliation, bad debt risk | Platform escrow, automated invoicing, instant release | 1-day payment, zero bad debt |
-| Quality Assurance | Manual audits | Annual, expensive (£2000), retrospective | Platform real-time monitoring, automated compliance checks | Continuous, £1800 saving, proactive |
+| Quality Assurance | Manual audits | Annual, expensive (A$2000), retrospective | Platform real-time monitoring, automated compliance checks | Continuous, A$1800 saving, proactive |
 
 ---
 
@@ -717,8 +717,8 @@ The Learning Engine Canvas designs services that help ecosystem entities **conti
 - **Enterprise Tier**: Custom reports, dedicated account management, API access
 
 **Pricing:**
-- Premium: [£X/month per provider, £Y/month per buyer]
-- Enterprise: [£Z/month + % of transaction value]
+- Premium: [A$X/month per provider, A$Y/month per buyer]
+- Enterprise: [A$Z/month + % of transaction value]
 
 **Projected Adoption:**
 - Year 1: 20% of entities upgrade to premium
@@ -748,7 +748,7 @@ The Platform Experience Canvas integrates **peer-to-peer transactions** (from Tr
 
 | Stage | Entity Action | Platform Service | Transaction (from TB) | Learning Service (from LC) | Touchpoint | Pain Points Addressed |
 |-------|---------------|------------------|----------------------|----------------------------|------------|----------------------|
-| **1. Discovery** | Buyer searches for service provider | Search algorithm, filters, AI matching | T-001 (Service Request) | — | Website, mobile app | Reduces search cost from £500 to £50 |
+| **1. Discovery** | Buyer searches for service provider | Search algorithm, filters, AI matching | T-001 (Service Request) | — | Website, mobile app | Reduces search cost from A$500 to A$50 |
 | **2. Evaluation** | Buyer reviews provider profiles, ratings, credentials | Provider verification, rating system, compliance badges | — | Learning Service 4 (Procurement Intelligence) shows market pricing | Provider profile pages | Reduces information cost, quality assurance |
 | **3. Selection** | Buyer requests quote from 3 providers | Automated RFQ workflow, instant notifications | T-001 (Service Request) | — | RFQ form | Reduces negotiation time from 2 weeks to 2 days |
 | **4. Negotiation** | Buyer compares quotes, negotiates terms | Standard T&Cs, comparison tool, chat | T-003 (Payment terms) | — | Quote comparison screen | Reduces legal costs, standardizes contracts |
@@ -763,7 +763,7 @@ The Platform Experience Canvas integrates **peer-to-peer transactions** (from Tr
 | Metric | Target | Current (Without Platform) | Improvement |
 |--------|--------|---------------------------|-------------|
 | Time to First Purchase | 24 hours | 2-4 weeks | **95% faster** |
-| Cost to Find Provider | £50 | £500 | **90% cost reduction** |
+| Cost to Find Provider | A$50 | A$500 | **90% cost reduction** |
 | First Purchase Completion Rate | 80% | 30% | **167% improvement** |
 | Repeat Purchase Rate (90 days) | 60% | 10% | **500% improvement** |
 | Customer Satisfaction (NPS) | +50 | +10 | **+40 points** |
@@ -782,7 +782,7 @@ The Platform Experience Canvas integrates **peer-to-peer transactions** (from Tr
 |-------|---------------|------------------|----------------------|----------------------------|------------|----------------------|
 | **1. Signup** | Provider creates account | Registration wizard, identity verification | — | — | Signup form | Simple 10-min signup vs 2-week vendor onboarding |
 | **2. Profile Creation** | Provider describes services, pricing, credentials | Profile templates, credential verification, compliance checks | T-004 (Quality Verification) | Learning Service 2 (Best Practice Library) provides high-converting profile templates | Profile builder | Reduces time to create compelling profile by 80% |
-| **3. Verification** | Provider submits credentials for verification | Automated verification APIs (Companies House, professional bodies, insurance) | T-004 (Quality Verification) | — | Document upload | Reduces verification time from 2 weeks to 24 hours |
+| **3. Verification** | Provider submits credentials for verification | Automated verification APIs (ASIC, professional bodies, insurance) | T-004 (Quality Verification) | — | Document upload | Reduces verification time from 2 weeks to 24 hours |
 | **4. Training** | Provider completes platform training | Video tutorials, knowledge base, certification quiz | — | Learning Service 2 (Best Practice Library) | Learning portal | Reduces onboarding errors by 70% |
 | **5. Go Live** | Provider's profile goes live, starts appearing in search | SEO optimization, search ranking algorithm, featured listings | — | Learning Service 3 (Personalized Coaching) provides launch tips | Dashboard notification | Immediate visibility vs weeks of marketing effort |
 | **6. First Lead** | Provider receives first customer inquiry | Lead notification, lead scoring, response time tracking | T-001 (Service Request) | Learning Service 1 (Performance Analytics) shows response time benchmarks | Email, SMS, app notification | Increases conversion rate by 40% through timely response |
@@ -798,7 +798,7 @@ The Platform Experience Canvas integrates **peer-to-peer transactions** (from Tr
 | Time to Go Live | 48 hours | 2-4 weeks | **95% faster** |
 | Time to First Sale | 7 days | 3-6 months | **95% faster** |
 | Onboarding Completion Rate | 85% | 40% | **113% improvement** |
-| First Month Revenue (average provider) | £2,000 | £200 | **900% improvement** |
+| First Month Revenue (average provider) | A$2,000 | A$200 | **900% improvement** |
 | Provider Satisfaction (NPS) | +60 | +20 | **+40 points** |
 
 ---
@@ -811,42 +811,42 @@ The Platform Experience Canvas integrates **peer-to-peer transactions** (from Tr
 - **Commission on Transactions**: [X]% of transaction value
   - Supply side pays [Y]%, Demand side pays [Z]%
   - **Rationale**: [e.g., Split 5% supply / 5% demand to balance liquidity on both sides]
-  - **Projected Volume**: [e.g., £10M GMV Year 1 → £1M commission revenue]
+  - **Projected Volume**: [e.g., A$10M GMV Year 1 → A$1M commission revenue]
 
 **Subscription Fees:**
-- **Premium Memberships**: [£X/month per entity]
-  - **Supply Side Premium**: [e.g., £99/month for advanced analytics, featured listings]
-  - **Demand Side Premium**: [e.g., £199/month for procurement intelligence, unlimited RFQs]
-  - **Projected Adoption**: [e.g., 30% adoption rate → £500K ARR]
+- **Premium Memberships**: [A$X/month per entity]
+  - **Supply Side Premium**: [e.g., A$99/month for advanced analytics, featured listings]
+  - **Demand Side Premium**: [e.g., A$199/month for procurement intelligence, unlimited RFQs]
+  - **Projected Adoption**: [e.g., 30% adoption rate → A$500K ARR]
 
 **Learning Services:**
-- **Certification Programs**: [£X per certification]
-  - **Example**: [e.g., "Verified Professional" certification - £299]
-  - **Projected Volume**: [e.g., 1,000 certifications Year 1 → £300K revenue]
+- **Certification Programs**: [A$X per certification]
+  - **Example**: [e.g., "Verified Professional" certification - A$299]
+  - **Projected Volume**: [e.g., 1,000 certifications Year 1 → A$300K revenue]
 
 **Data and Insights:**
-- **Market Intelligence Reports**: [£X per report]
+- **Market Intelligence Reports**: [A$X per report]
   - **Target**: Enterprise buyers, industry analysts, investors
-  - **Projected Volume**: [e.g., 50 reports/year @ £5K each → £250K revenue]
+  - **Projected Volume**: [e.g., 50 reports/year @ A$5K each → A$250K revenue]
 
 **Total Projected Revenue Year 1**: [Sum of above]
 
 #### 6.4.2 Cost Structure
 
 **Technology Costs:**
-- Platform development and maintenance: [£X/year]
-- Cloud infrastructure (AWS/Azure): [£Y/year]
-- Third-party APIs (payment, verification, etc.): [£Z/year]
+- Platform development and maintenance: [A$X/year]
+- Cloud infrastructure (AWS/Azure): [A$Y/year]
+- Third-party APIs (payment, verification, etc.): [A$Z/year]
 
 **Operations Costs:**
-- Customer support: [£A/year]
-- Content moderation: [£B/year]
-- Compliance and legal: [£C/year]
+- Customer support: [A$A/year]
+- Content moderation: [A$B/year]
+- Compliance and legal: [A$C/year]
 
 **Sales and Marketing:**
-- Demand-side acquisition (CAC): [£D per buyer]
-- Supply-side acquisition (CAC): [£E per provider]
-- Marketing budget: [£F/year]
+- Demand-side acquisition (CAC): [A$D per buyer]
+- Supply-side acquisition (CAC): [A$E per provider]
+- Marketing budget: [A$F/year]
 
 **Total Costs Year 1**: [Sum of above]
 
@@ -856,27 +856,27 @@ The Platform Experience Canvas integrates **peer-to-peer transactions** (from Tr
 #### 6.4.3 Unit Economics
 
 **Per Transaction:**
-- Average Transaction Value: [£X]
-- Platform Commission (10%): [£Y]
-- Payment Processing Fee (2.5%): [£Z]
-- **Gross Profit per Transaction**: [£Y - Z]
+- Average Transaction Value: [A$X]
+- Platform Commission (10%): [A$Y]
+- Payment Processing Fee (2.5%): [A$Z]
+- **Gross Profit per Transaction**: [A$Y - Z]
 
 **Per Entity (Annual):**
-- Average Revenue per Supply Entity: [£X]
-- Average Cost to Serve Supply Entity: [£Y]
-- **Gross Profit per Supply Entity**: [£X - Y]
+- Average Revenue per Supply Entity: [A$X]
+- Average Cost to Serve Supply Entity: [A$Y]
+- **Gross Profit per Supply Entity**: [A$X - Y]
 
-- Average Revenue per Demand Entity: [£A]
-- Average Cost to Serve Demand Entity: [£B]
-- **Gross Profit per Demand Entity**: [£A - B]
+- Average Revenue per Demand Entity: [A$A]
+- Average Cost to Serve Demand Entity: [A$B]
+- **Gross Profit per Demand Entity**: [A$A - B]
 
 **Lifetime Value (LTV):**
-- Supply-side LTV: [£X over 3 years]
-- Demand-side LTV: [£Y over 3 years]
+- Supply-side LTV: [A$X over 3 years]
+- Demand-side LTV: [A$Y over 3 years]
 
 **Customer Acquisition Cost (CAC):**
-- Supply-side CAC: [£A]
-- Demand-side CAC: [£B]
+- Supply-side CAC: [A$A]
+- Demand-side CAC: [A$B]
 
 **LTV:CAC Ratios:**
 - Supply-side: [X:1] (Target: >3:1)
@@ -903,7 +903,7 @@ The Minimum Viable Platform (MVP) Canvas designs your validation strategy. It an
 - **Test Method**: [e.g., Landing page + email campaign + 20 provider interviews]
 
 **Assumption 2: Demand-Side Value Hypothesis**
-- **Assumption**: Enterprise buyers will use the platform because [reason - e.g., "they waste £500 and 2 weeks finding providers, and will pay premium for verified suppliers"]
+- **Assumption**: Enterprise buyers will use the platform because [reason - e.g., "they waste A$500 and 2 weeks finding providers, and will pay premium for verified suppliers"]
 - **Riskiness**: 🔴 **HIGH** - This is a critical assumption; if wrong, platform fails
 - **Evidence Needed**: [e.g., 10 buyers complete first purchase within 60 days]
 - **Test Method**: [e.g., Concierge service - manually match buyers to providers, test willingness to pay]
@@ -965,7 +965,7 @@ The Minimum Viable Platform (MVP) Canvas designs your validation strategy. It an
 
 ### 7.4 MVP Scope
 
-**Geographic Scope**: [e.g., "London only" to concentrate liquidity]
+**Geographic Scope**: [e.g., "Sydney/Canberra/Melbourne only" to concentrate liquidity]
 
 **Entity Scope**:
 - **Supply Side**: [e.g., "50 verified service providers in 3 categories"]
@@ -1032,8 +1032,8 @@ The Minimum Viable Platform (MVP) Canvas designs your validation strategy. It an
 | **Buyers Onboarded** | 10+ | [Measure] | |
 | **Transactions Completed** | 100+ | [Measure] | |
 | **Transaction Completion Rate** | 70%+ | [Measure] | |
-| **Average Transaction Value** | £500+ | [Measure] | |
-| **Gross Merchandise Value (GMV)** | £50K+ | [Measure] | |
+| **Average Transaction Value** | A$500+ | [Measure] | |
+| **Gross Merchandise Value (GMV)** | A$50K+ | [Measure] | |
 | **Provider NPS** | +20 or higher | [Measure] | |
 | **Buyer NPS** | +20 or higher | [Measure] | |
 | **Repeat Purchase Rate** | 40%+ | [Measure] | |
@@ -1053,14 +1053,14 @@ The Minimum Viable Platform (MVP) Canvas designs your validation strategy. It an
 
 | Category | Cost | Notes |
 |----------|------|-------|
-| **Product Development** | £80K | 2 developers × 3 months |
-| **Design** | £20K | 1 designer × 3 months |
-| **Infrastructure** | £5K | AWS, Stripe, tools for 6 months |
-| **Provider Acquisition** | £10K | Events, outreach, referral incentives |
-| **Buyer Acquisition** | £5K | Minimal (leveraging existing relationships) |
-| **Operations** | £10K | Customer support, compliance, manual verification |
-| **Contingency** | £20K | 15% buffer |
-| **TOTAL MVP Budget** | **£150K** | Seed funding requirement |
+| **Product Development** | A$80K | 2 developers × 3 months |
+| **Design** | A$20K | 1 designer × 3 months |
+| **Infrastructure** | A$5K | AWS, Stripe, tools for 6 months |
+| **Provider Acquisition** | A$10K | Events, outreach, referral incentives |
+| **Buyer Acquisition** | A$5K | Minimal (leveraging existing relationships) |
+| **Operations** | A$10K | Customer support, compliance, manual verification |
+| **Contingency** | A$20K | 15% buffer |
+| **TOTAL MVP Budget** | **A$150K** | Seed funding requirement |
 
 **Team**:
 - 1 Founder/CEO (strategy, fundraising, buyer relationships)
@@ -1099,7 +1099,7 @@ The Platform Design Canvas synthesizes insights from all previous canvases into 
 **Ecosystem Size (3-year target)**:
 - [X] supply-side entities
 - [Y] demand-side entities
-- [£Z] Gross Merchandise Value (GMV) annually
+- [A$Z] Gross Merchandise Value (GMV) annually
 
 **Reference**: Ecosystem Canvas (Section 1)
 
@@ -1120,7 +1120,7 @@ The Platform Design Canvas synthesizes insights from all previous canvases into 
 3. [Value 3 - e.g., "Procurement intelligence (20% cost savings)"]
 
 **For Ecosystem**:
-1. [Value 1 - e.g., "£4.5M annual transaction cost savings"]
+1. [Value 1 - e.g., "A$4.5M annual transaction cost savings"]
 2. [Value 2 - e.g., "Market transparency and quality standards"]
 3. [Value 3 - e.g., "Industry professionalization"]
 
@@ -1133,10 +1133,10 @@ The Platform Design Canvas synthesizes insights from all previous canvases into 
 **How do we monetize?**
 
 **Revenue Model**:
-1. **Transaction Fees**: [X]% commission = [£Y] revenue Year 1
-2. **Subscriptions**: [Premium memberships] = [£Z] ARR Year 1
-3. **Learning Services**: [Certifications, reports] = [£A] revenue Year 1
-4. **Total Revenue Year 1**: [£Y + Z + A]
+1. **Transaction Fees**: [X]% commission = [A$Y] revenue Year 1
+2. **Subscriptions**: [Premium memberships] = [A$Z] ARR Year 1
+3. **Learning Services**: [Certifications, reports] = [A$A] revenue Year 1
+4. **Total Revenue Year 1**: [A$Y + Z + A]
 
 **Pricing Rationale**: [Why entities will pay - e.g., "10% commission is 5x cheaper than current customer acquisition cost"]
 
@@ -1181,8 +1181,8 @@ The Platform Design Canvas synthesizes insights from all previous canvases into 
 3. **T-003**: Payment - reduces payment time by 86%, eliminates bad debt risk
 
 **Transaction Cost Reductions**:
-- **Total Cost Savings**: [£X per transaction]
-- **Annual Value Created**: [£Y million for ecosystem]
+- **Total Cost Savings**: [A$X per transaction]
+- **Annual Value Created**: [A$Y million for ecosystem]
 
 **Transaction Velocity Target**:
 - Year 1: [100 transactions/month]
@@ -1208,7 +1208,7 @@ The Platform Design Canvas synthesizes insights from all previous canvases into 
 4. **Procurement Intelligence** - market data, pricing benchmarks
 5. **Vendor Management Toolkit** - SLA monitoring, scorecards
 
-**Learning Revenue**: [£X/year from premium subscriptions and certifications]
+**Learning Revenue**: [A$X/year from premium subscriptions and certifications]
 
 **Learning Impact**:
 - [e.g., "Providers using analytics improve ratings by 0.5 stars in 3 months"]
@@ -1245,36 +1245,26 @@ The Platform Design Canvas synthesizes insights from all previous canvases into 
 
 ### 8.5 Australian Government Context
 
-**Government as a Platform (GaaP) Alignment**:
+**Australian Government Architecture (AGA) Alignment**:
 
-This platform embodies GaaP principles:
-1. **Shared Services**: [How platform provides shared capability - e.g., "Verification-as-a-Service for all government departments"]
-2. **Ecosystem Orchestration**: [How platform enables ecosystem - e.g., "SME suppliers access £10M government procurement opportunities"]
+This platform embodies AGA principles:
+1. **Shared Capabilities**: [How platform provides shared capability - e.g., "Verification-as-a-Service for all government departments"]
+2. **Ecosystem Orchestration**: [How platform enables ecosystem - e.g., "SME suppliers access A$10M government procurement opportunities"]
 3. **Data Sharing**: [How platform enables data flows - e.g., "Supplier performance data shared across departments"]
 
-**Digital Experience Policy and Digital Service Standard (DSS) Compliance**:
+**Digital Service Standard (DSS) Compliance**:
 
-| DX Policy / DSS Point | Compliance Approach |
+| DSS Criterion | Compliance Approach |
 |------------|---------------------|
-| **Point 5: Use cloud first** | Platform runs on [AWS/Azure/GCP], serverless architecture |
-| **Point 8: Share, reuse and collaborate** | Integrates Australia.gov.au Pay, Notify; open-sources platform design |
-| **Point 11: Define your purchasing strategy** | Platform IS the purchasing strategy - BuyICT/AusTender channels model |
+| **Criterion 5: Make it secure** | ISM/PSPF compliance, IRAP assessment readiness |
+| **Criterion 7: Use open standards and common platforms** | Integrates myGovID, RAM; open-sources platform design |
+| **Criterion 9: Make it accessible** | WCAG 2.1 Level AA compliance, mobile-first design |
 
-**Digital Service Standard Implications**:
+**BuyICT Positioning**:
 
-| Service Standard Point | Platform Consideration |
-|------------------------|------------------------|
-| **Point 2: Solve a whole problem for users** | Platform solves entire procurement lifecycle, not just matching |
-| **Point 5: Make sure everyone can use the service** | WCAG 2.1 AA compliance, mobile-first design |
-| **Point 9: Create a secure service** | Essential Eight Plus, penetration testing, data encryption |
-| **Point 13: Use common platforms and components** | Australia.gov.au Pay, Notify, Design System integration |
-
-**BuyICT/AusTender channels Positioning**:
-
-This platform operates within BuyICT/AusTender channels ecosystem:
-- **BuyICT cloud panels**: [If applicable - e.g., "Platform listed as BuyICT cloud panels SaaS service"]
-- **specialist sourcing**: [If applicable - e.g., "Platform providers are specialist sourcing suppliers"]
-- **Differentiation**: [How this platform differs from/complements BuyICT/AusTender channels - e.g., "BuyICT/AusTender channels provides discovery; we provide transaction engine, learning services, and ecosystem orchestration"]
+This platform operates within the BuyICT ecosystem:
+- **BuyICT Panels**: [If applicable - e.g., "Platform listed as BuyICT cloud panel SaaS service"]
+- **Differentiation**: [How this platform differs from/complements BuyICT - e.g., "BuyICT provides discovery; we provide transaction engine, learning services, and ecosystem orchestration"]
 
 ---
 
@@ -1337,7 +1327,7 @@ This platform operates within BuyICT/AusTender channels ecosystem:
 3. **Fundraising**:
    - [ ] Pitch deck based on Platform Design Canvas
    - [ ] Financial model (GMV, revenue, unit economics from Platform Experience Canvas)
-   - [ ] Raise £150K seed funding for MVP
+   - [ ] Raise A$150K seed funding for MVP
 
 ### 10.2 MVP Build Phase (Months 2-4)
 
@@ -1397,7 +1387,7 @@ This platform operates within BuyICT/AusTender channels ecosystem:
    - [ ] Target: Self-sustaining growth (10% MoM)
 
 3. **Funding**:
-   - [ ] Series A fundraising (£2-5M)
+   - [ ] Series A fundraising (A$2-5M)
    - [ ] Use Platform Design Canvas as strategic foundation
 
 ---
@@ -1436,7 +1426,7 @@ This platform operates within BuyICT/AusTender channels ecosystem:
 - [ ] **MVP Canvas**: Critical assumptions, MVP scope, liquidity strategy, validation metrics
 - [ ] **Platform Design Canvas**: All 6 building blocks synthesized
 - [ ] **Traceability**: Links to stakeholders, requirements, Wardley maps, risks
-- [ ] **Australian Government Context**: GaaP, DX Policy / DSS, Service Standard, BuyICT/AusTender channels positioning
+- [ ] **Australian Government Context**: AGA, Digital Service Standard, BuyICT/AusTender positioning
 
 ### Appendix C: Glossary
 
