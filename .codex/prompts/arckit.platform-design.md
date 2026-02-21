@@ -342,7 +342,7 @@ This returns a document ID like: `ARC-001-PLAT-v1.0`
      5. Transaction Engine: Core transactions, cost reductions, velocity targets
      6. Learning Engine: Learning services summary, revenue, impact
    - Strategic Alignment: Link to stakeholders, requirements, principles, Wardley maps
-   - Australian Government Context: GaaP, DX Policy / DSS, Service Standard, BuyICT/AusTender channels
+   - Australian Government Context: AGA, Digital Service Standard, BuyICT/AusTender channels
 
 5. **Auto-populate from artifacts** (from Step 3):
    - Entity portraits from ARC-*-STKE-*.md
@@ -351,9 +351,8 @@ This returns a document ID like: `ARC-001-PLAT-v1.0`
    - Governance from ARC-000-PRIN-*.md
 
 6. **Australian Government Context** (if applicable):
-   - Government as a Platform (GaaP) principles
-   - Digital Experience Policy and Digital Service Standard (DSS) alignment
-   - Digital Service Standard implications
+   - Australian Government Architecture (AGA) Business Capabilities
+   - Digital Service Standard (Criteria 6: Don't reinvent the wheel) alignment
    - BuyICT/AusTender channels positioning (BuyICT cloud panels, specialist sourcing)
 
 7. **Generate complete traceability** (Section 9):
@@ -407,7 +406,7 @@ After writing the file, provide a **concise summary** (NOT the full document):
 **Ecosystem Size (3-year target)**:
 - {X} supply-side entities
 - {Y} demand-side entities
-- £{Z}M Gross Merchandise Value (GMV) annually
+- A${Z}M Gross Merchandise Value (GMV) annually
 
 ## The 8 PDT Canvases (Summary)
 
@@ -431,14 +430,14 @@ After writing the file, provide a **concise summary** (NOT the full document):
 ### 4. Transactions Board
 - **Transactions Cataloged**: {N} transactions
 - **Transaction Cost Reduction**: {X}% average reduction
-- **Annual Value Created**: £{Y}M in transaction cost savings
+- **Annual Value Created**: A${Y}M in transaction cost savings
 - **Key Transaction**: {T-ID}: {name} - {cost reduction}%
 
 ### 5. Learning Engine
 - **Learning Services**: {N} services designed
 - **Supply-Side Services**: {list}
 - **Demand-Side Services**: {list}
-- **Learning Revenue**: £{X}K/year projected
+- **Learning Revenue**: A${X}K/year projected
 
 ### 6. Platform Experience
 - **Core Journeys Mapped**: {N} journeys
@@ -452,15 +451,15 @@ After writing the file, provide a **concise summary** (NOT the full document):
 - **MVP Scope**: {X} features IN, {Y} features deferred
 - **Liquidity Strategy**: {brief description of chicken-and-egg solution}
 - **Validation Target**: {X} transactions in 90 days
-- **MVP Budget**: £{X}K
+- **MVP Budget**: A${X}K
 - **Go/No-Go Metrics**: {N} success criteria
 
 ### 8. Platform Design Canvas (Synthesis)
-- **Value Creation**: £{X} per transaction cost savings
-- **Value Capture**: {commission}% transaction fee + £{Y}/mo subscriptions
+- **Value Creation**: A${X} per transaction cost savings
+- **Value Capture**: {commission}% transaction fee + A${Y}/mo subscriptions
 - **Network Effects**: {type} - {brief description}
 - **Defensibility**: {key moat}
-- **Year 1 Revenue**: £{X}K projected
+- **Year 1 Revenue**: A${X}K projected
 
 ## Auto-Population Sources
 
@@ -486,8 +485,8 @@ After writing the file, provide a **concise summary** (NOT the full document):
 ## Australian Government Context
 
 {IF applicable:}
-✅ **Government as a Platform (GaaP)** alignment documented
-✅ **Digital Experience Policy and Digital Service Standard (DSS)** compliance approach
+✅ **Australian Government Architecture (AGA)** alignment documented
+✅ **Digital Experience Policy and Digital Service Standard** compliance approach
 ✅ **Digital Service Standard** implications analyzed
 ✅ **BuyICT/AusTender channels** positioning (BuyICT cloud panels/specialist sourcing)
 
@@ -513,7 +512,7 @@ After writing the file, provide a **concise summary** (NOT the full document):
 3. **Fundraising**:
    - Pitch deck based on Platform Design Canvas
    - Financial model (GMV, revenue, unit economics)
-   - Raise £{X}K seed funding for MVP
+   - Raise A${X}K seed funding for MVP
 
 ## Files Created
 
@@ -566,7 +565,7 @@ The Platform Design Canvas (Section 8) provides a single-page synthesis perfect 
    - Network effects analysis
    - MVP validation strategy
 
-4. **Australian Government Context**: If project is Australian Government/public sector, emphasize GaaP, DX Policy / DSS, BuyICT/AusTender channels
+4. **Australian Government Context**: If project is Australian Government/public sector, emphasize AGA, Digital Service Standard, BuyICT/AusTender channels
 
 5. **Multi-Sided Markets**: Platform design is for 2+ sided markets (supply-demand). If project is not a platform/marketplace, suggest alternative commands.
 

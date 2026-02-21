@@ -1,15 +1,15 @@
 ---
-description: "Create Strategic Outline Business Case (SOBC) using Australian Government Department of Finance business case guidance 5-case model"
+description: "Create Strategic Outline Business Case (SOBC) using Australian Government Commonwealth Investment Framework"
 ---
 
 You are helping an enterprise architect create a Strategic Outline Business Case (SOBC) to justify investment in a technology project.
 
 ## About SOBC
 
-A **Strategic Outline Business Case (SOBC)** is the first stage in the Australian Government business case lifecycle:
-- **SOBC**: Strategic Outline (this command) - High-level case for change, done BEFORE detailed requirements
-- **OBC**: Outline Business Case - After some design work, with refined costs
-- **FBC**: Full Business Case - Detailed case with accurate costs, ready for final approval
+A **Strategic Outline Business Case (SOBC)** is the first stage in the Australian Government investment lifecycle:
+- **SOBC**: Strategic Outline (this command) - High-level case for change, done BEFORE detailed requirements. Often aligns with **First Pass** approval.
+- **OBC**: Outline Business Case - After some design work, with refined costs. Often aligns with **Second Pass** preparation.
+- **FBC**: Full Business Case - Detailed case with accurate costs, ready for final approval.
 
 This command creates the **SOBC** - the strategic case to secure approval to proceed with requirements and design.
 
@@ -76,7 +76,7 @@ This command creates a **Strategic Outline Business Case (SOBC)** aligned to Aus
    **Organizational Financial Policies**:
    - **Look in**: `projects/000-global/policies/`
    - **File types**: PDF, Word, Markdown
-   - **What to extract**: Spending thresholds, approval gates, Department of Finance business case guidance discount rates, procurement rules
+   - **What to extract**: Spending thresholds, approval gates, discount rates (default 7% per Dept of Finance), procurement rules
    - **Examples**: `spending-policy.pdf`, `procurement-thresholds.docx`
 
    **Enterprise-Wide Investment Frameworks**:
@@ -90,9 +90,9 @@ This command creates a **Strategic Outline Business Case (SOBC)** aligned to Aus
    **Important**: This command works without external documents. They enhance output quality but are never blocking.
 
 4. **Determine project context**:
-   - If user mentions "Australian Government", "public sector", "department", "ministry" → Use full AU Commonwealth business case format
-   - Otherwise → Use Department of Finance business case guidance structure but adapt language for private sector
-   - Check stakeholder analysis for government-specific stakeholders (Minister, Permanent Secretary, Treasury, NAO)
+   - If user mentions "Australian Government", "public sector", "department", "agency" → Use full AU Commonwealth business case format
+   - Otherwise → Use standard business case structure but adapt language for private sector
+   - Check stakeholder analysis for government-specific stakeholders (Minister, Secretary, Finance, ANAO)
 
 5. **Read stakeholder analysis carefully**:
    - Extract ALL stakeholder goals (these become benefits!)
@@ -107,7 +107,7 @@ This command creates a **Strategic Outline Business Case (SOBC)** aligned to Aus
 
    **Question 1** — header: `Options`, multiSelect: false
    > "How many strategic options should be evaluated in the Economic Case?"
-   - **4 options (Recommended)**: Do Nothing + Minimal + Balanced + Comprehensive — standard Department of Finance business case guidance options appraisal
+   - **4 options (Recommended)**: Do Nothing + Minimal + Balanced + Comprehensive — standard Finance/DTA options appraisal
    - **3 options**: Do Nothing + two alternatives — suitable for straightforward investment decisions
    - **5 options**: Do Nothing + four alternatives — for complex programmes with multiple viable approaches
 
@@ -168,7 +168,7 @@ This command creates a **Strategic Outline Business Case (SOBC)** aligned to Aus
 
    **C. Commercial Case**:
    - **Procurement Strategy**:
-     - Australian Government: BuyICT and CPR-compliant sourcing route (BuyICT, specialist sourcing, Australian Government hosting controls)
+     - Australian Government: BuyICT / Digital Marketplace and CPR-compliant sourcing route
      - Private Sector: Build vs Buy vs Partner
    - **Market Assessment**:
      - Supplier availability
@@ -318,7 +318,7 @@ Provide:
 **Pattern 1: Technology Modernization**:
 - Strategic Case: Legacy systems failing, stakeholder frustration high
 - Economic Case: 3-5 options from do-nothing to complete rebuild
-- Commercial Case: Cloud migration, BuyICT and CPR-compliant sourcing BuyICT
+- Commercial Case: Cloud migration, BuyICT sourcing
 - Financial Case: A$2-5M over 3 years, CFO approval needed
 - Management Case: Phased migration, minimal disruption
 
@@ -341,35 +341,35 @@ Provide:
 For Australian Government/public sector projects, ensure:
 
 1. **Strategic Case includes**:
-   - Policy alignment (manifesto commitments, departmental objectives)
+   - Policy alignment (Budget measures, departmental objectives)
    - Public value (not just efficiency, but citizen outcomes)
-   - Minister/Permanent Secretary drivers
+   - Minister/Accountable Authority drivers
    - Parliamentary accountability
 
 2. **Economic Case includes**:
    - Social Cost Benefit Analysis (if required)
-   - Department of Finance business case guidance discount rates (3.5% standard)
-   - Optimism bias adjustment (add contingency)
+   - Department of Finance discount rates (7% standard real)
+   - Contingency (P50/P90)
    - Wider economic benefits
 
 3. **Commercial Case includes**:
-   - BuyICT and CPR-compliant sourcing assessment (BuyICT, specialist sourcing)
-   - SME participation commitment
-   - Social value (minimum 10% weighting)
-   - Open source consideration
+   - BuyICT / Digital Marketplace sourcing assessment
+   - SME participation commitment (CPRs)
+   - Broader benefits to the economy
+   - Indigenous Procurement Policy (IPP) consideration
 
 4. **Financial Case includes**:
-   - Department of Finance approval thresholds
-   - Spending Review settlement alignment
+   - Finance approval thresholds
+   - Budget / MYEFO settlement alignment
    - Value for money assessment
    - Whole-life costs
 
 5. **Management Case includes**:
-   - Service Standard assessment plan
+   - Digital Service Standard assessment plan
    - DTA engagement
-   - Cyber security (ASD/ACSC consultation)
-   - Accessibility (WCAG 2.2 AA compliance)
-   - Data protection (OAIC/DPIA requirements)
+   - Cyber security (ISM/PSPF)
+   - Accessibility (WCAG 2.1 AA compliance)
+   - Data protection (Privacy Act 1988 / APPs requirements)
 
 ## Error Handling
 
@@ -435,13 +435,13 @@ After writing the file, show ONLY a concise summary:
 - Key Benefits: [Top 3-5 benefits with A$ values]
 
 **Commercial Case**:
-- Procurement Route: [e.g., BuyICT and CPR-compliant sourcing, BuyICT, Open tender]
+- Procurement Route: [e.g., BuyICT, Open tender]
 - Contract Strategy: [e.g., Single supplier, Framework, Multi-supplier]
 - Risk Allocation: [Public/Private split]
 
 **Financial Case**:
 - Total Budget Required: A$[Amount]
-- Funding Source: [e.g., Spending Review settlement, reserves]
+- Funding Source: [e.g., Budget/MYEFO, reserves]
 - Affordability: [Confirmed/To be confirmed]
 - Cash Flow: [Summary of phasing]
 
@@ -452,10 +452,10 @@ After writing the file, show ONLY a concise summary:
 - Timeline: [Start] - [End] ([Duration])
 
 **Australian Government Specific** (if applicable):
-- Department of Finance business case guidance Compliance: [5-case model, options appraisal, sensitivity analysis]
+- Commonwealth Investment Framework Compliance: [5-case model, options appraisal]
 - Digital Experience Policy: [Points addressed]
 - Service Standard: [Assessment plan]
-- Social Value: [% weighting in procurement]
+- Broader Economic Benefits: [SME/IPP consideration]
 
 ### What's in the Document
 
@@ -467,7 +467,7 @@ After writing the file, show ONLY a concise summary:
 - Management Case: Delivery capability (10-15 pages)
 - Appendices: Stakeholder analysis, risk register, assumptions
 
-**Total Length**: [X] pages (ready for senior leadership and Treasury approval)
+**Total Length**: [X] pages (ready for senior leadership and Finance approval)
 
 ### Next Steps
 

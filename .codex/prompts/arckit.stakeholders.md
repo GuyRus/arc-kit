@@ -119,7 +119,7 @@ $ARGUMENTS
    - Acknowledge conflicts honestly
    - Provide practical resolution strategies
    - Include both quantitative and qualitative measures
-   - Consider Australian Government context if applicable (Minister accountability, public scrutiny, parliamentary questions, transparency requirements)
+   - Consider Australian Government context if applicable (Minister accountability, Senate Estimates, ANAO audits, OAIC oversight)
 
 7. **Write the output**:
    - Write to `projects/{project-dir}/ARC-{PROJECT_ID}-STKE-v1.0.md`
@@ -141,7 +141,7 @@ Before completing the document, populate document information fields:
 - `[DOCUMENT_TYPE_NAME]` → Document purpose
 - `ARC-[PROJECT_ID]-STKE-v[VERSION]` → Generated document ID
 - `[STATUS]` → "DRAFT" for new documents
-- `[CLASSIFICATION]` → Default to "OFFICIAL" (Australian Government) or "PUBLIC"
+- `[CLASSIFICATION]` → Default to "OFFICIAL" (Australian Government) or "PROTECTED"
 
 ### User-provided fields:
 - `[PROJECT_NAME]` → Full project name
@@ -190,7 +190,7 @@ You should:
   - G-1: Reduce infrastructure costs 40% by end of Year 1
   - G-2: Migrate 80% of workloads to cloud in 18 months
   - G-3: Zero unplanned downtime during migration
-  - G-4: Achieve ISO 27001 certification
+  - G-4: Achieve ISO 27001 / ISM certification
 - Map to outcomes:
   - O-1: A$2M annual cost savings (CFO satisfied)
   - O-2: 50% faster time-to-market for new features (CTO satisfied)
@@ -202,21 +202,21 @@ You should:
 
 **Example 2**: Australian Government AI project
 ```
-/arckit:stakeholders Analyze stakeholders for a DWP benefits chatbot where the Minister wants quick delivery, Civil Service wants due diligence, Citizens need accuracy, and OAIC requires data protection
+/arckit:stakeholders Analyze stakeholders for a DWP benefits chatbot where the Minister wants quick delivery, Public Service wants due diligence, Citizens need accuracy, and OAIC requires data protection
 ```
 
 You should identify Australian Government specific drivers:
 - Minister: Deliver manifesto commitment, respond to parliamentary questions (POLITICAL)
-- Permanent Secretary: Ensure proper governance, avoid NAO criticism (RISK/ACCOUNTABILITY)
+- Agency Head: Ensure proper governance, avoid ANAO criticism (RISK/ACCOUNTABILITY)
 - Service Delivery: Reduce call center volume, improve citizen experience (OPERATIONAL)
 - Digital/Technology: Modern architecture, attract digital talent (STRATEGIC)
 - Citizens: Fast accurate answers, accessible service (USER)
 - OAIC: Data protection compliance, transparency (REGULATORY)
-- Treasury: Value for money, spending controls (FINANCIAL)
+- Finance: Value for money, spending controls (FINANCIAL)
 
 Include Australian Government-specific outcomes like:
 - Ministerial dashboard metrics for parliamentary questions
-- NAO audit readiness
+- ANAO audit readiness
 - Digital Service Standard assessment pass rate
 - Digital Experience Policy compliance
 - User satisfaction on government digital services

@@ -9,7 +9,7 @@
 | **Document ID** | ARC-[PROJECT_ID]-DATA-v[VERSION] |
 | **Document Type** | Data Model |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
-| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
+| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL:Sensitive / PROTECTED / SECRET / TOP SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
 | **Version** | [VERSION] |
 | **Created Date** | [YYYY-MM-DD] |
@@ -45,11 +45,11 @@
   - 🔴 Restricted: [X] entities (payment card data, health records, etc.)
 
 ### Compliance Summary
-- **Privacy Act 1988 / APPs/Privacy Act 1988 Status**: [COMPLIANT | NEEDS_DPIA | GAPS_IDENTIFIED]
+- **Privacy Act 1988 + APPs Status**: [COMPLIANT | NEEDS_PIA | GAPS_IDENTIFIED]
 - **PII Entities**: [X] entities contain personally identifiable information
-- **Data Protection Impact Assessment (DPIA)**: [REQUIRED | NOT_REQUIRED | COMPLETED]
+- **Privacy Impact Assessment (PIA)**: [REQUIRED | NOT_REQUIRED | COMPLETED]
 - **Data Retention**: [Longest retention period] (driven by [regulation/requirement])
-- **Cross-Border Transfers**: [YES | NO] (Australia to [countries])
+- **Overseas Disclosure (APP 8)**: [YES | NO] (Australia to [countries], or overseas service providers)
 
 ### Key Data Governance Stakeholders
 - **Data Owner (Business)**: [Name/Role] - Accountable for data quality and usage
@@ -217,20 +217,17 @@ erDiagram
 
 #### Privacy & Compliance
 
-**Privacy Act 1988 / APPs/Privacy Act 1988 Considerations**:
-- **Contains PII**: [YES | NO]
-- **PII Attributes**: [List of PII columns: email, first_name, last_name, phone, etc.]
-- **Legal Basis for Processing**: [Consent | Contract | Legal Obligation | Vital Interests | Public Task | Legitimate Interests]
-- **Data Subject Rights**:
-  - **Right to Access**: Provide [entity] records via API endpoint [/api/subject-access-request]
-  - **Right to Rectification**: Allow updates via [admin portal | API endpoint]
-  - **Right to Erasure**: [Hard delete | Anonymize] records on request
-  - **Right to Portability**: Export in [JSON | CSV | XML] format
-  - **Right to Object**: [Support opt-out | Not applicable]
-  - **Right to Restrict Processing**: [Support restriction flag | Not applicable]
-- **Data Breach Impact**: [HIGH | MEDIUM | LOW] - If this entity is breached, impact on data subjects
-- **Cross-Border Transfers**: [None | EU | US | Other] - Where data may be transferred
-- **Data Protection Impact Assessment (DPIA)**: [REQUIRED | NOT_REQUIRED]
+**Privacy Act 1988 + APPs Considerations**:
+- **Contains Personal Information**: [YES | NO]
+- **Contains Sensitive Information (Privacy Act s 6(1))**: [YES | NO]
+- **Personal Information Attributes**: [List columns: email, name, phone, identifiers, images, etc.]
+- **Sensitive Information Attributes**: [List columns if applicable: health, biometrics, criminal record, etc.]
+- **Collection/Use/Disclosure Basis (practical justification)**: [Reasonably necessary for functions/activities | Required/authorised by law | Consent | Permitted situation | Other]
+- **Access & Correction (APP 12/APP 13)**: [Process/endpoint/admin pathway/FOI pathway for agencies]
+- **Retention & Disposal (APP 11.3)**: [Retention basis + destroy/de-identify method, subject to records/Archives constraints]
+- **Overseas Disclosure (APP 8)**: [YES | NO] - Reasonable steps and any APP 8.2 exception relied upon
+- **Privacy Impact Assessment (PIA)**: [REQUIRED | NOT_REQUIRED] (use `/arckit.dpia` if required)
+- **NDB Scheme Exposure**: [HIGH | MEDIUM | LOW] - Would compromise likely cause serious harm?
 
 **Sector-Specific Compliance**:
 - **PCI-DSS**: [Applicable if payment card data] - Special handling requirements
@@ -440,70 +437,59 @@ erDiagram
 
 **Total PII Attributes**: [X] attributes across [Y] entities
 
-**Special Category Data** (sensitive PII under Privacy Act 1988 / APPs Article 9):
-- [None | Health data | Biometric data | etc.] in entity [E-XXX]
-- Requires explicit consent or legal basis beyond standard Privacy Act 1988 / APPs
+**Sensitive Information** (Privacy Act s 6(1)) — subset of personal information:
+- [None | Health information | Genetic information | Biometric information/templates | Criminal record | Political opinions | etc.] in entity [E-XXX]
+- Generally requires consent to collect unless an exception applies; handle with additional controls and strict access
 
-#### Legal Basis for Processing
+#### Collection/Use/Disclosure Basis (Privacy Act 1988 + APPs)
 
-| Entity | Purpose | Legal Basis | Notes |
-|--------|---------|-------------|-------|
-| E-001: Customer | Customer account management | Contract (Privacy Act 1988 / APPs Art 6(1)(b)) | Processing necessary to perform contract |
-| E-002: Transaction | Payment processing | Contract (Privacy Act 1988 / APPs Art 6(1)(b)) | Financial transaction execution |
-| E-003: PaymentMethod | Payment processing | Contract (Privacy Act 1988 / APPs Art 6(1)(b)) | Store for future transactions with consent |
-| E-004: RefundRequest | Refund processing | Contract (Privacy Act 1988 / APPs Art 6(1)(b)) | Customer service obligation |
+| Entity | Purpose | Basis | APPs Focus | Notes |
+|--------|---------|-------|-----------|-------|
+| E-001: Customer | Customer account management | Reasonably necessary for functions/activities | APP 3, APP 5, APP 6, APP 10 | Document notices and secondary uses |
+| E-002: Transaction | Payment processing and record keeping | Required/authorised by law and reasonably necessary | APP 6, APP 11.3 | Confirm retention/records basis |
+| E-003: PaymentMethod | Payment processing | Consent and/or reasonably necessary | APP 3, APP 6, APP 11 | Do not store prohibited card data; minimise data |
+| E-004: RefundRequest | Refund processing | Reasonably necessary | APP 6, APP 10 | Redact free-text fields where possible |
 
 **Consent Management** (if applicable):
 - **Opt-in Required**: Marketing communications (E-001.marketing_consent)
 - **Consent Storage**: E-XXX.consent_timestamp, consent_method, consent_version
 - **Withdrawal**: User can withdraw consent via [account settings | API endpoint]
 
-#### Data Subject Rights Implementation
+#### Individual Access & Correction (APP 12/APP 13)
 
-**Right to Access (Subject Access Request)**:
-- **Endpoint**: [/api/v1/subject-access-request]
-- **Authentication**: Multi-factor authentication required
-- **Response Format**: JSON containing all personal data
-- **Response Time**: Within 30 days (Privacy Act 1988 / APPs requirement)
-- **Entities Included**: E-001, E-002, E-003, E-004 (all entities with PII)
+**Access (APP 12)**:
+- **Pathway**: [Self-service portal | Support request | Agency administrative access | FOI pathway]
+- **Identity Verification**: [MFA | ID checks] appropriate to risk and sensitivity
+- **Response Format**: [JSON | CSV | PDF] (include enough context to be meaningful)
+- **Response Time**: [X] business days (per APP 12/FOI and internal policy)
+- **Entities Included**: [List entities containing personal information]
 
-**Right to Rectification**:
-- **Endpoint**: [/api/v1/customer/profile] (PUT)
-- **UI**: Customer can update own data via account settings
-- **Admin Override**: Admin portal for data steward corrections
-- **Propagation**: Updates synced to downstream systems within [X] hours
+**Correction (APP 13)**:
+- **Pathway**: [Self-service update | Support request | Data steward correction workflow]
+- **Propagation**: Corrections synced to downstream systems within [X] hours/days
+- **Annotation**: If correction is disputed or impracticable, provide an annotation process where applicable
 
-**Right to Erasure (Right to be Forgotten)**:
-- **Method**: [Hard delete | Pseudonymization | Anonymization]
-- **Process**:
-  1. Customer submits erasure request via [account settings | support ticket]
-  2. Data Protection Officer reviews request (legal obligations check)
-  3. If approved, [delete | anonymize] PII within 30 days
-  4. Notify downstream systems to delete/anonymize
-- **Exceptions**: Cannot delete if legal obligation to retain (e.g., financial records for tax law)
-- **Retention Override**: Transaction financial data retained for 7 years per tax law (PII anonymized)
+#### Retention, Disposal, and De-identification (APP 11.3)
 
-**Right to Data Portability**:
-- **Endpoint**: [/api/v1/data-export]
-- **Format**: JSON or CSV (machine-readable)
-- **Scope**: All customer-provided data (E-001, E-003)
-- **Exclusions**: Derived data, system-generated data
+**APP 11.3 Trigger**: When personal information is no longer needed for any permitted purpose, take reasonable steps to destroy or de-identify it, unless it is part of a Commonwealth record or required by law/court order to be retained.
 
-**Right to Object**:
-- **Marketing Opt-out**: E-001.marketing_consent = false
-- **Profiling Opt-out**: [Applicable | Not applicable]
+**Disposal Method**:
+- **Destroy**: irretrievable deletion where lawful and reasonable
+- **De-identify**: remove identifiers and manage re-identification risk (document method + residual risk)
 
-**Right to Restrict Processing**:
-- **Flag**: E-001.processing_restricted = true
-- **Effect**: Data retained but not used for business operations (frozen)
+**Practical Workflow**:
+1. Identify candidate records by retention schedule
+2. Confirm any records/Archives, legal hold, or statutory retention constraints
+3. Destroy or de-identify in primary + replicas + backups as appropriate
+4. Record audit evidence (what, when, why, and who approved)
 
 #### Data Retention Schedule
 
 | Entity | Active Retention | Archive Retention | Total Retention | Legal Basis | Deletion Method |
 |--------|------------------|-------------------|-----------------|-------------|-----------------|
-| E-001: Customer | Active account + 2 years | 5 years | 7 years | Tax law, Privacy Act 1988 / APPs | Anonymize PII, retain transactions |
-| E-002: Transaction | 3 years | 4 years | 7 years | Tax law (HMRC) | Hard delete after 7 years |
-| E-003: PaymentMethod | Active account | N/A | Until deleted by user | Privacy Act 1988 / APPs | Hard delete on user request |
+| E-001: Customer | Active account + [X] | [Y] | [Z] | Records/retention authority; operational need; Privacy Act 1988 + APPs | De-identify or destroy when lawful and reasonable |
+| E-002: Transaction | [X] | [Y] | [Z] | Records/financial retention obligations (confirm) | Destroy after retention; de-identify where feasible |
+| E-003: PaymentMethod | Active account | N/A | Until deleted by user | Consent; operational need; Privacy Act 1988 + APPs | Destroy on request where lawful and reasonable |
 | E-004: RefundRequest | 3 years | 4 years | 7 years | Financial records | Hard delete after 7 years |
 
 **Retention Policy Enforcement**:
@@ -517,44 +503,56 @@ erDiagram
 - **Backup Storage**: [AU | regional | offshore] - [Cloud provider, region]
 - **Downstream Systems**: [List countries where data is transferred]
 
-**AU-International Data Transfers**:
-- **Adequacy Decision**: Assess legal transfer mechanism and safeguards for each destination jurisdiction
-- **Standard Contractual Clauses (SCCs)**: [Required | Not required]
+**Overseas Disclosure (APP 8)**:
+- **Assessment**: Document whether personal information is disclosed to an overseas recipient (including offshore hosting, support, subcontractors, or SaaS tools)
+- **Reasonable Steps (APP 8.1)**: Contractual controls, assurance evidence, security controls, audit rights, incident notification, and data handling requirements
+- **Exception (APP 8.2)**: If relying on an exception (e.g., consent after being expressly informed, required/authorised by law, etc.), document it explicitly
+- **Accountability (s 16C)**: Record where the entity remains accountable for overseas recipient acts/practices that would breach the APPs
 
-**AU-US Data Transfers**:
-- **Transfer mechanism**: [Contractual controls | Adequacy mechanism | Other lawful basis]
-- **Standard Contractual Clauses (SCCs)**: Required for US transfers
-- **Supplementary Measures**: [Encryption in transit, encryption at rest, access controls]
+#### Privacy Impact Assessment (PIA)
 
-#### Data Protection Impact Assessment (DPIA)
+**PIA Required**: [YES | NO]
 
-**DPIA Required**: [YES | NO]
+**PIA Triggers (examples)**:
+- Large-scale personal information handling, especially where data provenance is unclear
+- Sensitive information (Privacy Act s 6(1)) and/or high-consequence domains
+- AI/ML and automated decision making with significant impacts on individuals
+- Complex data supply chains (multiple vendors, offshore processing, or data sharing arrangements)
 
-**Triggers for DPIA** (Privacy Act 1988 / APPs Article 35):
-- ✅ Large-scale processing of special category data (health, biometric, etc.)
-- ✅ Systematic monitoring of publicly accessible areas (CCTV, tracking)
-- ✅ Automated decision-making with legal or significant effects (credit scoring, profiling)
-- ⬜ Other high-risk processing
+**PIA Status**: [NOT_STARTED | IN_PROGRESS | COMPLETED]
 
-**DPIA Status**: [NOT_STARTED | IN_PROGRESS | COMPLETED]
-
-**DPIA Summary** (if completed):
+**PIA Summary** (if completed):
 - **Privacy Risks Identified**: [List key privacy risks]
 - **Mitigation Measures**: [List controls to reduce risks]
 - **Residual Risk**: [HIGH | MEDIUM | LOW]
-- **OAIC Consultation Required**: [YES | NO] - If high residual risk, consult OAIC before processing
 
-#### OAIC Registration & Notifications
+#### Notifiable Data Breaches (NDB) Scheme Readiness
 
-**OAIC Registration**: [REGISTERED | REQUIRED | EXEMPT]
-- **Registration Number**: [OAIC-XXXXXXXX]
-- **Renewal Date**: [Annual renewal date]
+**NDB Coverage**: [IN_SCOPE | OUT_OF_SCOPE | UNKNOWN] (confirm whether the entity is covered by the Privacy Act NDB scheme)
 
-**Data Breach Notification**:
-- **Breach Detection**: Automated monitoring, security alerts
-- **OAIC Notification Deadline**: Within 72 hours if high risk to rights and freedoms
-- **Data Subject Notification**: Without undue delay if high risk
-- **Breach Log**: All breaches logged (even if not reportable) in incident management system
+**Response Workflow** (align to OAIC guidance):
+- **Contain**: Stop unauthorised access/disclosure and preserve evidence
+- **Assess**: Take reasonable steps to assess suspected eligible data breaches within 30 days
+- **Notify**: If likely to result in serious harm and not prevented by remedial action, notify OAIC + affected individuals as soon as practicable
+
+**Owners**:
+- **Incident Response Lead**: [Name/Role]
+- **Privacy Officer**: [Name/Role]
+- **Security Lead**: [Name/Role]
+
+---
+
+### AI Data Supply Chain (If AI/ML In Scope)
+
+If the project uses AI/ML (including GenAI, decision support, or ML models), document an AI-focused data inventory aligned to the Australian Government AI technical standard (DTA) and OAIC guidance:
+
+- **Dataset inventory**: training/validation/test datasets; reference/context datasets (e.g., RAG); prompt datasets; evaluation datasets.
+- **Per-dataset record**: purpose, source/provenance, owner/steward, licence/usage constraints, collection method, personal information flags, sensitive information flags, retention/disposal method.
+- **Supply chain and lineage**: map key transformation points across datasets and into model inputs/outputs; record where de-identification occurs and how re-identification risk is managed.
+- **Data quality**: define quality criteria, perform profiling and remediation, and manage labelling quality where applicable.
+- **Representativeness and bias**: measure representativeness and document bias risks + mitigations.
+- **Archival and destruction**: plan for dataset archival and destruction, including test/training datasets.
+- **Prompt/inference logs**: retention, access controls, redaction, and any overseas disclosure to vendors (APP 8).
 
 ---
 
@@ -764,7 +762,7 @@ erDiagram
 | DR-003 | Store payment methods securely | E-003: PaymentMethod | payment_method_id, method_type, last_four, card_brand | ✅ Implemented | PCI-DSS compliant tokenization |
 | DR-004 | Support refund workflows | E-004: RefundRequest | refund_id, transaction_id, refund_amount, reason, status | ✅ Implemented | |
 | DR-005 | Maintain merchant registry | E-005: Merchant | merchant_id, merchant_name, merchant_code, contact_email | ✅ Implemented | |
-| DR-006 | Privacy Act 1988 / APPs: Right to erasure | E-001: Customer | [All PII fields] | ✅ Implemented | Anonymization process defined |
+| DR-006 | Privacy Act 1988 + APPs: APP 11.3 disposal when no longer needed | E-001: Customer | [All personal/sensitive info fields] | ✅ Implemented | Disposal workflow defined (destroy/de-identify) |
 | DR-007 | PCI-DSS: Secure card storage | E-003: PaymentMethod | [Tokenized PAN] | ✅ Implemented | PAN not stored, token only |
 | DR-008 | 7-year retention for financial records | E-002: Transaction | [All fields] | ✅ Implemented | Archive policy defined |
 
@@ -907,7 +905,7 @@ erDiagram
 - **PII (Personally Identifiable Information)**: Data that can identify an individual (email, name, phone, etc.)
 - **Privacy Act 1988 / APPs**: Australian privacy law and principles governing personal information handling.
 - **Privacy Act 1988**: Primary Australian privacy legislation for Commonwealth entities and APP entities.
-- **DPIA (Data Protection Impact Assessment)**: Assessment of privacy risks for high-risk processing
+- **PIA (Privacy Impact Assessment)**: Assessment of privacy risks for projects involving personal information (ArcKit uses `/arckit.dpia` for the generated assessment pack)
 - **PCI-DSS (Payment Card Industry Data Security Standard)**: Security standard for handling payment card data
 - **Cardinality**: Number of instances in a relationship (one-to-one, one-to-many, many-to-many)
 - **Foreign Key**: Attribute that references the primary key of another entity
@@ -919,7 +917,9 @@ erDiagram
 ### References
 
 - [Department of Finance investment and assurance guidance](https://www.finance.gov.au/government/assurance-reviews-and-risk-assessment) - Business case and assurance guidance (including data-related costs))
-- [OAIC Data Protection](https://ico.org.uk/for-organisations/guide-to-data-protection/) - Privacy Act 1988 / APPs compliance guidance
+- [OAIC APP guidelines](https://www.oaic.gov.au/privacy/australian-privacy-principles-guidelines) - Privacy Act 1988 + APPs guidance
+- [OAIC Guide to undertaking privacy impact assessments](https://www.oaic.gov.au/privacy/privacy-assessments/privacy-impact-assessments) - PIA process guidance
+- [OAIC Notifiable Data Breaches guidance](https://www.oaic.gov.au/privacy/notifiable-data-breaches) - NDB scheme overview and reporting
 - [PCI Security Standards](https://www.pcisecuritystandards.org/) - Payment card data security
 - [ASD/ACSC cloud security guidance](https://www.cyber.gov.au/) - Australian Government cyber security guidance
 - [DTA standards and policy guidance](https://www.digital.gov.au/policy) - Australian Government digital policy and standards
@@ -943,4 +943,3 @@ erDiagram
 **ArcKit Version**: [VERSION]
 **Project**: [PROJECT_NAME]
 **Model**: [AI_MODEL]
-

@@ -99,10 +99,10 @@ $ARGUMENTS
 
    **Non-Functional Requirements (NFR-xxx)**:
    - Performance (response time, throughput, concurrent users)
-   - Security (authentication, authorisation, encryption, compliance)
+   - Security (authentication, authorisation, encryption, compliance - ISM/PSPF)
    - Scalability (growth projections, load handling)
    - Reliability (uptime SLA, MTBF, MTTR)
-   - Compliance (regulations, standards, certifications)
+   - Compliance (Privacy Act 1988 / APPs, WCAG 2.1 AA, Archives Act)
 
    **Integration Requirements (INT-xxx)**:
    - Upstream/downstream systems
@@ -112,9 +112,9 @@ $ARGUMENTS
 
    **Data Requirements (DR-xxx)**:
    - Data models and schemas
-   - Data retention and archival
-   - Data privacy and classification
-   - Migration requirements
+   - Data retention and archival (Archives Act)
+   - Data privacy and classification (OFFICIAL/PROTECTED)
+   - Data residency (HCF Certified)
 
 6. **Ensure traceability**: Each requirement MUST have:
    - Unique ID (BR-001, FR-001, NFR-P-001, etc.)
@@ -243,7 +243,7 @@ The footer should be populated with:
 | **Document ID** | ARC-001-REQ-v1.0 |
 | **Document Type** | {Document purpose} |
 | **Project** | Windows 10 to Windows 11 Migration (Project 001) |
-| **Classification** | OFFICIAL-SENSITIVE |
+| **Classification** | OFFICIAL:Sensitive |
 | **Status** | DRAFT |
 | **Version** | 1.0 |
 | **Created Date** | 2025-10-29 |
@@ -291,7 +291,7 @@ The footer should be populated with:
    - [Which stakeholders won/lost in conflicts]
 
    **Compliance Requirements**:
-   - [List key compliance frameworks: PCI-DSS, Privacy Act 1988 / APPs, HIPAA, etc.]
+   - [List key compliance frameworks: Privacy Act 1988 / APPs, ISM, PSPF, WCAG 2.1 AA]
 
    **Key Gaps/TBDs**:
    - [List any major gaps that need follow-up]
@@ -327,6 +327,7 @@ You should:
   - NFR: PCI-DSS compliance, 99.99% uptime, <2s response time, encryption
   - Integration: CRM, accounting system, fraud service
   - Data: Transaction records, PII handling, 7-year retention
+  - Compliance: Privacy Act 1988 / APPs, IRAP assessment readiness
 - Write to `projects/001-payment-gateway-modernization/ARC-001-REQ-v1.0.md`
 - Confirm completion with summary
 
@@ -336,4 +337,4 @@ You should:
 - Be specific and measurable (avoid "fast", use "<2 seconds")
 - Include WHY (rationale) not just WHAT
 - Make acceptance criteria testable
-- Flag compliance requirements clearly (PCI-DSS, HIPAA, SOX, Privacy Act 1988 / APPs, etc.)
+- Flag compliance requirements clearly (ISM, PSPF, Privacy Act 1988 / APPs, WCAG)

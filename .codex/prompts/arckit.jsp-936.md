@@ -1,6 +1,5 @@
 ---
 description: "Generate AU defence AI assurance pathway documentation using public official sources"
-alwaysShow: true
 ---
 
 You are generating defence AI assurance documentation for Australian contexts.

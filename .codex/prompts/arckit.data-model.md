@@ -84,7 +84,7 @@ $ARGUMENTS
    - Total number of entities identified
    - Data classification summary (Public, Internal, Confidential, Restricted)
    - PII/sensitive data identified (Yes/No)
-   - Privacy Act 1988 / APPs/Privacy Act 1988 compliance status
+   - Privacy Act 1988 + APPs compliance status
    - Key data governance stakeholders
 
    **B. Visual Entity-Relationship Diagram (ERD)**:
@@ -146,17 +146,16 @@ $ARGUMENTS
    - **Master Data Management**: Which system is "source of truth" for each entity
 
    **G. Privacy & Compliance**:
-   - **Privacy Act 1988 / APPs/Privacy Act 1988 Compliance**:
-     - List all PII attributes across all entities
-     - Document legal basis for processing (consent, contract, legitimate interest, etc.)
-     - Data subject rights implementation (access, rectification, erasure, portability)
-     - Data retention schedules per entity
-     - Cross-border data transfer considerations (AU and international transfer mechanisms)
-   - **Data Protection Impact Assessment (DPIA)**:
-     - Is DPIA required? (Yes if high-risk processing of PII)
-     - Key privacy risks identified
-     - Mitigation measures
-     - OAIC notification requirements
+   - **Privacy Act 1988 + APPs Compliance**:
+     - List all personal information attributes across all entities (and flag *sensitive information* separately)
+     - Map key obligations and evidence to: APP 8 (overseas disclosure), APP 11 (security + destruction/de-identification), APP 12 (access), APP 13 (correction)
+     - Document collection/use/disclosure basis at a practical level (e.g., required/authorised by law, reasonably necessary for functions/activities, consent, permitted situations) with citations to requirements
+     - Data retention schedules per entity, including disposal method (destroy vs de-identify) and records/Archives constraints where applicable
+     - Cross-border disclosure assessment under APP 8, including reasonable steps and any APP 8.2 exception relied upon, and accountability under s 16C
+   - **Privacy Impact Assessment (PIA)**:
+     - Is a PIA required? (Yes if high privacy risk, large-scale personal/sensitive information, AI/automated decisions, or complex supply chains)
+     - Key privacy risks identified and mitigation measures
+     - Notifiable Data Breaches (NDB) scheme readiness and response owners (contain/assess/notify)
    - **Sector-Specific Compliance**:
      - PCI-DSS: If payment card data (special handling requirements)
      - HIPAA: If healthcare data (US projects)
@@ -198,6 +197,15 @@ $ARGUMENTS
    - **Backup and Recovery**: RPO/RTO targets, backup frequency
    - **Data Archival**: When to move data from hot to cold storage
    - **Testing Data**: Anonymization/pseudonymization for test environments
+
+   **K. AI Data Supply Chain (If AI/ML In Scope)**:
+   - If requirements indicate AI/ML (GenAI, decision support, ML models), include an AI-focused data inventory aligned to the Australian Government AI technical standard:
+     - Dataset inventory: training/validation/test; reference/context (RAG); prompt datasets; evaluation datasets
+     - Provenance and ownership: dataset sources, stewards, licensing/usage constraints
+     - Data transformation lineage: map key transformation points into model inputs/outputs
+     - Data quality criteria and profiling/remediation; representativeness and bias management
+     - Archival and destruction planning for datasets (including test/training datasets)
+   - If training/fine-tuning on large datasets, explicitly flag privacy and consent constraints (especially sensitive information), and record mitigations (de-identification, filtering, opt-out/consent where required).
 
 7. **Australian Government Compliance** (if applicable):
    - **Government Security Classifications**: OFFICIAL, SECRET, TOP SECRET
@@ -253,7 +261,7 @@ Before completing the document, populate document information fields:
    - How many total attributes across all entities
    - How many entities contain PII (privacy-sensitive)
    - Data classification breakdown (Public/Internal/Confidential/Restricted)
-   - Privacy Act 1988 / APPs compliance status (compliant / needs DPIA / gaps identified)
+   - Privacy Act 1988 / APPs compliance status (compliant / needs PIA / gaps identified)
    - Key data governance stakeholders identified
    - Requirements coverage (% of DR-xxx requirements modeled)
    - Suggested next steps (e.g., "Review data model with data protection officer before proceeding to HLD" or "Run `/arckit:hld-review` to validate database technology choices")
@@ -269,7 +277,7 @@ You should:
 - Generate comprehensive data model:
   - Mermaid ERD showing Customer, Transaction, PaymentMethod, RefundRequest entities
   - Detailed entity catalog with attributes, PII flags, retention periods
-  - Privacy Act 1988 / APPs compliance: PII identified, legal basis documented, DPIA required
+  - Privacy Act 1988 / APPs compliance: personal/sensitive information identified, collection/use/disclosure basis documented, PIA required if high risk
   - Data governance: CFO owns financial data, DPO owns PII, IT owns storage
   - CRUD matrix: Payment API can create transactions, Admin can read all, Reporting read-only
   - PCI-DSS compliance: Payment card data encrypted, tokenized, not stored long-term
@@ -287,7 +295,8 @@ You should:
 - **PII requires special handling**: encryption at rest, encryption in transit, access controls, audit logging, retention limits
 - **Use Mermaid ERD syntax** for GitHub-renderable diagrams (not PlantUML or other formats)
 - **Data quality metrics should be measurable** (not "high quality", use "99% accuracy")
-- **Consider data lifecycle**: creation, updates, archival, deletion (Privacy Act 1988 / APPs "right to erasure")
+- **Consider data lifecycle**: creation, updates, archival, disposal (APP 11.3 destruction/de-identification when no longer needed, subject to records/Archives constraints)
+- **Access & correction**: ensure processes exist for APP 12/APP 13 (and FOI pathways for agencies)
 - **Reference architecture principles** from any `ARC-000-PRIN-*.md` file in `projects/000-global/` if they exist
 - **Flag any DR-xxx requirements that cannot be modeled** (gaps for requirements clarification)
 
@@ -344,8 +353,8 @@ After writing the file, show ONLY a concise summary:
 
 **Privacy Act 1988 / APPs Compliance**:
 - PII Entities: [List entities containing PII]
-- Legal Basis: [e.g., Consent, Contract, Legitimate Interest]
-- DPIA Required: [Yes/No]
+- Collection/Use/Disclosure Basis: [e.g., reasonably necessary, required/authorised by law, consent]
+- PIA Required: [Yes/No]
 - Retention Periods: [Range, e.g., 6 months to 7 years]
 
 **Data Governance**:
@@ -385,7 +394,7 @@ After writing the file, show ONLY a concise summary:
 - Number of PII attributes
 - Number of data requirements mapped
 - Number of data owners assigned
-- DPIA required (yes/no)
+- PIA required (yes/no)
 - Compliance frameworks applicable
 
 Generate the data model now, write to file using Write tool, and show only the summary above.

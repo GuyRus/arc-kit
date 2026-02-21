@@ -101,7 +101,7 @@ For each category:
 
 **A. Vendor Discovery**
 - WebSearch: "[category] SaaS 2024", "[category] vendors comparison", "[category] market leaders Gartner"
-- If Australian Government: WebSearch "government digital services [capability]", "BuyICT and CPR-compliant sourcing [category]"
+- If Australian Government: WebSearch "Australia.gov.au [capability]", "BuyICT and AusTender channels [category]"
 
 **B. Vendor Details** (for each shortlisted vendor)
 - WebFetch vendor pricing pages to extract pricing tiers, transaction fees, free tiers
@@ -117,16 +117,16 @@ For each category:
 - WebFetch GitHub repos for stars, forks, last commit, license, contributors
 
 **E. Australian Government (if applicable)**
-- WebFetch BuyICT or agency-approved sourcing panels
-- WebFetch government digital services platform pages (One Login, Pay, Notify, Forms)
-- Check DX Policy / Digital Service Standard compliance for each option
+- WebFetch BuyICT and AusTender channels BuyICT cloud panels search
+- WebFetch Australia.gov.au platform pages (One Login, Pay, Notify, Forms)
+- Check DX Policy / DSS compliance for each option
 
 **F. Cost and TCO**
 - Search for pricing calculators, cost comparisons, TCO analyses
 - Include hidden costs (integration, training, exit costs)
 
 **G. Compliance**
-- Search for ISO 27001, SOC 2, Privacy Act 1988 / APPs compliance, Australian data residency
+- Search for ISO 27001, SOC 2, Privacy Act 1988 (APPs) compliance, Australian data residency
 - Check for security incidents in past 2 years
 
 ### Step 6: Build vs Buy Analysis
@@ -135,7 +135,7 @@ For each category, compare:
 - **Build Custom**: Effort, cost, timeline, skills needed, 3-year TCO
 - **Buy SaaS**: Vendor options, subscription costs, integration effort, 3-year TCO
 - **Adopt Open Source**: Hosting costs, setup effort, maintenance, support, 3-year TCO
-- **government digital services Platform** (if Australian Government): Free/subsidized options, eligibility, integration
+- **Australia.gov.au Platform** (if Australian Government): Free/subsidized options, eligibility, integration
 
 Provide a recommendation with rationale.
 
@@ -221,7 +221,7 @@ Return ONLY a concise summary including:
 - Verify review counts (10+ reviews more credible)
 - Check date of information (prefer current year content)
 - Include URLs as citations in research findings
-- For Australian Government projects: ALWAYS check BuyICT and CPR-compliant sourcing first, ALWAYS check government digital services platforms
+- For Australian Government projects: ALWAYS check BuyICT and AusTender channels first, ALWAYS check Australia.gov.au platforms
 - Research only categories relevant to actual requirements
 - TCO projections must be 3 years minimum
 
@@ -230,5 +230,5 @@ Return ONLY a concise summary including:
 - **No requirements found**: Stop immediately, tell user to run `/arckit:requirements`
 - **Vendor pricing hidden**: Mark as "Contact for quote" or "Enterprise pricing"
 - **Reviews scarce**: Note "Limited public reviews available"
-- **Australian Government project with no BuyICT and CPR-compliant sourcing results**: Document the gap, suggest alternatives
+- **Australian Government project with no BuyICT and AusTender channels results**: Document the gap, suggest alternatives
 - **Category with no suitable products**: Recommend "Build Custom" with effort estimate

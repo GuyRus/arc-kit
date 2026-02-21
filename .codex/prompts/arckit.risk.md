@@ -2,15 +2,14 @@
 description: "Create comprehensive risk register aligned to Australian Government risk governance principles"
 ---
 
-You are helping an enterprise architect create a comprehensive risk register following the Australian Government Orange Book (2023) risk management framework.
+You are helping an enterprise architect create a comprehensive risk register following the Commonwealth Risk Management Policy (2023) and ISO 31000 risk management framework.
 
-## About Orange Book Risk Management
+## About Commonwealth Risk Management
 
 The Commonwealth risk baseline is set through PGPA risk requirements, the Commonwealth Risk Management Policy, and supporting Finance guidance. It provides:
 
-- **Part I**: 5 Risk Management Principles (Governance, Integration, Collaboration, Risk Processes, Continual Improvement)
-- **Part II**: Risk Control Framework (4-pillar "house" structure)
-- **4Ts Risk Response Framework**: Tolerate, Treat, Transfer, Terminate
+- **Elements 1-9**: Framework for managing risk (Governance, Framework, Responsibility, Process, Culture, Communication, Shared Risk, Capability, Review)
+- **ISO 31000 Response Framework**: Avoid, Reduce, Share, Accept
 - **Risk Assessment Methodology**: Likelihood × Impact for Inherent and Residual risk
 - **Risk Appetite**: Amount of risk organization is prepared to accept/tolerate
 
@@ -22,12 +21,12 @@ $ARGUMENTS
 
 ## Instructions
 
-This command creates a **comprehensive risk register** following Department of Finance Orange Book principles and integrates with ArcKit's stakeholder-driven workflow.
+This command creates a **comprehensive risk register** following Department of Finance and ISO 31000 principles and integrates with ArcKit's stakeholder-driven workflow.
 
 **When to use this:**
 - **After**: `/arckit:stakeholders` (MANDATORY - every risk needs an owner)
 - **Before**: `/arckit:sobc` (SOBC Management Case Part E uses risk register)
-- **Purpose**: Identify, assess, and manage project risks using Orange Book methodology
+- **Purpose**: Identify, assess, and manage project risks using Commonwealth methodology
 
 1. **Read Available Documents**:
 
@@ -91,7 +90,7 @@ This command creates a **comprehensive risk register** following Department of F
    **Important**: This command works without external documents. They enhance output quality but are never blocking.
 
 4. **Determine project context**:
-   - If user mentions "Australian Government", "public sector", "department", "ministry" → Include regulatory/parliamentary risks
+   - If user mentions "Australian Government", "public sector", "department", "ministry" → Include regulatory/parliamentary risks, PGPA Act compliance
    - If user mentions specific industry → Include industry-specific risk categories
    - Check stakeholder analysis for context on project scale, complexity, stakeholders
 
@@ -102,9 +101,9 @@ This command creates a **comprehensive risk register** following Department of F
    - Extract stakeholder drivers (drivers under threat = strategic risks)
    - Note: EVERY risk MUST have a risk owner from stakeholder analysis
 
-6. **Identify risks across Orange Book categories**:
+6. **Identify risks across categories**:
 
-   Use these risk categories aligned to Orange Book framework:
+   Use these risk categories aligned to ISO 31000 framework:
 
    **STRATEGIC Risks**:
    - Risks to strategic objectives and organizational goals
@@ -125,9 +124,9 @@ This command creates a **comprehensive risk register** following Department of F
    - Example: "Cloud costs exceed budget by 40%"
 
    **COMPLIANCE/REGULATORY Risks**:
-   - Non-compliance with laws, regulations, policies
-   - Audit findings, regulatory penalties
-   - Data protection (Privacy Act 1988 / APPs, Privacy Act 1988), procurement rules
+   - Non-compliance with laws, regulations, policies (PGPA Act, Privacy Act)
+   - Audit findings (ANAO), regulatory penalties
+   - Data protection (Privacy Act 1988 / APPs), procurement rules (CPR)
    - Example: "Privacy Act 1988 / APPs non-compliance due to data transfer"
 
    **REPUTATIONAL Risks**:
@@ -137,7 +136,7 @@ This command creates a **comprehensive risk register** following Department of F
    - Example: "High-profile service outage damages citizen trust"
 
    **TECHNOLOGY Risks**:
-   - Technical failure, cyber security, legacy system issues
+   - Technical failure, cyber security (ISM/PSPF), legacy system issues
    - Vendor lock-in, technology obsolescence
    - Integration challenges, scalability limitations
    - Example: "Legacy integration fails during peak load"
@@ -199,23 +198,23 @@ This command creates a **comprehensive risk register** following Department of F
    **Residual Impact** (1-5): Impact after controls applied
    **Residual Risk Score**: Likelihood × Impact (after controls)
 
-   **Risk Response (4Ts Framework)**:
+   **Risk Response (ISO 31000 Framework)**:
 
    Select ONE primary response:
 
-   - **TOLERATE**: Accept the risk (within risk appetite, cost of mitigation exceeds benefit)
+   - **ACCEPT**: Retain the risk (within risk appetite, cost of mitigation exceeds benefit)
      - When to use: Low residual risk score (1-5), within appetite
      - Example: "Minor UI inconsistency - aesthetic only, no functional impact"
 
-   - **TREAT**: Mitigate or reduce the risk (implement additional controls)
+   - **REDUCE**: Mitigate or reduce the risk (implement additional controls)
      - When to use: Medium/High risk, can be reduced through actions
      - Example: "Implement automated testing to reduce defect risk"
 
-   - **TRANSFER**: Transfer risk to 3rd party (insurance, outsourcing, contracts)
+   - **SHARE**: Share risk with 3rd party (insurance, outsourcing, contracts)
      - When to use: Low likelihood/high impact, can be insured or contracted out
      - Example: "Purchase cyber insurance for breach liability"
 
-   - **TERMINATE**: Stop the activity creating the risk
+   - **AVOID**: Stop the activity creating the risk
      - When to use: High likelihood/high impact, exceeds appetite, cannot be mitigated
      - Example: "Cancel high-risk vendor contract, source alternative"
 
@@ -289,7 +288,7 @@ This command creates a **comprehensive risk register** following Department of F
    Ranked table:
    | Rank | ID | Title | Category | Residual Score | Owner | Status | Response |
    |------|-----|-------|----------|----------------|-------|--------|----------|
-   | 1 | R-001 | ... | STRATEGIC | 20 | CEO | In Progress | Treat |
+   | 1 | R-001 | ... | STRATEGIC | 20 | CEO | In Progress | Reduce |
 
    **D. Risk Register** (detailed table):
 
@@ -301,7 +300,7 @@ This command creates a **comprehensive risk register** following Department of F
    - Inherent L/I/Score
    - Controls
    - Residual L/I/Score
-   - 4Ts Response
+   - Response
    - Owner
    - Status
    - Actions
@@ -325,14 +324,14 @@ This command creates a **comprehensive risk register** following Department of F
    | CFO | R-003, R-007, R-012 | 1 Critical, 2 High | Heavy concentration of financial risks |
    | CTO | R-001, R-004, R-009 | 2 Critical | Technology risk owner |
 
-   **G. 4Ts Response Summary**:
+   **G. Risk Response Summary**:
 
    | Response | Count | % | Key Examples |
    |----------|-------|---|--------------|
-   | Tolerate | 5 risks | 25% | R-006, R-010... |
-   | Treat | 12 risks | 60% | R-001, R-002... |
-   | Transfer | 2 risks | 10% | R-005 (insurance) |
-   | Terminate | 1 risk | 5% | R-008 (cancel activity) |
+   | Accept | 5 risks | 25% | R-006, R-010... |
+   | Reduce | 12 risks | 60% | R-001, R-002... |
+   | Share | 2 risks | 10% | R-005 (insurance) |
+   | Avoid | 1 risk | 5% | R-008 (cancel activity) |
 
    **H. Risk Appetite Compliance** (if organizational appetite exists):
 
@@ -365,7 +364,7 @@ This command creates a **comprehensive risk register** following Department of F
 
    Note which sections of SOBC use this risk register:
    - **Strategic Case**: Strategic risks inform "Why Now?" and urgency
-   - **Economic Case**: Risk-adjusted costs use financial risks + optimism bias
+   - **Economic Case**: Risk-adjusted costs use financial risks + contingency
    - **Management Case Part E**: Full risk register feeds into risk management section
    - **Recommendation**: High risks may influence option selection
 
@@ -410,7 +409,7 @@ Before completing the document, populate document information fields:
 - `[DOCUMENT_TYPE_NAME]` → Document purpose
 - `ARC-[PROJECT_ID]-RISK-v[VERSION]` → Generated document ID
 - `[STATUS]` → "DRAFT" for new documents
-- `[CLASSIFICATION]` → Default to "OFFICIAL" (Australian Government) or "PUBLIC"
+- `[CLASSIFICATION]` → Default to "OFFICIAL" (Australian Government) or "PROTECTED"
 
 ### User-provided fields:
 - `[PROJECT_NAME]` → Full project name
@@ -436,7 +435,7 @@ Before completing the document, populate document information fields:
 Provide:
 1. **Location**: `projects/NNN-project-name/ARC-{PROJECT_ID}-RISK-v1.0.md`
 2. **Summary**:
-   - "Created comprehensive risk register following Department of Finance Orange Book"
+   - "Created comprehensive risk register following Commonwealth Risk Management Policy"
    - "Identified [X] risks across 6 categories"
    - "Risk profile: [X] Critical, [Y] High, [Z] Medium, [W] Low"
    - "Overall residual risk score: [X]/500 ([Y]% reduction from inherent)"
@@ -446,8 +445,8 @@ Provide:
    - "1. R-001 (STRATEGIC, Critical 20): [Title] - Owner: [Name]"
    - "2. R-002 (TECHNOLOGY, High 16): [Title] - Owner: [Name]"
    - "3. R-003 (FINANCIAL, High 15): [Title] - Owner: [Name]"
-4. **4Ts Distribution**:
-   - "Tolerate: X% | Treat: Y% | Transfer: Z% | Terminate: W%"
+4. **Response Distribution**:
+   - "Accept: X% | Reduce: Y% | Share: Z% | Avoid: W%"
 5. **Next steps**:
    - "Review with [Risk Owners] to validate assessment"
    - "Escalate [N] critical/high risks to Steering Committee"
@@ -455,9 +454,9 @@ Provide:
    - "Implement priority actions from Action Plan"
    - "Schedule monthly risk review meeting"
 
-## Orange Book Compliance Checklist
+## Commonwealth Policy Compliance Checklist
 
-Ensure the risk register demonstrates Orange Book compliance:
+Ensure the risk register demonstrates Commonwealth compliance:
 
 - ✅ **Governance and Leadership**: Risk owners assigned from senior stakeholders
 - ✅ **Integration**: Risks linked to objectives, stakeholders, and business case
@@ -496,8 +495,8 @@ For Australian Government/public sector projects, include:
 
 **COMPLIANCE/REGULATORY**:
 - Spending controls (Finance approval delays)
-- NAO audit findings
-- PAC scrutiny and recommendations
+- ANAO audit findings
+- Senate Estimates scrutiny
 - FOI requests reveal sensitive information
 - Judicial review of procurement
 
@@ -505,12 +504,12 @@ For Australian Government/public sector projects, include:
 - Parliamentary questions and media scrutiny
 - Citizen complaints and service failures
 - Social media backlash
-- Select Committee inquiry
+- Senate inquiry
 
 **OPERATIONAL**:
 - Digital Service Standard assessment failure
 - DTA digital spend control rejection
-- Civil service headcount restrictions
+- APS headcount restrictions
 - Security clearance delays
 
 ## Error Handling
@@ -535,4 +534,4 @@ Use the template at `.arckit/templates/risk-register-template.md` as the structu
 - Industry/sector specific risks
 - Australian Government risks (if applicable)
 
-Generate a comprehensive, Orange Book-compliant risk register that enables informed decision-making and effective risk management.
+Generate a comprehensive, Commonwealth-compliant risk register that enables informed decision-making and effective risk management.

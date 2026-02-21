@@ -30,7 +30,7 @@ Output: `projects/<id>/ARC-<id>-DATA-v1.0.md`
 |---------|------------|-------------|
 | Mermaid ERD | Normalised entity diagram ready for mermaid.live | Share with architects for validation |
 | Entity catalogue | Attributes, data types, keys, derived fields | Flag unknown data types for modelling session |
-| Privacy/APP pack | PII inventory, legal basis, retention, data subject rights | Review with DPO; schedule DPIA if high risk |
+| Privacy/APP pack | Personal/sensitive info inventory, APP 8/11/12/13 mapping, retention/disposal, NDB readiness | Review with privacy officer; schedule PIA if high risk |
 | Governance matrix | Owner, steward, custodian, classification | Update RACI and onboarding materials |
 | CRUD & integrations | Component ↔ entity access + upstream/downstream feeds | Align with API contracts and ETL plans |
 | Data quality | KPIs, controls, monitoring cadence | Feed into ServiceNow service design |
@@ -42,9 +42,10 @@ Output: `projects/<id>/ARC-<id>-DATA-v1.0.md`
 - **Identify PII** – mark direct/indirect PII in the catalogue.
 - **Retention** – confirm duration against organisation policy.
 - **Security** – ensure encryption/segmentation controls align with risk appetite.
-- **Subject rights** – validate mechanism for access/erasure/export.
+- **Access & correction** – validate mechanism for APP 12/13 (and FOI for agencies).
+- **Disposal** – validate APP 11.3 destruction/de-identification workflow (and Archives/records constraints).
 
-Use the output to enrich `/arckit.dpia` (automatic when run afterwards).
+Use the output to enrich `/arckit.dpia` (privacy impact assessment pack).
 
 ---
 
@@ -58,6 +59,6 @@ Use the output to enrich `/arckit.dpia` (automatic when run afterwards).
 
 ## Related Commands
 
-- `/arckit.dpia` - Generate Data Protection Impact Assessment (auto-references data model)
+- `/arckit.dpia` - Generate privacy impact assessment (PIA) pack (auto-references data model)
 - `/arckit.data-mesh-contract` - Create federated data product contracts from entities (mesh architecture)
 - `/arckit.traceability` - Link entities to requirements and test cases
