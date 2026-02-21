@@ -352,7 +352,7 @@ This returns a document ID like: `ARC-001-PLAT-v1.0`
 
 6. **Australian Government Context** (if applicable):
    - Australian Government Architecture (AGA) Business Capabilities
-   - Digital Service Standard (Criteria 7: Use open standards and common platforms) alignment
+   - Digital Service Standard (Criteria 6: Don't reinvent the wheel) alignment
    - BuyICT/AusTender channels positioning (BuyICT cloud panels, specialist sourcing)
 
 7. **Generate complete traceability** (Section 9):

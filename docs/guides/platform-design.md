@@ -319,9 +319,8 @@ Platform designs should align with AGA Business Capabilities and utilize shared 
 Platform designs must align with [Digital Experience Policy](https://www.digital.gov.au/policy/digital-experience-policy) and the [Digital Service Standard 2.0](https://www.digital.gov.au/policy/digital-experience/digital-service-standard):
 
 - **Criterion 5 (Build trust in design)**: Privacy, security, transparency
-- **Criterion 7 (Use open standards and common platforms)**: Interoperability
-- **Criterion 9 (Make it accessible)**: WCAG 2.1 AA compliance
-- **Criterion 11 (Define your purchasing strategy)**: Alignment with BuyICT/CPRs
+- **Criterion 6 (Don't reinvent the wheel)**: Reuse common platforms, avoid duplication
+- **Criterion 3 (Leave no one behind)**: Accessibility, inclusion
 
 ### BuyICT Integration
 

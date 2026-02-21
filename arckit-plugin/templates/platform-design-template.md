@@ -1257,8 +1257,8 @@ This platform embodies AGA principles:
 | DSS Criterion | Compliance Approach |
 |------------|---------------------|
 | **Criterion 5: Build trust in design** | ISM/PSPF compliance, IRAP assessment readiness |
-| **Criterion 7: Use open standards and common platforms** | Integrates myGovID, RAM; open-sources platform design |
-| **Criterion 9: Make it accessible** | WCAG 2.1 Level AA compliance, mobile-first design |
+| **Criterion 6: Don't reinvent the wheel** | Reuse common platforms (myGovID), avoid duplication |
+| **Criterion 3: Leave no one behind** | WCAG 2.1 Level AA compliance, mobile-first design |
 
 **BuyICT Positioning**:
 
