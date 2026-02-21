@@ -9,7 +9,7 @@
 | **Document ID** | ARC-[PROJECT_ID]-PRIN-v[VERSION] |
 | **Document Type** | Enterprise Architecture Principles |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
-| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
+| **Classification** | [OFFICIAL / PROTECTED / SECRET / TOP SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
 | **Version** | [VERSION] |
 | **Created Date** | [YYYY-MM-DD] |
@@ -141,8 +141,9 @@ The threat landscape requires assuming breach, eliminating implicit trust, and c
 - [ ] Regular security testing (penetration testing, vulnerability scanning)
 
 **Compliance Frameworks**:
-- [NIST Cybersecurity Framework | ISO 27001 | SOC 2 Type II | CIS Controls]
-- [Privacy Act 1988 / APPs | HIPAA | PCI-DSS | FedRAMP] (if applicable)
+- [ISM (Information Security Manual) | PSPF | Essential Eight | DTA Service Standard]
+- [Privacy Act 1988 / APPs | NIST Cybersecurity Framework | ISO 27001 | SOC 2 Type II]
+- [IRAP Assessed | Hosting Certification Framework (HCF)]
 
 **Exceptions**:
 - NONE. Security principles are non-negotiable.
@@ -198,18 +199,18 @@ We cannot operate what we cannot observe. Instrumentation is a first-class archi
 Data classification, residency, retention, and access controls MUST comply with regulatory requirements and corporate data governance policies.
 
 **Data Classification Tiers**:
-1. **Public**: No restrictions (marketing content, public documentation)
-2. **Internal**: Employee-only access (internal documents, non-sensitive data)
-3. **Confidential**: Need-to-know basis (financial data, PII, business secrets)
-4. **Restricted**: Highest controls (regulated data: PHI, payment cards, classified information)
+1. **Public/Official**: No restrictions (marketing content, public documentation)
+2. **Official:Sensitive**: Limited access (internal documents)
+3. **Protected**: High control (PII, sensitive government data)
+4. **Secret/Top Secret**: National security controls (classified information)
 
 **Data Residency**:
-- Personal data must reside in jurisdictions compliant with applicable regulations
-- Cross-border data transfers require legal basis (adequacy decisions, standard contractual clauses)
-- Regulatory requirements (Privacy Act 1988 / APPs, CCPA, sector-specific) dictate storage locations
+- Personal/Government data must reside in jurisdictions compliant with applicable regulations (e.g., Australia)
+- Hosting Certification Framework (HCF) Certified / Strategic hosting for PROTECTED data
+- Cross-border data transfers require legal basis and risk assessment
 
 **Data Retention**:
-- Automatic deletion after defined retention period
+- Automatic deletion after defined retention period (Archives Act 1983)
 - Legal hold process for litigation/investigation
 - Backup retention aligned with compliance and recovery requirements
 
@@ -576,4 +577,3 @@ All projects must pass architecture reviews at key milestones:
 **ArcKit Version**: [VERSION]
 **Project**: [PROJECT_NAME]
 **Model**: [AI_MODEL]
-

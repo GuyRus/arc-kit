@@ -67,10 +67,10 @@ $ARGUMENTS
    - Common violations to avoid
 
 6. **Industry-specific customization**: If the user mentions an industry:
-   - **Financial Services**: Add principles for transaction integrity, audit trails, regulatory compliance (SOX, PCI-DSS)
-   - **Healthcare**: Add HIPAA compliance, PHI data handling, consent management
+   - **Financial Services**: Add principles for transaction integrity, audit trails, regulatory compliance (APRA CPS 234, PCI-DSS)
+   - **Healthcare**: Add My Health Record integration, PHI data handling, consent management
    - **Retail**: Add principles for payment processing, inventory systems, customer data
-   - **Government**: Add accessibility (Section 508), public records, security clearances
+   - **Government**: Add accessibility (WCAG 2.1 AA), public records (Archives Act), security clearances, ISM/PSPF compliance, Hosting Certification Framework (HCF)
 
 7. **Detect version**: Before generating the document, check if a previous version exists:
    - Look for existing `ARC-000-PRIN-v*.md` files in `projects/000-global/`
@@ -140,7 +140,7 @@ User: `/arckit:principles Create principles for a financial services company foc
 You should:
 - Read the template
 - Generate comprehensive principles
-- Add financial services specific requirements (SOX, PCI-DSS, transaction integrity, audit trails)
+- Add financial services specific requirements (APRA, PCI-DSS, transaction integrity, audit trails)
 - Include cloud migration principles (cloud-first, lift-and-shift vs re-architecture)
 - Write to `projects/000-global/ARC-000-PRIN-v1.0.md`
 - Confirm completion with summary
