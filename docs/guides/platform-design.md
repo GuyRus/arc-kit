@@ -11,7 +11,7 @@
 3. [The 8 PDT Canvases](#the-8-pdt-canvases)
 4. [Prerequisites](#prerequisites)
 5. [Command Usage](#command-usage)
-6. [Australian Government Context](#uk-government-context)
+6. [Australian Government Context](#australian-government-context)
 7. [Integration with ArcKit Workflow](#integration-with-arckit-workflow)
 8. [Examples](#examples)
 9. [Common Pitfalls](#common-pitfalls)
@@ -41,8 +41,8 @@ The **Platform Design Toolkit (PDT)** is an open-source methodology from [Bounda
 
 ### Examples of Multi-Sided Platforms
 
-- **Government**: Australia.gov.au (citizens ↔ services), BuyICT/AusTender channels (buyers ↔ suppliers)
-- **Healthcare**: myGov/health digital services (patients ↔ providers), booking platforms
+- **Government**: myGov (citizens ↔ services), BuyICT (buyers ↔ suppliers), data.gov.au
+- **Healthcare**: My Health Record (patients ↔ providers), HealthDirect
 - **Education**: Online learning (students ↔ educators ↔ employers)
 - **Procurement**: BuyICT cloud panels (public sector ↔ suppliers)
 - **Data**: Data marketplaces (data providers ↔ data consumers)
@@ -57,7 +57,7 @@ The **Platform Design Toolkit (PDT)** is an open-source methodology from [Bounda
 2. **Transaction-based**: Value comes from enabling exchanges between parties
 3. **Network effects**: More participants = more value for everyone
 4. **Ecosystem strategy**: You're orchestrating, not just building
-5. **Government as a Platform (GaaP)**: Designing reusable services/APIs for other departments
+5. **Australian Government Architecture (AGA)**: Designing shared capabilities for cross-agency use
 
 ### ❌ Don't use platform-design when:
 
@@ -94,7 +94,7 @@ Is there a supply side AND demand side?
 **Example** (public health appointment booking):
 - Supply: GP practices, hospitals, specialists
 - Demand: Patients, caregivers
-- Supporting: AIHW / Services Australia digital services, ICB data services, payment gateway
+- Supporting: Services Australia (Medicare), My Health Record, PHNs, payment gateway
 
 ---
 
@@ -232,7 +232,7 @@ Is there a supply side AND demand side?
 
 4. **Wardley Maps** (`/arckit.wardley`)
    - Component evolution → Build vs. buy decisions
-   - Example: "Payment processing" at Commodity (0.9) → Use Stripe/Australia.gov.au Pay, don't build
+   - Example: "Payment processing" at Commodity (0.9) → Use a payment gateway (e.g. Stripe, Ezidebit), don't build
 
 ### Workflow Order
 
@@ -263,15 +263,15 @@ Is there a supply side AND demand side?
 ### Advanced Usage
 
 ```
-/arckit.platform-design Design BuyICT/AusTender channels for training services connecting:
+/arckit.platform-design Design BuyICT marketplace for training services connecting:
 - Supply: Training providers, independent trainers, content creators
 - Demand: Public sector organizations, L&D departments, individual learners
-- Supporting: Accreditation bodies (e.g., CPD Standards Office), payment gateway, LMS integrations
+- Supporting: Accreditation bodies (e.g., ASQA), payment gateway, LMS integrations
 
 Focus on:
 1. Liquidity bootstrapping (solve chicken-and-egg)
 2. Quality assurance (accreditation, reviews, outcomes)
-3. GaaP integration (Australia.gov.au Pay, Notify, Design System)
+3. AGA integration (myGovID, Design System)
 4. Data sharing (Privacy Act 1988 (APPs) compliance, learner records portability)
 ```
 
@@ -285,7 +285,7 @@ Focus on:
    - Wardley maps → Build vs. buy decisions (component evolution)
    - Architecture principles → Governance principles
 4. **Generates all 8 canvases**: Complete PDT methodology with depth
-5. **Adds Australian Government context**: GaaP, DX Policy / DSS, Service Standard, BuyICT/AusTender channels
+5. **Adds Australian Government context**: AGA, Digital Experience Policy, Digital Service Standard, BuyICT positioning
 6. **Creates traceability**: Links to stakeholders, requirements, principles, Wardley maps
 7. **Writes file**: Uses Write tool to create markdown document (avoids token limit)
 8. **Shows summary**: Displays key metrics, entity counts, transaction types (not full document)
@@ -294,51 +294,44 @@ Focus on:
 
 ## Australian Government Context
 
-### Government as a Platform (GaaP)
+### Australian Government Architecture (AGA)
 
-The Australian Government's [GaaP strategy](https://architecture.digital.gov.au/) treats common capabilities as platforms:
+Platform designs should align with AGA Business Capabilities and utilize shared capabilities where possible.
 
-| Platform | Supply Side | Demand Side | Transactions |
-|----------|------------|-------------|--------------|
-| **Australia.gov.au Pay** | Payment providers (Stripe, Worldpay) | Public sector services | Payment processing |
-| **Australia.gov.au Notify** | Telcos (SMS, email providers) | Government services | Notifications |
-| **BuyICT/AusTender channels** | Suppliers (BuyICT cloud panels, specialist sourcing) | Public sector buyers | Procurement |
-| **Australia.gov.au Design System** | Design contributors | Service teams | UI components, patterns |
-| **Australia.gov.au Verify** (deprecated) | Identity providers | Services needing auth | Identity verification |
+| Capability | Implementation Example |
+|------------|------------------------|
+| **Identity** | myGovID, RAM (Relationship Authorisation Manager) |
+| **Design** | Australian Government Design System (AGDS) |
+| **Payments** | Agency-specific gateways or shared services |
+| **Notifications** | Agency-specific or commercial services |
+| **Procurement** | BuyICT / AusTender |
+| **Hosting** | Hosting Certification Framework (HCF) certified providers |
 
-**Platform Design Principles** (from GaaP):
-1. **Common components**: Reusable across departments
-2. **Open standards**: Avoid vendor lock-in
-3. **Self-service**: Low friction onboarding
-4. **API-first**: Programmatic access
-5. **Data portability**: User owns their data
+**Platform Design Principles** (AGA aligned):
+1. **Reuse**: Leverage existing whole-of-government platforms
+2. **Open standards**: Avoid vendor lock-in, ensure interoperability
+3. **User-centric**: Design for the end user (citizens/businesses)
+4. **Secure by Design**: ISM/PSPF compliance built-in
+5. **Data portability**: Support Consumer Data Right (CDR) principles where applicable
 
-### Digital Experience Policy and Digital Service Standard (DSS)
+### Digital Experience Policy and Digital Service Standard
 
-Platform designs must align with [DX Policy / DSS points](https://www.dta.gov.au/help-and-advice/digital-experience-policy):
+Platform designs must align with [Digital Experience Policy](https://www.digital.gov.au/policy/digital-experience-policy) and the [Digital Service Standard 2.0](https://www.digital.gov.au/policy/digital-experience/digital-service-standard):
 
-- **Point 3 (Be open and use open source)**: Platform APIs should use open standards (REST, GraphQL, OAuth2)
-- **Point 5 (Use cloud first)**: Platform infrastructure on AWS/Azure/GCP
-- **Point 8 (Share, reuse and collaborate)**: Leverage Australia.gov.au common platforms
-- **Point 11 (Define your purchasing strategy)**: BuyICT/AusTender channels for commercial services
+- **Criterion 5 (Build trust in design)**: Privacy, security, transparency
+- **Criterion 7 (Use open standards and common platforms)**: Interoperability
+- **Criterion 9 (Make it accessible)**: WCAG 2.1 AA compliance
+- **Criterion 11 (Define your purchasing strategy)**: Alignment with BuyICT/CPRs
 
-### Service Standard
+### BuyICT Integration
 
-Platform services assessed against [14 points](https://www.dta.gov.au/help-and-advice/digital-service-standard):
+Platform designs often need to procure services via [BuyICT](https://www.buyict.gov.au/):
 
-- **Point 2 (Solve a whole problem for users)**: Platform solves transaction costs, not just matching
-- **Point 5 (Make sure everyone can use the service)**: WCAG 2.2 AA accessibility
-- **Point 9 (Create a secure service)**: Secure by Design (ASD ACSC CAF)
-- **Point 13 (Use and contribute to open standards)**: Open Data Contract Standard for data products
+- **Cloud Marketplace**: Buy cloud software/support
+- **Digital Marketplace**: Commission custom development (e.g., platform MVP)
+- **Hardware Marketplace**: Infrastructure hardware
 
-### BuyICT/AusTender channels Integration
-
-Platform designs often need to procure services via [BuyICT/AusTender channels](https://www.austender.gov.au/):
-
-- **BuyICT cloud panels**: Buy cloud software/support (e.g., CRM platform, analytics tools)
-- **specialist sourcing**: Commission custom development (e.g., platform MVP, integration work)
-
-Use `/arckit.gcloud-search` to find relevant services, `/arckit.dos` to generate procurement docs.
+Use `/arckit.gcloud-search` (renaming pending) to find relevant services, `/arckit.dos` (renaming pending) to generate procurement docs.
 
 ---
 
@@ -404,9 +397,9 @@ graph TD
 
 ## Examples
 
-### Example 1: myGov/health digital servicesointment Booking Platform ✅
+### Example 1: Public Health Appointment Booking Platform ✅
 
-**Use Case**: Enable patients to book GP/specialist appointments across trusts
+**Use Case**: Enable patients to book GP/specialist appointments
 
 **Why Platform Design**:
 - Supply side: GP practices, hospitals, specialists (own calendars/availability)
@@ -415,16 +408,16 @@ graph TD
 - Network effects: More providers → more choice → more patients → more data → better matching
 
 **Key Canvases**:
-- **Ecosystem**: public hospitals, primary care networks, patients, AIHW / Services Australia digital services (identity), ICBs (data governance)
+- **Ecosystem**: Public hospitals, primary care networks, patients, Services Australia (Medicare), PHNs (data governance)
 - **Transactions**: Book appointment, reschedule, cancel, SMS reminder, outcomes reporting
 - **Learning Engine**: No-show prediction, optimal appointment duration, provider ratings
-- **MVP**: Pilot with 3 GP practices in one ICB, 1000 patients, validate 20% reduction in phone bookings
+- **MVP**: Pilot with 3 GP practices, 1000 patients, validate 20% reduction in phone bookings
 
-**Outcome**: Platform design feeds into technical requirements, data model (patient records, calendars), integration requirements (myGov identity, health provider directories, clinical systems), architecture diagrams.
+**Outcome**: Platform design feeds into technical requirements, data model (patient records, calendars), integration requirements (My Health Record, Medicare, clinical systems), architecture diagrams.
 
 ---
 
-### Example 2: BuyICT/AusTender channels for Training Services ✅
+### Example 2: BuyICT Marketplace for Training Services ✅
 
 **Use Case**: Connect public sector organizations with training providers
 
@@ -435,12 +428,12 @@ graph TD
 - Network effects: More providers → more courses → more learners → more data → better recommendations
 
 **Key Canvases**:
-- **Ecosystem**: Training suppliers, accreditation bodies (CPD Standards Office), public sector orgs, learners, LMS integrations
+- **Ecosystem**: Training suppliers, accreditation bodies (ASQA), public sector orgs, learners, LMS integrations
 - **Transactions**: Search courses, compare providers, book training, track CPD, share certificates
 - **Learning Engine**: Course effectiveness (pre/post assessments), provider quality (ratings + outcomes), skill gap analysis
 - **MVP**: 10 accredited providers, 5 departments, 100 learners, validate 30% cost reduction vs. traditional procurement
 
-**Outcome**: Informs BuyICT cloud panels service search (LMS, video platforms), specialist sourcing procurement (custom development), requirements (Privacy Act 1988 (APPs) for learner data, WCAG 2.2 AA), Service Standard assessment.
+**Outcome**: Informs BuyICT service search (LMS, video platforms), specialist sourcing procurement (custom development), requirements (Privacy Act 1988 (APPs) for learner data, WCAG 2.1 AA), Service Standard assessment.
 
 ---
 
@@ -456,21 +449,21 @@ graph TD
 
 ---
 
-### Example 4: Data Marketplace for Local Authorities ✅
+### Example 4: Data Marketplace for Local Councils ✅
 
 **Use Case**: Enable councils to share/buy datasets (e.g., planning data, environmental sensors)
 
 **Why Platform Design**:
-- Supply side: Local authorities with datasets, IoT sensor providers
-- Demand side: Local authorities needing data, researchers, urban planners
-- Transaction: Data product licensing (Open Data Contract Standard v3.0.2)
+- Supply side: Local councils with datasets, IoT sensor providers
+- Demand side: Local councils needing data, researchers, urban planners
+- Transaction: Data product licensing
 - Network effects: More data sources → richer analytics → more demand → more supply
 
 **Key Canvases**:
-- **Ecosystem**: 317 local authorities, central government, researchers, data processors, cloud storage (AWS S3)
+- **Ecosystem**: Local councils, state government, researchers, data processors, cloud storage (AWS S3)
 - **Transactions**: Publish data product, license dataset, query API, manage access controls, data quality SLA
 - **Learning Engine**: Data quality scoring (completeness, timeliness), usage patterns → recommendations, schema evolution
-- **MVP**: 5 councils, 20 datasets (planning, transport, environment), 10 consumers, validate 50% faster data access vs. FOI requests
+- **MVP**: 5 councils, 20 datasets (planning, transport, environment), 10 consumers, validate 50% faster data access
 
 **Synergy**: Use `/arckit.data-mesh-contract` after platform-design to define data product contracts (SLAs, schemas, governance).
 
@@ -555,10 +548,10 @@ graph TD
 
 ### Australian Government Resources
 
-- **Government as a Platform**: [architecture.digital.gov.au](https://architecture.digital.gov.au/)
+- **Australian Government Architecture**: [architecture.digital.gov.au](https://architecture.digital.gov.au/)
 - **Digital Experience Policy**: [dta.gov.au/help-and-advice/digital-experience-policy](https://www.dta.gov.au/help-and-advice/digital-experience-policy)
 - **Service Standard**: [dta.gov.au/help-and-advice/digital-service-standard](https://www.dta.gov.au/help-and-advice/digital-service-standard)
-- **BuyICT/AusTender channels**: [austender.gov.au](https://www.austender.gov.au/)
+- **BuyICT**: [buyict.gov.au](https://www.buyict.gov.au/)
 
 ### Related ArcKit Commands
 
