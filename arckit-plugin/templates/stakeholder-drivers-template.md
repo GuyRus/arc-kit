@@ -9,7 +9,7 @@
 | **Document ID** | ARC-[PROJECT_ID]-STKE-v[VERSION] |
 | **Document Type** | Stakeholder Drivers & Goals Analysis |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
-| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
+| **Classification** | [OFFICIAL / PROTECTED / SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
 | **Version** | [VERSION] |
 | **Created Date** | [YYYY-MM-DD] |
@@ -73,6 +73,10 @@ This document identifies key stakeholders, their underlying drivers (motivations
 | [Name] | [Vendor/Partner] | Supplier | MEDIUM | HIGH |
 | [Name] | [End Customers] | Beneficiary | LOW | HIGH |
 | [Name] | [Industry Body] | Standards | LOW | LOW |
+| DTA | Digital Transformation Agency | Oversight | HIGH | MEDIUM |
+| Finance | Department of Finance | Funding/Assurance | HIGH | HIGH |
+| OAIC | Office of Australian Info Commissioner | Privacy Regulator | HIGH | MEDIUM |
+| ANAO | Aust. National Audit Office | Audit | MEDIUM | LOW |
 
 ### Stakeholder Power-Interest Grid
 
@@ -241,12 +245,6 @@ Example: "Increase operational efficiency by 30% measured by transactions per FT
 **Lagging Indicators** (final proof of success):
 - [Indicator 1]
 - [Indicator 2]
-
----
-
-### Outcome O-2: [Measurable Business Outcome]
-
-[Repeat for each outcome]
 
 ---
 
@@ -436,4 +434,3 @@ Example: "Increase operational efficiency by 30% measured by transactions per FT
 **ArcKit Version**: [VERSION]
 **Project**: [PROJECT_NAME]
 **Model**: [AI_MODEL]
-
