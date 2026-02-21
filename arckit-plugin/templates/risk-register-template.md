@@ -9,7 +9,7 @@
 | **Document ID** | ARC-[PROJECT_ID]-RISK-v[VERSION] |
 | **Document Type** | Risk Register |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
-| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
+| **Classification** | [OFFICIAL / PROTECTED / SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
 | **Version** | [VERSION] |
 | **Created Date** | [YYYY-MM-DD] |
@@ -164,16 +164,16 @@ Legend: ██ Critical (20-25)  ▓▓ High (13-19)  ░░ Medium (6-12)  ··
 
 | Rank | ID | Title | Category | Inherent | Residual | Owner | Status | Response |
 |------|----|-------|----------|----------|----------|-------|--------|----------|
-| 1 | R-001 | [Risk title] | STRATEGIC | 25 | 16 | CEO | In Progress | Treat |
-| 2 | R-002 | [Risk title] | TECHNOLOGY | 20 | 12 | CTO | In Progress | Treat |
-| 3 | R-003 | [Risk title] | COMPLIANCE | 20 | 16 | CCO | Open | Treat |
-| 4 | R-004 | [Risk title] | FINANCIAL | 16 | 9 | CFO | Monitoring | Transfer |
-| 5 | R-005 | [Risk title] | REPUTATIONAL | 15 | 12 | CEO | In Progress | Treat |
-| 6 | R-006 | [Risk title] | OPERATIONAL | 12 | 6 | COO | Monitoring | Tolerate |
-| 7 | R-007 | [Risk title] | TECHNOLOGY | 15 | 8 | CTO | In Progress | Treat |
-| 8 | R-008 | [Risk title] | OPERATIONAL | 9 | 4 | COO | Closed | Tolerate |
-| 9 | R-009 | [Risk title] | FINANCIAL | 12 | 8 | CFO | In Progress | Treat |
-| 10 | R-010 | [Risk title] | STRATEGIC | 6 | 3 | CEO | Monitoring | Tolerate |
+| 1 | R-001 | [Risk title] | STRATEGIC | 25 | 16 | CEO | In Progress | Reduce |
+| 2 | R-002 | [Risk title] | TECHNOLOGY | 20 | 12 | CTO | In Progress | Reduce |
+| 3 | R-003 | [Risk title] | COMPLIANCE | 20 | 16 | CCO | Open | Reduce |
+| 4 | R-004 | [Risk title] | FINANCIAL | 16 | 9 | CFO | Monitoring | Share |
+| 5 | R-005 | [Risk title] | REPUTATIONAL | 15 | 12 | CEO | In Progress | Reduce |
+| 6 | R-006 | [Risk title] | OPERATIONAL | 12 | 6 | COO | Monitoring | Accept |
+| 7 | R-007 | [Risk title] | TECHNOLOGY | 15 | 8 | CTO | In Progress | Reduce |
+| 8 | R-008 | [Risk title] | OPERATIONAL | 9 | 4 | COO | Closed | Accept |
+| 9 | R-009 | [Risk title] | FINANCIAL | 12 | 8 | CFO | In Progress | Reduce |
+| 10 | R-010 | [Risk title] | STRATEGIC | 6 | 3 | CEO | Monitoring | Accept |
 
 ---
 
@@ -250,17 +250,17 @@ Legend: ██ Critical (20-25)  ▓▓ High (13-19)  ░░ Medium (6-12)  ··
 **Risk Zone:** 🟧 High (13-19)
 **Risk Reduction:** 36% reduction from inherent (25 → 16)
 
-#### Risk Response (4Ts Framework)
+#### Risk Response (ISO 31000 Framework)
 
-**Primary Response:** TREAT (Mitigate/Reduce)
+**Primary Response:** REDUCE (Mitigate)
 
 **Rationale:**
-[Why this response was chosen - e.g., "Risk exceeds appetite but can be mitigated through additional controls at reasonable cost"]
+[Why this response was chosen - e.g., "Risk exceeds appetite but can be reduced through additional controls"]
 
 **Alternative Responses Considered:**
-- **Tolerate**: Rejected - Risk score too high, exceeds appetite
-- **Transfer**: Considered - Would require A$X insurance, cost-prohibitive
-- **Terminate**: Not viable - Activity essential to strategic objectives
+- **Accept**: Rejected - Risk score too high, exceeds appetite
+- **Share**: Considered - Would require A$X insurance, cost-prohibitive
+- **Avoid**: Not viable - Activity essential to strategic objectives
 
 #### Risk Appetite Assessment
 
@@ -393,7 +393,7 @@ Legend: ██ Critical (20-25)  ▓▓ High (13-19)  ░░ Medium (6-12)  ··
 - R-003: [Title] - Residual: 16 (High)
 
 **Key Themes:**
-- [Theme 1: e.g., "Privacy Act 1988 / APPs/Privacy Act 1988 compliance complexity"]
+- [Theme 1: e.g., "Privacy Act 1988 / APPs compliance complexity"]
 - [Theme 2: e.g., "Regulatory change during project"]
 
 **Category Risk Profile:** ⚠️ Concerning - Compliance risks harder to mitigate, legal review needed
@@ -461,28 +461,28 @@ Legend: ██ Critical (20-25)  ▓▓ High (13-19)  ░░ Medium (6-12)  ··
 
 ---
 
-## F. 4Ts Response Framework Summary
+## F. Risk Response Framework Summary
 
 **Risk Response Distribution:**
 
 | Response | Count | % | Total Risk Score | Key Examples |
 |----------|-------|---|------------------|--------------|
-| **TOLERATE** | 2 | 20% | 7 (Low) | R-008, R-010 - Low risks within appetite |
-| **TREAT** | 6 | 60% | 68 (High) | R-001, R-002, R-003, R-005, R-007, R-009 - Active mitigation |
-| **TRANSFER** | 1 | 10% | 9 (Medium) | R-004 - Cyber insurance obtained |
-| **TERMINATE** | 1 | 10% | 6 (Medium) | R-006 - High-risk vendor option cancelled |
+| **ACCEPT** | 2 | 20% | 7 (Low) | R-008, R-010 - Low risks within appetite |
+| **REDUCE** | 6 | 60% | 68 (High) | R-001, R-002, R-003, R-005, R-007, R-009 - Active mitigation |
+| **SHARE** | 1 | 10% | 9 (Medium) | R-004 - Cyber insurance obtained |
+| **AVOID** | 1 | 10% | 6 (Medium) | R-006 - High-risk vendor option cancelled |
 | **TOTAL** | 10 | 100% | 90 | |
 
 **Response Breakdown by Category:**
 
-| Category | Tolerate | Treat | Transfer | Terminate | Predominant Response |
+| Category | Accept | Reduce | Share | Avoid | Predominant Response |
 |----------|----------|-------|----------|-----------|---------------------|
-| STRATEGIC | 1 | 2 | 0 | 0 | Treat (67%) |
+| STRATEGIC | 1 | 2 | 0 | 0 | Reduce (67%) |
 | OPERATIONAL | 1 | 0 | 0 | 1 | Mixed |
 | FINANCIAL | 0 | 1 | 1 | 0 | Mixed |
-| COMPLIANCE | 0 | 1 | 0 | 0 | Treat (100%) |
-| REPUTATIONAL | 0 | 1 | 0 | 0 | Treat (100%) |
-| TECHNOLOGY | 0 | 2 | 0 | 0 | Treat (100%) |
+| COMPLIANCE | 0 | 1 | 0 | 0 | Reduce (100%) |
+| REPUTATIONAL | 0 | 1 | 0 | 0 | Reduce (100%) |
+| TECHNOLOGY | 0 | 2 | 0 | 0 | Reduce (100%) |
 
 **Key Insights:**
 - **60% of risks require active treatment** - Significant mitigation effort needed
@@ -559,7 +559,7 @@ Legend: ██ Critical (20-25)  ▓▓ High (13-19)  ░░ Medium (6-12)  ··
 **Total Cost:** A$45K
 **Expected Risk Reduction:** 10 points total
 
-### Priority 3: MEDIUM (Medium Risks Requiring Treatment)
+### Priority 3: MEDIUM (Medium Risks Requiring Reducement)
 
 | Priority | Action | Risk(s) Addressed | Owner | Due Date | Cost | Expected Impact | Status |
 |----------|--------|-------------------|-------|----------|------|-----------------|--------|
@@ -681,46 +681,37 @@ Legend: ██ Critical (20-25)  ▓▓ High (13-19)  ░░ Medium (6-12)  ··
 
 ---
 
-## K. Orange Book Compliance Checklist
+## K. Commonwealth Risk Management Policy Compliance
 
-This risk register demonstrates compliance with Department of Finance Orange Book (2023):
+This risk register demonstrates compliance with the Commonwealth Risk Management Policy (2023):
 
-### Part I - Risk Management Principles
+### Risk Management Framework
 
-- ✅ **A. Governance and Leadership**
+- ✅ **Element 1: Risk Management Policy**
+  - Risk appetite and tolerance defined
+  - Risk ownership and governance established
+
+- ✅ **Element 2: Risk Management Framework**
+  - Systematic identification across 6 categories
+  - Consistent assessment methodology (5×5 matrix)
+
+- ✅ **Element 3: Responsibility for Managing Risk**
   - Risk owners assigned from senior stakeholders (from RACI matrix)
   - Escalation paths defined to Board/Audit Committee
-  - Risk appetite set and monitored
 
-- ✅ **B. Integration**
+- ✅ **Element 4: Embedded in Business Processes**
   - Risks linked to strategic objectives (stakeholder goals)
   - Risks inform business case (SOBC Management Case)
   - Risk management embedded in project governance
 
-- ✅ **C. Collaboration and Best Information**
+- ✅ **Element 6: Communicating and Consulting**
   - Risks sourced from stakeholder concerns and expert judgment
   - Multiple perspectives considered (stakeholder analysis)
-  - Evidence-based assessment (likelihood and impact justified)
 
-- ✅ **D. Risk Management Processes**
-  - Systematic identification across 6 categories
-  - Consistent assessment methodology (5×5 matrix)
-  - 4Ts response framework applied
-  - Inherent and residual risk tracked
-
-- ✅ **E. Continual Improvement**
+- ✅ **Element 9: Reviewing and Improving**
   - Regular review schedule (weekly/monthly/quarterly)
   - Key Risk Indicators defined
   - Lessons learned process
-  - Risk register version control
-
-### Part II - Risk Control Framework
-
-- ✅ **4-Pillar "House" Structure**
-  - Risk appetite and tolerance defined
-  - Risk ownership and governance established
-  - Risk assessment methodology documented
-  - Control effectiveness measured (inherent vs residual)
 
 ---
 
@@ -816,8 +807,6 @@ This risk register demonstrates compliance with Department of Finance Orange Boo
 
 **END OF RISK REGISTER**
 
----
-
 *This risk register follows Department of Finance Orange Book (2023) principles and integrates with ArcKit's stakeholder-driven architecture governance framework.*
 
 *For questions or updates, contact: [Risk Register Owner Name and Email]*
@@ -835,4 +824,3 @@ This risk register demonstrates compliance with Department of Finance Orange Boo
 **ArcKit Version**: [VERSION]
 **Project**: [PROJECT_NAME]
 **Model**: [AI_MODEL]
-
