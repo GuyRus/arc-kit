@@ -9,7 +9,7 @@
 | **Document ID** | ARC-[PROJECT_ID]-REQ-v[VERSION] |
 | **Document Type** | [DOCUMENT_TYPE_NAME] |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
-| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
+| **Classification** | [OFFICIAL / PROTECTED / SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
 | **Version** | [VERSION] |
 | **Created Date** | [YYYY-MM-DD] |
@@ -332,7 +332,7 @@
 **Requirement**:
 - Data in transit: TLS 1.3+ with strong cipher suites
 - Data at rest: AES-256 encryption for all data stores
-- Key management: [AWS KMS | Azure Key Vault | HashiCorp Vault]
+- Key management: [AWS KMS | Azure Key Vault | Cloud HSM]
 
 **Encryption Scope**:
 - [ ] Database encryption at rest
@@ -377,16 +377,16 @@
 
 #### NFR-C-1: Data Privacy Compliance
 
-**Applicable Regulations**: [Privacy Act 1988 / APPs | State/Territory privacy law | HIPAA (if applicable) | PCI-DSS (if applicable) | SOX (if applicable)]
+**Applicable Regulations**: [Privacy Act 1988 / APPs | Archives Act 1983 | Security of Critical Infrastructure Act 2018 | State/Territory privacy law]
 
 **Compliance Requirements**:
 - [ ] Data subject rights (access, deletion, portability)
 - [ ] Consent management and audit trail
 - [ ] Privacy by design and by default
 - [ ] Data breach notification within [X hours]
-- [ ] Data protection impact assessment (DPIA) completed
+- [ ] Privacy Impact Assessment (PIA) completed
 
-**Data Residency**: [EU data in EU, US data in US, etc.]
+**Data Residency**: [Australia (HCF Certified) | Other approved region]
 
 **Data Retention**: [Automatic deletion after X days/months/years]
 
@@ -433,7 +433,7 @@
 **Requirement**: System must be intuitive for users with [proficiency level]
 
 **UX Standards**:
-- Consistent with [Design System Name]
+- Consistent with [Design System Name] (e.g. AGDS)
 - Accessibility: WCAG 2.1 Level AA compliance
 - Mobile responsive design
 - Browser support: [Chrome, Firefox, Safari, Edge - last 2 versions]
@@ -446,7 +446,7 @@
 
 #### NFR-U-2: Accessibility
 
-**Requirement**: WCAG 2.1 Level AA compliance
+**Requirement**: WCAG 2.1 Level AA compliance (or 2.2 where applicable)
 
 **Accessibility Features**:
 - [ ] Keyboard navigation for all functions
@@ -639,7 +639,7 @@
 
 **Access Patterns**: [How data is typically queried - for indexing strategy]
 
-**Data Classification**: [PUBLIC | INTERNAL | CONFIDENTIAL | RESTRICTED]
+**Data Classification**: [PUBLIC | OFFICIAL | OFFICIAL:Sensitive | PROTECTED | SECRET]
 
 **Data Retention**: [Retention period before archival/deletion]
 
