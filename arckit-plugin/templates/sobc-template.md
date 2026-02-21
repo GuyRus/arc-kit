@@ -9,7 +9,7 @@
 | **Document ID** | ARC-[PROJECT_ID]-SOBC-v[VERSION] |
 | **Document Type** | [DOCUMENT_TYPE_NAME] |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
-| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
+| **Classification** | [OFFICIAL / PROTECTED / SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
 | **Version** | [VERSION] |
 | **Created Date** | [YYYY-MM-DD] |
@@ -51,7 +51,7 @@
 - [Top 3 benefits with values]
 
 **Return on Investment**: 
-- NPV: A$[X]M (discounted at 3.5%)
+- NPV: A$[X]M (discounted at 7%)
 - Payback Period: [X] months
 - ROI: [X]%
 
@@ -69,7 +69,7 @@
 **Next Steps if Approved**:
 1. Secure funding approval: [Date]
 2. Define detailed requirements: `/arckit.requirements`
-3. Develop Outline Business Case (OBC): [Date]
+3. Develop Second Pass Business Case / OBC: [Date]
 4. Procurement approach: [Date]
 
 ---
@@ -105,13 +105,13 @@
 | Driver ID | Stakeholder | Driver Type | Driver Description | Strategic Imperative |
 |-----------|-------------|-------------|-------------------|---------------------|
 | D-001 | CFO | FINANCIAL | Reduce infrastructure costs 40% | Cost efficiency |
-| D-002 | CEO | STRATEGIC | Digital transformation to compete | Market positioning |
+| D-002 | Agency Head | STRATEGIC | Digital transformation to compete | Market positioning |
 | D-003 | CTO | OPERATIONAL | Modernize tech stack | Innovation capability |
 | D-004 | CISO | COMPLIANCE | Meet new cyber security regulations | Risk mitigation |
 
 **Strategic Alignment**:
-- [Organizational Strategy 1]: [How this project supports it]
-- [Manifesto Commitment (Australian Government)]: [How this delivers it]
+- [Corporate Plan]: [How this project supports it]
+- [Government Policy / Manifesto]: [How this delivers it]
 - [Architecture Principles]: [Which principles this enforces]
 
 ### A1.3 Stakeholder Goals
@@ -296,7 +296,7 @@ Before analyzing options, define what "success" looks like:
 | B-004 | Compliance risk reduction | CISO G-004 | RISK | A$0.1M | A$0.5M | A$0.5M | A$1.1M |
 | **Total Benefits** | | | | **A$1.1M** | **A$4.3M** | **A$5M** | **A$10.4M** |
 
-**Net Present Value** (3.5% discount rate):
+**Net Present Value** (7% discount rate):
 - Total Benefits PV: A$[X]M
 - Total Costs PV: A$[X]M
 - **NPV: A$[X]M** (positive = good investment)
@@ -383,10 +383,10 @@ Before analyzing options, define what "success" looks like:
 - If benefits reduce 20%: ROI still acceptable ([X]% vs [Y]% threshold)
 - If timeline extends 6 months: Payback still within acceptable range
 
-**Optimism Bias Adjustment** (Australian Government):
-- Standard uplift for IT projects: +40% on costs
-- Adjusted Total Cost: A$[X]M → A$[X]M (with uplift)
-- NPV with optimism bias: Still positive at A$[X]M
+**Contingency / Risk Provision** (P50/P90):
+- Standard uplift for IT projects: +20-40% on costs
+- Adjusted Total Cost: A$[X]M → A$[X]M (with contingency)
+- NPV with contingency: Still positive at A$[X]M
 
 ---
 
@@ -406,19 +406,19 @@ Before analyzing options, define what "success" looks like:
 - **Tier 2** (Specialist vendors): [Category] - Niche expertise
 - **Tier 3** (SMEs): [Capability] - Agility, innovation
 
-**Australian Government BuyICT and CPR-compliant sourcing Assessment** (if applicable):
-- **BuyICT 14**: [X] suppliers offering [capability]
-- **specialist sourcing6**: [Y] suppliers for outcomes/specialists
+**Australian Government BuyICT Assessment** (if applicable):
+- **Cloud Marketplace**: [X] suppliers offering [capability]
+- **Software/Hardware Marketplace**: [Y] suppliers
 - **SME participation**: [Z]% of suppliers are SMEs
 
 ### C1.2 Sourcing Route
 
 **Recommended Route**:
-- **Australian Government**: BuyICT and CPR-compliant sourcing - [BuyICT | panel sourcing | panel sourcing]
+- **Australian Government**: BuyICT (Digital Marketplace / Panels)
 - **Private Sector**: [Competitive tender | Framework | Direct award if justified]
 
 **Rationale**:
-- [Reason 1: Compliant with procurement regulations]
+- [Reason 1: Compliant with Commonwealth Procurement Rules (CPRs)]
 - [Reason 2: Competitive market exists]
 - [Reason 3: SME access ensured]
 
@@ -448,22 +448,23 @@ Before analyzing options, define what "success" looks like:
 **Key Contract Terms**:
 - Service Level Agreements (SLAs): [Availability %, Response times]
 - Penalties: [A$X] per hour downtime beyond SLA
-- Intellectual Property: [Crown/Client owns IP for bespoke development]
+- Intellectual Property: [Commonwealth/Client owns IP for bespoke development]
 - Termination: [X] months notice, exit management included
 
-### C1.4 Social Value
+### C1.4 Broader Benefits to the Economy
 
-**Australian Government Requirement**: Minimum 10% weighting on social value in evaluation.
+**Australian Government Requirement**: Assessment of economic benefits (CPRs).
 
-**Social Value Themes**:
-1. **Economic**: Create jobs in [region], apprenticeships
-2. **Social**: Diversity & inclusion commitments, local SME supply chain
-3. **Environmental**: Carbon reduction commitments, sustainable datacenters
+**Benefit Themes**:
+1. **SME Participation**: Engaging local SMEs in supply chain
+2. **Indigenous Procurement Policy**: Opportunities for Indigenous businesses
+3. **Skills Development**: Apprenticeships, training programs
+4. **Environmental**: Sustainable practices
 
 **Evaluation Approach**:
 - Technical: 60%
 - Cost: 30%
-- Social Value: 10%
+- Broader Benefits: 10%
 
 ---
 
@@ -481,7 +482,7 @@ Before analyzing options, define what "success" looks like:
 | Software licenses (perpetual/3-year) | A$[X] | A$0 | A$0 | A$[X]M |
 | Implementation services (vendor) | A$[X] | A$[X] | A$0 | A$[X]M |
 | Internal project costs (staff time) | A$[X] | A$[X] | A$0 | A$[X]M |
-| Contingency (15%) | A$[X] | A$[X] | A$0 | A$[X]M |
+| Contingency (20%) | A$[X] | A$[X] | A$0 | A$[X]M |
 | **Total CapEx** | **A$[X]M** | **A$[X]M** | **A$0** | **A$[X]M** |
 
 ### D1.2 Operational Expenditure (OpEx)
@@ -505,20 +506,20 @@ Before analyzing options, define what "success" looks like:
 
 **Notes**:
 - All costs in [current year] prices
-- Excludes VAT (if applicable)
-- Optimism bias NOT YET applied (add 40% for Australian Government)
+- Excludes GST (if applicable)
+- Contingency applied as P50/P90 risk provision
 
 ## D2. Funding Source
 
 **Budget Allocation**:
-- **Source**: [IT Capital Budget | Digital Transformation Fund | Spending Review settlement]
+- **Source**: [IT Capital Budget | Digital Investment Fund | MYEFO / Budget Measure]
 - **Amount Available**: A$[X]M
 - **Timing**: [Financial years when available]
 
 **Budget Approval Path**:
 1. [Departmental board]: Up to A$[X]M
-2. [Finance committee]: A$[X]M to A$[Y]M
-3. [Department of Finance]: Above A$[Y]M (Australian Government)
+2. [Investment committee]: A$[X]M to A$[Y]M
+3. [Government/Finance]: Above A$[Y]M (Australian Government)
 
 **Funding Gaps** (if any):
 - Gap: A$[X]M in Year [Y]
@@ -542,18 +543,18 @@ Before analyzing options, define what "success" looks like:
 
 ## D4. Financial Appraisal
 
-### D4.1 Economic Appraisal (Australian Government Department of Finance business case guidance)
+### D4.1 Economic Appraisal (Cost-Benefit Analysis)
 
-**Discount Rate**: 3.5% (Finance standard social time preference rate)
+**Discount Rate**: 7.0% (Department of Finance standard rate)
 
 **Net Present Value Calculation**:
 
 | Year | Costs | Benefits | Net Cashflow | Discount Factor | Present Value |
 |------|-------|----------|--------------|-----------------|---------------|
 | 0 | A$[X]M | A$0 | -A$[X]M | 1.000 | -A$[X]M |
-| 1 | A$[X]M | A$[X]M | -A$[X]M | 0.966 | -A$[X]M |
-| 2 | A$[X]M | A$[X]M | +A$[X]M | 0.934 | +A$[X]M |
-| 3 | A$[X]M | A$[X]M | +A$[X]M | 0.902 | +A$[X]M |
+| 1 | A$[X]M | A$[X]M | -A$[X]M | 0.935 | -A$[X]M |
+| 2 | A$[X]M | A$[X]M | +A$[X]M | 0.873 | +A$[X]M |
+| 3 | A$[X]M | A$[X]M | +A$[X]M | 0.816 | +A$[X]M |
 | **Total** | **A$[X]M** | **A$[X]M** | **+A$[X]M** | | **A$[X]M (NPV)** |
 
 **NPV Result**: A$[X]M (positive = good investment)
@@ -569,8 +570,6 @@ ROI = (A$[X]M - A$[X]M) / A$[X]M × 100% = [X]%
 **Payback Period**:
 - Cumulative net cashflow turns positive in Month [X]
 - **Payback: [X] months**
-
-**Internal Rate of Return (IRR)**: [X]% (if calculated)
 
 ### D4.3 Value for Money Assessment
 
@@ -595,8 +594,8 @@ Derived from stakeholder analysis RACI matrix in `ARC-{PROJECT_ID}-STKE-v*.md`:
 
 | Decision/Activity | Responsible | Accountable | Consulted | Informed |
 |-------------------|-------------|-------------|-----------|----------|
-| Overall programme success | Programme Manager | SRO ([Name, CFO]) | Steering Committee | All stakeholders |
-| Budget approval | Finance Director | SRO | Permanent Secretary (Australian Government) | Finance |
+| Overall programme success | Programme Manager | SRO ([Name, SES Band 1/2]) | Steering Committee | All stakeholders |
+| Budget approval | Finance Director | SRO | Accountable Authority | Finance |
 | Requirements definition | Business Analyst | Product Owner | Stakeholders | Delivery team |
 | Technical design | Solution Architect | CTO | Security, Operations | Developers |
 | Procurement | Commercial Manager | SRO | Finance, Legal | Suppliers |
@@ -606,7 +605,7 @@ Derived from stakeholder analysis RACI matrix in `ARC-{PROJECT_ID}-STKE-v*.md`:
 **Senior Responsible Owner (SRO)**: [Name, Role]
 - Accountable for delivery
 - Chairs steering committee
-- Reports to [Permanent Secretary | Board]
+- Reports to [Accountable Authority | Board]
 
 **Steering Committee**:
 - [SRO - Chair]
@@ -623,7 +622,7 @@ Derived from stakeholder analysis RACI matrix in `ARC-{PROJECT_ID}-STKE-v*.md`:
 |------|----------|----------------|--------|
 | **Gate 0: SOBC Approval** | Business case approved, funding secured | Steering Committee / Board | [Date] |
 | **Gate 1: Requirements Complete** | Stakeholders signed off, traceability matrix complete | SRO | [Date] |
-| **Gate 2: Procurement Award** | Vendor selected, contract signed | SRO + Finance Director | [Date] |
+| **Gate 2: Procurement Award** | Vendor selected, contract signed | SRO + Finance Delegate | [Date] |
 | **Gate 3: Design Approval** | HLD & DLD approved, security sign-off | SRO + CTO + CISO | [Date] |
 | **Gate 4: Go-Live Approval** | UAT passed, cutover plan approved | Steering Committee | [Date] |
 | **Gate 5: Benefits Realization** | 6-month post-live, benefits measured | Steering Committee | [Date] |
@@ -813,7 +812,7 @@ Derived from stakeholder analysis RACI matrix in `ARC-{PROJECT_ID}-STKE-v*.md`:
 | R-004 | Integration complexity underestimated | Delays, rework | Medium | Major | 12 | POC critical interfaces upfront, phased integration | Architect |
 | R-005 | Skills gap (cloud expertise) | Poor design, technical debt | High | Moderate | 12 | Training, vendor support, hire contractor | CTO |
 | R-006 | Legacy system dependency | Cannot decommission, savings not realized | Medium | Moderate | 9 | Data migration plan, parallel running period | PM |
-| R-007 | Cyber security incident during migration | Data breach, reputational damage | Low | Critical | 9 | ASD/ACSC consultation, penetration testing | CISO |
+| R-007 | Cyber security incident during migration | Data breach, reputational damage | Low | Critical | 9 | IRAP consultation, penetration testing | CISO |
 | R-008 | Scope creep | Budget overrun, timeline delay | High | Moderate | 12 | Strong change control, fixed MVP scope | PM |
 | R-009 | Key person dependency (SRO leaves) | Governance failure | Low | Major | 8 | Deputy SRO identified, knowledge transfer | SRO |
 | R-010 | Market changes (better solution emerges) | Wrong technology choice | Low | Moderate | 6 | Market watch, flexible procurement | Commercial |
@@ -823,7 +822,7 @@ Derived from stakeholder analysis RACI matrix in `ARC-{PROJECT_ID}-STKE-v*.md`:
 **Risk Appetite**:
 - **Financial Risk**: Low (cannot exceed budget by >10%)
 - **Delivery Risk**: Medium (accept some timeline risk for quality)
-- **Reputational Risk**: Low (Australian Government cannot afford public failure)
+- **Reputational Risk**: Low (Government cannot afford public failure)
 
 ### E7.2 Risk Mitigation Summary
 
@@ -867,7 +866,7 @@ Derived from stakeholder analysis RACI matrix in `ARC-{PROJECT_ID}-STKE-v*.md`:
 1. Funding secured: A$[X]M confirmed available
 2. SRO appointed and accepted role
 3. Steering Committee established
-4. Department of Finance approval (if threshold exceeded) - Australian Government
+4. Department of Finance approval (if threshold exceeded)
 
 **Recommended Conditions**:
 1. Proof of Concept for critical integration completed successfully
@@ -888,7 +887,7 @@ Derived from stakeholder analysis RACI matrix in `ARC-{PROJECT_ID}-STKE-v*.md`:
 
 **Phase 2: Procurement** (Months 2-4):
 1. **SOW Generation**: Run `/arckit.sow` to create RFP - **Target: [Date]**
-2. **BuyICT and CPR-compliant sourcing**: Publish opportunity on BuyICT and CPR-compliant sourcing (Australian Government) - **Target: [Date]**
+2. **BuyICT / Digital Marketplace**: Publish opportunity - **Target: [Date]**
 3. **Vendor Evaluation**: Score and compare vendors using `/arckit.evaluate` - **Target: [Date]**
 4. **Contract Award**: Award contract to selected vendor - **Target: [Date]**
 
@@ -998,7 +997,7 @@ If this SOBC is not approved:
 | [Name] | Senior Responsible Owner | | |
 | [Name] | Finance Director | | |
 | [Name] | Chief Technology Officer | | |
-| [Name] | Permanent Secretary (Australian Government) | | |
+| [Name] | Accountable Authority / Agency Head | | |
 
 **Approval Decision**: **APPROVED** | **APPROVED WITH CONDITIONS** | **REJECTED** | **DEFERRED**
 
@@ -1016,7 +1015,7 @@ If this SOBC is not approved:
 
 *Document created using ArcKit `/arckit.sobc` command*
 *Template version: 1.0*
-*Department of Finance business case guidance compliant: Yes (Department of Finance 5-case model)*
+*Investment Framework compliant: Yes (Commonwealth Investment Framework)*
 
 ## External References
 
