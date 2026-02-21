@@ -263,20 +263,17 @@ Create data model based on Data Requirements (DR-xxx):
 - Data quality framework with measurable metrics
 - Requirements traceability (DR-xxx → Entity → Attribute)
 
-### Phase 5.7: Data Protection Impact Assessment
-**`/arckit.dpia`** → Generate [DPIA](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/data-protection-impact-assessments-dpias/) for UK GDPR Article 35 compliance
+### Phase 5.7: Privacy Impact Assessment
+**`/arckit.dpia`** → Generate an OAIC-aligned **Privacy Impact Assessment (PIA)** report for Privacy Act 1988 / APPs compliance
 
-**MANDATORY for high-risk processing** - assess privacy risks before technology selection:
-- ICO 9-criteria automated screening (sensitive data, large scale, vulnerable subjects, AI/ML, etc.)
-- Auto-populated from data model (entities, PII, special category data, lawful basis)
-- Risk assessment focused on impact on individuals (privacy harm, discrimination)
-- Data subject rights implementation checklist (SAR, deletion, portability)
-- Children's data assessment (age verification, parental consent)
-- AI/ML algorithmic processing assessment (bias, explainability, human oversight)
-- ICO prior consultation flagging for high residual risks
-- International transfer safeguards (SCCs, BCRs, adequacy decisions)
-- Bidirectional links to risk register (DPIA-xxx risk IDs)
-- Links mitigations to Secure by Design security controls
+Use when the project handles personal information, especially where impacts on individuals may be significant:
+- OAIC-style threshold assessment and scoped PIA plan
+- Information flow mapping across the full lifecycle (collection → use/disclosure → retention → disposal/de-identification)
+- APP compliance matrix (including APP 8 cross-border disclosure and APP 11 security/disposal)
+- Notifiable Data Breaches (NDB) readiness checks (assessment within 30 days; notify as soon as practicable if eligible)
+- Risk assessment focused on impacts on individuals (PIA-### risk IDs), mitigations, and residual risk
+- Optional AI addendum for AI/ML or GenAI use (transparency, oversight, accuracy, and agency AI impact assessment linkage)
+- Bidirectional links to the project risk register and Secure by Design controls
 
 ### Phase 5.8: Data Source Discovery
 **`/arckit.datascout`** → Discover external data sources

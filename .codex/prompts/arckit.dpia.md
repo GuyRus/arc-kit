@@ -1,10 +1,10 @@
 ---
-description: "Generate Data Protection Impact Assessment (DPIA) for Privacy Act 1988 (APPs) Article 35 compliance"
+description: "Generate privacy impact assessment (PIA) pack aligned to OAIC guidance and the Privacy Act 1988 (APPs)"
 ---
 
-You are helping an enterprise architect generate a **Data Protection Impact Assessment (DPIA)** following Privacy Act 1988 (APPs) Article 35 requirements and OAIC guidance.
+You are helping an enterprise architect generate a **Privacy Impact Assessment (PIA)** pack following OAIC guidance (PIA Guide) and the Privacy Act 1988 / Australian Privacy Principles (APPs).
 
-A DPIA is a **legal requirement** under Privacy Act 1988 (APPs) Article 35 for processing that is likely to result in a high risk to individuals' rights and freedoms. It systematically assesses privacy risks, evaluates necessity and proportionality, and identifies mitigations.
+A PIA is a systematic assessment of a project to identify privacy impacts on individuals and set out recommendations to manage, minimise, or eliminate those impacts. Under APP 1, PIAs support “privacy by design”. The OAIC can also direct agencies to provide a PIA where a proposed activity or change may have a significant impact on privacy.
 
 ## User Input
 ```text
@@ -15,21 +15,21 @@ $ARGUMENTS
 
 ### Step 0: Read Available Documents
 
-Scan the project directory for existing artifacts and read them to inform the DPIA:
+Scan the project directory for existing artefacts and read them to inform the PIA:
 
 **MANDATORY** (warn if missing):
 - `ARC-*-DATA-*.md` in `projects/{project}/` — Data model
-  - Extract: All entities with PII/special category data, data subjects, GDPR Article 6 lawful basis, Article 9 conditions, retention periods, data flows, data classifications
-  - If missing: STOP and warn user to run `/arckit:data-model` first — a DPIA requires a data model to identify personal data processing
+  - Extract: Entities containing personal information and sensitive information (Privacy Act s 6(1)), retention/disposal (APP 11.3), cross-border disclosures (APP 8), data flows, data classifications
+  - If missing: STOP and warn user to run `/arckit.data-model` first — a PIA should be based on a data model/inventory of personal information handling
 
 **RECOMMENDED** (read if available, note if missing):
 - `ARC-000-PRIN-*.md` in `projects/000-global/` — Architecture principles
-  - Extract: Privacy by Design principles, data minimization principles, security principles
-  - If missing: warn that DPIAs should be informed by Privacy by Design principles
+  - Extract: Privacy by Design principles, data minimisation principles, security principles
+  - If missing: warn that PIAs should be informed by Privacy by Design principles
 - `ARC-*-REQ-*.md` in `projects/{project}/` — Requirements specification
-  - Extract: DR (data requirements), NFR-SEC (security), NFR-C (compliance/GDPR)
+  - Extract: DR (data requirements), NFR-SEC (security), NFR-C (compliance/privacy), and any requirements that materially affect individuals (eligibility/entitlements/sanctions)
 - `ARC-*-STKE-*.md` in `projects/{project}/` — Stakeholder analysis
-  - Extract: Data subject categories, vulnerable groups, RACI for data governance roles (DPO, Data Controller, Data Processors)
+  - Extract: Data subject categories, vulnerable groups, power imbalance, and governance roles (service owner, privacy officer, security lead, data stewards)
 
 **OPTIONAL** (read if available, skip silently if missing):
 - `ARC-*-RISK-*.md` in `projects/{project}/` — Risk register
@@ -38,25 +38,25 @@ Scan the project directory for existing artifacts and read them to inform the DP
   - Extract: Security controls relevant to data protection
 
 **What to extract from each document**:
-- **Data Model**: Personal data categories, data subjects, lawful basis, retention, data flows
-- **Principles**: Privacy by Design and data minimization standards
-- **Requirements**: Data requirements, GDPR compliance requirements, security controls
-- **Stakeholders**: Data subjects, vulnerable groups, governance roles
+- **Data Model**: Personal/sensitive information categories, data subjects, retention/disposal, APP 8 cross-border disclosures, data flows
+- **Principles**: Privacy by Design and data minimisation standards
+- **Requirements**: Data requirements, privacy/security controls, and decision-impacting features
+- **Stakeholders**: Data subjects, vulnerable groups, governance roles and approval pathways
 
 ### Step 0b: Check for External Documents (optional)
 
 Scan for external (non-ArcKit) documents the user may have provided:
 
-**Existing DPIAs & Data Processing Agreements**:
+**Existing PIAs and supplier data handling agreements**:
 - **Look in**: `projects/{project-dir}/external/`
 - **File types**: PDF (.pdf), Word (.docx), Markdown (.md)
-- **What to extract**: Previous DPIA findings, data processing agreements, lawful basis assessments, data flow diagrams
-- **Examples**: `existing-dpia.pdf`, `data-processing-agreement.pdf`, `privacy-notice.docx`
+- **What to extract**: Previous PIA/DPIA findings, contract terms and assurance artefacts, cross-border disclosure assessments (APP 8), incident response expectations (NDB), and any data flow diagrams
+- **Examples**: `existing-pia.pdf`, `supplier-data-handling-agreement.pdf`, `privacy-notice.docx`
 
-**Privacy Policies & Data Protection Standards**:
+**Privacy policies and information handling standards**:
 - **Look in**: `projects/000-global/policies/`
 - **File types**: PDF, Word, Markdown
-- **What to extract**: Organizational privacy policy, data retention schedule, data classification scheme
+- **What to extract**: Organisational privacy policy, retention schedule, classification scheme
 - **Examples**: `privacy-policy.pdf`, `data-retention-schedule.docx`, `data-classification.md`
 
 **Enterprise-Wide Data Protection Standards**:
@@ -65,19 +65,19 @@ Scan for external (non-ArcKit) documents the user may have provided:
 - **What to extract**: Enterprise data protection standards, privacy impact templates, cross-project DPIA benchmarks
 
 **User prompt**: If no external data protection docs found, ask:
-"Do you have any existing DPIAs, data processing agreements, or privacy policies? I can read PDFs directly. Place them in `projects/{project-dir}/external/` and re-run, or skip."
+"Do you have any existing PIAs, supplier data handling agreements, or privacy policies? I can read PDFs directly. Place them in `projects/{project-dir}/external/` and re-run, or skip."
 
 **Important**: This command works without external documents. They enhance output quality but are never blocking.
 
 ### Step 0c: Interactive Configuration
 
-Before generating the DPIA, use the **AskUserQuestion** tool to gather the assessment scope. **Skip if the user has already specified scope in their arguments.**
+Before generating the PIA, use the **AskUserQuestion** tool to gather the assessment scope. **Skip if the user has already specified scope in their arguments.**
 
 **Question 1** — header: `Scope`, multiSelect: false
-> "What is the scope of this Data Protection Impact Assessment?"
-- **Full system (Recommended)**: Assess all personal data processing across the entire system — required for new systems or major changes
-- **Specific feature or module**: Assess a single feature that introduces new personal data processing (e.g., a new AI profiling feature)
-- **Specific data flow**: Assess a particular data flow involving personal data (e.g., third-party data sharing, international transfer)
+> "What is the scope of this Privacy Impact Assessment (PIA)?"
+- **Full system (Recommended)**: Assess all personal information handling across the system — recommended for new systems or major changes
+- **Specific feature or module**: Assess a single feature that introduces new personal information handling or new risks (e.g., AI-assisted eligibility checks)
+- **Specific data flow**: Assess a particular data flow (e.g., outsourcing, cross-agency sharing, overseas hosting/support)
 
 **Question 2** — header: `Consultation`, multiSelect: false
 > "How should data subject consultation be approached?"
@@ -86,7 +86,7 @@ Before generating the DPIA, use the **AskUserQuestion** tool to gather the asses
 - **Workshops**: Facilitated sessions with representative data subjects — collaborative and thorough
 - **Not applicable**: Data subjects cannot reasonably be consulted (e.g., law enforcement, national security)
 
-Apply the user's selections: the scope determines which data model entities and processing activities to assess. The consultation approach is documented in Section 3 (Consultation) of the DPIA.
+Apply the user's selections: the scope determines which data model entities and processing activities to assess. The consultation approach is documented in the Consultation section of the PIA.
 
 ### Step 1: Identify or Create Project
 
@@ -106,11 +106,11 @@ Parse the JSON output to get `project_id` and `project_path`.
 
 ### Step 2: Read Source Artifacts
 
-Read all documents listed in Step 0 above. Use the extracted information for auto-population of the DPIA template.
+Read all documents listed in Step 0 above. Use the extracted information for auto-population of the PIA template.
 
-### Step 3: DPIA Template Reading
+### Step 3: PIA Template Reading
 
-Read the DPIA template:
+Read the PIA template:
 
 **Read the template** (with user override support):
 - **First**, check if `.arckit/templates/dpia-template.md` exists in the project root
@@ -118,57 +118,39 @@ Read the DPIA template:
 - **If not found**: Read `.arckit/templates/dpia-template.md` (default)
 
 > **Note**: Read the `.arckit/VERSION` file and update the version in the template metadata line when generating.
-> **Tip**: Users can customize templates with `/arckit:customize dpia`
+> **Tip**: Users can customise templates with `/arckit.customize dpia`
 
-This template has 16 major sections and uses the OAIC's 9-criteria screening checklist.
+This template follows the OAIC PIA Guide structure (threshold assessment → information flows → compliance check → risk management → report and review).
 
-### Step 4: OAIC 9-Criteria Screening (Automated)
+### Step 4: OAIC Threshold Assessment (Automated)
 
-Based on the data model analysis, automatically score the OAIC 9 criteria:
+Run a threshold assessment (OAIC PIA Guide Step 1) to decide whether a PIA is needed and how detailed it should be.
 
-| # | Criterion | Scoring Logic |
-|---|-----------|---------------|
-| 1 | **Evaluation or scoring** | YES if: AI/ML features mentioned, profiling/scoring in requirements |
-| 2 | **Automated decision-making** | YES if: Automated decisions with legal/significant effect in requirements |
-| 3 | **Systematic monitoring** | YES if: Continuous tracking, surveillance, monitoring in requirements |
-| 4 | **Sensitive data** | YES if: ANY special category data (Article 9) in data model |
-| 5 | **Large scale** | YES if: >5000 data subjects mentioned OR "national" scope OR "all citizens" |
-| 6 | **Matching datasets** | YES if: Multiple data sources/integrations in data flows |
-| 7 | **Vulnerable subjects** | YES if: Children, elderly, disabled, patients identified in stakeholders |
-| 8 | **Innovative technology** | YES if: AI/ML, blockchain, biometrics, new tech mentioned |
-| 9 | **Prevents rights exercise** | YES if: No mechanism for SAR/deletion/portability in data model |
+Score each indicator based on evidence in the data model, requirements, and stakeholders:
 
-**DPIA Decision Rules**:
-- **2+ criteria met**: DPIA REQUIRED (Privacy Act 1988 (APPs) Article 35)
-- **1 criterion met**: DPIA RECOMMENDED (good practice)
-- **0 criteria met**: DPIA NOT REQUIRED (but consider Data Privacy Notice)
+| Indicator | YES/NO | Evidence |
+|----------|--------|----------|
+| Personal information involved | [YES/NO] | Entities/attributes in `ARC-*-DATA-*.md` |
+| Sensitive information involved (Privacy Act s 6(1)) | [YES/NO] | Data model classification |
+| Large volume / aggregation / new central database | [YES/NO] | Volumes, scale, retention |
+| Outsourcing or external service providers (incl. overseas) | [YES/NO] | Integrations, hosting, vendor model |
+| Cross-agency/cross-sector sharing, matching, or combining datasets | [YES/NO] | INT requirements + data flows |
+| New technology or new legislation required | [YES/NO] | AI/ML, biometrics, monitoring, etc. |
+| Compulsory collection or power imbalance | [YES/NO] | Govt-citizen, employer-employee, etc. |
+| Potential adverse outcomes for individuals | [YES/NO] | Eligibility/entitlements/sanctions impacts |
 
-Show the screening results to the user:
+**PIA Decision Guidance**:
+- If personal information is involved, a PIA is generally recommended.
+- The greater the privacy scope and risk indicators above, the more comprehensive the PIA should be.
+- Agencies may be directed by the OAIC to provide a PIA where an activity or change may significantly impact privacy.
 
-```
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📋 DPIA Screening Results (OAIC 9 Criteria)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Show the threshold results to the user and proceed to generate the PIA unless the user explicitly declines.
 
-[X] Criterion 4: Sensitive data (Special category data found: Health, Ethnicity)
-[X] Criterion 7: Vulnerable subjects (Children identified in stakeholders)
-[ ] Criterion 1: Evaluation/scoring (Not detected)
-... [continue for all 9 criteria]
+### Step 5: Generate PIA Report (DPIA Doc Type)
 
-**Screening Score**: 2/9 criteria met
-**Decision**: ✅ DPIA REQUIRED under Privacy Act 1988 (APPs) Article 35
+**CRITICAL**: Use the **Write tool** to create the PIA report. These documents are typically 3,000-10,000 words and will exceed the 32K token output limit if you try to output the full document in the chat.
 
-Proceeding to generate full DPIA...
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
-
-If the screening shows DPIA NOT REQUIRED, ask the user if they want to proceed anyway (they may want to conduct a DPIA for good practice or to demonstrate accountability).
-
-### Step 5: Generate DPIA Document
-
-**CRITICAL**: Use the **Write tool** to create the DPIA document. DPIAs are typically 3,000-10,000 words and will exceed the 32K token output limit if you try to output the full document in the chat.
-
-Generate the DPIA by:
+Generate the PIA report by:
 
 1. **Detect version**: Before generating the document ID, check if a previous version exists:
    - Look for existing `ARC-{PROJECT_ID}-DPIA-v*.md` files in the project directory
@@ -191,101 +173,66 @@ Generate the DPIA by:
    - Date Created: {current_date}
    - Assessment Date: {current_date}
    - Next Review Date: {current_date + 12 months}
-   - Classification: OFFICIAL-SENSITIVE
+   - Classification: OFFICIAL:Sensitive
 
-3. **Section 1: Need for DPIA**:
-   - Copy screening results from Step 4
-   - List all criteria that were met with evidence from data model
+3. **Populate the template sections (OAIC 10-step PIA flow)**:
+   - Use the structure and headings in `.arckit/templates/dpia-template.md`.
+   - Treat the OAIC steps as the organising backbone: threshold → plan → describe → consult → flows → compliance → risks → recommendations → report → respond/review.
+   - Remove or correct any non-Australian privacy terminology if it appears in source artefacts (e.g., “controller/processor”, “lawful basis”, “Article 35”). Translate into Privacy Act / APP terms and the project’s governance model.
 
-4. **Section 2: Description of Processing**:
-   - Project Context: Summarize from user input and requirements
-   - Processing Purposes: Extract from DR-xxx requirements and data model "Purpose of Processing" fields
-   - Nature of Processing: Describe collection, storage, use, disclosure, deletion
-   - Scope of Processing: Data subjects from stakeholder analysis, geographic scope
-   - Data Categories: List all PII and special category data from data model entities
-   - Data Sources: Extract from data model "Data Flow Sources"
-   - Data Destinations: Extract from data model "Data Flow Destinations"
-   - Retention Periods: Extract from data model retention policies
+   **Section 1: Threshold assessment (OAIC Step 1)**:
+   - Copy threshold assessment results from Step 4
+   - Explain why a PIA is appropriate and whether it is targeted vs comprehensive
+   - If the entity is an Australian Government agency: note that the Commissioner may direct an agency to provide a PIA (Privacy Act 1988 s 33D)
 
-5. **Section 3: Consultation**:
-   - Internal Stakeholders: Extract from stakeholder RACI (Data Controller, DPO, IT Security)
-   - External Stakeholders: Data subjects consultation plans (surveys, focus groups)
-   - Data Processors: List any third-party processors from integration requirements
+   **Section 2: Plan the PIA (OAIC Step 2)**:
+   - Identify roles (PIA lead, privacy, security, records/IM, legal/policy, service owner, vendor manager)
+   - List inputs and evidence sources (data model, requirements, stakeholders, security, vendor artefacts)
+   - Define deliverables (PIA report + action plan + notice changes)
 
-6. **Section 4: Necessity and Proportionality**:
-   - Lawful Basis: Extract GDPR Article 6 basis from each entity in data model
-   - Special Category Conditions: Extract GDPR Article 9 conditions from data model
-   - Necessity Test: For each processing purpose, justify why it's necessary
-   - Proportionality Test: Assess if data collection is proportionate to purpose
-   - Data Minimization: Review against architecture principles for minimization
+   **Section 3: Describe the project/activity (OAIC Step 3)**:
+   - Project overview, scope boundaries, and context
+   - Individuals affected (including vulnerable groups) and any power imbalance
+   - Legal/policy context and decision points where authority is unclear
 
-7. **Section 5: Risk Assessment**:
-   - For EACH entity with PII/special category data, identify risks to individuals:
-     - Confidentiality risks (data breach, unauthorized access)
-     - Integrity risks (data corruption, inaccurate profiling)
-     - Availability risks (inability to access/port data)
-   - Score each risk using DPIA risk matrix:
-     - **Likelihood**: Remote, Possible, Probable
-     - **Severity** (impact on individuals): Minimal, Significant, Severe
-     - **Overall Risk**: Low (green), Medium (amber), High (red)
-   - Link to existing risks in ARC-*-RISK-*.md if they exist
+   **Section 4: Consultation (OAIC Step 4)**:
+   - Internal consultation outcomes (privacy, security, records/IM, legal/policy, service owner)
+   - External consultation approach and findings (or rationale why not practicable)
 
-8. **Section 6: Mitigations**:
-   - For each high/medium risk, propose mitigations:
-     - Technical: Encryption, pseudonymization, access controls (link to secure-by-design controls)
-     - Organizational: Policies, training, DPIAs for suppliers
-     - Procedural: Breach notification, incident response, audit trails
-   - Show residual risk after mitigations
-   - Extract existing security controls from ARC-*-SECD-*.md as mitigations
+   **Section 5: Information flows and lifecycle mapping (OAIC Step 5)**:
+   - Map collection → storage → use → disclosure → retention → disposal/de-identification
+   - Summarise inventory from the data model and call out gaps
+   - Document all disclosures, including any overseas disclosure/access patterns (APP 8)
 
-9. **Section 7: OAIC Consultation**:
-   - If any residual risks remain HIGH after mitigations, flag for OAIC prior consultation:
-     ```
-     ⚠️  OAIC Prior Consultation Required:
-     - Risk DPIA-003 (Unauthorized profiling of children) remains HIGH after mitigations
-     - Contact OAIC before processing: https://ico.org.uk/make-a-complaint/your-personal-information-concerns/
-     ```
+   **Section 6: Privacy analysis / compliance check (OAIC Step 6)**:
+   - Complete an APP compliance matrix (at minimum: APP 1/3/5/6/8/10/11/12/13; add APP 2/4/7/9 where applicable)
+   - For each APP obligation: record evidence, gaps, and actions
+   - Include Notifiable Data Breaches (NDB) readiness: assessment within 30 days, notification as soon as practicable if eligible
+   - Document retention and disposal approach (APP 11.3), including records/Archives constraints if relevant
 
-10. **Section 8: Sign-off and Approval**:
-   - Leave signature fields blank (to be signed by Data Controller, DPO, Senior Responsible Owner)
+   **Section 7: Privacy impacts and risk assessment (OAIC Step 7)**:
+   - Identify privacy harms from the perspective of individuals (not only organisational risk)
+   - Use a simple risk scale (Likelihood: Remote/Possible/Probable; Consequence: Minimal/Significant/Severe; Overall: Low/Medium/High)
+   - Create `PIA-###` risks and link to related entries in `ARC-*-RISK-*.md` where appropriate
 
-11. **Section 9: Review and Monitoring**:
-    - Set review triggers: 12 months, major system changes, data breaches, OAIC guidance updates
+   **Section 8: Recommendations and action plan (OAIC Step 8)**:
+   - Convert mitigations into specific actions with owners, due dates, and evidence of completion
+   - If residual risk remains High: document escalation and acceptance decision/conditions
 
-12. **Section 10: Traceability**:
-    - Link to all source artifacts (ARC-*-DATA-*.md, ARC-*-REQ-*.md, ARC-*-STKE-*.md, ARC-000-PRIN-*.md, ARC-*-RISK-*.md)
-    - List all DPIA risks with unique IDs (DPIA-001, DPIA-002, etc.)
+   **Section 9: Report and sign-off (OAIC Step 9)**:
+   - Provide signature blocks for service owner, privacy, security, records/IM, and SRO
+   - Document distribution and storage arrangements (classification-appropriate)
 
-13. **Section 11: Data Subject Rights**:
-    - For each GDPR right (SAR, rectification, erasure, portability, objection, restriction, automated decision-making):
-      - Check if data model has implementation mechanism
-      - If YES, describe how it's implemented
-      - If NO, flag as a risk and recommend implementation
+   **Section 10: Respond and review (OAIC Step 10)**:
+   - Define implementation tracking, verification, and review triggers
+   - For agencies: include register updates (PIA register + personal information holdings register) where applicable
 
-14. **Section 12: International Transfers**:
-    - Check if data model shows any international destinations
-    - If YES, identify safeguards (SCCs, BCRs, adequacy decisions)
-    - If NO safeguards, flag as HIGH risk
+   **Appendices (as applicable)**:
+   - Cross-border disclosure assessment (APP 8)
+   - NDB checklist
+   - AI-specific addendum (where AI/ML or GenAI is in scope), including whether DTA AI impact assessment requirements apply
 
-15. **Section 13: Children's Data**:
-    - If children identified in stakeholders, generate detailed assessment:
-      - Age verification mechanisms
-      - Parental consent
-      - Child-friendly privacy notices
-      - Best interests assessment
-
-16. **Section 14: AI/Algorithmic Processing**:
-    - If AI/ML detected in requirements, integrate with ai-playbook assessment:
-      - Algorithmic bias risks
-      - Explainability/transparency
-      - Human oversight
-      - Link to AI transparency statement if it exists
-
-17. **Section 15: Summary and Action Plan**:
-    - Summary table: Total risks, high/medium/low breakdown, key mitigations, OAIC consultation needed?
-    - Action plan: List all recommendations with owners and deadlines
-
-Write the complete DPIA document to:
+Write the complete PIA document to:
 
 ```
 projects/{project_id}/ARC-{PROJECT_ID}-DPIA-v${VERSION}.md
@@ -296,9 +243,9 @@ projects/{project_id}/ARC-{PROJECT_ID}-DPIA-v${VERSION}.md
 Ask the user:
 
 ```
-📊 DPIA generated with [N] risks identified.
+📊 PIA generated with [N] risks identified.
 
-Would you like to add DPIA risks to the project risk register?
+Would you like to add PIA risks to the project risk register?
 This will create/update: projects/{project_id}/ARC-*-RISK-*.md
 
 [Y/N]
@@ -306,38 +253,38 @@ This will create/update: projects/{project_id}/ARC-*-RISK-*.md
 
 If YES:
 1. Read `projects/{project_id}/ARC-*-RISK-*.md` (or create from template if it doesn't exist)
-2. Add each DPIA risk as a new entry with:
-   - Risk ID: DPIA-001, DPIA-002, etc.
-   - Category: "Data Protection"
-   - Source: "DPIA Assessment"
-   - Link back to DPIA document
+2. Add each PIA risk as a new entry with:
+   - Risk ID: PIA-001, PIA-002, etc.
+   - Category: "Privacy"
+   - Source: "PIA Assessment"
+   - Link back to PIA document
 3. Update the risk register file
 
 ### Step 7: Summary Output
 
-**IMPORTANT**: Do NOT output the full DPIA document to the chat (it's too large). Instead, show a concise summary:
+**IMPORTANT**: Do NOT output the full PIA document to the chat (it's too large). Instead, show a concise summary:
 
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-✅ DPIA Generated Successfully
+✅ PIA Generated Successfully
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📄 Document: projects/{project_id}/ARC-{PROJECT_ID}-DPIA-v{VERSION}.md
 📋 Document ID: {document_id}
 📅 Assessment Date: {date}
-🔒 Classification: OFFICIAL-SENSITIVE
+🔒 Classification: OFFICIAL:Sensitive
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📊 Assessment Summary
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-**OAIC Screening**: {N}/9 criteria met → DPIA REQUIRED
+**Threshold Assessment**: {summary of indicators} → {PIA scope recommendation}
 
 **Processing Overview**:
 - Data Subjects: {list data subject categories}
-- Personal Data: {N} entities with PII
-- Special Category Data: {YES/NO} ({categories if yes})
-- Lawful Basis: {primary Article 6 basis}
+- Personal Information: {N} entities with personal information
+- Sensitive Information: {YES/NO} ({categories if yes})
+- APP Focus: {list key APPs impacted}
 - Retention Period: {typical retention}
 
 **Risk Assessment**:
@@ -347,22 +294,21 @@ If YES:
   - 🟢 Low: {N} (accepted)
 
 **Key Risks**:
-1. DPIA-001: {risk description} - {severity}
-2. DPIA-002: {risk description} - {severity}
-3. DPIA-003: {risk description} - {severity}
+1. PIA-001: {risk description} - {severity}
+2. PIA-002: {risk description} - {severity}
+3. PIA-003: {risk description} - {severity}
 
-**Mitigations Proposed**: {N} technical, organizational, and procedural controls
+**Mitigations Proposed**: {N} technical, organisational, and procedural controls
 
-**OAIC Prior Consultation**: {REQUIRED / NOT REQUIRED}
-{If required: List residual high risks that trigger consultation}
+**OAIC Engagement**: {PLANNED / NOT PLANNED / DIRECTED}
 
-**Data Subject Rights**:
-- ✅ Implemented: {list rights with mechanisms}
-- ❌ Not Implemented: {list rights needing implementation}
+**Access & Correction (APP 12/13)**:
+- ✅ Implemented: {pathways}
+- ⚠️ Gaps: {gaps needing implementation}
 
 **Next Steps**:
-1. Review and approve DPIA (Data Controller, DPO, SRO signatures)
-2. {If OAIC consultation needed: Contact OAIC before processing}
+1. Review and approve PIA (service owner, privacy officer, security lead, SRO)
+2. {If OAIC engagement planned/directed: provide next steps}
 3. Implement recommended mitigations
 4. Establish 12-month review cycle
 5. {If children's data: Implement age verification and parental consent}
@@ -387,38 +333,35 @@ If YES:
 📚 References
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-- Privacy Act 1988 (APPs) Article 35: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/data-protection-impact-assessments-dpias/
-- OAIC DPIA Guidance: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/data-protection-impact-assessments-dpias/what-is-a-dpia/
-- OAIC Prior Consultation: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/data-protection-impact-assessments-dpias/do-we-need-to-consult-the-ico/
+- OAIC Guide to undertaking privacy impact assessments (PIAs)
+- OAIC APP Guidelines (APP 8/11/12/13)
+- OAIC Notifiable Data Breaches (NDB) scheme guidance
+ - Privacy Act 1988 (s 33D; definitions where relevant)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
 
 ## Important Notes
 
-2. **Legal Requirement**: A DPIA is **mandatory** under Privacy Act 1988 (APPs) Article 35 when processing is likely to result in high risk to individuals. Failure to conduct a DPIA when required can result in OAIC enforcement action.
+1. **Policy expectation**: The OAIC strongly encourages PIAs for projects involving personal information. APP 1 supports privacy-by-design practices; agencies may also be directed to provide a PIA under the Privacy Act (s 33D).
 
-3. **Use Write Tool**: DPIAs are large documents (typically 3,000-10,000 words). You MUST use the Write tool to create the file. Do NOT output the full DPIA in the chat.
+2. **Use Write Tool**: PIAs are large documents. You MUST use the Write tool to create the file. Do NOT output the full PIA in the chat.
 
-4. **Risk Assessment Focus**: DPIA risks focus on **impact on individuals** (privacy harm, discrimination, physical harm, financial loss, reputational damage), NOT organizational risks. This is different from the risk register.
+3. **Risk focus**: PIA risks focus on **impact on individuals** (privacy harm, discrimination, physical harm, financial loss, reputational damage), not only organisational risk. This is different from the project risk register.
 
-5. **Screening is Critical**: Always perform the OAIC 9-criteria screening first. If the screening shows DPIA not required, don't generate a full DPIA unless the user explicitly requests it.
+4. **Threshold assessment first**: Always perform an OAIC-style threshold assessment first to decide whether a targeted vs comprehensive PIA is needed.
 
-6. **Data Model Dependency**: A DPIA cannot be generated without a data model. The data model is the source of truth for what personal data is being processed.
+5. **Data model dependency**: A PIA cannot be generated without a data model. The data model is the source of truth for what personal information is being handled.
 
-7. **Bidirectional Risk Links**: DPIA risks should be added to the risk register (with "Data Protection" category), and existing privacy risks in the risk register should be referenced in the DPIA.
+6. **Bidirectional risk links**: PIA risks should be added to the project risk register (category “Privacy”), and existing privacy risks in the risk register should be referenced in the PIA.
 
-8. **Mitigation Sources**: Extract security controls from the Secure by Design assessment as DPIA mitigations. This creates traceability from risks → mitigations → security controls.
+7. **Mitigation sources**: Extract controls from the Secure by Design assessment as PIA mitigations. This creates traceability from risks → mitigations → security controls.
 
-9. **OAIC Consultation Threshold**: If ANY residual risk remains HIGH after mitigations, OAIC prior consultation is required before processing can begin.
+8. **High residual risk escalation**: If residual privacy risk remains high after mitigations, escalate to privacy/legal governance and document the decision and conditions (especially for agencies).
 
-10. **Children's Data**: If processing children's data, the DPIA must include additional assessment of age verification, parental consent, best interests, and child-friendly privacy notices.
+9. **Classification**: PIAs often contain sensitive details about information flows, controls, and vulnerabilities. Default classification should be **OFFICIAL:Sensitive** unless a different protective marking is justified by the entity’s policy.
 
-11. **AI/ML Systems**: If the system uses AI/ML for profiling, automated decision-making, or algorithmic processing, integrate with `/arckit:ai-playbook` assessment and link to AI transparency statement.
-
-12. **Classification**: DPIAs contain sensitive information about data protection risks and vulnerabilities. Always classify as **OFFICIAL-SENSITIVE** at minimum.
-
-13. **Review Cycle**: DPIAs must be reviewed regularly (recommended: 12 months) and updated when:
+10. **Review cycle**: PIAs should be revisited and updated when:
     - New processing activities are added
     - Data protection risks change
     - OAIC guidance is updated
@@ -427,28 +370,27 @@ If YES:
 ## Success Criteria
 
 - ✅ DPIA document created at `projects/{project_id}/ARC-{PROJECT_ID}-DPIA-v${VERSION}.md`
-- ✅ OAIC 9-criteria screening performed and documented
-- ✅ All personal data and special category data from data model included
+- ✅ OAIC-style threshold assessment performed and documented
+- ✅ OAIC 10-step PIA flow followed in the report structure
+- ✅ All personal information and sensitive information from data model included
 - ✅ Processing purposes extracted from requirements
 - ✅ Data subjects and vulnerable groups identified from stakeholders
 - ✅ Risk assessment completed with likelihood, severity, and overall risk scores
 - ✅ Mitigations proposed for all high and medium risks
-- ✅ OAIC prior consultation flagged if residual high risks remain
-- ✅ Data subject rights implementation assessed (SAR, deletion, portability, etc.)
-- ✅ International transfer safeguards identified if applicable
-- ✅ Children's data assessment completed if applicable
-- ✅ AI/algorithmic processing assessment completed if applicable
+- ✅ Access and correction pathways assessed (APP 12/13)
+- ✅ Cross-border disclosures assessed (APP 8) including accountability considerations (s 16C)
+- ✅ NDB readiness addressed (assessment within 30 days; notify as soon as practicable if eligible)
 - ✅ Traceability links to data model, requirements, stakeholders, principles, risk register
 - ✅ Summary output shows key metrics, risks, and next steps
-- ✅ Document classified as OFFICIAL-SENSITIVE
+- ✅ Document classification set and justified (default OFFICIAL:Sensitive)
 - ✅ 12-month review cycle established
 
 ## Example Usage
 
 ```
-/arckit:dpia Generate DPIA for public health appointment system
+/arckit.dpia Generate PIA for public health appointment system
 
-/arckit:dpia Create data protection impact assessment for HMRC chatbot handling taxpayer queries
+/arckit.dpia Create privacy impact assessment for benefits eligibility decision support tool
 
-/arckit:dpia Assess DPIA necessity for Windows 11 deployment (employee data only)
+/arckit.dpia Assess PIA scope for Windows 11 deployment (employee data only)
 ```
