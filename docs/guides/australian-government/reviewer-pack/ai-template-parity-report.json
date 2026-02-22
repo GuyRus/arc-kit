@@ -415,11 +415,11 @@
       "match": true
     },
     {
-      "relativePath": "ukgov-secure-by-design-template.md",
+      "relativePath": "secure-by-design-template.md",
       "leftExists": true,
       "rightExists": true,
-      "leftSha256": "88d196f8f50f94e57bbd5bd90132571c05fd30a92aceaf6dc008ebc3d1173566",
-      "rightSha256": "88d196f8f50f94e57bbd5bd90132571c05fd30a92aceaf6dc008ebc3d1173566",
+      "leftSha256": "f7961c7787354747bff119f177d1fd58930a29894bb3dbfb40cba9c15fc44beb",
+      "rightSha256": "f7961c7787354747bff119f177d1fd58930a29894bb3dbfb40cba9c15fc44beb",
       "match": true
     },
     {

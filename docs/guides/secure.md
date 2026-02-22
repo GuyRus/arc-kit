@@ -1,6 +1,13 @@
-# Secure by Design Playbook
+# Secure by Design Assessment (AU)
 
-`/arckit.secure` generates a Australian Government Secure by Design assessment for civilian department projects using ASD ACSC CAF principles.
+`/arckit.secure` generates a Secure by Design assessment for Australian Government (civilian) projects.
+
+It keeps the useful “assurance pack” structure (executive summary, evidence index, findings, actions) while aligning content to Australian Government expectations first:
+
+- ASD Essential Eight maturity
+- agency policy expectations aligned to PSPF/ISM (without inventing control IDs)
+- cloud security and IRAP readiness where required
+- Privacy Act 1988 (APPs) and Notifiable Data Breaches (NDB) readiness where personal information is in scope
 
 ---
 
@@ -8,113 +15,77 @@
 
 | Artefact | Purpose |
 |----------|---------|
-| Requirements (`ARC-<id>-REQ-v1.0.md`) | Security requirements (NFR-SEC) |
-| Architecture diagrams | System boundaries and data flows |
-| Risk register | Security risks identified |
-| Data model | Personal data and classification |
+| Requirements (`ARC-<id>-REQ-v*.md`) | Security, availability, resilience, logging and data constraints |
+| Architecture diagrams (`ARC-<id>-DIAG-*.md`) | Trust boundaries, deployment topology, data flows |
+| Risk register (`ARC-<id>-RISK-v*.md`) | Security and privacy risks, treatments and residual risk |
+| PIA (`ARC-<id>-PIA-v*.md`) | APP risks, mitigations, data sharing constraints |
+| ADRs (`ADR-*.md`) | Security-significant decisions and accepted trade-offs |
+| External reports (`projects/<project>/external/*`) | Pen test reports, vulnerability scans, audits, threat models |
 
 ---
 
 ## Command
 
 ```bash
-/arckit.secure Create Secure by Design assessment for <system>
+/arckit.secure Secure by Design assessment for <system>
 ```
 
-Output: `projects/<id>/ARC-<id>-SECD-v1.0.md`
+Output: `projects/<id>/ARC-<id>-SECD-vX.Y.md`
 
-> **Auto-versioning**: Re-running this command when a document already exists automatically increments the version (minor for refreshed content, major for changed scope) instead of overwriting.
-
----
-
-## Assessment Structure
-
-| Section | Contents |
-|---------|----------|
-| Executive Summary | Overall security posture and key findings |
-| System Overview | Purpose, boundaries, data classification |
-| ASD ACSC CAF Assessment | Compliance against 14 CAF principles |
-| Threat Assessment | Threat landscape and attack vectors |
-| Security Architecture | Controls, boundaries, defense in depth |
-| Essential Eight | Alignment with Essential Eight controls |
-| Supply Chain Security | Third-party and vendor security |
-| Data Protection | Personal data handling and GDPR |
-| Incident Response | Detection, response, and recovery |
-| Recommendations | Prioritized security improvements |
+> **Auto-versioning**: re-running increments the version (minor for refreshed assessment; major for materially changed scope).
 
 ---
 
-## ASD ACSC CAF 14 Principles
+## What The Assessment Covers
 
-| Objective | # | Principle |
-|-----------|---|-----------|
-| **Managing Risk** | A1 | Governance |
-| | A2 | Risk Management |
-| | A3 | Asset Management |
-| | A4 | Supply Chain |
-| **Protecting Against Attack** | B1 | Service Protection Policies |
-| | B2 | Identity and Access Control |
-| | B3 | Data Security |
-| | B4 | System Security |
-| | B5 | Resilient Networks |
-| | B6 | Staff Awareness |
-| **Detecting Events** | C1 | Security Monitoring |
-| | C2 | Anomaly Detection |
-| **Minimising Impact** | D1 | Response and Recovery |
-| | D2 | Lessons Learned |
+The assessment is structured around AU-aligned control areas:
+
+- Governance, risk, and assurance (roles, risk acceptance, assurance gates, supplier assurance)
+- Identity, access, and privilege management (MFA, PAM, least privilege, account lifecycle)
+- Data protection and privacy (classification/handling, encryption and keys, retention/disposal, APPs, NDB readiness)
+- Platform, network, and endpoint security (hardening, patching, segmentation, environment separation)
+- Secure engineering and supply chain (secure SDLC, CI/CD checks, dependency risk, provenance/SBOM where appropriate)
+- Logging, monitoring, and detection (coverage, retention, alerting, vulnerability management cadence)
+- Incident response and resilience (playbooks, backups, recovery objectives, exercises)
+- Cloud security and shared responsibility (if applicable), including IRAP readiness where required
 
 ---
 
-## Essential Eight Controls
+## Essential Eight Mitigation Strategies
 
-| Control | Description |
-|---------|-------------|
-| Firewalls | Boundary protection |
-| Secure Configuration | Hardened systems |
-| Access Control | Least privilege |
-| Malware Protection | Anti-malware tools |
-| Patch Management | Timely updates |
+The output includes a maturity table for all eight strategies:
 
----
-
-## One-Page Workflow
-
-| Phase | Key Activities | ArcKit Commands |
-|-------|----------------|-----------------|
-| Discovery | Define requirements and data model | `/arckit.requirements`, `/arckit.data-model` |
-| Risk | Identify security risks | `/arckit.risk` |
-| Assessment | Create Secure by Design assessment | `/arckit.secure` |
-| Design | Implement security architecture | `/arckit.diagram`, `/arckit.hld-review` |
-| Operations | Operational security readiness | `/arckit.operationalize` |
+- Application control
+- Patch applications
+- Configure Microsoft Office macro settings
+- User application hardening
+- Restrict administrative privileges
+- Patch operating systems
+- Multi-factor authentication (MFA)
+- Regular backups
 
 ---
 
-## Review Checklist
+## Privacy And NDB Readiness
 
-- All 14 ASD ACSC CAF principles assessed with evidence.
-- Essential Eight controls addressed.
-- Data classification and handling defined.
-- Supply chain risks identified and managed.
-- Security monitoring and detection in place.
-- Incident response procedures documented.
-- Staff security awareness addressed.
-- Third-party security requirements defined.
+If personal information is processed, the assessment includes:
+
+- a summary of key APP areas relevant to the system and the evidence used
+- whether a PIA exists (or a recommendation to perform one where risk is high)
+- NDB readiness (detection and triage, “eligible data breach” decision process, notification approach and supplier notification expectations)
 
 ---
 
-## Security Classification (Civilian)
+## Security Classification (AU)
 
-| Classification | Description | Controls |
-|----------------|-------------|----------|
-| OFFICIAL | Majority of government data | Standard controls |
-| OFFICIAL-SENSITIVE | More sensitive OFFICIAL | Enhanced access control |
+Use AU classification styles (example): `OFFICIAL:Sensitive`.
 
----
+Common options used in templates:
 
-## Key Principles
+- PUBLIC
+- OFFICIAL
+- OFFICIAL:Sensitive
+- PROTECTED
+- SECRET
+- TOP SECRET
 
-1. **Defense in Depth**: Multiple layers of security controls.
-2. **Least Privilege**: Minimum access necessary for function.
-3. **Secure by Default**: Security is the default, not an option.
-4. **Assume Breach**: Design for detection and response, not just prevention.
-5. **Proportionate Security**: Controls match the risk and data sensitivity.

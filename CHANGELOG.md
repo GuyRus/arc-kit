@@ -1657,7 +1657,7 @@ Deployed to 6 test repositories:
 - `/arckit.evaluate` - Create vendor evaluation frameworks
 - `/arckit.hld-review` - Review High-Level Design
 - `/arckit.dld-review` - Review Detailed Design
-- `/arckit.secure` - UK Government Secure by Design review
+- `/arckit.secure` - Australian Government Secure by Design assessment
 - `/arckit.traceability` - Generate requirements traceability matrix
 - `/arckit.analyze` - Analyze architecture complexity
 - `/arckit.servicenow` - Export to ServiceNow CMDB
@@ -1672,7 +1672,7 @@ Deployed to 6 test repositories:
 - `templates/vendor-scoring-template.md`
 - `templates/hld-review-template.md`
 - `templates/dld-review-template.md`
-- `templates/ukgov-secure-by-design-template.md`
+- `templates/secure-by-design-template.md`
 - `templates/traceability-matrix-template.md`
 
 ### CLI Tool

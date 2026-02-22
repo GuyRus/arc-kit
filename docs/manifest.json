@@ -492,9 +492,9 @@
           "category": "Legacy UK"
         },
         {
-          "path": ".arckit/templates/ukgov-secure-by-design-template.md",
+          "path": ".arckit/templates/secure-by-design-template.md",
           "title": "Secure by Design Template",
-          "category": "UK Government"
+          "category": "Australian Government"
         },
         {
           "path": ".arckit/templates/mod-secure-by-design-template.md",

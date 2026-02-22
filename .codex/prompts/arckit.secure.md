@@ -1,10 +1,12 @@
 ---
-description: "Generate a Secure by Design assessment for Australian Government projects (civilian departments)"
+description: "Generate a Secure by Design assessment for Australian Government projects (AU civilian, PSPF/ISM/Essential Eight aligned)"
 ---
 
-# Australian Government Secure by Design Assessment
+# Australian Government Secure by Design Assessment (`/arckit.secure`)
 
-You are helping to conduct a **Secure by Design assessment** for a Australian Government technology project (civilian/non-Defence).
+You are helping to produce a **Secure by Design assessment** for an Australian Government technology project (civilian / non-Defence).
+
+The output must preserve useful, generic Secure by Design structure (executive summary, evidence inventory, findings, actions, traceability) while aligning the content to Australian Government expectations first.
 
 ## User Input
 
@@ -12,483 +14,136 @@ You are helping to conduct a **Secure by Design assessment** for a Australian Go
 $ARGUMENTS
 ```
 
-## Context
+## Australian Context (What This Must Align To)
 
-Australian Government departments must follow ASD ACSC (National Cyber Security Centre) guidance and achieve appropriate security certifications before deploying systems. This assessment evaluates security controls using the ASD ACSC Cyber Assessment Framework (CAF).
+This assessment should be anchored in the following Australian Government-aligned expectations (tailored to the system and agency):
 
-**Key Australian Government Security References**:
-- ASD ACSC Cyber Assessment Framework (CAF)
-- Essential Eight / Essential Eight maturity uplift
-- Privacy Act 1988 (APPs) and Privacy Act 1988
-- Government Security Classifications Policy
-- Cloud Security Principles
+- **ASD Essential Eight** maturity expectations (current vs target)
+- **Agency security policy** and mandatory control sets aligned to the **PSPF** and **ISM** (do not invent control IDs; describe control intent and evidence)
+- **Cloud security and assurance** approach (shared responsibility, logging, encryption, IAM guardrails) and **IRAP readiness where required**
+- **Privacy Act 1988 (APPs)** obligations (where personal information is handled) and readiness for the **Notifiable Data Breaches (NDB) scheme**
+
+If the user’s artefacts indicate AI/ML components, add AI-relevant security considerations (e.g., prompt injection, model/data supply chain, data leakage) but keep them proportionate and evidence-based.
 
 ## Your Task
 
 Generate a comprehensive Secure by Design assessment document by:
 
-1. **Loading the template** (with user override support):
-   - **First**, check if `.arckit/templates/ukgov-secure-by-design-template.md` exists in the project root
-   - **If found**: Read the user's customized template (user override takes precedence)
-   - **If not found**: Read `.arckit/templates/ukgov-secure-by-design-template.md` (default)
+### 1. Load The Template (User Override Supported)
 
-   > **Note**: Read the `.arckit/VERSION` file and update the version in the template metadata line when generating.
-   > **Tip**: Users can customize templates with `/arckit:customize secure`
+- **First**, check if `.arckit/templates/secure-by-design-template.md` exists
+- **If found**: read it and use it (user override takes precedence)
+- **If not found**: read `.arckit/templates/secure-by-design-template.md` (default)
 
-2. **Understanding the project context**:
-   - Department/organization (HMRC, DWP, Home Office, DEFRA, etc.)
-   - Data classification (PUBLIC, OFFICIAL, OFFICIAL-SENSITIVE)
-   - Project phase (Discovery, Alpha, Beta, Live)
-   - User base (public-facing, internal staff, both)
-   - Hosting approach (cloud, on-premise, hybrid)
+> **Note**: Read `.arckit/VERSION` and update the template metadata version when generating.
+> **Tip**: Users can customise templates with `/arckit.customize secure`.
 
-3. **Read Available Documents**:
+### 2. Understand Project Context (Ask If Missing)
 
-   Scan the project directory for existing artifacts and read them to inform this assessment:
+Extract or ask for:
 
-   **MANDATORY** (warn if missing):
-   - `ARC-*-REQ-*.md` in `projects/{project-name}/` — Requirements specification
-     - Extract: NFR-SEC (security), NFR-P (performance), NFR-A (availability), INT (integration), DR (data) requirements
-     - If missing: warn user to run `/arckit:requirements` first
-   - `ARC-000-PRIN-*.md` in `projects/000-global/` — Architecture principles
-     - Extract: Security standards, approved platforms, compliance requirements, cloud policy
-     - If missing: warn user to run `/arckit:principles` first
+- organisation/agency context (civilian; any agency-specific policy constraints)
+- delivery stage (Discovery / Alpha / Beta / Live, or equivalent)
+- system type and exposure (public-facing, staff-only, API, data platform)
+- information/data classification (use AU style, e.g. `OFFICIAL:Sensitive`)
+- hosting model (cloud/on-prem/hybrid) and key vendors
+- whether personal information is processed (privacy scope)
+- whether IRAP is expected/required in this context (if unclear, ask and record assumption)
 
-   **RECOMMENDED** (read if available, note if missing):
-   - `ARC-*-RISK-*.md` in `projects/{project-name}/` — Risk register
-     - Extract: Security risks, threat model, risk appetite, mitigations
-   - `ARC-*-PIA-*.md` in `projects/{project-name}/` — Privacy Impact Assessment
-     - Extract: Personal data processing, lawful basis, data protection risks
-   - `ARC-*-DIAG-*.md` in `projects/{project-name}/diagrams/` — Architecture diagrams
-     - Extract: Deployment topology, network boundaries, data flows, integration points
+### 3. Read Available ArcKit Artefacts
 
-   **OPTIONAL** (read if available, skip silently if missing):
-   - `ARC-*-TCOP-*.md` in `projects/{project-name}/` — DX Policy / DSS review
-     - Extract: Technology governance compliance, Point 6 (Secure) findings
-   - `ARC-*-AIGA-*.md` in `projects/{project-name}/` — AU AI governance assessment
-     - Extract: AI-specific security requirements (prompt injection, data poisoning)
-   - `ARC-*-AITS-*.md` in `projects/{project-name}/` — AI transparency statement
-     - Extract: Algorithmic transparency security requirements
+Scan the project directory and read what exists.
 
-   **What to extract from each document**:
-   - **Principles**: Security standards, approved platforms, compliance constraints
-   - **Requirements**: NFR-SEC IDs, data classification, availability targets, integration security
-   - **Risk**: Security threats, risk levels, existing mitigations
-   - **PIA**: Personal data categories, lawful basis, data protection controls
-   - **Diagrams**: Network topology, trust boundaries, data flow paths
+**MANDATORY** (warn if missing):
 
-4. **Check for External Documents** (optional):
+- `ARC-*-REQ-*.md` in `projects/{project}/` — Requirements
+  - Extract: NFR-SEC, NFR-A, NFR-R, identity, logging, incident response, data handling constraints
+  - If missing: warn user to run `/arckit.requirements` first
+- `ARC-000-PRIN-*.md` in `projects/000-global/` — Principles
+  - Extract: mandatory guardrails, approved platforms, security expectations
+  - If missing: warn user to run `/arckit.principles` first
 
-   Scan for external (non-ArcKit) documents the user may have provided:
+**RECOMMENDED** (read if available; note if missing):
 
-   **Security Assessment Reports**:
-   - **Look in**: `projects/{project-dir}/external/`
-   - **File types**: PDF (.pdf), Word (.docx), Markdown (.md), Images (.png, .jpg)
-   - **What to extract**: Vulnerability findings, risk ratings, remediation recommendations
-   - **Examples**: `pentest-report.pdf`, `vulnerability-scan.pdf`, `red-team-findings.docx`
+- `ARC-*-RISK-*.md` — Risk register (security/privacy risks, treatments, risk appetite)
+- `ARC-*-PIA-*.md` — Privacy impact assessment (APP risks, mitigations, data sharing constraints)
+- `ARC-*-DIAG-*.md` — Architecture diagrams (trust boundaries, data flows, deployment topology)
+- `ADR-*.md` — ADRs (security-significant decisions and accepted trade-offs)
 
-   **Compliance Certificates & Audit Reports**:
-   - **Look in**: `projects/{project-dir}/external/` or `projects/000-global/policies/`
-   - **File types**: PDF, images (certificate scans)
-   - **What to extract**: Certification scope, validity dates, audit findings, non-conformities
-   - **Examples**: `cyber-essentials-plus-cert.pdf`, `iso27001-audit.pdf`, `soc2-report.pdf`
+**OPTIONAL** (read if available; skip silently if missing):
 
-   **Threat Models**:
-   - **Look in**: `projects/{project-dir}/external/`
-   - **File types**: Markdown, PDF, images (STRIDE/DREAD diagrams)
-   - **What to extract**: Threat actors, attack vectors, existing mitigations, residual risks
-   - **Examples**: `threat-model.md`, `stride-analysis.pdf`
+- `ARC-*-TCOP-*.md` — DX Policy / DSS review (security-related findings)
+- `ARC-*-AIGA-*.md` — AU AI governance assessment (AI-specific risks and controls)
+- `ARC-*-AITS-*.md` — AI transparency statement (AI usage context and constraints)
 
-   **Security Policies**:
-   - **Look in**: `projects/000-global/policies/`
-   - **File types**: PDF, Word, Markdown
-   - **What to extract**: Security requirements, acceptable risk levels, mandatory controls
-   - **Examples**: `security-policy.pdf`, `risk-appetite.md`, `incident-response-plan.docx`
+### 4. Read External Evidence (If Provided)
 
-   **Enterprise-Wide Security Baselines**:
-   - **Look in**: `projects/000-global/external/`
-   - **File types**: PDF, Word, Markdown
-   - **What to extract**: Enterprise security baselines, penetration test reports, cross-project security assessment patterns
+Look in `projects/{project}/external/` for PDFs, docs, and images (pen test reports, vulnerability scans, audit reports, threat models).
 
-   **User prompt**: If no external security docs found, ask:
-   "Do you have any existing security assessments, pen test reports, or threat models? I can read PDFs and images directly. Place them in `projects/{project-dir}/external/` and re-run, or skip."
+If none are found, prompt (non-blocking):
 
-   **Important**: This command works without external documents. They enhance output quality but are never blocking.
+“If you have existing security assessments, pen test reports, or threat models, place them in `projects/{project}/external/` and re-run. Otherwise I’ll proceed based on ArcKit artefacts.”
 
-5. **Assess security using ASD ACSC CAF (14 principles across 4 objectives)**:
+### 5. Perform The Assessment (AU-Aligned Control Areas)
 
-   **Objective A: Managing Security Risk (4 principles)**
-   - A1: Governance - SIRO appointed, security policies, oversight
-   - A2: Risk Management - Asset classification, risk register, treatment plans
-   - A3: Asset Management - Inventory of hardware, software, data
-   - A4: Supply Chain - Vendor assessments, contracts, third-party controls
+Assess the system across these control areas using the template, and for each area provide:
 
-   **Objective B: Protecting Against Cyber Attack (6 principles)**
-   - B1: Service Protection Policies - Acceptable use, access control, data protection policies
-   - B2: Identity and Access Control - MFA, PAM, least privilege, access reviews
-   - B3: Data Security - Encryption, Privacy Act 1988 (APPs) compliance, PIA, DLP
-   - B4: System Security - Patching, hardening, anti-malware, EDR
-   - B5: Resilient Networks - Segmentation, firewalls, IDS/IPS, VPN
-   - B6: Staff Awareness - Security training, phishing awareness, data protection
+- status: ✅ Achieved / ⚠️ Partially Achieved / ❌ Not Achieved / N/A
+- evidence (links to artefacts, decisions, diagrams)
+- findings (what’s missing, what’s risky, what’s strong)
+- actions (clear remediation steps with owners and target dates)
 
-   **Objective C: Detecting Cyber Security Events (2 principles)**
-   - C1: Security Monitoring - SIEM, alerting, logging, threat intelligence
-   - C2: Proactive Security Event Discovery - Vulnerability scanning, pen testing, threat hunting
+**Control areas** (minimum):
 
-   **Objective D: Minimising the Impact of Incidents (2 principles)**
-   - D1: Response and Recovery Planning - Incident response, BC/DR, RTO/RPO
-   - D2: Improvements - Post-incident reviews, metrics, continuous improvement
+- Governance, risk, and assurance (risk ownership, assurance gates, supplier assurance)
+- Identity, access, and privilege management (MFA, PAM, least privilege, account lifecycle)
+- Data protection and privacy (classification/handling, encryption and keys, retention/disposal, APP obligations, NDB readiness)
+- Platform, network, and endpoint security (hardening, patching, segmentation, environment separation)
+- Secure engineering and supply chain (secure SDLC, CI/CD checks, dependency risk, SBOM/provenance where appropriate)
+- Logging, monitoring, and detection (coverage, retention, alerting, vulnerability management cadence)
+- Incident response and resilience (playbooks, backups, recovery objectives, exercises)
+- Cloud security and shared responsibility (if applicable), including IRAP readiness where required
 
-6. **Assess Essential Eight compliance (5 controls)**:
-   - Firewalls - Boundary firewalls configured
-   - Secure Configuration - Hardened systems, unnecessary services disabled
-   - Access Control - User accounts, MFA, least privilege
-   - Malware Protection - Anti-malware on all devices
-   - Patch Management - Timely patching (critical within 14 days)
+### 6. Essential Eight Maturity Assessment
 
-7. **Assess Privacy Act 1988 (APPs) compliance (if processing personal data)**:
-   - DPO appointed (if required)
-   - Lawful basis identified
-   - Privacy notice published
-   - Data subject rights procedures
-   - PIA completed (if high risk)
-   - Data breach notification process (72 hours to OAIC)
-   - Records of Processing Activities (ROPA)
+Include an Essential Eight table (all 8 strategies) with:
 
-8. **For each CAF principle and control**:
-   - Assess status: ✅ Achieved / ⚠️ Partially Achieved / ❌ Not Achieved / N/A
-   - Gather evidence from project documents
-   - Check relevant security controls
-   - Identify gaps and risks
-   - Provide specific remediation actions with owners and timelines
+- current maturity level (0-3)
+- target maturity level (0-3)
+- evidence and gaps/actions
 
-9. **Calculate overall CAF score**: X/14 principles achieved
+Do not claim “certification” levels; treat maturity as an evidence-based assessment.
 
-10. **Identify critical security issues**:
-   - Issues that block progression to next phase
-   - Unacceptable risk levels
-   - Regulatory non-compliance (Privacy Act 1988 (APPs), Data Protection Act)
+### 7. Privacy And NDB Readiness (If In Scope)
 
-11. **Generate actionable recommendations**:
-    - Critical priority (0-30 days) - blockers for next phase
-    - High priority (1-3 months) - significant risk reduction
-    - Medium priority (3-6 months) - continuous improvement
+If personal information is processed:
 
-12. **Detect version**: Before generating the document ID, check if a previous version exists:
-    - Look for existing `ARC-{PROJECT_ID}-SECD-v*.md` files in the project directory
-    - **If no existing file**: Use VERSION="1.0"
-    - **If existing file found**:
-      - Read the existing document to understand its scope
-      - Compare against current inputs and project state
-      - **Minor increment** (e.g., 1.0 → 1.1): Scope unchanged — refreshed assessments, updated control status, corrected details
-      - **Major increment** (e.g., 1.0 → 2.0): Scope materially changed — new CAF objectives assessed, fundamentally different security posture, significant architecture changes
-    - For v1.1+/v2.0+: Add a Revision History entry describing what changed from the previous version
+- summarise key APP areas relevant to the system and what evidence supports compliance
+- confirm whether a PIA exists (or recommend one where high privacy risk exists)
+- include NDB readiness: detection, triage, “eligible data breach” decision process, notification approach and supplier SLAs
 
-13. **Save the document**: Write to `projects/[project-folder]/ARC-{PROJECT_ID}-SECD-v${VERSION}.md`
+Avoid UK/EU-specific constructs (e.g., “lawful basis”, “ROPA”, “72 hour notification”) unless the project explicitly operates under those regimes.
 
+### 8. Versioning And Output Location
 
+Before generating the document ID, detect whether a previous version exists:
 
+- look for existing `ARC-{PROJECT_ID}-SECD-v*.md` files in the project directory
+- if none: `VERSION="1.0"`
+- if found: read the latest and decide:
+  - **minor** bump (e.g., 1.0 → 1.1): refreshed assessment; same scope
+  - **major** bump (e.g., 1.0 → 2.0): scope materially changed; new environments, new assurance boundary, major architecture shift
 
-**CRITICAL - Auto-Populate Document Control Fields**:
+Save to:
 
-Before completing the document, populate ALL document control fields in the header:
+`projects/[project]/ARC-{PROJECT_ID}-SECD-v${VERSION}.md`
 
-### Step 1: Generate Document ID
+### 9. Auto-Populate Document Control Fields (Required)
+
+Generate the Document ID:
+
 ```bash
-# Use the ArcKit document ID generation script
 DOC_ID=$(.arckit/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "SECD" "${VERSION}")
-# Example output: ARC-001-SECD-v1.0
 ```
 
-### Step 2: Populate Required Fields
-
-**Auto-populated fields** (populate these automatically):
-- `[PROJECT_ID]` → Extract from project path (e.g., "001" from "projects/001-project-name")
-- `[VERSION]` → Determined version from step 11
-- `[DATE]` / `[YYYY-MM-DD]` → Current date in YYYY-MM-DD format
-- `[DOCUMENT_TYPE_NAME]` → "Secure by Design Assessment"
-- `ARC-[PROJECT_ID]-SECD-v[VERSION]` → Use generated DOC_ID from Step 1
-- `[COMMAND]` → "arckit.secure"
-
-**User-provided fields** (extract from project metadata or user input):
-- `[PROJECT_NAME]` → Full project name from project metadata or user input
-- `[OWNER_NAME_AND_ROLE]` → Document owner (prompt user if not in metadata)
-- `[CLASSIFICATION]` → Default to "OFFICIAL" for Australian Government, "PUBLIC" otherwise (or prompt user)
-
-**Calculated fields**:
-- `[YYYY-MM-DD]` for Review Date → Current date + 30 days (requirements, research, risks)
-- `[YYYY-MM-DD]` for Review Date → Phase gate dates (Alpha/Beta/Live for compliance docs)
-
-**Pending fields** (leave as [PENDING] until manually updated):
-- `[REVIEWER_NAME]` → [PENDING]
-- `[APPROVER_NAME]` → [PENDING]
-- `[DISTRIBUTION_LIST]` → Default to "Project Team, Architecture Team" or [PENDING]
-
-### Step 3: Populate Revision History
-
-```markdown
-| 1.0 | {DATE} | ArcKit AI | Initial creation from `/arckit:secure` command | [PENDING] | [PENDING] |
-```
-
-### Step 4: Populate Generation Metadata Footer
-
-The footer should be populated with:
-```markdown
-**Generated by**: ArcKit `/arckit:secure` command
-**Generated on**: {DATE} {TIME} GMT
-**ArcKit Version**: [Read from .arckit/VERSION]
-**Project**: {PROJECT_NAME} (Project {PROJECT_ID})
-**AI Model**: [Use actual model name, e.g., "claude-sonnet-4-5-20250929"]
-**Generation Context**: [Brief note about source documents used]
-```
-
-### Example Fully Populated Document Control Section:
-
-```markdown
-## Document Control
-
-| Field | Value |
-|-------|-------|
-| **Document ID** | ARC-001-SECD-v1.0 |
-| **Document Type** | {Document purpose} |
-| **Project** | Windows 10 to Windows 11 Migration (Project 001) |
-| **Classification** | OFFICIAL-SENSITIVE |
-| **Status** | DRAFT |
-| **Version** | 1.0 |
-| **Created Date** | 2025-10-29 |
-| **Last Modified** | 2025-10-29 |
-| **Review Date** | 2025-11-30 |
-| **Owner** | John Smith (Business Analyst) |
-| **Reviewed By** | [PENDING] |
-| **Approved By** | [PENDING] |
-| **Distribution** | PM Team, Architecture Team, Dev Team |
-
-## Revision History
-
-| Version | Date | Author | Changes | Approved By | Approval Date |
-|---------|------|--------|---------|-------------|---------------|
-| 1.0 | 2025-10-29 | ArcKit AI | Initial creation from `/arckit:secure` command | [PENDING] | [PENDING] |
-```
-
-
-## Assessment Guidelines
-
-### Status Indicators
-
-- **✅ Achieved**: All key controls implemented and effective, no significant gaps
-- **⚠️ Partially Achieved**: Some controls in place but gaps remain
-- **❌ Not Achieved**: Controls not implemented or ineffective
-- **N/A**: Principle genuinely not applicable
-
-### Critical Security Issues (Phase Blockers)
-
-Mark as CRITICAL if:
-- No Privacy Act 1988 (APPs) compliance for personal data processing
-- No PIA for high-risk processing
-- No encryption for sensitive data (OFFICIAL-SENSITIVE)
-- Essential Eight not obtained (required for most gov contracts)
-- No incident response capability
-- No backup/recovery capability
-- Critical vulnerabilities unpatched (>30 days)
-- No MFA for privileged access
-- SIRO not appointed or engaged
-
-### Data Classification Requirements
-
-**PUBLIC**:
-- Basic security controls
-- No special encryption requirements
-- Standard access controls
-
-**OFFICIAL**:
-- Essential Eight baseline minimum
-- Encryption in transit (TLS 1.2+)
-- Access control and audit logging
-- Regular security patching
-
-**OFFICIAL-SENSITIVE**:
-- Essential Eight maturity uplift recommended
-- Encryption at rest and in transit (strong algorithms)
-- Multi-factor authentication required
-- Enhanced audit logging
-- PIA if processing personal data
-- Data loss prevention controls
-
-### Project Phase Considerations
-
-**Discovery/Alpha**:
-- Security principles identified
-- Data classification determined
-- Initial risk assessment
-- Security requirements defined
-- SIRO engaged
-
-**Beta**:
-- Security controls implemented
-- Penetration testing completed
-- PIA completed (if required)
-- Essential Eight certification obtained
-- Vulnerability management operational
-- Incident response plan documented
-
-**Live**:
-- All CAF principles addressed
-- Essential Eight maturity uplift for high-risk systems
-- Continuous security monitoring
-- Regular penetration testing (annual minimum)
-- Security incident capability proven
-- Annual security review with SIRO
-
-### Essential Eight Requirements
-
-**Basic Essential Eight**: Self-assessment questionnaire
-**Essential Eight maturity uplift**: External technical verification
-
-Required for:
-- All central government contracts involving handling personal data
-- Contracts valued at £5 million or more
-- Most public sector technology procurements
-
-## Australian Government Context
-
-### Senior Information Risk Owner (SIRO)
-
-- Senior executive responsible for information risk
-- Must be board-level or equivalent
-- Reviews and approves risk treatment
-- Signs off on major security decisions
-- Typically Permanent Secretary or Director level
-
-### Data Protection Officer (DPO)
-
-Required if:
-- Public authority or public body
-- Core activities involve regular/systematic monitoring
-- Core activities involve large-scale processing of special category data
-
-Responsibilities:
-- Advise on Privacy Act 1988 (APPs) compliance
-- Monitor compliance with Privacy Act 1988 (APPs)
-- Advise on PIA
-- Liaise with OAIC
-
-### Office of the Australian Information Commissioner (OAIC)
-
-- Australia's independent data protection regulator
-- Enforces Privacy Act 1988 (APPs) and Privacy Act 1988
-- Must be notified of data breaches within 72 hours
-- Can impose fines up to £17.5 million or 4% of turnover
-
-### Common Australian Government Security Requirements
-
-**Essential Eight Controls**:
-- Firewalls and internet gateways configured
-- Secure configuration (CIS benchmarks)
-- User access control (least privilege, MFA)
-- Malware protection (up-to-date anti-malware)
-- Security update management (patching within 14 days)
-
-**Cloud Hosting**:
-- Prefer Australian data centres and sovereign controls for data residency
-- ASD ACSC Cloud Security Principles compliance
-- Cloud provider certifications (ISO 27001, etc.)
-- Clear data ownership and portability
-
-**Network Security**:
-- PSN (Public Services Network) connectivity if required
-- Network segmentation by sensitivity
-- VPN for remote access
-- WiFi security (WPA3 preferred, WPA2 minimum)
-
-## Example Output Structure
-
-```markdown
-# Australian Government Secure by Design Assessment
-
-**Project**: HMRC Tax Credits Modernization
-**Department**: HMRC
-**Data Classification**: OFFICIAL-SENSITIVE
-**ASD ACSC CAF Score**: 11/14 Achieved
-
-## ASD ACSC CAF Assessment
-
-### Objective A: Managing Security Risk
-
-#### A1: Governance
-**Status**: ✅ Achieved
-**Evidence**: SIRO appointed (Director of Digital Services), security policies approved, quarterly security reviews...
-
-#### A2: Risk Management
-**Status**: ⚠️ Partially Achieved
-**Evidence**: Risk register exists, but threat modeling incomplete...
-**Gaps**:
-- Complete threat modeling for payment processing (HIGH - 30 days)
-- Update risk register with emerging threats (MEDIUM - 60 days)
-
-### Objective B: Protecting Against Cyber Attack
-
-#### B3: Data Security
-**Status**: ⚠️ Partially Achieved
-**Evidence**: TLS 1.3 in transit, AES-256 at rest, but PIA not completed...
-**Gaps**:
-- Complete PIA before Beta (CRITICAL - blocker for Beta phase)
-- Implement Data Loss Prevention (HIGH - 90 days)
-
-## Essential Eight
-
-**Status**: Certified Basic (expires 2024-06-30)
-**Target**: Essential Eight maturity uplift by Beta
-
-**Gaps**:
-- External vulnerability scan required for Plus certification
-
-## Privacy Act 1988 (APPs) Compliance
-
-**Status**: ⚠️ Partially Compliant
-**DPO**: Appointed ([Data Protection Officer Name])
-**PIA**: Not completed (REQUIRED before Beta)
-
-**Critical Issues**:
-1. PIA not completed for tax credit processing (CRITICAL)
-2. Data retention policy not documented (HIGH)
-
-## Critical Issues
-1. PIA incomplete (CAF B3, Privacy Act 1988 (APPs)) - Blocks Beta phase
-2. Threat modeling incomplete (CAF A2) - Significant risk gap
-
-## Recommendations
-**Critical** (0-30 days):
-- Complete PIA - DPO - 15 days
-- Complete threat model - Security Architect - 30 days
-```
-
-## Important Notes
-
-- **ASD ACSC CAF is the standard framework** for Australian Government security assessment
-- **Essential Eight is mandatory** for most government contracts
-- **Privacy Act 1988 (APPs) compliance is legally required** for personal data processing
-- **SIRO sign-off required** for security risk acceptance
-- **Data classification drives security controls** - OFFICIAL-SENSITIVE requires stronger controls
-- **Penetration testing** recommended annually minimum
-- **Incident response** - 72-hour reporting to OAIC for personal data breaches
-- **Cloud First** - prefer cloud hosting, assess against ASD ACSC Cloud Security Principles
-
-## Related Australian Government Standards
-
-- ASD ACSC Cyber Assessment Framework (CAF)
-- Essential Eight Scheme
-- Australian Government Security Classifications
-- Government Functional Standard GovS 007: Security
-- ASD ACSC Cloud Security Principles
-- HMG Security Policy Framework
-- Public Services Network (PSN) Code of Connection
-
-## Resources
-
-- ASD ACSC CAF: https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism
-- Essential Eight: https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight
-- Privacy Act 1988 (APPs): https://ico.org.uk/for-organisations/guide-to-data-protection/
-- Government Security Classifications: https://www.protectivesecurity.gov.au/
-- ASD ACSC Guidance: https://www.cyber.gov.au/
-
-Generate the Australian Government Secure by Design assessment now based on the project information provided.
+Populate all document control fields, including classification (AU style, default `OFFICIAL` unless the project context indicates otherwise).
