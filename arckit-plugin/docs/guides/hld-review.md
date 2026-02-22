@@ -12,6 +12,8 @@
 | Architecture principles | Governance standards to verify against |
 | Requirements (`ARC-<id>-REQ-v1.0.md`) | Verify all requirements addressed |
 | Risk register | Ensure risks are mitigated in design |
+| Service/policy assessment (where applicable) | Digital Service Standard / technology-policy findings that the design must satisfy |
+| Privacy and security artefacts (where available) | PIA findings, Secure by Design assessment, security control expectations |
 
 ---
 
@@ -36,7 +38,7 @@ Output: `projects/<id>/reviews/ARC-<id>-HLDR-v1.0.md`
 | Non-Functional Assessment | Performance, security, scalability |
 | Integration Review | External system interactions |
 | Technology Choices | Appropriateness of selected technologies |
-| Governance Compliance | Standards and policy adherence |
+| Governance Compliance | Standards and policy adherence (PSPF/ISM/Essential Eight, Privacy Act 1988 and APPs, DSS where applicable) |
 | Findings & Recommendations | Issues categorized by severity |
 
 ---
@@ -83,6 +85,8 @@ Output: `projects/<id>/reviews/ARC-<id>-HLDR-v1.0.md`
 - All requirements (BR, FR, NFR, INT) traceable to design elements.
 - Identified risks have corresponding design mitigations.
 - Security architecture addresses all NFR-SEC requirements.
+- AU policy expectations are explicitly addressed where relevant: PSPF-aligned security governance, ACSC ISM and Essential Eight uplift, Privacy Act 1988 and APPs (including PIA expectations and NDB scheme readiness).
+- Public-facing services: DSS criteria are considered and evidence is captured (or explicitly marked not applicable).
 - Integration points have defined contracts and error handling.
 - Technology choices align with standards and principles.
 - No critical or major findings remain unaddressed.
@@ -93,7 +97,7 @@ Output: `projects/<id>/reviews/ARC-<id>-HLDR-v1.0.md`
 
 | Principle | Alignment | Evidence |
 |-----------|-----------|----------|
-| Cloud-First | Aligned | Uses Azure PaaS services |
+| Cloud-First | Aligned | Uses managed cloud services (e.g., AWS/Azure/GCP PaaS) |
 | Open Standards | Partial | REST APIs, but proprietary auth |
 | Security by Design | Aligned | Defense in depth, zero trust |
 

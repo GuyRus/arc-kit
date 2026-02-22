@@ -9,7 +9,7 @@
 | **Document ID** | ARC-[PROJECT_ID]-HLDR-v[VERSION] |
 | **Document Type** | [DOCUMENT_TYPE_NAME] |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
-| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
+| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL:Sensitive / PROTECTED / SECRET / TOP SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
 | **Version** | [VERSION] |
 | **Created Date** | [YYYY-MM-DD] |
@@ -37,7 +37,7 @@
 
 ### 1.1 Purpose
 
-This document captures the Architecture Review Board's evaluation of the High-Level Design (HLD) for [PROJECT_NAME]. The HLD must demonstrate architectural soundness, alignment with enterprise principles, and feasibility before proceeding to detailed design.
+This document captures the Architecture Review Board / Design Authority evaluation of the High-Level Design (HLD) for [PROJECT_NAME]. The HLD must demonstrate architectural soundness, alignment with enterprise principles, and feasibility before proceeding to detailed design.
 
 ### 1.2 HLD Document Under Review
 
@@ -66,6 +66,7 @@ The HLD will be evaluated against:
 - **Security & Compliance**: Adequate security controls and regulatory compliance
 - **Scalability & Resilience**: Ability to scale and handle failures gracefully
 - **Operational Readiness**: Observability, supportability, maintainability
+- **AU Government policy expectations (where applicable)**: PSPF-aligned security governance, ACSC ISM controls and Essential Eight uplift, Privacy Act 1988 and Australian Privacy Principles (including OAIC-aligned PIA expectations and Notifiable Data Breaches scheme readiness), and Digital Service Standard criteria for public-facing services
 
 ---
 
@@ -429,8 +430,14 @@ Review how HLD addresses functional requirements from requirements document.
 
 | Compliance Requirement | Control | Assessment | Gap |
 |------------------------|---------|------------|-----|
-| Privacy Act 1988 / APPs Art. 32 (Security) | [Encryption, access controls] | [✅ | ⚠️ | ❌] | |
-| Privacy Act 1988 / APPs Art. 17 (Right to deletion) | [Deletion API, data lifecycle] | [✅ | ⚠️ | ❌] | |
+| Privacy Act 1988 / APP 11 (Security of personal information) | [Access control, encryption, logging/monitoring, secure configuration] | [✅ | ⚠️ | ❌] | |
+| Privacy Act 1988 / APP 8 (Cross-border disclosure - if applicable) | [Data residency approach, vendor due diligence, contractual controls, disclosure decision record] | [✅ | ⚠️ | ❌] | |
+| Privacy Act 1988 / APP 12-13 (Access and correction) | [Search/retrieval, export, correction workflows, identity verification] | [✅ | ⚠️ | ❌] | |
+| Privacy Act 1988 / APP 11.2 (Destroy or de-identify when no longer needed - where applicable) | [Retention schedule, deletion/de-identification patterns, backups and archival handling] | [✅ | ⚠️ | ❌] | |
+| OAIC Privacy Impact Assessment (PIA) expectations (where required/appropriate) | [PIA completed or planned; privacy risks and mitigations incorporated into design] | [✅ | ⚠️ | ❌] | |
+| Notifiable Data Breaches (NDB) scheme readiness (if applicable) | [Breach detection, incident response, decision workflow, notification templates and evidence capture] | [✅ | ⚠️ | ❌] | |
+| PSPF / ACSC ISM (where applicable) | [Protective marking, access model, logging, crypto, vulnerability management, assurance plan] | [✅ | ⚠️ | ❌] | |
+| ACSC Essential Eight (where applicable) | [Controls uplift plan and target maturity; dependency on cloud/provider shared responsibility] | [✅ | ⚠️ | ❌] | |
 | HIPAA (if applicable) | [PHI encryption, BAA with AWS] | [✅ | ⚠️ | ❌] | |
 | PCI-DSS (if applicable) | [Payment data tokenization, no CHD storage] | [✅ | ⚠️ | ❌] | |
 | SOC 2 Type II | [Controls aligned with trust principles] | [✅ | ⚠️ | ❌] | |
@@ -576,17 +583,17 @@ Review how HLD addresses functional requirements from requirements document.
 
 ### 10.1 Cost Estimation
 
-**Estimated Monthly Cost**: $[X] (at launch) → $[Y] (at Year 3)
+**Estimated Monthly Cost**: A$[X] (at launch) → A$[Y] (at Year 3)
 
 **Cost Breakdown**:
 | Category | Monthly Cost | Annual Cost | Notes |
 |----------|--------------|-------------|-------|
-| Compute (EC2/ECS) | $[X] | $[X] | |
-| Database (RDS) | $[X] | $[X] | |
-| Storage (S3) | $[X] | $[X] | |
-| Networking (data transfer) | $[X] | $[X] | |
-| Monitoring (DataDog) | $[X] | $[X] | |
-| **Total** | **$[X]** | **$[X]** | |
+| Compute (EC2/ECS) | A$[X] | A$[X] | |
+| Database (RDS) | A$[X] | A$[X] | |
+| Storage (S3) | A$[X] | A$[X] | |
+| Networking (data transfer) | A$[X] | A$[X] | |
+| Monitoring (DataDog) | A$[X] | A$[X] | |
+| **Total** | **A$[X]** | **A$[X]** | |
 
 **Cost Optimization Strategies**:
 - [ ] Right-sizing of resources
