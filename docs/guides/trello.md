@@ -12,6 +12,13 @@ Export your ArcKit product backlog to a Trello board with `/arckit.trello`. The 
 | `TRELLO_API_KEY` environment variable | [Trello Power-Ups Admin](https://trello.com/power-ups/admin) — create or select a Power-Up, copy the API key |
 | `TRELLO_TOKEN` environment variable | Visit `https://trello.com/1/authorize?expiration=30days&scope=read,write&response_type=token&key=YOUR_API_KEY` and copy the token |
 
+## Security And Privacy Note (AU)
+
+Exporting to Trello publishes backlog content to a third-party service. Before you run `/arckit.trello`:
+- Confirm the project classification and information handling requirements allow use of Trello.
+- If the backlog includes personal information, ensure your approach is consistent with the Privacy Act 1988 and APPs (including APP 8 cross-border disclosure where applicable).
+- Do not export `PROTECTED` (or above) content unless the service/tenancy is approved for that classification.
+
 Set credentials in your shell:
 
 ```bash

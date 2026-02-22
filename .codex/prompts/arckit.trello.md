@@ -24,7 +24,7 @@ $ARGUMENTS
 
 ## What This Command Does
 
-Reads the JSON backlog produced by `/arckit:backlog FORMAT=json` and pushes it to Trello:
+Reads the JSON backlog produced by `/arckit.backlog FORMAT=json` and pushes it to Trello:
 
 1. Creates a **board** with sprint-based lists
 2. Creates **labels** for priority (MoSCoW) and item type (Epic/Story/Task)
@@ -48,16 +48,24 @@ Find the project directory:
 
 Locate the backlog JSON file:
 - Look for `ARC-*-BKLG-*.json` in `projects/{project-dir}/`
-- This is produced by `/arckit:backlog FORMAT=json`
+- This is produced by `/arckit.backlog FORMAT=json`
+
+### Step 1b: Confirm Export Is Permitted (Security/Privacy)
+
+Before exporting, confirm that pushing backlog content to Trello is permitted for this project and classification:
+
+- If the backlog contains sensitive information (e.g., personal information, security design details, vulnerabilities), confirm it is appropriate to store/process it in Trello.
+- For Australian Government contexts, consider (where applicable): Privacy Act 1988 and APPs (including APP 8 cross-border disclosure), PSPF protective marking, and ACSC ISM controls.
+- If the backlog is `PROTECTED` or above (or otherwise restricted), do **not** export unless the user explicitly confirms the service and tenancy are approved for that classification.
 
 **If no JSON file found**:
 ```
 No backlog JSON file found in projects/{project-dir}/
 
 Please generate one first:
-  /arckit:backlog FORMAT=json
+  /arckit.backlog FORMAT=json
 
-Then re-run /arckit:trello
+Then re-run /arckit.trello
 ```
 
 ### Step 2: Validate Trello Credentials
@@ -79,7 +87,7 @@ To get credentials:
   1. API Key: https://trello.com/power-ups/admin (select a Power-Up or create one, then get the API key)
   2. Token: Visit https://trello.com/1/authorize?expiration=30days&scope=read,write&response_type=token&key=YOUR_API_KEY
 
-Then re-run /arckit:trello
+Then re-run /arckit.trello
 ```
 
 ### Step 3: Read and Parse Backlog JSON
@@ -263,9 +271,9 @@ Next steps:
 No ARC-*-BKLG-*.json file found in projects/{project-dir}/
 
 Please generate one first:
-  /arckit:backlog FORMAT=json
+  /arckit.backlog FORMAT=json
 
-Then re-run /arckit:trello
+Then re-run /arckit.trello
 ```
 
 **Missing credentials**:
@@ -305,7 +313,7 @@ Board URL: {board_url}
 ## Integration with Other Commands
 
 ### Inputs From:
-- `/arckit:backlog FORMAT=json` - Backlog JSON file (MANDATORY)
+- `/arckit.backlog FORMAT=json` - Backlog JSON file (MANDATORY)
 
 ### Outputs To:
 - Trello board (external) - ready for sprint planning
