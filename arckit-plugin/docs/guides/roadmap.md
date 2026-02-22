@@ -18,7 +18,7 @@
 ## Command
 
 ```bash
-/arckit.roadmap Create roadmap for <initiative> covering FY24/25–FY27/28
+/arckit.roadmap Create roadmap for <initiative> covering FY 2024-25–FY 2027-28
 ```
 
 Outputs: `projects/<id>/ARC-<id>-ROAD-v1.0.md` plus optional Mermaid timeline snippets.
@@ -45,6 +45,7 @@ Outputs: `projects/<id>/ARC-<id>-ROAD-v1.0.md` plus optional Mermaid timeline sn
 - Reference the DTA Agile Delivery phases and cite which artefacts unlock each gate.
 - Call out when compliance activities (DX Policy / DSS, Secure by Design, AI Playbook) must be completed to avoid blocking approvals.
 - Include explicit “decision hold points” for vendor selection, architecture reviews, and budget refresh.
+- Note: Australian Government financial years run 1 July to 30 June.
 
 ---
 

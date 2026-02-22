@@ -9,7 +9,7 @@
 | **Document ID** | ARC-[PROJECT_ID]-ROAD-v[VERSION] |
 | **Document Type** | Strategic Architecture Roadmap |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
-| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
+| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL:Sensitive / PROTECTED / SECRET / TOP SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
 | **Version** | [VERSION] |
 | **Created Date** | [YYYY-MM-DD] |
@@ -35,9 +35,9 @@
 [1-2 paragraphs: What is the strategic vision? What problem are we solving? What is the desired future state?]
 
 ### Investment Summary
-- **Total Investment**: £[AMOUNT] over [N] years
-- **Capital Expenditure**: £[CAPEX]
-- **Operational Expenditure**: £[OPEX]
+- **Total Investment**: A$[AMOUNT] over [N] years
+- **Capital Expenditure**: A$[CAPEX]
+- **Operational Expenditure**: A$[OPEX]
 - **Expected ROI**: [ROI_PERCENTAGE]% by FY [YEAR]
 - **Payback Period**: [N] years
 
@@ -100,7 +100,7 @@
 - **Level 5**: Optimized
 
 #### Technical Debt Quantification
-- **Total Technical Debt**: £[AMOUNT] or [N] person-months
+- **Total Technical Debt**: A$[AMOUNT] or [N] person-months
 - **High Priority Debt**: [List top 3-5 items]
 - **Impact on Delivery**: [How debt slows current delivery]
 
@@ -192,9 +192,9 @@ gantt
 - Current state assessment complete
 - Target architecture defined
 - Business case approved (SOBC/FBC)
-- Security framework established
+- Security framework established (PSPF/ISM alignment; Essential Eight uplift plan where applicable)
 
-**Investment**: £[AMOUNT]
+**Investment**: A$[AMOUNT]
 
 ---
 
@@ -211,7 +211,7 @@ gantt
 - Data migration complete
 - API platform established
 
-**Investment**: £[AMOUNT]
+**Investment**: A$[AMOUNT]
 
 ---
 
@@ -228,7 +228,7 @@ gantt
 - Container orchestration platform live
 - Developer self-service portal
 
-**Investment**: £[AMOUNT]
+**Investment**: A$[AMOUNT]
 
 ---
 
@@ -245,7 +245,7 @@ gantt
 - Performance SLAs met
 - Business outcomes delivered
 
-**Investment**: £[AMOUNT]
+**Investment**: A$[AMOUNT]
 
 ---
 
@@ -262,19 +262,19 @@ gantt
 - Initiative 1.1: [Description]
 - Initiative 1.2: [Description]
 - **Milestones**: [Key milestones]
-- **Investment**: £[AMOUNT]
+- **Investment**: A$[AMOUNT]
 
 **FY [YEAR] Q3-Q4**:
 - Initiative 1.3: [Description]
 - Initiative 1.4: [Description]
 - **Milestones**: [Key milestones]
-- **Investment**: £[AMOUNT]
+- **Investment**: A$[AMOUNT]
 
 **FY [YEAR+1]**:
 - Initiative 1.5: [Description]
 - Initiative 1.6: [Description]
 - **Milestones**: [Key milestones]
-- **Investment**: £[AMOUNT]
+- **Investment**: A$[AMOUNT]
 
 #### Success Criteria
 - [ ] [Measurable success criterion 1]
@@ -294,19 +294,19 @@ gantt
 - Initiative 2.1: [Description]
 - Initiative 2.2: [Description]
 - **Milestones**: [Key milestones]
-- **Investment**: £[AMOUNT]
+- **Investment**: A$[AMOUNT]
 
 **FY [YEAR+1]**:
 - Initiative 2.3: [Description]
 - Initiative 2.4: [Description]
 - **Milestones**: [Key milestones]
-- **Investment**: £[AMOUNT]
+- **Investment**: A$[AMOUNT]
 
 **FY [YEAR+2]**:
 - Initiative 2.5: [Description]
 - Initiative 2.6: [Description]
 - **Milestones**: [Key milestones]
-- **Investment**: £[AMOUNT]
+- **Investment**: A$[AMOUNT]
 
 #### Success Criteria
 - [ ] [Measurable success criterion 1]
@@ -323,22 +323,22 @@ gantt
 #### Timeline by Financial Year
 
 **FY [YEAR]**:
-- Initiative 3.1: Achieve Essential Eight certification
-- Initiative 3.2: Implement ASD ACSC CAF baseline controls
-- **Milestones**: Essential Eight certified
-- **Investment**: £[AMOUNT]
+- Initiative 3.1: Establish PSPF/ISM-aligned security baseline and security governance
+- Initiative 3.2: Essential Eight maturity uplift plan delivered (target maturity by system/domain)
+- **Milestones**: Baseline controls implemented; uplift plan approved and tracked
+- **Investment**: A$[AMOUNT]
 
 **FY [YEAR+1]**:
-- Initiative 3.3: ISO 27001 certification
-- Initiative 3.4: Security automation and monitoring
-- **Milestones**: ISO 27001 certified
-- **Investment**: £[AMOUNT]
+- Initiative 3.3: IRAP assessment readiness (where cloud-hosted or required by policy/risk)
+- Initiative 3.4: Security automation (policy-as-code where feasible) and monitoring improvements
+- **Milestones**: Independent assurance complete (or scheduled) for high-risk components
+- **Investment**: A$[AMOUNT]
 
 **FY [YEAR+2]**:
 - Initiative 3.5: Continuous compliance automation
 - Initiative 3.6: Zero Trust architecture
 - **Milestones**: Continuous compliance operational
-- **Investment**: £[AMOUNT]
+- **Investment**: A$[AMOUNT]
 
 #### Success Criteria
 - [ ] All critical systems meet security baseline
@@ -408,38 +408,38 @@ flowchart TD
 
 ### Investment Summary by Financial Year
 
-| Financial Year | Capital (£) | Operational (£) | Total (£) | % of Total Budget |
+| Financial Year | Capital (A$) | Operational (A$) | Total (A$) | % of Total Budget |
 |----------------|-------------|-----------------|-----------|-------------------|
-| FY [YEAR] | £[CAPEX] | £[OPEX] | £[TOTAL] | [%] |
-| FY [YEAR+1] | £[CAPEX] | £[OPEX] | £[TOTAL] | [%] |
-| FY [YEAR+2] | £[CAPEX] | £[OPEX] | £[TOTAL] | [%] |
-| FY [YEAR+3] | £[CAPEX] | £[OPEX] | £[TOTAL] | [%] |
-| **Total** | **£[CAPEX]** | **£[OPEX]** | **£[TOTAL]** | **100%** |
+| FY [YEAR] | A$[CAPEX] | A$[OPEX] | A$[TOTAL] | [%] |
+| FY [YEAR+1] | A$[CAPEX] | A$[OPEX] | A$[TOTAL] | [%] |
+| FY [YEAR+2] | A$[CAPEX] | A$[OPEX] | A$[TOTAL] | [%] |
+| FY [YEAR+3] | A$[CAPEX] | A$[OPEX] | A$[TOTAL] | [%] |
+| **Total** | **A$[CAPEX]** | **A$[OPEX]** | **A$[TOTAL]** | **100%** |
 
 ### Resource Requirements
 
 | Financial Year | FTE Required | Key Roles | Recruitment Timeline | Training Budget |
 |----------------|--------------|-----------|---------------------|-----------------|
-| FY [YEAR] | [N] | Cloud architects, Security specialists | Q1-Q2 | £[AMOUNT] |
-| FY [YEAR+1] | [N] | Developers, Data engineers, DevOps | Q3-Q4 | £[AMOUNT] |
-| FY [YEAR+2] | [N] | SRE, Platform engineers, Data scientists | Q1-Q2 | £[AMOUNT] |
-| FY [YEAR+3] | [N] | Optimization specialists, Automation engineers | Q3 | £[AMOUNT] |
+| FY [YEAR] | [N] | Cloud architects, security specialists | Q1-Q2 | A$[AMOUNT] |
+| FY [YEAR+1] | [N] | Developers, data engineers, DevOps | Q3-Q4 | A$[AMOUNT] |
+| FY [YEAR+2] | [N] | SRE, platform engineers, data scientists | Q1-Q2 | A$[AMOUNT] |
+| FY [YEAR+3] | [N] | Optimisation specialists, automation engineers | Q3 | A$[AMOUNT] |
 
 ### Investment by Theme
 
 | Theme | FY [YEAR] | FY [YEAR+1] | FY [YEAR+2] | FY [YEAR+3] | Total |
 |-------|-----------|-------------|-------------|-------------|-------|
-| Theme 1 | £[AMOUNT] | £[AMOUNT] | £[AMOUNT] | £[AMOUNT] | £[TOTAL] |
-| Theme 2 | £[AMOUNT] | £[AMOUNT] | £[AMOUNT] | £[AMOUNT] | £[TOTAL] |
-| Theme 3 | £[AMOUNT] | £[AMOUNT] | £[AMOUNT] | £[AMOUNT] | £[TOTAL] |
+| Theme 1 | A$[AMOUNT] | A$[AMOUNT] | A$[AMOUNT] | A$[AMOUNT] | A$[TOTAL] |
+| Theme 2 | A$[AMOUNT] | A$[AMOUNT] | A$[AMOUNT] | A$[AMOUNT] | A$[TOTAL] |
+| Theme 3 | A$[AMOUNT] | A$[AMOUNT] | A$[AMOUNT] | A$[AMOUNT] | A$[TOTAL] |
 
 ### Cost Savings & Benefits Realization
 
 | Benefit Type | FY [YEAR] | FY [YEAR+1] | FY [YEAR+2] | FY [YEAR+3] | Cumulative |
 |--------------|-----------|-------------|-------------|-------------|------------|
-| Operational Savings | £[AMOUNT] | £[AMOUNT] | £[AMOUNT] | £[AMOUNT] | £[TOTAL] |
+| Operational Savings | A$[AMOUNT] | A$[AMOUNT] | A$[AMOUNT] | A$[AMOUNT] | A$[TOTAL] |
 | Efficiency Gains | [%] | [%] | [%] | [%] | [%] |
-| Revenue Enablement | £[AMOUNT] | £[AMOUNT] | £[AMOUNT] | £[AMOUNT] | £[TOTAL] |
+| Revenue Enablement | A$[AMOUNT] | A$[AMOUNT] | A$[AMOUNT] | A$[AMOUNT] | A$[TOTAL] |
 
 ---
 
@@ -459,7 +459,7 @@ flowchart TD
 
 | Assumption ID | Assumption | Validation Approach | Contingency Plan |
 |---------------|------------|---------------------|------------------|
-| A-001 | Spending Review approval for full funding | Finance review by [DATE] | Phased approach if funding reduced |
+| A-001 | Investment approval and budget allocation secured for full funding envelope | Finance/investment review by [DATE] | Phase scope; rebaseline benefits; seek staged approvals |
 | A-002 | Recruitment of specialist skills feasible | Market assessment Q[N] | Increase supplier usage |
 | A-003 | Legacy system support continues until migration complete | Vendor contracts extend to [DATE] | Accelerate migration if needed |
 | A-004 | Executive sponsorship maintained throughout program | Quarterly board reviews | Escalation process defined |
@@ -468,7 +468,7 @@ flowchart TD
 
 | Constraint Type | Description | Impact on Roadmap |
 |-----------------|-------------|-------------------|
-| **Budget** | Total budget capped at £[AMOUNT] | Prioritization required |
+| **Budget** | Total budget capped at A$[AMOUNT] | Prioritisation required |
 | **Timeline** | Must achieve [milestone] by [DATE] | Parallel workstreams needed |
 | **Regulatory** | Must maintain Privacy Act 1988 (APPs) compliance throughout migration | Data migration approach constrained |
 | **Technical** | Legacy system integration required until FY [YEAR] | Cannot fully decommission until then |
@@ -505,9 +505,13 @@ flowchart TD
 | **ARB Review** | Monthly | Architecture governance | ADRs approved, technical decisions |
 | **Programme Review** | Monthly | Budget and schedule tracking | Budget reconciliation, schedule updates |
 | **Quarterly Business Review** | Quarterly | Strategic alignment check | Roadmap refresh, strategic adjustments |
-| **Annual Strategic Review** | Annually | Multi-year strategy alignment | Spending Review inputs, 5-year refresh |
+| **Annual Strategic Review** | Annually | Multi-year strategy alignment | Budget cycle inputs, roadmap rebaseline, 3–5 year refresh |
 
-### Service Standard Assessment Gates (Australian Government)
+### Digital Delivery Gates (Australian Government)
+
+Use delivery phase gates to align roadmap milestones to assurance and approval points (for example, Discovery → Alpha → Beta → Live). Map these gates to your governance forums and evidence packs.
+
+Where the work is a public-facing digital service, include explicit readiness for the Digital Experience Policy and Digital Service Standard (DSS) evidence.
 
 #### Alpha Assessment - FY [YEAR] Q[N]
 **Focus**: Validate approach, prove concept feasibility
@@ -515,7 +519,8 @@ flowchart TD
 - [ ] Technology spike validated
 - [ ] Architecture approach approved
 - [ ] Security approach defined
-- [ ] 14 Service Standard points addressed
+- [ ] DSS evidence plan agreed (criteria coverage and owners)
+- [ ] Privacy assessment approach agreed (PIA threshold + plan if personal information is in scope)
 
 #### Beta Assessment - FY [YEAR] Q[N]
 **Focus**: Prove service works at scale, ready for public use
@@ -523,7 +528,9 @@ flowchart TD
 - [ ] User feedback incorporated
 - [ ] Non-functional requirements met
 - [ ] Security testing complete
-- [ ] 14 Service Standard points demonstrated
+- [ ] DSS criteria evidenced (as applicable; DSS has 10 criteria)
+- [ ] Accessibility and inclusion evidence captured (e.g., WCAG where applicable)
+- [ ] Operational readiness (support, monitoring, incident response) confirmed
 
 #### Live Assessment - FY [YEAR] Q[N]
 **Focus**: Service fully operational and continuously improving
@@ -531,7 +538,8 @@ flowchart TD
 - [ ] SLAs being met
 - [ ] Continuous improvement process established
 - [ ] Full compliance demonstrated
-- [ ] 14 Service Standard points evidenced
+- [ ] DSS evidence maintained and updated on material change
+- [ ] Security and privacy controls operating effectively (monitoring + periodic review)
 
 ### Decision Gates
 
@@ -580,7 +588,7 @@ flowchart TD
 |------------------|----------|-----------|-------------|-------------|-------------|
 | User satisfaction score | 3.2/5 | 3.5/5 | 4.0/5 | 4.3/5 | 4.5/5 |
 | Operational cost reduction | 0% | 10% | 25% | 40% | 50% |
-| Revenue enablement | £0 | £[AMOUNT] | £[AMOUNT] | £[AMOUNT] | £[AMOUNT] |
+| Revenue enablement | A$0 | A$[AMOUNT] | A$[AMOUNT] | A$[AMOUNT] | A$[AMOUNT] |
 | Staff productivity gain | 0% | 15% | 30% | 50% | 75% |
 
 ---
@@ -695,10 +703,10 @@ flowchart TD
 
 | Standard/Compliance | Current Status | FY [YEAR] | FY [YEAR+1] | FY [YEAR+2] | FY [YEAR+3] |
 |---------------------|----------------|-----------|-------------|-------------|-------------|
-| Essential Eight | Not achieved | Certified | Maintained | Plus certified | Maintained |
-| ISO 27001 | Gap identified | Planning | Certification | Maintained | Maintained |
-| ASD ACSC CAF | Baseline only | Full baseline | Enhanced | Advanced | Advanced |
-| Privacy Act 1988 (APPs) | Compliant | Compliant | Enhanced | Optimized | Optimized |
+| Essential Eight | [Maturity baseline] | [Target uplift] | [Target uplift] | [Target uplift] | [Maintain + improve] |
+| ISM / PSPF alignment | [Baseline] | [Uplift] | [Uplift] | [Managed] | [Optimised] |
+| IRAP readiness / assessment (if applicable) | [N/A / Planned] | [Planned] | [Assessed] | [Reassess] | [Reassess] |
+| Privacy Act 1988 (APPs) | [Baseline] | [Improved] | [Managed] | [Optimised] | [Optimised] |
 | PCI-DSS | Not applicable | N/A | Planning | Certified | Maintained |
 
 ## External References

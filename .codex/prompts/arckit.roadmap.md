@@ -110,7 +110,7 @@ Before generating the roadmap, use the **AskUserQuestion** tool to gather strate
 
 **Question 2** — header: `Year format`, multiSelect: false
 > "Which year notation should the roadmap use?"
-- **Australian Financial Year (Recommended)**: FY 2025/26, FY 2026/27 — April to March, standard for Australian Government and public sector
+- **Australian Financial Year (Recommended)**: FY 2025-26, FY 2026-27 — 1 July to 30 June, standard for Australian Government budgeting and reporting
 - **Calendar Year**: CY 2025, CY 2026 — January to December, standard for private sector and international
 
 Apply the user's selections: the horizon determines the number of financial years covered, the Gantt chart duration, and the level of detail in later years (nearer years have more detail). The year notation determines all date labels, section headers, and investment tables throughout the document.
@@ -137,7 +137,7 @@ Create a comprehensive multi-year architecture roadmap with the following sectio
 
 #### Roadmap Timeline
 - **Visual Timeline**: Mermaid Gantt chart showing 3-5 year timeline
-  - Use financial year notation: FY 2024/25, FY 2025/26, etc. (if Australian Government) OR calendar years
+  - Use financial year notation: FY 2024-25, FY 2025-26, etc. (Australian Government default) OR calendar years
   - Show 4 major phases: Foundation, Migration, Transformation, Optimization
   - Include governance gates as milestones
   - **IMPORTANT**: Remember Mermaid gantt syntax - no `<br/>` tags in task names
@@ -145,11 +145,11 @@ Create a comprehensive multi-year architecture roadmap with the following sectio
 Example Gantt structure:
 ```mermaid
 gantt
-    title Architecture Roadmap Timeline FY 2024/25 - FY 2027/28
+    title Architecture Roadmap Timeline FY 2024-25 - FY 2027-28
     dateFormat YYYY-MM-DD
 
     section Foundation
-    Assessment and Strategy           :done, foundation1, 2024-04-01, 90d
+    Assessment and Strategy           :done, foundation1, 2024-07-01, 90d
     Architecture Baseline            :done, foundation2, after foundation1, 60d
     Security Framework               :active, foundation3, after foundation2, 120d
 
@@ -181,7 +181,7 @@ Create 3-5 strategic themes (e.g., Cloud Migration, Data Modernization, Security
 
 For each theme:
 - Strategic objective
-- Timeline by financial year (what happens in FY 2024/25, FY 2025/26, etc.)
+- Timeline by financial year (what happens in FY 2024-25, FY 2025-26, etc.)
 - Initiatives within each year
 - Milestones and investment
 - Success criteria
@@ -260,25 +260,16 @@ Link roadmap back to source artifacts:
 
 ### 5. Australian Government Specifics
 
-If the user indicates this is a Australian Government project, include:
+ArcKit is AU-first. In Australian Government contexts, include:
 
-- **Financial Year Notation**: Use "FY 2024/25", "FY 2025/26" format (not calendar years)
-- **Spending Review Alignment**: Mention SR periods and budget cycles
-- **Service Standard Assessment Gates**: Include Alpha, Beta, Live assessment milestones
-- **DX Policy / DSS (Digital Experience Policy)**: Reference compliance with 13 points
-- **ASD ACSC CAF**: Include security baseline progression
-- **Essential Eight/ISO 27001**: Security certification timeline
-- **BuyICT/AusTender channels**: If procurement involved, reference BuyICT cloud panels/specialist sourcing
-- **Cross-Government Services**: Reference Australia.gov.au Pay, Notify, Design System integration
-
-### 6. MOD Specifics
-
-If this is a Ministry of Defence project, include:
-
-- **JSP 440**: Defence project management framework alignment
-- **Security Clearances**: BPSS, SC, DV requirements and timeline
-- **IAMM (Information Assurance Maturity Model)**: Security maturity progression
-- **AU defence AI assurance pathway**: If AI/ML involved, reference AI assurance timeline
+- **Financial year notation**: Use "FY 2024-25", "FY 2025-26" (1 July to 30 June)
+- **Budget and investment cycle alignment**: Show when investment approvals, budget refresh, and benefits re-baselining occur
+- **Digital delivery gates**: Use Discovery/Alpha/Beta/Live (or your agency lifecycle) and call out evidence packs needed at each gate
+- **Digital Experience Policy / DSS**: Reference DSS criteria (DSS has 10 criteria) and how the roadmap maintains evidence on material change
+- **PSPF / ISM / Essential Eight**: Show security baseline and maturity uplift over time (and IRAP readiness where applicable)
+- **Privacy Act 1988 / APPs**: Call out where PIAs, retention/disposal, and cross-border access decisions gate progress
+- **BuyICT/AusTender channels**: If procurement is involved, reference CPR-aligned sourcing and the relevant panels/approaches
+- **Whole-of-government shared capabilities** (where relevant): identity/authorisation, payments, notifications, design system, and common platforms used by your jurisdiction/portfolio
 
 ### 7. Mermaid Diagram Syntax - CRITICAL RULES
 
@@ -373,14 +364,14 @@ After writing the file, show a concise summary (NOT the full document):
 
 ### Roadmap Overview
 - **Timeline**: FY [START_YEAR] - FY [END_YEAR] ([N] years)
-- **Total Investment**: £[AMOUNT] ([% CAPEX] / [% OPEX])
+- **Total Investment**: A$[AMOUNT] ([% CAPEX] / [% OPEX])
 - **Financial Years Covered**: [N] years
 - **Major Phases**: [N] phases
 
 ### Strategic Themes
-1. **[Theme 1]**: [Brief description] - £[INVESTMENT]
-2. **[Theme 2]**: [Brief description] - £[INVESTMENT]
-3. **[Theme 3]**: [Brief description] - £[INVESTMENT]
+1. **[Theme 1]**: [Brief description] - A$[INVESTMENT]
+2. **[Theme 2]**: [Brief description] - A$[INVESTMENT]
+3. **[Theme 3]**: [Brief description] - A$[INVESTMENT]
 [...additional themes]
 
 ### Key Milestones
@@ -437,7 +428,7 @@ After writing the file, show a concise summary (NOT the full document):
    - Plan (arckit.plan) = Single project, detailed tasks, delivery-focused, team execution
 
 4. **Financial Years**:
-   - Australian Government: Use "FY 2024/25" notation (April-March)
+   - Australian Government: Use "FY 2024-25" notation (1 July to 30 June)
    - US/Other: Can use calendar years or fiscal years as appropriate
 
 5. **Capability Maturity**: Use 5-level model (L1: Initial, L2: Repeatable, L3: Defined, L4: Managed, L5: Optimized)

@@ -318,16 +318,16 @@ Visualize strategic positioning with:
 **`/arckit.roadmap`** → Create multi-year architecture roadmap
 
 Create strategic roadmap for multi-year transformation programs:
-- **Multi-year timeline**: 3-5 year roadmap with Mermaid Gantt chart aligned to financial years (FY 2024/25, etc.)
+- **Multi-year timeline**: 3-5 year roadmap with Mermaid Gantt chart aligned to Australian financial years (FY 2024-25, FY 2025-26, etc.)
 - **Strategic themes**: Cloud migration, data modernization, security & compliance, DevOps transformation
 - **Capability evolution**: Maturity progression from L1 (Initial) to L5 (Optimized) over time
-- **Investment planning**: CAPEX/OPEX budget by financial year, ROI projections, benefits realization
-- **Governance framework**: ARB monthly, Programme Board monthly, Steering Committee quarterly
-- **Service Standard gates**: Alpha/Beta/Live assessment milestones (UK Government)
+- **Investment planning**: CAPEX/OPEX budget by financial year, ROI projections, benefits realisation (A$)
+- **Governance framework**: Architecture review, programme/investment oversight, executive steering cadence
+- **Digital delivery gates**: Discovery/Alpha/Beta/Live (or your agency lifecycle) mapped to decision forums and evidence packs (DX Policy / DSS, security, privacy, records)
 - **Dependencies**: Mermaid flowchart showing initiative sequencing and critical path
 - **Success metrics**: Cloud adoption %, technical debt reduction, deployment frequency, time to market
 - **Traceability**: Links roadmap themes to stakeholder drivers, architecture principles, requirements
-- **UK Government specifics**: Spending Review alignment, TCoP compliance timeline, NCSC CAF progression
+- **Australian Government context**: CPR-aligned sourcing (BuyICT/AusTender where relevant), PSPF/ISM/Essential Eight uplift, and Privacy Act 1988 (APPs) governance (PIA where required)
 
 **Use this when**: You have a multi-year transformation program with multiple initiatives running in parallel. Roadmaps are strategic (multi-year, multi-initiative, executive communication) vs project plans which are tactical (single initiative, detailed tasks, team execution).
 
