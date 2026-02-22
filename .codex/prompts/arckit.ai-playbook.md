@@ -35,6 +35,14 @@ Generate these files in `projects/{project-dir}/`:
    - strategy and oversight
    - preparedness and operations
    - AI use case impact assessment
+3. Read available ArcKit artefacts (if present) to ground outputs in project evidence:
+   - `ARC-*-REQ-*.md` (requirements)
+   - `ARC-*-DATA-*.md` (data model)
+   - `ARC-*-RISK-*.md` (risk register)
+   - `ARC-*-PIA-*.md` (privacy impact assessment, if any)
+   - `ARC-*-SECD-*.md` (secure by design, if any)
+   - `ARC-*-DIAG-*.md` (architecture diagrams, if any)
+   - `ADR-*.md` (decision records, if any)
 3. Read and apply these templates:
    - `.arckit/templates/au-ai-governance-assessment-template.md`
    - `.arckit/templates/au-ai-use-case-register-template.md`
@@ -59,3 +67,4 @@ Use `.arckit/scripts/bash/generate-document-id.sh`:
 - Register fields match Standard for accountability minimum fields.
 - Risk and re-validation logic is consistent across AIGA/AIIA/AIUR.
 - High-risk pathway actions are explicit (board/senior executive + DTA reporting).
+- Evidence quality rubric is applied (Strong/Medium/Weak) and weak evidence results in explicit actions (no invented evidence).

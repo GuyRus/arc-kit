@@ -9,7 +9,7 @@
 | Document ID | ARC-[PROJECT_ID]-AIGA-v[VERSION] |
 | Document Type | AU AI Governance Assessment |
 | Project | [PROJECT_NAME] (Project [PROJECT_ID]) |
-| Classification | [OFFICIAL / OFFICIAL:Sensitive / PROTECTED] |
+| Classification | [PUBLIC / OFFICIAL / OFFICIAL:Sensitive / PROTECTED / SECRET / TOP SECRET] |
 | Status | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED] |
 | Version | [VERSION] |
 | Created Date | [YYYY-MM-DD] |
@@ -32,6 +32,35 @@
 | Finance national AI assurance framework | Risk-based assurance expectations and evidence discipline | 2026-02-15 |
 | PSPF advisory for generative AI | OFFICIAL information handling conditions for GenAI access | 2026-02-15 |
 
+## Executive Summary
+
+**Use case**: [NAME]
+
+**In-scope determination (Appendix C)**: [IN_SCOPE / OUT_OF_SCOPE]
+
+**Inherent risk**: [Low / Medium / High]  
+**Residual risk**: [Low / Medium / High]
+
+**High-risk pathway triggered** (if applicable): [Yes/No]
+
+**Key governance decision**: [Proceed / Proceed with conditions / Do not proceed]
+
+**Top conditions / actions**:
+
+| Priority | Action | Owner | Due date |
+|---|---|---|---|
+| High | [Action] | [Role] | [YYYY-MM-DD] |
+| High | [Action] | [Role] | [YYYY-MM-DD] |
+
+**Key linked artefacts**:
+
+- AI impact assessment (AIIA): `ARC-[PROJECT_ID]-AIIA-v[VERSION].md` (if in-scope)
+- AI use case register (AIUR): `ARC-[PROJECT_ID]-AIUR-v[VERSION].md`
+- AI governance checklist (AIGC): `ARC-[PROJECT_ID]-AIGC-v[VERSION].md`
+- AI transparency statement (AITS): `ARC-[PROJECT_ID]-AITS-v[VERSION].md` (when required/published)
+
+---
+
 ## 1. Use Case Profile
 
 - **Use case name**: [NAME]
@@ -41,6 +70,28 @@
 - **Domain(s)**: [Service delivery / Compliance and fraud detection / etc.]
 - **Usage pattern(s)**: [Decision-making and administrative action / Analytics / etc.]
 - **Lifecycle stage**: [Discover / Operate / Retire]
+
+### 1.1 System and AI Boundary (What Is “The AI System” Here?)
+
+- **System boundary**: [What is in scope: model(s), prompts, pipelines, integrations, decision points]
+- **Deployment context**: [Internal tool / Public-facing service / Decision support / Operational platform]
+- **Primary users**: [Staff / public / partners]
+- **Human oversight model**: [Human-in-the-loop / Human-on-the-loop / Human-in-command]
+- **Failure mode**: [What happens when AI is unavailable/wrong/unsafe]
+
+### 1.2 AI Component Inventory (Generic, Evidence-Based)
+
+| Component | Type | Purpose | Inputs | Outputs | Human control points | Vendor/Owner | Notes |
+|---|---|---|---|---|---|---|---|
+| [Component] | [GenAI/ML/NLP/CV/etc.] | [Purpose] | [Inputs] | [Outputs] | [Controls] | [Owner] | [Notes] |
+
+### 1.3 Data Sources and Handling Summary
+
+- **Data sources**: [Systems/datasets]
+- **Personal information**: [Yes/No + summary]
+- **Sensitive/security-classified information**: [Yes/No + summary]
+- **Data minimisation**: [Approach]
+- **Retention and disposal**: [Approach]
 
 ## 2. In-Scope Determination (Policy Appendix C)
 
@@ -56,6 +107,27 @@ Tick all that apply and add evidence.
 
 **Rationale and evidence**:
 - [Evidence with links to requirements, service process, and data model]
+
+## 2A. Evidence Inventory and Quality
+
+Use this section to prevent “paper compliance”. Prefer implemented, testable evidence over intention statements.
+
+**Evidence quality rubric**:
+
+- **Strong**: implemented control + measurable telemetry + operational process + test evidence.
+- **Medium**: implemented control + partial telemetry/process.
+- **Weak**: intent statements only.
+
+| Evidence | Location | Quality (Strong/Medium/Weak) | What it supports |
+|---|---|---|---|
+| Requirements | `projects/[PROJECT]/ARC-[ID]-REQ-v*.md` | [ ] | [User need, constraints, NFRs, contestability] |
+| Data model | `projects/[PROJECT]/ARC-[ID]-DATA-v*.md` | [ ] | [Data categories, PI handling, flows] |
+| Risk register | `projects/[PROJECT]/ARC-[ID]-RISK-v*.md` | [ ] | [AI risks, treatments, owners] |
+| PIA | `projects/[PROJECT]/ARC-[ID]-PIA-v*.md` | [ ] | [APP risks, mitigations] |
+| Secure by design | `projects/[PROJECT]/ARC-[ID]-SECD-v*.md` | [ ] | [Security controls, evidence] |
+| Architecture diagrams | `projects/[PROJECT]/diagrams/ARC-[ID]-DIAG-*.md` | [ ] | [Trust boundaries, data flows] |
+| ADRs | `projects/[PROJECT]/decisions/ADR-*.md` | [ ] | [Decision rationale, trade-offs] |
+| External reports | `projects/[PROJECT]/external/*` | [ ] | [Testing, audits, evaluations] |
 
 ## 3. Governance Accountability Structure
 
@@ -148,3 +220,36 @@ Tick all that apply and add evidence.
 | Privacy controls | OAIC AI/privacy guidance + PIA guide |
 | Assurance model | Finance national AI assurance framework |
 | Security handling | PSPF advisory + ISM/ACSC references |
+
+## Appendix A: Operational Monitoring and Re-Validation Plan (Recommended)
+
+This appendix keeps the assessment useful through-life (not just pre-deployment).
+
+### A.1 Monitoring Coverage
+
+| Area | What is monitored | Thresholds / triggers | Response owner | Evidence |
+|---|---|---|---|---|
+| Performance | [Metrics] | [Threshold] | [Role] | [Link] |
+| Drift | [Signals] | [Threshold] | [Role] | [Link] |
+| Safety | [Unsafe outputs/harms] | [Trigger] | [Role] | [Link] |
+| Fairness | [Bias indicators] | [Trigger] | [Role] | [Link] |
+| Security | [Prompt injection/data leakage] | [Trigger] | [Role] | [Link] |
+
+### A.2 Re-Validation Triggers
+
+- material change to model/provider/version
+- material change to prompts/policies/guardrails
+- material change to data sources or data classification/handling
+- material change to decision authority / human oversight model
+- material incident or harm event
+- scheduled periodic review date: [YYYY-MM-DD]
+
+## Appendix B: AI-Specific Threats and Controls (Recommended)
+
+| Threat | Example | Controls | Evidence | Residual risk |
+|---|---|---|---|---|
+| Prompt injection / jailbreak | [Example] | [Controls] | [Link] | [L/M/H] |
+| Data leakage | [Example] | [Controls] | [Link] | [L/M/H] |
+| Data poisoning | [Example] | [Controls] | [Link] | [L/M/H] |
+| Model supply chain risk | [Example] | [Controls] | [Link] | [L/M/H] |
+| Over-reliance/automation bias | [Example] | [Controls] | [Link] | [L/M/H] |

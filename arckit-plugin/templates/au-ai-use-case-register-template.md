@@ -15,9 +15,9 @@
 
 ## Minimum Fields (per Standard for accountability 2.0)
 
-| Use case name | Agency ID | Description/objective | AI type | Lifecycle stage | Technical standard use | Domain | Usage pattern | AUCO (name/email) | In-scope criterion | Inherent risk | Residual risk | AIA updated date |
+| Use case name | Agency ID | Description/objective | AI type | Lifecycle stage | Technical standard use | Domain | Usage pattern | AUCO (name/email) | In-scope criterion | Inherent risk | Residual risk | AIA updated date | AITS URL (if published) | PIA status | Secure-by-design ref |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [NAME] | [ID] | [Description] | [GenAI/ML/NLP/CV] | [Discover/Operate/Retire] | [Not applied/Partial/Fully] | [Domain(s)] | [Pattern(s)] | [Name/email] | [Appendix C criterion] | [Low/Med/High] | [Low/Med/High] | [YYYY-MM-DD] |
+| [NAME] | [ID] | [Description] | [GenAI/ML/NLP/CV] | [Discover/Operate/Retire] | [Not applied/Partial/Fully] | [Domain(s)] | [Pattern(s)] | [Name/email] | [Appendix C criterion] | [Low/Med/High] | [Low/Med/High] | [YYYY-MM-DD] | [URL/TBD] | [Required/Not required + status] | [ARC-*-SECD-*] |
 
 ## Additional Mandatory Fields for High-Risk Use Cases
 

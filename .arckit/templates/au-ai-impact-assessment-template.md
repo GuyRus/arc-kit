@@ -23,6 +23,28 @@
 | Guidance for the AI impact assessment tool (PDF) | Provides the canonical 12-section assessment method and risk workflow used by this template. |
 | Australian Government AI technical standard | Provides lifecycle technical controls used to design treatments and monitoring actions. |
 
+## Evidence Inventory and Quality (Recommended)
+
+Prefer implemented, testable evidence over intention statements. If evidence is missing, record a `TODO` and an action (do not invent).
+
+**Evidence quality rubric**:
+
+- **Strong**: implemented control + measurable telemetry + operational process + test evidence.
+- **Medium**: implemented control + partial telemetry/process.
+- **Weak**: intent statements only.
+
+| Evidence | Location | Quality (Strong/Medium/Weak) | What it supports |
+|---|---|---|---|
+| Use case register | `ARC-[PROJECT_ID]-AIUR-v[VERSION].md` | [ ] | [Accountability and minimum fields] |
+| Governance assessment | `ARC-[PROJECT_ID]-AIGA-v[VERSION].md` | [ ] | [Policy obligations and approvals] |
+| Requirements | `ARC-[PROJECT_ID]-REQ-v*.md` | [ ] | [User needs, decision points, contestability] |
+| Data model | `ARC-[PROJECT_ID]-DATA-v*.md` | [ ] | [Data categories, PI handling, flows] |
+| Risk register | `ARC-[PROJECT_ID]-RISK-v*.md` | [ ] | [Risks, treatments, owners] |
+| PIA | `ARC-[PROJECT_ID]-PIA-v*.md` | [ ] | [APP risks, mitigations] |
+| Secure by design | `ARC-[PROJECT_ID]-SECD-v*.md` | [ ] | [Security controls, evidence] |
+| Architecture diagrams | `diagrams/ARC-[PROJECT_ID]-DIAG-*.md` | [ ] | [Trust boundaries, data flows] |
+| External evaluations | `external/*` | [ ] | [Testing, audits, model evaluation] |
+
 ---
 
 ## Section 1 — Basic information

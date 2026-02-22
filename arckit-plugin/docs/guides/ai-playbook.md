@@ -25,6 +25,16 @@
 4. Register use case details with required minimum fields.
 5. Finalise governance checklist with owners/dates for gaps.
 
+## Recommended Deep-Dive Coverage
+
+For in-scope (and especially high-risk) use cases, expect the generated pack to include deeper, evidence-based coverage of:
+
+- AI component inventory and system boundary (what is “the AI system”)
+- data sources and handling summary (personal/sensitive/classified handling)
+- evidence inventory and evidence quality rubric (Strong/Medium/Weak)
+- AI-specific threats and controls (prompt injection, data leakage, model supply chain risk)
+- monitoring and re-validation plan (drift/safety/fairness/security triggers)
+
 ## High-risk use case rule
 
 For inherent high-risk in-scope use cases, include:
