@@ -53,8 +53,15 @@ If the Task tool is unavailable or the user prefers inline execution, fall back 
 5. Research each category (Australian Government open data, commercial APIs, free APIs, open datasets)
 6. Evaluate with weighted scoring (requirements fit, data quality, licence/cost, delivery quality, privacy/governance, reliability)
 7. Gap analysis, data utility analysis, data model impact
-8. Write to `projects/{project-dir}/ARC-{PROJECT_ID}-DSCT-v1.0.md` using Write tool
-9. Show summary only (not full document)
+8. Detect version:
+   - If an existing `ARC-{PROJECT_ID}-DSCT-v*.md` exists: increment minor vs major based on scope change
+   - Otherwise: VERSION="1.0"
+9. Generate document ID:
+   ```bash
+   DOC_ID=$(${CLAUDE_PLUGIN_ROOT}/scripts/bash/generate-document-id.sh {project_id} DSCT ${VERSION})
+   ```
+10. Write to `projects/{project-dir}/ARC-{PROJECT_ID}-DSCT-v${VERSION}.md` using Write tool
+11. Show summary only (not full document)
 
 ### Output
 

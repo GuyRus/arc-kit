@@ -97,7 +97,7 @@ Use WebSearch/WebFetch to discover authoritative providers for the requirement d
 
 Do not rely on general knowledge; verify by fetching official documentation/terms pages.
 
-### Step 6: Evaluate Each Candidate Source
+### Step 6: Evaluate Each Candidate Source (Evidence-First)
 
 Score each source using the template’s weighted criteria.
 
@@ -106,14 +106,56 @@ Explicitly flag governance triggers:
 - **Cross-border access/disclosure likely**: note APP 8 considerations
 - **Data matching/linkage**: note data matching governance requirements
 
-### Step 7: Write the Document
+Also capture operational fit:
+- auth model, rate limits, uptime/SLA, change/deprecation policy
+- delivery patterns (API vs bulk vs streaming), schema availability, versioning
+
+### Step 7: Data Utility Analysis (Keep It Grounded)
+
+For each recommended source, identify secondary uses beyond the primary requirement (and any new risks introduced). Use a structured lens so this stays practical, not speculative:
+
+| Pattern | What it means | Example (generic) |
+|---------|----------------|-------------------|
+| Proxy indicators | A data set acts as a proxy for another variable | Footfall proxying demand; weather proxying service load |
+| Cross-domain enrichment | One domain improves another | Weather improves energy demand forecasting |
+| Trend/anomaly detection | Time series reveals operational patterns | Outlier detection for fraud/abuse signals |
+| Benchmarking | Enables comparisons across regions/time | Compare tariffs, prices, service outcomes |
+| Predictive features | Features for forecasting or decision support | Demographics + geography → demand forecasts |
+
+Do not invent use-cases. Tie secondary uses to plausible stakeholder needs and existing requirements context.
+
+### Step 8: Detect Version and Determine Increment
+
+Check whether a previous DataScout document exists:
+
+```bash
+EXISTING=$(ls projects/{project-dir}/ARC-{PROJECT_ID}-DSCT-v*.md 2>/dev/null | sort -V | tail -1)
+```
+
+- If none exists: VERSION="1.0"
+- If one exists:
+  - Minor increment (e.g., 1.0→1.1): refreshed links/pricing/rate limits; same scope
+  - Major increment (e.g., 1.0→2.0): materially new domains/needs; new constraints; changed recommendations
+Record the change summary in Revision History.
+
+### Step 9: Generate Document ID
+
+Generate a consistent document ID:
+
+```bash
+DOC_ID=$(${CLAUDE_PLUGIN_ROOT}/scripts/bash/generate-document-id.sh {project_id} DSCT ${VERSION})
+```
+
+Use `{DOC_ID}` in Document Control and the output filename.
+
+### Step 10: Write the Document
 
 Use the Write tool to save:
 - `projects/{project-dir}/ARC-{PROJECT_ID}-DSCT-v${VERSION}.md`
 
 Follow the template structure and include evidence links.
 
-### Step 8: Return Summary Only
+### Step 11: Return Summary Only
 
 Return a concise summary:
 - File path created
@@ -127,6 +169,7 @@ Return a concise summary:
 - Prefer authoritative sources over third-party blogs
 - Be explicit about unknowns (mark as UNKNOWN and recommend how to validate)
 - Produce a decision-ready shortlist with trade-offs, not an unfiltered directory
+- Only research categories that are supported by explicit DR/INT/NFR needs (avoid “catalogue dumping”)
 
 ## Edge Cases
 
@@ -134,3 +177,4 @@ Return a concise summary:
 - No open data for a need: document the gap; propose commercial or internal collection options
 - Source terms unclear: treat as a blocker until clarified
 - Data likely includes personal information: flag PIA requirement and avoid assuming consent/authority
+- API requires registration: record lead time and operational risk
