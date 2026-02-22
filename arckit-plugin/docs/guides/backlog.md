@@ -43,7 +43,7 @@ Outputs land in `projects/<id>/ARC-<id>-BKLG-v1.0.*`.
 ## Sprint Planning Checklist
 
 - Stories tie back to requirement IDs in description.
-- Acceptance criteria reflect regulatory constraints (WCAG, Privacy Act 1988 / APPs, security).
+- Acceptance criteria reflect regulatory constraints (WCAG, Privacy Act 1988 and APPs, and where applicable: PIA outcomes, NDB readiness, ACSC ISM and Essential Eight uplift).
 - Risks flagged as HIGH appear in Sprint 1–2 for mitigation.
 - Each sprint finishes a vertical slice (discovery, build, test).
 - Service management work (e.g., `/arckit.servicenow`) placed before go-live.

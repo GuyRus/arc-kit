@@ -451,14 +451,14 @@ Implementation-ready validation:
 **`/arckit.backlog`** → Generate prioritised product backlog
 
 Transform requirements into sprint-ready user stories:
-- Convert requirements (BR/FR/NFR/INT/DR) to GDS-format user stories
+- Convert requirements (BR/FR/NFR/INT/DR) to sprint-ready epics/stories/tasks (standard user story format, INVEST-style)
 - Multi-factor prioritization (MoSCoW + risk + value + dependencies)
 - Organise into sprint plan with capacity balancing
 - Generate traceability matrix (requirements → stories → sprints)
 - Export to Jira/Azure DevOps (CSV) or custom tools (JSON)
 - **Time savings**: 75%+ (4-6 weeks → 3-5 days)
 
-**When to run**: After HLD approval, before Sprint 1 (Alpha → Beta transition)
+**When to run**: After HLD approval, before Sprint 1 / build kick-off
 
 ### Phase 10.5: Backlog Export
 **`/arckit.trello`** → Export product backlog to Trello

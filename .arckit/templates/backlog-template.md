@@ -9,7 +9,7 @@
 | **Document ID** | ARC-[PROJECT_ID]-BKLG-v[VERSION] |
 | **Document Type** | Product Backlog |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
-| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
+| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL:Sensitive / PROTECTED / SECRET / TOP SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
 | **Version** | [VERSION] |
 | **Created Date** | [YYYY-MM-DD] |
@@ -181,6 +181,8 @@
 - [ ] Unit tests written (80% coverage minimum)
 - [ ] Integration tests written for critical paths
 - [ ] Security scan passed (no critical/high issues)
+- [ ] Privacy and data-handling requirements met (e.g., APP-aligned controls and any PIA outcomes implemented/tested)
+- [ ] AU security expectations met where applicable (e.g., ACSC ISM controls, Essential Eight uplift evidence)
 - [ ] Deployed to dev environment
 - [ ] Demo-able to stakeholders
 - [ ] Documentation updated
