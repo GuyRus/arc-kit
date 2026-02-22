@@ -75,7 +75,8 @@ Output:
 | Framework | Create evaluation criteria | `/arckit.evaluate` (create) |
 | Scoring | Score each vendor proposal | `/arckit.evaluate` (score) |
 | Comparison | Compare and recommend | `/arckit.evaluate` (compare) |
-| Procurement | Award contract, negotiate terms | `/arckit.gcloud-clarify` |
+| Clarifications (optional) | Ask consistent questions across shortlisted vendors | (Manual) or `/arckit.gcloud-clarify` (if evaluating BuyICT cloud panel services) |
+| Procurement | Award contract, negotiate terms | Manual |
 
 ---
 
@@ -109,4 +110,5 @@ Output:
 2. **Traceability**: Every score references specific requirements.
 3. **Confidentiality**: Keep vendor proposals confidential.
 4. **Governance Alignment**: Vendors must align with architecture principles.
-5. **Risk-Based**: Consider delivery, technical, and commercial risks.
+5. **Value for money**: Consider whole-of-life value (risk, quality, deliverability), not lowest cost only.
+6. **Probity and records**: Declare conflicts; apply criteria consistently; keep an auditable decision record (suitable for debriefs and review).

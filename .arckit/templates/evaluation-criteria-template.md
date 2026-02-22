@@ -9,7 +9,7 @@
 | **Document ID** | ARC-[PROJECT_ID]-EVAL-v[VERSION] |
 | **Document Type** | [DOCUMENT_TYPE_NAME] |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
-| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
+| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL:Sensitive / PROTECTED / SECRET / TOP SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
 | **Version** | [VERSION] |
 | **Created Date** | [YYYY-MM-DD] |
@@ -45,7 +45,11 @@ This document defines the criteria, scoring methodology, and process for evaluat
 - **Transparent**: Vendors understand how they will be evaluated
 - **Fair**: All vendors evaluated against same criteria
 - **Documented**: Scores and rationale captured for auditability
-- **Value-Based**: Best value, not necessarily lowest cost
+- **Value for money**: Best value, not necessarily lowest cost (consider whole-of-life cost, risk, and deliverability)
+
+**Australian Government context (where applicable)**:
+- Maintain probity controls (conflict declarations, confidentiality, equal access to clarifications).
+- Keep a decision record suitable for audit and supplier debriefs.
 
 ### 1.3 Evaluation Team
 

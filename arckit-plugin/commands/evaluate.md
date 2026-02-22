@@ -53,8 +53,11 @@ $ARGUMENTS
 3. **Read the templates** (with user override support):
    - **First**, check if `.arckit/templates/evaluation-criteria-template.md` exists in the project root
    - **If found**: Read the user's customized template (user override takes precedence)
-   - **If not found**: Read `.arckit/templates/evaluation-criteria-template.md` (default)
-   - **Also read** the scoring template: check `.arckit/templates/vendor-scoring-template.md` first, then `.arckit/templates/vendor-scoring-template.md`
+   - **If not found**: Read `${CLAUDE_PLUGIN_ROOT}/templates/evaluation-criteria-template.md` (default)
+   - **Also read** the scoring template:
+     - **First**, check if `.arckit/templates/vendor-scoring-template.md` exists in the project root
+     - **If found**: Read the user's customized template
+     - **If not found**: Read `${CLAUDE_PLUGIN_ROOT}/templates/vendor-scoring-template.md` (default)
 
    > **Note**: Read the `.arckit/VERSION` file and update the version in the template metadata line when generating.
    > **Tip**: Users can customize templates with `/arckit:customize evaluate`

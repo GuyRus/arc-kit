@@ -9,7 +9,7 @@
 | **Document ID** | ARC-[PROJECT_ID]-VEND-v[VERSION] |
 | **Document Type** | Vendor Scoring Summary |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
-| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
+| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL:Sensitive / PROTECTED / SECRET / TOP SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
 | **Version** | [VERSION] |
 | **Created Date** | [YYYY-MM-DD] |
@@ -69,18 +69,18 @@
 
 ### 2.2 Cost Scoring
 
-**Total Proposed Cost**: $[X]
+**Total Proposed Cost**: A$[X]
 
 **Cost Breakdown**:
 | Category | Amount | % of Total |
 |----------|--------|------------|
-| Labor | $[X] | [Y%] |
-| Infrastructure | $[X] | [Y%] |
-| Licenses/Tools | $[X] | [Y%] |
-| Other | $[X] | [Y%] |
-| **Total** | **$[X]** | **100%** |
+| Labor | A$[X] | [Y%] |
+| Infrastructure | A$[X] | [Y%] |
+| Licenses/Tools | A$[X] | [Y%] |
+| Other | A$[X] | [Y%] |
+| **Total** | **A$[X]** | **100%** |
 
-**Cost Score**: [Y/100] (using formula: Lowest Cost / This Cost × 100)
+**Cost Score**: [Y/100] (example formula: Lowest Cost / This Cost × 100)
 
 **Cost Assessment**: [Within budget | At budget limit | Over budget]
 
@@ -171,9 +171,9 @@
 
 | Vendor | Total Cost | Cost per Point (Technical) | Value Ranking |
 |--------|------------|---------------------------|---------------|
-| Vendor A | $[X] | $[Y] | [1st | 2nd | 3rd] |
-| Vendor B | $[X] | $[Y] | [1st | 2nd | 3rd] |
-| Vendor C | $[X] | $[Y] | [1st | 2nd | 3rd] |
+| Vendor A | A$[X] | A$[Y] | [1st | 2nd | 3rd] |
+| Vendor B | A$[X] | A$[Y] | [1st | 2nd | 3rd] |
+| Vendor C | A$[X] | A$[Y] | [1st | 2nd | 3rd] |
 
 **Best Value**: [Vendor with best cost/quality ratio]
 
@@ -312,4 +312,3 @@
 **ArcKit Version**: [VERSION]
 **Project**: [PROJECT_NAME]
 **Model**: [AI_MODEL]
-
