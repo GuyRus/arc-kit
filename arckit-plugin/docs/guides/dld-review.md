@@ -50,7 +50,7 @@ Output: `projects/<id>/reviews/ARC-<id>-DLDR-v1.0.md`
 | Completeness | Missing detail | Undefined error handling, missing API fields |
 | Consistency | HLD alignment | Deviation from approved architecture |
 | Clarity | Implementation readiness | Ambiguous specifications |
-| Compliance | Standards adherence | Security standards, coding guidelines |
+| Compliance | Standards and policy adherence | PSPF/ISM/Essential Eight (where applicable), Privacy Act 1988 and APPs, agency engineering standards |
 
 ---
 
@@ -84,6 +84,7 @@ Output: `projects/<id>/reviews/ARC-<id>-DLDR-v1.0.md`
 - API contracts fully specified (request/response, errors).
 - Data models include schemas, constraints, migrations.
 - Security controls designed per requirements.
+- AU policy expectations are explicitly implemented where relevant (e.g., APP 11 security controls, PIA outcomes, NDB readiness, ISM/Essential Eight uplift evidence).
 - Error handling comprehensive (happy and sad paths).
 - Logging and monitoring hooks defined.
 - Deployment and rollback procedures documented.

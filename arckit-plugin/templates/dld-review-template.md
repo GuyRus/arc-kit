@@ -9,7 +9,7 @@
 | **Document ID** | ARC-[PROJECT_ID]-DLDR-v[VERSION] |
 | **Document Type** | [DOCUMENT_TYPE_NAME] |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
-| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
+| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL:Sensitive / PROTECTED / SECRET / TOP SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
 | **Version** | [VERSION] |
 | **Created Date** | [YYYY-MM-DD] |
@@ -262,6 +262,24 @@ CREATE TABLE orders (
 | **Key Management** | [ ] Yes [ ] No | [✅ | ⚠️ | ❌] | KMS integration, key rotation |
 | **Secrets in Code** | [ ] Yes [ ] No | [✅ | ⚠️ | ❌] | No hardcoded secrets verified |
 | **PII Masking in Logs** | [ ] Yes [ ] No | [✅ | ⚠️ | ❌] | PII not logged or masked |
+
+---
+
+### 6.4 AU Policy and Assurance Mapping (Where Applicable)
+
+Use this section to explicitly record how the detailed design implements Australian Government policy expectations. Mark items as **N/A** if out of scope.
+
+| Requirement | Implementation Evidence | Assessment | Gap |
+|------------|--------------------------|------------|-----|
+| Privacy Act 1988 / APP 11 (Security of personal information) | [Access control, crypto choices, secure configuration baseline, logging/monitoring, vulnerability management] | [✅ | ⚠️ | ❌ | N/A] | |
+| Privacy Act 1988 / APP 8 (Cross-border disclosure - if applicable) | [Data residency choice, supplier due diligence, contractual controls, disclosure decision record] | [✅ | ⚠️ | ❌ | N/A] | |
+| Privacy Act 1988 / APP 12-13 (Access and correction) | [Access/correction workflows, export formats, identity verification, audit trail] | [✅ | ⚠️ | ❌ | N/A] | |
+| Privacy Act 1988 / APP 11.2 (Destroy or de-identify when no longer needed - where applicable) | [Retention schedule, deletion/de-identification implementation (incl. backups/archives), data lifecycle automation] | [✅ | ⚠️ | ❌ | N/A] | |
+| OAIC Privacy Impact Assessment (PIA) outcomes | [PIA findings mapped to design decisions; mitigations implemented and testable] | [✅ | ⚠️ | ❌ | N/A] | |
+| Notifiable Data Breaches (NDB) scheme readiness (if applicable) | [Breach detection, incident runbooks, decision workflow, evidence capture for notifications] | [✅ | ⚠️ | ❌ | N/A] | |
+| PSPF / ACSC ISM (where applicable) | [Protective marking, access model, audit/logging, crypto, vulnerability management, assurance evidence plan] | [✅ | ⚠️ | ❌ | N/A] | |
+| ACSC Essential Eight (where applicable) | [Target maturity and how it is achieved (e.g., patching, app control, MFA, backups), ownership in shared-responsibility model] | [✅ | ⚠️ | ❌ | N/A] | |
+| IRAP readiness (where required) | [Control ownership, evidence artefacts, assessment approach and timing] | [✅ | ⚠️ | ❌ | N/A] | |
 
 ---
 
