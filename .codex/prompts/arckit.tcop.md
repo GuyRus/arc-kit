@@ -50,7 +50,7 @@ Generate a comprehensive DX Policy / DSS review document by:
    **OPTIONAL** (read if available, skip silently if missing):
    - `ARC-*-RSCH-*.md` or `ARC-*-AWSR-*.md` or `ARC-*-AZUR-*.md` — Technology research (for technology choices)
    - `ARC-*-AIGA-*.md` — AU AI governance assessment (for AI/ML systems)
-   - `ARC-*-DPIA-*.md` — DPIA (for data protection context)
+   - `ARC-*-PIA-*.md` — PIA (for data protection context)
 
    **What to extract from each document**:
    - **Principles**: Technology standards, constraints, compliance requirements
@@ -236,7 +236,7 @@ The document must include:
 - **N/A**: Point is genuinely not applicable (e.g., Point 13 if not building a public service)
 
 **Common critical issues**:
-- No DPIA for projects processing personal data (Point 7)
+- No PIA for projects processing personal data (Point 7)
 - No accessibility testing for user-facing services (Point 2)
 - No security assessment completed (Point 6)
 - Public cloud not considered (Point 5)
@@ -244,7 +244,7 @@ The document must include:
 
 **Project phases matter**:
 - **Discovery/Alpha**: User research, technical spikes, open source exploration expected
-- **Beta**: Accessibility testing, security assessments, DPIA should be complete
+- **Beta**: Accessibility testing, security assessments, PIA should be complete
 - **Live**: All 13 points must be fully compliant
 
 ## Special Considerations
@@ -258,7 +258,7 @@ The document must include:
 - Point 11 (Purchasing Strategy)
 - Point 8 (Reuse and Collaboration)
 
-**Data protection**: If processing personal data, Point 7 is critical - DPIA completion is mandatory before going live
+**Data protection**: If processing personal data, Point 7 is critical - PIA completion is mandatory before going live
 
 ## Australian Government Context
 
@@ -293,7 +293,7 @@ Be aware of:
 ## Overall Compliance Summary
 **Score**: 9/13 Compliant (3 Partially Compliant, 1 N/A)
 **Critical Issues**:
-1. DPIA not completed (Point 7) - BLOCKING for Beta
+1. PIA not completed (Point 7) - BLOCKING for Beta
 2. Accessibility audit incomplete (Point 2) - Required for Beta
 ```
 

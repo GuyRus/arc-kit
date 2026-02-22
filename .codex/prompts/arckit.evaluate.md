@@ -41,7 +41,7 @@ $ARGUMENTS
    **OPTIONAL** (read if available, skip silently if missing):
    - `ARC-*-STKE-*.md` in `projects/{project-dir}/` — Stakeholder analysis
      - Extract: Evaluation panel composition, stakeholder priorities
-   - `ARC-*-DPIA-*.md` in `projects/{project-dir}/` — DPIA
+   - `ARC-*-PIA-*.md` in `projects/{project-dir}/` — PIA
      - Extract: Data protection requirements for vendor assessment
 
    **What to extract from each document**:

@@ -398,12 +398,12 @@ flowchart LR
 
 ## Section 5: Impact Assessments
 
-### 5.1 - Data Protection Impact Assessment (DPIA)
-**DPIA Completed**: [ ] Yes / [ ] No / [ ] In Progress
+### 5.1 - Privacy Impact Assessment (PIA)
+**PIA Completed**: [ ] Yes / [ ] No / [ ] In Progress
 
-**DPIA Date**: [YYYY-MM-DD]
+**PIA Date**: [YYYY-MM-DD]
 
-**DPIA Outcome**:
+**PIA Outcome**:
 [ ] Approved - low risk
 [ ] Approved with mitigations
 [ ] Requires ICO consultation
@@ -413,7 +413,7 @@ flowchart LR
 2. [Risk 2 and mitigation]
 3. [Risk 3 and mitigation]
 
-**DPIA Review Date**: [YYYY-MM-DD]
+**PIA Review Date**: [YYYY-MM-DD]
 
 ### 5.2 - Equality Impact Assessment (EqIA)
 **EqIA Completed**: [ ] Yes / [ ] No / [ ] In Progress
@@ -881,7 +881,7 @@ flowchart LR
 - **Machine Learning**: [Definition]
 - **Training Data**: [Definition]
 - **Bias**: [Definition]
-- **DPIA**: Data Protection Impact Assessment
+- **PIA**: Privacy Impact Assessment
 - **EqIA**: Equality Impact Assessment
 
 ### Appendix B: References
@@ -890,7 +890,7 @@ flowchart LR
 - [Reference 3]
 
 ### Appendix C: Supporting Documentation
-- [ ] Full DPIA
+- [ ] Full PIA
 - [ ] Full EqIA
 - [ ] Human Rights Assessment
 - [ ] Model Card
@@ -917,7 +917,7 @@ Before publishing this ATRS record:
 - [ ] Communications team review (public-facing content)
 
 **Impact Assessments**:
-- [ ] DPIA completed and approved
+- [ ] PIA completed and approved
 - [ ] EqIA completed
 - [ ] Human Rights Assessment completed (if applicable)
 - [ ] Security Risk Assessment completed

@@ -388,7 +388,7 @@ Focus on high-signal findings. Limit to 50 findings total; aggregate remainder i
 - Risk level determined (High/Medium/Low)?
 - All 10 principles assessed?
 - All 6 ethical themes assessed?
-- Mandatory assessments completed (DPIA, EqIA, Human Rights)?
+- Mandatory assessments completed (PIA, EqIA, Human Rights)?
 - Bias testing completed?
 - Human oversight model defined?
 
@@ -443,7 +443,7 @@ Focus on high-signal findings. Limit to 50 findings total; aggregate remainder i
 
 **Classification-Specific Requirements**:
 - OFFICIAL: Essential Eight baseline, basic access controls?
-- OFFICIAL-SENSITIVE: Essential Eight Plus, MFA, enhanced logging, DPIA?
+- OFFICIAL-SENSITIVE: Essential Eight Plus, MFA, enhanced logging, PIA?
 - SECRET: SC personnel, CESG crypto, air-gap/assured network, enhanced physical security?
 - TOP SECRET: DV personnel, compartmented security, strict access control?
 
@@ -601,7 +601,7 @@ Generate a comprehensive Markdown report and save it to `projects/{project-dir}/
 | R1 | Requirements Quality | HIGH | ARC-*-REQ-*.md:L45-52 | Duplicate security requirements | Merge NFR-S-001 and NFR-S-005 |
 | P1 | Principles Alignment | CRITICAL | ARC-*-REQ-*.md:L120 | Violates Cloud-First principle | Change to cloud-native architecture |
 | T1 | Traceability | HIGH | No HLD coverage | NFR-P-002 (10K TPS) not addressed | Add performance architecture section to HLD |
-| UK1 | Australian Government Compliance | CRITICAL | Missing DPIA | AI system requires DPIA before deployment | Complete DPIA for AU AI governance compliance |
+| UK1 | Australian Government Compliance | CRITICAL | Missing PIA | AI system requires PIA before deployment | Complete PIA for AU AI governance compliance |
 
 ---
 
@@ -787,7 +787,7 @@ Generate a comprehensive Markdown report and save it to `projects/{project-dir}/
 **Status**: ✅ Compliant / ⚠️ Partial / ❌ Non-Compliant
 
 **Blocking Issues**:
-- [ ] DPIA not completed (MANDATORY for high-risk)
+- [ ] PIA not completed (MANDATORY for high-risk)
 - [ ] No human-in-the-loop (REQUIRED for high-risk)
 - [ ] AITS not published (MANDATORY for central government)
 
@@ -976,7 +976,7 @@ Generate a comprehensive Markdown report and save it to `projects/{project-dir}/
 
 1. **[P1] Add Cloud-First architecture**: Current design violates Cloud-First principle. Redesign with AWS/Azure/GCP.
 2. **[R1] Cover security requirements**: NFR-S-003, NFR-S-007, NFR-S-012 have no design coverage. Add security architecture to HLD.
-3. **[UK1] Complete DPIA**: HIGH-RISK AI system requires completed DPIA before deployment (AU AI governance assessment MANDATORY).
+3. **[UK1] Complete PIA**: HIGH-RISK AI system requires completed PIA before deployment (AU AI governance assessment MANDATORY).
 
 ### High Priority Actions (SHOULD resolve before implementation/procurement)
 

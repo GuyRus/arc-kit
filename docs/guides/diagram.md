@@ -13,7 +13,7 @@
 | `/arckit.diagram component` | C4 Level 3 | DLD & developer handover | Internal modules, repos, adapters |
 | `/arckit.diagram deployment` | Infrastructure | Cloud First evidence, cost modelling | Regions, VPCs, subnets, HA/DR |
 | `/arckit.diagram sequence` | Interaction | API design, integration workshops | Request/response steps, actors |
-| `/arckit.diagram dataflow` | Data privacy | Privacy Act 1988 / APPs/DPIA, audit | PII flows, encryption, retention |
+| `/arckit.diagram dataflow` | Data privacy | Privacy Act 1988 / APPs/PIA, audit | PII flows, encryption, retention |
 
 Run without a suffix to auto-detect (`/arckit.diagram Describe architecture...`).
 

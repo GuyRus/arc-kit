@@ -76,7 +76,7 @@ Codex CLI uses the format `/prompts:command-name` to invoke custom commands.
 /prompts:arckit.platform-design Design NHS appointment booking platform using Platform Design Toolkit (8 PDT canvases)
 /prompts:arckit.data-model Create data model with ERD and GDPR compliance
 /prompts:arckit.data-mesh-contract Create federated data product contract (ODCS v3.0.2)
-/prompts:arckit.dpia Generate Data Protection Impact Assessment with ICO 9-criteria screening
+/prompts:arckit.pia Generate Privacy Impact Assessment with ICO 9-criteria screening
 ```
 
 ### Research & Procurement
@@ -245,22 +245,22 @@ Creates: `projects/001-project-name/data-model.md`
 - **Data Governance**: Clear ownership and accountability from stakeholder RACI matrix
 - **Integration Ready**: Maps upstream/downstream data flows for HLD/DLD review
 
-### 5.6 Data Protection Impact Assessment
+### 5.6 Privacy Impact Assessment
 
 ```bash
-/prompts:arckit.dpia Generate DPIA for payment gateway modernization
+/prompts:arckit.pia Generate PIA for payment gateway modernization
 ```
 
-Creates: `projects/001-project-name/dpia.md`
+Creates: `projects/001-project-name/pia.md`
 
 **What it produces:**
-- ICO 9-criteria screening to confirm mandatory DPIA
+- ICO 9-criteria screening to confirm mandatory PIA
 - Processing overview and lawful basis mapped to stakeholder goals and requirements
-- Risk register linkage (DPIA-xxx IDs) with likelihood × severity scoring
+- Risk register linkage (PIA-xxx IDs) with likelihood × severity scoring
 - Mitigation plan referencing `/arckit.secure` controls and backlog actions
 - Data subject rights checklist, international transfer safeguards, review cadence
 
-**Tip**: Run after `/prompts:arckit.data-model` so entity definitions and PII flags feed the DPIA automatically.
+**Tip**: Run after `/prompts:arckit.data-model` so entity definitions and PII flags feed the PIA automatically.
 
 ### 6. Vendor RFP
 
@@ -386,7 +386,7 @@ your-project/
 │       ├── arckit.diagram.md
 │       ├── arckit.dld-review.md
 │       ├── arckit.dos.md
-│       ├── arckit.dpia.md
+│       ├── arckit.pia.md
 │       ├── arckit.evaluate.md
 │       ├── arckit.finops.md
 │       ├── arckit.gcloud-clarify.md

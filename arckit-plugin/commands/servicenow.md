@@ -268,7 +268,7 @@ After generating the ServiceNow design:
    - Missing information (e.g., "No performance NFRs found - defaulted to <1s response time")
    - Unrealistic targets (e.g., "99.99% SLA may be difficult to achieve with current architecture")
    - Missing health check endpoints (e.g., "No /health endpoint found in sequence diagrams")
-   - Compliance concerns (e.g., "No DPIA mentioned but service processes PII")
+   - Compliance concerns (e.g., "No PIA mentioned but service processes PII")
 
 5. **Suggest next steps**:
    - "Review the SLA targets with the service owner"

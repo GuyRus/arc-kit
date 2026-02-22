@@ -753,7 +753,7 @@ Research findings feed into Strategic Outline Business Case (SOBC) Economic Case
 - **Mitigation**:
   - Confirm Australian data residency and transfer controls in contract
   - Review vendor data processing agreement (DPA)
-  - DPIA if required for high-risk processing
+  - PIA if required for high-risk processing
 
 ---
 

@@ -19,7 +19,7 @@ Use `/arckit.sow`, `/arckit.evaluate`, and `/arckit.research` to prepare complia
 
 - Requirements aligned to Cloud First and open standards.
 - Budget and commercial constraints approved by commercial/procurement leads.
-- Security/compliance artefacts ready (Cyber Essentials, DPIA, Secure by Design).
+- Security/compliance artefacts ready (Cyber Essentials, PIA, Secure by Design).
 
 ---
 

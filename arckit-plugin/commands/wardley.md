@@ -299,7 +299,7 @@ If project includes AI components:
   - Human-in-the-loop (add as Custom component, 0.45 evolution)
   - Bias testing (add as Custom capability)
   - AI transparency publication requirement (add note)
-  - DPIA/EqIA mandatory (add annotation)
+  - PIA/EqIA mandatory (add annotation)
 
 ## Step 5: Generate Output
 
@@ -571,7 +571,7 @@ style wardley
 - Human Review Queue (Custom, 0.45): Mandatory human-in-the-loop
 - Bias Testing Framework (Custom, 0.35): Fairness testing for protected characteristics
 - AI transparency publication: Required before Live phase
-- DPIA + EqIA: Mandatory for HIGH-RISK AI
+- PIA + EqIA: Mandatory for HIGH-RISK AI
 
 **Next Steps**:
 1. Run `/arckit:sow` to create RFP for BuyICT procurement (AWS, GPT-4, Auth0)

@@ -30,7 +30,7 @@ These items were **not identified as direct AU federal equivalents** in the coll
 ## 2) Material Differences (AU ≠ UK Even Where Functionally Similar)
 
 1. **Privacy law baseline differs materially**
-   - UK references GDPR/DPIA language; AU uses Privacy Act 1988 + APP Guidelines + OAIC guidance.
+   - UK references GDPR/PIA language; AU uses Privacy Act 1988 + APP Guidelines + OAIC guidance.
 
 2. **Transparency artefact shape differs**
    - UK naming: ATRS.
@@ -60,7 +60,7 @@ These items were **not identified as direct AU federal equivalents** in the coll
 
 ## 4) Practical Rewrite Implications for Later Phases
 
-- Treat UK references to **ATRS, AI Playbook, GDPR DPIA, NCSC CAF, Cyber Essentials, JSP 936** as:
+- Treat UK references to **ATRS, AI Playbook, GDPR PIA, NCSC CAF, Cyber Essentials, JSP 936** as:
   - **Replace** where AU equivalent exists,
   - **Delete** where UK-specific and no AU requirement exists,
   - **No-equivalent** where only partial AU analogues exist.

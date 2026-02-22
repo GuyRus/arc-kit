@@ -54,7 +54,7 @@ Display as a table:
 | `devops` | `/arckit:devops` | DevOps strategy and CI/CD |
 | `dld-review` | `/arckit:dld-review` | Detailed design review |
 | `dos-requirements` | `/arckit:dos` | Digital Outcomes & Specialists |
-| `dpia` | `/arckit:dpia` | Data Protection Impact Assessment |
+| `pia` | `/arckit:pia` | Privacy Impact Assessment |
 | `evaluation-criteria` | `/arckit:evaluate` | Vendor evaluation framework |
 | `finops` | `/arckit:finops` | FinOps cloud cost management |
 | `gcloud-clarify` | `/arckit:gcloud-clarify` | BuyICT cloud panels clarification questions |

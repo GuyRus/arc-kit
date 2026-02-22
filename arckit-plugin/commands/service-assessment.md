@@ -90,7 +90,7 @@ Scan the project directory for existing artifacts and read them to inform this a
 - `ARC-*-DIAG-*.md` in `diagrams/` — Architecture diagrams (C4, deployment)
 - `ARC-*-DEVO-*.md` — DevOps strategy (deployment, monitoring)
 - `ARC-*-SECD-*.md` — Secure by Design assessment
-- `ARC-*-DPIA-*.md` — DPIA (privacy protection evidence)
+- `ARC-*-PIA-*.md` — PIA (privacy protection evidence)
 - `ARC-*-HLDR-*.md` or `ARC-*-DLDR-*.md` in `reviews/` — Design reviews
 - `ARC-*-TRAC-*.md` — Traceability matrix
 

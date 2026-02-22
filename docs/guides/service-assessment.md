@@ -21,7 +21,7 @@ Output: `projects/<id>/ARC-<id>-SVCASS-v1.0.md`.
 | Understand users & solve the whole problem (Points 1–3) | Stakeholder analysis, requirements, Wardley Maps | Ensure latest research notes attached |
 | Simple, accessible service (Points 4–5) | Requirements (WCAG), `/arckit.secure` outputs, journey maps | Include accessibility testing evidence |
 | Team & delivery approach (Points 6–8) | Project plan, backlog, retrospectives, vendor governance | Highlight multidisciplinary team and agile cadence |
-| Security, privacy, performance (Points 9–10,14) | `/arckit.secure`, `/arckit.dpia`, `/arckit.servicenow`, NFRs | Provide incident response and monitoring plans |
+| Security, privacy, performance (Points 9–10,14) | `/arckit.secure`, `/arckit.pia`, `/arckit.servicenow`, NFRs | Provide incident response and monitoring plans |
 | Technology & openness (Points 11–13) | `/arckit.research`, `/arckit.tcop`, design reviews, repos | Reference open-source/code-reuse commitments |
 
 ---

@@ -1,6 +1,6 @@
-# Privacy Impact Assessment (PIA) Guide (via `/arckit.dpia`)
+# Privacy Impact Assessment (PIA) Guide (via `/arckit.pia`)
 
-`/arckit.dpia` produces an OAIC-aligned **Privacy Impact Assessment (PIA)** report for projects that handle personal information under the **Privacy Act 1988** and the **Australian Privacy Principles (APPs)**.
+`/arckit.pia` produces an OAIC-aligned **Privacy Impact Assessment (PIA)** report for projects that handle personal information under the **Privacy Act 1988** and the **Australian Privacy Principles (APPs)**.
 
 ArcKit’s PIA structure follows the OAIC PIA Guide’s 10-step flow (threshold → plan → describe → consult → flows → compliance → risks → recommendations → report → respond/review) and is designed to surface concrete design actions (not just headings).
 
@@ -28,10 +28,10 @@ PIAs are strongly recommended whenever a project handles personal information. P
 ## Command
 
 ```bash
-/arckit.dpia Generate PIA for <project>
+/arckit.pia Generate PIA for <project>
 ```
 
-Output: `projects/<id>/ARC-<id>-DPIA-vX.Y.md` (ArcKit keeps the `DPIA` doc type for backwards compatibility; the content is OAIC PIA-aligned.)
+Output: `projects/<id>/ARC-<id>-PIA-vX.Y.md`
 
 ## What the Output Covers (At a Glance)
 
@@ -50,7 +50,7 @@ The generated PIA report includes:
 
 ```text
 1. Ensure prerequisites exist (data model + requirements + stakeholders; security and vendor artefacts where relevant)
-2. Run /arckit.dpia
+2. Run /arckit.pia
 3. Validate the content with privacy, security, records/IM, legal/policy, and the service owner:
    - Are purposes, data categories, and disclosures correct?
    - Are APP gaps explicit and turned into actions with owners?

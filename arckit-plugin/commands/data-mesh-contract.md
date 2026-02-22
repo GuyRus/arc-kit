@@ -290,7 +290,7 @@ Using the template and context gathered, generate a comprehensive data mesh cont
      - Legal basis: CONTRACT / LEGITIMATE_INTEREST / CONSENT
      - Data subject rights: API endpoint for access/rectification/erasure
      - Cross-border transfers: Default to Australia (Sydney region)
-     - DPIA status: REQUIRED if PII exists, NOT_REQUIRED otherwise
+     - PIA status: REQUIRED if PII exists, NOT_REQUIRED otherwise
    - Audit logging: All API access, schema changes, PII access
 
 8. **Governance and Change Management (Section 7)**:
@@ -500,7 +500,7 @@ After writing the file, show the user a concise summary (do NOT show the full do
 
 - `/arckit:traceability` - Link this contract to requirements and consumers
 - `/arckit:analyze` - Score contract completeness and governance quality
-- `/arckit:dpia` - Generate Data Protection Impact Assessment (if PII present)
+- `/arckit:pia` - Generate Privacy Impact Assessment (if PII present)
 
 ---
 
@@ -523,13 +523,13 @@ Based on what artifacts exist, recommend next steps:
    This will help assign real names to ownership roles instead of placeholders.
 ```
 
-**If PII exists but no ARC-*-DPIA-*.md**:
+**If PII exists but no ARC-*-PIA-*.md**:
 ```
 ⚠️  This contract contains PII ({N} fields marked as PII).
 
-Privacy Act 1988 (APPs) Article 35 may require a Data Protection Impact Assessment (DPIA).
+Privacy Act 1988 (APPs) Article 35 may require a Privacy Impact Assessment (PIA).
 
-Consider running: /arckit:dpia Generate DPIA for {project_name}
+Consider running: /arckit:pia Generate PIA for {project_name}
 ```
 
 **If this is a Australian Government project**:

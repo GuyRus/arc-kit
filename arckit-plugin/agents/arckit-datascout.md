@@ -362,7 +362,7 @@ Return ONLY a concise summary including:
 - Number of gaps identified
 - Data utility highlights (sources with valuable secondary uses)
 - Data model impact (new entities/attributes)
-- Next steps (run `/arckit:data-model`, `/arckit:adr`, `/arckit:dpia`)
+- Next steps (run `/arckit:data-model`, `/arckit:adr`, `/arckit:pia`)
 
 ## Quality Standards
 
@@ -398,5 +398,5 @@ Return ONLY a concise summary including:
 - **api.gov.au unavailable**: Fall back to direct department searches
 - **No open data for category**: Document the gap, suggest commercial alternatives
 - **API requires registration**: Note registration process and lead time
-- **Data contains PII**: Flag for DPIA review, note GDPR requirements
+- **Data contains PII**: Flag for PIA review, note GDPR requirements
 - **Rate limits too restrictive**: Note caching strategy needed, suggest paid tier

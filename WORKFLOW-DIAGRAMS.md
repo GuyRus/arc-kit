@@ -36,7 +36,7 @@ graph TD
     F --> H[data-model]
     G -.-> H
     H --> I[data-mesh-contract]
-    H --> J[dpia]
+    H --> J[pia]
     F --> K[research]
     F1 -.-> K
     K --> L[wardley]
@@ -106,7 +106,7 @@ graph TD
 ```
 
 **Duration**: 4-8 months
-**Key Milestones**: SOBC Approval → Strategy/Requirements Sign-off → DPIA Complete → ADR Approved → Sprint 1 → Go Live
+**Key Milestones**: SOBC Approval → Strategy/Requirements Sign-off → PIA Complete → ADR Approved → Sprint 1 → Go Live
 
 ---
 
@@ -132,7 +132,7 @@ graph TD
     F --> H[data-model]
     G -.-> H
     H --> I[data-mesh-contract]
-    H --> J[dpia]
+    H --> J[pia]
     F --> K[research]
     F1 -.-> K
     K --> L[wardley]
@@ -215,7 +215,7 @@ graph TD
 ```
 
 **Duration**: 6-12 months
-**Key Milestones**: SOBC Approval → Strategy/Requirements Sign-off → DPIA Complete → G-Cloud Clarifications → Service Assessment → Go Live
+**Key Milestones**: SOBC Approval → Strategy/Requirements Sign-off → PIA Complete → G-Cloud Clarifications → Service Assessment → Go Live
 
 ---
 
@@ -241,7 +241,7 @@ graph TD
     F --> H[data-model]
     G -.-> H
     H --> I[data-mesh-contract]
-    H --> J[dpia]
+    H --> J[pia]
     F --> K[research]
     F1 -.-> K
     K --> L[wardley]
@@ -330,7 +330,7 @@ graph TD
 ```
 
 **Duration**: 9-18 months
-**Key Milestones**: SOBC Approval → Strategy/Requirements Sign-off → DPIA Complete → G-Cloud Clarifications → AI Playbook Approval → ATRS Publication → Service Assessment → Go Live
+**Key Milestones**: SOBC Approval → Strategy/Requirements Sign-off → PIA Complete → G-Cloud Clarifications → AI Playbook Approval → ATRS Publication → Service Assessment → Go Live
 
 **Critical Gates**:
 - AI Playbook compliance required before Beta
@@ -360,7 +360,7 @@ graph TD
     F --> H[data-model]
     G -.-> H
     H --> I[data-mesh-contract]
-    H --> J[dpia]
+    H --> J[pia]
     F --> K[research]
     F1 -.-> K
     K --> L[wardley]
@@ -442,7 +442,7 @@ graph TD
 ```
 
 **Duration**: 12-24 months
-**Key Milestones**: SOBC Approval → Strategy/Requirements Sign-off → DPIA Complete → DOS Down-select → MOD Secure by Design Approval → Service Assessment → Go Live
+**Key Milestones**: SOBC Approval → Strategy/Requirements Sign-off → PIA Complete → DOS Down-select → MOD Secure by Design Approval → Service Assessment → Go Live
 
 **Critical Gates**:
 - MOD Secure by Design (JSP 440, IAMM) required before Beta
@@ -472,7 +472,7 @@ graph TD
     F --> H[data-model]
     G -.-> H
     H --> I[data-mesh-contract]
-    H --> J[dpia]
+    H --> J[pia]
     F --> K[research]
     F1 -.-> K
     K --> L[wardley]
@@ -558,7 +558,7 @@ graph TD
 ```
 
 **Duration**: 18-36 months
-**Key Milestones**: SOBC Approval → Strategy/Requirements Sign-off → DPIA Complete → DOS Down-select → MOD Secure by Design + JSP 936 Approval → Service Assessment → Go Live
+**Key Milestones**: SOBC Approval → Strategy/Requirements Sign-off → PIA Complete → DOS Down-select → MOD Secure by Design + JSP 936 Approval → Service Assessment → Go Live
 
 **Critical Gates**:
 - MOD Secure by Design required before Beta
@@ -586,7 +586,7 @@ graph TD
 | 2 | Business Justification | sobc |
 | 3 | Requirements | requirements |
 | 3.5 | Platform Strategy | platform-design |
-| 4 | Detailed Design | data-model, data-mesh-contract, dpia, research, azure-research*, aws-research*, datascout, wardley, roadmap, diagram |
+| 4 | Detailed Design | data-model, data-mesh-contract, pia, research, azure-research*, aws-research*, datascout, wardley, roadmap, diagram |
 | 5 | Procurement | sow, dos, gcloud-search, gcloud-clarify, evaluate |
 | 6 | Design Reviews | hld-review, dld-review, adr |
 | 7 | Implementation | backlog |

@@ -58,7 +58,7 @@ Output: `projects/<id>/ARC-<id>-PLAN-v1.0.md` plus Mermaid diagrams.
 ## Review Checklist
 
 - Phases align to Digital Experience Policy / Digital Service Standard and organisational governance.
-- Each gate lists approvers and evidence (business case, design review, DPIA).
+- Each gate lists approvers and evidence (business case, design review, PIA).
 - Dependencies cover AU compliance artefacts (CPRs, Privacy/APP, PSPF/ISM, AI Playbook where relevant).
 - Buffer time included for procurement, assurance, and change freeze windows.
 - Risks highlight delivery blockers (supplier delay, funding approval, staffing).

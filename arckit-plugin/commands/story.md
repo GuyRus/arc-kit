@@ -41,7 +41,7 @@ Scan the project directory for existing artifacts and read them to inform the pr
 - `ARC-*-HLDR-*.md` or `ARC-*-DLDR-*.md` — Design reviews
 - `ARC-*-TCOP-*.md` — DX Policy / Digital Service Standard review
 - `ARC-*-SECD-*.md` or `ARC-*-MSBD-*.md` — Security assessments
-- `ARC-*-DPIA-*.md` — DPIA
+- `ARC-*-PIA-*.md` — PIA
 - `ARC-*-AIGA-*.md` — AU AI governance assessment
 - `ARC-*-AITS-*.md` — AI transparency statement
 - `ARC-*-BKLG-*.md` — Backlog

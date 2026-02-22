@@ -57,7 +57,7 @@ Generate a comprehensive Secure by Design assessment document by:
    **RECOMMENDED** (read if available, note if missing):
    - `ARC-*-RISK-*.md` in `projects/{project-name}/` — Risk register
      - Extract: Security risks, threat model, risk appetite, mitigations
-   - `ARC-*-DPIA-*.md` in `projects/{project-name}/` — Data Protection Impact Assessment
+   - `ARC-*-PIA-*.md` in `projects/{project-name}/` — Privacy Impact Assessment
      - Extract: Personal data processing, lawful basis, data protection risks
    - `ARC-*-DIAG-*.md` in `projects/{project-name}/diagrams/` — Architecture diagrams
      - Extract: Deployment topology, network boundaries, data flows, integration points
@@ -74,7 +74,7 @@ Generate a comprehensive Secure by Design assessment document by:
    - **Principles**: Security standards, approved platforms, compliance constraints
    - **Requirements**: NFR-SEC IDs, data classification, availability targets, integration security
    - **Risk**: Security threats, risk levels, existing mitigations
-   - **DPIA**: Personal data categories, lawful basis, data protection controls
+   - **PIA**: Personal data categories, lawful basis, data protection controls
    - **Diagrams**: Network topology, trust boundaries, data flow paths
 
 4. **Check for External Documents** (optional):
@@ -126,7 +126,7 @@ Generate a comprehensive Secure by Design assessment document by:
    **Objective B: Protecting Against Cyber Attack (6 principles)**
    - B1: Service Protection Policies - Acceptable use, access control, data protection policies
    - B2: Identity and Access Control - MFA, PAM, least privilege, access reviews
-   - B3: Data Security - Encryption, Privacy Act 1988 (APPs) compliance, DPIA, DLP
+   - B3: Data Security - Encryption, Privacy Act 1988 (APPs) compliance, PIA, DLP
    - B4: System Security - Patching, hardening, anti-malware, EDR
    - B5: Resilient Networks - Segmentation, firewalls, IDS/IPS, VPN
    - B6: Staff Awareness - Security training, phishing awareness, data protection
@@ -151,7 +151,7 @@ Generate a comprehensive Secure by Design assessment document by:
    - Lawful basis identified
    - Privacy notice published
    - Data subject rights procedures
-   - DPIA completed (if high risk)
+   - PIA completed (if high risk)
    - Data breach notification process (72 hours to OAIC)
    - Records of Processing Activities (ROPA)
 
@@ -284,7 +284,7 @@ The footer should be populated with:
 
 Mark as CRITICAL if:
 - No Privacy Act 1988 (APPs) compliance for personal data processing
-- No DPIA for high-risk processing
+- No PIA for high-risk processing
 - No encryption for sensitive data (OFFICIAL-SENSITIVE)
 - Essential Eight not obtained (required for most gov contracts)
 - No incident response capability
@@ -311,7 +311,7 @@ Mark as CRITICAL if:
 - Encryption at rest and in transit (strong algorithms)
 - Multi-factor authentication required
 - Enhanced audit logging
-- DPIA if processing personal data
+- PIA if processing personal data
 - Data loss prevention controls
 
 ### Project Phase Considerations
@@ -326,7 +326,7 @@ Mark as CRITICAL if:
 **Beta**:
 - Security controls implemented
 - Penetration testing completed
-- DPIA completed (if required)
+- PIA completed (if required)
 - Essential Eight certification obtained
 - Vulnerability management operational
 - Incident response plan documented
@@ -369,7 +369,7 @@ Required if:
 Responsibilities:
 - Advise on Privacy Act 1988 (APPs) compliance
 - Monitor compliance with Privacy Act 1988 (APPs)
-- Advise on DPIA
+- Advise on PIA
 - Liaise with OAIC
 
 ### Office of the Australian Information Commissioner (OAIC)
@@ -429,9 +429,9 @@ Responsibilities:
 
 #### B3: Data Security
 **Status**: ⚠️ Partially Achieved
-**Evidence**: TLS 1.3 in transit, AES-256 at rest, but DPIA not completed...
+**Evidence**: TLS 1.3 in transit, AES-256 at rest, but PIA not completed...
 **Gaps**:
-- Complete DPIA before Beta (CRITICAL - blocker for Beta phase)
+- Complete PIA before Beta (CRITICAL - blocker for Beta phase)
 - Implement Data Loss Prevention (HIGH - 90 days)
 
 ## Essential Eight
@@ -446,19 +446,19 @@ Responsibilities:
 
 **Status**: ⚠️ Partially Compliant
 **DPO**: Appointed ([Data Protection Officer Name])
-**DPIA**: Not completed (REQUIRED before Beta)
+**PIA**: Not completed (REQUIRED before Beta)
 
 **Critical Issues**:
-1. DPIA not completed for tax credit processing (CRITICAL)
+1. PIA not completed for tax credit processing (CRITICAL)
 2. Data retention policy not documented (HIGH)
 
 ## Critical Issues
-1. DPIA incomplete (CAF B3, Privacy Act 1988 (APPs)) - Blocks Beta phase
+1. PIA incomplete (CAF B3, Privacy Act 1988 (APPs)) - Blocks Beta phase
 2. Threat modeling incomplete (CAF A2) - Significant risk gap
 
 ## Recommendations
 **Critical** (0-30 days):
-- Complete DPIA - DPO - 15 days
+- Complete PIA - DPO - 15 days
 - Complete threat model - Security Architect - 30 days
 ```
 

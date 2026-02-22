@@ -24,7 +24,7 @@ Complete documentation for ArcKit - Enterprise Architecture Governance & Vendor 
 7. [Platform Design](guides/platform-design.md) - `/arckit.platform-design` ⭐ NEW
 8. [Data Model](guides/data-model.md) - `/arckit.data-model` ⭐ NEW
 9. [Data Mesh Contract](guides/data-mesh-contract.md) - `/arckit.data-mesh-contract` ⭐ NEW
-10. [Data Protection Impact Assessment](guides/dpia.md) - `/arckit.dpia` ⭐ NEW
+10. [Privacy Impact Assessment](guides/pia.md) - `/arckit.pia` ⭐ NEW
 11. [Wardley Mapping](guides/wardley-mapping.md) - `/arckit.wardley` ⭐ NEW
 12. [Roadmap](guides/roadmap.md) - `/arckit.roadmap` ⭐ NEW
 13. [Architecture Strategy](guides/strategy.md) - `/arckit.strategy` ⭐ NEW
@@ -122,7 +122,7 @@ These commands require [MCP servers](https://modelcontextprotocol.io/) for autho
 | `/arckit.platform-design` | [platform-design.md](guides/platform-design.md) | ✅ Complete |
 | `/arckit.data-model` | [data-model.md](guides/data-model.md) | ✅ Complete |
 | `/arckit.data-mesh-contract` | [data-mesh-contract.md](guides/data-mesh-contract.md) | ✅ Complete |
-| `/arckit.dpia` | [dpia.md](guides/dpia.md) | ✅ Complete |
+| `/arckit.pia` | [pia.md](guides/pia.md) | ✅ Complete |
 | `/arckit.research` | [research.md](guides/research.md) | ✅ Complete |
 | `/arckit.azure-research` | [azure-research.md](guides/azure-research.md) | ✅ Complete |
 | `/arckit.aws-research` | [aws-research.md](guides/aws-research.md) | ✅ Complete |

@@ -192,7 +192,7 @@
 - [ ] Data retention policy
 
 **Personal Data Processing**: [Yes / No]
-**DPIA Completed**: [Yes / No / N/A]
+**PIA Completed**: [Yes / No / N/A]
 
 **Gaps/Actions**:
 - [Action 1]
@@ -426,13 +426,13 @@
 - [Action 1]
 - [Action 2]
 
-### 3.2 Data Protection Impact Assessment (DPIA)
+### 3.2 Privacy Impact Assessment (PIA)
 
-**DPIA Required**: [Yes / No]
+**PIA Required**: [Yes / No]
 
-**DPIA Status**: [Completed / In Progress / Not Started / N/A]
+**PIA Status**: [Completed / In Progress / Not Started / N/A]
 
-**DPIA Findings**:
+**PIA Findings**:
 - High risks identified: [Number]
 - Mitigations implemented: [Number]
 - Residual risks accepted: [Yes/No by whom]

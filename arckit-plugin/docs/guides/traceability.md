@@ -45,7 +45,7 @@ Gaps appear when any column lacks references.
 - Missing tests? Create stories and flag as release blocker if “MUST” requirement.
 - Design mismatch? Update HLD/DLD or retire redundant components.
 - Orphan artefacts? Remove or link to new requirements to avoid scope creep.
-- Compliance evidence absent? Run relevant commands (`/arckit.secure`, `/arckit.dpia`, `/arckit.ai-playbook`).
+- Compliance evidence absent? Run relevant commands (`/arckit.secure`, `/arckit.pia`, `/arckit.ai-playbook`).
 
 ---
 

@@ -62,7 +62,7 @@ The agent writes the full discovery document to file and returns a summary inclu
 - Gaps identified
 - Data utility highlights
 - Data model impact
-- Next steps (`/arckit:data-model`, `/arckit:adr`, `/arckit:dpia`)
+- Next steps (`/arckit:data-model`, `/arckit:adr`, `/arckit:pia`)
 
 ## Integration with Other Commands
 
@@ -71,6 +71,6 @@ The agent writes the full discovery document to file and returns a summary inclu
 - **Output**: Feeds into `/arckit:data-model` (new entities/attributes from external sources)
 - **Output**: Feeds into `/arckit:research` (data source pricing informs vendor cost analysis)
 - **Output**: Feeds into `/arckit:adr` (data source selection decisions)
-- **Output**: Feeds into `/arckit:dpia` (third-party data sources with personal data)
+- **Output**: Feeds into `/arckit:pia` (third-party data sources with personal data)
 - **Output**: Feeds into `/arckit:diagram` (data flow diagrams)
 - **Output**: Feeds into `/arckit:traceability` (DR-xxx mapped to sources)

@@ -124,7 +124,7 @@ Contracts align with NDS pillars:
 
 6. `/arckit.traceability` – Link contracts to requirements and consumers
 7. `/arckit.analyze` – Score contract completeness and governance quality
-8. `/arckit.dpia` – If contract involves PII (auto-references contract)
+8. `/arckit.pia` – If contract involves PII (auto-references contract)
 
 ---
 
@@ -220,7 +220,7 @@ Contracts align with NDS pillars:
 - `/arckit.requirements` – Capture DR-xxx requirements that drive SLAs
 - `/arckit.traceability` – Link contracts to requirements and consumers
 - `/arckit.analyze` – Score contract completeness
-- `/arckit.dpia` – Privacy impact assessment for PII-containing products
+- `/arckit.pia` – Privacy impact assessment for PII-containing products
 
 ---
 

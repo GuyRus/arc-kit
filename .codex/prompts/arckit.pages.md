@@ -47,7 +47,7 @@ Extract the title from the first `#` heading in each guide file.
 | Planning | sobc, business-case, plan, roadmap, backlog |
 | Architecture | principles, adr, diagram, wardley, data-model, hld-review, dld-review, design-review, platform-design, data-mesh-contract |
 | Governance | risk, risk-management, traceability, principles-compliance, analyze |
-| Compliance | tcop, secure, mod-secure, dpia, ai-playbook, atrs, jsp-936, service-assessment |
+| Compliance | tcop, secure, mod-secure, pia, ai-playbook, atrs, jsp-936, service-assessment |
 | Operations | devops, mlops, finops, servicenow, operationalize |
 | Procurement | sow, evaluate, dos, gcloud-search, gcloud-clarify, procurement |
 | Research | aws-research, azure-research |
@@ -58,7 +58,7 @@ Extract the title from the first `#` heading in each guide file.
 | Status | Description | Guide Files |
 |--------|-------------|-------------|
 | live | Production-ready | plan, principles, stakeholders, risk, sobc, requirements, data-model, diagram, traceability, principles-compliance, story |
-| beta | Feature-complete | dpia, research, strategy, roadmap, adr, hld-review, dld-review, backlog, servicenow, analyze, service-assessment, tcop, secure, pages |
+| beta | Feature-complete | pia, research, strategy, roadmap, adr, hld-review, dld-review, backlog, servicenow, analyze, service-assessment, tcop, secure, pages |
 | alpha | Working, limited testing | data-mesh-contract, ai-playbook, atrs |
 | experimental | Early adopters | platform-design, wardley, azure-research, aws-research, datascout, dos, gcloud-search, gcloud-clarify, trello, devops, mlops, finops, operationalize, mod-secure, jsp-936, customize, sow, evaluate |
 
@@ -96,7 +96,7 @@ projects/
 │   ├── ARC-001-PLAN-v1.0.md     # Project Plan
 │   ├── ARC-001-ROAD-v1.0.md     # Roadmap
 │   ├── ARC-001-STRAT-v1.0.md    # Architecture Strategy
-│   ├── ARC-001-DPIA-v1.0.md     # DPIA
+│   ├── ARC-001-PIA-v1.0.md     # PIA
 │   ├── ARC-001-SNOW-v1.0.md     # ServiceNow Design
 │   ├── ARC-001-DEVOPS-v1.0.md   # DevOps Strategy
 │   ├── ARC-001-MLOP-v1.0.md     # MLOps Strategy
@@ -176,7 +176,7 @@ Only include these known artifact types. Match by type code pattern `ARC-{PID}-{
 | | AITS | `ARC-*-AITS-*.md` | AU AI Transparency Statement |
 | | AIIA | `ARC-*-AIIA-*.md` | AU AI Impact Assessment |
 | | AIGC | `ARC-*-AIGC-*.md` | AU AI Governance Checklist |
-| | DPIA | `ARC-*-DPIA-*.md` | Data Protection Impact Assessment |
+| | PIA | `ARC-*-PIA-*.md` | Privacy Impact Assessment |
 | | ADEF | `ARC-*-ADEF-*.md` | AU Defence AI Assurance Pathway |
 | | SVCASS | `ARC-*-SVCASS-*.md` | Service Assessment |
 | **Operations** | | | |

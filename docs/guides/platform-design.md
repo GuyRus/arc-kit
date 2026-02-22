@@ -516,7 +516,7 @@ graph TD
 
 **Example**: "Platform shares patient data with all providers for better matching."
 
-**Fix**: Platform Design Canvas should include governance rules (consent, data minimization, right to erasure). Use `/arckit.dpia` for Privacy Act 1988 (APPs) compliance.
+**Fix**: Platform Design Canvas should include governance rules (consent, data minimization, right to erasure). Use `/arckit.pia` for Privacy Act 1988 (APPs) compliance.
 
 ---
 

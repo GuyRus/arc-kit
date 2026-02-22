@@ -210,7 +210,7 @@ flowchart LR
 | {Component 1} | {pii_type} | {processing} | {legal_basis} | {retention} | {deletion} |
 | {Component 2} | {pii_type} | {processing} | {legal_basis} | {retention} | {deletion} |
 
-**DPIA Required**: {Yes / No}
+**PIA Required**: {Yes / No}
 **DPO Consulted**: {Yes / No / N/A}
 
 ---

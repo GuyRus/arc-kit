@@ -50,7 +50,7 @@ Scan for external (non-ArcKit) documents the user may have provided:
 **Existing PIAs and supplier data handling agreements**:
 - **Look in**: `projects/{project-dir}/external/`
 - **File types**: PDF (.pdf), Word (.docx), Markdown (.md)
-- **What to extract**: Previous PIA/DPIA findings, contract terms and assurance artefacts, cross-border disclosure assessments (APP 8), incident response expectations (NDB), and any data flow diagrams
+- **What to extract**: Previous PIA findings, contract terms and assurance artefacts, cross-border disclosure assessments (APP 8), incident response expectations (NDB), and any data flow diagrams
 - **Examples**: `existing-pia.pdf`, `supplier-data-handling-agreement.pdf`, `privacy-notice.docx`
 
 **Privacy policies and information handling standards**:
@@ -62,7 +62,7 @@ Scan for external (non-ArcKit) documents the user may have provided:
 **Enterprise-Wide Data Protection Standards**:
 - **Look in**: `projects/000-global/external/`
 - **File types**: PDF, Word, Markdown
-- **What to extract**: Enterprise data protection standards, privacy impact templates, cross-project DPIA benchmarks
+- **What to extract**: Enterprise data protection standards, privacy impact templates, cross-project PIA benchmarks
 
 **User prompt**: If no external data protection docs found, ask:
 "Do you have any existing PIAs, supplier data handling agreements, or privacy policies? I can read PDFs directly. Place them in `projects/{project-dir}/external/` and re-run, or skip."
@@ -113,12 +113,12 @@ Read all documents listed in Step 0 above. Use the extracted information for aut
 Read the PIA template:
 
 **Read the template** (with user override support):
-- **First**, check if `.arckit/templates/dpia-template.md` exists in the project root
+- **First**, check if `.arckit/templates/pia-template.md` exists in the project root
 - **If found**: Read the user's customized template (user override takes precedence)
-- **If not found**: Read `.arckit/templates/dpia-template.md` (default)
+- **If not found**: Read `.arckit/templates/pia-template.md` (default)
 
 > **Note**: Read the `.arckit/VERSION` file and update the version in the template metadata line when generating.
-> **Tip**: Users can customise templates with `/arckit.customize dpia`
+> **Tip**: Users can customise templates with `/arckit.customize pia`
 
 This template follows the OAIC PIA Guide structure (threshold assessment → information flows → compliance check → risk management → report and review).
 
@@ -146,14 +146,14 @@ Score each indicator based on evidence in the data model, requirements, and stak
 
 Show the threshold results to the user and proceed to generate the PIA unless the user explicitly declines.
 
-### Step 5: Generate PIA Report (DPIA Doc Type)
+### Step 5: Generate PIA Report
 
 **CRITICAL**: Use the **Write tool** to create the PIA report. These documents are typically 3,000-10,000 words and will exceed the 32K token output limit if you try to output the full document in the chat.
 
 Generate the PIA report by:
 
 1. **Detect version**: Before generating the document ID, check if a previous version exists:
-   - Look for existing `ARC-{PROJECT_ID}-DPIA-v*.md` files in the project directory
+   - Look for existing `ARC-{PROJECT_ID}-PIA-v*.md` files in the project directory
    - **If no existing file**: Use VERSION="1.0"
    - **If existing file found**:
      - Read the existing document to understand its scope
@@ -165,9 +165,9 @@ Generate the PIA report by:
 2. **Auto-populate Document Control**:
    ```bash
    # Generate document ID
-   DOC_ID=$(bash .arckit/scripts/bash/generate-document-id.sh {project_id} DPIA v${VERSION})
+   DOC_ID=$(bash .arckit/scripts/bash/generate-document-id.sh {project_id} PIA v${VERSION})
    ```
-   - Document ID: `{DOC_ID}` (e.g., ARC-001-DPIA-v1.0)
+   - Document ID: `{DOC_ID}` (e.g., ARC-001-PIA-v1.0)
    - Version: ${VERSION}
    - Status: DRAFT
    - Date Created: {current_date}
@@ -176,7 +176,7 @@ Generate the PIA report by:
    - Classification: OFFICIAL:Sensitive
 
 3. **Populate the template sections (OAIC 10-step PIA flow)**:
-   - Use the structure and headings in `.arckit/templates/dpia-template.md`.
+   - Use the structure and headings in `.arckit/templates/pia-template.md`.
    - Treat the OAIC steps as the organising backbone: threshold → plan → describe → consult → flows → compliance → risks → recommendations → report → respond/review.
    - Remove or correct any non-Australian privacy terminology if it appears in source artefacts (e.g., “controller/processor”, “lawful basis”, “Article 35”). Translate into Privacy Act / APP terms and the project’s governance model.
 
@@ -235,7 +235,7 @@ Generate the PIA report by:
 Write the complete PIA document to:
 
 ```
-projects/{project_id}/ARC-{PROJECT_ID}-DPIA-v${VERSION}.md
+projects/{project_id}/ARC-{PROJECT_ID}-PIA-v${VERSION}.md
 ```
 
 ### Step 6: Risk Register Integration (Optional)
@@ -269,7 +269,7 @@ If YES:
 ✅ PIA Generated Successfully
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📄 Document: projects/{project_id}/ARC-{PROJECT_ID}-DPIA-v{VERSION}.md
+📄 Document: projects/{project_id}/ARC-{PROJECT_ID}-PIA-v{VERSION}.md
 📋 Document ID: {document_id}
 📅 Assessment Date: {date}
 🔒 Classification: OFFICIAL:Sensitive
@@ -336,7 +336,7 @@ If YES:
 - OAIC Guide to undertaking privacy impact assessments (PIAs)
 - OAIC APP Guidelines (APP 8/11/12/13)
 - OAIC Notifiable Data Breaches (NDB) scheme guidance
- - Privacy Act 1988 (s 33D; definitions where relevant)
+- Privacy Act 1988 (s 33D; definitions where relevant)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
@@ -369,7 +369,7 @@ If YES:
 
 ## Success Criteria
 
-- ✅ DPIA document created at `projects/{project_id}/ARC-{PROJECT_ID}-DPIA-v${VERSION}.md`
+- ✅ PIA document created at `projects/{project_id}/ARC-{PROJECT_ID}-PIA-v${VERSION}.md`
 - ✅ OAIC-style threshold assessment performed and documented
 - ✅ OAIC 10-step PIA flow followed in the report structure
 - ✅ All personal information and sensitive information from data model included
@@ -388,9 +388,9 @@ If YES:
 ## Example Usage
 
 ```
-/arckit.dpia Generate PIA for public health appointment system
+/arckit.pia Generate PIA for public health appointment system
 
-/arckit.dpia Create privacy impact assessment for benefits eligibility decision support tool
+/arckit.pia Create privacy impact assessment for benefits eligibility decision support tool
 
-/arckit.dpia Assess PIA scope for Windows 11 deployment (employee data only)
+/arckit.pia Assess PIA scope for Windows 11 deployment (employee data only)
 ```

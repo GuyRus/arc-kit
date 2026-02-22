@@ -24,7 +24,7 @@ Output: `projects/<id>/ARC-<id>-TCOP-v1.0.md`.
 | 4 | Open standards | API specs, schema definitions, GOV.UK Design System adoption | `/arckit.diagram`, `/arckit.hld-review` |
 | 5 | Cloud first | Deployment diagram, hosting decision log, cost model | `/arckit.diagram`, `/arckit.secure` |
 | 6 | Security | Secure by Design assessment, threat model, cyber assurance | `/arckit.secure`, `/arckit.risk` |
-| 7 | Privacy | DPIA, data model, retention schedule | `/arckit.dpia`, `/arckit.data-model` |
+| 7 | Privacy | PIA, data model, retention schedule | `/arckit.pia`, `/arckit.data-model` |
 | 8 | Reuse & collaboration | Use of GOV.UK components, shared code, community contributions | `/arckit.research`, `/arckit.story` |
 | 9 | Integrate & adapt | Integration requirements, migration plan, legacy dependencies | `/arckit.requirements`, `/arckit.diagram` |
 | 10 | Use data better | Data strategy, quality metrics, analytics plan | `/arckit.data-model`, `/arckit.story` |

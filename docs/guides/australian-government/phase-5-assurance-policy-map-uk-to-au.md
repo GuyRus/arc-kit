@@ -5,7 +5,7 @@
 Phase 5 covers assurance and security command surfaces:
 
 - `adr`
-- `dpia`
+- `pia`
 - `secure`
 - `mod-secure`
 - `service-assessment`
@@ -35,7 +35,7 @@ Preserve ArcKit assurance depth and structure while replacing UK-default governa
 | Digital Service Standard (DTA) | Service assessment and ADR assurance integration |
 | Digital Experience Policy | DX policy review point mapping (former TCoP flow) |
 | PSPF / ISM / Essential Eight (ASD ACSC) | Secure-by-design and cyber control assessment |
-| Privacy Act 1988 + APPs / OAIC guidance | DPIA, breach/notification, and privacy governance framing |
+| Privacy Act 1988 + APPs / OAIC guidance | PIA, breach/notification, and privacy governance framing |
 | Defence public policy context | Defence secure-by-design alignment where applicable |
 
 ## Source Gaps

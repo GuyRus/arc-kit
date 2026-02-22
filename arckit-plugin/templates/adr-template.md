@@ -128,7 +128,7 @@ These forces influence the decision. They are often in tension with each other.
 - **Digital Service Standard**: [Which points apply? Point 4: Open standards, Point 9: Hosting, etc.]
 - **Digital Experience Policy**: [Which points? Point 5: Cloud first, Point 8: Reuse, Point 13: AI]
 - **ASD ACSC Cyber Security**: [Essential Eight maturity uplift, CAF principles]
-- **Data Protection**: [Privacy Act 1988 (APPs) Article 25: Data protection by design, Article 35: DPIA]
+- **Data Protection**: [Privacy Act 1988 (APPs) Article 25: Data protection by design, Article 35: PIA]
 - **Accessibility**: [WCAG 2.2 AA, Public Sector Bodies Accessibility Regulations]
 
 ### 4.4 Alignment to Architecture Principles
@@ -320,7 +320,7 @@ Reference architecture principles from `projects/000-global/ARC-000-PRIN-v*.md`:
 - [ ] Security testing completed: [Pen test, vulnerability scan]
 
 **Data protection**:
-- [ ] DPIA updated if processing personal data
+- [ ] PIA updated if processing personal data
 - [ ] Data flow diagrams updated
 - [ ] Privacy notice updated if needed
 

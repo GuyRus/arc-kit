@@ -17,7 +17,7 @@ This matrix shows which commands depend on outputs from other commands.
 
 ## Dependency Structure Matrix
 
-| PRODUCES → | plan | principles | stakeholders | risk | sobc | requirements | data-model | data-mesh-contract | platform-design | dpia | research | azure-research | aws-research | gcp-research | datascout | wardley | roadmap | strategy | adr | sow | dos | gcloud-search | gcloud-clarify | evaluate | hld-review | dld-review | backlog | trello | diagram | servicenow | devops | mlops | finops | operationalize | traceability | analyze | principles-compliance | service-assessment | tcop | ai-playbook | atrs | secure | mod-secure | jsp-936 | story | pages |
+| PRODUCES → | plan | principles | stakeholders | risk | sobc | requirements | data-model | data-mesh-contract | platform-design | pia | research | azure-research | aws-research | gcp-research | datascout | wardley | roadmap | strategy | adr | sow | dos | gcloud-search | gcloud-clarify | evaluate | hld-review | dld-review | backlog | trello | diagram | servicenow | devops | mlops | finops | operationalize | traceability | analyze | principles-compliance | service-assessment | tcop | ai-playbook | atrs | secure | mod-secure | jsp-936 | story | pages |
 |------------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|
 | **plan** | - | R | R | R | O | O |  |  |  |  |  |  | O | | | | R |  |  |  | O | O |  |  | R |  |  |  |  |  |  |  |  |  |  | R |  | M | O |  |  |  |  |  | R | R |
 | **principles** |  | - | M | R | R | R |  |  | M | R |  |  |  | | R | R | M | M | M |  | M | R |  |  | M | M |  |  |  |  | R |  | R |  |  | R | M |  | M |  |  | M | M |  |  | R |
@@ -28,7 +28,7 @@ This matrix shows which commands depend on outputs from other commands.
 | **data-model** |  |  |  |  |  |  | - | M | O | M | R | R |  | R | O | O |  |  |  | O |  |  |  |  |  |  |  |  | R | R |  | R |  |  | R | R | R | R |  | R |  |  |  |  |  | R |
 | **data-mesh-contract** |  |  |  |  |  |  |  | - |  |  |  |  |  | | | |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | O |
 | **platform-design** |  |  |  |  |  |  | O | R | - | O | O |  | R | | | |  |  |  |  |  |  |  |  |  |  |  |  | R |  |  |  |  |  |  |  | R |  |  |  |  |  |  |  |  | R |
-| **dpia** |  |  |  |  |  |  |  |  |  | - |  |  |  | | | | O |  |  | R |  |  |  | O |  |  |  |  | O |  |  |  |  |  | O | R | R | R |  | R | R | R | R |  | R | R |
+| **pia** |  |  |  |  |  |  |  |  |  | - |  |  |  | | | | O |  |  | R |  |  |  | O |  |  |  |  | O |  |  |  |  |  | O | R | R | R |  | R | R | R | R |  | R | R |
 | **research** |  |  |  |  |  |  |  |  |  |  | - |  | R | | | |  |  |  | R |  | R | O | R |  |  |  |  |  |  | R | R |  |  |  |  |  |  |  | O |  |  |  |  |  | R |
 | **azure-research** |  |  |  |  |  |  |  |  |  |  |  | - |  | | | R |  |  | R |  |  |  |  |  |  |  | R |  | R |  | R | R | R |  |  |  |  |  |  |  |  |  |  |  | R |  |
 | **aws-research** |  |  |  |  |  |  |  |  |  |  |  |  | - |  |  | R |  |  | R |  |  |  |  |  |  |  | R |  | R |  | R | R | R |  |  |  |  |  |  |  |  |  |  |  | R |  |
@@ -103,7 +103,7 @@ These commands can run first:
 ### Tier 4: Detailed Design (Depends on Requirements)
 Most commands in this tier require or strongly recommend ARC-*-REQ-*.md:
 - **data-model** → Depends on: requirements (M), stakeholders (R), sobc (O)
-- **dpia** → Depends on: data-model (M), requirements (M), principles (R), stakeholders (R), risk (R)
+- **pia** → Depends on: data-model (M), requirements (M), principles (R), stakeholders (R), risk (R)
 - **research** → Depends on: requirements (M), stakeholders (R), data-model (R), platform-design (R)
 - **azure-research** → Depends on: requirements (M), data-model (R), stakeholders (R), MCP Server (External)
   - Note: Requires Microsoft Learn MCP server to be installed for authoritative Azure documentation
@@ -157,7 +157,7 @@ Most procurement commands require ARC-*-REQ-*.md:
 
 ### Tier 10: Compliance Assessment (Depends on Multiple Artifacts)
 These assess compliance across the project:
-- **principles-compliance** → Depends on: principles (M), requirements (R), stakeholders (R), risk (R), data-model (R), platform-design (R), HLD (R), DLD (R), hld-review (R), dld-review (R), traceability (R), dpia (R), tcop (R), secure (R), mod-secure (R)
+- **principles-compliance** → Depends on: principles (M), requirements (R), stakeholders (R), risk (R), data-model (R), platform-design (R), HLD (R), DLD (R), hld-review (R), dld-review (R), traceability (R), pia (R), tcop (R), secure (R), mod-secure (R)
   - Note: All dependencies except principles are RECOMMENDED - better assessment with more artifacts
 - **service-assessment** → Depends on: requirements (M), plan (R), data-model (R), platform-design (O), principles (R), stakeholders (R), risk (R), analyze (R), hld-review (R), dld-review (R), diagram (R), traceability (R), wardley (R), tcop (O), ai-playbook (O), atrs (O), secure (O), mod-secure (O), jsp-936 (O), principles-compliance (O)
   - Note: Compliance artifacts are optional - service-assessment identifies them as gaps if missing
@@ -179,7 +179,7 @@ Final reporting command that creates comprehensive project narrative:
 Publishing command that generates documentation site:
 - **pages** → Depends on: All document-producing artifacts (R)
   - Note: pages indexes and displays all project documents - more documents = better site
-  - Recommended dependencies: principles, stakeholders, risk, sobc, requirements, data-model, dpia, research, wardley, roadmap, adr, sow, evaluate, hld-review, dld-review, backlog, diagram, servicenow, traceability, analyze, principles-compliance, service-assessment, tcop, ai-playbook, atrs, secure, mod-secure, jsp-936, story, HLD, DLD
+  - Recommended dependencies: principles, stakeholders, risk, sobc, requirements, data-model, pia, research, wardley, roadmap, adr, sow, evaluate, hld-review, dld-review, backlog, diagram, servicenow, traceability, analyze, principles-compliance, service-assessment, tcop, ai-playbook, atrs, secure, mod-secure, jsp-936, story, HLD, DLD
   - Generates GitHub Pages site with Mermaid diagram support
   - Best run when project has substantial documentation to publish
 
@@ -245,13 +245,13 @@ principles-compliance → analyze → service-assessment → story
 ### Commands That Are Frequently Consumed (High Fan-In)
 
 **ARC-*-REQ-*.md** - consumed by 38 commands:
-- data-model (M), data-mesh-contract (M), platform-design (M), dpia (M), research (M), azure-research (M), aws-research (M), gcp-research (M), datascout (M), wardley (M), roadmap (M), adr (M), sow (M), dos (M), gcloud-search (R), gcloud-clarify (M), evaluate (M), hld-review (M), dld-review (M), backlog (M), diagram (M), servicenow (M), devops (M), mlops (M), finops (M), operationalize (M), traceability (R), analyze (R), principles-compliance (M), service-assessment (M), tcop (M), ai-playbook (M), atrs (M), secure (M), mod-secure (M), jsp-936 (M), story (R), pages (R)
+- data-model (M), data-mesh-contract (M), platform-design (M), pia (M), research (M), azure-research (M), aws-research (M), gcp-research (M), datascout (M), wardley (M), roadmap (M), adr (M), sow (M), dos (M), gcloud-search (R), gcloud-clarify (M), evaluate (M), hld-review (M), dld-review (M), backlog (M), diagram (M), servicenow (M), devops (M), mlops (M), finops (M), operationalize (M), traceability (R), analyze (R), principles-compliance (M), service-assessment (M), tcop (M), ai-playbook (M), atrs (M), secure (M), mod-secure (M), jsp-936 (M), story (R), pages (R)
 
 **ARC-000-PRIN-v*.md** - consumed by 21 commands:
-- stakeholders (M), risk (R), sobc (R), requirements (R), platform-design (M), dpia (R), wardley (M), roadmap (M), strategy (M), sow (M), dos (R), evaluate (M), hld-review (M), servicenow (R), mlops (R), traceability (R), analyze (M), service-assessment (M), atrs (M), secure (M), story (R)
+- stakeholders (M), risk (R), sobc (R), requirements (R), platform-design (M), pia (R), wardley (M), roadmap (M), strategy (M), sow (M), dos (R), evaluate (M), hld-review (M), servicenow (R), mlops (R), traceability (R), analyze (M), service-assessment (M), atrs (M), secure (M), story (R)
 
 **ARC-*-STKE-*.md** - consumed by 23 commands:
-- risk (M), sobc (M), requirements (M), data-model (R), data-mesh-contract (O), platform-design (R), dpia (R), research (O), azure-research (R), aws-research (M), gcp-research (R), datascout (R), wardley (O), roadmap (O), strategy (M), adr (R), hld-review (R), operationalize (R), traceability (R), analyze (R), principles-compliance (R), mod-secure (R), jsp-936 (R)
+- risk (M), sobc (M), requirements (M), data-model (R), data-mesh-contract (O), platform-design (R), pia (R), research (O), azure-research (R), aws-research (M), gcp-research (R), datascout (R), wardley (O), roadmap (O), strategy (M), adr (R), hld-review (R), operationalize (R), traceability (R), analyze (R), principles-compliance (R), mod-secure (R), jsp-936 (R)
 
 **HLD** (external document) - consumed by 7 commands:
 - dld-review (M), backlog (M), diagram (R), servicenow (R), traceability (M), hld-review (validates it), service-assessment (M)
@@ -328,7 +328,7 @@ principles-compliance → analyze → service-assessment → story
 - **Added**: datascout row and column to dependency matrix
 - **Updated**: Tier 4 Detailed Design to include datascout command
 - **Dependencies**: requirements (M), data-model (O), stakeholders (R), principles (R)
-- **Consumed by**: data-model (R), research (R), adr (R), dpia (O), diagram (O), traceability (R), pages (R)
+- **Consumed by**: data-model (R), research (R), adr (R), pia (O), diagram (O), traceability (R), pages (R)
 - **Note**: Bidirectional with data-model; prioritises UK Government open data sources (TCoP Point 10)
 
 ### 2026-01-29 - Added AWS Research Command
@@ -398,7 +398,7 @@ principles-compliance → analyze → service-assessment → story
 - **Updated**: All critical paths to include principles-compliance assessment
 - **Updated**: Tier 10 description to include principles-compliance command
 - **Updated**: service-assessment to optionally consume principles-compliance output (O)
-- **Dependencies**: principles (M), requirements (R), stakeholders (R), risk (R), data-model (R), HLD (R), DLD (R), hld-review (R), dld-review (R), traceability (R), dpia (R), tcop (R), secure (R), mod-secure (R)
+- **Dependencies**: principles (M), requirements (R), stakeholders (R), risk (R), data-model (R), HLD (R), DLD (R), hld-review (R), dld-review (R), traceability (R), pia (R), tcop (R), secure (R), mod-secure (R)
 
 ### 2025-11-02 - Critical Fixes + Optional Dependencies
 - **Added**: analyze row showing optional dependencies on all artifacts

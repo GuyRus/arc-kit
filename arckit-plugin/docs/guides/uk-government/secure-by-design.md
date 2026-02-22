@@ -18,7 +18,7 @@ Output: `projects/<id>/ARC-<id>-SECU-v1.0.md`.
 
 | Theme | Key Questions | Artefacts |
 |-------|---------------|-----------|
-| Context & classification | What data do we hold? Which classification (OFFICIAL / OFFICIAL-SENSITIVE)? | Data model, DPIA, risk register |
+| Context & classification | What data do we hold? Which classification (OFFICIAL / OFFICIAL-SENSITIVE)? | Data model, PIA, risk register |
 | Governance & roles | Who owns security? Who approves exceptions? | RACI, project plan, service runbook |
 | Secure development | How do we embed security in SDLC? | CI/CD controls, code review policy, threat model |
 | Identity & access | How is privileged access controlled? MFA used? | IAM documentation, Terraform/PAM configs |
@@ -34,7 +34,7 @@ Output: `projects/<id>/ARC-<id>-SECU-v1.0.md`.
 |-------------|------------|
 | NCSC Cloud Security Principles (1–14) | Hosting decision log, architecture diagrams, `/arckit.secure` output sections |
 | Cyber Essentials (Firewalls, Configuration, Access, Malware, Patching) | Infrastructure-as-Code, operations procedures |
-| GDPR Privacy by Design | `/arckit.dpia`, data retention, subject rights, encryption |
+| GDPR Privacy by Design | `/arckit.pia`, data retention, subject rights, encryption |
 
 ---
 

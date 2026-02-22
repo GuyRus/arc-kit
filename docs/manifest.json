@@ -186,8 +186,8 @@
       "name": "Compliance Guides",
       "documents": [
         {
-          "path": "docs/guides/dpia.md",
-          "title": "Data Protection Impact Assessment",
+          "path": "docs/guides/pia.md",
+          "title": "Privacy Impact Assessment",
           "category": "Privacy"
         },
         {
@@ -467,8 +467,8 @@
           "category": "Governance"
         },
         {
-          "path": ".arckit/templates/dpia-template.md",
-          "title": "DPIA Template",
+          "path": ".arckit/templates/pia-template.md",
+          "title": "PIA Template",
           "category": "Privacy"
         },
         {

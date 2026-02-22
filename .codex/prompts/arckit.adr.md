@@ -223,7 +223,7 @@ fi
      - Digital Service Standard assurance review: Which points addressed, evidence prepared
      - Digital Experience Policy: Which points addressed
      - Security assurance: ASD ACSC principles, Essential Eight, security testing
-     - Data protection: DPIA updated, data flows, privacy notice
+     - Data protection: PIA updated, data flows, privacy notice
 
    **Links to Supporting Documents**:
    - **Requirements traceability**:

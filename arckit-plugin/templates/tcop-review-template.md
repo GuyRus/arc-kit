@@ -224,7 +224,7 @@
 [Describe privacy measures]
 
 **Privacy Controls**:
-- [ ] Data Protection Impact Assessment (DPIA) completed
+- [ ] Privacy Impact Assessment (PIA) completed
 - [ ] Privacy by design principles applied
 - [ ] Privacy Act 1988 (APPs) compliance assessed
 - [ ] Data retention policy defined

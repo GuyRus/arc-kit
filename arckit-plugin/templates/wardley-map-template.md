@@ -312,7 +312,7 @@ style wardley
 **HIGH-RISK AI Components** (if applicable):
 - [ ] Human-in-the-loop component mapped (Custom, ~0.45 evolution)
 - [ ] Bias testing framework mapped (Custom, ~0.35 evolution)
-- [ ] DPIA/EqIA requirements noted
+- [ ] PIA/EqIA requirements noted
 - [ ] ATRS publication requirement noted
 
 ---

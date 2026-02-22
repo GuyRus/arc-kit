@@ -123,7 +123,7 @@
 
 **Evidence**:
 - [ ] Legal review completed (data protection, equality, human rights)
-- [ ] Data Protection Impact Assessment (DPIA) completed
+- [ ] Privacy Impact Assessment (PIA) completed
 - [ ] Equality Impact Assessment (EqIA) completed
 - [ ] Human Rights assessment completed
 - [ ] UK GDPR compliance verified
@@ -135,7 +135,7 @@
 **Legal and Ethical Checks**:
 | Check | Status | Issues Found | Resolution |
 |-------|--------|--------------|------------|
-| DPIA | ✅ / 🔄 / ❌ | [Issues] | [Actions] |
+| PIA | ✅ / 🔄 / ❌ | [Issues] | [Actions] |
 | EqIA | ✅ / 🔄 / ❌ | [Issues] | [Actions] |
 | Human Rights | ✅ / 🔄 / ❌ | [Issues] | [Actions] |
 | UK GDPR | ✅ / 🔄 / ❌ | [Issues] | [Actions] |
@@ -809,7 +809,7 @@
 ### Required Assessments (attach or link)
 
 - [ ] **ATRS** (Algorithmic Transparency Recording Standard): [Link]
-- [ ] **DPIA** (Data Protection Impact Assessment): [Link]
+- [ ] **PIA** (Privacy Impact Assessment): [Link]
 - [ ] **EqIA** (Equality Impact Assessment): [Link]
 - [ ] **Human Rights Assessment**: [Link]
 - [ ] **Security Risk Assessment**: [Link]

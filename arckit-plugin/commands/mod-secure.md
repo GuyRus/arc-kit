@@ -353,7 +353,7 @@ Mark as CRITICAL if:
 - Essential Eight maturity uplift
 - MFA required
 - Enhanced logging and monitoring
-- DPIA if processing personal data
+- PIA if processing personal data
 
 **SECRET**:
 - Security Cleared (SC) personnel minimum

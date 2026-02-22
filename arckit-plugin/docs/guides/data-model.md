@@ -45,7 +45,7 @@ Output: `projects/<id>/ARC-<id>-DATA-v1.0.md`
 - **Access & correction** – validate mechanism for APP 12/13 (and FOI for agencies).
 - **Disposal** – validate APP 11.3 destruction/de-identification workflow (and Archives/records constraints).
 
-Use the output to enrich `/arckit.dpia` (privacy impact assessment pack).
+Use the output to enrich `/arckit.pia` (privacy impact assessment pack).
 
 ---
 
@@ -59,6 +59,6 @@ Use the output to enrich `/arckit.dpia` (privacy impact assessment pack).
 
 ## Related Commands
 
-- `/arckit.dpia` - Generate privacy impact assessment (PIA) pack (auto-references data model)
+- `/arckit.pia` - Generate privacy impact assessment (PIA) pack (auto-references data model)
 - `/arckit.data-mesh-contract` - Create federated data product contracts from entities (mesh architecture)
 - `/arckit.traceability` - Link entities to requirements and test cases

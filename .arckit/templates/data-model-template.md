@@ -226,7 +226,7 @@ erDiagram
 - **Access & Correction (APP 12/APP 13)**: [Process/endpoint/admin pathway/FOI pathway for agencies]
 - **Retention & Disposal (APP 11.3)**: [Retention basis + destroy/de-identify method, subject to records/Archives constraints]
 - **Overseas Disclosure (APP 8)**: [YES | NO] - Reasonable steps and any APP 8.2 exception relied upon
-- **Privacy Impact Assessment (PIA)**: [REQUIRED | NOT_REQUIRED] (use `/arckit.dpia` if required)
+- **Privacy Impact Assessment (PIA)**: [REQUIRED | NOT_REQUIRED] (use `/arckit.pia` if required)
 - **NDB Scheme Exposure**: [HIGH | MEDIUM | LOW] - Would compromise likely cause serious harm?
 
 **Sector-Specific Compliance**:
@@ -905,7 +905,7 @@ If the project uses AI/ML (including GenAI, decision support, or ML models), doc
 - **PII (Personally Identifiable Information)**: Data that can identify an individual (email, name, phone, etc.)
 - **Privacy Act 1988 / APPs**: Australian privacy law and principles governing personal information handling.
 - **Privacy Act 1988**: Primary Australian privacy legislation for Commonwealth entities and APP entities.
-- **PIA (Privacy Impact Assessment)**: Assessment of privacy risks for projects involving personal information (ArcKit uses `/arckit.dpia` for the generated assessment pack)
+- **PIA (Privacy Impact Assessment)**: Assessment of privacy risks for projects involving personal information (ArcKit uses `/arckit.pia` for the generated assessment pack)
 - **PCI-DSS (Payment Card Industry Data Security Standard)**: Security standard for handling payment card data
 - **Cardinality**: Number of instances in a relationship (one-to-one, one-to-many, many-to-many)
 - **Foreign Key**: Attribute that references the primary key of another entity

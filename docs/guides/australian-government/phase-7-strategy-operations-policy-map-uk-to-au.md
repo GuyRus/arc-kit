@@ -29,7 +29,7 @@ Preserve ArcKit’s planning and architecture utility while removing UK-default 
 |---|---|---|
 | TCoP/GDS assumptions across strategy/roadmap/devops | DX Policy + DSS framing | Keeps lifecycle gates and compliance sequencing intact |
 | Green Book / Cabinet Office spend control defaults | Department of Finance business case and investment oversight language | Preserves financial governance structure |
-| UK privacy and regulator references | Privacy Act 1988 (APPs), OAIC defaults | Maintains data-governance and DPIA escalation logic |
+| UK privacy and regulator references | Privacy Act 1988 (APPs), OAIC defaults | Maintains data-governance and PIA escalation logic |
 | UK procurement route references | BuyICT/AusTender + CPR language | Keeps sourcing and commercial artefact depth |
 | UK platform/service examples | AU public-sector examples and neutralized guidance | Preserves instructional richness while removing UK default bias |
 

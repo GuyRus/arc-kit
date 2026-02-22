@@ -384,7 +384,7 @@
 - [ ] Consent management and audit trail
 - [ ] Privacy by design and by default
 - [ ] Data breach notification within [X hours]
-- [ ] Data protection impact assessment (DPIA) completed
+- [ ] Data protection impact assessment (PIA) completed
 
 **Data Residency**: [EU data in EU, US data in US, etc.]
 

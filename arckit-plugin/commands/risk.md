@@ -48,7 +48,7 @@ This command creates a **comprehensive risk register** following Department of F
    **OPTIONAL** (read if available, skip silently if missing):
    - `ARC-*-SOBC-*.md` in `projects/{project}/` — Business case
      - Extract: Financial risks, ROI assumptions at risk
-   - `ARC-*-DPIA-*.md` in `projects/{project}/` — DPIA
+   - `ARC-*-PIA-*.md` in `projects/{project}/` — PIA
      - Extract: Data protection risks, privacy risks
 
    **What to extract from each document**:

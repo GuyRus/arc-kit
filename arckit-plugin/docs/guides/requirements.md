@@ -46,7 +46,7 @@ For public sector projects, MoSCoW priorities are automatically assigned.
 - Conflicts and dependencies are called out (e.g. BR vs NFR tension).
 - Regulatory obligations (Privacy Act/APP, Digital Experience Policy, Digital Service Standard, WCAG, sector-specific obligations) are captured explicitly.
 - Integration requirements specify protocols, authentication, and error handling.
-- Data requirements include lawful basis and retention aligned with DPIA outputs.
+- Data requirements include lawful basis and retention aligned with PIA outputs.
 
 ---
 

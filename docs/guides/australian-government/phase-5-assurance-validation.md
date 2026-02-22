@@ -2,12 +2,12 @@
 
 ## Scope validated
 
-- `.codex/prompts/arckit.{adr,dpia,secure,mod-secure,service-assessment,tcop}.md`
-- `arckit-plugin/commands/{adr,dpia,secure,mod-secure,service-assessment,tcop}.md`
-- `docs/guides/{adr,dpia,secure,service-assessment,tcop}.md`
-- `arckit-plugin/docs/guides/{adr,dpia,secure,service-assessment,tcop}.md`
-- `.arckit/templates/{adr-template,dpia-template,mod-secure-by-design-template,service-assessment-prep-template,tcop-review-template,ukgov-secure-by-design-template}.md`
-- `arckit-plugin/templates/{adr-template,dpia-template,mod-secure-by-design-template,service-assessment-prep-template,tcop-review-template,ukgov-secure-by-design-template}.md`
+- `.codex/prompts/arckit.{adr,pia,secure,mod-secure,service-assessment,tcop}.md`
+- `arckit-plugin/commands/{adr,pia,secure,mod-secure,service-assessment,tcop}.md`
+- `docs/guides/{adr,pia,secure,service-assessment,tcop}.md`
+- `arckit-plugin/docs/guides/{adr,pia,secure,service-assessment,tcop}.md`
+- `.arckit/templates/{adr-template,pia-template,mod-secure-by-design-template,service-assessment-prep-template,tcop-review-template,ukgov-secure-by-design-template}.md`
+- `arckit-plugin/templates/{adr-template,pia-template,mod-secure-by-design-template,service-assessment-prep-template,tcop-review-template,ukgov-secure-by-design-template}.md`
 
 ## Checks run
 

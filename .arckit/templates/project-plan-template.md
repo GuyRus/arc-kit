@@ -57,7 +57,7 @@
 | Digital Experience Policy + Digital Service Standard | Service design and delivery quality criteria reflected in phases and gates | [Evidence / SOURCE_GAP] |
 | Finance assurance expectations (Gateway/IRA where applicable) | Assurance checkpoints and evidence packs included | [Evidence / SOURCE_GAP] |
 | Commonwealth Procurement Rules (CPRs) | Sourcing/procurement path includes value-for-money controls | [Evidence / SOURCE_GAP] |
-| Privacy Act 1988 + APPs | Privacy planning, DPIA triggers, and data handling controls planned | [Evidence / SOURCE_GAP] |
+| Privacy Act 1988 + APPs | Privacy planning, PIA triggers, and data handling controls planned | [Evidence / SOURCE_GAP] |
 | PSPF + ASD ISM | Security controls and assurance activities included in plan | [Evidence / SOURCE_GAP] |
 
 ---

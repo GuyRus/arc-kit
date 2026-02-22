@@ -424,7 +424,7 @@ GET /data-products/{product_id}/quality
 | **Cross-Border Transfers** | {Data stored in Australia (Sydney region), no transfers outside approved Australian jurisdictions} |
 | **Retention** | {See Section 4.4 - automated deletion per policy} |
 | **Breach Notification** | {OAIC notification within 72 hours if breach affects >100 individuals} |
-| **DPIA Status** | {COMPLETED / NOT_REQUIRED} - Reference: `projects/{PROJECT_ID}/ARC-{PROJECT_ID}-DPIA-v*.md` |
+| **PIA Status** | {COMPLETED / NOT_REQUIRED} - Reference: `projects/{PROJECT_ID}/ARC-{PROJECT_ID}-PIA-v*.md` |
 
 **PII Processing Details**:
 

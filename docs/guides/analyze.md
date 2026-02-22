@@ -21,7 +21,7 @@ _Command:_ `arckit.analyze --project <path>` or run inside the project root.
 
 - Latest requirements, risk register, diagrams, and design reviews committed.
 - Traceability matrix refreshed (`/arckit.traceability`).
-- Recent compliance artefacts (DX Policy/DSS, AI Playbook, DPIA) generated if applicable.
+- Recent compliance artefacts (DX Policy/DSS, AI Playbook, PIA) generated if applicable.
 
 ---
 

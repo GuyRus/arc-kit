@@ -111,7 +111,7 @@ ${CLAUDE_PLUGIN_ROOT}/scripts/bash/migrate-filenames.sh --global
 | `atrs-record.md` | ATRS | `ARC-{PID}-ATRS-v1.0.md` |
 | `jsp-936.md` | JSP936 | `ARC-{PID}-JSP936-v1.0.md` |
 | `jsp936.md` | JSP936 | `ARC-{PID}-JSP936-v1.0.md` |
-| `dpia.md` | DPIA | `ARC-{PID}-DPIA-v1.0.md` |
+| `pia.md` | PIA | `ARC-{PID}-PIA-v1.0.md` |
 | `principles-compliance-assessment.md` | PRIN-COMP | `ARC-{PID}-PRIN-COMP-v1.0.md` |
 
 ### Reviews

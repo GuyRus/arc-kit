@@ -198,7 +198,7 @@
 - [ ] On-call rotation staffed
 
 ### Compliance
-- [ ] DPIA completed (if processing PII)
+- [ ] PIA completed (if processing PII)
 - [ ] Security review passed
 - [ ] Accessibility audit passed (WCAG 2.2 AA)
 - [ ] ATRS published (if algorithmic system)

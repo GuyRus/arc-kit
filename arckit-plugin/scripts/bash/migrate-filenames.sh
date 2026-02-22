@@ -71,7 +71,7 @@ declare -A FILE_MAPPING=(
     ["jsp-936.md"]="ADEF"                  # AU defence pathway artifact
     ["jsp936.md"]="ADEF"  # Alternative name
     ["defence-ai-assurance-pathway.md"]="ADEF"
-    ["dpia.md"]="DPIA"
+    ["pia.md"]="PIA"
     ["principles-compliance-assessment.md"]="PRIN-COMP"
 
     # Reviews

@@ -159,7 +159,7 @@
       "match": true
     },
     {
-      "relativePath": "dpia-template.md",
+      "relativePath": "pia-template.md",
       "leftExists": true,
       "rightExists": true,
       "leftSha256": "bfa4054621438ea54d842384a72ed8b1eac1897f638316917c47438303d6d0fb",

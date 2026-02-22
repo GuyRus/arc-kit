@@ -1,6 +1,6 @@
 # Privacy Impact Assessment (PIA)
 
-> **Template status**: Beta | **Version**: [VERSION] | **Command**: `/arckit.dpia` (ArcKit uses the `DPIA` document type for backwards compatibility)
+> **Template status**: Beta | **Version**: [VERSION] | **Command**: `/arckit.pia`
 
 A Privacy Impact Assessment (PIA) is a written assessment that identifies how an activity or function might impact the privacy of individuals and sets out recommendations to manage, minimise, or eliminate that impact.
 
@@ -44,7 +44,7 @@ This template follows the OAIC PIA Guide’s 10-step flow:
 
 | Version | Date | Author | Changes | Approved by | Approval date |
 |---------|------|--------|---------|-------------|---------------|
-| [VERSION] | [DATE] | ArcKit AI | Initial creation from `/arckit.dpia` | [PENDING] | [PENDING] |
+| [VERSION] | [DATE] | ArcKit AI | Initial creation from `/arckit.pia` | [PENDING] | [PENDING] |
 
 ## Executive Summary
 
@@ -127,7 +127,7 @@ Record why a PIA is needed and how detailed it should be.
 - Requirements / business rules (`ARC-*-REQ-*.md`)
 - Stakeholders and affected individuals (`ARC-*-STKE-*.md`)
 - Security assessment (`ARC-*-SECD-*.md`) and risk register (`ARC-*-RISK-*.md`)
-- Vendor due diligence, DPIAs/PIAs, contracts, and hosting/support locations
+- Vendor due diligence, PIAs/PIAs, contracts, and hosting/support locations
 
 **Deliverables**
 - PIA report (this document)

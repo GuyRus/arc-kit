@@ -139,7 +139,7 @@ The plugin includes conversational skills that activate automatically when you a
 - `/arckit:sobc` - Strategic Outline Business Case (Green Book)
 
 ### Technical Design
-- `/arckit:data-model` - Data model with GDPR compliance
+- `/arckit:data-model` - Data model with Privacy Act 1988 / APPs compliance
 - `/arckit:diagram` - Architecture diagrams (Mermaid)
 - `/arckit:wardley` - Wardley Maps for strategy
 - `/arckit:adr` - Architecture Decision Records
@@ -154,10 +154,10 @@ The plugin includes conversational skills that activate automatically when you a
 - `/arckit:gcloud-search` - G-Cloud marketplace search
 - `/arckit:dos` - Digital Outcomes & Specialists
 
-### UK Government Compliance
+### Privacy & Assurance
 - `/arckit:tcop` - Technology Code of Practice review
 - `/arckit:secure` - Secure by Design assessment
-- `/arckit:dpia` - Data Protection Impact Assessment
+- `/arckit:pia` - Privacy Impact Assessment (OAIC PIA Guide; Privacy Act 1988 / APPs)
 - `/arckit:ai-playbook` - AI Playbook compliance
 - `/arckit:service-assessment` - GDS Service Standard
 

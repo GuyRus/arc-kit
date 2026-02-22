@@ -48,7 +48,7 @@
       "sha256": "3cd9e552a4d69ba71bb553195ff9f96cda2f6967881407c0d32b71c5f63a1ff7"
     },
     {
-      "path": ".codex/prompts/arckit.dpia.md",
+      "path": ".codex/prompts/arckit.pia.md",
       "lines": 454,
       "sha256": "b400f2eab184bee8cba15b90bc06025a7fbf4cd08040ebad39282e99fffbe21a"
     },
@@ -143,7 +143,7 @@
       "sha256": "3cd9e552a4d69ba71bb553195ff9f96cda2f6967881407c0d32b71c5f63a1ff7"
     },
     {
-      "path": "arckit-plugin/commands/dpia.md",
+      "path": "arckit-plugin/commands/pia.md",
       "lines": 454,
       "sha256": "b400f2eab184bee8cba15b90bc06025a7fbf4cd08040ebad39282e99fffbe21a"
     },

@@ -117,7 +117,7 @@ Scan the project directory for existing artifacts and read them to inform the ba
   - Extract: Component mapping, detailed component info
 
 **OPTIONAL** (read if available, skip silently if missing):
-- `ARC-*-DPIA-*.md` in `projects/{project-dir}/` — DPIA
+- `ARC-*-PIA-*.md` in `projects/{project-dir}/` — PIA
   - Extract: Privacy-related tasks and constraints
 - `test-strategy.md` — Test requirements (optional external document)
   - Extract: Test types and coverage needs

@@ -93,7 +93,7 @@ Output: `projects/<id>/ARC-<id>-TCOP-v1.0.md`
 - Open source preference followed (Point 3).
 - Cloud-first approach justified (Point 5).
 - Security assessment completed (Point 6).
-- DPIA completed if personal data (Point 7).
+- PIA completed if personal data (Point 7).
 - Procurement strategy defined (Point 11).
 
 ---
