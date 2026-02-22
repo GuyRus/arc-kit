@@ -432,6 +432,31 @@ Focus on high-signal findings. Limit to 50 findings total; aggregate remainder i
 - Data retention policy defined?
 - Data breach procedures defined (including NDB scheme readiness where applicable)?
 
+#### H. Security Assurance Deep Dive (AU) (Where Applicable)
+
+Capture high-signal assurance findings without re-running a full security assessment. The goal is to confirm the *assurance picture* exists, is coherent across artifacts, and is evidence-backed.
+
+**Classification and handling**:
+- Protective marking and classification stated consistently across artifacts (e.g., `OFFICIAL` / `OFFICIAL:Sensitive`).
+- Information handling constraints reflected in hosting, support model, logging, and access controls.
+
+**ACSC ISM / Essential Eight (where applicable)**:
+- Essential Eight: current maturity and target maturity declared (with uplift plan/ownership).
+- Patch/vulnerability management: cadence and SLAs defined and testable.
+- Logging/monitoring: detection and escalation paths defined (with evidence capture).
+
+**IRAP readiness (where required)**:
+- IRAP requirement and timeline explicit (or marked N/A).
+- Control ownership and evidence plan defined (what will be produced, by whom, and when).
+
+**Supply chain**:
+- Third-party suppliers and critical dependencies inventoried.
+- Assurance evidence requirements defined (SBOM where appropriate, change controls, incident notification obligations).
+
+**Incident readiness**:
+- Security incident runbooks exist and align with operational tooling (e.g., ServiceNow).
+- NDB decision workflow considered where applicable (including evidence capture and notification templates).
+
 ### 5. Severity Assignment
 
 Use this heuristic to prioritise findings:
@@ -451,6 +476,10 @@ Use this heuristic to prioritise findings:
 - Australian Government: DX Policy / Digital Service Standard non-compliance for mandatory points
 - Australian Government: AU AI governance assessment blocking issues for high-risk AI
 - Australian Government: Missing mandatory AITS for central government AI
+- AU security assurance: Inconsistent classification/handling statements across artifacts
+- AU security assurance: ISM/Essential Eight uplift evidence missing where required (or no accountable owner/plan)
+- AU security assurance: IRAP required but no readiness/evidence plan
+- AU security assurance: Personal information handled but no PIA evidence (where required/appropriate) or no NDB readiness
 - Security requirement with no design coverage
 - Compliance requirement with no validation
 
@@ -469,6 +498,8 @@ Use this heuristic to prioritise findings:
 - Vendor design doesn't address SOW requirements
 - Australian Government: DX Policy / Digital Service Standard partial compliance with gaps
 - Australian Government: AU AI governance assessment non-compliance for medium-risk AI
+- AU security assurance: Essential Eight target maturity declared but uplift plan is not credible (no sequencing/ownership)
+- AU security assurance: Logging/monitoring present but no tested runbooks/escalation or unclear evidence chain
 
 **MEDIUM**:
 - Terminology drift

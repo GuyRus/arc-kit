@@ -160,6 +160,25 @@
 **SbD Assessment Exists**: [✅ Yes / ❌ No]
 **ACSC ISM / Essential Eight Evidence** (where applicable): [✅ Adequate / ⚠️ Partial / ❌ Missing]
 
+### Security Assurance Deep Dive (AU) (Where Applicable)
+
+Use this section to capture the security assurance picture in a way that supports audit and delivery gating. Mark items as **N/A** if out of scope.
+
+| Topic | Status | Evidence | Gaps / Required Actions |
+|------|--------|----------|--------------------------|
+| Classification and information handling | [✅/⚠️/❌/N/A] | [Protective marking, data classification model] | |
+| System boundary and hosting | [✅/⚠️/❌/N/A] | [Context/deployment diagrams, hosting decision record] | |
+| Identity, access, and privileged access | [✅/⚠️/❌/N/A] | [IAM model, MFA enforcement, admin controls] | |
+| Logging, monitoring, and detection | [✅/⚠️/❌/N/A] | [Logging design, SIEM integration, alert runbooks] | |
+| Vulnerability and patch management | [✅/⚠️/❌/N/A] | [Scan cadence, patch SLAs, remediation workflow] | |
+| Secure configuration and hardening | [✅/⚠️/❌/N/A] | [Baselines, IaC, configuration drift controls] | |
+| Cryptography and key management | [✅/⚠️/❌/N/A] | [TLS, at-rest encryption, key rotation] | |
+| Backup and recovery | [✅/⚠️/❌/N/A] | [Backup policies, restore testing, DR drills] | |
+| Supply chain and third parties | [✅/⚠️/❌/N/A] | [SBOM, supplier assurance, dependencies register] | |
+| Essential Eight (target maturity and uplift plan) | [✅/⚠️/❌/N/A] | [Current/target maturity, uplift backlog, ownership] | |
+| IRAP readiness (where required) | [✅/⚠️/❌/N/A] | [Control ownership, evidence plan, assessment timing] | |
+| Privacy/security incident readiness (incl. NDB where applicable) | [✅/⚠️/❌/N/A] | [Incident runbooks, decision workflow, notification templates] | |
+
 ---
 
 ## Data Model Analysis (if ARC-*-DATA-v*.md exists)
