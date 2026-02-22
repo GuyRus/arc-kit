@@ -260,7 +260,7 @@ The footer should be populated with:
 | **Document ID** | ARC-001-SOW-v1.0 |
 | **Document Type** | {Document purpose} |
 | **Project** | Windows 10 to Windows 11 Migration (Project 001) |
-| **Classification** | OFFICIAL-SENSITIVE |
+| **Classification** | OFFICIAL:Sensitive |
 | **Status** | DRAFT |
 | **Version** | 1.0 |
 | **Created Date** | 2025-10-29 |

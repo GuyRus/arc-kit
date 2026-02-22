@@ -9,7 +9,7 @@
 | **Document ID** | ARC-[PROJECT_ID]-SOW-v[VERSION] |
 | **Document Type** | [DOCUMENT_TYPE_NAME] |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
-| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
+| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL:Sensitive / PROTECTED / SECRET / TOP SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
 | **Version** | [VERSION] |
 | **Created Date** | [YYYY-MM-DD] |
@@ -54,7 +54,7 @@ This Statement of Work (SOW) defines the requirements, deliverables, and evaluat
 - [Outcome 2]
 - [Outcome 3]
 
-**Budget Range**: $[MIN] - $[MAX] (or "Budget available upon request to qualified vendors")
+**Budget Range**: A$[MIN] - A$[MAX] (or "Budget available upon request to qualified vendors")
 
 **Timeline**: [Expected project duration, e.g., "12-month implementation timeline"]
 
@@ -460,6 +460,12 @@ Cost proposal must include:
 
 Proposals will be evaluated in two phases:
 
+**Procurement governance and probity (Australian Government)**:
+- **Value for money**: Evaluate whole-of-life value (not lowest price only), considering risk, quality, and deliverability.
+- **Fairness and transparency**: Apply criteria consistently; maintain an auditable record of scoring and clarifications.
+- **Conflicts and confidentiality**: Ensure evaluators declare conflicts and follow communication rules (single point of contact; equal information to all vendors).
+- **Records**: Keep a clear decision record suitable for audit, debriefs, and review.
+
 **Phase 1: Technical Evaluation** (Cost proposals remain sealed)
 - Mandatory qualifications check (pass/fail)
 - Technical scoring (see Section 8.2)
@@ -593,7 +599,7 @@ Each deliverable must meet defined acceptance criteria (see Section 4). Acceptan
 **Data Handling**:
 - Data must not be used for vendor's purposes
 - Data must be returned or destroyed upon contract termination
-- Vendor must sign Data Processing Agreement (DPA) if handling personal data
+- Vendor must agree to privacy, confidentiality, and information handling obligations aligned to the Privacy Act 1988 (APPs) (for example via a privacy/data handling schedule or deed) where personal information is involved
 
 **Background Checks**: Vendor staff with access to sensitive data must pass background checks
 
@@ -630,8 +636,8 @@ Both parties agree to maintain confidentiality of proprietary information disclo
 5. Contract amended accordingly
 
 **Thresholds**:
-- Changes < $[X] or [Y] hours: Technical Lead approval
-- Changes > $[X] or [Y] hours: Executive Sponsor approval
+- Changes < A$[X] or [Y] hours: Technical Lead approval
+- Changes > A$[X] or [Y] hours: Executive Sponsor approval
 
 ---
 
