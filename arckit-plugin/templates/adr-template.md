@@ -9,7 +9,7 @@
 | **Document ID** | ARC-[PROJECT_ID]-ADR-[NUM]-v[VERSION] |
 | **Document Type** | Architecture Decision Record |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
-| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
+| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL:Sensitive / PROTECTED / SECRET / TOP SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
 | **Version** | [VERSION] |
 | **Created Date** | [YYYY-MM-DD] |
@@ -25,8 +25,8 @@
 | **Author** | [AUTHOR_NAME] |
 | **Supersedes** | [ADR-XXX] (if applicable) |
 | **Superseded by** | [ADR-YYY] (if applicable) |
-| **Escalation Level** | [Team / Cross-team / Department / Cross-government] |
-| **Governance Forum** | [Architecture Review Board / TDA / Programme Board / Steering Committee] |
+| **Escalation Level** | [Team / Cross-team / Agency / Cross-agency] |
+| **Governance Forum** | [Architecture Review Board / Design Authority / ICT Governance Committee / Investment Committee / Security Committee] |
 
 ## Revision History
 
@@ -64,13 +64,13 @@ Stakeholders kept up-to-date with one-way communication.
 
 ### 2.4 Australian Government Escalation Context
 
-**Decision Level**: [Team / Cross-team / Department / Cross-government]
+**Decision Level**: [Team / Cross-team / Agency / Cross-agency]
 
 **Escalation Rationale**:
 - [ ] **Team**: Local implementation choice (frameworks, libraries, testing)
 - [ ] **Cross-team**: Integration patterns, shared services, API standards
-- [ ] **Department**: Technology standards, cloud providers, security frameworks
-- [ ] **Cross-government**: National infrastructure, cross-department interoperability
+- [ ] **Agency**: Technology standards, cloud providers, security frameworks, data/platform direction
+- [ ] **Cross-agency**: Shared capabilities, interoperability, or cross-portfolio data exchange
 
 **Governance Forum**: [Name of forum that approved/will approve this decision]
 
@@ -92,7 +92,7 @@ Stakeholders kept up-to-date with one-way communication.
 
 - **Business context**: [Link to business requirements BR-XXX]
 - **Technical context**: [Link to technical requirements FR-XXX, NFR-XXX]
-- **Regulatory context**: [GDPR, Digital Service Standard, Essential Eight, etc.]
+- **Regulatory/policy context**: [Privacy Act 1988 (APPs), PSPF/ISM, DSS, CPRs, FOI/records, etc.]
 
 ### 3.3 Supporting Links
 
@@ -125,11 +125,11 @@ These forces influence the decision. They are often in tension with each other.
 
 ### 4.3 Regulatory & Compliance Drivers
 
-- **Digital Service Standard**: [Which points apply? Point 4: Open standards, Point 9: Hosting, etc.]
-- **Digital Experience Policy**: [Which points? Point 5: Cloud first, Point 8: Reuse, Point 13: AI]
-- **ASD ACSC Cyber Security**: [Essential Eight maturity uplift, CAF principles]
-- **Data Protection**: [Privacy Act 1988 (APPs) Article 25: Data protection by design, Article 35: PIA]
-- **Accessibility**: [WCAG 2.2 AA, Public Sector Bodies Accessibility Regulations]
+- **Digital Service Standard (DSS)**: [Which criteria are impacted and what evidence will be produced/maintained?]
+- **Digital Experience Policy**: [Which obligations/practices are impacted (e.g., reuse, accessibility, assurance gates) and how will they be evidenced?]
+- **Security**: [PSPF + ASD ISM alignment, Essential Eight uplift (as applicable), IRAP readiness if required]
+- **Privacy**: [Privacy Act 1988 + APPs; PIA decision/gating and privacy-by-design controls]
+- **Accessibility and inclusion**: [WCAG 2.1 AA (or higher) where applicable; inclusive design evidence]
 
 ### 4.4 Alignment to Architecture Principles
 
@@ -170,11 +170,11 @@ Reference architecture principles from `projects/000-global/ARC-000-PRIN-v*.md`:
 - **TCO (3-year)**: [Total cost of ownership]
 
 #### Digital Service Standard Impact
-| Point | Impact | Notes |
-|-------|--------|-------|
-| 4. Open standards | [Positive/Negative/Neutral] | [Explanation] |
-| 5. Security | [Impact] | [ASD ACSC guidance compliance] |
-| 9. Technology | [Impact] | [Cloud hosting, scalability] |
+| DSS criterion (if applicable) | Impact | Evidence / notes |
+|------------------------------|--------|------------------|
+| Criterion 5: Build trust in design | [Positive/Negative/Neutral] | [Security + privacy controls, assurance, transparency] |
+| Criterion 6: Don't reinvent the wheel | [Impact] | [Reuse shared platforms/capabilities; avoid duplication] |
+| Criterion 3: Leave no one behind | [Impact] | [Accessibility, inclusion, alternative channels] |
 
 ---
 
@@ -307,22 +307,24 @@ Reference architecture principles from `projects/000-global/ARC-000-PRIN-v*.md`:
 
 ### 8.3 Compliance Verification
 
-**Digital Service Standard assurance review**:
-- [ ] Point [X]: [How this decision addresses Service Standard point]
-- [ ] Evidence prepared for assessment
-
-**Digital Experience Policy**:
-- [ ] Point [X]: [How this decision addresses DX Policy / DSS point]
+**Digital Service Standard (DSS) evidence** (where applicable):
+- [ ] Criteria impacted are identified and assigned to owners
+- [ ] Evidence is created and maintained for material changes
 
 **Security assurance**:
-- [ ] ASD ACSC Cloud Security Principles: [Which principles apply?]
-- [ ] Essential Eight controls: [Impact on 5 controls]
-- [ ] Security testing completed: [Pen test, vulnerability scan]
+- [ ] PSPF/ISM alignment considerations documented (and treated as non-negotiables where required)
+- [ ] Essential Eight strategies impacted are identified (all 8 where applicable)
+- [ ] Assurance approach defined (e.g., IRAP readiness/assessment where required by policy/risk)
+- [ ] Security testing planned/completed (e.g., threat modelling, pen test, vulnerability scans)
 
-**Data protection**:
-- [ ] PIA updated if processing personal data
-- [ ] Data flow diagrams updated
-- [ ] Privacy notice updated if needed
+**Privacy**:
+- [ ] PIA threshold assessed; PIA completed/updated where required
+- [ ] Information flows and retention/disposal evidence updated (APP 11.3)
+- [ ] Collection/notice transparency updated where needed (APP 5)
+
+**Records and transparency** (where applicable):
+- [ ] Recordkeeping and audit requirements addressed (decision logging, retention, traceability)
+- [ ] FOI / reviewability considerations documented for decisions that affect individuals
 
 ---
 
@@ -392,7 +394,7 @@ Reference architecture principles from `projects/000-global/ARC-000-PRIN-v*.md`:
 **Australian Government guidance**:
 - [DTA Service Manual link]
 - [ASD ACSC guidance link]
-- [Australia.gov.au Architecture patterns]
+- [architecture.digital.gov.au patterns / Australian Government architecture guidance]
 
 **Research and evidence**:
 - [Academic papers]
@@ -528,7 +530,7 @@ graph TD
 
 *For more information:*
 - *MADR: https://adr.github.io/madr/*
-- *Australian Government ADR Framework: https://architecture.digital.gov.au/*
+- *Australian Government architecture guidance: https://architecture.digital.gov.au/*
 - *ArcKit Documentation: [Link to project README]*
 
 ## External References

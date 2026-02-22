@@ -54,5 +54,5 @@ Output: `projects/<id>/decisions/ARC-<id>-ADR-001-v1.0.md` (uses multi-instance 
 
 - Decision ties directly to stakeholder drivers or requirements IDs.
 - Risks and mitigations reference the risk register entry numbers.
-- Compliance impacts call out required evidence (DX Policy / DSS point, Secure by Design activity, ATRS field).
+- Compliance impacts call out required evidence (DSS criteria impacted, security/privacy evidence, and any AI impact assessment / transparency statement fields where applicable).
 - Follow-on actions list named owners and due dates; backlog items reference `/arckit.backlog`.

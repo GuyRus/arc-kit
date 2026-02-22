@@ -70,8 +70,8 @@ Before creating the ADR, use the **AskUserQuestion** tool to gather key decision
 > "What escalation level does this architectural decision require?"
 - **Team**: Local implementation decision (frameworks, libraries, testing approaches)
 - **Cross-team**: Affects multiple teams (integration patterns, shared services, APIs)
-- **Department (Recommended)**: Department-wide impact (technology standards, cloud providers, security frameworks)
-- **Cross-government**: National infrastructure or cross-department interoperability
+- **Agency (Recommended)**: Agency/portfolio-wide impact (technology standards, cloud providers, security frameworks)
+- **Cross-agency**: Shared capabilities, cross-portfolio data exchange, or interoperability standards
 
 **Question 2** — header: `Options`, multiSelect: false
 > "How many options should be evaluated (plus a 'Do Nothing' baseline)?"
@@ -120,8 +120,8 @@ fi
    - **Problem statement**: What architectural decision needs to be made?
    - **Context**: Why is this decision needed? Business/technical drivers?
    - **Status**: Proposed (default) / Accepted / Deprecated / Superseded
-   - **Escalation level**: Team / Cross-team / Department / Cross-government
-   - **Governance forum**: Architecture Review Board, TDA, Programme Board, etc.
+   - **Escalation level**: Team / Cross-team / Agency / Cross-agency
+   - **Governance forum**: Architecture Review Board / Design Authority / ICT Governance Committee / Investment Committee / Security Committee
 
 ### 6. **Generate comprehensive ADR** following MADR v4.0 + Australian Government framework:
 
@@ -141,15 +141,15 @@ fi
    - **Australian Government Escalation Context**:
      - Team: Local implementation (frameworks, libraries, testing)
      - Cross-team: Integration patterns, shared services, APIs
-     - Department: Technology standards, cloud providers, security
-     - Cross-government: National infrastructure, cross-department interoperability
+     - Agency: Technology standards, cloud providers, security, data/platform direction
+     - Cross-agency: Shared capabilities, interoperability, cross-portfolio data exchange
 
    **Context and Problem Statement**:
    - Problem description (2-3 sentences or story format)
    - Why is this decision needed?
    - Business context (link to BR-xxx requirements)
    - Technical context (link to FR-xxx, NFR-xxx requirements)
-   - Regulatory context (GDPR, Digital Service Standard, Essential Eight)
+   - Regulatory/policy context (Privacy Act 1988 (APPs), PSPF/ISM, DSS, CPRs, FOI/records, etc.)
    - Supporting links (user stories, requirements, research)
 
    **Decision Drivers (Forces)**:
@@ -160,10 +160,10 @@ fi
      - Link to BR-xxx requirements
      - Link to stakeholder goals
    - **Regulatory & compliance drivers**:
-     - Digital Service Standard (which points apply?)
-     - Digital Experience Policy (Point 5: Cloud first, Point 8: Reuse, Point 13: AI)
-     - ASD ACSC Cyber Security (Essential Eight, CAF principles)
-     - Data Protection (Privacy Act 1988 (APPs) Article 25, 35)
+     - Digital Service Standard (DSS): which criteria are impacted and what evidence will be produced/maintained?
+     - Digital Experience Policy: which obligations/practices are impacted and how will they be evidenced?
+     - Security: PSPF + ASD ISM alignment, Essential Eight uplift (as applicable), IRAP readiness where required
+     - Privacy: Privacy Act 1988 + APPs; PIA decision/gating and privacy-by-design controls
    - **Alignment to architecture principles**: Create table showing which principles support/conflict
 
    **Considered Options** (MINIMUM 2-3 options, always include "Do Nothing"):
@@ -183,6 +183,7 @@ fi
      - OPEX: Ongoing costs (support, training, maintenance per year)
      - TCO (3-year): Total cost of ownership
    - **Digital Service Standard Impact**: Create table showing impact on relevant points
+     - Prefer DSS criteria names (e.g., "Build trust in design") rather than UK-style numbered points
 
    **Option: Do Nothing (Baseline)**:
    - Always include this as baseline comparison
@@ -220,10 +221,10 @@ fi
      - Success metrics (how to measure if goals achieved)
      - Alerts and dashboards
    - **Compliance verification**:
-     - Digital Service Standard assurance review: Which points addressed, evidence prepared
-     - Digital Experience Policy: Which points addressed
-     - Security assurance: ASD ACSC principles, Essential Eight, security testing
-     - Data protection: PIA updated, data flows, privacy notice
+     - Digital Service Standard (DSS): which criteria are impacted and what evidence will be maintained
+     - Security assurance: PSPF/ISM alignment, Essential Eight uplift (as applicable), assurance plan, security testing
+     - Privacy: PIA threshold assessed; PIA completed/updated where required; flows/retention/notice updates
+     - Records and transparency (where applicable): recordkeeping and reviewability for decisions affecting individuals
 
    **Links to Supporting Documents**:
    - **Requirements traceability**:
@@ -245,7 +246,7 @@ fi
    - **External references**:
      - Standards and RFCs
      - Vendor documentation
-     - Australian Government guidance (DTA Service Manual, ASD ACSC, Australia.gov.au patterns)
+     - Australian Government guidance (digital.gov.au, architecture.digital.gov.au, ASD ACSC, OAIC)
      - Research and evidence
 
    **Implementation Plan**:
@@ -379,7 +380,7 @@ The footer should be populated with:
 | **Document ID** | ARC-001-ADR-003-v1.0 |
 | **Document Type** | Architecture Decision Record |
 | **Project** | Windows 10 to Windows 11 Migration (Project 001) |
-| **Classification** | OFFICIAL-SENSITIVE |
+| **Classification** | OFFICIAL:Sensitive |
 | **Status** | DRAFT |
 | **Version** | 1.0 |
 | **Created Date** | 2025-10-29 |
@@ -458,8 +459,8 @@ The footer should be populated with:
    ### Australian Government Compliance
    **Escalation Level**: {Level}
    **Governance Forum**: {Forum}
-   **Digital Service Standard**: Points {X, Y, Z} addressed
-   **Digital Experience Policy**: Points {A, B, C} addressed
+   **Digital Service Standard (DSS)**: Criteria {names} impacted + evidence owners
+   **Digital Experience Policy**: Obligations impacted + evidence approach
    ```
 
 ### 11. **Provide guidance on ADR lifecycle**:
@@ -493,9 +494,9 @@ The footer should be populated with:
 - **MADR Format**: Follow MADR v4.0 structure (Context, Decision Drivers, Options, Outcome, Consequences)
 - **Evidence-Based**: Decisions should be supported by research findings, benchmarks, PoCs
 - **Wardley Evolution**: Consider evolution stage (Genesis/Custom/Product/Commodity) when choosing options
-- **Digital Service Standard**: Document which Service Standard points the decision addresses
-- **Digital Experience Policy**: Show DX Policy / DSS compliance (Point 5: Cloud first, Point 8: Reuse, etc.)
-- **Security**: Include ASD ACSC guidance, Essential Eight, security testing requirements
+- **Digital Service Standard (DSS)**: Document which DSS criteria are impacted and what evidence will be maintained
+- **Digital Experience Policy**: Document obligations impacted and how this will be evidenced over time
+- **Security**: Include PSPF/ISM alignment, Essential Eight uplift (as applicable), and security testing/assurance requirements
 - **Review Schedule**: Every ADR needs review schedule and trigger events for re-evaluation
 - **Rollback Plan**: Document how to rollback if decision proves wrong
 - **Cost Analysis**: Always include CAPEX, OPEX, TCO for each option
@@ -521,5 +522,5 @@ The footer should be populated with:
 |-------|----------------|-------------------|------------------|
 | **Team** | Tech Lead, Senior Developers | Framework choice, testing strategy, code patterns | Team standup, Sprint review |
 | **Cross-team** | Technical Architects, Lead Engineers | Integration patterns, API standards, shared libraries | Architecture Forum, Technical Design Review |
-| **Department** | Enterprise Architects, CTO, Architecture Board | Cloud provider, security framework, technology standards | Architecture Review Board, Enterprise Architecture Board |
-| **Cross-government** | Technical Design Authority, DTA | National infrastructure, cross-department APIs, Australia.gov.au standards | Technical Design Council, DTA Architecture Community |
+| **Agency** | Enterprise Architects, CTO, architecture board | Cloud provider, security framework, technology standards | Architecture Review Board, enterprise architecture board |
+| **Cross-agency** | Central agency / lead agencies / cross-portfolio forums | Shared capabilities, cross-portfolio data exchange, interoperability standards | Cross-agency architecture forum / shared services governance |

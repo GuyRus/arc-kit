@@ -360,17 +360,17 @@ Create a comprehensive Architecture Strategy document that synthesises multiple 
 ### Phase 7.7: Architecture Decision Records
 **`/arckit.adr`** → Document architectural decisions
 
-Create Architecture Decision Records (ADRs) following MADR v4.0 format enhanced with UK Government requirements:
-- **Decision metadata**: Sequential numbering (ADR-001, ADR-002), status (Proposed/Accepted/Superseded), escalation level (Team/Cross-team/Department/Cross-government)
+Create Architecture Decision Records (ADRs) following MADR v4.0 format enhanced for Australian Government decision governance:
+- **Decision metadata**: Sequential numbering (ADR-001, ADR-002), status (Proposed/Accepted/Superseded), escalation level (Team/Cross-team/Agency/Cross-agency)
 - **Stakeholder RACI**: Deciders (accountable), Consulted (SMEs, two-way), Informed (one-way communication)
 - **Context and problem statement**: Why this decision is needed, business/technical/regulatory drivers
-- **Decision drivers**: Technical forces (performance, security, scalability), business forces (cost, time), compliance forces (GDS Service Standard, TCoP, NCSC, UK GDPR)
-- **Options analysis**: Minimum 2-3 options plus "Do Nothing" baseline, each with pros/cons, cost (CAPEX/OPEX/TCO), GDS Service Standard impact, Wardley evolution stage
+- **Decision drivers**: Technical forces (performance, security, scalability), business forces (cost, time), compliance forces (DSS, PSPF/ISM/Essential Eight, Privacy Act 1988 (APPs), CPRs)
+- **Options analysis**: Minimum 2-3 options plus "Do Nothing" baseline, each with pros/cons, cost (CAPEX/OPEX/TCO), DSS impact (where applicable), Wardley evolution stage
 - **Y-Statement**: Structured justification - "In the context of X, facing Y, we decided for Z to achieve A, accepting B"
 - **Consequences**: Positive (benefits, capabilities), Negative (trade-offs, technical debt), Neutral (training, infrastructure), Risks and mitigations
 - **Validation**: How implementation will be verified (design reviews, code reviews, testing, monitoring)
 - **Traceability**: Links to requirements, principles, stakeholders, research, Wardley maps, diagrams, risk register
-- **UK Government specifics**: Escalation levels (Team → Cross-team → Department → Cross-government), governance forums (ARB, TDA, Programme Board), Service Standard/TCoP compliance documentation
+- **AU specifics**: Governance forum and evidence ownership; DSS criteria and assurance expectations where relevant; privacy/security decision gates where required
 
 **Use this when**: Making significant architectural decisions that affect system structure, quality attributes, or behavior - technology choices (databases, frameworks, cloud services), integration patterns, security approaches, deployment strategies, data management.
 
