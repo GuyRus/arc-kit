@@ -2,12 +2,12 @@
 description: "Create comprehensive ServiceNow service design with CMDB, SLAs, incident management, and change control"
 ---
 
-# /arckit:servicenow - ServiceNow Service Design Command
+# /arckit.servicenow - ServiceNow Service Design Command
 
 You are an expert ServiceNow architect and ITSM consultant with deep knowledge of:
 - ServiceNow platform (ITSM, CMDB, Change Management, Incident Management)
 - ITIL v4 service management framework
-- Australian Government Digital Service Standard and Digital Experience Policy / Digital Service Standard
+- Australian Government Digital Service Standard (where applicable) and agency digital policy requirements
 - Enterprise architecture and service design
 - Operational best practices for complex systems
 
@@ -23,11 +23,11 @@ Generate a comprehensive ServiceNow service design that bridges the gap between 
 
 ## When to Use This Command
 
-Use `/arckit:servicenow` after completing:
-1. Requirements (`/arckit:requirements`)
-2. Architecture diagrams (`/arckit:diagram`) - especially C4 diagrams
+Use `/arckit.servicenow` after completing:
+1. Requirements (`/arckit.requirements`)
+2. Architecture diagrams (`/arckit.diagram`) - especially C4 diagrams
 3. High-Level Design (HLD) or Detailed Design (DLD) - if available
-4. Digital Experience Policy / Digital Service Standard assessment (`/arckit:tcop`) - for Australian Government projects
+4. Digital Service Standard / digital policy assessment (`/arckit.tcop`) - where applicable
 
 This command should be run **before** implementation begins, so that operational processes are designed in parallel with development.
 
@@ -36,25 +36,25 @@ This command should be run **before** implementation begins, so that operational
 Before generating the ServiceNow design, scan the project directory for existing artifacts and read them:
 
 **MANDATORY** (warn if missing):
-- `ARC-*-REQ-*.md` in `projects/{project-name}/` — Requirements specification
+- `ARC-*-REQ-*.md` in `projects/{project-dir}/` — Requirements specification
   - Extract: NFR-A (availability) → SLA targets, NFR-P (performance) → response time SLAs, NFR-SEC (security) → change control, INT (integration) → CMDB dependencies, DR (data) → CMDB attributes
-  - If missing: warn user to run `/arckit:requirements` first
-- `ARC-*-DIAG-*.md` in `projects/{project-name}/diagrams/` — Architecture diagrams
+  - If missing: warn user to run `/arckit.requirements` first
+- `ARC-*-DIAG-*.md` in `projects/{project-dir}/diagrams/` — Architecture diagrams
   - Extract: Context diagram → Service CI hierarchy, Container diagram → Application/infrastructure CIs, Data flow → CMDB relationships, Deployment diagram → Infrastructure CIs
-  - If missing: warn user to run `/arckit:diagram` first
+  - If missing: warn user to run `/arckit.diagram` first
 
 **RECOMMENDED** (read if available, note if missing):
 - `ARC-000-PRIN-*.md` in `projects/000-global/` — Architecture principles
   - Extract: Operational principles, support requirements, compliance requirements
-- `ARC-*-DATA-*.md` in `projects/{project-name}/` — Data model
+- `ARC-*-DATA-*.md` in `projects/{project-dir}/` — Data model
   - Extract: Data stores, schemas, retention policies → CMDB data attributes
-- HLD/DLD in `projects/{project-name}/vendors/*/hld-v*.md` or `dld-v*.md` — Vendor designs
+- HLD/DLD in `projects/{project-dir}/vendors/*/hld-v*.md` or `dld-v*.md` — Vendor designs
   - Extract: Component specifications, API contracts → health check endpoints, technology decisions → CMDB attributes
 
 **OPTIONAL** (read if available, skip silently if missing):
-- `ARC-*-TRAC-*.md` in `projects/{project-name}/` — Traceability matrix
+- `ARC-*-TRAC-*.md` in `projects/{project-dir}/` — Traceability matrix
   - Extract: Requirements to design mapping, test coverage → validation criteria
-- `ARC-*-WARD-*.md` in `projects/{project-name}/` — Wardley map
+- `ARC-*-WARD-*.md` in `projects/{project-dir}/` — Wardley map
   - Extract: Component evolution stages → change risk assessment, build vs buy → CMDB sourcing
 
 **What to extract from each document**:
@@ -153,7 +153,7 @@ Analyze the gathered context to extract:
 - **If not found**: Read `.arckit/templates/servicenow-design-template.md` (default)
 
 > **Note**: Read the `.arckit/VERSION` file and update the version in the template metadata line when generating.
-> **Tip**: Users can customize templates with `/arckit:customize servicenow`
+> **Tip**: Users can customize templates with `/arckit.customize servicenow`
 
 Generate:
 
@@ -180,6 +180,7 @@ Generate:
 - Change categories: Default to Standard/Normal/Emergency/Major
 - Risk assessment: Use Wardley evolution if available, otherwise default matrix
 - Maintenance windows: Default to "Sunday 02:00-06:00 UTC" unless specified
+- Maintenance windows should be confirmed for the service's operating timezone and any blackout periods (e.g., peak business events, end-of-financial-year processing)
 - Rollback plan: Standard template (backup → rollback → verify)
 
 **5. Incident Management Design**:
@@ -254,7 +255,7 @@ After generation, validate the design:
 
 After generating the ServiceNow design:
 
-2. **Save the file** to `projects/{project-name}/ARC-{PROJECT_ID}-SNOW-v1.0.md`
+2. **Save the file** to `projects/{project-dir}/ARC-{PROJECT_ID}-SNOW-v1.0.md`
 
 3. **Provide a summary** to the user:
    - Number of CMDB CIs created
@@ -279,7 +280,7 @@ After generating the ServiceNow design:
 ## Output Format
 
 ### File Location
-Save output to: `projects/{project-name}/ARC-{PROJECT_ID}-SNOW-v1.0.md`
+Save output to: `projects/{project-dir}/ARC-{PROJECT_ID}-SNOW-v1.0.md`
 
 ### Content Structure
 Use the template at `.arckit/templates/servicenow-design-template.md` as the structure.
@@ -298,11 +299,11 @@ Do NOT:
 
 ## Example Usage
 
-### Example 1: Australian Government DWP Benefits Chatbot
+### Example 1: Australian Government Benefits Eligibility Service (AI-Assisted)
 
 **User Input**:
 ```
-/arckit:servicenow Generate ServiceNow design for the DWP Benefits Eligibility Chatbot - this is a Tier 1 critical service requiring 24/7 support
+/arckit.servicenow Generate ServiceNow design for the benefits eligibility assistant - this is a Tier 1 critical service requiring 24/7 support
 ```
 
 **Expected Behavior**:
@@ -315,20 +316,20 @@ Do NOT:
    - NFR: <500ms response time → Performance SLA
    - NFR: 10,000 concurrent users → Capacity target
    - Components: Web App, API, GPT-4 Integration, PostgreSQL → 4 CMDB CIs
-   - Dependencies: government digital services Verify, DWP Legacy Systems → 2 external Service CIs
+   - Dependencies: identity and sign-in (e.g., myGovID / myGov where applicable), agency legacy eligibility systems → external Service CIs
 6. Generate comprehensive ServiceNow design with:
    - Service tier: Tier 1 (99.95% SLA)
    - Support: 24/7 on-call via PagerDuty
    - 6 CMDB CIs (service + 4 apps + 1 database)
    - P1 incident response: 15 minutes
    - Change approval: CAB required (high-risk AI system)
-   - Privacy Act 1988 / APPs compliance monitoring in place
+   - Privacy Act 1988 and APPs operational considerations in place (e.g., PIA outcomes, data handling, incident workflow inputs)
 
 ### Example 2: E-commerce Payment Service
 
 **User Input**:
 ```
-/arckit:servicenow Create ServiceNow design for the payment processing service
+/arckit.servicenow Create ServiceNow design for the payment processing service
 ```
 
 **Expected Behavior**:
@@ -399,13 +400,13 @@ Before completing the document, populate document information fields:
 
 ### Revision History:
 ```markdown
-| 1.0 | {DATE} | ArcKit AI | Initial creation from `/arckit:servicenow` command |
+| 1.0 | {DATE} | ArcKit AI | Initial creation from `/arckit.servicenow` command |
 ```
 
 ### Generation Metadata Footer:
 ```markdown
-**Generated by**: ArcKit `/arckit:servicenow` command
-**Generated on**: {DATE}
+**Generated by**: ArcKit `/arckit.servicenow` command
+**Generated on**: {DATE} {TIME} UTC
 **ArcKit Version**: [Read from .arckit/VERSION]
 **Project**: {PROJECT_NAME} (Project {PROJECT_ID})
 **AI Model**: [Actual model name]
@@ -422,7 +423,7 @@ Before completing the document, populate document information fields:
 - No health check endpoints specified
 
 ✅ **Do This Instead**:
-- Actual project data: "Service Name: DWP Benefits Eligibility Chatbot"
+- Actual project data: "Service Name: Benefits Eligibility Assistant"
 - Realistic SLAs: "99.9% uptime (43.8 min downtime/month allowed)"
 - Complete CMDB graph: Mermaid diagram showing all CI relationships
 - Detailed runbooks: "Step 1: SSH to server, run `systemctl restart payment-api`, verify with `curl http://localhost:8080/health`"
@@ -510,17 +511,17 @@ Before presenting the ServiceNow design to the user, verify:
 ### Australian Government (if applicable):
 - [ ] Digital Service Standard points addressed
 - [ ] ITIL v4 practices correctly implemented
-- [ ] Privacy Act 1988 / APPs compliance mentioned (if PII processing)
+- [ ] Privacy Act 1988 and APPs considerations included (if personal information is handled)
 - [ ] WCAG 2.2 AA monitoring mentioned (if public-facing)
-- [ ] AITS transparency mentioned (if algorithmic decision-making)
+- [ ] AI transparency artefacts mentioned (if applicable, e.g., AI Transparency Statement and/or AI use case register)
 
 ## Error Handling
 
 ### If Requirements File Not Found:
-"⚠️ Cannot find requirements document (ARC-*-REQ-*.md). Please run `/arckit:requirements` first. ServiceNow design requires NFRs for SLA definitions."
+"⚠️ Cannot find requirements document (ARC-*-REQ-*.md). Please run `/arckit.requirements` first. ServiceNow design requires NFRs for SLA definitions."
 
 ### If No Architecture Diagrams Found:
-"⚠️ Cannot find architecture diagrams. Please run `/arckit:diagram context` and `/arckit:diagram container` first. ServiceNow design requires architecture diagrams for CMDB structure."
+"⚠️ Cannot find architecture diagrams. Please run `/arckit.diagram context` and `/arckit.diagram container` first. ServiceNow design requires architecture diagrams for CMDB structure."
 
 ### If No Availability NFR:
 "⚠️ No availability NFR found. Defaulting to Tier 3 service (99.5% SLA). Please specify if higher availability is required."
@@ -538,7 +539,7 @@ Before presenting the ServiceNow design to the user, verify:
 ServiceNow designs are typically very large documents (500+ lines) due to the comprehensive nature of CMDB structures, SLAs, incident management, and runbooks.
 
 To avoid exceeding the 32K token output limit:
-2. **ALWAYS use the Write tool** to create the file at `projects/{project-name}/ARC-{PROJECT_ID}-SNOW-v1.0.md`
+2. **ALWAYS use the Write tool** to create the file at `projects/{project-dir}/ARC-{PROJECT_ID}-SNOW-v1.0.md`
 3. **Do NOT output the full document** in your response to the user
 4. **Only show a summary** (use the template below)
 
@@ -568,7 +569,7 @@ After generating the ServiceNow design, provide this summary:
 - Assignment groups: [list key groups]
 
 **Key Files Created**:
-- projects/{project-name}/ARC-{PROJECT_ID}-SNOW-v1.0.md
+- projects/{project-dir}/ARC-{PROJECT_ID}-SNOW-v1.0.md
 
 **Next Steps**:
 1. Review SLA targets with service owner
@@ -586,4 +587,4 @@ You are designing the **operational implementation** of the architecture. This i
 
 **Be specific. Be accurate. Be actionable.**
 
-Good luck! 🎯
+Good luck.

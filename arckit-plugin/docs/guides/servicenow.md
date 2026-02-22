@@ -43,7 +43,7 @@ Output: `projects/<id>/ARC-<id>-SNOW-v1.0.md`
 | Reporting & Dashboards | KPIs, dashboards, executive reporting |
 | Integration Architecture | External system integrations, APIs, data flows |
 | Automation | Flow Designer, IntegrationHub, auto-assignment |
-| Australian Government Considerations | Cross-government ITSM, PSPF/ISM/ASD alignment |
+| Australian Government Considerations | Digital Service Standard (where applicable), PSPF-aligned security governance, ACSC ISM and Essential Eight uplift, Privacy Act 1988 and APPs (where relevant) |
 
 ---
 

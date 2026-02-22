@@ -9,7 +9,7 @@
 | **Document ID** | ARC-[PROJECT_ID]-SNOW-v[VERSION] |
 | **Document Type** | ServiceNow Service Design |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
-| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
+| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL:Sensitive / PROTECTED / SECRET / TOP SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
 | **Version** | [VERSION] |
 | **Created Date** | [YYYY-MM-DD] |
@@ -199,9 +199,9 @@
 
 ### Compliance
 - [ ] PIA completed (if processing PII)
-- [ ] Security review passed
+- [ ] Security review passed (and security controls operationalised where applicable, e.g., ACSC ISM and Essential Eight uplift)
 - [ ] Accessibility audit passed (WCAG 2.2 AA)
-- [ ] ATRS published (if algorithmic system)
+- [ ] AI transparency artefact published/approved (if applicable, e.g., an AI Transparency Statement and/or AI use case register)
 
 ---
 
@@ -217,16 +217,21 @@
 
 ## 10. Australian Government Compliance
 
-### Digital Service Standard
-- **Point 5**: WCAG 2.2 AA compliance monitored
-- **Point 10**: Success metrics in ServiceNow dashboards
-- **Point 13**: Reuse common platforms (e.g., shared notification/payment services)
+### Digital Service Standard (Where Applicable)
+- Record which Digital Service Standard criteria apply to this service and how operational evidence will be captured (e.g., accessibility monitoring, success metrics dashboards, incident learnings, reuse of common platforms).
 
 ### ITIL v4 Practices
 - **Plan**: Change Management (CAB)
 - **Improve**: Post-Incident Reviews
 - **Engage**: Service Catalog
 - **Deliver & Support**: Incident Management, SLA monitoring
+
+### Security, Privacy, And Assurance (Where Applicable)
+- Protective marking and information handling reflected in CMDB attributes and workflows (e.g., `OFFICIAL` / `OFFICIAL:Sensitive`).
+- ACSC ISM control expectations operationalised (monitoring, logging, vulnerability management, secure configuration, access management).
+- Essential Eight uplift tracked as operational work where relevant (patching cadence, application control, MFA, backups, logging).
+- Privacy Act 1988 and APPs considerations operationalised (PIA outcomes, incident workflows supporting NDB decisioning if applicable, access/correction workflows where in scope).
+- Evidence capture supports audit and records obligations (incident/change records, approvals, PIRs, runbook review history).
 
 ---
 
@@ -251,4 +256,3 @@
 **ArcKit Version**: [VERSION]
 **Project**: [PROJECT_NAME]
 **Model**: [AI_MODEL]
-

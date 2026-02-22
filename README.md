@@ -923,7 +923,7 @@ Use `/arckit.diagram` directly, or supply an explicit type such as `context`, `c
 ArcKit turns architecture artefacts into an operations-ready ServiceNow pack. The `/arckit.servicenow` command builds:
 - CMDB hierarchies, SLAs, and change risk straight from requirements, diagrams, and Wardley Maps.
 - ITIL-aligned runbooks covering incident, change, monitoring, and transition activities.
-- UK government extras such as GDS Service Standard, Technology Code of Practice, and GOV.UK Pay/Notify dependencies when relevant.
+- Australian Government considerations where applicable (e.g., Digital Service Standard evidence capture, PSPF/ACSC ISM expectations, Essential Eight uplift tracking, and Privacy Act 1988 and APP-aligned operational controls).
 
 For full outputs, explore the public demos (for example `arckit-test-project-v3-windows11`) where the generated ServiceNow design files and checklists are published end-to-end.
 
