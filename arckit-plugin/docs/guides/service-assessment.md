@@ -2,6 +2,8 @@
 
 `/arckit.service-assessment` packages evidence for an Australian Government Digital Service Standard (DSS) assurance review. It produces an evidence map, RAG ratings, gaps, and an action plan.
 
+The generated report includes **stage-specific expectations** (Discovery/Alpha/Beta/Live) for each DSS criterion so teams can see what “ready” means for their current stage and what evidence is missing.
+
 ---
 
 ## Command

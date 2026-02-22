@@ -104,6 +104,7 @@ For each DSS criterion:
 - Map evidence to ArcKit artefacts (by file and section references).
 - Identify gaps.
 - Provide a readiness rating (🟢 Ready / 🟡 Partial / 🔴 Not Ready).
+- Include **stage-specific expectations** (Discovery/Alpha/Beta/Live) as a checklist, then mark which items are evidenced vs missing.
 
 Use STAGE to tune expectations:
 
@@ -121,6 +122,8 @@ Use the template structure and populate:
 - Evidence inventory table (criterion → artefacts → RAG → critical gaps)
 - Action plan (Critical/High/Medium)
 - Assurance review session guidance (agenda, presenters, artefacts to bring)
+
+**Evidence quality rule**: Prefer implemented, testable evidence over intention statements. If evidence is not present, write `TODO` and an action to create it (do not invent).
 
 ### Step 6: Write Output
 

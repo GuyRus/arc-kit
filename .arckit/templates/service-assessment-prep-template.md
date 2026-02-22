@@ -65,6 +65,15 @@
 
 For each criterion, capture what it means, evidence, gaps, and actions.
 
+### Stage Expectations (How Much Evidence Is “Enough”)
+
+Use the **Delivery Stage** to tune what “Ready” means.
+
+- **Discovery**: intent clarity, user understanding, inclusion risks, service ecosystem, early trust/harm analysis, early operating model assumptions.
+- **Alpha**: prototypes and spikes, early integration approach, early security/privacy-by-design, measurement approach defined, decisions recorded.
+- **Beta**: implementation evidence, operating model more concrete, monitoring and incident readiness, assurance/testing evidence, operational acceptance path.
+- **Live**: service is operating, performance and outcomes measured, continuous improvement demonstrated, governance cadence in place, known risks actively managed.
+
 ### 1. Have Clear Intent
 
 **Status**: [🟢 Ready / 🟡 Partial / 🔴 Not Ready]
@@ -81,6 +90,13 @@ For each criterion, capture what it means, evidence, gaps, and actions.
 **Recommendations**:
 - [Action, timeline, owner, evidence to create]
 
+**Stage-specific expectations** (tailor to context; do not invent evidence):
+
+- **Discovery**: [ ] clear service intent and problem statement; [ ] success measures identified; [ ] scope and out-of-scope captured
+- **Alpha**: [ ] intent validated with stakeholders/users; [ ] MVP boundaries defined; [ ] key decisions recorded (ADRs where relevant)
+- **Beta**: [ ] intent reflected in delivery plan/roadmap; [ ] measures have baselines; [ ] trade-offs documented and accepted
+- **Live**: [ ] measures reviewed on a cadence; [ ] outcomes and learnings inform change; [ ] ownership for ongoing relevance is explicit
+
 ---
 
 ### 2. Know Your User
@@ -95,6 +111,13 @@ For each criterion, capture what it means, evidence, gaps, and actions.
 
 **Recommendations**:
 - [Action, timeline, owner, evidence to create]
+
+**Stage-specific expectations** (tailor to context; do not invent evidence):
+
+- **Discovery**: [ ] primary user groups identified; [ ] initial user needs captured; [ ] research plan exists
+- **Alpha**: [ ] prototypes tested with representative users; [ ] needs updated from findings; [ ] journey/service blueprint draft exists
+- **Beta**: [ ] usability testing occurs regularly; [ ] analytics supports user-need hypotheses; [ ] pain points tracked and addressed
+- **Live**: [ ] feedback loops active; [ ] user satisfaction and completion metrics tracked; [ ] issues backlog shows continuous improvement
 
 ---
 
@@ -111,6 +134,13 @@ For each criterion, capture what it means, evidence, gaps, and actions.
 **Recommendations**:
 - [Action, timeline, owner, evidence to create]
 
+**Stage-specific expectations** (tailor to context; do not invent evidence):
+
+- **Discovery**: [ ] inclusion risks identified; [ ] accessibility requirements captured; [ ] assisted-digital needs considered
+- **Alpha**: [ ] designs/prototypes reviewed for accessibility; [ ] content and language tested; [ ] early WCAG approach defined
+- **Beta**: [ ] accessibility testing evidence exists (incl. assistive tech where relevant); [ ] defects tracked and remediated
+- **Live**: [ ] accessibility monitored; [ ] content/governance keeps service inclusive; [ ] escalation and remediation processes exist
+
 ---
 
 ### 4. Connect Services
@@ -125,6 +155,13 @@ For each criterion, capture what it means, evidence, gaps, and actions.
 
 **Recommendations**:
 - [Action, timeline, owner, evidence to create]
+
+**Stage-specific expectations** (tailor to context; do not invent evidence):
+
+- **Discovery**: [ ] service ecosystem mapped; [ ] integration assumptions captured; [ ] dependencies and owners identified (even if provisional)
+- **Alpha**: [ ] integration approach prototyped/spiked; [ ] data sharing constraints identified; [ ] operational responsibilities drafted
+- **Beta**: [ ] integrations implemented or delivery-ready; [ ] interface contracts documented; [ ] failure modes and support model defined
+- **Live**: [ ] integrations monitored; [ ] change management exists for upstream/downstream changes; [ ] incidents and improvements tracked
 
 ---
 
@@ -141,6 +178,13 @@ For each criterion, capture what it means, evidence, gaps, and actions.
 **Recommendations**:
 - [Action, timeline, owner, evidence to create]
 
+**Stage-specific expectations** (tailor to context; do not invent evidence):
+
+- **Discovery**: [ ] trust risks identified (security/privacy/fraud); [ ] early controls and policy constraints documented
+- **Alpha**: [ ] identity and access approach designed; [ ] threat modelling started for key flows; [ ] privacy impacts assessed where relevant
+- **Beta**: [ ] security testing evidence exists; [ ] logging/monitoring approach implemented; [ ] privacy controls implemented per PIA actions
+- **Live**: [ ] controls operating; [ ] incident readiness demonstrated; [ ] auditability and governance cadence maintained
+
 ---
 
 ### 6. Don’t Reinvent The Wheel
@@ -155,6 +199,13 @@ For each criterion, capture what it means, evidence, gaps, and actions.
 
 **Recommendations**:
 - [Action, timeline, owner, evidence to create]
+
+**Stage-specific expectations** (tailor to context; do not invent evidence):
+
+- **Discovery**: [ ] existing platforms/components reviewed; [ ] reuse options identified; [ ] build vs buy questions logged
+- **Alpha**: [ ] prototypes/spikes compare reuse vs bespoke; [ ] decision criteria defined; [ ] costs/constraints captured
+- **Beta**: [ ] reuse integrated where chosen; [ ] bespoke build rationale documented; [ ] operational ownership and support considered
+- **Live**: [ ] reuse continues to be reviewed; [ ] technical debt is visible; [ ] platform alignment is maintained
 
 ---
 
@@ -171,6 +222,13 @@ For each criterion, capture what it means, evidence, gaps, and actions.
 **Recommendations**:
 - [Action, timeline, owner, evidence to create]
 
+**Stage-specific expectations** (tailor to context; do not invent evidence):
+
+- **Discovery**: [ ] harms and risks identified (privacy, security, safety, integrity); [ ] mitigations proposed; [ ] escalation/decision path identified
+- **Alpha**: [ ] safeguards designed (human oversight where needed); [ ] monitoring approach planned; [ ] PIA/risk mitigations tracked
+- **Beta**: [ ] safeguards implemented and tested; [ ] incident response and rollback procedures exist; [ ] residual risk acceptance documented
+- **Live**: [ ] harms monitored; [ ] incidents and near-misses reviewed; [ ] continuous improvement reduces risk over time
+
 ---
 
 ### 8. Innovate With Purpose
@@ -185,6 +243,13 @@ For each criterion, capture what it means, evidence, gaps, and actions.
 
 **Recommendations**:
 - [Action, timeline, owner, evidence to create]
+
+**Stage-specific expectations** (tailor to context; do not invent evidence):
+
+- **Discovery**: [ ] innovation hypothesis linked to user need/outcome; [ ] baseline/measurement approach defined; [ ] constraints and risks considered
+- **Alpha**: [ ] experiments are run and documented; [ ] learning log shows pivots; [ ] decisions recorded based on evidence
+- **Beta**: [ ] innovation is operationalised (feature flags, controlled rollouts); [ ] measures show impact; [ ] cost/benefit tracked
+- **Live**: [ ] innovation is governed; [ ] changes are evaluated; [ ] learnings inform roadmap and continuous improvement
 
 ---
 
@@ -201,6 +266,13 @@ For each criterion, capture what it means, evidence, gaps, and actions.
 **Recommendations**:
 - [Action, timeline, owner, evidence to create]
 
+**Stage-specific expectations** (tailor to context; do not invent evidence):
+
+- **Discovery**: [ ] success measures identified; [ ] monitoring approach outlined; [ ] operational ownership assumptions captured
+- **Alpha**: [ ] logging/telemetry design exists; [ ] initial dashboards/probes prototyped; [ ] SLI/SLO candidates identified
+- **Beta**: [ ] monitoring implemented; [ ] alerts and runbooks exist; [ ] incident/change processes are defined and exercised
+- **Live**: [ ] metrics reviewed on cadence; [ ] service performance and outcomes reported; [ ] incidents drive improvements
+
 ---
 
 ### 10. Keep It Relevant
@@ -215,6 +287,13 @@ For each criterion, capture what it means, evidence, gaps, and actions.
 
 **Recommendations**:
 - [Action, timeline, owner, evidence to create]
+
+**Stage-specific expectations** (tailor to context; do not invent evidence):
+
+- **Discovery**: [ ] ownership and governance for decisions is identified; [ ] review points planned; [ ] assumptions logged
+- **Alpha**: [ ] roadmap reflects learnings; [ ] governance cadence defined; [ ] decisions updated as evidence changes
+- **Beta**: [ ] regular reviews occur (risks, measures, user needs); [ ] technical debt is tracked; [ ] changes are controlled
+- **Live**: [ ] continuous improvement loop exists; [ ] service remains current (policy/tech/user expectations); [ ] retirement/transition plans exist
 
 ---
 
