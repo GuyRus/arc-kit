@@ -30,14 +30,14 @@ Branch: `feat/au-ai-first-principles`
 ## Highest-density UK coupling hotspots
 
 1. `.codex/prompts/arckit.jsp-936.md` (mirrored by `arckit-plugin/commands/jsp-936.md`) — deepest concentration of UK defence governance (JSP 936/JSP 440, RAISO, JROC/2PUS/TLB pathways).
-2. `.codex/prompts/arckit.atrs.md` (mirrored by `arckit-plugin/commands/atrs.md`) — heavy ATRS/GOV.UK/DSIT/UK legal and publication requirements.
+2. `.codex/prompts/arckit.aits.md` (mirrored by `arckit-plugin/commands/aits.md`) — heavy UK ATRS/GOV.UK/DSIT/UK legal and publication requirements (now removed/renamed in AU scope).
 3. `.arckit/templates/jsp-936-template.md` (+ plugin mirror) — UK defence assurance structure embedded in template skeleton.
 4. `.arckit/templates/uk-gov-atrs-template.md` (+ plugin mirror) — UK legal/compliance and publication scaffolding is explicit.
 5. `docs/manifest.json` + `src/arckit_cli/__init__.py` — UK categories/labels and compliance command wiring exposed in docs/help surfaces.
 
 ## Key problem areas for AU-first rewrite
 
-- **Policy framework lock-in:** AI Playbook/ATRS/JSP-936 are primary organising structures, not just references.
+- **Policy framework lock-in:** AI Playbook/AITS/JSP-936 are primary organising structures, not just references.
 - **Defence approval model lock-in:** RAISO + 2PUS/JROC/TLB pathways are deeply hardcoded in JSP-936 surfaces.
 - **Legal stack mismatch:** UK GDPR/DPA 2018/Equality/HRA/FOIA/ICO assumptions are distributed across templates and prompts.
 - **Operational duplication risk:** mirror pairs double rewrite effort and drift risk unless changed in lockstep.

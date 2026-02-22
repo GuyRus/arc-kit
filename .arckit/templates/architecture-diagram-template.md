@@ -329,7 +329,7 @@ flowchart LR
 
 If AI system:
 - **Human Oversight**: {Human-in-the-loop / Human-on-the-loop / Human-in-command}
-- **ATRS Required**: {Yes / No}
+- **AITS Required**: {Yes / No}
 - **Bias Testing**: {Yes / No}
 - **Explainability**: {Yes / No}
 
@@ -365,7 +365,7 @@ If AI system:
 **DLD**: `{path_to_dld}`
 **DX Policy / Digital Service Standard Assessment**: `{path_to_tcop}`
 **AI Playbook Assessment**: `{path_to_ai_playbook}`
-**ATRS Record**: `{path_to_atrs}`
+**AI Transparency Statement (AITS)**: `{path_to_aits}`
 
 ---
 
@@ -501,4 +501,3 @@ erDiagram
 **ArcKit Version**: [VERSION]
 **Project**: [PROJECT_NAME]
 **Model**: [AI_MODEL]
-

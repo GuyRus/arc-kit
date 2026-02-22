@@ -35,21 +35,21 @@ Scope basis: `docs/guides/australian-government/ai-rewrite-backlog.md` (AI-only 
 ## 3) Prompt surfaces (Codex)
 
 1. `.codex/prompts/arckit.ai-playbook.md`
-2. `.codex/prompts/arckit.atrs.md`
+2. `.codex/prompts/arckit.aits.md`
 3. `.codex/prompts/arckit.jsp-936.md`
 4. `.codex/prompts/arckit.mlops.md`
 
 ## 4) Command surfaces (plugin)
 
 1. `arckit-plugin/commands/ai-playbook.md`
-2. `arckit-plugin/commands/atrs.md`
+2. `arckit-plugin/commands/aits.md`
 3. `arckit-plugin/commands/jsp-936.md`
 4. `arckit-plugin/commands/mlops.md`
 
 ## 5) Guides/docs (primary)
 
 1. `docs/guides/ai-playbook.md`
-2. `docs/guides/atrs.md`
+2. `docs/guides/aits.md`
 3. `docs/guides/jsp-936.md`
 4. `docs/guides/mlops.md`
 5. `docs/guides/uk-government/ai-playbook.md`
@@ -58,7 +58,7 @@ Scope basis: `docs/guides/australian-government/ai-rewrite-backlog.md` (AI-only 
 ## 6) Guides/docs (plugin mirrors)
 
 1. `arckit-plugin/docs/guides/ai-playbook.md`
-2. `arckit-plugin/docs/guides/atrs.md`
+2. `arckit-plugin/docs/guides/aits.md`
 3. `arckit-plugin/docs/guides/jsp-936.md`
 4. `arckit-plugin/docs/guides/mlops.md`
 5. `arckit-plugin/docs/guides/uk-government/ai-playbook.md`
@@ -90,5 +90,5 @@ Scope basis: `docs/guides/australian-government/ai-rewrite-backlog.md` (AI-only 
 ## Mirror/drift notes
 
 - **Exact content mirrors** (same bytes): template pairs, guide pairs, script pairs listed above.
-- **Near mirrors with path/runtime substitutions**: `.codex/prompts/arckit.{ai-playbook,atrs,jsp-936,mlops}.md` vs `arckit-plugin/commands/{...}.md`.
+- **Near mirrors with path/runtime substitutions**: `.codex/prompts/arckit.{ai-playbook,aits,jsp-936,mlops}.md` vs `arckit-plugin/commands/{...}.md`.
 - Implication: AU rewrite must be applied in paired surfaces to avoid ongoing drift.

@@ -408,16 +408,16 @@ principles-compliance → analyze → service-assessment → story
 - **Updated**: Tier 9 and Tier 10 descriptions to reflect optional dependencies and iterative execution
 - **Added**: 23 optional dependencies to complete matrix:
   - plan: principles, stakeholders, risk, sobc, requirements (5)
-  - diagram: principles, DLD, tcop, ai-playbook, atrs (5)
-  - wardley: principles, tcop, ai-playbook, atrs (4)
+  - diagram: principles, DLD, tcop, ai-playbook, aits (5)
+  - wardley: principles, tcop, ai-playbook, aits (4)
   - tcop: diagram, wardley (2)
-  - ai-playbook: diagram, wardley, atrs (3)
-  - atrs: diagram, wardley (2)
+  - ai-playbook: diagram, wardley, aits (3)
+  - aits: diagram, wardley (2)
   - secure: diagram (1)
   - mod-secure: diagram (1)
   - jsp-936: data-model, diagram (2)
   - sow: dos, hld-review (2)
   - DLD: diagram (1)
 - **Updated Templates**:
-  - architecture-diagram-template.md: Added ATRS to Linked Artifacts
-  - wardley-map-template.md: Added AI Playbook/ATRS mapping sections for AI systems
+  - architecture-diagram-template.md: Added AITS to Linked Artifacts
+  - wardley-map-template.md: Added AI Playbook/AITS mapping sections for AI systems

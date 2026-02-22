@@ -249,7 +249,7 @@ Use ArcKit commands to generate project artifacts in the recommended order:
 - \`/arckit.secure\` - Secure-by-design review
 - \`/arckit.tcop\` - Technology Code of Practice assessment
 - \`/arckit.ai-playbook\` - AU AI governance assessment pack (for AI systems)
-- \`/arckit.atrs\` - AU AI transparency statement
+- \`/arckit.aits\` - AU AI transparency statement
 
 ## Project Structure
 

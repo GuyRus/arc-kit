@@ -312,8 +312,8 @@ style wardley
 **HIGH-RISK AI Components** (if applicable):
 - [ ] Human-in-the-loop component mapped (Custom, ~0.45 evolution)
 - [ ] Bias testing framework mapped (Custom, ~0.35 evolution)
-- [ ] PIA/EqIA requirements noted
-- [ ] ATRS publication requirement noted
+- [ ] PIA requirements noted
+- [ ] AITS publication requirement noted
 
 ---
 
@@ -522,4 +522,3 @@ A Wardley Map is a visual representation of:
 **ArcKit Version**: [VERSION]
 **Project**: [PROJECT_NAME]
 **Model**: [AI_MODEL]
-

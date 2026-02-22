@@ -132,7 +132,7 @@ Many commands target UK public sector contexts:
 - **HM Treasury Orange Book** (Risk Management)
 - **G-Cloud / DOS** procurement frameworks
 - **Secure by Design** (Cabinet Office + MOD variants)
-- **AI Playbook** and **AI Transparency Recording Standards** (ATRS)
+- **AI Playbook** and **AI Transparency Statement** (AITS)
 - **JSP 936** (MOD AI assurance)
 
 ## Wardley Map Format

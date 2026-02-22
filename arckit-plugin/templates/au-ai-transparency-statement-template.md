@@ -1,6 +1,6 @@
 # AU AI Transparency Statement
 
-> **Template Status**: Stable | **Version**: [VERSION] | **Command**: `/arckit.atrs`
+> **Template Status**: Stable | **Version**: [VERSION] | **Command**: `/arckit.aits`
 
 ## Statement metadata
 

@@ -37,7 +37,7 @@ Scope: **AI-specific ArcKit surfaces only** (templates, commands, prompts, guide
 - [x] **AI-010** Rewrite AI templates in `.arckit/templates/` from first principles
 - [x] **AI-011** Mirror template rewrites to `arckit-plugin/templates/` (zero drift)
 - [x] **AI-012** Rewrite commands: `ai-playbook`, `atrs`, `jsp-936`, `mlops` (and any AI-linked command surfaces)
-- [x] **AI-013** Rewrite prompts: `.codex/prompts/arckit.ai-playbook.md`, `arckit.atrs.md`, `arckit.jsp-936.md`, `arckit.mlops.md`
+- [x] **AI-013** Rewrite prompts: `.codex/prompts/arckit.ai-playbook.md`, `arckit.aits.md`, `arckit.jsp-936.md`, `arckit.mlops.md`
 - [x] **AI-014** Rewrite guides in `docs/guides/*` + plugin mirror
 - [x] **AI-015** Update script/wiring for document IDs and command->template mapping
 - [x] **AI-016** Move UK AI content to explicit legacy paths with deprecation markers

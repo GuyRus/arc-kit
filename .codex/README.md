@@ -109,13 +109,13 @@ Codex CLI uses the format `/prompts:command-name` to invoke custom commands.
 
 ```bash
 /prompts:arckit.principles-compliance Assess compliance with approved architecture principles using RAG evidence
-/prompts:arckit.service-assessment Prepare for GDS Service Standard assessment
+/prompts:arckit.service-assessment Prepare for Digital Service Standard (DSS) assurance
 /prompts:arckit.secure Conduct Secure by Design review
 /prompts:arckit.mod-secure Run MOD Secure by Design assessment
 /prompts:arckit.jsp-936 Generate JSP 936 AI assurance documentation
 /prompts:arckit.tcop Assess Technology Code of Practice compliance
-/prompts:arckit.atrs Produce Algorithmic Transparency Record
-/prompts:arckit.ai-playbook Check UK Government AI Playbook alignment
+/prompts:arckit.aits Produce AU AI Transparency Statement (AITS)
+/prompts:arckit.ai-playbook Check AU AI governance alignment
 /prompts:arckit.story Create programme story summarising governance outcomes
 ```
 
@@ -374,7 +374,7 @@ your-project/
 │       ├── arckit.adr.md
 │       ├── arckit.ai-playbook.md
 │       ├── arckit.analyze.md
-│       ├── arckit.atrs.md
+│       ├── arckit.aits.md
 │       ├── arckit.aws-research.md
 │       ├── arckit.azure-research.md
 │       ├── arckit.backlog.md

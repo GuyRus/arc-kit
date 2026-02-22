@@ -518,7 +518,7 @@ Once you start your AI assistant, you'll have access to these commands:
 - `/arckit.service-assessment` - Service standard assessment preparation
 - `/arckit.tcop` - Technology Code of Practice assessment (all 13 points)
 - `/arckit.ai-playbook` - AU AI governance assessment pack
-- `/arckit.atrs` - AU AI transparency statement
+- `/arckit.aits` - AU AI transparency statement
 
 #### Security Assessment
 - `/arckit.secure` - Secure by Design assessment

@@ -1,6 +1,6 @@
 # AU AI Transparency Statement Guide
 
-`/arckit.atrs` generates an AU AI transparency statement aligned to the DTA Standard for AI transparency statements 2.0.
+`/arckit.aits` generates an AU AI transparency statement aligned to the DTA Standard for AI transparency statements 2.0.
 
 ## Output
 

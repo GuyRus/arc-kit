@@ -48,13 +48,15 @@ These commands require [MCP servers](https://modelcontextprotocol.io/) for autho
 ### Procurement
 17. [Vendor Procurement](guides/procurement.md) - `/arckit.sow`, `/arckit.evaluate`
 
-### UK Government
+### Assurance & Compliance (AU)
 - [Service Assessment](guides/service-assessment.md) - `/arckit.service-assessment` ⭐ NEW
+- [DX Policy / DSS Review](guides/tcop.md) - `/arckit.tcop` ⭐ NEW
+- [Secure by Design](guides/secure.md) - `/arckit.secure` ⭐ NEW
+- [AI Governance Assessment](guides/ai-playbook.md) - `/arckit.ai-playbook` ⭐ NEW
+- [AI Transparency Statement](guides/aits.md) - `/arckit.aits` ⭐ NEW
+
+### Legacy UK Procurement
 - [Digital Marketplace](guides/uk-government/digital-marketplace.md) - `/arckit.gcloud-search`, `/arckit.gcloud-clarify`, `/arckit.dos`
-- [Technology Code of Practice](guides/uk-government/technology-code-of-practice.md) - `/arckit.tcop` ⭐ NEW
-- [AI Playbook](guides/uk-government/ai-playbook.md) - `/arckit.ai-playbook` ⭐ NEW
-- [Algorithmic Transparency](guides/uk-government/algorithmic-transparency.md) - `/arckit.atrs` ⭐ NEW
-- [Secure by Design](guides/uk-government/secure-by-design.md) - `/arckit.secure` ⭐ NEW
 
 ### UK MOD (Ministry of Defence)
 - [MOD Secure by Design](guides/uk-mod/secure-by-design.md) - `/arckit.mod-secure` ⭐ NEW
@@ -146,10 +148,10 @@ These commands require [MCP servers](https://modelcontextprotocol.io/) for autho
 | `/arckit.analyze` | [analyze.md](guides/analyze.md) | ✅ Complete |
 | `/arckit.principles-compliance` | [principles-compliance.md](guides/principles-compliance.md) | ✅ Complete |
 | `/arckit.service-assessment` | [service-assessment.md](guides/service-assessment.md) | ✅ Complete |
-| `/arckit.tcop` | [technology-code-of-practice.md](guides/uk-government/technology-code-of-practice.md) | ✅ Complete |
-| `/arckit.ai-playbook` | [ai-playbook.md](guides/uk-government/ai-playbook.md) | ✅ Complete |
-| `/arckit.atrs` | [algorithmic-transparency.md](guides/uk-government/algorithmic-transparency.md) | ✅ Complete |
-| `/arckit.secure` | [secure-by-design.md](guides/uk-government/secure-by-design.md) | ✅ Complete |
+| `/arckit.tcop` | [tcop.md](guides/tcop.md) | ✅ Complete |
+| `/arckit.ai-playbook` | [ai-playbook.md](guides/ai-playbook.md) | ✅ Complete |
+| `/arckit.aits` | [aits.md](guides/aits.md) | ✅ Complete |
+| `/arckit.secure` | [secure.md](guides/secure.md) | ✅ Complete |
 | `/arckit.mod-secure` | [secure-by-design.md](guides/uk-mod/secure-by-design.md) | ✅ Complete |
 | `/arckit.jsp-936` | [jsp-936.md](guides/jsp-936.md) | ✅ Complete |
 | `/arckit.story` | [story.md](guides/story.md) | ✅ Complete |

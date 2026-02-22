@@ -48,7 +48,7 @@ Output:
 | Planning | SOBC, Project Plan, Roadmap, Backlog |
 | Architecture | Principles, HLD, DLD, Data Model, Wardley Map |
 | Governance | Risk Register, Traceability Matrix |
-| Compliance | DX Policy / DSS, Secure by Design, AI Playbook, ATRS, PIA |
+| Compliance | DX Policy / DSS, Secure by Design, AI Playbook, AITS, PIA |
 | Operations | ServiceNow, DevOps, MLOps, FinOps |
 | Procurement | SoW, Evaluation Criteria, Vendor Documents |
 | Diagrams | All architecture diagrams (Mermaid) |

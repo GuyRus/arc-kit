@@ -330,11 +330,11 @@ graph TD
 ```
 
 **Duration**: 9-18 months
-**Key Milestones**: SOBC Approval → Strategy/Requirements Sign-off → PIA Complete → G-Cloud Clarifications → AI Playbook Approval → ATRS Publication → Service Assessment → Go Live
+**Key Milestones**: SOBC Approval → Strategy/Requirements Sign-off → PIA Complete → G-Cloud Clarifications → AI Playbook Approval → AITS Publication → Service Assessment → Go Live
 
 **Critical Gates**:
 - AI Playbook compliance required before Beta
-- ATRS publication required before Live
+- AITS publication required before Live
 
 ---
 

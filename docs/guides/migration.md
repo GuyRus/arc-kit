@@ -108,7 +108,7 @@ Examples:
 | `secure-by-design.md` | SECD | `ARC-{PID}-SECD-v1.0.md` |
 | `mod-secure-by-design.md` | SECD-MOD | `ARC-{PID}-SECD-MOD-v1.0.md` |
 | `ai-playbook-assessment.md` | AIPB | `ARC-{PID}-AIPB-v1.0.md` |
-| `atrs-record.md` | ATRS | `ARC-{PID}-ATRS-v1.0.md` |
+| `aits-statement.md` | AITS | `ARC-{PID}-AITS-v1.0.md` |
 | `jsp-936.md` | JSP936 | `ARC-{PID}-JSP936-v1.0.md` |
 | `jsp936.md` | JSP936 | `ARC-{PID}-JSP936-v1.0.md` |
 | `pia.md` | PIA | `ARC-{PID}-PIA-v1.0.md` |

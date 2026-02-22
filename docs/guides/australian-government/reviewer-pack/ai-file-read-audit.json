@@ -33,8 +33,8 @@
       "sha256": "3aabcfa2f7cf29c23b8cf8931b5d758e1c7a432f7f5ec0dc2b1edef1e14e8568"
     },
     {
-      "path": ".codex/prompts/arckit.atrs.md",
-      "lines": 44,
+      "path": ".codex/prompts/arckit.aits.md",
+      "lines": 45,
       "sha256": "ecc6cdb6d1f3988914e5de10bd4ec15863cfd6550d31b1771572311b7d47891b"
     },
     {
@@ -218,9 +218,9 @@
       "sha256": "023fd389bac86dbe6b8394453b6476ab7de3290126d4921c2f9cd30911bc7fac"
     },
     {
-      "path": "arckit-plugin/docs/guides/atrs.md",
-      "lines": 24,
-      "sha256": "b60271bd57ac17ee8ef6520af910944f5f598ba6eabb66d444fe5d579a36ba07"
+      "path": "arckit-plugin/docs/guides/aits.md",
+      "lines": 25,
+      "sha256": "8ca6efcb7fe889f056700f24e80d3f029edb4ce967266a75d3b117bf078d109b"
     },
     {
       "path": "arckit-plugin/docs/guides/jsp-936.md",
@@ -283,14 +283,14 @@
       "sha256": "023fd389bac86dbe6b8394453b6476ab7de3290126d4921c2f9cd30911bc7fac"
     },
     {
-      "path": "docs/guides/atrs.md",
-      "lines": 24,
-      "sha256": "b60271bd57ac17ee8ef6520af910944f5f598ba6eabb66d444fe5d579a36ba07"
+      "path": "docs/guides/aits.md",
+      "lines": 25,
+      "sha256": "8ca6efcb7fe889f056700f24e80d3f029edb4ce967266a75d3b117bf078d109b"
     },
     {
       "path": "docs/guides/australian-government/ai-rewrite-backlog.md",
-      "lines": 55,
-      "sha256": "c0700e28e9fc31740b0ac77f51784b31d2e4ecd3752ca88adb25f13dfec93b29"
+      "lines": 56,
+      "sha256": "813170210b2de743ee2ebe683f877dd7d7d86ef0014747145e4ded4b53f0249c"
     },
     {
       "path": "docs/guides/jsp-936.md",

@@ -149,14 +149,15 @@ ArcKit provides:
 
 ---
 
-## UK Government Compliance
+## Australian Government Assurance & Compliance
 
-ArcKit includes dedicated commands for UK public sector delivery:
-- `/arckit.tcop` — Assess all 13 Technology Code of Practice points across delivery phases.
-- `/arckit.ai-playbook` — Produce responsible AI assessments aligned to the UK Government AI Playbook and ATRS.
-- `/arckit.secure` — Generate Secure by Design artefacts covering NCSC CAF, Cyber Essentials, and UK GDPR controls.
-- `/arckit.mod-secure` — Map MOD Secure by Design requirements (JSP 440, IAMM, clearance pathways).
-- `/arckit.jsp-936` — Deliver JSP 936 AI assurance packs for defence AI systems.
+ArcKit includes dedicated commands for Australian Government assurance and compliance workflows:
+
+- `/arckit.service-assessment` — Prepare evidence against the Digital Service Standard (DSS) criteria.
+- `/arckit.tcop` — Produce a DX Policy / DSS-aligned technology governance review (13 points).
+- `/arckit.secure` — Generate Secure by Design assessment artefacts aligned to Essential Eight and agency PSPF/ISM expectations (with IRAP readiness where required).
+- `/arckit.ai-playbook` — Produce AU AI governance assessment packs aligned to AU AI policy expectations.
+- `/arckit.aits` — Generate an AU AI transparency statement (AITS) aligned to the DTA transparency statement standard.
 
 See the demo repositories for end-to-end examples, especially `arckit-test-project-v7-nhs-appointment` (civilian services) and `arckit-test-project-v9-cabinet-office-genai` (AI governance).
 
@@ -538,17 +539,16 @@ Assess compliance with all 13 TCoP points:
 - Point 12: Meet the Digital Spend Controls
 - Point 13: Define your responsible AI use
 
-**`/arckit.secure`** → UK Government Secure by Design assessment
+**`/arckit.secure`** → Australian Government Secure by Design assessment
 
 Security compliance assessment:
-- NCSC Cloud Security Principles
-- NCSC Cyber Assessment Framework (CAF)
-- Cyber Essentials / Cyber Essentials Plus
-- UK GDPR and DPA 2018 compliance
-- Security architecture review
-- Threat modeling
+- Essential Eight maturity assessment
+- Secure engineering and supply chain controls
+- Monitoring, incident response, and resilience readiness
+- Privacy Act 1988 (APPs) considerations and NDB readiness (where applicable)
+- IRAP readiness where required (tailored to context)
 
-**`/arckit.ai-playbook`** → [UK Government AI Playbook](https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government) compliance (for AI systems)
+**`/arckit.ai-playbook`** → AU AI governance assessment pack (for AI systems)
 
 Responsible AI assessment:
 - AI ethics principles
@@ -558,14 +558,15 @@ Responsible AI assessment:
 - Human oversight mechanisms
 - Impact assessment
 
-**`/arckit.atrs`** → [Algorithmic Transparency Recording Standard](https://www.gov.uk/government/collections/algorithmic-transparency-recording-standard-hub)
+**`/arckit.aits`** → AU AI transparency statement (AITS)
 
-Generate ATRS record for algorithmic decision-making:
-- Algorithm details and logic
-- Purpose and use case
-- Data sources and data quality
-- Performance metrics and monitoring
-- Impact assessment and mitigation
+Generate an AI transparency statement suitable for public publication:
+
+- why the agency uses AI
+- how AI is used (usage patterns and domains)
+- public interaction and significant-impact safeguards
+- monitoring and protections
+- policy/legislation compliance summary and review controls
 
 **For MOD Projects**:
 
@@ -855,15 +856,15 @@ These commands use [Model Context Protocol (MCP)](https://modelcontextprotocol.i
 | `/arckit.story` | Generate comprehensive project story with timeline analysis, traceability, and governance achievements | [v3](https://tractorjuice.github.io/arckit-test-project-v3-windows11/#projects/001-windows-11-migration-intune/ARC-001-STORY-v1.0.md) [v8](https://tractorjuice.github.io/arckit-test-project-v8-ons-data-platform/#projects/001-ons-data-platform-modernisation/ARC-001-STORY-v1.0.md) [v9](https://tractorjuice.github.io/arckit-test-project-v9-cabinet-office-genai/#projects/001-cabinet-office-genai/ARC-001-STORY-v1.0.md) [v14](https://tractorjuice.github.io/arckit-test-project-v14-scottish-courts/#projects/001-scts-genai-programme/ARC-001-STORY-v1.0.md) | 🟢 Live |
 | `/arckit.customize` | Copy templates to `.arckit/templates-custom/` for customization (preserved across updates) | — | 🟢 Live |
 
-### UK Government
+### Australian Government
 
 | Command | Description | Examples | Status |
 |---------|-------------|----------|--------|
-| `/arckit.service-assessment` | Prepare for [GDS Service Standard](https://www.gov.uk/service-manual/service-assessments) assessment - analyze evidence against 14 points, identify gaps, generate readiness report | [v16](https://tractorjuice.github.io/arckit-test-project-v16-doctors-appointment/#projects/001-doctors-appointment/ARC-001-SASS-v1.0.md) | 🔵 Beta |
-| `/arckit.tcop` | Generate a [Technology Code of Practice (TCoP)](https://www.gov.uk/guidance/the-technology-code-of-practice) review document for a UK Government technology project | [v6](https://tractorjuice.github.io/arckit-test-project-v6-patent-system/#projects/001-patent-management-system-for-the-intellectual-property-office/ARC-001-TCOP-v1.0.md) [v8](https://tractorjuice.github.io/arckit-test-project-v8-ons-data-platform/#projects/001-ons-data-platform-modernisation/ARC-001-TCOP-v1.0.md) [v9](https://tractorjuice.github.io/arckit-test-project-v9-cabinet-office-genai/#projects/001-cabinet-office-genai/ARC-001-TCOP-v1.0.md) [v11](https://tractorjuice.github.io/arckit-test-project-v11-national-highways-data/#projects/001-national-highways-data-architecture-modernization/ARC-001-TCOP-v1.0.md) [v14](https://tractorjuice.github.io/arckit-test-project-v14-scottish-courts/#projects/001-scts-genai-programme/ARC-001-TCOP-v1.0.md) | 🔵 Beta |
-| `/arckit.secure` | Generate a Secure by Design assessment for UK Government projects (civilian departments) | [v8](https://tractorjuice.github.io/arckit-test-project-v8-ons-data-platform/#projects/001-ons-data-platform-modernisation/ARC-001-SECD-v1.0.md) [v9](https://tractorjuice.github.io/arckit-test-project-v9-cabinet-office-genai/#projects/001-cabinet-office-genai/ARC-001-SECD-v1.0.md) [v11](https://tractorjuice.github.io/arckit-test-project-v11-national-highways-data/#projects/001-national-highways-data-architecture-modernization/ARC-001-SECD-v1.0.md) [v14](https://tractorjuice.github.io/arckit-test-project-v14-scottish-courts/#projects/001-scts-genai-programme/ARC-001-SECD-v1.0.md) [v16](https://tractorjuice.github.io/arckit-test-project-v16-doctors-appointment/#projects/001-doctors-appointment/ARC-001-SECD-v1.0.md) [v17](https://tractorjuice.github.io/arckit-test-project-v17-fuel-prices/#projects/001-uk-fuel-price-transparency-service/ARC-001-SECD-v1.0.md) [v18](https://tractorjuice.github.io/arckit-test-project-v18-smart-meter/#projects/001-smart-meter-app/ARC-001-SECD-v1.0.md) [v19](https://tractorjuice.github.io/arckit-test-project-v19-gov-api-aggregator/#projects/001-uk-government-api-aggregator/ARC-001-SECD-v1.0.md) | 🔵 Beta |
-| `/arckit.ai-playbook` | Assess [UK Government AI Playbook](https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government) compliance for responsible AI deployment | [v9](https://tractorjuice.github.io/arckit-test-project-v9-cabinet-office-genai/#projects/001-cabinet-office-genai/ARC-001-AIPB-v1.0.md) [v14](https://tractorjuice.github.io/arckit-test-project-v14-scottish-courts/#projects/001-scts-genai-programme/ARC-001-AIPB-v1.0.md) | 🟠 Alpha |
-| `/arckit.atrs` | Generate [Algorithmic Transparency Recording Standard (ATRS)](https://www.gov.uk/government/collections/algorithmic-transparency-recording-standard-hub) record for AI/algorithmic tools | [v2](https://tractorjuice.github.io/arckit-test-project-v2-hmrc-chatbot/#projects/001-hmrc-chatbot/ARC-001-ATRS-v1.0.md) [v9](https://tractorjuice.github.io/arckit-test-project-v9-cabinet-office-genai/#projects/001-cabinet-office-genai/ARC-001-ATRS-v1.0.md) [v14](https://tractorjuice.github.io/arckit-test-project-v14-scottish-courts/#projects/001-scts-genai-programme/ARC-001-ATRS-v1.0.md) | 🟠 Alpha |
+| `/arckit.service-assessment` | Digital Service Standard (DSS) assurance prep - assess evidence against 10 criteria, identify gaps, generate readiness report | — | 🔵 Beta |
+| `/arckit.tcop` | DX Policy / DSS-aligned technology governance review (13 points) | — | 🔵 Beta |
+| `/arckit.secure` | Secure by Design assessment aligned to Essential Eight and agency PSPF/ISM expectations (plus privacy/NDB where applicable) | — | 🔵 Beta |
+| `/arckit.ai-playbook` | AU AI governance assessment pack for responsible AI | — | 🟠 Alpha |
+| `/arckit.aits` | AU AI Transparency Statement (AITS) suitable for publication | — | 🟠 Alpha |
 
 ### UK MOD
 

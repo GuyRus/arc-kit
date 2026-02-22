@@ -217,7 +217,7 @@ The script automatically determines the next steps based on what artifacts exist
 
 **Notes**:
 - Pads project numbers to three digits automatically.
-- Accepts any doc type (REQ, HLD, PIA, ATRS, etc.).
+- Accepts any doc type (REQ, HLD, PIA, AITS, etc.).
 - Emits the ID to stdout so it can be piped into editors or JSON payloads.
 
 ### 5. list-projects.sh

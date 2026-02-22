@@ -181,10 +181,10 @@ flowchart TD
 | 14 | [DATE] | [DAYS] | Delivery | `/arckit.backlog` | ARC-*-BKLG-*.md | [N] user stories across [M] sprints |
 | 15 | [DATE] | [DAYS] | Operations | `/arckit.servicenow` | ARC-*-SNOW-*.md | CMDB, SLAs, incident management |
 | 16 | [DATE] | [DAYS] | Compliance | `/arckit.tcop` | ARC-*-TCOP-*.md | Digital Experience Policy / Digital Service Standard (13 points) |
-| 17 | [DATE] | [DAYS] | Compliance | `/arckit.service-assessment` | ARC-*-SVCASS-*.md | Digital Service Standard (14 points) |
-| 18 | [DATE] | [DAYS] | Security | `/arckit.secure` | ARC-*-SECD-*.md | ASD/ACSC CAF, Essential Eight, Privacy Act 1988 / APPs |
+| 17 | [DATE] | [DAYS] | Compliance | `/arckit.service-assessment` | ARC-*-SVCASS-*.md | Digital Service Standard (10 criteria) |
+| 18 | [DATE] | [DAYS] | Security | `/arckit.secure` | ARC-*-SECD-*.md | Secure by Design (PSPF/ISM aligned), Essential Eight, Privacy Act 1988 / APPs |
 | 19 | [DATE] | [DAYS] | AI Compliance | `/arckit.ai-playbook` | ARC-*-AIPB-*.md | Responsible AI deployment |
-| 20 | [DATE] | [DAYS] | Transparency | `/arckit.atrs` | ARC-*-ATRS-*.md | Algorithmic Transparency Recording |
+| 20 | [DATE] | [DAYS] | Transparency | `/arckit.aits` | ARC-*-AITS-*.md | AI Transparency Statement (AITS) |
 | 21 | [DATE] | [DAYS] | Traceability | `/arckit.traceability` | ARC-*-TRAC-*.md | End-to-end requirement traceability |
 | 22 | [DATE] | [DAYS] | Governance | `/arckit.analyze` | ARC-*-ANAL-*.md | Governance quality assessment |
 
@@ -520,7 +520,7 @@ flowchart TD
         ServiceAssessment[DTA Service<br/>Standard]
         Secure[Secure by<br/>Design]
         AIPlaybook[AI<br/>Playbook]
-        ATRS[ATRS<br/>Record]
+        AITS[AITS<br/>Statement]
     end
 
     subgraph Governance
@@ -559,7 +559,7 @@ flowchart TD
     Diagrams --> Secure
     NFR --> Secure
     Research --> AIPlaybook
-    AIPlaybook --> ATRS
+    AIPlaybook --> AITS
 
     BR --> Traceability
     FR --> Traceability
@@ -706,7 +706,7 @@ Complete list of all artifacts generated during this project:
 | 18 | Service Assessment | `projects/{project_id}/ARC-*-SVCASS-*.md` | [DATE] | `/arckit.service-assessment` | ✅ |
 | 19 | Secure by Design | `projects/{project_id}/ARC-*-SECD-*.md` | [DATE] | `/arckit.secure` | ✅ |
 | 20 | AI Playbook | `projects/{project_id}/ARC-*-AIPB-*.md` | [DATE] | `/arckit.ai-playbook` | ✅ |
-| 21 | ATRS Record | `projects/{project_id}/ARC-*-ATRS-*.md` | [DATE] | `/arckit.atrs` | ✅ |
+| 21 | AITS Statement | `projects/{project_id}/ARC-*-AITS-*.md` | [DATE] | `/arckit.aits` | ✅ |
 | 22 | Traceability Matrix | `projects/{project_id}/ARC-*-TRAC-*.md` | [DATE] | `/arckit.traceability` | ✅ |
 | 23 | Analysis Report | `projects/{project_id}/ARC-*-ANAL-*.md` | [DATE] | `/arckit.analyze` | ✅ |
 
@@ -733,10 +733,10 @@ Complete chronological log of all project activities extracted from git history:
 [DATE] [TIME] - /arckit.backlog - Product Backlog: [N] stories across [M] sprints
 [DATE] [TIME] - /arckit.servicenow - ServiceNow Design: [N] CIs, [M] SLAs defined
 [DATE] [TIME] - /arckit.tcop - DX Policy / Digital Service Standard Review: [N]/13 points satisfied
-[DATE] [TIME] - /arckit.service-assessment - Service Assessment: [N]/14 points satisfied, [READY/NOT READY]
-[DATE] [TIME] - /arckit.secure - Secure by Design: ASD/ACSC CAF [N]/14 principles, Essential Eight [LEVEL]
+[DATE] [TIME] - /arckit.service-assessment - Service Assessment: [N]/10 criteria satisfied, [READY/NOT READY]
+[DATE] [TIME] - /arckit.secure - Secure by Design: Essential Eight maturity [0-3], key risks and remediation actions
 [DATE] [TIME] - /arckit.ai-playbook - AI Playbook: [N] ethical principles assessed
-[DATE] [TIME] - /arckit.atrs - ATRS Record: Transparency record published
+[DATE] [TIME] - /arckit.aits - AITS Statement: Transparency statement published/updated
 [DATE] [TIME] - /arckit.traceability - Traceability Matrix: [PERCENTAGE]% coverage achieved
 [DATE] [TIME] - /arckit.analyze - Quality Analysis: [N] artifacts analyzed, [FINDINGS]
 ```
@@ -827,9 +827,9 @@ ArcKit commands used in this project:
 | `/arckit.servicenow` | Design CMDB, SLAs, incident management | With delivery planning |
 | `/arckit.tcop` | Digital Experience Policy / Digital Service Standard (Australian Government) | Before go-live |
 | `/arckit.service-assessment` | Digital Service Standard (Australian Government) | Before Alpha/Beta/Live assessment |
-| `/arckit.secure` | Secure by Design (ASD/ACSC CAF, Essential Eight) | Throughout project |
+| `/arckit.secure` | Secure by Design (PSPF/ISM aligned, Essential Eight) | Throughout project |
 | `/arckit.ai-playbook` | AI Playbook assessment (Australian Government AI systems) | For AI/ML projects |
-| `/arckit.atrs` | Algorithmic Transparency Recording Standard | For algorithmic tools |
+| `/arckit.aits` | AU AI Transparency Statement | For systems in scope of AI transparency statement expectations |
 | `/arckit.traceability` | End-to-end traceability matrix | After all artifacts created |
 | `/arckit.analyze` | Governance quality analysis | Final governance validation |
 
@@ -845,10 +845,9 @@ ArcKit commands used in this project:
 | **DR** | Data Requirement |
 | **SOBC** | Strategic Outline Business Case (Green Book 5-case model) |
 | **DX Policy / Digital Service Standard** | Digital Experience Policy / Digital Service Standard (13 points for Australian Government) |
-| **DTA** | Government Digital Service |
-| **ASD/ACSC CAF** | National Cyber Security Centre Cyber Assessment Framework |
+| **DTA** | Digital Transformation Agency |
 | **Privacy Act 1988 / APPs** | Australian privacy law and principles for personal information handling |
-| **ATRS** | Algorithmic Transparency Recording Standard |
+| **AITS** | AU AI Transparency Statement |
 | **HLD** | High-Level Design |
 | **DLD** | Detailed Design |
 | **C4** | Context, Container, Component, Code (architecture diagram model) |

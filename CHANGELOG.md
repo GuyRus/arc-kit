@@ -159,7 +159,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `/arckit.principles-compliance` → `principles-compliance-assessment-template.md`
   - `/arckit.service-assessment` → `service-assessment-prep-template.md`
 - **Document Control Standardization**: 17 commands now include the standard "Auto-Populate Document Control Fields" block with Generate Document ID, Populate Required Fields, Revision History, and Generation Metadata Footer:
-  - `/arckit.ai-playbook`, `/arckit.analyze`, `/arckit.atrs`, `/arckit.backlog`
+  - `/arckit.ai-playbook`, `/arckit.analyze`, `/arckit.aits`, `/arckit.backlog`
   - `/arckit.data-mesh-contract`, `/arckit.diagram`, `/arckit.dld-review`
   - `/arckit.dos`, `/arckit.evaluate`, `/arckit.gcloud-clarify`, `/arckit.gcloud-search`
   - `/arckit.hld-review`, `/arckit.mod-secure`, `/arckit.plan`
@@ -1625,7 +1625,7 @@ Deployed to 6 test repositories:
 - **UK Government Compliance Support**: Comprehensive support for UK Government frameworks
 - `/arckit.tcop` - Technology Code of Practice assessment (13 mandatory points)
 - `/arckit.ai-playbook` - AI Playbook compliance assessment (10 principles + 6 ethical themes)
-- `/arckit.atrs` - Algorithmic Transparency Recording Standard assessment
+- `/arckit.aits` - AU AI transparency statement generation
 - `/arckit.mod-secure` - MOD Secure by Design review (JSP 440, IAMM)
 - `templates/uk-gov-tcop-template.md` (718 lines) - TCoP assessment structure
 - `templates/uk-gov-ai-playbook-template.md` (853 lines) - AI Playbook assessment structure
