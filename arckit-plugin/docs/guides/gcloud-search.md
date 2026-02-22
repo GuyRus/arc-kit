@@ -53,7 +53,7 @@ Output: `projects/<id>/ARC-<id>-GCLD-v1.0.md`
 |--------|---------|
 | Service Category | Narrow by service type |
 | Supplier Size | SME vs large enterprise |
-| Security Clearance | SC, DV cleared suppliers |
+| Security Clearance | Baseline / NV1 / NV2 / PV (as required) |
 | Data Location | Australia, approved jurisdictions, global |
 | Certifications | ISO 27001, Essential Eight+ |
 
