@@ -1,4 +1,4 @@
-# Digital Service Standard assurance review Preparation Report
+# Digital Service Standard (DSS) Assurance Prep Report
 
 > **Template Status**: Beta | **Version**: [VERSION] | **Command**: `/arckit.service-assessment`
 
@@ -7,9 +7,9 @@
 | Field | Value |
 |-------|-------|
 | **Document ID** | ARC-[PROJECT_ID]-SVCASS-v[VERSION] |
-| **Document Type** | Digital Service Standard assurance review Preparation Report |
+| **Document Type** | Digital Service Standard (DSS) Assurance Prep Report |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
-| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
+| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL:Sensitive / PROTECTED / SECRET / TOP SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
 | **Version** | [VERSION] |
 | **Created Date** | [YYYY-MM-DD] |
@@ -20,8 +20,8 @@
 | **Reviewed By** | [REVIEWER_NAME] ([YYYY-MM-DD]) or PENDING |
 | **Approved By** | [APPROVER_NAME] ([YYYY-MM-DD]) or PENDING |
 | **Distribution** | [DISTRIBUTION_LIST] |
-| **Assessment Phase** | [Alpha / Beta / Live] |
-| **Assessment Date** | [Date / Not yet scheduled] |
+| **Delivery Stage** | [Discovery / Alpha / Beta / Live] |
+| **Review Date** | [Date / Not yet scheduled] |
 
 ## Revision History
 
@@ -35,20 +35,20 @@
 
 **Overall Readiness**: [🟢 Green / 🟡 Amber / 🔴 Red]
 
-**Readiness Score**: [X]/14 points ready
+**Readiness Score**: [X]/10 criteria ready
 
 **Breakdown**:
-- 🟢 Green: [X] points
-- 🟡 Amber: [X] points
-- 🔴 Red: [X] points
+- 🟢 Green: [X] criteria
+- 🟡 Amber: [X] criteria
+- 🔴 Red: [X] criteria
 
 **Summary**:
 [2-3 paragraph summary of overall readiness, highlighting strengths and critical gaps]
 
-**Critical Gaps** (Must address before assessment):
-- [Gap 1 with Service Standard point number]
-- [Gap 2 with Service Standard point number]
-- [Gap 3 with Service Standard point number]
+**Critical Gaps** (Must address before review):
+- [Gap 1 with DSS criterion number]
+- [Gap 2 with DSS criterion number]
+- [Gap 3 with DSS criterion number]
 
 **Key Strengths**:
 - [Strength 1]
@@ -57,339 +57,225 @@
 
 **Recommended Timeline**:
 [X weeks/days until ready based on gap analysis]
-[If assessment date provided: "Assessment in X days - [Ready/Need to postpone]"]
+[If review date provided: "Review in X days - [Ready/Need to postpone]"]
 
 ---
 
-## Service Standard Assessment (14 Points)
+## DSS Criteria Assessment (10)
 
-### 1. Understand Users and Their Needs
+For each criterion, capture what it means, evidence, gaps, and actions.
+
+### 1. Have Clear Intent
 
 **Status**: [🟢 Ready / 🟡 Partial / 🔴 Not Ready]
 
-**What This Point Means**:
-[Brief 2-3 sentence explanation of what this Service Standard point requires]
+**Intent Statement**:
+[One paragraph: the service intent, outcome, and what success means]
 
-**Why It Matters**:
-[1-2 sentences on importance]
+**Evidence Found**:
+- [Evidence in requirements / stakeholders / business case]
 
-**Evidence Required for [Alpha/Beta/Live]**:
-- [Evidence requirement 1 for this phase]
-- [Evidence requirement 2 for this phase]
-- [Evidence requirement 3 for this phase]
-
-**Evidence Found in ArcKit Artifacts**:
-
-✅ **ARC-{PROJECT_ID}-REQ-v*.md** (lines XX-YY)
-   - [Specific evidence found]
-   - [What this demonstrates]
-
-✅ **ARC-{PROJECT_ID}-STKE-v*.md** (Section X)
-   - [Specific evidence found]
-   - [What this demonstrates]
-
-❌ **Missing**: [Specific gap 1]
-❌ **Missing**: [Specific gap 2]
-⚠️ **Weak**: [Evidence exists but lacks quality/detail]
-
-**Gap Analysis**:
-[2-3 sentences assessing completeness: what's strong, what's weak, what's missing]
-
-**Readiness Rating**: [🟢 Green / 🟡 Amber / 🔴 Red]
-
-**Strengths**:
-- [Strength 1]
-- [Strength 2]
-
-**Weaknesses**:
-- [Weakness 1]
-- [Weakness 2]
+**Gaps**:
+- [Missing or weak evidence]
 
 **Recommendations**:
-
-1. **[Critical/High/Medium]**: [Action with specific details]
-   - Timeline: [X days/weeks]
-   - Owner: [Suggested role]
-   - Evidence to create: [What this will produce]
-
-2. **[Priority]**: [Action with specific details]
-   - Timeline: [X days/weeks]
-   - Owner: [Suggested role]
-   - Evidence to create: [What this will produce]
-
-**Assessment Day Guidance**:
-- **Prepare**: [What to prepare for presenting this point]
-- **Show**: [What to demonstrate/show]
-- **Bring**: [Who should be ready to present]
-- **Materials**: [Specific artifacts/demos to have ready]
-- **Likely Questions**:
-  - [Expected question 1]
-  - [Expected question 2]
+- [Action, timeline, owner, evidence to create]
 
 ---
 
-[Repeat above structure for points 2-14]
+### 2. Know Your User
+
+**Status**: [🟢 Ready / 🟡 Partial / 🔴 Not Ready]
+
+**Evidence Found**:
+- [User needs and research, personas, journey mapping]
+
+**Gaps**:
+- [Missing research, weak synthesis, unvalidated assumptions]
+
+**Recommendations**:
+- [Action, timeline, owner, evidence to create]
+
+---
+
+### 3. Leave No One Behind
+
+**Status**: [🟢 Ready / 🟡 Partial / 🔴 Not Ready]
+
+**Evidence Found**:
+- [Accessibility approach, WCAG evidence, inclusive design considerations]
+
+**Gaps**:
+- [Missing testing, missing accessibility NFRs, missing assistive tech coverage]
+
+**Recommendations**:
+- [Action, timeline, owner, evidence to create]
+
+---
+
+### 4. Connect Services
+
+**Status**: [🟢 Ready / 🟡 Partial / 🔴 Not Ready]
+
+**Evidence Found**:
+- [Integration requirements, ecosystem map, cross-agency dependencies]
+
+**Gaps**:
+- [Unowned integrations, unclear data flows, missing operational responsibilities]
+
+**Recommendations**:
+- [Action, timeline, owner, evidence to create]
+
+---
+
+### 5. Build Trust In Design
+
+**Status**: [🟢 Ready / 🟡 Partial / 🔴 Not Ready]
+
+**Evidence Found**:
+- [Security-by-design evidence, privacy-by-design evidence, user trust measures]
+
+**Gaps**:
+- [Missing threat model, unclear identity approach, weak auditability]
+
+**Recommendations**:
+- [Action, timeline, owner, evidence to create]
+
+---
+
+### 6. Don’t Reinvent The Wheel
+
+**Status**: [🟢 Ready / 🟡 Partial / 🔴 Not Ready]
+
+**Evidence Found**:
+- [Reuse of platforms/components, build vs buy decisions, shared services]
+
+**Gaps**:
+- [Duplicated capability, missing rationale for bespoke build]
+
+**Recommendations**:
+- [Action, timeline, owner, evidence to create]
+
+---
+
+### 7. Do No Harm
+
+**Status**: [🟢 Ready / 🟡 Partial / 🔴 Not Ready]
+
+**Evidence Found**:
+- [Risk analysis, mitigations, privacy impacts, safety and integrity controls]
+
+**Gaps**:
+- [Unmitigated risks, missing incident response readiness, missing safeguards]
+
+**Recommendations**:
+- [Action, timeline, owner, evidence to create]
+
+---
+
+### 8. Innovate With Purpose
+
+**Status**: [🟢 Ready / 🟡 Partial / 🔴 Not Ready]
+
+**Evidence Found**:
+- [Why innovation is needed, measurable value, experiments and learnings]
+
+**Gaps**:
+- [Innovation without value case, missing evaluation plan]
+
+**Recommendations**:
+- [Action, timeline, owner, evidence to create]
+
+---
+
+### 9. Monitor Your Service
+
+**Status**: [🟢 Ready / 🟡 Partial / 🔴 Not Ready]
+
+**Evidence Found**:
+- [SLIs/SLOs, dashboards, alerting, incident processes, operational readiness]
+
+**Gaps**:
+- [Missing SLOs, unclear on-call, no runbooks]
+
+**Recommendations**:
+- [Action, timeline, owner, evidence to create]
+
+---
+
+### 10. Keep It Relevant
+
+**Status**: [🟢 Ready / 🟡 Partial / 🔴 Not Ready]
+
+**Evidence Found**:
+- [Governance cadence, review cycles, continuous improvement mechanisms]
+
+**Gaps**:
+- [No review cadence, no ownership, stale assumptions]
+
+**Recommendations**:
+- [Action, timeline, owner, evidence to create]
 
 ---
 
 ## Evidence Inventory
 
-**Complete Traceability**: Service Standard Point → ArcKit Artifacts
+**Traceability**: DSS Criterion → ArcKit Artefacts
 
-| Service Standard Point | ArcKit Artifacts | Status | Critical Gaps |
-|------------------------|------------------|--------|---------------|
-| 1. Understand users | [artifacts] | [🟢/🟡/🔴] | [gaps] |
-| 2. Solve whole problem | [artifacts] | [🟢/🟡/🔴] | [gaps] |
-| 3. Joined up experience | [artifacts] | [🟢/🟡/🔴] | [gaps] |
-| 4. Simple to use | [artifacts] | [🟢/🟡/🔴] | [gaps] |
-| 5. Everyone can use | [artifacts] | [🟢/🟡/🔴] | [gaps] |
-| 6. Multidisciplinary team | [artifacts] | [🟢/🟡/🔴] | [gaps] |
-| 7. Agile ways of working | [artifacts] | [🟢/🟡/🔴] | [gaps] |
-| 8. Iterate frequently | [artifacts] | [🟢/🟡/🔴] | [gaps] |
-| 9. Secure and private | [artifacts] | [🟢/🟡/🔴] | [gaps] |
-| 10. Success metrics | [artifacts] | [🟢/🟡/🔴] | [gaps] |
-| 11. Right tools | [artifacts] | [🟢/🟡/🔴] | [gaps] |
-| 12. Open source | [artifacts] | [🟢/🟡/🔴] | [gaps] |
-| 13. Open standards | [artifacts] | [🟢/🟡/🔴] | [gaps] |
-| 14. Reliable service | [artifacts] | [🟢/🟡/🔴] | [gaps] |
-
-**Summary**:
-- ✅ Strong evidence: Points [X, Y, Z]
-- ⚠️ Adequate but needs strengthening: Points [A, B, C]
-- ❌ Critical gaps: Points [D, E]
+| DSS Criterion | ArcKit Artefacts | Status | Critical Gaps |
+|--------------|------------------|--------|---------------|
+| 1. Have clear intent | [artefacts] | [🟢/🟡/🔴] | [gaps] |
+| 2. Know your user | [artefacts] | [🟢/🟡/🔴] | [gaps] |
+| 3. Leave no one behind | [artefacts] | [🟢/🟡/🔴] | [gaps] |
+| 4. Connect services | [artefacts] | [🟢/🟡/🔴] | [gaps] |
+| 5. Build trust in design | [artefacts] | [🟢/🟡/🔴] | [gaps] |
+| 6. Don’t reinvent the wheel | [artefacts] | [🟢/🟡/🔴] | [gaps] |
+| 7. Do no harm | [artefacts] | [🟢/🟡/🔴] | [gaps] |
+| 8. Innovate with purpose | [artefacts] | [🟢/🟡/🔴] | [gaps] |
+| 9. Monitor your service | [artefacts] | [🟢/🟡/🔴] | [gaps] |
+| 10. Keep it relevant | [artefacts] | [🟢/🟡/🔴] | [gaps] |
 
 ---
 
-## Assessment Preparation Checklist
+## Action Plan
 
-### Critical Actions (Complete within 2 weeks)
+### Critical Actions (0-2 weeks)
 
-Priority: Complete these before booking assessment - they address Red ratings
+- [ ] [Action] (Criterion: [N])
+- [ ] [Action] (Criterion: [N])
 
-- [ ] **Action 1**: [Specific action]
-  - Point: [Service Standard point number]
-  - Timeline: [X days]
-  - Owner: [Role]
-  - Outcome: [What evidence this creates]
+### High Priority Actions (2-6 weeks)
 
-- [ ] **Action 2**: [Specific action]
-  - Point: [Service Standard point number]
-  - Timeline: [X days]
-  - Owner: [Role]
-  - Outcome: [What evidence this creates]
+- [ ] [Action] (Criterion: [N])
 
-### High Priority Actions (Complete within 4 weeks)
+### Medium Priority Actions (Nice to have)
 
-Priority: Should complete to strengthen Amber points to Green
-
-- [ ] **Action 3**: [Specific action]
-  - Point: [Service Standard point number]
-  - Timeline: [X days]
-  - Owner: [Role]
-  - Outcome: [What evidence this creates]
-
-### Medium Priority Actions (Nice to Have)
-
-Priority: Strengthens overall case but not blocking
-
-- [ ] **Action 5**: [Specific action]
-  - Point: [Service Standard point number]
-  - Timeline: [X days]
-  - Owner: [Role]
-  - Outcome: [What evidence this creates]
+- [ ] [Action] (Criterion: [N])
 
 ---
 
-## Assessment Day Preparation
+## Assurance Review Session Guidance
 
-### Timeline and Booking
+Use this section to run an assurance review that is proportionate and evidence-based.
 
-**Current Readiness**:
-[Assessment of whether ready to book now, or need to complete critical actions first]
+### Suggested Attendees
 
-**Recommended Booking Timeline**:
-- Complete critical actions: [X weeks]
-- Complete high priority actions: [X weeks]
-- Buffer for preparation: 1 week
-- **Ready to book after**: [Date]
+- Service owner / product lead
+- Delivery lead
+- User researcher / content (as applicable)
+- Technical architect / engineering lead
+- Security / privacy SMEs (where applicable)
+- Operations / service management
 
-**How to Book**:
-1. Contact DTA Central Digital & Data Office assessment team
-2. Book 5 weeks in advance minimum
-3. Assessments typically on Tuesday, Wednesday, or Thursday
-4. Duration: 4 hours
-5. Provide: Service name, department, phase, preferred dates
+### Suggested Agenda
 
-### Documentation to Share with Panel
-
-**Send 1 week before assessment**:
-
-Required documentation:
-- [ ] Project overview (1-2 pages)
-- [ ] User research repository or summary
-- [ ] Service architecture diagrams
-- [ ] Prototype/demo environment URL (if applicable)
-
-Recommended documentation:
-- [ ] Key ArcKit artifacts: [list specific files]
-
-Optional supplementary:
-- [ ] Design history
-- [ ] Research findings
-- [ ] Technical documentation
-- [ ] Performance metrics dashboard
-
-### Who Should Attend
-
-**Core Team** (required):
-- ✅ Product Manager / Service Owner
-- ✅ Lead User Researcher
-- ✅ Technical Architect / Lead Developer
-- ✅ Delivery Manager
-
-**Phase-Specific Additions**:
-[List additional roles needed for this specific phase]
-
-**Optional Attendees**:
-- Senior Responsible Owner
-- Business owner
-- Specialists (as needed)
-
-### Show and Tell Structure
-
-**4-Hour Assessment Timeline**:
-
-**0:00-0:15 - Introductions and Context**
-- Team introductions
-- Service overview
-- Project context
-
-**0:15-1:00 - User Research and Needs (Points 1, 2, 3, 4)**
-- User Researcher presents research findings and methodology
-
-**1:00-1:45 - Service Demonstration (Points 2, 3, 4, 5)**
-- Show the service or prototype
-- End-to-end journey
-- Accessibility features
-
-**1:45-2:30 - Technical Architecture and Security (Points 9, 11, 12, 13, 14)**
-- Tech Lead presents architecture and technology choices
-
-**2:30-3:00 - Team and Ways of Working (Points 6, 7, 8, 10)**
-- Delivery Manager presents team and agile practices
-
-**3:00-3:45 - Open Q&A**
-- Panel asks questions
-- Team responds with evidence
-
-**3:45-4:00 - Panel Deliberation**
-- Team steps out
-
-### Tips for Success
-
-**Do**:
-- ✅ Show real work, not polished presentations
-- ✅ Have people who did the work present it
-- ✅ Be honest about what you don't know yet
-- ✅ Explain your problem-solving approach
-- ✅ Demonstrate iteration based on learning
-
-**Don't**:
-- ❌ Over-prepare presentations
-- ❌ Hide problems
-- ❌ Use jargon
-- ❌ Let senior leaders dominate
-- ❌ Argue with panel feedback
-
-**Materials to Have Ready**:
-- Prototype or working service
-- Laptops for team
-- Backup plan if demo breaks
-- Links to ArcKit artifacts
-- Research videos or clips
-- Architecture diagrams
-
----
-
-## After the Assessment
-
-### If You Pass (Green)
-
-**Immediate Actions**:
-- [ ] Celebrate with the team
-- [ ] Share assessment report with stakeholders
-- [ ] Plan for next phase
-- [ ] Book next assessment (if moving to beta/live)
-
-### If You Get Amber
-
-**Immediate Actions**:
-- [ ] Create "tracking amber evidence" document
-- [ ] Assign owners to each amber point
-- [ ] Set deadlines (within 3 months)
-- [ ] Schedule check-ins with DTA team
-
-### If You Fail (Red)
-
-**Immediate Actions**:
-- [ ] Review assessment report with team
-- [ ] Identify root causes
-- [ ] Create action plan for each red point
-- [ ] Re-run `/arckit.service-assessment` weekly
-- [ ] Book reassessment (typically 3-6 months)
-
----
-
-## Next Steps
-
-### This Week
-1. [Action from critical list]
-2. [Action from critical list]
-3. [Action from critical list]
-
-### Next 2 Weeks
-1. [Action from critical/high priority]
-2. [Action from critical/high priority]
-
-### Next 4 Weeks
-1. [Action from high priority]
-2. [Action from high priority]
-
-### Continuous Improvement
-- [ ] Re-run `/arckit.service-assessment PHASE=[phase]` weekly
-- [ ] Update this report as evidence gathered
-- [ ] Review checklist and mark completed items
-- [ ] Include Service Standard prep in sprint planning
-
----
-
-## Resources
-
-### Digital Service Standard Resources
-
-**Official Guidance**:
-- [Service Standard](https://www.dta.gov.au/help-and-advice/digital-service-standard)
-- [What happens at assessment](https://www.dta.gov.au/help-and-advice/digital-service-standard)
-- [Book assessment](https://www.dta.gov.au/help-and-advice/digital-service-standard)
-- [Service Standard Reports](https://www.dta.gov.au/help-and-advice/digital-service-standard)
-
-**Phase-Specific Guidance**:
-- [Alpha phase](https://www.dta.gov.au/help-and-advice/digital-service-standard)
-- [Beta phase](https://www.dta.gov.au/help-and-advice/digital-service-standard)
-- [Live phase](https://www.dta.gov.au/help-and-advice/digital-service-standard)
-
-### Related ArcKit Commands
-
-- `/arckit.analyze` - Comprehensive governance analysis
-- `/arckit.traceability` - Requirements traceability matrix
-- `/arckit.tcop` - Digital Experience Policy assessment
-- `/arckit.secure` - Secure by Design assessment
-
-## External References
-
-| Document | Type | Source | Key Extractions | Path |
-|----------|------|--------|-----------------|------|
-| *None provided* | — | — | — | — |
+1. Service intent and scope (Criterion 1)
+2. Users and inclusion (Criteria 2-3)
+3. Service ecosystem and reuse (Criteria 4 and 6)
+4. Trust, safety, and harm controls (Criteria 5 and 7)
+5. Innovation rationale (Criterion 8)
+6. Monitoring and relevance (Criteria 9-10)
+7. Gaps, actions, and owners
 
 ---
 
@@ -398,13 +284,3 @@ Optional supplementary:
 **ArcKit Version**: [VERSION]
 **Project**: [PROJECT_NAME]
 **Model**: [AI_MODEL]
-
-**Next Actions**:
-1. Review this report with your team
-2. Prioritize critical actions in sprint planning
-3. Re-run `/arckit.service-assessment PHASE=[phase]` weekly to track progress
-4. Use checklist to track completion of preparation tasks
-
----
-
-*Good luck with your assessment! Show your work, explain your thinking, and be open to feedback.*

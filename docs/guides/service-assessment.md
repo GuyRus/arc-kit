@@ -1,45 +1,60 @@
-# Digital Service Standard assurance review Guide
+# Digital Service Standard (DSS) Assurance Prep Guide
 
-`/arckit.service-assessment` packages evidence for Discovery→Alpha, Alpha→Beta, and Beta→Live assessments against the 14-point Service Standard.
+`/arckit.service-assessment` packages evidence for an Australian Government Digital Service Standard (DSS) assurance review. It produces an evidence map, RAG ratings, gaps, and an action plan.
 
 ---
 
 ## Command
 
 ```bash
-/arckit.service-assessment PHASE=<alpha|beta|live> DATE=<YYYY-MM-DD optional>
+/arckit.service-assessment STAGE=<discovery|alpha|beta|live> DATE=<YYYY-MM-DD optional>
 ```
 
 Output: `projects/<id>/ARC-<id>-SVCASS-v1.0.md`.
 
 ---
 
+## DSS Criteria (10)
+
+1. Have clear intent
+2. Know your user
+3. Leave no one behind
+4. Connect services
+5. Build trust in design
+6. Don’t reinvent the wheel
+7. Do no harm
+8. Innovate with purpose
+9. Monitor your service
+10. Keep it relevant
+
+---
+
 ## Evidence Mapping (Summary)
 
-| Service Standard Area | ArcKit Sources | Notes |
-|-----------------------|----------------|-------|
-| Understand users & solve the whole problem (Points 1–3) | Stakeholder analysis, requirements, Wardley Maps | Ensure latest research notes attached |
-| Simple, accessible service (Points 4–5) | Requirements (WCAG), `/arckit.secure` outputs, journey maps | Include accessibility testing evidence |
-| Team & delivery approach (Points 6–8) | Project plan, backlog, retrospectives, vendor governance | Highlight multidisciplinary team and agile cadence |
-| Security, privacy, performance (Points 9–10,14) | `/arckit.secure`, `/arckit.pia`, `/arckit.servicenow`, NFRs | Provide incident response and monitoring plans |
-| Technology & openness (Points 11–13) | `/arckit.research`, `/arckit.tcop`, design reviews, repos | Reference open-source/code-reuse commitments |
+| DSS focus | ArcKit sources | Notes |
+|----------|----------------|------|
+| Intent + value | Stakeholders, SOBC, requirements | Ensure success definition and value-for-money narrative are explicit |
+| Users + inclusion | Stakeholders, research, requirements, service design | Accessibility and inclusion must be testable and evidenced |
+| Trust, safety, privacy | `/arckit.secure`, `/arckit.pia`, risks, data model | Tie controls and mitigations to requirements and designs |
+| Service ecosystem + reuse | Diagrams, integrations (INT), research, principles | Show “connect services” and “don’t reinvent” decisions |
+| Measurement + relevance | SOBC metrics, operational readiness, ServiceNow design, monitoring approach | Define measurable outcomes and how they’re monitored |
 
 ---
 
 ## Prep Checklist
 
 - Evidence heatmap reviewed; gaps assigned owners.
-- Show-and-tell deck created (use summary of prep doc).
-- Service metrics dashboard ready (alpha/beta) or plan to publish (live).
-- Accessibility and security testing signed off.
-- Service manual guidance referenced for each point.
-- Assessment logistics: presenter list, dry run scheduled, Q&A roles agreed.
+- A short show-and-tell deck created (use the prep document summary).
+- Accessibility evidence ready (test reports, audit notes, WCAG mapping).
+- Security and privacy evidence ready (secure-by-design, PIA, risk register, incident readiness).
+- Measurement plan ready (KPIs, baselines, reporting cadence).
+- Dry run scheduled; presenters and Q&A roles agreed.
 
 ---
 
-## Assessment Day Tips
+## Assurance Review Tips
 
-- Keep walkthrough to 30 minutes; leave 90+ minutes for Q&A.
-- Use real artefacts (screenshots, repo links) rather than talking points.
-- Note assessor actions live and add to backlog within 24 hours.
-- Update the prep doc with outcomes (Green/Amber/Red, conditions, owners).
+- Use real artefacts (repo links, screenshots, dashboards), not talking points.
+- Keep the walkthrough short; spend most time on gaps and risk.
+- Capture actions live and add to backlog within 24 hours.
+- Re-run `/arckit.service-assessment` after fixes to demonstrate improvement.
