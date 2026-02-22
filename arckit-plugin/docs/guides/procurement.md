@@ -39,7 +39,7 @@ Receive proposals → /arckit.evaluate Score <vendor>
 |-----------------|----------------|---------|
 | Technical capability | 40% | Alignment with requirements, architecture approach |
 | Delivery approach | 20% | Plan, resourcing, tooling, risk handling |
-| Compliance & security | 20% | Standards coverage (DX Policy / DSS, Essential Eight, JSP 604, etc.) |
+| Compliance & security | 20% | Standards coverage (DX Policy / DSS where applicable, PSPF/ISM, Essential Eight uplift, privacy obligations) |
 | Commercials | 15% | Pricing transparency, TCO, payment schedule |
 | Social value / sustainability | 5% | Australian Government reporting obligations |
 
@@ -53,3 +53,4 @@ Adjust to local policy (e.g. Department of Finance / DTA commercial frameworks).
 - Run moderated scoring sessions; document consensus reasons in `comparison.md`.
 - Track mandatory gate checks (financial due diligence, security vetting) alongside evaluation.
 - Store all artefacts in `projects/<id>/vendors/` for audit and reuse.
+- Apply probity controls (conflicts, confidentiality, consistent evaluation) and keep a decision record suitable for audit and debriefs.
