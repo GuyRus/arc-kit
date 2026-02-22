@@ -29,7 +29,7 @@ Output: `projects/<id>/ARC-<id>-DOS-v1.0.md`
 
 | Section | Contents |
 |---------|----------|
-| Opportunity Summary | Brief description for BuyICT and AusTender channels |
+| Opportunity Summary | Brief description suitable for the chosen publication channel (e.g., Digital Marketplace panel and/or AusTender, as required) |
 | Background | Organisation context and current situation |
 | Problem Statement | What problem needs solving |
 | Outcomes Required | Specific, measurable outcomes expected |
@@ -69,7 +69,7 @@ Output: `projects/<id>/ARC-<id>-DOS-v1.0.md`
 |-------|----------------|-----------------|
 | Discovery | Define requirements and outcomes | `/arckit.requirements`, `/arckit.stakeholders` |
 | Preparation | Create DOS documentation | `/arckit.dos` |
-| Publication | Publish on BuyICT and AusTender channels | Manual |
+| Publication | Publish via the chosen channel | Manual |
 | Evaluation | Score supplier proposals | `/arckit.evaluate` |
 | Award | Contract negotiation | Manual |
 
@@ -87,14 +87,14 @@ Output: `projects/<id>/ARC-<id>-DOS-v1.0.md`
 
 ---
 
-## BuyICT and AusTender channels Requirements
+## Channel Constraints (If Applicable)
 
 | Requirement | Description |
 |-------------|-------------|
-| Word Limits | Opportunity summary max 100 words |
-| Evaluation | Must use BuyICT and AusTender channels scoring |
-| Questions | Max 5 assessment questions |
-| Publication | Minimum 2 weeks open |
+| Word limits | Vary by channel and approach to market; treat any word-count limits as non-negotiables once confirmed |
+| Q&A | Use a consistent Q&A process and ensure equal information to all suppliers |
+| Evaluation | Publish criteria before proposals; score consistently; keep an auditable record |
+| Timeframes | Allow enough time for supplier questions and internal approvals |
 
 ---
 

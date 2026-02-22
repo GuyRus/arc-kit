@@ -398,7 +398,7 @@ Reference: `/arckit:traceability` for traceability matrix generation and validat
 
 ## 11. Evaluation Criteria
 
-Suppliers will be evaluated according to BuyICT and AusTender channels guidelines:
+Suppliers will be evaluated according to the procurement approach and publication channel used (for example, Digital Marketplace panel processes, AusTender approach-to-market rules, or an internal agency panel):
 
 ### 11.1 Technical Capability (40%)
 
@@ -518,16 +518,16 @@ Vendors must provide:
 
 2. **Review & Refine**: Validate this document with stakeholders
 3. **Budget Approval**: Obtain budget sign-off before publishing
-4. **Publish on BuyICT and AusTender channels**:
+4. **Publish via the chosen channel** (e.g., Digital Marketplace panel process and/or AusTender approach-to-market, as required by your organisation):
    - Go to: https://www.austender.gov.au/
    - Select "Digital Outcomes and Specialists"
    - Post requirements (publicly visible)
    - Set closing date for proposals
-5. **Answer Supplier Questions**: Via BuyICT and AusTender channels platform (visible to all)
+5. **Answer supplier questions**: Use the channel’s Q&A mechanism where available (responses visible to all suppliers where appropriate for fairness)
 6. **Evaluate Proposals**: Using criteria in Section 11
 7. **Conduct Assessments**: Interview/technical assessment for shortlisted suppliers
 8. **Award Contract**: To highest-scoring supplier
-9. **Publish Award Details**: On Contracts Finder (legal requirement)
+9. **Contract award reporting / publication**: Complete any required reporting and publication steps (for example AusTender reporting where applicable)
 
 ### 14.2 For Architecture Team
 
@@ -547,12 +547,12 @@ Vendors must provide:
 
 ## 15. Resources and References
 
-### 15.1 BuyICT and AusTender channels Guidance
+### 15.1 Publication Channel Guidance (Digital Marketplace / AusTender / Agency Panel)
 
-- **BuyICT and AusTender channels**: https://www.austender.gov.au/
+- **AusTender (if applicable)**: https://www.austender.gov.au/
 - **DOS Buyers Guide**: https://www.finance.gov.au/government/procurement
 - **General Buying Guide**: https://www.finance.gov.au/government/procurement
-- **Contracts Finder**: https://www.tenders.gov.au/
+- **Tenders and contract notice publishing (if applicable)**: https://www.tenders.gov.au/
 
 ### 15.2 Project Documents
 
@@ -575,18 +575,17 @@ Vendors must provide:
 **Audit Trail**:
 - ✅ All procurement decisions must be documented and auditable
 - ✅ Evaluation scoring must be recorded with justification
-- ✅ Supplier questions and answers must be visible to all bidders
+- ✅ Supplier questions and answers must be managed fairly (equal information to all suppliers where appropriate)
 - ✅ Changes to requirements must be published to all suppliers
 
-**DTA Approval**:
-- ⚠️ New or redesigned services may require formal DTA approval
-- ⚠️ Check if spend control process applies to your organisation
-- ⚠️ Consult with digital/technology leadership before publishing
+**Approvals and governance**:
+- ⚠️ Confirm what internal approvals apply (procurement, finance/investment, security, privacy, records/IM)
+- ⚠️ If the work is a public-facing digital service, plan evidence and assurance activities early (DX Policy / DSS where applicable)
 
 **Transparency**:
-- ✅ Requirements are published publicly on BuyICT and AusTender channels
+- ✅ Requirements are issued via the chosen channel and treated consistently across all suppliers
 - ✅ Evaluation criteria must be published before receiving proposals
-- ✅ Award details must be published on Contracts Finder after completion
+- ✅ Contract award reporting and publication obligations must be met (e.g., AusTender reporting where applicable)
 
 **Fair Competition**:
 - ✅ All suppliers have equal access to information
@@ -640,7 +639,7 @@ Next Steps:
 1. Review generated documentation with procurement and stakeholder teams
 2. Add budget details if not already specified
 3. Obtain formal approval for procurement
-4. Publish on BuyICT and AusTender channels: https://www.austender.gov.au/
+4. Publish via the chosen channel (e.g., Digital Marketplace panel process and/or AusTender approach-to-market where applicable)
 5. Follow DOS buyers guide: https://www.finance.gov.au/government/procurement
 
 Related Arc-kit Commands:
@@ -649,7 +648,7 @@ Related Arc-kit Commands:
 - /arckit:dld-review - Set up DLD review process for vendor deliverables
 - /arckit:traceability - Validate requirements traceability with vendor
 
-Important: Maintain audit trail of all procurement decisions per BuyICT and AusTender channels requirements.
+Important: Maintain an audit trail of procurement decisions (probity, scoring rationale, clarifications, and approvals) consistent with your procurement policies.
 ```
 
 ## Key Principles
@@ -659,7 +658,7 @@ Important: Maintain audit trail of all procurement decisions per BuyICT and AusT
 4. **Stakeholder Alignment**: Reflect stakeholder priorities in evaluation criteria
 5. **Technology-Agnostic**: Remove all implementation details from procurement docs
 6. **Traceability**: Maintain requirement IDs (BR-xxx, FR-xxx, NFR-xxx, INT-xxx, DR-xxx) throughout
-7. **Audit-Ready**: Structure supports BuyICT and AusTender channels audit requirements
+7. **Audit-Ready**: Structure supports procurement audit and review requirements (probity + recordkeeping)
 8. **Gov.uk Aligned**: Use official terminology and link to authoritative guidance
 9. **DOS-Focused**: This is ONLY for custom development - no BuyICT cloud panels content
 

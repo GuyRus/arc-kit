@@ -9,7 +9,7 @@
 | **Document ID** | ARC-[PROJECT_ID]-DOS-v[VERSION] |
 | **Document Type** | DOS Procurement Requirements |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
-| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
+| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL:Sensitive / PROTECTED / SECRET / TOP SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
 | **Version** | [VERSION] |
 | **Created Date** | [YYYY-MM-DD] |
@@ -264,7 +264,7 @@ Reference: `/arckit.traceability` for traceability matrix generation and validat
 
 ## 11. Evaluation Criteria
 
-Suppliers will be evaluated according to BuyICT and AusTender channels guidelines:
+Suppliers will be evaluated according to the procurement approach and publication channel used (for example, Digital Marketplace panel processes, AusTender approach-to-market rules, or an internal agency panel).
 
 ### 11.1 Technical Capability (40%)
 
@@ -384,16 +384,12 @@ Vendors must provide:
 
 1. **Review & Refine**: Validate this document with stakeholders
 2. **Budget Approval**: Obtain budget sign-off before publishing
-3. **Publish on BuyICT and AusTender channels**:
-   - Go to: https://www.austender.gov.au/
-   - Select "Digital Outcomes and Specialists"
-   - Post requirements (publicly visible)
-   - Set closing date for proposals
-4. **Answer Supplier Questions**: Via BuyICT and AusTender channels platform (visible to all)
+3. **Publish via the chosen channel** (e.g., Digital Marketplace panel process and/or AusTender approach-to-market, as required by your organisation)
+4. **Answer supplier questions**: Use the channel’s Q&A mechanism where available (responses visible to all suppliers where appropriate for fairness)
 5. **Evaluate Proposals**: Using criteria in Section 11
 6. **Conduct Assessments**: Interview/technical assessment for shortlisted suppliers
 7. **Award Contract**: To highest-scoring supplier
-8. **Publish Award Details**: On Contracts Finder (legal requirement)
+8. **Contract award reporting / publication**: Complete any required reporting and publication steps (for example AusTender reporting where applicable)
 
 ### 14.2 For Architecture Team
 
@@ -413,12 +409,12 @@ Vendors must provide:
 
 ## 15. Resources and References
 
-### 15.1 BuyICT and AusTender channels Guidance
+### 15.1 Publication Channel Guidance (Digital Marketplace / AusTender / Agency Panel)
 
-- **BuyICT and AusTender channels**: https://www.austender.gov.au/
+- **AusTender**: [Link if applicable]
 - **DOS Buyers Guide**: https://www.finance.gov.au/government/procurement
 - **General Buying Guide**: https://www.finance.gov.au/government/procurement
-- **Contracts Finder**: https://www.tenders.gov.au/
+- **Tenders and contract notice publishing (if applicable)**: https://www.tenders.gov.au/
 
 ### 15.2 Project Documents
 
@@ -444,15 +440,14 @@ Vendors must provide:
 - Supplier questions and answers must be visible to all bidders
 - Changes to requirements must be published to all suppliers
 
-**DTA Approval**:
-- New or redesigned services may require formal DTA approval
-- Check if spend control process applies to your organisation
-- Consult with digital/technology leadership before publishing
+**Approvals and governance**:
+- Confirm what internal approvals apply (procurement, finance/investment, security, privacy, records/IM)
+- If the work is a public-facing digital service, plan evidence and assurance activities early (DX Policy / DSS where applicable)
 
 **Transparency**:
-- Requirements are published publicly on BuyICT and AusTender channels
+- Requirements are published/issued via the chosen channel and treated consistently across all suppliers
 - Evaluation criteria must be published before receiving proposals
-- Award details must be published on Contracts Finder after completion
+- Contract award reporting and publication obligations must be met (for example AusTender reporting where applicable)
 
 **Fair Competition**:
 - All suppliers have equal access to information
