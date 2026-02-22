@@ -568,19 +568,17 @@ Generate an AI transparency statement suitable for public publication:
 - monitoring and protections
 - policy/legislation compliance summary and review controls
 
-**For MOD Projects**:
+**For Defence Projects (AU)**:
 
-**`/arckit.mod-secure`** → MOD Secure by Design assessment
+**`/arckit.mod-secure`** → Defence Secure by Design assessment (AU)
 
-MOD-specific security compliance:
-- JSP 440 (Defence Project & Programme Management)
-- Information Assurance Maturity Model (IAMM)
-- MOD Security clearances and vetting
-- STRAP classification handling
-- Security Operating Procedures (SyOPs)
-- Supplier attestation requirements
+Defence Secure by Design assessment (evidence-based, with `SOURCE_GAP` notes where Defence baseline policy is required):
+- classification handling and data protection expectations
+- secure engineering and supply chain assurance
+- monitoring, incident response, and resilience readiness
+- assurance gates and residual risk acceptance
 
-**`/arckit.jsp-936`** → [MOD JSP 936](https://www.gov.uk/government/publications/jsp-936-dependable-artificial-intelligence-ai-in-defence-part-1-directive) AI Assurance Documentation
+**`/arckit.jsp-936`** → AU Defence AI assurance pathway (public-source baseline)
 
 For defence projects using AI/ML systems:
 - JSP 936 (Dependable Artificial Intelligence in Defence)
@@ -866,12 +864,12 @@ These commands use [Model Context Protocol (MCP)](https://modelcontextprotocol.i
 | `/arckit.ai-playbook` | AU AI governance assessment pack for responsible AI | — | 🟠 Alpha |
 | `/arckit.aits` | AU AI Transparency Statement (AITS) suitable for publication | — | 🟠 Alpha |
 
-### UK MOD
+### Defence (AU)
 
 | Command | Description | Examples | Status |
 |---------|-------------|----------|--------|
-| `/arckit.mod-secure` | Generate a MOD Secure by Design assessment for UK Ministry of Defence projects using CAAT and continuous assurance | [v3/001](https://tractorjuice.github.io/arckit-test-project-v3-windows11/#projects/001-windows-11-migration-intune/ARC-001-SECD-MOD-v1.0.md) [v3/006](https://tractorjuice.github.io/arckit-test-project-v3-windows11/#projects/006-large-format-printer/ARC-006-SECD-MOD-v1.0.md) | 🟣 Experimental |
-| `/arckit.jsp-936` | Generate [MOD JSP 936](https://www.gov.uk/government/publications/jsp-936-dependable-artificial-intelligence-ai-in-defence-part-1-directive) AI assurance documentation for defence AI/ML systems | — | 🟣 Experimental |
+| `/arckit.mod-secure` | Generate a Defence Secure by Design assessment for Australian Defence contexts | — | 🟣 Experimental |
+| `/arckit.jsp-936` | Generate AU Defence AI assurance pathway documentation (public-source baseline) | — | 🟣 Experimental |
 
 ### Documentation & Publishing
 

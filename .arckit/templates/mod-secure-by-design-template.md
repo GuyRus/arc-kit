@@ -1,4 +1,4 @@
-# Defence Secure by Design Assessment
+# Defence Secure by Design Assessment (AU)
 
 > **Template Status**: Experimental | **Version**: [VERSION] | **Command**: `/arckit.mod-secure`
 
@@ -6,10 +6,10 @@
 
 | Field | Value |
 |-------|-------|
-| **Document ID** | ARC-[PROJECT_ID]-SECD-DEF-v[VERSION] |
+| **Document ID** | ARC-[PROJECT_ID]-SECD-MOD-v[VERSION] |
 | **Document Type** | [DOCUMENT_TYPE_NAME] |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
-| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
+| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL:Sensitive / PROTECTED / SECRET / TOP SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
 | **Version** | [VERSION] |
 | **Created Date** | [YYYY-MM-DD] |
@@ -25,7 +25,7 @@
 
 | Version | Date | Author | Changes | Approved By | Approval Date |
 |---------|------|--------|---------|-------------|---------------|
-| [VERSION] | [DATE] | ArcKit AI | Initial creation from `/arckit.[COMMAND]` command | [PENDING] | [PENDING] |
+| [VERSION] | [DATE] | ArcKit AI | Initial creation from `/arckit.mod-secure` | [PENDING] | [PENDING] |
 
 ## Document Purpose
 
@@ -52,7 +52,7 @@
 
 ### 1.1 Information Classification
 
-**Highest Data Classification**: [OFFICIAL / OFFICIAL-SENSITIVE / SECRET / TOP SECRET]
+**Highest Data Classification**: [PUBLIC / OFFICIAL / OFFICIAL:Sensitive / PROTECTED / SECRET / TOP SECRET]
 
 **Classification Justification**:
 [Explain why this classification level is required]
@@ -70,7 +70,7 @@
 
 | Data Type | Classification | Volume | Storage Location | Access Controls |
 |-----------|---------------|---------|------------------|-----------------|
-| [e.g., Personnel records] | OFFICIAL-SENSITIVE | [High/Med/Low] | [Location] | [RBAC/MFA/etc] |
+| [e.g., Personnel records] | OFFICIAL:Sensitive | [High/Med/Low] | [Location] | [RBAC/MFA/etc] |
 | [e.g., Operational plans] | SECRET | [High/Med/Low] | [Location] | [RBAC/MFA/etc] |
 
 **Gaps/Actions**:
@@ -179,7 +179,7 @@
 
 **Accreditation Progress**:
 - [ ] Business Impact Assessment (BIA) completed
-- [ ] Risk Management and Accreditation Documentation Set (RMADS) initiated
+- [ ] Security accreditation / ATO evidence pack initiated (Defence process, as applicable)
 - [ ] Security Aspects Letter (SAL) issued
 - [ ] Accreditation Service engaged
 - [ ] Risk assessment completed
@@ -701,7 +701,7 @@
 
 **Document Control**:
 - **Version**: 1.0
-- **Classification**: [OFFICIAL / OFFICIAL-SENSITIVE]
+- **Classification**: [OFFICIAL / OFFICIAL:Sensitive / PROTECTED / SECRET / TOP SECRET]
 - **Last Reviewed**: [Date]
 - **Next Review**: [Date - recommend quarterly]
 - **Document Owner**: [Name/Role]

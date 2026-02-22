@@ -58,9 +58,9 @@ These commands require [MCP servers](https://modelcontextprotocol.io/) for autho
 ### Legacy UK Procurement
 - [Digital Marketplace](guides/uk-government/digital-marketplace.md) - `/arckit.gcloud-search`, `/arckit.gcloud-clarify`, `/arckit.dos`
 
-### UK MOD (Ministry of Defence)
-- [MOD Secure by Design](guides/uk-mod/secure-by-design.md) - `/arckit.mod-secure` ⭐ NEW
-- [JSP 936 AI Assurance](guides/jsp-936.md) - `/arckit.jsp-936` ⭐ NEW
+### Defence (AU)
+- [Defence Secure by Design](guides/mod-secure.md) - `/arckit.mod-secure` ⭐ NEW
+- [Defence AI Assurance Pathway](guides/jsp-936.md) - `/arckit.jsp-936` ⭐ NEW
 
 ### DevOps & Operations
 - [Operationalize](guides/operationalize.md) - `/arckit.operationalize` ⭐ NEW - SRE operational readiness
@@ -152,7 +152,7 @@ These commands require [MCP servers](https://modelcontextprotocol.io/) for autho
 | `/arckit.ai-playbook` | [ai-playbook.md](guides/ai-playbook.md) | ✅ Complete |
 | `/arckit.aits` | [aits.md](guides/aits.md) | ✅ Complete |
 | `/arckit.secure` | [secure.md](guides/secure.md) | ✅ Complete |
-| `/arckit.mod-secure` | [secure-by-design.md](guides/uk-mod/secure-by-design.md) | ✅ Complete |
+| `/arckit.mod-secure` | [mod-secure.md](guides/mod-secure.md) | ✅ Complete |
 | `/arckit.jsp-936` | [jsp-936.md](guides/jsp-936.md) | ✅ Complete |
 | `/arckit.story` | [story.md](guides/story.md) | ✅ Complete |
 | `/arckit.operationalize` | [operationalize.md](guides/operationalize.md) | ✅ Complete |
