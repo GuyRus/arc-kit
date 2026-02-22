@@ -188,24 +188,15 @@ Create a comprehensive Architecture Strategy document that synthesises insights 
 
 ### 5. Australian Government Specifics
 
-If the user indicates this is a Australian Government project, include:
+ArcKit is AU-first. In Australian Government contexts, include:
 
-- **Financial Year Notation**: Use "FY 2024/25", "FY 2025/26" format
-- **Spending Review Alignment**: Reference SR periods
-- **Digital Service Standard**: Reference Discovery/Alpha/Beta/Live phases
-- **DX Policy / DSS (Digital Experience Policy)**: Reference 13 points
-- **ASD ACSC CAF**: Security maturity progression
-- **Cross-Government Services**: Australia.gov.au Pay, Notify, Design System
-- **BuyICT cloud panels/specialist sourcing**: Procurement alignment
-
-### 6. MOD Specifics
-
-If this is a Ministry of Defence project, include:
-
-- **JSP 440**: Defence project management alignment
-- **Security Clearances**: BPSS, SC, DV requirements
-- **IAMM**: Security maturity progression
-- **AU defence AI assurance pathway**: AI assurance (if applicable)
+- **Financial year notation**: Use "FY 2024-25", "FY 2025-26" (1 July to 30 June)
+- **Digital delivery lifecycle**: Use DTA Agile Delivery phases (Discovery → Alpha → Beta → Live) where applicable
+- **Digital Experience Policy / DSS**: DSS criteria evidence plan and how evidence is maintained on material change (DSS has 10 criteria)
+- **Security**: PSPF + ASD ISM alignment; Essential Eight maturity uplift (as applicable); IRAP readiness where required by policy/risk
+- **Privacy**: Privacy Act 1988 (APPs) governance; PIAs as decision gates for high-impact changes
+- **Procurement**: Commonwealth Procurement Rules (CPRs) and BuyICT/AusTender alignment where relevant
+- **Administrative law and transparency**: recordkeeping/FOI expectations; decision explainability and review pathways where the system affects individuals
 
 ### 7. Mermaid Diagram Requirements
 
@@ -299,7 +290,7 @@ After writing the file, show a concise summary (NOT the full document):
 
 ### Strategy Overview
 - **Strategic Horizon**: FY [START_YEAR] - FY [END_YEAR] ([N] years)
-- **Total Investment**: £[AMOUNT] ([% CAPEX] / [% OPEX])
+- **Total Investment**: A$[AMOUNT] ([% CAPEX] / [% OPEX])
 - **Expected ROI**: [%]% by FY [YEAR]
 - **Risk Appetite**: [LOW / MEDIUM / HIGH]
 
@@ -309,10 +300,10 @@ After writing the file, show a concise summary (NOT the full document):
 - **Vendor Strategy**: [Single / Multi / Platform]
 
 ### Strategic Themes
-1. **[Theme 1]**: £[INVESTMENT] - [Brief description]
-2. **[Theme 2]**: £[INVESTMENT] - [Brief description]
-3. **[Theme 3]**: £[INVESTMENT] - [Brief description]
-4. **[Theme 4]**: £[INVESTMENT] - [Brief description]
+1. **[Theme 1]**: A$[INVESTMENT] - [Brief description]
+2. **[Theme 2]**: A$[INVESTMENT] - [Brief description]
+3. **[Theme 3]**: A$[INVESTMENT] - [Brief description]
+4. **[Theme 4]**: A$[INVESTMENT] - [Brief description]
 
 ### Strategic Outcomes
 1. [Measurable outcome 1]
@@ -336,7 +327,7 @@ After writing the file, show a concise summary (NOT the full document):
 
 ### Next Steps
 1. Review strategy with Strategy Board / Architecture Review Board
-2. Validate investment with Finance / Spending Review
+2. Validate investment and benefits with Finance / investment governance
 3. Confirm strategic direction with Executive Sponsor
 4. Create detailed requirements: `/arckit:requirements`
 5. Expand roadmap: `/arckit:roadmap`
@@ -373,4 +364,4 @@ After writing the file, show a concise summary (NOT the full document):
 
 9. **Version Management**: If a strategy already exists (ARC-*-STRAT-v*.md), create a new version (v2.0) rather than overwriting. Strategies should be versioned to track evolution.
 
-10. **Financial Years**: For Australian Government, use "FY 2024/25" notation (April-March). For US/other contexts, use appropriate fiscal year notation.
+10. **Financial Years**: For Australian Government, use "FY 2024-25" notation (1 July to 30 June). For non-AU contexts, use an appropriate fiscal year notation.

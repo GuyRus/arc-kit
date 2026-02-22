@@ -9,7 +9,7 @@
 | **Document ID** | ARC-[PROJECT_ID]-STRAT-v[VERSION] |
 | **Document Type** | Architecture Strategy |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
-| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
+| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL:Sensitive / PROTECTED / SECRET / TOP SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
 | **Version** | [VERSION] |
 | **Created Date** | [YYYY-MM-DD] |
@@ -43,7 +43,7 @@
 |--------|---------|
 | **Business Challenge** | [Primary challenge being addressed] |
 | **Strategic Opportunity** | [Opportunity this strategy captures] |
-| **Investment Horizon** | [N] years, £[AMOUNT] total investment |
+| **Investment Horizon** | [N] years, A$[AMOUNT] total investment |
 | **Expected ROI** | [ROI_PERCENTAGE]% by FY [YEAR] |
 | **Risk Appetite** | [LOW / MEDIUM / HIGH] |
 
@@ -151,6 +151,31 @@ The following architecture principles guide all strategic and design decisions:
 
 ---
 
+## Policy, Assurance, and Decision Context (Australia)
+
+Keep this section concise and decision-oriented. It should explain which governance obligations shape the architecture and how they will be evidenced over time.
+
+### Applicable policy and assurance anchors
+
+| Domain | AU anchor | What this means for the strategy |
+|--------|----------|-----------------------------------|
+| Digital delivery | Digital Experience Policy and Digital Service Standard (DSS) | DSS evidence is planned, owned, and maintained across material changes (especially for public-facing services). |
+| Security | PSPF + ASD ISM; Essential Eight (as applicable) | Security baseline and uplift plan are embedded into roadmap phases and gated by assurance where required (e.g., IRAP readiness for cloud-hosted services). |
+| Privacy | Privacy Act 1988 + APPs; PIAs where required | Personal information handling is minimised, justified, and governed; PIAs are treated as decision gates for high-impact changes. |
+| Procurement | Commonwealth Procurement Rules (CPRs); BuyICT/AusTender where relevant | Build/buy and sourcing decisions are traceable, contestable, and supported by evidence and approvals. |
+| Administrative law and transparency | FOI and recordkeeping expectations; administrative decision quality | Where the initiative affects decisions about individuals, the strategy includes transparency, reviewability, auditability, and clear accountability. |
+| AI (if applicable) | DTA Responsible AI / AI Technical Standard; agency AI assurance | If AI is in scope, adopt an explicit governance model (impact assessment, transparency statement, monitoring, and human oversight). |
+
+### Evidence pack and follow-on artefacts
+
+| Need | ArcKit artefact | Output |
+|------|------------------|--------|
+| Security and assurance evidence | `/arckit.secure` | `ARC-*-SECD-*.md` |
+| Privacy impact assessment | `/arckit.pia` | `ARC-*-PIA-*.md` |
+| AI governance (if AI is in scope) | `/arckit.ai-playbook` | AI governance artefacts (as configured) |
+
+---
+
 ## Current State Assessment
 
 ### Technology Landscape
@@ -179,7 +204,7 @@ The following architecture principles guide all strategic and design decisions:
 
 ### Technical Debt Summary
 
-- **Total Technical Debt**: £[AMOUNT] or [N] person-months
+- **Total Technical Debt**: A$[AMOUNT] or [N] person-months
 - **High Priority Items**: [Count]
 - **Impact on Delivery**: [Description of how debt affects velocity]
 
@@ -305,7 +330,7 @@ graph TB
 
 **Strategic Objective**: [What business value does this theme deliver?]
 
-**Investment**: £[AMOUNT] over [N] years ([%]% of total)
+**Investment**: A$[AMOUNT] over [N] years ([%]% of total)
 
 **Key Initiatives**:
 1. [Initiative 1.1]: [Description]
@@ -325,7 +350,7 @@ graph TB
 
 **Strategic Objective**: [What business value does this theme deliver?]
 
-**Investment**: £[AMOUNT] over [N] years ([%]% of total)
+**Investment**: A$[AMOUNT] over [N] years ([%]% of total)
 
 **Key Initiatives**:
 1. [Initiative 2.1]: [Description]
@@ -345,7 +370,7 @@ graph TB
 
 **Strategic Objective**: [What business value does this theme deliver?]
 
-**Investment**: £[AMOUNT] over [N] years ([%]% of total)
+**Investment**: A$[AMOUNT] over [N] years ([%]% of total)
 
 **Key Initiatives**:
 1. [Initiative 3.1]: [Description]
@@ -365,7 +390,7 @@ graph TB
 
 **Strategic Objective**: [What business value does this theme deliver?]
 
-**Investment**: £[AMOUNT] over [N] years ([%]% of total)
+**Investment**: A$[AMOUNT] over [N] years ([%]% of total)
 
 **Key Initiatives**:
 1. [Initiative 4.1]: [Description]
@@ -417,9 +442,9 @@ gantt
 
 | Phase | Timeline | Focus | Investment | Key Deliverables |
 |-------|----------|-------|------------|------------------|
-| Foundation | FY [YEAR] Q[N]-Q[N] | Establish baseline, strategy | £[AMOUNT] | Principles, governance, assessment |
-| Transformation | FY [YEAR]-FY [YEAR] | Deliver strategic themes | £[AMOUNT] | Themes 1-4 capabilities |
-| Optimisation | FY [YEAR] Q[N]-Q[N] | Realise benefits, optimise | £[AMOUNT] | KPIs met, continuous improvement |
+| Foundation | FY [YEAR] Q[N]-Q[N] | Establish baseline, strategy | A$[AMOUNT] | Principles, governance, assessment |
+| Transformation | FY [YEAR]-FY [YEAR] | Deliver strategic themes | A$[AMOUNT] | Themes 1-4 capabilities |
+| Optimisation | FY [YEAR] Q[N]-Q[N] | Realise benefits, optimise | A$[AMOUNT] | KPIs met, continuous improvement |
 
 ### Key Milestones
 
@@ -441,13 +466,13 @@ gantt
 
 | Category | Amount | % of Total |
 |----------|--------|------------|
-| **Capital Expenditure (CAPEX)** | £[AMOUNT] | [%]% |
-| **Operational Expenditure (OPEX)** | £[AMOUNT] | [%]% |
-| **Total Investment** | **£[AMOUNT]** | **100%** |
+| **Capital Expenditure (CAPEX)** | A$[AMOUNT] | [%]% |
+| **Operational Expenditure (OPEX)** | A$[AMOUNT] | [%]% |
+| **Total Investment** | **A$[AMOUNT]** | **100%** |
 
 ### Investment by Financial Year
 
-| Financial Year | CAPEX (£) | OPEX (£) | Total (£) | % of Budget |
+| Financial Year | CAPEX (A$) | OPEX (A$) | Total (A$) | % of Budget |
 |----------------|-----------|----------|-----------|-------------|
 | FY [YEAR] | [AMOUNT] | [AMOUNT] | [AMOUNT] | [%]% |
 | FY [YEAR+1] | [AMOUNT] | [AMOUNT] | [AMOUNT] | [%]% |
@@ -457,7 +482,7 @@ gantt
 
 ### Investment by Theme
 
-| Theme | Investment (£) | % of Total | Expected Benefit |
+| Theme | Investment (A$) | % of Total | Expected Benefit |
 |-------|----------------|------------|------------------|
 | Theme 1: [Name] | [AMOUNT] | [%]% | [Benefit summary] |
 | Theme 2: [Name] | [AMOUNT] | [%]% | [Benefit summary] |
@@ -468,7 +493,7 @@ gantt
 
 | Metric | Value |
 |--------|-------|
-| **Net Present Value (NPV)** | £[AMOUNT] |
+| **Net Present Value (NPV)** | A$[AMOUNT] |
 | **Internal Rate of Return (IRR)** | [%]% |
 | **Payback Period** | [N] years |
 | **Benefit-Cost Ratio** | [N]:1 |
@@ -477,9 +502,9 @@ gantt
 
 | Benefit Category | FY [YEAR] | FY [YEAR+1] | FY [YEAR+2] | FY [YEAR+3] | Total |
 |------------------|-----------|-------------|-------------|-------------|-------|
-| Cost Savings | £[AMOUNT] | £[AMOUNT] | £[AMOUNT] | £[AMOUNT] | £[TOTAL] |
-| Cost Avoidance | £[AMOUNT] | £[AMOUNT] | £[AMOUNT] | £[AMOUNT] | £[TOTAL] |
-| Revenue Enablement | £[AMOUNT] | £[AMOUNT] | £[AMOUNT] | £[AMOUNT] | £[TOTAL] |
+| Cost Savings | A$[AMOUNT] | A$[AMOUNT] | A$[AMOUNT] | A$[AMOUNT] | A$[TOTAL] |
+| Cost Avoidance | A$[AMOUNT] | A$[AMOUNT] | A$[AMOUNT] | A$[AMOUNT] | A$[TOTAL] |
+| Revenue Enablement | A$[AMOUNT] | A$[AMOUNT] | A$[AMOUNT] | A$[AMOUNT] | A$[TOTAL] |
 | Productivity Gains | [%]% | [%]% | [%]% | [%]% | [AVG]% |
 
 ---
@@ -527,7 +552,7 @@ gantt
 4. [Assumption 4, e.g., "Executive sponsorship will be maintained"]
 
 **Constraints**:
-1. [Constraint 1, e.g., "Budget capped at £[AMOUNT]"]
+1. [Constraint 1, e.g., "Budget capped at A$[AMOUNT]"]
 2. [Constraint 2, e.g., "Must achieve [milestone] by [DATE] for compliance"]
 3. [Constraint 3, e.g., "Cannot disrupt [critical system] during [period]"]
 

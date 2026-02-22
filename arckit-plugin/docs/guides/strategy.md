@@ -93,11 +93,11 @@ The strategy command sits at a synthesis point in the ArcKit workflow:
 
 ```bash
 # Ensure prerequisites exist
-/arckit.principles Create principles for myGov/health digital servicesointment Booking
-/arckit.stakeholders Analyze stakeholders for myGov/health digital servicesointment Booking
+/arckit.principles Create principles for National Health Appointment Booking
+/arckit.stakeholders Analyze stakeholders for National Health Appointment Booking
 
 # Create strategy
-/arckit.strategy Create architecture strategy for myGov/health digital servicesointment Booking
+/arckit.strategy Create architecture strategy for National Health Appointment Booking
 ```
 
 ### Comprehensive (All strategic artifacts)
@@ -163,11 +163,13 @@ After creating the strategy, typical next steps include:
 
 For Australian Government projects, the strategy will include:
 
-- **Financial year notation**: FY 2024/25, FY 2025/26
-- **Digital Service Standard**: Discovery/Alpha/Beta/Live phases
-- **DX Policy / DSS alignment**: Digital Experience Policy references
-- **Spending Review**: SR period alignment
-- **BuyICT cloud panels/specialist sourcing**: Procurement route references
+- **Financial year notation**: FY 2024-25, FY 2025-26 (1 July to 30 June)
+- **Digital delivery lifecycle**: DTA Agile Delivery phases (Discovery → Alpha → Beta → Live) where applicable
+- **Digital Experience Policy / DSS**: DSS criteria evidence plan and how evidence is maintained on material change (DSS has 10 criteria)
+- **Security**: PSPF + ASD ISM alignment; Essential Eight uplift (as applicable); IRAP readiness where required
+- **Privacy**: Privacy Act 1988 (APPs) governance; PIAs as decision gates for high-impact changes
+- **Procurement**: Commonwealth Procurement Rules (CPRs) and BuyICT/AusTender alignment where relevant
+- **Administrative law and transparency**: recordkeeping/FOI expectations; decision explainability and review pathways where the system affects individuals
 
 ---
 
@@ -180,9 +182,9 @@ For Australian Government projects, the strategy will include:
 **Document ID**: ARC-007-STRAT-v1.0
 
 ### Strategy Overview
-- **Strategic Horizon**: FY 2024/25 - FY 2027/28 (4 years)
-- **Total Investment**: £12.5M (65% CAPEX / 35% OPEX)
-- **Expected ROI**: 185% by FY 2027/28
+- **Strategic Horizon**: FY 2024-25 - FY 2027-28 (4 years)
+- **Total Investment**: A$12.5M (65% CAPEX / 35% OPEX)
+- **Expected ROI**: 185% by FY 2027-28
 - **Risk Appetite**: MEDIUM
 
 ### Key Strategic Decisions
@@ -191,10 +193,10 @@ For Australian Government projects, the strategy will include:
 - **Vendor Strategy**: Multi-vendor with strategic partners
 
 ### Strategic Themes
-1. **Digital Services Platform**: £5.2M - Modernise citizen-facing services
-2. **Data & Analytics**: £3.1M - Enable data-driven case management
-3. **Integration & Interoperability**: £2.4M - Connect justice system components
-4. **Security & Compliance**: £1.8M - Achieve MOJ security standards
+1. **Digital Services Platform**: A$5.2M - Modernise citizen-facing services
+2. **Data & Analytics**: A$3.1M - Enable data-driven case management
+3. **Integration & Interoperability**: A$2.4M - Connect justice system components
+4. **Security & Compliance**: A$1.8M - PSPF/ISM alignment and Essential Eight uplift
 
 ### Synthesised From
 - ✅ Architecture Principles: ARC-000-PRIN-v1.0.md
