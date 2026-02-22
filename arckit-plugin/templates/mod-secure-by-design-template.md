@@ -173,22 +173,21 @@
 
 ### 3.1 Security Accreditation Status
 
-**Accreditation Authority**: [Defence security policy baseline (agency-specific) / ASD ACSC / Defence Digital]
+**Accreditation / Authorisation Authority**: [Agency / Group / Role]
 
-**Accreditation Type**: [Full Accreditation / Interim Accreditation / Risk Managed Accreditation]
+**Accreditation / Authorisation Type**: [Full / Interim / Risk-managed / Other]
 
 **Accreditation Progress**:
 - [ ] Business Impact Assessment (BIA) completed
 - [ ] Security accreditation / ATO evidence pack initiated (Defence process, as applicable)
-- [ ] Security Aspects Letter (SAL) issued
-- [ ] Accreditation Service engaged
+- [ ] Security scope and assurance boundary agreed
 - [ ] Risk assessment completed
 - [ ] Security controls documented
-- [ ] Residual risks accepted by IAO/IAA
-- [ ] Accreditation granted
+- [ ] Residual risks accepted by the appropriate authority
+- [ ] Authorisation granted (or decision recorded)
 
-**Information Assurance Owner (IAO)**: [Name/Role]
-**Information Assurance Architect (IAA)**: [Name/Role]
+**Security Risk Owner / Authoriser**: [Name/Role]
+**Security Architect / Advisor**: [Name/Role]
 
 **Target Accreditation Date**: [Date]
 
@@ -198,11 +197,11 @@
 
 ### 3.2 Defence security policy baseline (agency-specific) Compliance
 
-**Defence security policy baseline (agency-specific)**: Defence Information Assurance Maturity Model (IAMM)
+**Defence security policy baseline (agency-specific)**: `SOURCE_GAP` [Insert authoritative Defence policy baseline reference name/version]
 
-**IAMM Level Target**: [Level 0-5]
+**Security maturity model used (if applicable)**: [Name / N/A]
 
-**IAMM Assessment**:
+**Maturity / readiness assessment** (only if your organisation uses one; otherwise mark N/A):
 
 | Domain | Current Level | Target Level | Gap |
 |--------|---------------|--------------|-----|
@@ -250,7 +249,7 @@
 
 ### 4.2 Security Risk Assessment
 
-**Risk Assessment Method**: [HMG Information Assurance Standard No. 1 & 2 / ISO 27005 / Other]
+**Risk Assessment Method**: [Agency risk framework / ISO 27005 / NIST 800-30 / Other]
 
 **Risk Register Maintained**: [Yes / No]
 
@@ -273,7 +272,7 @@
 
 ### 5.1 Cryptography
 
-**Cryptographic Standards**: [CESG / ASD ACSC approved algorithms]
+**Cryptographic Standards**: [Agency-approved / ASD-aligned guidance]
 
 **Encryption Implementation**:
 - [ ] Data at rest encrypted (AES-256 minimum)
@@ -281,7 +280,6 @@
 - [ ] Database encryption enabled
 - [ ] Backup encryption enabled
 - [ ] Key management system implemented
-- [ ] CESG-approved cryptography used for classified data
 - [ ] Crypto key lifecycle managed
 
 **Key Management**:
@@ -295,14 +293,14 @@
 
 ### 5.2 Authentication and Identity
 
-**Authentication Method**: [Smart card / Biometric / MFA / SSO]
+**Authentication Method**: [Smart credential (if required) / Biometric / MFA / SSO]
 
 **Identity Provider**: [Defence identity directory / Azure AD / Other]
 
 **Authentication Controls**:
 - [ ] Multi-factor authentication (MFA) enforced
 - [ ] Password complexity requirements (12+ chars, complexity)
-- [ ] Smart card (CAC/PIV) authentication for classified systems
+- [ ] Smart credential authentication implemented where required by classification/handling rules
 - [ ] Session timeout configured
 - [ ] Account lockout after failed attempts
 - [ ] Single Sign-On (SSO) where appropriate

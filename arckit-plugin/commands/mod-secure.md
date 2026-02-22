@@ -86,6 +86,12 @@ Using the template, assess the system and produce:
 - a control-area assessment with evidence, findings, and actions
 - an explicit list of assumptions and `SOURCE_GAP` items that must be confirmed by Defence policy owners
 
+**Useful organising lenses** (use where they add clarity; do not pretend they are mandated unless evidenced):
+
+- **Secure by Design principles**: establish context, security from the start, defence in depth, secure patterns, continuous risk management, supply chain security, through-life assurance.
+- **NIST Cybersecurity Framework (optional)**: Identify / Protect / Detect / Respond / Recover as a way to check completeness.
+- **Three Lines of Defence (optional)**: delivery ownership, assurance/oversight, independent review/audit.
+
 At minimum, cover:
 
 - governance, risk ownership, and assurance gates (including who can accept residual risk)
@@ -95,6 +101,13 @@ At minimum, cover:
 - monitoring, logging, detection, and incident response (including operational constraints)
 - resilience and recovery (backup, restore, DR exercises)
 - environment separation and secure configuration/patching expectations
+
+**Recommended deep dives** (expected for Beta/Live or higher-classification systems):
+
+- vulnerability scanning and patch management (coverage, SLAs, exception process)
+- third-party and supply chain risk (supplier access, attestations/assurance reports where provided, OSS controls)
+- backup/restore/DR readiness (RTO/RPO, restore tests)
+- secure SDLC and build integrity (SAST/DAST/SCA, secrets scanning, signing/provenance where appropriate)
 
 ### 6. Versioning And Output Location
 
@@ -117,4 +130,3 @@ DOC_ID=$(.arckit/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "SECD-MOD"
 ```
 
 Populate all document control fields (including AU-style classification).
-

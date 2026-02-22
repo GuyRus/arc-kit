@@ -47,6 +47,27 @@ Output: `projects/<id>/ARC-<id>-SECD-MOD-vX.Y.md`
 
 ---
 
+## Useful Organising Lenses
+
+These are optional structures used to check completeness and make reviews easier. They are not claimed as mandatory unless evidenced in your artefacts:
+
+- Secure by Design principles (context, security-from-start, defence in depth, secure patterns, continuous risk management, supply chain, through-life assurance)
+- NIST Cybersecurity Framework (Identify/Protect/Detect/Respond/Recover)
+- Three Lines of Defence (delivery ownership, assurance/oversight, independent review)
+
+---
+
+## Recommended Deep-Dive Sections
+
+For Beta/Live (and most higher-classification systems), expect deeper coverage of:
+
+- vulnerability scanning and patch management (coverage, SLAs, exception process)
+- third-party and supply chain risk (supplier access, assurance reports/attestations if provided, OSS controls)
+- backup/restore/DR readiness (RTO/RPO, restore tests)
+- secure SDLC and build integrity (SAST/DAST/SCA, secrets scanning, signing/provenance where appropriate)
+
+---
+
 ## Security Classification (AU)
 
 Use AU classification styles (example): `OFFICIAL:Sensitive`.
@@ -59,4 +80,3 @@ Common options used in templates:
 - PROTECTED
 - SECRET
 - TOP SECRET
-
