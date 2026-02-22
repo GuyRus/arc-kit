@@ -55,8 +55,8 @@ Output: `projects/<id>/ARC-<id>-TCOP-v1.0.md`
 | 9 | Integrate and adapt technology | Legacy integration |
 | 10 | Make better use of data | Data-driven decisions |
 | 11 | Define your purchasing strategy | Procurement approach |
-| 12 | Meet the Service Standard | Digital Service Standard alignment |
-| 13 | Spend controls | Comply with spending requirements |
+| 12 | Make your technology sustainable | Sustainability and long-term operations |
+| 13 | Meet the Service Standard | Digital Service Standard alignment |
 
 ---
 
@@ -98,15 +98,13 @@ Output: `projects/<id>/ARC-<id>-TCOP-v1.0.md`
 
 ---
 
-## Spend Control Thresholds
+## Spend And Assurance Thresholds
 
-| Threshold | Review Required |
-|-----------|-----------------|
-| <£100k | Departmental only |
-| £100k-£5m | CDDO case-by-case |
-| >£5m | CDDO mandatory |
+Thresholds and assurance requirements vary by agency and procurement pathway. Use this output as an evidence pack and confirm:
 
-*Note: Thresholds may vary by department*
+- applicable Commonwealth Procurement Rules (CPRs) and internal approval gates
+- any DTA/digital investment assurance requirements (where applicable)
+- decision records for major technology choices and procurement strategy
 
 ---
 

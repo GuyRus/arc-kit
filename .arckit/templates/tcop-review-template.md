@@ -9,7 +9,7 @@
 | **Document ID** | ARC-[PROJECT_ID]-TCOP-v[VERSION] |
 | **Document Type** | [DOCUMENT_TYPE_NAME] |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
-| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
+| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL:Sensitive / PROTECTED / SECRET / TOP SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
 | **Version** | [VERSION] |
 | **Created Date** | [YYYY-MM-DD] |
@@ -202,7 +202,7 @@
 - [ ] Data classification completed
 - [ ] Encryption at rest and in transit
 
-**Data Sensitivity**: [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET]
+**Data Sensitivity**: [PUBLIC / OFFICIAL / OFFICIAL:Sensitive / PROTECTED / SECRET / TOP SECRET]
 
 **Gaps/Actions Required**:
 - [Action 1]
