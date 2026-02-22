@@ -48,6 +48,19 @@ This assessment summarises the system’s security posture and readiness for del
 
 **Overall Security Posture**: [Strong / Adequate / Needs Improvement / Inadequate]
 
+**Control Area Scorecard**:
+
+| Control Area | Status | Notes |
+|---|---|---|
+| Governance, risk, assurance | [✅/⚠️/❌/N/A] | [Notes] |
+| Identity, access, privilege | [✅/⚠️/❌/N/A] | [Notes] |
+| Data protection and privacy | [✅/⚠️/❌/N/A] | [Notes] |
+| Platform/network/endpoint | [✅/⚠️/❌/N/A] | [Notes] |
+| Secure engineering/supply chain | [✅/⚠️/❌/N/A] | [Notes] |
+| Logging/monitoring/detection | [✅/⚠️/❌/N/A] | [Notes] |
+| Incident response/resilience | [✅/⚠️/❌/N/A] | [Notes] |
+| Cloud shared responsibility | [✅/⚠️/❌/N/A] | [Notes] |
+
 **Essential Eight (ASD) Maturity**:
 
 - **Current**: [0 / 1 / 2 / 3 / Unknown]
@@ -159,6 +172,14 @@ Assess the system against:
 | ADRs | `projects/[PROJECT]/decisions/ADR-*.md` | Decision rationale, trade-offs, risk acceptance |
 | External security reports | `projects/[PROJECT]/external/*` | Vulnerability findings, pen test results, audit evidence |
 
+### 3.1 Evidence Quality Rubric (How To Judge Strength)
+
+Use this rubric to avoid “paper compliance”:
+
+- **Strong evidence**: implemented control + measurable telemetry + operational process + test results (e.g., config baselines, CI checks, scan results, runbooks, drills).
+- **Medium evidence**: implemented control + partial telemetry/process (e.g., logging configured but no alert runbooks or no retention tested).
+- **Weak evidence**: intention statements only (e.g., “we will do MFA later”) without designs, decisions, or delivery backlog actions.
+
 ---
 
 ## 4. Secure By Design Assessment (Control Areas)
@@ -185,6 +206,21 @@ Assess the system against:
 **Actions**:
 - [Action] (Owner: [Role], Due: [YYYY-MM-DD])
 
+**Minimum evidence to cite (examples)**:
+
+- risk register entries that cover security and privacy risks (and owners)
+- a security decision/approval pathway (who can accept residual risk)
+- assurance plan / gates (design review, pen test, IRAP readiness if required)
+- supplier assurance requirements (contractual clauses, attestations, assurance reports)
+
+**Checklist (examples)**:
+
+- [ ] Security decision rights and escalation are documented (incl. residual risk acceptance)
+- [ ] Security risks are tracked with treatments and review cadence
+- [ ] Assurance gates exist and are scheduled (and not left to the end)
+- [ ] Third-party assurance requirements exist (and are verified)
+- [ ] Exceptions/waivers process exists and is auditable
+
 ### 4.2 Identity, Access, And Privilege Management
 
 **Status**: [✅/⚠️/❌/N/A]
@@ -204,6 +240,21 @@ Assess the system against:
 
 **Actions**:
 - [Action] (Owner: [Role], Due: [YYYY-MM-DD])
+
+**Minimum evidence to cite (examples)**:
+
+- identity provider integration and MFA enforcement scope
+- privileged admin model (PAM/JIT/break-glass) and audit trail
+- access review process and deprovisioning SLAs
+- secrets management approach (vault/KMS, rotation, separation of duties)
+
+**Checklist (examples)**:
+
+- [ ] MFA enforced for all interactive users (scope stated, exceptions justified)
+- [ ] Privileged access is time-bound and logged (break-glass tested)
+- [ ] Service accounts are minimised, scoped, and rotated
+- [ ] Access reviews are scheduled and evidenced
+- [ ] AuthN/AuthZ decisions are recorded (ADR or equivalent)
 
 ### 4.3 Data Protection And Privacy
 
@@ -226,6 +277,22 @@ Assess the system against:
 **Actions**:
 - [Action] (Owner: [Role], Due: [YYYY-MM-DD])
 
+**Minimum evidence to cite (examples)**:
+
+- data classification decisions and handling requirements
+- encryption approach (at rest/in transit) and key management model
+- data sharing agreements and disclosure controls (where applicable)
+- retention/disposal implementation evidence (not just policy)
+- PIA findings and mitigations linked to delivery actions
+
+**Checklist (examples)**:
+
+- [ ] Data classification and handling rules are documented and implemented
+- [ ] Encryption is used appropriately and keys are protected/rotated
+- [ ] Data minimisation is applied (collection, fields, retention, access)
+- [ ] Data sharing/disclosure is governed (purpose, controls, logging)
+- [ ] NDB process is defined and exercised (roles, triage, comms)
+
 ### 4.4 Platform, Network, And Endpoint Security
 
 **Status**: [✅/⚠️/❌/N/A]
@@ -245,6 +312,21 @@ Assess the system against:
 
 **Actions**:
 - [Action] (Owner: [Role], Due: [YYYY-MM-DD])
+
+**Minimum evidence to cite (examples)**:
+
+- hardened baselines and configuration-as-code (where applicable)
+- patching and vulnerability management metrics and SLAs
+- network segmentation and boundary controls (including egress)
+- environment separation and production access controls
+
+**Checklist (examples)**:
+
+- [ ] Secure baselines exist for OS/container/K8s/endpoints (and are enforced)
+- [ ] Vulnerability scanning is scheduled and coverage is known
+- [ ] Patch SLAs exist and are measured (exceptions tracked)
+- [ ] Network boundaries, egress, and segmentation are documented and implemented
+- [ ] Production access is controlled, logged, and reviewed
 
 ### 4.5 Secure Engineering And Supply Chain
 
@@ -266,6 +348,21 @@ Assess the system against:
 **Actions**:
 - [Action] (Owner: [Role], Due: [YYYY-MM-DD])
 
+**Minimum evidence to cite (examples)**:
+
+- secure SDLC practices and security requirements in stories/acceptance criteria
+- CI/CD controls (SAST/DAST/SCA, secrets scanning, IaC scanning)
+- dependency management (pinning, provenance, SBOM where appropriate)
+- supplier security expectations and verification evidence
+
+**Checklist (examples)**:
+
+- [ ] Security requirements are included in delivery artefacts (REQ/backlog/ADRs)
+- [ ] CI/CD includes automated security checks with defined “fail the build” rules
+- [ ] Secrets scanning prevents credential leakage
+- [ ] Dependency and container/image scanning is implemented and acted on
+- [ ] SBOM/provenance approach is defined for higher-risk systems
+
 ### 4.6 Logging, Monitoring, And Detection
 
 **Status**: [✅/⚠️/❌/N/A]
@@ -286,6 +383,21 @@ Assess the system against:
 **Actions**:
 - [Action] (Owner: [Role], Due: [YYYY-MM-DD])
 
+**Minimum evidence to cite (examples)**:
+
+- logging design (what is logged, where, retention, access controls)
+- detection and alerting rules with on-call/triage process
+- monitoring coverage across identity/network/platform/app layers
+- test evidence: alert drills, log integrity checks, incident simulations
+
+**Checklist (examples)**:
+
+- [ ] Security-relevant events are logged (auth, admin, data access, changes)
+- [ ] Logs are protected from tampering and have defined retention
+- [ ] Alerts are actionable (owners, runbooks, SLOs)
+- [ ] Vulnerability scanning and pen tests are scheduled and tracked
+- [ ] Monitoring is validated (test alerts, game-days, tabletop exercises)
+
 ### 4.7 Incident Response And Resilience
 
 **Status**: [✅/⚠️/❌/N/A]
@@ -305,6 +417,20 @@ Assess the system against:
 
 **Actions**:
 - [Action] (Owner: [Role], Due: [YYYY-MM-DD])
+
+**Minimum evidence to cite (examples)**:
+
+- incident response plan and playbooks (incl. escalation and communications)
+- backup and restore evidence (frequency, encryption, restore tests)
+- recovery objectives (RTO/RPO) and DR test outcomes
+- post-incident review process and improvement backlog
+
+**Checklist (examples)**:
+
+- [ ] Incident playbooks exist for likely scenarios and are exercised
+- [ ] Backups are encrypted, protected (including from ransomware), and restore-tested
+- [ ] RTO/RPO are defined and validated via exercises
+- [ ] Evidence retention supports investigations and NDB decision-making
 
 ### 4.8 Cloud Security And Shared Responsibility (If Applicable)
 
@@ -327,6 +453,128 @@ Assess the system against:
 
 **Actions**:
 - [Action] (Owner: [Role], Due: [YYYY-MM-DD])
+
+**Minimum evidence to cite (examples)**:
+
+- shared responsibility model for cloud services and suppliers
+- cloud IAM guardrails, network guardrails, encryption defaults, logging defaults
+- tenancy isolation approach and environment separation
+- IRAP expectations and readiness plan (where required)
+
+**Checklist (examples)**:
+
+- [ ] Cloud identity is least-privileged and integrated with enterprise identity
+- [ ] Guardrails exist for networking, IAM, encryption, logging, and tagging
+- [ ] Tenant/environment isolation is defined and tested
+- [ ] IRAP readiness is planned early (if required) and tracked
+
+### 4.9 Vulnerability And Patch Management (Recommended Detail)
+
+**Status**: [✅/⚠️/❌/N/A]
+
+**Vulnerability scanning frequency**: [Daily / Weekly / Monthly]
+
+**Coverage**: [What is scanned and what is excluded]
+
+**Vulnerability management process**:
+
+- [ ] prioritisation approach exists (severity + exploitability + exposure)
+- [ ] remediation SLAs exist (and are measurable)
+- [ ] exceptions process exists for unfixable/accepted risks
+- [ ] metrics and reporting exist (trend, backlog, time-to-remediate)
+
+**Patch management process**:
+
+- [ ] patch assessment and testing approach exists
+- [ ] deployment cadence exists for different asset classes
+- [ ] emergency patching process exists
+- [ ] patch compliance is measured and reported
+- [ ] rollback procedures exist
+
+**Gaps/Actions**:
+- [Action]
+
+### 4.10 Third-Party And Supply Chain Risk (Recommended Detail)
+
+**Status**: [✅/⚠️/❌/N/A]
+
+**Key third parties**:
+
+| Vendor | Service | Data Access | Risk Level | Key Controls / Evidence |
+|---|---|---|---|---|
+| [Vendor] | [Service] | [None/Read/Write/Admin] | [L/M/H] | [Evidence] |
+
+**Supplier assurance**:
+
+- [ ] security requirements exist in contracts and SOWs
+- [ ] subcontractors are identified and governed
+- [ ] supplier access is controlled and logged
+- [ ] incident notification and cooperation requirements are defined
+
+**Open source software (OSS)**:
+
+- [ ] dependency inventory maintained (SBOM where appropriate)
+- [ ] vulnerability scanning in CI/CD
+- [ ] license compliance checks (where required)
+- [ ] upgrade/patching plan exists for critical dependencies
+
+**Gaps/Actions**:
+- [Action]
+
+### 4.11 Backup, Restore, And Disaster Recovery (Recommended Detail)
+
+**Status**: [✅/⚠️/❌/N/A]
+
+**Backup method**: [Snapshots / Replication / 3-2-1 / Other]
+
+**Backup controls**:
+
+- [ ] backups are automated and monitored
+- [ ] backups are encrypted and access-controlled
+- [ ] backups are protected against ransomware (immutability / separation)
+- [ ] restore tests are performed and evidenced
+
+**RTO**: [X hours]  
+**RPO**: [X hours]
+
+**Last restore test**: [YYYY-MM-DD]  
+**Last DR exercise**: [YYYY-MM-DD]
+
+**Gaps/Actions**:
+- [Action]
+
+### 4.12 Secure SDLC And DevSecOps (Recommended Detail)
+
+**Status**: [✅/⚠️/❌/N/A]
+
+**Secure SDLC controls**:
+
+- [ ] security requirements in stories/acceptance criteria
+- [ ] threat modelling performed for key flows/trust boundaries
+- [ ] code review includes security considerations
+- [ ] SAST implemented
+- [ ] DAST implemented (where applicable)
+- [ ] SCA (dependency scanning) implemented
+- [ ] secrets scanning implemented
+- [ ] IaC scanning implemented (where applicable)
+
+**Build integrity**:
+
+- [ ] build artefacts are immutable and traceable
+- [ ] signing and provenance approach exists (where appropriate)
+
+**Gaps/Actions**:
+- [Action]
+
+### 4.13 Overall Assessment Summary (Optional)
+
+**Strengths**:
+- [Strength]
+
+**Critical gaps / blockers**:
+- [Gap]
+
+**Overall risk rating**: [Low / Medium / High / Very High]
 
 ---
 

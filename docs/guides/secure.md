@@ -51,6 +51,17 @@ The assessment is structured around AU-aligned control areas:
 
 ---
 
+## Recommended Deep-Dive Sections
+
+For most services (especially anything internet-facing, sensitive data, or with critical availability needs), expect the output to include more detailed subsections for:
+
+- vulnerability scanning and patch management (coverage, SLAs, exception process, trend metrics)
+- third-party and supply chain risk (supplier access, contractual controls, OSS/dependency controls)
+- backup/restore/DR readiness (RTO/RPO, restore tests, ransomware resilience)
+- secure SDLC and DevSecOps controls (threat modelling, SAST/DAST/SCA, secrets scanning, IaC scanning, build provenance)
+
+---
+
 ## Essential Eight Mitigation Strategies
 
 The output includes a maturity table for all eight strategies:
@@ -88,4 +99,3 @@ Common options used in templates:
 - PROTECTED
 - SECRET
 - TOP SECRET
-

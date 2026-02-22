@@ -104,6 +104,13 @@ Assess the system across these control areas using the template, and for each ar
 - Incident response and resilience (playbooks, backups, recovery objectives, exercises)
 - Cloud security and shared responsibility (if applicable), including IRAP readiness where required
 
+**Recommended deep dives** (include when applicable; expected for Beta/Live for internet-facing or sensitive systems):
+
+- vulnerability and patch management (coverage, SLAs, exception process, trend metrics)
+- third-party and supply chain risk (supplier access, contractual controls, OSS/dependency controls)
+- backup/restore/DR readiness (RTO/RPO, restore tests, ransomware resilience)
+- secure SDLC and DevSecOps controls (threat modelling, SAST/DAST/SCA, secrets scanning, IaC scanning, build provenance)
+
 ### 6. Essential Eight Maturity Assessment
 
 Include an Essential Eight table (all 8 strategies) with:
@@ -147,4 +154,3 @@ DOC_ID=$(.arckit/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "SECD" "${
 ```
 
 Populate all document control fields, including classification (AU style, default `OFFICIAL` unless the project context indicates otherwise).
-
