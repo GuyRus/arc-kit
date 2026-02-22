@@ -1,528 +1,271 @@
-# Data Source Discovery: [PROJECT_NAME]
+# Data Source Discovery (DataScout): [PROJECT_NAME]
 
-> **Template Status**: Alpha | **Version**: [VERSION] | **Command**: `/arckit.datascout`
+> **Template status**: Alpha | **Version**: [VERSION] | **Command**: `/arckit.datascout`
+
+This document records the discovery and evaluation of external data sources (APIs, datasets, registries, and commercial providers) that may fulfil the project’s data and integration requirements.
+
+It is written to support Australian Government and Australian enterprise contexts. It includes privacy and data-sharing considerations so decisions are evidence-based and traceable.
 
 ## Document Control
 
 | Field | Value |
 |-------|-------|
 | **Document ID** | ARC-[PROJECT_ID]-DSCT-v[VERSION] |
-| **Document Type** | Data Source Discovery |
+| **Document type** | Data Source Discovery |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
-| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
-| **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
+| **Classification** | [OFFICIAL / OFFICIAL:Sensitive / PROTECTED / SECRET / TOP SECRET] |
+| **Status** | [DRAFT / IN_REVIEW / APPROVED / SUPERSEDED / ARCHIVED] |
 | **Version** | [VERSION] |
-| **Created Date** | [YYYY-MM-DD] |
-| **Last Modified** | [YYYY-MM-DD] |
-| **Review Cycle** | [Monthly / Quarterly / Annual / On-Demand] |
-| **Next Review Date** | [YYYY-MM-DD] |
+| **Created date** | [YYYY-MM-DD] |
+| **Last modified** | [YYYY-MM-DD] |
 | **Owner** | [OWNER_NAME_AND_ROLE] |
-| **Reviewed By** | [REVIEWER_NAME] ([YYYY-MM-DD]) or PENDING |
-| **Approved By** | [APPROVER_NAME] ([YYYY-MM-DD]) or PENDING |
+| **Reviewed by** | [REVIEWER_NAME] ([YYYY-MM-DD]) or PENDING |
+| **Approved by** | [APPROVER_NAME] ([YYYY-MM-DD]) or PENDING |
 | **Distribution** | [DISTRIBUTION_LIST] |
 
 ## Revision History
 
-| Version | Date | Author | Changes | Approved By | Approval Date |
+| Version | Date | Author | Changes | Approved by | Approval date |
 |---------|------|--------|---------|-------------|---------------|
-| [VERSION] | [DATE] | ArcKit AI | Initial creation from `/arckit.datascout` agent | PENDING | PENDING |
+| [VERSION] | [DATE] | ArcKit AI | Initial creation from `/arckit.datascout` | PENDING | PENDING |
 
 ---
 
 ## Executive Summary
 
-### Data Needs Overview
+### Scope
+- **Discovery scope**: [Open data / Government APIs / Commercial APIs / Research datasets / Mixed]
+- **In-scope requirements**: [List key DR/INT/FR IDs]
+- **Out of scope**: [List exclusions]
 
-This document presents data source discovery findings for the **[PROJECT_NAME]** project, identifying external APIs, datasets, and data portals that can fulfil the data and integration requirements documented in `ARC-{PROJECT_ID}-REQ-v*.md`.
+### Recommendation Snapshot
 
-**Requirements Analyzed**: [X] data requirements (DR-xxx), [Y] functional requirements (FR-xxx), [Z] integration requirements (INT-xxx), [W] non-functional requirements (NFR-xxx)
+| Rank | Source | Type | Coverage (DR/INT) | Key constraints | Overall score |
+|------|--------|------|-------------------|----------------|--------------|
+| 1 | [Source name] | [API/Dataset] | [DR-xxx, INT-xxx] | [Residency/licence/cost] | [0-100] |
+| 2 | [Source name] | [API/Dataset] | [DR-xxx, INT-xxx] | [Constraints] | [0-100] |
+| 3 | [Source name] | [API/Dataset] | [DR-xxx, INT-xxx] | [Constraints] | [0-100] |
 
-**Data Source Categories Identified**: [N] categories based on requirement analysis
+### Coverage
+- **Requirements covered**: [N]/[M] ([%])
+- **Key gaps**: [Short list]
 
-**Discovery Approach**: [Australian Government open data, commercial API research, free/freemium API discovery, WebSearch-powered market research]
+### Privacy and Data-Sharing Flags
+- **Personal information involved**: [YES/NO/UNKNOWN]
+- **Sensitive information involved (Privacy Act s 6(1))**: [YES/NO/UNKNOWN]
+- **Cross-border disclosure/access likely (APP 8)**: [YES/NO/UNKNOWN]
+- **Data matching / linkage involved**: [YES/NO/UNKNOWN]
 
-### Key Findings
-
-[3-5 bullet points summarizing the most important findings]
-
-- **[Category]**: [Source] — [Key reason for recommendation]
-- **[Category]**: [Source] — [Key reason for recommendation]
-- **[Category]**: [Source] — [Key reason for recommendation]
-
-### Data Source Summary
-
-| Source Type | Count | Cost Range | Key Providers |
-|-------------|-------|------------|---------------|
-| **Australian Government Open Data** | [X] | Free (OGL) | [List] |
-| **Commercial APIs** | [Y] | £[X]-£[Y]/year | [List] |
-| **Free/Freemium APIs** | [Z] | Free (rate-limited) | [List] |
-| **Open Source Datasets** | [W] | Free | [List] |
-| **TOTAL** | [Total] | £[LOW]-£[HIGH]/year | |
-
-### Top Recommended Sources
-
-**Shortlist for integration**:
-
-1. **[Source 1]** for [Category]: [Key strengths, score /100]
-2. **[Source 2]** for [Category]: [Key strengths, score /100]
-3. **[Source 3]** for [Category]: [Key strengths, score /100]
-4. **[Source 4]** for [Category]: [Key strengths, score /100]
-5. **[Source 5]** for [Category]: [Key strengths, score /100]
-
-### Requirements Coverage
-
-- ✅ **[X] requirements ([Y%])** fully matched to external data sources
-- ⚠️ **[Z] requirements ([W%])** partially matched (quality or coverage concerns)
-- ❌ **[A] requirements ([B%])** no suitable external source found (gaps)
+If any of the above are **YES**, create or update a PIA (`/arckit.pia`) and ensure relevant governance review.
 
 ---
 
-## Data Needs Analysis
+## 1. Inputs and Constraints
 
-> **Note**: Data needs are extracted from requirements, categorised by type, with criticality and volume/freshness expectations.
+### 1.1 Inputs
 
-### Extracted Data Needs
+| Input | Status | Notes |
+|------|--------|------|
+| Requirements (`ARC-*-REQ-*.md`) | MANDATORY | Extract DR/INT/NFR constraints |
+| Data model (`ARC-*-DATA-*.md`) | RECOMMENDED | Identify entities/attributes to populate |
+| Stakeholders (`ARC-*-STKE-*.md`) | RECOMMENDED | Identify intended users and quality needs |
+| Architecture principles (`ARC-000-PRIN-*.md`) | RECOMMENDED | Apply sourcing and compliance constraints |
+| Existing catalogues / contracts | OPTIONAL | Reuse known sources where appropriate |
 
-| # | Requirement ID | Data Need | Type | Criticality | Volume | Freshness | Source Category |
-|---|----------------|-----------|------|-------------|--------|-----------|-----------------|
-| 1 | DR-001 | [Description] | Data | MUST | [Estimate] | [Real-time/Daily/Weekly] | [Category] |
-| 2 | DR-002 | [Description] | Data | SHOULD | [Estimate] | [Daily/Monthly] | [Category] |
-| 3 | FR-xxx | [Description] | Functional | MUST | [Estimate] | [Frequency] | [Category] |
-| 4 | INT-xxx | [Description] | Integration | MUST | [Estimate] | [Frequency] | [Category] |
-| 5 | NFR-xxx | [Description] | Non-Functional | MUST | — | — | [Constraint] |
+### 1.2 Constraints to Apply
 
-### Data Needs by Category
-
-**Category 1: [CATEGORY_NAME]**
-- Requirements: [DR-001, FR-015, INT-003]
-- Data fields needed: [List specific fields]
-- Volume: [Records/day, queries/second]
-- Freshness: [Real-time, hourly, daily, monthly]
-- Quality threshold: [Accuracy %, completeness %]
-
-**Category 2: [CATEGORY_NAME]**
-- [Repeat structure]
+| Constraint | Value | Source |
+|-----------|-------|--------|
+| Data residency | [AU-only / Any / Restricted by provider] | [NFR / policy] |
+| Update frequency | [Realtime/daily/weekly/monthly] | [DR/NFR] |
+| Latency | [e.g., p95 < 200ms] | [NFR] |
+| Budget | [$/month] | [Business case] |
+| Allowed licences | [e.g., CC BY / CC BY-SA / bespoke] | [Policy] |
+| Security classification | [OFFICIAL / OFFICIAL:Sensitive / ...] | [PSPF/ISM] |
+| Downstream disclosures | [Internal-only / external] | [Architecture] |
 
 ---
 
-## Data Source Discovery
+## 2. Data Needs (Extracted From Requirements)
 
-> **Note**: Categories are dynamically identified from project requirements, not a fixed list.
+Create a concise inventory of external data needs.
 
----
-
-## Category 1: [CATEGORY_NAME]
-
-**Requirements Addressed**: [DR-001, FR-015, INT-003]
-
-**Why This Category**: [Explain what data is needed and why, based on requirements]
-
-**Data Fields Needed**: [Specific fields: name, type, format]
+| Need ID | Requirement IDs | Data needed | Minimum fields | Freshness | Volume | Notes |
+|--------|------------------|------------|----------------|----------|--------|------|
+| NEED-001 | [DR-xxx, INT-xxx] | [Description] | [Fields] | [SLA] | [Volume] | [Notes] |
 
 ---
 
-### Source 1A: [SOURCE_NAME] (Open Data)
+## 3. Discovery Approach and Sources Checked
 
-**Provider**: [Organisation, department, URL]
+### 3.1 Mandatory starting points (AU)
+Record what was searched and when:
+- `api.gov.au` (Australian Government API directory)
+- `data.gov.au` (Australian open data catalogue)
 
-**Description**: [What data is provided, scope, coverage]
+### 3.2 Other common AU sources (as applicable)
+Document which of these were relevant and searched:
+- Australian Bureau of Statistics (ABS)
+- Bureau of Meteorology (BoM)
+- Geoscience Australia
+- Australian Institute of Health and Welfare (AIHW)
+- State/territory open data portals and sector registries
 
-**Key Details**:
-
-| Attribute | Value |
-|-----------|-------|
-| **License** | [Open Government Licence v3.0 / Creative Commons / Proprietary] |
-| **Pricing** | [Free / Freemium / £X per Y] |
-| **Format** | [JSON / CSV / XML / GeoJSON / SPARQL] |
-| **API Endpoint** | [Base URL or download link] |
-| **Authentication** | [None / API Key / OAuth 2.0] |
-| **Rate Limits** | [X requests/minute, Y requests/day] |
-| **Update Frequency** | [Real-time / Hourly / Daily / Monthly / Quarterly / Annual] |
-| **Coverage** | [Geographic: Australia-wide / England only / etc.] |
-| **Temporal Coverage** | [From YYYY to present] |
-| **Data Quality** | [Completeness %, known issues] |
-| **Documentation** | [URL, quality: Excellent/Good/Fair/Poor] |
-| **SLA** | [Uptime guarantee, response time] |
-| **GDPR Status** | [No personal data / Anonymised / Contains PII] |
-| **Australian Data Residency** | [Yes / No / N/A] |
-
-**Requirements Fit**:
-- ✅ Covers: [Which data fields match requirements]
-- ❌ Missing: [Which data fields are not available]
-- ⚠️ Partial: [Which data fields have quality/coverage issues]
-
-**Integration Approach**:
-- **Pattern**: [REST API call / Bulk download + ETL / Event stream / Cache + refresh]
-- **Estimated Effort**: [X person-days]
-- **Dependencies**: [API key registration, data agreement, etc.]
-
-**Evaluation Score**:
-
-| Criterion | Weight | Score | Weighted |
-|-----------|--------|-------|----------|
-| Requirements Fit | 25% | [/10] | [/25] |
-| Data Quality | 20% | [/10] | [/20] |
-| License & Cost | 15% | [/10] | [/15] |
-| API Quality | 15% | [/10] | [/15] |
-| Compliance | 15% | [/10] | [/15] |
-| Reliability | 10% | [/10] | [/10] |
-| **Total** | **100%** | | **[/100]** |
+### 3.3 Commercial and other sources
+Record commercial providers and industry sources searched:
+- [Provider]
+- [Provider]
 
 ---
 
-### Source 1B: [ANOTHER_SOURCE] (Commercial)
+## 4. Evaluation Framework
 
-[Repeat structure for each source in this category]
+### 4.1 Scoring weights
 
----
+| Criterion | Weight | What it measures |
+|-----------|--------|------------------|
+| Requirements fit | 25% | Field coverage, geographic scope, granularity, freshness |
+| Data quality | 20% | Accuracy, completeness, timeliness, bias/representativeness |
+| Licence and cost | 15% | Licence permissions, attribution, restrictions, sustainability |
+| API/data delivery quality | 15% | Documentation, stability, versioning, auth, formats |
+| Privacy and governance | 15% | Privacy Act/APP alignment, sharing authority, data matching considerations |
+| Reliability and support | 10% | Uptime/SLA, support model, vendor maturity |
 
-### Source 1C: [ANOTHER_SOURCE] (Free API)
+### 4.2 Minimum due diligence checklist
 
-[Repeat structure for each source in this category]
-
----
-
-### Comparison Table: [CATEGORY_NAME]
-
-| Criterion | [Source A] | [Source B] | [Source C] |
-|-----------|-----------|-----------|-----------|
-| **Provider** | [Name] | [Name] | [Name] |
-| **License** | [OGL] | [Commercial] | [Free tier] |
-| **Cost (Annual)** | [£0] | [£X] | [£0 / £Y over limit] |
-| **Coverage** | [Australia-wide] | [Global] | [Australia-wide] |
-| **Freshness** | [Daily] | [Real-time] | [Hourly] |
-| **API Quality** | [Good] | [Excellent] | [Fair] |
-| **Requirements Fit** | [/25] | [/25] | [/25] |
-| **Data Quality** | [/20] | [/20] | [/20] |
-| **License & Cost** | [/15] | [/15] | [/15] |
-| **API Quality** | [/15] | [/15] | [/15] |
-| **Compliance** | [/15] | [/15] | [/15] |
-| **Reliability** | [/10] | [/10] | [/10] |
-| **TOTAL SCORE** | **[/100]** | **[/100]** | **[/100]** |
-
-**Recommendation for [CATEGORY]**: [Source name] — [2-3 sentence rationale]
+| Check | Pass/Fail/NA | Evidence |
+|------|--------------|----------|
+| Licence/terms permit intended use (including downstream sharing) | [ ] | [Link/quote] |
+| Data custodian/owner identified | [ ] | [Owner] |
+| Security classification acceptable for storage/handling | [ ] | [Classification] |
+| Personal information present? If YES, PIA required | [ ] | [Assessment] |
+| Cross-border access/disclosure? If YES, APP 8 assessment required | [ ] | [Assessment] |
+| Data matching/linkage? If YES, data matching governance required | [ ] | [Assessment] |
+| Quality checks available (metadata, lineage, update logs) | [ ] | [Evidence] |
+| Change management/versioning documented | [ ] | [Evidence] |
 
 ---
 
-## Category 2: [ANOTHER_CATEGORY]
+## 5. Candidate Sources (Evaluation Cards)
 
-[Repeat entire category structure for each data source category identified from requirements]
+Create one evaluation card per candidate. Keep the facts evidence-based.
 
----
+### 5.1 [SOURCE NAME]
 
-## Evaluation Matrix
+**Overview**
+- **Provider/custodian**: [Name]
+- **Type**: [API / Dataset / Registry / Feed]
+- **Access method**: [REST / GraphQL / Bulk download / SFTP / Other]
+- **URL(s)**: [Link]
+- **Auth model**: [API key/OAuth/mTLS/None]
+- **Rate limits**: [If known]
+- **Update frequency**: [e.g., daily]
 
-### Overall Scoring Summary
+**Coverage**
+- **Mapped requirements**: [DR-xxx, INT-xxx]
+- **Field coverage**: [List]
+- **Geographic/temporal scope**: [Scope]
 
-| Category | Recommended Source | Type | Score | Annual Cost | Integration Effort |
-|----------|-------------------|------|-------|-------------|-------------------|
-| [Category 1] | [Source name] | [Open/Commercial/Free] | [/100] | [£X] | [Y days] |
-| [Category 2] | [Source name] | [Open/Commercial/Free] | [/100] | [£X] | [Y days] |
-| [Category 3] | [Source name] | [Open/Commercial/Free] | [/100] | [£X] | [Y days] |
-| **TOTAL** | | | **Avg: [/100]** | **£[TOTAL]/year** | **[TOTAL] days** |
+**Quality and risk notes**
+- **Known data quality characteristics**: [Notes]
+- **Representativeness/bias considerations (if used for analytics/AI)**: [Notes]
 
-### Evaluation Criteria Explained
+**Licence and cost**
+- **Licence/terms**: [e.g., CC BY 4.0 / bespoke / unknown]
+- **Attribution requirements**: [Yes/no]
+- **Cost model**: [Free / subscription / per-call]
 
-| Criterion | Weight | What It Measures |
-|-----------|--------|-----------------|
-| **Requirements Fit** | 25% | Does the source cover the required data fields, scope, granularity, and volume? |
-| **Data Quality** | 20% | Accuracy, completeness, consistency, timeliness, and known quality issues |
-| **License & Cost** | 15% | License terms (OGL, CC, proprietary), pricing sustainability, total cost |
-| **API Quality** | 15% | REST/GraphQL, documentation quality, SDKs, versioning, error handling, pagination |
-| **Compliance** | 15% | GDPR, Australian data residency, data classification, terms of use, DPA 2018 |
-| **Reliability** | 10% | SLA, uptime history, vendor stability, community/support, track record |
+**Privacy and governance**
+- **Personal information present**: [YES/NO/UNKNOWN]
+- **Sensitive information present**: [YES/NO/UNKNOWN]
+- **Cross-border disclosure/access**: [YES/NO/UNKNOWN]
+- **Sharing/matching concerns**: [Notes]
+- **PIA required**: [YES/NO]
 
----
+**Security and operations**
+- **Classification**: [OFFICIAL / OFFICIAL:Sensitive / ...]
+- **Storage/handling constraints**: [Notes]
+- **Reliability/SLA**: [If known]
 
-## Data Integration Architecture
+**Integration notes**
+- **Integration pattern**: [Batch ETL / streaming / API sync]
+- **Data model impact**: [New entities/attributes]
 
-### Integration Patterns by Source
+**Score**
 
-| Source | Pattern | Auth | Caching | Error Handling | Monitoring |
-|--------|---------|------|---------|----------------|------------|
-| [Source 1] | [REST API / Bulk ETL / Event stream] | [API Key / OAuth] | [TTL: Xh / None] | [Retry 3x / Circuit breaker] | [Health check / Alert] |
-| [Source 2] | [Pattern] | [Auth] | [Cache] | [Error] | [Monitor] |
+| Criterion | Score (0-5) | Notes |
+|----------|-------------|------|
+| Requirements fit | [ ] | |
+| Data quality | [ ] | |
+| Licence and cost | [ ] | |
+| API/data delivery quality | [ ] | |
+| Privacy and governance | [ ] | |
+| Reliability and support | [ ] | |
 
-### Recommended Integration Architecture
-
-```
-[Brief description of integration approach]
-
-- Data ingestion layer (API gateway, ETL pipeline)
-- Caching strategy (Redis, CDN, application cache)
-- Fallback strategy (stale cache, degraded mode, alternative source)
-- Monitoring (API health, data freshness, quality metrics)
-```
-
-### Authentication and Access
-
-| Source | Auth Method | Credentials Required | Registration Process | Lead Time |
-|--------|-----------|---------------------|---------------------|-----------|
-| [Source] | [API Key] | [Free registration] | [Self-service portal] | [Instant / 1 day / 1 week] |
-
-### Rate Limits and Capacity Planning
-
-| Source | Rate Limit | Projected Usage | Headroom | Upgrade Option |
-|--------|-----------|----------------|----------|---------------|
-| [Source] | [X req/min] | [Y req/min] | [Z%] | [Paid tier: £X/month] |
+**Weighted total**: [0-100]
 
 ---
 
-## Data Utility Analysis
+## 6. Comparison Matrices
 
-> **Note**: Most data sources have alternative and secondary uses beyond their primary requirement. Identifying these latent uses increases the strategic value of data investments.
+Provide one comparison table per need/category.
 
-### Utility by Source
-
-| Source | Primary Use (Requirement) | Secondary Uses | Strategic Value | Combination Opportunities |
-|--------|--------------------------|----------------|-----------------|--------------------------|
-| [Source 1] | [DR-001]: [Primary use] | 1. [Secondary use 1] 2. [Secondary use 2] | [HIGH / MEDIUM / LOW] | [Combines with X to enable Y] |
-| [Source 2] | [DR-002]: [Primary use] | 1. [Secondary use 1] | [MEDIUM] | [Standalone] |
-
-### Common Secondary Use Patterns Identified
-
-| Pattern | Source | Primary Use | Secondary Use | Value |
-|---------|--------|-------------|---------------|-------|
-| **Proxy Indicator** | [Source] | [Direct measurement] | [Proxy for something not directly measurable] | [Description] |
-| **Cross-Domain Enrichment** | [Source] | [Domain A insight] | [Enriches Domain B analysis] | [Description] |
-| **Trend Detection** | [Source] | [Current state monitoring] | [Reveals patterns/anomalies over time] | [Description] |
-| **Predictive Feature** | [Source] | [Descriptive reporting] | [Input feature for predictive models] | [Description] |
-
-### Data Combination Opportunities
-
-[Identify where combining two or more sources unlocks insights that neither provides alone]
-
-1. **[Combination Name]**: [Source A] + [Source B] → [Insight/capability enabled]
-   - Example: Transport flow data + property listings → predict neighbourhood desirability trends
-2. **[Combination Name]**: [Source C] + [Source D] → [Insight/capability enabled]
+| Source | Fit | Quality | Licence/Cost | Delivery | Privacy/Gov | Reliability | Total |
+|--------|-----|---------|--------------|----------|------------|------------|-------|
+| [A] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| [B] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
 
 ---
 
-## Gap Analysis
+## 7. Gap Analysis
 
-### Requirements Without Suitable Data Sources
-
-**GAP-1**: [Requirement ID] — [Requirement description]
-- **Data Need**: [What data is missing]
-- **Why No Source**: [No public API, data is proprietary, coverage insufficient, quality too low]
-- **Impact**: [What cannot be delivered, affected features/capabilities]
-- **Severity**: [CRITICAL / HIGH / MEDIUM / LOW]
-- **Recommended Action**: [Build internal data collection / Negotiate data sharing / Commission bespoke data / Defer requirement / Use proxy data]
-- **Estimated Effort**: [Person-days/weeks to resolve]
-- **Cost Estimate**: [£X if applicable]
-
-**GAP-2**: [Another gap]
-
-[Repeat for each gap]
-
-### Gap Summary
-
-| Gap | Requirement | Severity | Recommended Action | Effort | Cost |
-|-----|-------------|----------|-------------------|--------|------|
-| GAP-1 | [ID] | [CRITICAL] | [Action] | [X days] | [£Y] |
-| GAP-2 | [ID] | [HIGH] | [Action] | [X days] | [£Y] |
+| Requirement / Need | Gap | Impact | Options | Recommendation |
+|-------------------|-----|--------|--------|----------------|
+| [DR-xxx] | [No suitable source] | [Impact] | [Collect internally / negotiate sharing / proxy] | [Recommendation] |
 
 ---
 
-## Recommendations & Shortlist
+## 8. Data Utility Analysis (Beyond Primary Requirements)
 
-### Top 3-5 Recommended Sources
+For each recommended source, capture additional value (and risks):
+- Secondary uses (analytics, operations, service improvement)
+- Monitoring/observability uses
+- AI/ML uses (only if policy and governance permit)
 
-#### 1. [SOURCE_NAME] for [Category]
-
-**Overall Score**: [X/100]
-
-**Rationale**: [2-3 sentences explaining why this is recommended]
-
-**Key Strengths**:
-- ✅ [Strength 1]
-- ✅ [Strength 2]
-- ✅ [Strength 3]
-
-**Key Concerns**:
-- ⚠️ [Concern 1, if any]
-- ⚠️ [Concern 2, if any]
-
-**Cost**: [Free / £X/year]
-**Integration Effort**: [X person-days]
-**Risk Level**: [LOW / MEDIUM / HIGH]
-
-**Next Steps**:
-- [ ] Register for API access
-- [ ] Conduct integration POC ([X] days)
-- [ ] Validate data quality against requirements
-- [ ] Review terms of use / data sharing agreement
-
-#### 2. [ANOTHER_SOURCE]
-
-[Repeat structure]
-
-#### 3. [ANOTHER_SOURCE]
-
-[Repeat structure]
+| Source | Primary use | Secondary uses | New risks introduced |
+|--------|-------------|----------------|----------------------|
+| [Source] | [Use] | [Use] | [Risks] |
 
 ---
 
-## Impact on Data Model
+## 9. Data Model and Architecture Impact
 
-> **Note**: Only applicable if data model (`ARC-*-DATA-*.md`) exists
+### 9.1 New/changed entities and attributes
 
-### New Entities from External Sources
+| Source | Entity | Attributes | Cardinality | Notes |
+|--------|--------|------------|-------------|------|
+| [Source] | [Entity] | [Attributes] | [1..*] | [Notes] |
 
-| Entity | Source | Description | Key Attributes | Sync Strategy |
-|--------|--------|-------------|---------------|---------------|
-| [Entity name] | [Source] | [What it represents] | [Key fields] | [Real-time / Batch / Cached] |
+### 9.2 Integration pattern recommendation
 
-### New Attributes on Existing Entities
-
-| Existing Entity | New Attribute | Source | Type | Update Frequency |
-|----------------|---------------|--------|------|-----------------|
-| [Entity] | [Attribute] | [Source] | [Type] | [Frequency] |
-
-### New Relationships
-
-| From Entity | To Entity | Relationship | Source | Description |
-|-------------|-----------|-------------|--------|-------------|
-| [Internal entity] | [External entity] | [1:N / N:M] | [Source] | [How they relate] |
-
-### Sync Strategy
-
-| Source | Pattern | Frequency | Staleness Tolerance | Fallback |
-|--------|---------|-----------|--------------------|---------|
-| [Source] | [API call on demand / Scheduled ETL / Event-driven] | [Real-time / Hourly / Daily] | [X hours] | [Serve stale cache / Degrade gracefully / Block] |
+| Source | Pattern | Frequency | Idempotency key | Error handling | Notes |
+|--------|---------|-----------|------------------|---------------|------|
+| [Source] | [Batch/API/Stream] | [Freq] | [Key] | [Approach] | [Notes] |
 
 ---
 
-## Australian Government Open Data Opportunities
+## 10. Decision Log and Next Steps
 
-> **Note**: Only applicable if this is a Australian Government project
+### 10.1 Decisions to capture as ADRs
 
-### DX Policy / DSS Point 10: Make Better Use of Data
+| Decision | ADR required? | Notes |
+|---------|----------------|------|
+| Select primary data source for NEED-001 | [YES/NO] | [Notes] |
 
-**Open Data Consumed**:
-| Source | Dataset | License | Requirement | Status |
-|--------|---------|---------|-------------|--------|
-| [data.gov.au] | [Dataset name] | OGL v3.0 | [DR-xxx] | ✅ Recommended |
-| [ONS] | [Dataset name] | OGL v3.0 | [DR-xxx] | ✅ Recommended |
+### 10.2 Next steps
 
-**Open Data Publishing Opportunities**:
-- [Data that could be published as open data from this project]
-- [Datasets that would benefit the wider public sector]
-
-**Common Data Standards Used**:
-- [UPRN for property addresses]
-- [Company Number for business entities]
-- [Australian public health services Number for patient identification]
-- [Other Australian Government identifiers]
-
-**Data Ethics Framework Compliance**:
-- [ ] Clear user need for data collection
-- [ ] Proportionate to the need
-- [ ] Lawful basis established
-- [ ] Data minimisation applied
-- [ ] Transparency about data use
-- [ ] Data quality maintained
-
----
-
-## Requirements Traceability
-
-### Full Mapping Table
-
-| Requirement ID | Requirement Description | Data Source | Score | Status | Notes |
-|----------------|------------------------|-------------|-------|--------|-------|
-| DR-001 | [Description] | [Source name] | [/100] | ✅ Matched | [Notes] |
-| DR-002 | [Description] | [Source A, Source B] | [/100] | ✅ Matched | [Multiple options] |
-| DR-003 | [Description] | — | — | ❌ Gap | [See GAP-1] |
-| FR-xxx | [Description] | [Source name] | [/100] | ⚠️ Partial | [Coverage issue] |
-| INT-xxx | [Description] | [Source name] | [/100] | ✅ Matched | [Notes] |
-| NFR-xxx | [Description] | — | — | ✅ Constraint | [Applied to all sources] |
-
-### Coverage Summary
-
-**Requirements with Identified Sources**:
-- ✅ **[X] requirements ([Y%])** have recommended data sources
-- ⚠️ **[Z] requirements ([W%])** partially covered (quality or coverage issues)
-- ❌ **[A] requirements ([B%])** no suitable source (see Gap Analysis)
-
----
-
-## Next Steps
-
-### Immediate Actions (0-2 weeks)
-
-1. **Register for API access** for top recommended sources
-2. **Review data sharing agreements** and terms of use
-3. **Conduct integration POCs** for critical data sources (top 2-3)
-4. **Validate data quality** against requirement thresholds
-
-### Data Model Updates (2-4 weeks)
-
-5. **Update data model** with external data entities (`/arckit.data-model`)
-6. **Create ADRs** for significant data source decisions (`/arckit.adr`)
-7. **PIA review** for sources containing personal data (`/arckit.pia`)
-
-### Gap Resolution (4-8 weeks)
-
-8. **Address gaps**: Negotiate data sharing, build internal collection, or defer
-9. **Negotiate contracts** for commercial data sources
-10. **Establish monitoring** for data quality and API health
-
-### Integration (Ongoing)
-
-11. **Build data ingestion pipelines** based on recommended integration patterns
-12. **Implement caching** and fallback strategies
-13. **Set up data quality monitoring** dashboards
-14. **Document data lineage** for audit and compliance
-
----
-
-## Appendices
-
-### Appendix A: Research Methodology
-
-**Data Sources Searched**:
-- Australian Government open data portals (data.gov.au, ONS, Australian Institute of Health and Welfare (AIHW), etc.)
-- Commercial data provider websites
-- API directories and documentation
-- GitHub and open source repositories
-- Industry analyst reports and reviews
-
-**Evaluation Methodology**:
-- Weighted scoring across 6 criteria (Requirements Fit 25%, Data Quality 20%, License & Cost 15%, API Quality 15%, Compliance 15%, Reliability 10%)
-- All scores based on verified information from official sources
-- Pricing verified from vendor websites or documentation
-- API quality assessed from documentation review
-
-**Limitations**:
-- Pricing based on published rates (volume discounts may be available)
-- API quality assessed from documentation, not hands-on testing
-- Data quality indicators from provider claims (validate during POC)
-- Market evolves — discovery valid for approximately 6 months
-
-### Appendix B: Glossary
-
-- **API**: Application Programming Interface
-- **ETL**: Extract, Transform, Load
-- **OGL**: Open Government Licence
-- **GDPR**: General Data Protection Regulation (Privacy Act 1988 (APPs) / EU GDPR)
-- **DPA 2018**: Privacy Act 1988
-- **DX Policy / DSS**: Digital Experience Policy (Australian Government)
-- **SLA**: Service Level Agreement
-- **TTL**: Time To Live (cache expiry)
-- **UPRN**: Unique Property Reference Number
-- **PII**: Personally Identifiable Information
-
-## External References
-
-| Document | Type | Source | Key Extractions | Path |
-|----------|------|--------|-----------------|------|
-| *None provided* | — | — | — | — |
-
----
-
-**Generated by**: ArcKit `/arckit.datascout` agent
-**Generated on**: [DATE]
-**ArcKit Version**: [VERSION]
-**Project**: [PROJECT_NAME]
-**Model**: [AI_MODEL]
+1. Update the data model (`/arckit.data-model`) with selected sources.
+2. Record sourcing decisions as ADRs (`/arckit.adr`).
+3. If personal information is involved, complete/update the PIA (`/arckit.pia`) and address APP 8 if relevant.
+4. Update risks in the risk register (`/arckit.risk`).
+5. Create or update data flow diagrams (`/arckit.diagram`).

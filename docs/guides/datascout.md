@@ -1,52 +1,20 @@
-# Data Source Discovery Guide
+# Data Source Discovery Guide (via `/arckit.datascout`)
 
-`/arckit.datascout` discovers external data sources — APIs, datasets, open data portals, and commercial providers — that can fulfil a project's data and integration requirements.
+`/arckit.datascout` discovers and evaluates external data sources (APIs, datasets, registries, and commercial providers) to fulfil project requirements.
 
-> **Agent Architecture**: This command delegates to the `arckit-datascout` autonomous agent. The agent runs as a subprocess with its own context window, searching api.gov.au, data.gov.au, department developer hubs, and commercial API providers without polluting your main conversation. The slash command launches the agent and relays its summary back to you.
+For Australian Government contexts, it prioritises:
+- `api.gov.au` (Australian Government API directory)
+- `data.gov.au` (Australian open data catalogue)
 
----
+It then expands to domain regulators/agencies, state/territory portals, and commercial providers where required.
 
-## What is Data Source Discovery?
+## Prerequisites
 
-Data source discovery is the systematic identification and evaluation of external data sources that a project needs. Rather than building internal data collection from scratch, many projects can consume existing APIs, open datasets, and commercial data feeds.
-
-**Key question**: What external data does the project need, and where can it be sourced?
-
----
-
-## When to Use
-
-- **After requirements** are defined (MANDATORY — data needs come from DR-xxx, FR-xxx, INT-xxx)
-- **Before or alongside data modeling** — discovered sources influence the data model
-- **Before vendor procurement** — data source costs feed into TCO analysis
-- **When requirements reference external data** (e.g., "display real-time prices", "validate postcode", "show company details")
-
----
-
-## Prerequisites and Dependencies
-
-| Artifact | Dependency | Why |
-|----------|-----------|-----|
-| Requirements (`ARC-*-REQ-*.md`) | **MANDATORY** | Data needs extracted from DR/FR/INT/NFR requirements |
-| Data Model (`ARC-*-DATA-*.md`) | OPTIONAL | Maps sources to existing entities, identifies gaps |
-| Stakeholders (`ARC-*-STKE-*.md`) | RECOMMENDED | Prioritises sources by stakeholder needs |
-| Principles (`ARC-000-PRIN-*.md`) | RECOMMENDED | Applies open data and cloud-first principles |
-
----
-
-## Scenario Matrix
-
-| Scenario | Prompt seed | Focus |
-|---------|-------------|-------|
-| Open data first | "Discover Australian Government open data sources for <project>" | Prioritises data.gov.au, ONS, Australian Institute of Health and Welfare (AIHW) |
-| Commercial APIs | "Find commercial data APIs for <capability>" | Compares pricing, SLAs, coverage |
-| Gap analysis | "Identify which data requirements have no external source" | Highlights gaps needing internal collection |
-| Data model enrichment | "Find sources to populate the data model for <project>" | Maps sources to existing entities |
-| Cost analysis | "Compare free vs commercial data sources for <need>" | TCO comparison for data feeds |
-
-Add constraints (budget, data residency, freshness) in the prompt for tailored results.
-
----
+| Artefact | Why it matters |
+|----------|----------------|
+| `ARC-<id>-REQ-v*.md` | Source of DR/INT/NFR constraints (fields, freshness, residency, latency, budget) |
+| `ARC-<id>-DATA-v*.md` (recommended) | Lets discovery map sources to entities/attributes and identify model gaps |
+| `ARC-<id>-STKE-v*.md` (recommended) | Identifies data consumers, quality expectations, and governance roles |
 
 ## Command
 
@@ -54,92 +22,29 @@ Add constraints (budget, data residency, freshness) in the prompt for tailored r
 /arckit.datascout Discover data sources for <project>
 ```
 
-Outputs: `projects/<id>/ARC-<id>-DSCT-v1.0.md`
+Output: `projects/<id>/ARC-<id>-DSCT-vX.Y.md`
 
-> **Auto-versioning**: Re-running this command when a document already exists automatically increments the version (minor for refreshed content, major for changed scope) instead of overwriting.
+## What “Good” Looks Like (AU-first)
 
----
+A useful DataScout output is not a list of links; it is a decision-ready pack:
+- Data needs inventory extracted from requirements (DR/INT)
+- Evidence-based evaluation cards per source (coverage, quality, terms, cost, delivery model)
+- Comparison matrices and a ranked shortlist with scores
+- Gap analysis with realistic options (collect internally, negotiate sharing, use proxies)
+- Data model impact (new entities/attributes; sync strategy)
 
-## Output Highlights
+## Privacy, Security, and Data-Sharing Checks
 
-- **Data needs analysis** extracted from requirements (DR/FR/INT/NFR)
-- **Data utility analysis** identifying secondary and alternative uses for each source beyond the primary requirement (e.g., satellite imagery → oil storage estimation → price prediction; smart meter data → energy monitoring + fuel poverty identification)
-- **Per-source evaluation cards** with license, pricing, API details, quality, compliance
-- **Weighted scoring matrix** (Requirements Fit 25%, Data Quality 20%, License & Cost 15%, API Quality 15%, Compliance 15%, Reliability 10%)
-- **Side-by-side comparison tables** per category
-- **Gap analysis** for unmet data needs with recommended actions
-- **Data model impact** (new entities, attributes, sync strategy)
-- **Requirements traceability** (every DR-xxx mapped to a source or flagged as gap)
-- **Australian Government open data opportunities** (DX Policy / DSS Point 10 compliance)
+Data sourcing often introduces privacy and governance obligations. DataScout should explicitly flag:
+- Whether the source contains personal information or sensitive information (trigger `/arckit.pia`)
+- Whether cross-border disclosure/access is likely (APP 8)
+- Whether data matching/linkage is occurring (requires appropriate governance)
+- Whether the security classification and handling constraints are compatible with the intended architecture (PSPF/ISM alignment)
 
----
+## Linkages
 
-## Evaluation Criteria Explained
-
-| Criterion | Weight | What It Measures |
-|-----------|--------|-----------------|
-| **Requirements Fit** | 25% | Covers required data fields, scope, granularity, volume |
-| **Data Quality** | 20% | Accuracy, completeness, consistency, timeliness |
-| **License & Cost** | 15% | OGL vs commercial, pricing sustainability, total cost |
-| **API Quality** | 15% | RESTful, documentation, SDKs, versioning, error handling |
-| **Compliance** | 15% | GDPR, Australian data residency, classification, DPA 2018 |
-| **Reliability** | 10% | SLA, uptime, vendor stability, support |
-
----
-
-## Australian Government Open Data Guidance
-
-For Australian Government projects, datascout prioritises open data sources.
-
-### Australian Government API Catalogue (Always Checked)
-
-The command always searches https://www.api.gov.au/ first — the authoritative directory of Australian public sector APIs maintained by the Data Standards Authority. It dynamically discovers available departments, API counts, and developer hubs at runtime rather than relying on a static list.
-
-It also fetches https://www.api.gov.au/dashboard/ to identify which departments have APIs relevant to the project's requirements, then follows links to discover each department's own developer portal for richer documentation, sandbox environments, and registration details.
-
-### Key AU Open Data Portals
-
-| Portal | URL | Coverage |
-|--------|-----|----------|
-| data.gov.au | https://www.data.gov.au/ | Central Australian open data |
-| ABS | https://www.abs.gov.au/ | Statistics and demographics |
-| Australian Institute of Health and Welfare (AIHW) | https://digital.nhs.uk/ | Health and social care |
-| OS Data Hub | https://osdatahub.os.uk/ | Geospatial data |
-| ABR/ASIC | https://abr.business.gov.au/ | Business and company data |
-| Environment Agency | https://environment.data.gov.au/ | Environmental data |
-| State/Territory Land Registries | https://www.data.gov.au/ | Property and land datasets |
-| Police API | https://data.police.uk/docs/ | Crime data |
-
-### DX Policy / DSS Point 10: Make Better Use of Data
-
-The Digital Experience Policy requires Australian Government projects to:
-- Consume existing open data before building new data collection
-- Use common data standards and identifiers (UPRN, company number, etc.)
-- Consider publishing project data as open data (OGL)
-- Comply with the Data Ethics Framework
-
----
-
-## Integration with Other Commands
-
-| Direction | Command | Integration |
-|-----------|---------|-------------|
-| **Input** | `/arckit.requirements` | Data needs from DR/FR/INT/NFR requirements |
-| **Input** | `/arckit.data-model` | Existing entities needing external data |
-| **Output** | `/arckit.data-model` | New entities/attributes from discovered sources |
-| **Output** | `/arckit.research` | Data source costs inform vendor TCO |
-| **Output** | `/arckit.adr` | Data source selection recorded as decisions |
-| **Output** | `/arckit.pia` | Third-party sources assessed for privacy |
-| **Output** | `/arckit.diagram` | Data flow diagrams show external integration |
-| **Output** | `/arckit.traceability` | DR-xxx → data source mapping |
-
----
-
-## Follow-on Actions
-
-- Update data model with external data entities (`/arckit.data-model`)
-- Create ADRs for significant data source decisions (`/arckit.adr`)
-- Conduct PIA for sources with personal data (`/arckit.pia`)
-- Feed data source costs into research TCO analysis (`/arckit.research`)
-- Build data flow diagrams showing external integration (`/arckit.diagram`)
-- Add data source risks to risk register (`/arckit.risk`)
+- `/arckit.data-model` to incorporate selected sources into entities, attributes, and flows.
+- `/arckit.adr` to record why a source was selected and what trade-offs were accepted.
+- `/arckit.pia` when personal information is involved (especially if using third-party sources).
+- `/arckit.risk` to record sourcing and reliance risks.
+- `/arckit.diagram` to document external flows.
