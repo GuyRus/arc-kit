@@ -386,29 +386,24 @@ Create RFP-ready documents with:
 - Evaluation criteria
 - Contract terms
 
-**`/arckit.dos`** → Digital Outcomes and Specialists (DOS) procurement 🇬🇧
+**`/arckit.dos`** → Digital Outcomes and Specialists (DOS) procurement pack
 
-For UK public sector organizations needing custom development:
-- Generate DOS-compliant procurement documentation
-- Extract requirements from project artifacts (BR/FR/NFR/INT/DR)
-- Essential vs desirable skills from requirements
-- Success criteria (technology-agnostic)
-- Evaluation framework (40% Technical, 30% Team, 20% Quality, 10% Value)
-- Audit-ready documentation for Digital Marketplace
+For outcome/specialist sourcing (custom delivery and specialist augmentation), generate an opportunity pack that is:
+- Traceable to project artefacts (BR/FR/NFR/INT/DR)
+- Clear on essential vs desirable skills
+- Technology-agnostic and competition-friendly
+- Evaluation-ready (weights, questions, scoring approach) with an auditable record
 
-**`/arckit.gcloud-search`** → G-Cloud service search with live marketplace search 🇬🇧
+**`/arckit.gcloud-search`** → BuyICT cloud panel service search and comparison
 
-For UK public sector organizations needing off-the-shelf cloud services:
-- Generate G-Cloud requirements document
-- **Live Digital Marketplace search** using WebSearch
-- Find actual services with suppliers, prices, features, links
-- Service comparison table with recommendations
-- Shortlist top 3-5 matching services
-- Links to Digital Marketplace guidance (gov.uk)
+For off-the-shelf cloud services, generate service procurement requirements and a shortlist:
+- Requirements-derived service needs and constraints
+- Comparable service cards and side-by-side comparison
+- Shortlist for clarification and evaluation
 
-**`/arckit.gcloud-clarify`** → G-Cloud service validation and gap analysis 🇬🇧
+**`/arckit.gcloud-clarify`** → Supplier/service clarification pack
 
-Validate G-Cloud services and generate supplier clarification questions:
+Validate shortlisted services and generate structured clarification questions:
 - **Systematic gap analysis** (MUST/SHOULD requirements vs service descriptions)
 - Detect gaps: ✅ Confirmed, ⚠️ Ambiguous, ❌ Not mentioned
 - Generate prioritised questions (🔴 Critical / 🟠 High / 🔵 Medium / 🟢 Low)
@@ -825,9 +820,9 @@ These commands use [Model Context Protocol (MCP)](https://modelcontextprotocol.i
 | Command | Description | Examples | Status |
 |---------|-------------|----------|--------|
 | `/arckit.sow` | Generate Statement of Work (SOW) / RFP document for vendor procurement | [v1](https://tractorjuice.github.io/arckit-test-project-v1-m365/#projects/001-exchange-online-migration/ARC-001-SOW-v1.0.md) [v2](https://tractorjuice.github.io/arckit-test-project-v2-hmrc-chatbot/#projects/001-hmrc-chatbot/ARC-001-SOW-v1.0.md) [v3/001](https://tractorjuice.github.io/arckit-test-project-v3-windows11/#projects/001-windows-11-migration-intune/ARC-001-SOW-v1.0.md) [v3/002](https://tractorjuice.github.io/arckit-test-project-v3-windows11/#projects/002-application-packaging-rationalisation/ARC-002-SOW-v1.0.md) [v3/003](https://tractorjuice.github.io/arckit-test-project-v3-windows11/#projects/003-peripherals-update-upgrade/ARC-003-SOW-v1.0.md) [v6](https://tractorjuice.github.io/arckit-test-project-v6-patent-system/#projects/001-patent-management-system-for-the-intellectual-property-office/ARC-001-SOW-v1.0.md) | 🟢 Live |
-| `/arckit.dos` | Generate Digital Outcomes and Specialists (DOS) procurement documentation for UK Digital Marketplace | — | 🟣 Experimental |
-| `/arckit.gcloud-search` | Find G-Cloud services on UK Digital Marketplace with live search and comparison | [v3](https://tractorjuice.github.io/arckit-test-project-v3-windows11/#projects/001-windows-11-migration-intune/ARC-001-GCLD-v1.0.md) [v14](https://tractorjuice.github.io/arckit-test-project-v14-scottish-courts/#projects/001-scts-genai-programme/ARC-001-GCLD-v1.0.md) | 🟣 Experimental |
-| `/arckit.gcloud-clarify` | Analyze G-Cloud service gaps and generate supplier clarification questions | — | 🟣 Experimental |
+| `/arckit.dos` | Generate Digital Outcomes and Specialists (DOS) procurement documentation (outcomes/specialists sourcing pack) | — | 🟣 Experimental |
+| `/arckit.gcloud-search` | Find and compare BuyICT cloud panel services for off-the-shelf procurement | [v3](https://tractorjuice.github.io/arckit-test-project-v3-windows11/#projects/001-windows-11-migration-intune/ARC-001-GCLD-v1.0.md) [v14](https://tractorjuice.github.io/arckit-test-project-v14-scottish-courts/#projects/001-scts-genai-programme/ARC-001-GCLD-v1.0.md) | 🟣 Experimental |
+| `/arckit.gcloud-clarify` | Analyze shortlisted service gaps and generate supplier clarification questions | — | 🟣 Experimental |
 | `/arckit.evaluate` | Create vendor evaluation framework and score vendor proposals | [v1](https://tractorjuice.github.io/arckit-test-project-v1-m365/#projects/001-exchange-online-migration/ARC-001-EVAL-v1.0.md) [v2](https://tractorjuice.github.io/arckit-test-project-v2-hmrc-chatbot/#projects/001-hmrc-chatbot/ARC-001-EVAL-v1.0.md) [v3/001](https://tractorjuice.github.io/arckit-test-project-v3-windows11/#projects/001-windows-11-migration-intune/ARC-001-EVAL-v1.0.md) [v3/002](https://tractorjuice.github.io/arckit-test-project-v3-windows11/#projects/002-application-packaging-rationalisation/ARC-002-EVAL-v1.0.md) [v3/003](https://tractorjuice.github.io/arckit-test-project-v3-windows11/#projects/003-peripherals-update-upgrade/ARC-003-EVAL-v1.0.md) [v3/005](https://tractorjuice.github.io/arckit-test-project-v3-windows11/#projects/005-cloud-pki/ARC-005-EVAL-v1.0.md) [v6](https://tractorjuice.github.io/arckit-test-project-v6-patent-system/#projects/001-patent-management-system-for-the-intellectual-property-office/ARC-001-EVAL-v1.0.md) | 🟢 Live |
 
 ### Design & Architecture
