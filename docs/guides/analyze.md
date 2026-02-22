@@ -9,7 +9,7 @@ Use `/arckit.analyze` as a recurring quality health check. The command inspects 
 | Cadence | Trigger | Notes |
 |---------|---------|-------|
 | Weekly | Active delivery | Slot into sprint review so actions feed backlog |
-| Gate reviews | Discovery→Alpha, Alpha→Beta, Beta→Live | Attach the latest analysis to assurance packs |
+| Gate reviews | Major milestones and governance gates | Attach the latest analysis to assurance packs |
 | After major change | New requirements, design shifts, supplier change | Confirms nothing regressed |
 | On request | Sponsors, audit, governance board | Provides transparent status in minutes |
 

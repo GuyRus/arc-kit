@@ -9,7 +9,7 @@
 | **Document ID** | ARC-[PROJECT_ID]-ANAL-v[VERSION] |
 | **Document Type** | Governance Analysis Report |
 | **Project** | [PROJECT_NAME] (Project [PROJECT_ID]) |
-| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL-SENSITIVE / SECRET] |
+| **Classification** | [PUBLIC / OFFICIAL / OFFICIAL:Sensitive / PROTECTED / SECRET / TOP SECRET] |
 | **Status** | [DRAFT / IN_REVIEW / APPROVED / PUBLISHED / SUPERSEDED / ARCHIVED] |
 | **Version** | [VERSION] |
 | **Created Date** | [YYYY-MM-DD] |
@@ -153,12 +153,12 @@
 ### AI Playbook Compliance (if AI system)
 
 **AI Playbook Assessment Exists**: [✅ Yes / ❌ No]
-**ATRS Record Exists**: [✅ Yes / ❌ No]
+**AI Transparency Statement (AITS) Exists**: [✅ Yes / ❌ No]
 
 ### Secure by Design (if applicable)
 
 **SbD Assessment Exists**: [✅ Yes / ❌ No]
-**MOD SbD Score** (if MOD): [X]/70 ([percentage]%)
+**ACSC ISM / Essential Eight Evidence** (where applicable): [✅ Adequate / ⚠️ Partial / ❌ Missing]
 
 ---
 

@@ -18,7 +18,7 @@ Identify inconsistencies, gaps, ambiguities, and compliance issues across all ar
 
 **Architecture Principles Authority**: The architecture principles (`ARC-000-PRIN-*.md` in `projects/000-global/`) are **non-negotiable**. Any conflicts with principles are automatically CRITICAL and require adjustment of requirements, designs, or vendor proposals—not dilution or reinterpretation of the principles.
 
-**Australian Government Compliance Authority** (if applicable): DX Policy / Digital Service Standard, AU AI governance assessment, and AITS compliance are required for in-scope Australian Government projects. Non-compliance is CRITICAL.
+**Australian Government Compliance Authority** (if applicable): For in-scope Australian Government projects, Digital Service Standard (where applicable) and agency policy requirements, privacy (Privacy Act 1988 and APPs; OAIC-aligned PIA where required/appropriate), security (PSPF/ACSC ISM and Essential Eight uplift where applicable), and AI governance artefacts (where applicable) must be treated as mandatory assurance inputs. Material non-compliance is CRITICAL.
 
 ## Execution Steps
 
@@ -30,7 +30,7 @@ Identify inconsistencies, gaps, ambiguities, and compliance issues across all ar
 - **If not found**: Read `.arckit/templates/analysis-report-template.md` (default)
 
 > **Note**: Read the `.arckit/VERSION` file and update the version in the template metadata line when generating.
-> **Tip**: Users can customize templates with `/arckit:customize analyze`
+> **Tip**: Users can customize templates with `/arckit.customize analyze`
 
 ### 1. Discover Project Context
 
@@ -58,7 +58,6 @@ projects/
     ├── ARC-*-TCOP-*.md (if Australian Government)
     ├── ARC-*-AIGA-*.md (if Australian Government AI)
     ├── ARC-*-AITS-*.md (if Australian Government AI)
-    ├── ARC-*-SECD-MOD-*.md (if MOD project)
     └── ARC-{PROJECT_ID}-TRAC-v*.md (traceability matrix)
 ```
 
@@ -139,15 +138,6 @@ Load only minimal necessary context from each artifact:
 - `ARC-*-AIGA-*.md`: AU AI governance compliance status
 - `ARC-*-AITS-*.md`: AI transparency statement completeness
 
-**From MOD Assessment** (if exists):
-- `ARC-*-SECD-MOD-*.md`: MOD SbD compliance status
-  - 7 SbD Principles assessment
-  - NIST CSF (Identify, Protect, Detect, Respond, Recover)
-  - CAAT registration and self-assessment completion
-  - Three Lines of Defence
-  - Delivery Team Security Lead (DTSL) appointment
-  - Supplier attestation (for vendor-delivered systems)
-
 ### 3. Build Semantic Models
 
 Create internal representations (do not include raw artifacts in output):
@@ -194,12 +184,6 @@ Create internal representations (do not include raw artifacts in output):
 - DX Policy / Digital Service Standard: 13 points with compliance status
 - AU AI governance assessment: 10 principles + 6 themes with compliance status
 - AITS: Mandatory fields completion status
-
-**MOD Compliance Matrix** (if ARC-*-SECD-MOD-*.md exists):
-- 7 SbD Principles with compliance status
-- NIST CSF functions (Identify, Protect, Detect, Respond, Recover)
-- CAAT registration status
-- Three Lines of Defence implementation
 
 ### 4. Detection Passes (Token-Efficient Analysis)
 
@@ -298,7 +282,7 @@ Focus on high-signal findings. Limit to 50 findings total; aggregate remainder i
 - Delivery roles aligned with RACI assignments?
 
 **Missing Stakeholder Analysis**:
-- Project has requirements but no stakeholder analysis document (RECOMMENDED to run `/arckit:stakeholders`)
+- Project has requirements but no stakeholder analysis document (RECOMMENDED to run `/arckit.stakeholders`)
 
 #### F. Risk Management Analysis (if ARC-*-RISK-*.md exists)
 
@@ -319,7 +303,7 @@ Focus on high-signal findings. Limit to 50 findings total; aggregate remainder i
 - Compliance risks addressed by NFR-C-xxx requirements?
 
 **Missing Risk Assessment**:
-- Project has requirements but no risk register document (RECOMMENDED to run `/arckit:risk`)
+- Project has requirements but no risk register document (RECOMMENDED to run `/arckit.risk`)
 
 #### G. Business Case Alignment (if ARC-*-SOBC-*.md exists)
 
@@ -347,7 +331,7 @@ Focus on high-signal findings. Limit to 50 findings total; aggregate remainder i
 - Strategic risks justify urgency ("Why Now?")?
 
 **Missing Business Case**:
-- Project has requirements but no SOBC (RECOMMENDED for major investments to run `/arckit:sobc`)
+- Project has requirements but no SOBC (RECOMMENDED for major investments to run `/arckit.sobc`)
 
 #### H. Data Model Consistency (if ARC-*-DATA-*.md exists)
 
@@ -373,7 +357,7 @@ Focus on high-signal findings. Limit to 50 findings total; aggregate remainder i
 - Data quality metrics defined and measurable?
 
 **Missing Data Model**:
-- Project has DR-xxx requirements but no data model (RECOMMENDED to run `/arckit:data-model`)
+- Project has DR-xxx requirements but no data model (RECOMMENDED to run `/arckit.data-model`)
 
 #### I. Australian Government Compliance (if applicable)
 
@@ -404,58 +388,6 @@ Focus on high-signal findings. Limit to 50 findings total; aggregate remainder i
 - Design complies with DX Policy / Digital Service Standard (Cloud First, Open Standards, Secure)?
 - AI requirements comply with AU AI governance assessment?
 - AI transparency statement reflects requirements and design?
-
-#### J. MOD Secure by Design Compliance (if ARC-*-SECD-MOD-*.md exists)
-
-**7 SbD Principles Assessment**:
-- Principle 1 (Understand and Define Context): Context documented, data classification determined?
-- Principle 2 (Apply Security from the Start): Security embedded from inception, not bolt-on?
-- Principle 3 (Apply Defence in Depth): Layered security controls implemented?
-- Principle 4 (Follow Secure Design Patterns): ASD/ACSC/NIST guidance applied?
-- Principle 5 (Continuously Manage Risk): Risk register maintained, continuous testing?
-- Principle 6 (Secure the Supply Chain): SBOM maintained, supplier attestations obtained?
-- Principle 7 (Enable Through-Life Assurance): Continuous monitoring, incident response capability?
-
-**NIST Cybersecurity Framework Coverage**:
-- **Identify**: Asset inventory, business environment, governance, risk assessment?
-- **Protect**: Access control, data security, protective technology, training?
-- **Detect**: Continuous monitoring, anomaly detection, security testing?
-- **Respond**: Incident response plan, communications to MOD CERT, analysis?
-- **Recover**: Recovery planning, backup/DR/BC, post-incident improvements?
-
-**Continuous Assurance Process** (replaced RMADS August 2023):
-- CAAT (Cyber Activity and Assurance Tracker) registration completed?
-- CAAT self-assessment question sets completed based on 7 SbD Principles?
-- CAAT continuously updated (not one-time submission)?
-- Delivery Team Security Lead (DTSL) appointed?
-- Security Assurance Coordinator (SAC) appointed (if applicable)?
-- Project Security Officer (PSyO) appointed for SECRET+ systems?
-
-**Three Lines of Defence Implementation**:
-- **First Line**: Delivery team owns security, DTSL leads day-to-day management?
-- **Second Line**: Technical Coherence assurance, security policies, independent reviews?
-- **Third Line**: Independent audit, penetration testing, external audit (NAO, GIAA)?
-
-**Supplier Attestation** (if vendor-delivered system):
-- Suppliers attest systems are secure (ISN 2023/10)?
-- Supplier-owned continuous assurance (not MOD accreditation)?
-- Supplier security requirements in contracts?
-
-**Classification-Specific Requirements**:
-- OFFICIAL: Essential Eight baseline, basic access controls?
-- OFFICIAL-SENSITIVE: Essential Eight Plus, MFA, enhanced logging, PIA?
-- SECRET: SC personnel, CESG crypto, air-gap/assured network, enhanced physical security?
-- TOP SECRET: DV personnel, compartmented security, strict access control?
-
-**Critical Issues (Deployment Blockers)**:
-- SECRET+ data without appropriate controls?
-- No encryption at rest or in transit?
-- Personnel lacking security clearances?
-- No threat model or risk assessment?
-- Critical vulnerabilities unpatched?
-
-**Missing MOD SbD Assessment**:
-- Project for MOD but no SbD assessment (MANDATORY to run `/arckit:mod-secure`)
 
 #### K. Consistency Across Artifacts
 
@@ -496,9 +428,9 @@ Focus on high-signal findings. Limit to 50 findings total; aggregate remainder i
 
 **Data Protection**:
 - Personal data handling defined?
-- Privacy Act 1988 / APPs/Privacy Act 1988 / APPs compliance addressed?
+- Privacy Act 1988 and APPs compliance addressed (including PIA outcomes where applicable)?
 - Data retention policy defined?
-- Data breach procedures defined?
+- Data breach procedures defined (including NDB scheme readiness where applicable)?
 
 ### 5. Severity Assignment
 
@@ -519,10 +451,6 @@ Use this heuristic to prioritise findings:
 - Australian Government: DX Policy / Digital Service Standard non-compliance for mandatory points
 - Australian Government: AU AI governance assessment blocking issues for high-risk AI
 - Australian Government: Missing mandatory AITS for central government AI
-- MOD: CAAT not registered (MANDATORY for all programmes)
-- MOD: No DTSL appointed (required from Discovery phase)
-- MOD: SECRET+ data without classification-specific controls
-- MOD: Supplier attestation missing for vendor-delivered system
 - Security requirement with no design coverage
 - Compliance requirement with no validation
 
@@ -541,8 +469,6 @@ Use this heuristic to prioritise findings:
 - Vendor design doesn't address SOW requirements
 - Australian Government: DX Policy / Digital Service Standard partial compliance with gaps
 - Australian Government: AU AI governance assessment non-compliance for medium-risk AI
-- MOD: SbD Principles partially compliant with significant gaps
-- MOD: NIST CSF functions not fully covered
 
 **MEDIUM**:
 - Terminology drift
@@ -556,8 +482,6 @@ Use this heuristic to prioritise findings:
 - Data Model: Missing data model (recommended if DR-xxx exist)
 - Data Model: Data quality metrics not defined
 - Australian Government: DX Policy / Digital Service Standard minor gaps
-- MOD: CAAT self-assessment incomplete (some question sets missing)
-- MOD: Third Line of Defence not fully implemented
 
 **LOW**:
 - Style/wording improvements
@@ -567,7 +491,7 @@ Use this heuristic to prioritise findings:
 
 ### 6. Produce Comprehensive Analysis Report
 
-Generate a comprehensive Markdown report and save it to `projects/{project-dir}/ARC-{PROJECT_ID}-ANLZ-v1.0.md` with the following structure:
+Generate a comprehensive Markdown report and save it to `projects/{project-dir}/ARC-{PROJECT_ID}-ANAL-v${VERSION}.md` with the following structure:
 
 ```markdown
 # Architecture Governance Analysis Report
@@ -601,7 +525,7 @@ Generate a comprehensive Markdown report and save it to `projects/{project-dir}/
 | R1 | Requirements Quality | HIGH | ARC-*-REQ-*.md:L45-52 | Duplicate security requirements | Merge NFR-S-001 and NFR-S-005 |
 | P1 | Principles Alignment | CRITICAL | ARC-*-REQ-*.md:L120 | Violates Cloud-First principle | Change to cloud-native architecture |
 | T1 | Traceability | HIGH | No HLD coverage | NFR-P-002 (10K TPS) not addressed | Add performance architecture section to HLD |
-| UK1 | Australian Government Compliance | CRITICAL | Missing PIA | AI system requires PIA before deployment | Complete PIA for AU AI governance compliance |
+| AU1 | Australian Government Compliance | CRITICAL | Missing PIA | Personal information handling requires a PIA (where required/appropriate) before deployment | Complete an OAIC-aligned PIA and map mitigations into requirements/design |
 
 ---
 
@@ -803,102 +727,6 @@ Generate a comprehensive Markdown report and save it to `projects/{project-dir}/
 
 ---
 
-## MOD Secure by Design Analysis
-
-**MOD SbD Assessment Exists**: ✅ Yes / ❌ No (MANDATORY for MOD projects)
-
-**Overall SbD Maturity**: Level {0-5} (Target: Level 3+ for operational systems)
-
-### 7 SbD Principles Compliance
-
-| Principle | Status | Score | Issues |
-|-----------|--------|-------|--------|
-| 1. Understand and Define Context | ✅ | 9/10 | Minor: Data classification pending final review |
-| 2. Apply Security from the Start | ⚠️ | 6/10 | Security architecture not in initial specs |
-| 3. Apply Defence in Depth | ❌ | 3/10 | Missing: Network segmentation, IDS/IPS |
-| 4. Follow Secure Design Patterns | ✅ | 8/10 | ASD/ACSC guidance applied, minor OWASP gaps |
-| 5. Continuously Manage Risk | ✅ | 9/10 | Risk register active, continuous monitoring planned |
-| 6. Secure the Supply Chain | ⚠️ | 5/10 | Missing: SBOM, supplier attestations |
-| 7. Enable Through-Life Assurance | ⚠️ | 6/10 | Monitoring planned, incident response incomplete |
-
-**Overall Score**: {score}/70 ({percentage}%)
-
-### NIST Cybersecurity Framework Coverage
-
-| Function | Status | Coverage | Critical Gaps |
-|----------|--------|----------|---------------|
-| Identify | ✅ | 90% | Asset inventory incomplete for contractor systems |
-| Protect | ⚠️ | 65% | MFA not implemented, PAM missing |
-| Detect | ❌ | 40% | No SIEM integration, limited monitoring |
-| Respond | ⚠️ | 70% | Incident response plan exists, not tested |
-| Recover | ✅ | 85% | Backup/DR tested, BC plan approved |
-
-**Overall CSF Score**: {percentage}%
-
-### Continuous Assurance Process
-
-**CAAT (Cyber Activity and Assurance Tracker)**:
-- CAAT registered: ✅ Yes / ❌ No (MANDATORY)
-- Registration date: {date}
-- Self-assessment question sets completed: {count}/{total}
-- Based on 7 SbD Principles: ✅ Yes / ⚠️ Partial / ❌ No
-- Continuously updated: ✅ Yes / ⚠️ Sporadic / ❌ One-time only
-- Last update: {date}
-
-**Key Roles**:
-- Delivery Team Security Lead (DTSL) appointed: ✅ Yes / ❌ No (REQUIRED)
-- DTSL name: {name}
-- Security Assurance Coordinator (SAC) appointed: ✅ Yes / ❌ No / N/A
-- Project Security Officer (PSyO) for SECRET+: ✅ Yes / ❌ No / N/A
-
-### Three Lines of Defence
-
-| Line | Responsibility | Implementation | Status |
-|------|----------------|----------------|--------|
-| First Line | Delivery team owns security (DTSL) | DTSL appointed, day-to-day management | ✅ Effective |
-| Second Line | Technical Coherence assurance | Quarterly reviews scheduled | ⚠️ Partial |
-| Third Line | Independent audit (NAO, GIAA) | Pen test planned Q2 | ⚠️ Planned |
-
-**Overall Governance**: ✅ Strong / ⚠️ Adequate / ❌ Weak
-
-### Supplier Attestation (if vendor-delivered)
-
-**Supplier Attestation Required**: ✅ Yes / ❌ No / N/A
-
-**Attestation Status**:
-- Suppliers attest systems are secure (ISN 2023/10): ✅ Yes / ❌ No
-- Supplier-owned continuous assurance: ✅ Yes / ❌ No
-- Supplier security requirements in contracts: ✅ Yes / ⚠️ Partial / ❌ No
-- Contract includes CAAT self-assessment obligations: ✅ Yes / ❌ No
-
-### Classification-Specific Requirements
-
-**Data Classification**: OFFICIAL / OFFICIAL-SENSITIVE / SECRET / TOP SECRET
-
-**Classification Requirements Met**:
-| Requirement | Status | Evidence |
-|-------------|--------|----------|
-| Personnel security clearances | ✅ / ❌ | All SC cleared for OFFICIAL-SENSITIVE |
-| Cryptography (CESG-approved) | ✅ / ❌ | AES-256, TLS 1.3 |
-| Network security (air-gap/assured) | ✅ / ⚠️ / ❌ | Assured connectivity approved |
-| Physical security | ✅ / ❌ | Enhanced access controls in place |
-| Essential Eight / Essential Eight Plus | ✅ / ❌ | Essential Eight Plus certified |
-
-### Critical Issues (Deployment Blockers)
-
-**Blocking Issues**:
-- [ ] CAAT not registered (MANDATORY for all programmes)
-- [ ] No DTSL appointed (required from Discovery phase)
-- [ ] SECRET+ data without SC cleared personnel
-- [ ] No encryption at rest or in transit
-- [ ] No threat model or risk assessment
-- [ ] Critical vulnerabilities unpatched
-- [ ] Supplier attestation missing for vendor-delivered system
-
-**Deployment Readiness**: ✅ Ready / ⚠️ Issues to resolve / ❌ BLOCKED
-
----
-
 ## Traceability Analysis
 
 **Traceability Matrix**: ✅ Exists / ❌ Missing
@@ -976,7 +804,7 @@ Generate a comprehensive Markdown report and save it to `projects/{project-dir}/
 
 1. **[P1] Add Cloud-First architecture**: Current design violates Cloud-First principle. Redesign with AWS/Azure/GCP.
 2. **[R1] Cover security requirements**: NFR-S-003, NFR-S-007, NFR-S-012 have no design coverage. Add security architecture to HLD.
-3. **[UK1] Complete PIA**: HIGH-RISK AI system requires completed PIA before deployment (AU AI governance assessment MANDATORY).
+3. **[AU1] Complete PIA**: Personal information handling (and/or high-risk AI) requires a completed PIA (where required/appropriate) before deployment.
 
 ### High Priority Actions (SHOULD resolve before implementation/procurement)
 
@@ -1051,13 +879,6 @@ Generate a comprehensive Markdown report and save it to `projects/{project-dir}/
 - AITS Completeness: {percentage}%
 - **Australian Government Compliance Score**: {percentage}%
 
-### MOD Compliance (if applicable)
-- 7 SbD Principles Score: {score}/70 ({percentage}%)
-- NIST CSF Coverage: {percentage}%
-- CAAT registered and updated: ✅ Yes / ❌ No
-- Three Lines of Defence: {percentage}%
-- **MOD SbD Score**: {percentage}%
-
 ### Overall Governance Health
 **Score**: {percentage}%
 **Grade**: A / B / C / D / F
@@ -1076,9 +897,9 @@ Generate a comprehensive Markdown report and save it to `projects/{project-dir}/
 ### Immediate Actions
 
 1. **If CRITICAL issues exist**: ❌ **DO NOT PROCEED** with implementation/procurement until resolved.
-   - Run: `/arckit:requirements` to fix requirements issues
-   - Run: `/arckit:hld-review` to address design gaps
-   - Run: `/arckit:ai-playbook` (if AI system) to complete mandatory assessments
+   - Run: `/arckit.requirements` to fix requirements issues
+   - Run: `/arckit.hld-review` to address design gaps
+   - Run: `/arckit.ai-playbook` (if AI system) to complete mandatory assessments
 
 2. **If only HIGH/MEDIUM issues**: ⚠️ **MAY PROCEED** with caution, but address issues in parallel.
    - Document exceptions for HIGH issues
@@ -1092,39 +913,36 @@ Generate a comprehensive Markdown report and save it to `projects/{project-dir}/
 Based on findings, consider running:
 
 **Governance Foundation**:
-- `/arckit:principles` - Create/update architecture principles
-- `/arckit:stakeholders` - Analyze stakeholder drivers, goals, conflicts (RECOMMENDED)
-- `/arckit:risk` - Create risk register using Orange Book framework (RECOMMENDED)
-- `/arckit:sobc` - Create Strategic Outline Business Case using Green Book 5-case model (RECOMMENDED for major investments)
+- `/arckit.principles` - Create/update architecture principles
+- `/arckit.stakeholders` - Analyze stakeholder drivers, goals, conflicts (RECOMMENDED)
+- `/arckit.risk` - Create/update risk register (RECOMMENDED)
+- `/arckit.sobc` - Create/update business case (RECOMMENDED for major investments)
 
 **Requirements & Design**:
-- `/arckit:requirements` - Refine requirements to address ambiguity/gaps
-- `/arckit:data-model` - Create data model with ERD, Privacy Act 1988 / APPs compliance (RECOMMENDED if DR-xxx exist)
-- `/arckit:hld-review` - Re-review HLD after addressing issues
-- `/arckit:dld-review` - Re-review DLD after addressing issues
+- `/arckit.requirements` - Refine requirements to address ambiguity/gaps
+- `/arckit.data-model` - Create data model with ERD and privacy considerations (RECOMMENDED if DR-xxx exist)
+- `/arckit.hld-review` - Re-review HLD after addressing issues
+- `/arckit.dld-review` - Re-review DLD after addressing issues
 
 **Australian Government Compliance**:
-- `/arckit:tcop` - Complete DX Policy / Digital Service Standard assessment for Australian Government projects
-- `/arckit:ai-playbook` - Complete AU AI governance assessment for AI systems
-- `/arckit:atrs` - Generate AI transparency statement for algorithmic tools
-- `/arckit:secure` - Australian Government Secure by Design review
-
-**MOD Compliance**:
-- `/arckit:mod-secure` - MOD Secure by Design assessment with CAAT (MANDATORY for MOD projects)
+- `/arckit.tcop` - Complete Digital Service Standard / digital policy assessment where applicable
+- `/arckit.ai-playbook` - Complete AU AI governance assessment for AI systems (includes AIGA/AITS artefacts where applicable)
+- `/arckit.pia` - Complete an OAIC-aligned PIA where required/appropriate
+- `/arckit.secure` - Security assessment (PSPF/ACSC ISM / Essential Eight uplift where applicable)
 
 **Vendor Procurement**:
-- `/arckit:sow` - Generate statement of work for RFP
-- `/arckit:evaluate` - Update vendor evaluation criteria
+- `/arckit.sow` - Generate statement of work for RFP
+- `/arckit.evaluate` - Update vendor evaluation criteria
 
 **Analysis & Traceability**:
-- `/arckit:traceability` - Generate/update traceability matrix
-- `/arckit:analyze` - Re-run this analysis after fixes
+- `/arckit.traceability` - Generate/update traceability matrix
+- `/arckit.analyze` - Re-run this analysis after fixes
 
 ### Re-run Analysis
 
 After making changes, re-run analysis:
 ```bash
-/arckit:analyze
+/arckit.analyze
 ```
 
 Expected improvement in scores after addressing findings.
@@ -1244,15 +1062,15 @@ DOC_ID=$(.arckit/scripts/bash/generate-document-id.sh "${PROJECT_ID}" "ANAL" "${
 **Populate Revision History**:
 
 ```markdown
-| 1.0 | {DATE} | ArcKit AI | Initial creation from `/arckit:analyze` command | [PENDING] | [PENDING] |
+| 1.0 | {DATE} | ArcKit AI | Initial creation from `/arckit.analyze` command | [PENDING] | [PENDING] |
 ```
 
 **Populate Generation Metadata Footer**:
 
 The footer should be populated with:
 ```markdown
-**Generated by**: ArcKit `/arckit:analyze` command
-**Generated on**: {DATE} {TIME} GMT
+**Generated by**: ArcKit `/arckit.analyze` command
+**Generated on**: {DATE} {TIME} UTC
 **ArcKit Version**: [Read from .arckit/VERSION]
 **Project**: {PROJECT_NAME} (Project {PROJECT_ID})
 **AI Model**: [Use actual model name, e.g., "claude-sonnet-4-5-20250929"]
@@ -1265,7 +1083,7 @@ The footer should be populated with:
 
 Save the complete analysis report generated in Step 6 to:
 
-**`projects/{project-dir}/ARC-{PROJECT_ID}-ANLZ-v1.0.md`**
+**`projects/{project-dir}/ARC-{PROJECT_ID}-ANAL-v${VERSION}.md`**
 
 The saved report must include:
 - ✅ All sections from Executive Summary to Detailed Findings
@@ -1283,7 +1101,7 @@ After writing the file, provide a summary message to the user:
 ✅ Governance Analysis Complete
 
 **Project**: {project-name}
-**Report Location**: projects/{project-dir}/ARC-{PROJECT_ID}-ANAL-v1.0.md
+**Report Location**: projects/{project-dir}/ARC-{PROJECT_ID}-ANAL-v${VERSION}.md
 
 **Overall Status**: ✅ Ready / ⚠️ Issues Found / ❌ Critical Issues
 **Governance Health Score**: {score}/100 ({grade})
@@ -1301,7 +1119,6 @@ After writing the file, provide a summary message to the user:
 - Stakeholder Alignment: {percentage}%
 - Risk Management: {percentage}%
 - Australian Government Compliance: {percentage}% (if applicable)
-- MOD SbD Compliance: {percentage}% (if applicable)
 
 **Top 3 Critical Issues**:
 1. {issue} - {location}
@@ -1367,7 +1184,7 @@ Unlike Spec Kit's focus on code implementation, ArcKit analyze focuses on:
 
 ## Example Usage
 
-User: `/arckit:analyze`
+User: `/arckit.analyze`
 
 You should:
 1. Identify project (if multiple, ask which)
@@ -1380,7 +1197,6 @@ You should:
    - Data model (if exists - RECOMMENDED if DR-xxx)
    - Designs (HLD, DLD)
    - Australian Government assessments (DX Policy / Digital Service Standard, AU AI governance assessment, AITS)
-   - MOD assessment (SbD with CAAT)
    - Traceability matrix
 3. Run detection passes:
    - Requirements quality (duplication, ambiguity, underspecification)
@@ -1391,7 +1207,6 @@ You should:
    - Principles alignment (violations, coverage)
    - Traceability (coverage gaps, orphans)
    - Australian Government compliance (DX Policy / Digital Service Standard, AU AI governance assessment, AITS)
-   - MOD compliance (7 SbD Principles, NIST CSF, CAAT, Three Lines of Defence)
    - Consistency (terminology, data model, tech stack)
    - Security & compliance coverage
 4. Assign severity (CRITICAL, HIGH, MEDIUM, LOW)
@@ -1404,18 +1219,17 @@ You should:
    - Business case analysis
    - Data model analysis
    - Australian Government compliance dashboard
-   - MOD compliance dashboard
    - Metrics dashboard
    - Next steps and recommendations
 6. Ask if user wants remediation guidance
 
-Example output: "Architecture Governance Analysis Report" with 18 findings (3 CRITICAL, 6 HIGH, 7 MEDIUM, 2 LOW), 87% requirements coverage, 92% stakeholder traceability, 85% risk mitigation, DX Policy / Digital Service Standard score 98/130 (75%), MOD SbD score 58/70 (83%), recommendation: "Resolve 3 CRITICAL issues (1 stakeholder orphan, 2 high risks unmitgated) before procurement"
+Example output: "Architecture Governance Analysis Report" with 18 findings (3 CRITICAL, 6 HIGH, 7 MEDIUM, 2 LOW), 87% requirements coverage, 92% stakeholder traceability, 85% risk mitigation, Digital Service Standard score 98/130 (75%), recommendation: "Resolve 3 CRITICAL issues (1 stakeholder orphan, 2 high risks unmitigated) before procurement"
 
 ## Important Notes
 
 - This is **non-destructive analysis** - existing artifacts are not modified
 - Analysis report is saved to `projects/{project-dir}/ARC-{PROJECT_ID}-ANAL-v1.0.md` for audit trail
-- Run `/arckit:analyze` after major changes to requirements, designs, or assessments
+- Run `/arckit.analyze` after major changes to requirements, designs, or assessments
 - Ideal times to run:
   - Before issuing SOW/RFP to vendors
   - After receiving vendor proposals
@@ -1431,27 +1245,24 @@ Example output: "Architecture Governance Analysis Report" with 18 findings (3 CR
 After analysis, you may need:
 
 **Governance Foundation**:
-- `/arckit:principles` - Create/update architecture principles
-- `/arckit:stakeholders` - Analyze stakeholder drivers and conflicts
-- `/arckit:risk` - Create Orange Book risk register
-- `/arckit:sobc` - Create Green Book business case
+- `/arckit.principles` - Create/update architecture principles
+- `/arckit.stakeholders` - Analyze stakeholder drivers and conflicts
+- `/arckit.risk` - Create/update risk register
+- `/arckit.sobc` - Create/update business case
 
 **Requirements & Data**:
-- `/arckit:requirements` - Fix requirements issues
-- `/arckit:data-model` - Create data model with ERD and Privacy Act 1988 / APPs compliance
+- `/arckit.requirements` - Fix requirements issues
+- `/arckit.data-model` - Create data model with ERD and privacy considerations
 
 **Design Reviews**:
-- `/arckit:hld-review` - Re-review high-level design
-- `/arckit:dld-review` - Re-review detailed design
+- `/arckit.hld-review` - Re-review high-level design
+- `/arckit.dld-review` - Re-review detailed design
 
 **Australian Government Compliance**:
-- `/arckit:tcop` - Complete DX Policy / Digital Service Standard assessment
-- `/arckit:ai-playbook` - Complete AU AI governance assessment
-- `/arckit:atrs` - Generate AI transparency statement
-- `/arckit:secure` - Australian Government Secure by Design review
-
-**MOD Compliance**:
-- `/arckit:mod-secure` - MOD Secure by Design assessment with CAAT
+- `/arckit.tcop` - Complete Digital Service Standard / digital policy assessment where applicable
+- `/arckit.ai-playbook` - Complete AU AI governance assessment (includes AIGA/AITS artefacts where applicable)
+- `/arckit.pia` - Complete an OAIC-aligned PIA where required/appropriate
+- `/arckit.secure` - Security assessment (PSPF/ACSC ISM / Essential Eight uplift where applicable)
 
 **Traceability**:
-- `/arckit:traceability` - Update traceability matrix
+- `/arckit.traceability` - Update traceability matrix
